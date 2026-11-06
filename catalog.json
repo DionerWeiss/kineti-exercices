@@ -786,6 +786,58 @@
       "tier": 3,
       "rig": "Decúbito lateral (roll); perna de cima estendida em abdução",
       "desc": "Deitado de lado, joelho de baixo dobrado para dar apoio. Com a perna de cima estendida e alinhada ao tronco, eleva a perna e desce devagar."
+    },
+    {
+      "n": 56,
+      "area": "cotovelos_punhos_maos",
+      "batch": "lote-4",
+      "slug": "wrist_flexion_extension",
+      "name": "Flexão e extensão de punho",
+      "view": "Detalhe, diagonal elevada",
+      "props": "Mesa",
+      "focus": "Flexores e extensores do punho",
+      "tier": 3,
+      "rig": "Close-up da mão 3D; antebraço fixo na mesa, punho flexiona e estende",
+      "desc": "Antebraço apoiado na mesa, palma para baixo e a mão além da borda. Dobra o punho para baixo, volta, leva a mão para cima e retorna devagar, com os dedos relaxados."
+    },
+    {
+      "n": 57,
+      "area": "cotovelos_punhos_maos",
+      "batch": "lote-4",
+      "slug": "forearm_pronation_supination",
+      "name": "Pronação e supinação",
+      "view": "Detalhe, diagonal elevada",
+      "props": "Mesa",
+      "focus": "Pronadores e supinadores do antebraço",
+      "tier": 3,
+      "rig": "Close-up da mão 3D; rotação do antebraço sobre o eixo longo",
+      "desc": "Antebraço apoiado na mesa, polegar para cima. Gira a palma para baixo, volta ao polegar para cima e gira a palma para cima, sem mexer o cotovelo."
+    },
+    {
+      "n": 58,
+      "area": "cotovelos_punhos_maos",
+      "batch": "lote-4",
+      "slug": "open_close_hand",
+      "name": "Abrir e fechar a mão",
+      "view": "Detalhe, superior diagonal",
+      "props": "Mesa",
+      "focus": "Mobilidade dos dedos",
+      "tier": 3,
+      "rig": "Close-up da mão 3D; dedos com três falanges e polegar em IK",
+      "desc": "Mão apoiada na mesa, palma para cima. Abre bem os dedos, afastando-os, depois fecha a mão sem força, com o polegar por cima dos dedos, e abre de novo."
+    },
+    {
+      "n": 59,
+      "area": "cotovelos_punhos_maos",
+      "batch": "lote-4",
+      "slug": "thumb_opposition",
+      "name": "Oposição do polegar",
+      "view": "Detalhe, superior diagonal",
+      "props": "Mesa",
+      "focus": "Coordenação fina do polegar",
+      "tier": 3,
+      "rig": "Close-up da mão 3D; ponta do polegar encontra cada ponta de dedo",
+      "desc": "Mão apoiada na mesa, palma para cima. Toca a ponta do polegar na ponta do indicador, do médio, do anelar e do mínimo, uma de cada vez, e abre a mão."
     }
   ]
 }

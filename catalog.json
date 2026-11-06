@@ -708,6 +708,84 @@
       "tier": 2,
       "rig": "Quadril desce em linha reta; bola rola na parede com metade do deslocamento",
       "desc": "Em pé, bola entre a parte baixa das costas e a parede, pés um passo à frente. Flexiona os joelhos descendo o quadril enquanto a bola rola pela parede e sobe de volta devagar."
+    },
+    {
+      "n": 50,
+      "area": "tronco_coluna",
+      "batch": "lote-3",
+      "slug": "prone_press_up_on_elbows",
+      "name": "Extensão de tronco apoiado nos cotovelos",
+      "view": "Lateral elevada",
+      "props": "Colchonete",
+      "focus": "Extensores da coluna lombar",
+      "tier": 3,
+      "rig": "Decúbito ventral; tronco estende com a pelve fixa, cotovelos resolvidos sobre o colchonete",
+      "desc": "Deitado de bruços, antebraços no colchonete ao lado da cabeça. Eleva o peito apoiando-se nos antebraços, com os cotovelos sob os ombros e o quadril no colchonete, segura e desce devagar."
+    },
+    {
+      "n": 51,
+      "area": "quadril_gluteos",
+      "batch": "lote-3",
+      "slug": "prone_hip_extension",
+      "name": "Extensão de quadril em decúbito ventral",
+      "view": "Lateral elevada",
+      "props": "Colchonete",
+      "focus": "Glúteo máximo e isquiotibiais",
+      "tier": 3,
+      "rig": "Decúbito ventral; testa apoiada nas mãos, perna estendida eleva pelo quadril",
+      "desc": "Deitado de bruços, testa apoiada sobre as mãos. Com o joelho estendido, eleva uma perna um pouco do colchonete, sem tirar o quadril do apoio, e desce devagar."
+    },
+    {
+      "n": 52,
+      "area": "tronco_coluna",
+      "batch": "lote-3",
+      "slug": "bird_dog",
+      "name": "Quatro apoios com braço e perna alternados",
+      "view": "Lateral elevada",
+      "props": "Colchonete",
+      "focus": "Estabilizadores do tronco e glúteos",
+      "tier": 3,
+      "rig": "Quatro apoios com mãos e joelhos em IK fixos; tronco parado",
+      "desc": "Em quatro apoios, mãos sob os ombros e joelhos sob o quadril. Estende um braço à frente e a perna oposta para trás até a horizontal, segura, volta e troca o par."
+    },
+    {
+      "n": 53,
+      "area": "tronco_coluna",
+      "batch": "lote-3",
+      "slug": "cat_camel",
+      "name": "Gato-camelo",
+      "view": "Perfil",
+      "props": "Colchonete",
+      "focus": "Mobilidade da coluna",
+      "tier": 3,
+      "rig": "Quatro apoios; curvatura lombar e cabeça variam, mãos e joelhos fixos",
+      "desc": "Em quatro apoios, arredonda as costas para cima deixando a cabeça descer, depois deixa as costas afundarem suavemente erguendo o olhar, e volta ao neutro."
+    },
+    {
+      "n": 54,
+      "area": "quadril_gluteos",
+      "batch": "lote-3",
+      "slug": "side_lying_clamshell",
+      "name": "Concha deitado de lado",
+      "view": "Frente baixa",
+      "props": "Colchonete",
+      "focus": "Glúteo médio e rotadores externos",
+      "tier": 3,
+      "rig": "Decúbito lateral (roll); joelho de cima gira em torno do eixo quadril-tornozelo",
+      "desc": "Deitado de lado, quadril e joelhos dobrados, pés juntos e cabeça apoiada no braço. Abre o joelho de cima como uma concha, sem separar os pés, e fecha devagar."
+    },
+    {
+      "n": 55,
+      "area": "quadril_gluteos",
+      "batch": "lote-3",
+      "slug": "side_lying_hip_abduction",
+      "name": "Abdução de quadril deitado de lado",
+      "view": "Posterior elevada",
+      "props": "Colchonete",
+      "focus": "Glúteo médio e abdutores",
+      "tier": 3,
+      "rig": "Decúbito lateral (roll); perna de cima estendida em abdução",
+      "desc": "Deitado de lado, joelho de baixo dobrado para dar apoio. Com a perna de cima estendida e alinhada ao tronco, eleva a perna e desce devagar."
     }
   ]
 }

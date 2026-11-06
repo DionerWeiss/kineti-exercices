@@ -161,10 +161,10 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
   <header class="top">
     <span class="eyebrow">Kineti · Biblioteca de exercícios domiciliares</span>
     <h1>Exercícios animados</h1>
-    <p>Painel de revisão das 20 animações instrutivas. Cada exercício será gerado pelo mesmo rig cinemático dos testes clínicos, para manter personagem, proporções, traço, cores e ritmo idênticos aos que já estão no aplicativo.</p>
+    <p>Painel de revisão das animações instrutivas: os 20 exercícios do plano e a biblioteca ampliada. Cada exercício será gerado pelo mesmo rig cinemático dos testes clínicos, para manter personagem, proporções, traço, cores e ritmo idênticos aos que já estão no aplicativo.</p>
     <div class="summary" aria-label="Resumo">
       <div><strong id="sum-total">20</strong><span>exercícios</span></div>
-      <div><strong>10</strong><span>áreas clínicas</span></div>
+      <div><strong id="sum-areas">10</strong><span>áreas clínicas</span></div>
       <div><strong id="sum-done">0</strong><span>animações prontas</span></div>
       <div><strong id="sum-t1">0</strong><span>cabem no rig atual</span></div>
     </div>
@@ -188,7 +188,7 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
         <dt>Quadro</dt><dd><span class="mono">720 × 450</span> (16:10), fundo transparente</dd>
         <dt>Ritmo</dt><dd><span class="mono">30 fps</span>, loop contínuo de 5 a 8 s</dd>
         <dt>Repetição</dt><dd>Posição inicial → execução → retorno</dd>
-        <dt>Origem</dt><dd><span class="mono">tool/lottie/</span>, mesmo rig dos testes</dd>
+        <dt>Origem</dt><dd><span class="mono">tool/build_catalog.py</span>, mesmo rig dos testes</dd>
       </dl>
       <ul class="rules">
         <li>Corpo inteiro e apoios sempre dentro do quadro</li>
@@ -220,56 +220,12 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
 <script>
-const EXERCISES = [
-  { n: 1, group: 'Mobilidade e transferências', slug: 'bed_rolling', file: 'bed_rolling.json', name: 'Rolar na cama', view: 'Lateral elevada', props: 'Cama', focus: 'Ombros, tronco e quadril coordenados', tier: 3, rig: 'Decúbito, rolagem no eixo longitudinal e câmera elevada',
-    desc: 'Deitado de costas, flexiona um joelho, gira cabeça e tronco para o mesmo lado e rola até ficar de lado. Retorna lentamente à posição inicial.' },
-  { n: 2, group: 'Mobilidade e transferências', slug: 'lying_to_sitting', file: 'lying_to_sitting.json', name: 'Passar de deitado para sentado', view: 'Lateral', props: 'Cama', focus: 'Tronco e membros superiores', tier: 3, rig: 'Decúbito, rolagem e transição para sentado na borda',
-    desc: 'Rola para o lado, aproxima as pernas da borda, apoia os braços e eleva o tronco até sentar com os pés no chão. Retorno controlado à posição deitada.' },
-  { n: 3, group: 'Quadril e glúteos', slug: 'standing_hip_flexion', file: 'standing_hip_flexion.json', name: 'Flexão de quadril em pé, com apoio', view: 'Perfil', props: 'Cadeira (encosto)', focus: 'Flexores do quadril', tier: 2, rig: 'Mão fixa no encosto (IK de braço)',
-    desc: 'Em pé, uma mão no encosto da cadeira. Eleva lentamente um joelho à frente com o tronco ereto e abaixa o pé. Mesma perna durante o loop.' },
-  { n: 4, group: 'Quadril e glúteos', slug: 'standing_hip_extension', file: 'standing_hip_extension.json', name: 'Extensão de quadril em pé, com apoio', view: 'Perfil', props: 'Cadeira (encosto)', focus: 'Glúteos e extensores do quadril', tier: 2, rig: 'Mãos fixas no encosto (IK de braço)',
-    desc: 'Mãos no encosto, joelho estendido e tronco ereto. Leva uma perna lentamente para trás e retorna, sem inclinar o tronco nem arquear a coluna.' },
-  { n: 5, group: 'Joelhos', slug: 'seated_knee_extension', file: 'seated_knee_extension.json', name: 'Extensão de joelho sentado', view: 'Perfil', props: 'Cadeira', focus: 'Quadríceps', tier: 1, rig: 'Pose sentada já existe (5xSTS, preensão)',
-    desc: 'Sentado com costas eretas e pés no chão. Estende lentamente um joelho, elevando o pé à frente, e retorna. A coxa permanece apoiada no assento.' },
-  { n: 6, group: 'Joelhos', slug: 'seated_knee_extension_ankle_weight', file: 'seated_knee_extension_ankle_weight.json', name: 'Extensão de joelho com tornozeleira', view: 'Perfil', props: 'Cadeira, tornozeleira', focus: 'Quadríceps com carga', tier: 2, rig: 'Acessório preso ao tornozelo',
-    desc: 'Mesmo movimento do exercício 5, com uma tornozeleira discreta na perna que se movimenta. Coxa apoiada e tronco estável.' },
-  { n: 7, group: 'Tornozelos e pés', slug: 'ankle_pumps', file: 'ankle_pumps.json', name: 'Bombeamento de tornozelos', view: 'Perfil', props: 'Cama', focus: 'Tornozelos (dorsi e plantiflexão)', tier: 3, rig: 'Decúbito dorsal; inclinação do pé já existe',
-    desc: 'Deitado de costas, pernas estendidas. Movimenta os dois tornozelos lentamente, pontas dos pés para o corpo e depois para longe. Pernas apoiadas.' },
-  { n: 8, group: 'Tornozelos e pés', slug: 'standing_heel_raise', file: 'standing_heel_raise.json', name: 'Elevação dos calcanhares, com apoio', view: 'Perfil', props: 'Cadeira (encosto)', focus: 'Tríceps sural', tier: 2, rig: 'Mãos fixas no encosto (IK de braço)',
-    desc: 'Mãos no encosto da cadeira. Eleva os dois calcanhares, apoiado na parte da frente dos pés, e abaixa lentamente. Corpo alinhado.' },
-  { n: 9, group: 'Equilíbrio e prevenção de quedas', slug: 'feet_together_stance', file: 'feet_together_stance.json', name: 'Em pé com os pés unidos', view: 'Frente', props: 'Bancada ao alcance', focus: 'Equilíbrio estático', tier: 3, rig: 'Vista frontal e bancada',
-    desc: 'Em pé, pés unidos, braços relaxados, bancada estável ao alcance das mãos. Pequenas oscilações naturais, sem deslocar os pés.' },
-  { n: 10, group: 'Equilíbrio e prevenção de quedas', slug: 'semi_tandem_stance', file: 'semi_tandem_stance.json', name: 'Em pé em semitandem', view: 'Diagonal', props: 'Bancada ao alcance', focus: 'Equilíbrio estático', tier: 2, rig: 'Vista diagonal; postura semitandem já existe (SPPB)',
-    desc: 'Um pé parcialmente à frente do outro, ambos visíveis. Bancada ao alcance das mãos. Pequenas correções naturais de equilíbrio.' },
-  { n: 11, group: 'Marcha e capacidade funcional', slug: 'indoor_walking', file: 'indoor_walking.json', name: 'Caminhada dentro de casa', view: 'Perfil', props: 'Ambiente doméstico mínimo', focus: 'Marcha', tier: 1, rig: 'Marcha no lugar; cenário desliza no fundo',
-    desc: 'Caminhada em ritmo confortável, passos alternados, transferência de peso e balanço dos braços. Cenário desliza discretamente para manter o enquadramento.' },
-  { n: 12, group: 'Marcha e capacidade funcional', slug: 'variable_speed_walking', file: 'variable_speed_walking.json', name: 'Caminhada em diferentes velocidades', view: 'Perfil', props: 'Piso', focus: 'Marcha e cadência', tier: 1, rig: 'Marcha com cadência variável',
-    desc: 'Começa lento, acelera gradualmente para um ritmo um pouco mais rápido e desacelera até o ritmo inicial. Sem corrida, loop suave.' },
-  { n: 13, group: 'Tronco e coluna', slug: 'supine_pelvic_tilt', file: 'supine_pelvic_tilt.json', name: 'Inclinação pélvica em decúbito dorsal', view: 'Perfil', props: 'Colchonete', focus: 'Pelve e coluna lombar', tier: 3, rig: 'Decúbito e segmento lombo-pélvico',
-    desc: 'Deitado de costas, joelhos flexionados e pés apoiados. Leve inclinação da pelve, aproximando a lombar do colchonete, e retorno à posição neutra.' },
-  { n: 14, group: 'Tronco e coluna', slug: 'seated_trunk_rotation', file: 'seated_trunk_rotation.json', name: 'Rotação de tronco sentado', view: 'Diagonal', props: 'Cadeira', focus: 'Rotação torácica', tier: 3, rig: 'Rotação do tronco independente da pelve',
-    desc: 'Sentado, pés apoiados, braços cruzados sobre o peito. Gira tronco e cabeça para um lado com a pelve voltada para a frente, volta ao centro e repete para o outro lado.' },
-  { n: 15, group: 'Ombros e escápulas', slug: 'shoulder_shrugs', file: 'shoulder_shrugs.json', name: 'Elevação dos ombros', view: 'Frente', props: 'Cadeira', focus: 'Trapézio superior', tier: 3, rig: 'Vista frontal e cintura escapular',
-    desc: 'Sentado, braços relaxados. Eleva os dois ombros em direção às orelhas e abaixa lentamente. Cabeça e tronco estáveis.' },
-  { n: 16, group: 'Ombros e escápulas', slug: 'scapular_retraction', file: 'scapular_retraction.json', name: 'Retração das escápulas', view: 'Posterior diagonal', props: 'Banqueta (sem encosto, para ver as escápulas)', focus: 'Romboides e trapézio médio', tier: 3, rig: 'Vista posterior e escápulas visíveis',
-    desc: 'Sentado, braços relaxados. Aproxima suavemente as escápulas, levando os ombros para trás sem elevá-los, e retorna à posição relaxada.' },
-  { n: 17, group: 'Cotovelos, punhos e mãos', slug: 'elbow_flexion', file: 'elbow_flexion.json', name: 'Flexão e extensão de cotovelo', view: 'Diagonal', props: 'Cadeira', focus: 'Bíceps braquial', tier: 2, rig: 'Ângulos de braço já existem; vista diagonal',
-    desc: 'Sentado, braço ao lado do tronco, palma para a frente. Flexiona o cotovelo levando a mão ao ombro e estende lentamente. Braço junto ao corpo.' },
-  { n: 18, group: 'Cotovelos, punhos e mãos', slug: 'elbow_flexion_dumbbell', file: 'elbow_flexion_dumbbell.json', name: 'Flexão de cotovelo com peso leve', view: 'Diagonal', props: 'Cadeira, halter pequeno', focus: 'Bíceps com carga', tier: 2, rig: 'Acessório na mão',
-    desc: 'Mesmo movimento do exercício 17, com um pequeno halter. Aproxima o peso do ombro e abaixa o antebraço lentamente. Tronco estável.' },
-  { n: 19, group: 'Respiração e expansão torácica', slug: 'diaphragmatic_breathing', file: 'diaphragmatic_breathing.json', name: 'Respiração diafragmática', view: 'Lateral elevada', props: 'Colchonete, apoio de cabeça', focus: 'Diafragma', tier: 3, rig: 'Decúbito e contorno de tórax e abdômen',
-    desc: 'Deitado, joelhos flexionados, uma mão no tórax e outra no abdômen. Inspiração lenta com elevação suave do abdômen, expiração com retorno gradual.' },
-  { n: 20, group: 'Respiração e expansão torácica', slug: 'pursed_lip_breathing', file: 'pursed_lip_breathing.json', name: 'Respiração com lábios semicerrados', view: 'Perfil', props: 'Cadeira', focus: 'Padrão expiratório', tier: 3, rig: 'Contorno de tronco e detalhe de boca na cabeça',
-    desc: 'Sentado, ombros relaxados. Inspira pelo nariz e expira lentamente com lábios semicerrados. Expiração mais longa que a inspiração, expressão tranquila.' },
-];
+// Catálogo em catalog.json: áreas, testes de referência e exercícios.
+let AREAS = [], EXERCISES = [], REFERENCES = [];
+const exerciseFile = ex => `exercises/${ex.area}/${ex.slug}.json`;
 
 const TIER_LABEL = { 1: 'Rig atual', 2: 'Extensão pequena', 3: 'Rig novo' };
-const REFERENCES = [
-  { id: 'sts', label: 'Sentar e levantar', file: 'five_times_sit_to_stand.json', caption: '5xSTS: postura sentada, cadeira e transição para em pé. Base para os exercícios sentados.', trim: [0, 120] },
-  { id: 'balance', label: 'Equilíbrio SPPB', file: 'sppb_balance.json', caption: 'SPPB: posturas de pés unidos, semitandem e tandem com oscilação. Base para os exercícios 9 e 10.' },
-  { id: 'reach', label: 'Alcance funcional', file: 'functional_reach.json', caption: 'Alcance funcional: braço elevado e inclinação controlada do tronco, em perfil.' },
-  { id: 'walk', label: 'Marcha 4 m', file: 'sppb_gait_speed.json', caption: 'SPPB marcha: ciclo de passada, balanço dos braços e sombra. Base para os exercícios 11 e 12.' },
-];
+
 
 // ---------- exercise cards
 const groupsEl = document.getElementById('groups');
@@ -287,6 +243,7 @@ function el(tag, attrs = {}, children = []) {
 
 const cardStages = [];
 function card(ex) {
+  ex.file = exerciseFile(ex);
   const slot = ex.file
     ? el('div', { class: 'stage', role: 'img', 'aria-label': `Animação do exercício ${ex.n}: ${ex.name}` })
     : el('div', { class: 'slot' }, el('p', {}, [
@@ -301,6 +258,7 @@ function card(ex) {
       el('div', { class: 'chips' }, [
         el('span', { class: `chip tier tier-${ex.tier}`, text: TIER_LABEL[ex.tier] }),
         el('span', { class: 'chip', text: ex.view }),
+        ex.batch !== 'base' && el('span', { class: 'chip', text: 'Novo' }),
       ]),
     ]),
   ]);
@@ -320,13 +278,14 @@ function renderGroups() {
   groupsEl.replaceChildren();
   const list = EXERCISES.filter(e => !activeTier || e.tier === activeTier);
   if (!list.length) { groupsEl.append(el('p', { class: 'empty', text: 'Nenhum exercício neste filtro.' })); return; }
-  const order = [...new Set(EXERCISES.map(e => e.group))];
-  order.forEach((g, i) => {
-    const items = list.filter(e => e.group === g);
+  const order = AREAS.filter(a => EXERCISES.some(e => e.area === a.id));
+  order.forEach((area, i) => {
+    const g = area.name;
+    const items = list.filter(e => e.area === area.id);
     if (!items.length) return;
     groupsEl.append(el('section', { class: 'group' }, [
       el('div', { class: 'group-head' }, [
-        el('span', { class: 'n', text: `${i + 1}/10` }),
+        el('span', { class: 'n', text: `${i + 1}/${order.length}` }),
         el('h2', { text: g, style: 'font-size:1.08rem' }),
       ]),
       el('div', { class: 'cards' }, items.map(card)),
@@ -335,6 +294,7 @@ function renderGroups() {
   if (typeof mountCards === 'function') mountCards();
 }
 
+function renderFilters() {
 [[0, 'Todos'], [1, TIER_LABEL[1]], [2, TIER_LABEL[2]], [3, TIER_LABEL[3]]].forEach(([tier, label]) => {
   const count = tier ? EXERCISES.filter(e => e.tier === tier).length : EXERCISES.length;
   const b = el('button', { type: 'button', 'aria-pressed': String(tier === activeTier), text: `${label} · ${count}` });
@@ -345,8 +305,11 @@ function renderGroups() {
   });
   filtersEl.append(b);
 });
+document.getElementById('sum-total').textContent = EXERCISES.length;
 document.getElementById('sum-t1').textContent = EXERCISES.filter(e => e.tier === 1).length;
-document.getElementById('sum-done').textContent = EXERCISES.filter(e => e.file).length;
+document.getElementById('sum-done').textContent = EXERCISES.length;
+document.getElementById('sum-areas').textContent = new Set(EXERCISES.map(e => e.area)).size;
+}
 
 // ---------- role legend
 const ROLES = ['figure', 'figure-back', 'prop', 'prop-soft', 'floor', 'floor-plane', 'guide', 'marker', 'highlight', 'stage', 'shadow'];
@@ -360,7 +323,7 @@ const playBtn = document.getElementById('play');
 const captionEl = document.getElementById('ref-caption');
 const pickerEl = document.getElementById('ref-picker');
 const cache = {};
-let anim = null, current = REFERENCES[0], playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+let anim = null, current = null, playing = !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function hexToRgba(hex) {
   const h = hex.trim().replace('#', '');
@@ -398,6 +361,7 @@ async function load(ref, keepFrame) {
   }
 }
 
+function renderReferences() {
 REFERENCES.forEach(ref => {
   const b = el('button', { type: 'button', 'aria-pressed': String(ref === current), text: ref.label });
   b.addEventListener('click', () => {
@@ -409,6 +373,7 @@ REFERENCES.forEach(ref => {
   });
   pickerEl.append(b);
 });
+}
 
 function syncPlay() {
   playBtn.textContent = playing ? 'Pausar' : 'Reproduzir';
@@ -449,14 +414,27 @@ async function mountCards(keepFrame) {
   }
 }
 
-const reload = () => { load(current, true); mountCards(true); };
+const reload = () => { if (current) load(current, true); mountCards(true); };
 matchMedia('(prefers-color-scheme: dark)').addEventListener('change', reload);
 new MutationObserver(reload).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
 
-captionEl.textContent = current.caption;
 syncPlay();
-load(current, false);
-renderGroups();
+(async () => {
+  try {
+    const res = await fetch('catalog.json');
+    if (!res.ok) throw new Error(res.status);
+    ({ areas: AREAS, exercises: EXERCISES, references: REFERENCES } = await res.json());
+  } catch (e) {
+    groupsEl.replaceChildren(el('p', { class: 'empty', text: 'Não foi possível carregar o catálogo (catalog.json).' }));
+    return;
+  }
+  current = REFERENCES[0];
+  captionEl.textContent = current.caption;
+  renderReferences();
+  renderFilters();
+  load(current, false);
+  renderGroups();
+})();
 </script>
 
 </body></html>

@@ -630,6 +630,84 @@
       "tier": 2,
       "rig": "Rolo de toalha sob o joelho; joelho fixo, só a perna se move",
       "desc": "Deitado, com uma toalha enrolada sob o joelho. Estende o joelho elevando o calcanhar, segura e abaixa devagar, com a parte de trás do joelho sempre apoiada no rolo."
+    },
+    {
+      "n": 44,
+      "area": "ombros_escapulas",
+      "batch": "lote-2",
+      "slug": "seated_band_row",
+      "name": "Remada sentada com faixa elástica",
+      "view": "Posterior diagonal",
+      "props": "Banqueta, faixa elástica presa na porta",
+      "focus": "Romboides, trapézio médio e dorsal",
+      "tier": 2,
+      "rig": "IK de braço com faixa até a âncora; retração das escápulas",
+      "desc": "Sentado de frente para a porta, com a faixa presa na altura do peito. Puxa a faixa até as mãos chegarem ao lado das costelas, cotovelos junto ao corpo e escápulas aproximadas, e volta devagar."
+    },
+    {
+      "n": 45,
+      "area": "ombros_escapulas",
+      "batch": "lote-2",
+      "slug": "band_pull_apart",
+      "name": "Abertura de braços com faixa elástica",
+      "view": "Frente diagonal",
+      "props": "Faixa elástica",
+      "focus": "Deltoide posterior e romboides",
+      "tier": 2,
+      "rig": "Braços estendidos em IK na altura dos ombros; faixa entre as mãos",
+      "desc": "Em pé, braços estendidos à frente na altura dos ombros, segurando a faixa. Abre os braços para os lados esticando a faixa e retorna devagar, sem dobrar os cotovelos."
+    },
+    {
+      "n": 46,
+      "area": "ombros_escapulas",
+      "batch": "lote-2",
+      "slug": "band_shoulder_external_rotation",
+      "name": "Rotação externa de ombro com faixa",
+      "view": "Frente elevada",
+      "props": "Faixa elástica presa no batente",
+      "focus": "Infraespinal e redondo menor",
+      "tier": 2,
+      "rig": "Cotovelo fixo junto ao corpo a 90°; antebraço gira para fora",
+      "desc": "Em pé, cotovelo junto ao corpo e dobrado a 90°, segurando a faixa presa no batente do outro lado. Gira o antebraço para fora, mantendo o cotovelo no lugar, e retorna devagar."
+    },
+    {
+      "n": 47,
+      "area": "quadril_gluteos",
+      "batch": "lote-2",
+      "slug": "seated_band_hip_abduction",
+      "name": "Abdução de quadril sentado com faixa",
+      "view": "Frente elevada",
+      "props": "Cadeira, faixa elástica nas coxas",
+      "focus": "Glúteo médio e abdutores",
+      "tier": 2,
+      "rig": "Joelhos se afastam em IK com os pés fixos; faixa sobre as coxas",
+      "desc": "Sentado, faixa em volta das coxas logo acima dos joelhos e pés apoiados. Afasta os joelhos contra a resistência da faixa e aproxima devagar."
+    },
+    {
+      "n": 48,
+      "area": "quadril_gluteos",
+      "batch": "lote-2",
+      "slug": "adductor_ball_squeeze",
+      "name": "Adução com bola entre os joelhos",
+      "view": "Frente",
+      "props": "Cadeira, bola macia",
+      "focus": "Adutores do quadril",
+      "tier": 2,
+      "rig": "Joelhos se aproximam em IK; bola achata entre eles",
+      "desc": "Sentado, uma bola macia entre os joelhos e pés apoiados. Aperta a bola com os joelhos, segura alguns segundos e solta devagar."
+    },
+    {
+      "n": 49,
+      "area": "joelhos",
+      "batch": "lote-2",
+      "slug": "wall_ball_squat",
+      "name": "Agachamento com bola na parede",
+      "view": "Perfil",
+      "props": "Parede, bola de exercício",
+      "focus": "Quadríceps e glúteos",
+      "tier": 2,
+      "rig": "Quadril desce em linha reta; bola rola na parede com metade do deslocamento",
+      "desc": "Em pé, bola entre a parte baixa das costas e a parede, pés um passo à frente. Flexiona os joelhos descendo o quadril enquanto a bola rola pela parede e sobe de volta devagar."
     }
   ]
 }

@@ -41,7 +41,13 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `roll`: rolo sob o joelho;
   - `ball`: bola entre os joelhos, que achata;
   - `cuff`: tornozeleira;
-  - `dumbbell`: halteres nas mãos.
+  - `dumbbell`: halteres nas mãos;
+  - `bed`: cama. O colchão fica no nível do chão do manequim, então o contato automático continua funcionando, e o piso do quarto fica 50 cm abaixo. Substitui o colchonete;
+  - `bandhands`: faixa elástica entre as mãos;
+  - `bandanchor`: faixa das duas mãos até um batente à frente;
+  - `bandanchor1`: o mesmo, só com a mão que mais se move;
+  - `bandfeet`: faixa das mãos até os pés (em pé sobre a faixa, ou sentado com a faixa nos pés);
+  - `bandknees`: alça em volta das duas coxas, logo acima dos joelhos.
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 
 ## Limites do manequim

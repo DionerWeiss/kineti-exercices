@@ -3,7 +3,9 @@
   "lib": "kineti",
   "view": "floor",
   "props": [],
-  "pocketphysio": []
+  "pocketphysio": [
+   "65b09dc54ad825d03040725f"
+  ]
  },
  "kineti-short-arc-quad": {
   "lib": "kineti",
@@ -11,7 +13,11 @@
   "props": [
    "roll"
   ],
-  "pocketphysio": []
+  "pocketphysio": [
+   "65a9272053a15212d048e7fa",
+   "65a9272053a15212d048e7fd",
+   "65b09dc54ad825d0304073d0"
+  ]
  },
  "kineti-wall-push-up": {
   "lib": "kineti",
@@ -503,6 +509,7 @@
    "chair"
   ],
   "pocketphysio": [
+   "65a9272153a15212d048ea0e",
    "660a6145b08ac7518f1f810b"
   ],
   "frame": "full"
@@ -623,11 +630,12 @@
   "view": "floor",
   "props": [],
   "pocketphysio": [
+   "65a9272053a15212d048e52f",
    "65a9272053a15212d048e6e9",
+   "65a9272053a15212d048e7f8",
    "65a9272053a15212d048e817",
    "65a9272053a15212d048e84b",
-   "65b09dc54ad825d03040734d",
-   "65a9272053a15212d048e52f"
+   "65b09dc54ad825d03040734d"
   ],
   "frame": "full"
  },
@@ -855,6 +863,7 @@
   "view": "floor",
   "props": [],
   "pocketphysio": [
+   "65a9272053a15212d048e4fd",
    "65b09dc54ad825d030407209",
    "660a61776a80d359d40dce48"
   ],
@@ -1085,9 +1094,7 @@
   "lib": "deskbreak",
   "view": "front3q",
   "props": [],
-  "pocketphysio": [
-   "660a6144b08ac7518f1f7c9d"
-  ],
+  "pocketphysio": [],
   "frame": "full"
  },
  "punches": {
@@ -1763,6 +1770,251 @@
   "pocketphysio": [
    "664744bf5c2c1f75d4d71e21",
    "660a6145b08ac7518f1f80ba"
+  ]
+ },
+ "kineti-band-pull-apart": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "bandhands"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7c9d",
+   "660a6144b08ac7518f1f7cce",
+   "660a6144b08ac7518f1f7e9b",
+   "660a6145b08ac7518f1f8045",
+   "664744bf5c2c1f75d4d71da1"
+  ]
+ },
+ "kineti-seated-band-row": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "chair",
+   "bandanchor"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f2b"
+  ]
+ },
+ "kineti-band-shoulder-external-rotation": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "bandanchor1"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8028",
+   "660a6145b08ac7518f1f802d"
+  ]
+ },
+ "kineti-seated-band-hip-abduction": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "chair",
+   "bandknees"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-standing-band-row": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bandanchor"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cd0",
+   "660a6144b08ac7518f1f7cd6",
+   "660a6144b08ac7518f1f7cd7"
+  ]
+ },
+ "kineti-band-lateral-raise": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "bandfeet"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f800d"
+  ]
+ },
+ "kineti-band-front-raise": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bandfeet"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e13"
+  ]
+ },
+ "kineti-long-sit-band-plantar-flexion": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bed",
+   "bandfeet"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e514",
+   "65a9272053a15212d048e530",
+   "660a6144b08ac7518f1f7d88"
+  ]
+ },
+ "kineti-side-lying-shoulder-abduction": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048ea32",
+   "65b09dc54ad825d03040720e",
+   "65b09dc54ad825d030407325"
+  ]
+ },
+ "kineti-side-lying-shoulder-extension": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048e931",
+   "65b09dc54ad825d03040732b"
+  ]
+ },
+ "kineti-supine-shoulder-flexion-90": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65b09dc54ad825d03040732e"
+  ]
+ },
+ "kineti-supine-pullover": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e90a"
+  ]
+ },
+ "kineti-slr-external-rotation": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e7fe",
+   "65b09dc54ad825d03040733b"
+  ]
+ },
+ "kineti-bed-rolling": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-long-sit-ankle-inversion-eversion": {
+  "lib": "kineti",
+  "view": "top3q",
+  "props": [
+   "bed"
+  ],
+  "frame": "lower",
+  "pocketphysio": [
+   "65a9272053a15212d048e4f4",
+   "65a9272153a15212d048eae4",
+   "65b09dc54ad825d03040720b",
+   "65b09dc54ad825d03040720c",
+   "65b09dc54ad825d03040720d",
+   "660a6144b08ac7518f1f7d73",
+   "660a6144b08ac7518f1f7d78"
+  ]
+ },
+ "kineti-side-lying-shoulder-abduction-dumbbell": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed",
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65b09dc54ad825d030407310",
+   "660a6145b08ac7518f1f800f",
+   "664744bf5c2c1f75d4d71e07"
+  ]
+ },
+ "kineti-supine-pullover-dumbbell": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "bed",
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e90d"
+  ]
+ },
+ "kineti-band-shoulder-extension": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bandanchor"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f801b",
+   "660a6145b08ac7518f1f801c",
+   "660a6145b08ac7518f1f8022",
+   "664744bf5c2c1f75d4d71e0a"
+  ]
+ },
+ "kineti-band-shoulder-internal-rotation": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "bandanchor1"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f804c"
+  ]
+ },
+ "kineti-band-pulldown": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "bandhands"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cb7"
   ]
  }
 }

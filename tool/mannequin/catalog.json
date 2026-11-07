@@ -44,6 +44,20 @@
  "license": "Manequim e movimentos do desk-break: MIT, Copyright (c) 2026 Shlomy Reshef (parametric.co.il), github.com/shlomorsh/desk-break",
  "exercises": [
   {
+   "slug": "kineti-bed-rolling",
+   "lib": "kineti",
+   "name": "Rolar na cama",
+   "desc": "Deitado de costas na cama, dobra um joelho, leva o braço desse lado para o outro e rola até ficar de lado. Volta devagar à posição inicial.",
+   "focus": "Ombros, tronco e quadril coordenados",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral elevada",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-bed-rolling.mp4",
+   "kineti_slug": "bed_rolling",
+   "substitui": "bed_rolling",
+   "pocketphysio": []
+  },
+  {
    "slug": "side-lying-leg-lift",
    "lib": "deskbreak",
    "name": "Abdução de quadril de lado",
@@ -74,7 +88,9 @@
    "video": "build/mannequin/videos/kineti-supine-hip-abduction.mp4",
    "kineti_slug": "supine_hip_abduction",
    "substitui": "supine_hip_abduction",
-   "pocketphysio": []
+   "pocketphysio": [
+    "65b09dc54ad825d03040725f"
+   ]
   },
   {
    "slug": "side-leg-raise",
@@ -105,6 +121,20 @@
    "video": "build/mannequin/videos/kineti-standing-hip-abduction-supported.mp4",
    "kineti_slug": "standing_hip_abduction",
    "substitui": "standing_hip_abduction",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-seated-band-hip-abduction",
+   "lib": "kineti",
+   "name": "Abdução de quadril sentado com faixa elástica",
+   "desc": "Sentado, com a faixa em volta das coxas logo acima dos joelhos, afasta os joelhos contra a resistência e aproxima devagar.",
+   "focus": "Glúteo médio",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Faixa elástica nas coxas",
+   "video": "build/mannequin/videos/kineti-seated-band-hip-abduction.mp4",
+   "kineti_slug": "seated_band_hip_abduction",
+   "substitui": "seated_band_hip_abduction",
    "pocketphysio": []
   },
   {
@@ -595,11 +625,12 @@
    "kineti_slug": "heel_slides",
    "substitui": "heel_slides",
    "pocketphysio": [
+    "65a9272053a15212d048e52f",
     "65a9272053a15212d048e6e9",
+    "65a9272053a15212d048e7f8",
     "65a9272053a15212d048e817",
     "65a9272053a15212d048e84b",
-    "65b09dc54ad825d03040734d",
-    "65a9272053a15212d048e52f"
+    "65b09dc54ad825d03040734d"
    ]
   },
   {
@@ -621,6 +652,23 @@
     "660a61776a80d359d40dce9c",
     "65a9272053a15212d048e808",
     "65a9272053a15212d048e4e2"
+   ]
+  },
+  {
+   "slug": "kineti-slr-external-rotation",
+   "lib": "kineti",
+   "name": "Elevação da perna estendida com rotação externa",
+   "desc": "Deitado de costas na cama, com um joelho dobrado, gira a outra perna para fora e eleva-a estendida até a altura do joelho dobrado. Desce devagar.",
+   "focus": "Quadríceps e flexores do quadril",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-slr-external-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7fe",
+    "65b09dc54ad825d03040733b"
    ]
   },
   {
@@ -684,7 +732,11 @@
    "video": "build/mannequin/videos/kineti-short-arc-quad.mp4",
    "kineti_slug": "short_arc_quad",
    "substitui": "short_arc_quad",
-   "pocketphysio": []
+   "pocketphysio": [
+    "65a9272053a15212d048e7fa",
+    "65a9272053a15212d048e7fd",
+    "65b09dc54ad825d0304073d0"
+   ]
   },
   {
    "slug": "prone-heel-to-seat",
@@ -899,6 +951,7 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
+    "65a9272053a15212d048e4fd",
     "65b09dc54ad825d030407209",
     "660a61776a80d359d40dce48"
    ]
@@ -1023,6 +1076,46 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e4ff"
+   ]
+  },
+  {
+   "slug": "kineti-long-sit-band-plantar-flexion",
+   "lib": "kineti",
+   "name": "Flexão plantar com faixa elástica sentado",
+   "desc": "Sentado na cama com as pernas estendidas e a faixa em volta dos pés, aponta os pés para longe contra a resistência e volta devagar.",
+   "focus": "Panturrilhas",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Cama, Faixa elástica sob os pés",
+   "video": "build/mannequin/videos/kineti-long-sit-band-plantar-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e514",
+    "65a9272053a15212d048e530",
+    "660a6144b08ac7518f1f7d88"
+   ]
+  },
+  {
+   "slug": "kineti-long-sit-ankle-inversion-eversion",
+   "lib": "kineti",
+   "name": "Inversão e eversão de tornozelo sentado",
+   "desc": "Sentado na cama com as pernas estendidas, vira as solas dos pés para dentro e depois para fora, devagar.",
+   "focus": "Mobilidade do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Frontal, pés em destaque",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-long-sit-ankle-inversion-eversion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4f4",
+    "65a9272153a15212d048eae4",
+    "65b09dc54ad825d03040720b",
+    "65b09dc54ad825d03040720c",
+    "65b09dc54ad825d03040720d",
+    "660a6144b08ac7518f1f7d73",
+    "660a6144b08ac7518f1f7d78"
    ]
   },
   {
@@ -2211,6 +2304,7 @@
    "kineti_slug": "seated_trunk_rotation",
    "substitui": "seated_trunk_rotation",
    "pocketphysio": [
+    "65a9272153a15212d048ea0e",
     "660a6145b08ac7518f1f810b"
    ]
   },
@@ -2280,6 +2374,58 @@
    ]
   },
   {
+   "slug": "kineti-side-lying-shoulder-abduction",
+   "lib": "kineti",
+   "name": "Abdução de ombro deitado de lado",
+   "desc": "Deitado de lado na cama, com a cabeça apoiada no braço de baixo, eleva o braço de cima estendido em direção ao teto e desce devagar.",
+   "focus": "Deltoide",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-side-lying-shoulder-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea32",
+    "65b09dc54ad825d03040720e",
+    "65b09dc54ad825d030407325"
+   ]
+  },
+  {
+   "slug": "kineti-side-lying-shoulder-abduction-dumbbell",
+   "lib": "kineti",
+   "name": "Abdução de ombro deitado de lado com halter",
+   "desc": "Deitado de lado na cama, com um halter na mão de cima, eleva o braço estendido em direção ao teto e desce devagar.",
+   "focus": "Deltoide",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cama, Halteres",
+   "video": "build/mannequin/videos/kineti-side-lying-shoulder-abduction-dumbbell.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407310",
+    "660a6145b08ac7518f1f800f",
+    "664744bf5c2c1f75d4d71e07"
+   ]
+  },
+  {
+   "slug": "kineti-band-lateral-raise",
+   "lib": "kineti",
+   "name": "Abdução de ombros com faixa elástica",
+   "desc": "Em pé sobre a faixa, com as pontas nas mãos, eleva os braços para os lados até a altura dos ombros e desce devagar.",
+   "focus": "Deltoide",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica sob os pés",
+   "video": "build/mannequin/videos/kineti-band-lateral-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f800d"
+   ]
+  },
+  {
    "slug": "kineti-lateral-raise-dumbbell",
    "lib": "kineti",
    "name": "Abdução de ombros com halteres",
@@ -2327,6 +2473,26 @@
    "pocketphysio": []
   },
   {
+   "slug": "kineti-band-pull-apart",
+   "lib": "kineti",
+   "name": "Abertura de braços com faixa elástica",
+   "desc": "Em pé, com os braços estendidos à frente na altura dos ombros segurando a faixa, abre os braços para os lados esticando a faixa e volta devagar.",
+   "focus": "Escápulas e deltoide posterior",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica",
+   "video": "build/mannequin/videos/kineti-band-pull-apart.mp4",
+   "kineti_slug": "band_pull_apart",
+   "substitui": "band_pull_apart",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7c9d",
+    "660a6144b08ac7518f1f7cce",
+    "660a6144b08ac7518f1f7e9b",
+    "660a6145b08ac7518f1f8045",
+    "664744bf5c2c1f75d4d71da1"
+   ]
+  },
+  {
    "slug": "chest-opener-clasp",
    "lib": "deskbreak",
    "name": "Abertura do peito com mãos atrás",
@@ -2353,11 +2519,9 @@
    "view": "Frontal 3/4",
    "props": "—",
    "video": "build/mannequin/videos/pull-aparts.mp4",
-   "kineti_slug": "band_pull_apart",
+   "kineti_slug": "",
    "substitui": "",
-   "pocketphysio": [
-    "660a6144b08ac7518f1f7c9d"
-   ]
+   "pocketphysio": []
   },
   {
    "slug": "open-close-swings",
@@ -2508,6 +2672,42 @@
    ]
   },
   {
+   "slug": "kineti-side-lying-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão de ombro deitado de lado",
+   "desc": "Deitado de lado na cama, com o braço de cima à frente, leva-o estendido para trás e volta devagar.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-side-lying-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e931",
+    "65b09dc54ad825d03040732b"
+   ]
+  },
+  {
+   "slug": "kineti-band-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão de ombros com faixa elástica",
+   "desc": "Em pé, com a faixa presa à frente e os braços estendidos, puxa os braços para baixo e para trás e volta devagar.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa no batente",
+   "video": "build/mannequin/videos/kineti-band-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f801b",
+    "660a6145b08ac7518f1f801c",
+    "660a6145b08ac7518f1f8022",
+    "664744bf5c2c1f75d4d71e0a"
+   ]
+  },
+  {
    "slug": "kineti-wall-push-up",
    "lib": "kineti",
    "name": "Flexão de braços na parede",
@@ -2520,6 +2720,38 @@
    "kineti_slug": "wall_push_up",
    "substitui": "wall_push_up",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-supine-shoulder-flexion-90",
+   "lib": "kineti",
+   "name": "Flexão de ombro a 90° deitado",
+   "desc": "Deitado de costas na cama, eleva um braço estendido até apontar para o teto e desce devagar.",
+   "focus": "Flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-supine-shoulder-flexion-90.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040732e"
+   ]
+  },
+  {
+   "slug": "kineti-band-front-raise",
+   "lib": "kineti",
+   "name": "Flexão de ombros com faixa elástica",
+   "desc": "Em pé sobre a faixa, com as pontas nas mãos, eleva os braços estendidos pela frente até a altura dos ombros e desce devagar.",
+   "focus": "Deltoide anterior",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica sob os pés",
+   "video": "build/mannequin/videos/kineti-band-front-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e13"
+   ]
   },
   {
    "slug": "kineti-seated-front-raise-dumbbell",
@@ -2569,6 +2801,88 @@
    "pocketphysio": [
     "65a9272153a15212d048ea55",
     "65a9272153a15212d048e933"
+   ]
+  },
+  {
+   "slug": "kineti-supine-pullover",
+   "lib": "kineti",
+   "name": "Pullover deitado",
+   "desc": "Deitado de costas na cama, com os braços apontando para o teto, leva os braços estendidos acima da cabeça e volta.",
+   "focus": "Dorsais e mobilidade do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-supine-pullover.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e90a"
+   ]
+  },
+  {
+   "slug": "kineti-supine-pullover-dumbbell",
+   "lib": "kineti",
+   "name": "Pullover deitado com halteres",
+   "desc": "Deitado de costas na cama, com os halteres apontando para o teto, leva os braços acima da cabeça e volta devagar.",
+   "focus": "Dorsais e mobilidade do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cama, Halteres",
+   "video": "build/mannequin/videos/kineti-supine-pullover-dumbbell.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e90d"
+   ]
+  },
+  {
+   "slug": "kineti-band-pulldown",
+   "lib": "kineti",
+   "name": "Puxada com faixa elástica em pé",
+   "desc": "Em pé, com os braços acima da cabeça segurando a faixa, puxa os cotovelos para baixo formando um W e volta devagar.",
+   "focus": "Dorsais e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica",
+   "video": "build/mannequin/videos/kineti-band-pulldown.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cb7"
+   ]
+  },
+  {
+   "slug": "kineti-standing-band-row",
+   "lib": "kineti",
+   "name": "Remada em pé com faixa elástica",
+   "desc": "Com o tronco inclinado à frente e os joelhos soltos, puxa a faixa presa à frente até as mãos chegarem às costelas e volta devagar.",
+   "focus": "Dorsais e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa no batente",
+   "video": "build/mannequin/videos/kineti-standing-band-row.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cd0",
+    "660a6144b08ac7518f1f7cd6",
+    "660a6144b08ac7518f1f7cd7"
+   ]
+  },
+  {
+   "slug": "kineti-seated-band-row",
+   "lib": "kineti",
+   "name": "Remada sentado com faixa elástica",
+   "desc": "Sentado, com a faixa presa à frente na altura do peito, puxa até as mãos chegarem ao lado das costelas, com os cotovelos junto ao corpo, e volta devagar.",
+   "focus": "Dorsais e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Faixa elástica presa no batente",
+   "video": "build/mannequin/videos/kineti-seated-band-row.mp4",
+   "kineti_slug": "seated_band_row",
+   "substitui": "seated_band_row",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f2b"
    ]
   },
   {
@@ -2673,6 +2987,23 @@
    ]
   },
   {
+   "slug": "kineti-band-shoulder-external-rotation",
+   "lib": "kineti",
+   "name": "Rotação externa de ombro com faixa elástica",
+   "desc": "Em pé, com o cotovelo junto ao corpo e dobrado a 90°, segurando a faixa presa no batente, gira o antebraço para fora sem mexer o cotovelo e volta devagar.",
+   "focus": "Rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa no batente",
+   "video": "build/mannequin/videos/kineti-band-shoulder-external-rotation.mp4",
+   "kineti_slug": "band_shoulder_external_rotation",
+   "substitui": "band_shoulder_external_rotation",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8028",
+    "660a6145b08ac7518f1f802d"
+   ]
+  },
+  {
    "slug": "external-rotation",
    "lib": "deskbreak",
    "name": "Rotação externa de ombros em pé",
@@ -2686,6 +3017,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048eadb"
+   ]
+  },
+  {
+   "slug": "kineti-band-shoulder-internal-rotation",
+   "lib": "kineti",
+   "name": "Rotação interna de ombro com faixa elástica",
+   "desc": "Em pé, com o cotovelo junto ao corpo e dobrado a 90°, segurando a faixa presa ao lado, gira o antebraço para dentro em direção à barriga e volta devagar.",
+   "focus": "Rotadores internos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa no batente",
+   "video": "build/mannequin/videos/kineti-band-shoulder-internal-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f804c"
    ]
   },
   {

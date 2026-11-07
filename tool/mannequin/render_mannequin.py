@@ -142,7 +142,11 @@ def palm(side):
 
 # --- set
 bpy.ops.mesh.primitive_plane_add(size=400)
-bpy.context.object.data.materials.append(mat('floor', '#E6EAF0', 0.95))
+FLOOR = bpy.context.object
+FLOOR.data.materials.append(mat('floor', '#E6EAF0', 0.95))
+BED_TOP = 0.5  # with a bed, the mattress top is the mannequin's floor and the room floor sits this far below
+MATTC = mat('mattress', '#F1F4F8', 0.9)
+BANDC = mat('band', '#FF6D00', 0.5)
 MATC = mat('mat', '#B9C6D6', 0.9)
 CHAIRC = mat('chair', '#A0AEC0', 0.7)
 WALLC = mat('wall', '#E8ECF1', 0.95)
@@ -193,6 +197,47 @@ def chair(y_seat, y_back, back_top=1.0):
     for x in (-0.2, 0.2):
         for y in (y_seat - 0.19 * sgn, y_back):
             box((x, y, 0.205), (0.03, 0.03, 0.41), CHAIRC)
+
+
+def rod(r, m):
+    """Unit-length cylinder along +Z from its origin, to be placed with seg_matrix."""
+    bpy.ops.mesh.primitive_cylinder_add(radius=r, depth=1, vertices=16, location=(0, 0, 0.5))
+    o = bpy.context.object
+    bpy.ops.object.transform_apply(location=True)
+    o.data.materials.append(m)
+    bpy.ops.object.shade_smooth()
+    o.rotation_mode = 'QUATERNION'
+    temp.append(o)
+    return o
+
+
+def seg_matrix(a, b):
+    v = b - a
+    return Matrix.LocRotScale(a, Vector((0, 0, 1)).rotation_difference(v), Vector((1, 1, max(v.length, 1e-4))))
+
+
+def animate(objs_fns, f0, f1):
+    """Keyframes each object on every frame from a function of the current pose returning its world matrix."""
+    for f in range(f0, f1 + 1):
+        scene.frame_set(f)
+        for o, fn in objs_fns:
+            o.matrix_world = fn()
+            for path in ('location', 'rotation_quaternion', 'scale'):
+                o.keyframe_insert(path, frame=f)
+    scene.frame_set(f0)
+
+
+def foot_tip(s):
+    return arm.matrix_world @ arm.pose.bones['foot' + s].tail
+
+
+def bed(c, lx, ly):
+    """Mattress whose top is the mannequin's floor (z = 0), on a frame, the room floor BED_TOP below."""
+    box((c.x, c.y, -0.09), (lx, ly, 0.18), MATTC)['noframe'] = True
+    box((c.x, c.y, -0.3), (lx + 0.06, ly + 0.06, 0.24), CHAIRC)['noframe'] = True
+    for dx in (-1, 1):
+        for dy in (-1, 1):
+            box((c.x + dx * (lx / 2 - 0.05), c.y + dy * (ly / 2 - 0.05), -0.46), (0.06, 0.06, 0.08), CHAIRC)['noframe'] = True
 
 
 def chair_side(x_back, y, out, back_top):
@@ -269,7 +314,14 @@ for job in JOBS:
     if seated:
         chair(0.12, 0.33, 1.0)
     blo, bhi, bpts = motion_bounds(f0, f1)
-    if not seated and not props & {'support', 'side', 'wall'} and bhi.z < 1.4:
+    FLOOR.location.z = -BED_TOP if 'bed' in props else 0
+    if 'bed' in props:
+        c, ext = (blo + bhi) / 2, bhi - blo
+        long_x = ext.x > ext.y
+        lx = max(ext.x + 0.25, 2.0 if long_x else 0.95)
+        ly = max(ext.y + 0.25, 0.95 if long_x else 2.0)
+        bed(c, lx, ly)
+    elif not seated and not props & {'support', 'side', 'wall'} and bhi.z < 1.4:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.3, 1.9 if long_x else 0.66)
@@ -329,6 +381,59 @@ for job in JOBS:
             ball.keyframe_insert('location', frame=f)
             ball.keyframe_insert('scale', frame=f)
 
+    # Elastic bands, re-placed on every frame.
+    if 'bandhands' in props:  # held between the hands
+        animate([(rod(0.008, BANDC), lambda: seg_matrix(palm('L'), palm('R')))], f0, f1)
+    if props & {'bandanchor', 'bandanchor1'}:  # tied to a door frame: both hands, or only the hand that moves most
+        scene.frame_set(f0)
+        sides = ['L', 'R']
+        if 'bandanchor1' in props:
+            travel = {}
+            for sd in sides:
+                ps = []
+                for f in range(f0, f1 + 1, 3):
+                    scene.frame_set(f)
+                    ps.append(palm(sd))
+                travel[sd] = max((a - ps[0]).length for a in ps)
+            sides = [max(travel, key=travel.get)]
+            scene.frame_set(f0)
+        p0 = sum((palm(sd) for sd in sides), Vector()) / len(sides)
+        sh = sum((bone_head('arm' + sd) for sd in sides), Vector()) / len(sides)
+        d = p0 - sh
+        d.z = 0
+        anchor = p0 + (d.normalized() if d.length > 0.05 else Vector((0, -1, 0))) * 0.55
+        box((anchor.x, anchor.y, 1.0), (0.05, 0.05, 2.0), CHAIRC)['noframe'] = True
+        animate([(rod(0.008, BANDC), lambda sd=sd: seg_matrix(palm(sd), anchor)) for sd in sides], f0, f1)
+    if 'bandfeet' in props:  # around the feet, both ends in the hands
+        mid = lambda: (foot_tip('L') + foot_tip('R')) / 2
+        animate([(rod(0.008, BANDC), lambda sd=sd: seg_matrix(palm(sd), mid())) for sd in ('L', 'R')], f0, f1)
+    if 'bandknees' in props:  # a loop around both thighs, just above the knees
+        RT = 0.072
+
+        def ring_c(sd):
+            k, h = bone_head('knee' + sd), bone_head('leg' + sd)
+            return k + (h - k).normalized() * 0.09, (k - h).normalized()
+
+        def ring(sd):
+            c, dr = ring_c(sd)
+            return Matrix.LocRotScale(c, Vector((0, 0, 1)).rotation_difference(dr), Vector((1, 1, 1)))
+
+        def strand(sgn):
+            (cl, dl), (cr, dr_) = ring_c('L'), ring_c('R')
+            u = (dl + dr_).normalized().cross(cr - cl).normalized() * RT * sgn
+            return seg_matrix(cl + u, cr + u)
+
+        tori = []
+        for _ in range(2):
+            bpy.ops.mesh.primitive_torus_add(major_radius=RT, minor_radius=0.008, major_segments=32, minor_segments=8)
+            o = bpy.context.object
+            o.data.materials.append(BANDC)
+            o.rotation_mode = 'QUATERNION'
+            temp.append(o)
+            tori.append(o)
+        animate([(tori[0], lambda: ring('L')), (tori[1], lambda: ring('R')),
+                 (rod(0.008, BANDC), lambda: strand(1)), (rod(0.008, BANDC), lambda: strand(-1))], f0, f1)
+
     # Frame the whole motion: the body's vertices over every sampled frame, plus the props (not the mat or wall).
     lo, hi, pts = motion_bounds(f0, f1, part=part) if part != 'full' else (blo.copy(), bhi.copy(), list(bpts))
     if part == 'full':
@@ -340,6 +445,8 @@ for job in JOBS:
             ev = o.evaluated_get(deps)
             pts += [ev.matrix_world @ v.co for v in ev.to_mesh().vertices]
             ev.to_mesh_clear()
+    if 'bed' in props and part == 'full':
+        pts += [Vector((p_.x, p_.y, -0.3)) for p_ in pts if p_.z < 0.1]  # some of the bed under the body
     if (seated or props & {'support', 'side'}) and part != 'upper':
         pts += [Vector((p_.x, p_.y, 0)) for p_ in pts if p_.z < 0.3]  # keep the floor under the feet in view
     centre, size = (lo + hi) / 2, (hi - lo)

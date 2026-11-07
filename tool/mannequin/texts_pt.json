@@ -988,5 +988,125 @@
   "Com as mãos na parede e uma perna atrás, mantém o calcanhar de trás no chão, dobra os dois joelhos e inclina o corpo à frente.",
   "Sóleo",
   "tornozelos_pes"
+ ],
+ "kineti-band-pull-apart": [
+  "Abertura de braços com faixa elástica",
+  "Em pé, com os braços estendidos à frente na altura dos ombros segurando a faixa, abre os braços para os lados esticando a faixa e volta devagar.",
+  "Escápulas e deltoide posterior",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-band-row": [
+  "Remada sentado com faixa elástica",
+  "Sentado, com a faixa presa à frente na altura do peito, puxa até as mãos chegarem ao lado das costelas, com os cotovelos junto ao corpo, e volta devagar.",
+  "Dorsais e escápulas",
+  "ombros_escapulas"
+ ],
+ "kineti-band-shoulder-external-rotation": [
+  "Rotação externa de ombro com faixa elástica",
+  "Em pé, com o cotovelo junto ao corpo e dobrado a 90°, segurando a faixa presa no batente, gira o antebraço para fora sem mexer o cotovelo e volta devagar.",
+  "Rotadores externos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-band-hip-abduction": [
+  "Abdução de quadril sentado com faixa elástica",
+  "Sentado, com a faixa em volta das coxas logo acima dos joelhos, afasta os joelhos contra a resistência e aproxima devagar.",
+  "Glúteo médio",
+  "quadril_gluteos"
+ ],
+ "kineti-standing-band-row": [
+  "Remada em pé com faixa elástica",
+  "Com o tronco inclinado à frente e os joelhos soltos, puxa a faixa presa à frente até as mãos chegarem às costelas e volta devagar.",
+  "Dorsais e escápulas",
+  "ombros_escapulas"
+ ],
+ "kineti-band-lateral-raise": [
+  "Abdução de ombros com faixa elástica",
+  "Em pé sobre a faixa, com as pontas nas mãos, eleva os braços para os lados até a altura dos ombros e desce devagar.",
+  "Deltoide",
+  "ombros_escapulas"
+ ],
+ "kineti-band-front-raise": [
+  "Flexão de ombros com faixa elástica",
+  "Em pé sobre a faixa, com as pontas nas mãos, eleva os braços estendidos pela frente até a altura dos ombros e desce devagar.",
+  "Deltoide anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-long-sit-band-plantar-flexion": [
+  "Flexão plantar com faixa elástica sentado",
+  "Sentado na cama com as pernas estendidas e a faixa em volta dos pés, aponta os pés para longe contra a resistência e volta devagar.",
+  "Panturrilhas",
+  "tornozelos_pes"
+ ],
+ "kineti-side-lying-shoulder-abduction": [
+  "Abdução de ombro deitado de lado",
+  "Deitado de lado na cama, com a cabeça apoiada no braço de baixo, eleva o braço de cima estendido em direção ao teto e desce devagar.",
+  "Deltoide",
+  "ombros_escapulas"
+ ],
+ "kineti-side-lying-shoulder-abduction-dumbbell": [
+  "Abdução de ombro deitado de lado com halter",
+  "Deitado de lado na cama, com um halter na mão de cima, eleva o braço estendido em direção ao teto e desce devagar.",
+  "Deltoide",
+  "ombros_escapulas"
+ ],
+ "kineti-side-lying-shoulder-extension": [
+  "Extensão de ombro deitado de lado",
+  "Deitado de lado na cama, com o braço de cima à frente, leva-o estendido para trás e volta devagar.",
+  "Extensores do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-shoulder-flexion-90": [
+  "Flexão de ombro a 90° deitado",
+  "Deitado de costas na cama, eleva um braço estendido até apontar para o teto e desce devagar.",
+  "Flexão do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-pullover": [
+  "Pullover deitado",
+  "Deitado de costas na cama, com os braços apontando para o teto, leva os braços estendidos acima da cabeça e volta.",
+  "Dorsais e mobilidade do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-pullover-dumbbell": [
+  "Pullover deitado com halteres",
+  "Deitado de costas na cama, com os halteres apontando para o teto, leva os braços acima da cabeça e volta devagar.",
+  "Dorsais e mobilidade do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-slr-external-rotation": [
+  "Elevação da perna estendida com rotação externa",
+  "Deitado de costas na cama, com um joelho dobrado, gira a outra perna para fora e eleva-a estendida até a altura do joelho dobrado. Desce devagar.",
+  "Quadríceps e flexores do quadril",
+  "joelhos"
+ ],
+ "kineti-long-sit-ankle-inversion-eversion": [
+  "Inversão e eversão de tornozelo sentado",
+  "Sentado na cama com as pernas estendidas, vira as solas dos pés para dentro e depois para fora, devagar.",
+  "Mobilidade do tornozelo",
+  "tornozelos_pes"
+ ],
+ "kineti-bed-rolling": [
+  "Rolar na cama",
+  "Deitado de costas na cama, dobra um joelho, leva o braço desse lado para o outro e rola até ficar de lado. Volta devagar à posição inicial.",
+  "Ombros, tronco e quadril coordenados",
+  "mobilidade_transferencias"
+ ],
+ "kineti-band-shoulder-extension": [
+  "Extensão de ombros com faixa elástica",
+  "Em pé, com a faixa presa à frente e os braços estendidos, puxa os braços para baixo e para trás e volta devagar.",
+  "Extensores do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-band-shoulder-internal-rotation": [
+  "Rotação interna de ombro com faixa elástica",
+  "Em pé, com o cotovelo junto ao corpo e dobrado a 90°, segurando a faixa presa ao lado, gira o antebraço para dentro em direção à barriga e volta devagar.",
+  "Rotadores internos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-band-pulldown": [
+  "Puxada com faixa elástica em pé",
+  "Em pé, com os braços acima da cabeça segurando a faixa, puxa os cotovelos para baixo formando um W e volta devagar.",
+  "Dorsais e escápulas",
+  "ombros_escapulas"
  ]
 }

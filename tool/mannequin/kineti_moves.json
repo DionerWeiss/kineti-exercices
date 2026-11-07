@@ -2235,6 +2235,1187 @@
      ]
     }
    ]
+  },
+  {
+   "id": "kineti-band-pull-apart",
+   "en": "Band pull-apart",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Arms forward holding the band.",
+    "Open your arms out to the sides.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -90,
+      0,
+      88
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-band-row",
+   "en": "Seated band row",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, band tied in front at chest height.",
+    "Pull your hands to your ribs, elbows close.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -85,
+      0,
+      0
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      25,
+      0,
+      12
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0,
+      -0.03
+     ],
+     "spine": [
+      -4,
+      0,
+      0
+     ]
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-band-shoulder-external-rotation",
+   "en": "Band shoulder external rotation",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Elbow at your side, bent 90 degrees, holding the band.",
+    "Turn the forearm outward.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      -25,
+      4
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      62,
+      4
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-band-hip-abduction",
+   "en": "Seated band hip abduction",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit with a band around your thighs.",
+    "Open your knees against the band.",
+    "Close slowly."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      2
+     ]
+    },
+    {
+     "leg": [
+      -88,
+      0,
+      24
+     ],
+     "knee": [
+      86,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-standing-band-row",
+   "en": "Standing band row",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lean forward, knees soft, band tied in front.",
+    "Pull your hands to your ribs.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "hips": [
+      0,
+      -50,
+      0
+     ],
+     "spine": [
+      45,
+      0,
+      0
+     ],
+     "leg": [
+      -8,
+      0,
+      0
+     ],
+     "knee": [
+      18,
+      0,
+      0
+     ],
+     "arm": [
+      -45,
+      0,
+      4
+     ]
+    },
+    {
+     "hips": [
+      0,
+      -50,
+      0
+     ],
+     "spine": [
+      45,
+      0,
+      0
+     ],
+     "leg": [
+      -8,
+      0,
+      0
+     ],
+     "knee": [
+      18,
+      0,
+      0
+     ],
+     "arm": [
+      25,
+      0,
+      8
+     ],
+     "elbow": [
+      -95,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0,
+      -0.03
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-lateral-raise",
+   "en": "Lateral raise with band",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand on the band, ends in your hands.",
+    "Raise your arms to the sides.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {},
+    {
+     "arm": [
+      0,
+      0,
+      85
+     ],
+     "elbow": [
+      -12,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-front-raise",
+   "en": "Front raise with band",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand on the band, ends in your hands.",
+    "Raise straight arms in front.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {},
+    {
+     "arm": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-long-sit-band-plantar-flexion",
+   "en": "Plantar flexion with band, long sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit, legs straight, band around your feet.",
+    "Point your feet away against the band.",
+    "Return slowly."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -55,
+      0,
+      4
+     ],
+     "elbow": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -55,
+      0,
+      4
+     ],
+     "elbow": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-side-lying-shoulder-abduction",
+   "en": "Side-lying shoulder abduction",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your side.",
+    "Raise the top arm toward the ceiling.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      0,
+      0,
+      -90
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      -170,
+      0,
+      8
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ]
+    },
+    {
+     "hips": [
+      0,
+      0,
+      -90
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      -170,
+      0,
+      8
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      90
+     ],
+     "hold": 0.4
+    }
+   ],
+   "view": "floor"
+  },
+  {
+   "id": "kineti-side-lying-shoulder-extension",
+   "en": "Side-lying shoulder extension",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your side, top arm forward.",
+    "Take the arm back.",
+    "Return slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      0,
+      0,
+      -90
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      -170,
+      0,
+      8
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "armR": [
+      -80,
+      0,
+      4
+     ]
+    },
+    {
+     "hips": [
+      0,
+      0,
+      -90
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      -170,
+      0,
+      8
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "armR": [
+      35,
+      0,
+      4
+     ],
+     "hold": 0.4
+    }
+   ],
+   "view": "floor"
+  },
+  {
+   "id": "kineti-supine-shoulder-flexion-90",
+   "en": "Supine shoulder flexion to 90",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, arms at your sides.",
+    "Raise one straight arm to point at the ceiling.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "armR": [
+      -90,
+      0,
+      4
+     ],
+     "hold": 0.4
+    }
+   ],
+   "view": "floor"
+  },
+  {
+   "id": "kineti-supine-pullover",
+   "en": "Supine pullover",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, arms pointing at the ceiling.",
+    "Lower them overhead.",
+    "Bring them back."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      4
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -165,
+      0,
+      6
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ],
+   "view": "floor"
+  },
+  {
+   "id": "kineti-slr-external-rotation",
+   "en": "Straight leg raise, leg turned out",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, one knee bent.",
+    "Turn the straight leg out and raise it.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      0,
+      35,
+      0
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "footR": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -45,
+      35,
+      0
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ],
+   "view": "floor"
+  },
+  {
+   "id": "kineti-long-sit-ankle-inversion-eversion",
+   "en": "Ankle inversion and eversion, long sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit, legs straight.",
+    "Turn the soles of your feet in, then out.",
+    "Move slowly."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      30,
+      0,
+      15
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      30,
+      0,
+      15
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      -35
+     ],
+     "hold": 0.3
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      30,
+      0,
+      15
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      30,
+      0,
+      15
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      35
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-bed-rolling",
+   "en": "Rolling in bed",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back.",
+    "Bend one knee and reach across.",
+    "Roll onto your side."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "legR": [
+      -45,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "armR": [
+      -90,
+      0,
+      -35
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      -85,
+      0
+     ],
+     "legR": [
+      -50,
+      0,
+      0
+     ],
+     "kneeR": [
+      70,
+      0,
+      0
+     ],
+     "legL": [
+      -15,
+      0,
+      0
+     ],
+     "kneeL": [
+      25,
+      0,
+      0
+     ],
+     "armR": [
+      -80,
+      0,
+      -10
+     ],
+     "armL": [
+      -90,
+      0,
+      10
+     ],
+     "neck": [
+      0,
+      -15,
+      0
+     ],
+     "hold": 0.8
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "legR": [
+      -45,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ]
+    }
+   ],
+   "view": "floor"
+  },
+  {
+   "id": "kineti-side-lying-shoulder-abduction-dumbbell",
+   "en": "Side-lying shoulder abduction with dumbbell",
+   "steps_en": [
+    "Lie on your side, dumbbell in the top hand.",
+    "Raise the arm toward the ceiling.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      0,
+      0,
+      -90
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      -170,
+      0,
+      8
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ]
+    },
+    {
+     "hips": [
+      0,
+      0,
+      -90
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      -170,
+      0,
+      8
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      90
+     ],
+     "hold": 0.4
+    }
+   ],
+   "view": "floor",
+   "amount_en": "10 reps"
+  },
+  {
+   "id": "kineti-supine-pullover-dumbbell",
+   "en": "Supine pullover with dumbbells",
+   "steps_en": [
+    "Lie on your back, dumbbells pointing at the ceiling.",
+    "Lower them overhead.",
+    "Bring them back."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      4
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -165,
+      0,
+      6
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ],
+   "view": "floor",
+   "amount_en": "10 reps"
+  },
+  {
+   "id": "kineti-band-shoulder-extension",
+   "en": "Band shoulder extension",
+   "steps_en": [
+    "Band tied in front, arms forward.",
+    "Pull straight arms down and back.",
+    "Return slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "arm": [
+      -70,
+      0,
+      4
+     ]
+    },
+    {
+     "arm": [
+      25,
+      0,
+      6
+     ],
+     "hold": 0.4
+    }
+   ],
+   "amount_en": "10 reps"
+  },
+  {
+   "id": "kineti-band-shoulder-internal-rotation",
+   "en": "Band shoulder internal rotation",
+   "steps_en": [
+    "Elbow at your side, bent 90 degrees, holding the band.",
+    "Turn the forearm inward across your belly.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      50,
+      4
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      -40,
+      4
+     ],
+     "hold": 0.4
+    }
+   ],
+   "amount_en": "10 reps"
+  },
+  {
+   "id": "kineti-band-pulldown",
+   "en": "Band pulldown",
+   "steps_en": [
+    "Arms overhead holding the band.",
+    "Pull your elbows down into a W.",
+    "Return slowly."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "arm": [
+      0,
+      90,
+      88
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      90,
+      42
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0,
+      -0.03
+     ],
+     "hold": 0.6
+    }
+   ],
+   "amount_en": "10 reps"
   }
  ]
 }

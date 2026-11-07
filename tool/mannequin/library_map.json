@@ -1,7 +1,7 @@
 {
  "bed_rolling": {
-  "video": null,
-  "nota": "falta a cama e a rolagem precisa de teste"
+  "video": "kineti-bed-rolling",
+  "nota": "cama no lugar do colchonete"
  },
  "lying_to_sitting": {
   "video": null,
@@ -172,20 +172,20 @@
   "nota": ""
  },
  "seated_band_row": {
-  "video": null,
-  "nota": "falta a faixa elástica"
+  "video": "kineti-seated-band-row",
+  "nota": ""
  },
  "band_pull_apart": {
-  "video": null,
-  "nota": "falta a faixa elástica (pull-aparts é a versão sem faixa)"
+  "video": "kineti-band-pull-apart",
+  "nota": ""
  },
  "band_shoulder_external_rotation": {
-  "video": null,
-  "nota": "falta a faixa elástica"
+  "video": "kineti-band-shoulder-external-rotation",
+  "nota": ""
  },
  "seated_band_hip_abduction": {
-  "video": null,
-  "nota": "falta a faixa elástica"
+  "video": "kineti-seated-band-hip-abduction",
+  "nota": ""
  },
  "adductor_ball_squeeze": {
   "video": "kineti-adductor-ball-squeeze",

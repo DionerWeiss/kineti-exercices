@@ -20,7 +20,10 @@ VIEWS = {'side': 'Lateral', 'front': 'Frontal', 'side3q': 'Lateral 3/4', 'front3
          'close': 'Detalhe da mão'}
 FRAMES = {'upper': ', do peito para cima', 'lower': ', pés em destaque', 'full': ''}
 PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apoio lateral)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
-         'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa'}
+         'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa', 'bed': 'Cama',
+         'bandhands': 'Faixa elástica', 'bandanchor': 'Faixa elástica presa no batente',
+         'bandanchor1': 'Faixa elástica presa no batente', 'bandfeet': 'Faixa elástica sob os pés',
+         'bandknees': 'Faixa elástica nas coxas'}
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',
          'kineti-standing-knee-flexion-supported': 'standing_knee_flexion',
@@ -62,7 +65,7 @@ def main():
         kslug = libmap.get(slug) or (rel.most_common(1)[0][0] if rel else '')
         cat = desk.get(slug, {}).get('category', '')
         # no chão o render põe o colchonete (só a deusa, do grupo yoga, é em pé)
-        lying = j['view'] == 'floor' or cat.startswith('floor') or (cat == 'yoga' and slug != 'goddess-pose-gentle')
+        lying = 'bed' not in props and j['view'] == 'floor' or cat.startswith('floor') or (cat == 'yoga' and slug != 'goddess-pose-gentle')
         out.append({
             'slug': slug, 'lib': j['lib'], **texts[slug],
             'view': VIEWS[j['view']] + FRAMES[j.get('frame', 'full')],

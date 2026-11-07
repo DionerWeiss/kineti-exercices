@@ -47,7 +47,11 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `bandanchor`: faixa das duas mãos até um batente à frente;
   - `bandanchor1`: o mesmo, só com a mão que mais se move;
   - `bandfeet`: faixa das mãos até os pés (em pé sobre a faixa, ou sentado com a faixa nos pés);
-  - `bandknees`: alça em volta das duas coxas, logo acima dos joelhos.
+  - `bandknees`: alça em volta das duas coxas, logo acima dos joelhos;
+  - `walk`: caminhada. A câmera acompanha a pelve e o piso fica quadriculado, para o avanço aparecer. O movimento usa `"once": true` e termina na mesma pose em que começa, deslocado um número inteiro de quadrados, então o vídeo emenda sem salto;
+  - `chairfit`: cadeira sob a pelve da primeira pose, para sentar e levantar. Esse exercício não usa `seated`, que prenderia a pelve no assento;
+  - `wallball`: parede atrás das costas e bola suíça entre a lombar e a parede;
+  - `wallback`: parede encostada nas costas durante todo o movimento.
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 
 ## Limites do manequim

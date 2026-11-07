@@ -58,6 +58,42 @@
    "pocketphysio": []
   },
   {
+   "slug": "kineti-sit-to-stand",
+   "lib": "kineti",
+   "name": "Sentar e levantar",
+   "desc": "Sentado, com os braços cruzados sobre o peito e os pés firmes no chão, inclina o tronco à frente, levanta até ficar em pé e senta de volta devagar.",
+   "focus": "Força de membros inferiores e transferência",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-sit-to-stand.mp4",
+   "kineti_slug": "sit_to_stand_exercise",
+   "substitui": "sit_to_stand_exercise",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d5e",
+    "660a6144b08ac7518f1f7d5f",
+    "660a6144b08ac7518f1f7d61"
+   ]
+  },
+  {
+   "slug": "kineti-sit-to-stand-arms-forward",
+   "lib": "kineti",
+   "name": "Sentar e levantar com braços à frente",
+   "desc": "Sentado, com os braços estendidos à frente, inclina o tronco, levanta até ficar em pé e senta de volta devagar.",
+   "focus": "Força de membros inferiores e transferência",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-sit-to-stand-arms-forward.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304071fe",
+    "65b09dc54ad825d0304071ff",
+    "6613d8862d1659b1aabb9c5c"
+   ]
+  },
+  {
    "slug": "side-lying-leg-lift",
    "lib": "deskbreak",
    "name": "Abdução de quadril de lado",
@@ -102,12 +138,9 @@
    "view": "Frontal 3/4",
    "props": "—",
    "video": "build/mannequin/videos/side-leg-raise.mp4",
-   "kineti_slug": "standing_hip_abduction",
+   "kineti_slug": "",
    "substitui": "",
-   "pocketphysio": [
-    "660a6144b08ac7518f1f7e8c",
-    "65b09dc54ad825d030407250"
-   ]
+   "pocketphysio": []
   },
   {
    "slug": "kineti-standing-hip-abduction-supported",
@@ -121,7 +154,10 @@
    "video": "build/mannequin/videos/kineti-standing-hip-abduction-supported.mp4",
    "kineti_slug": "standing_hip_abduction",
    "substitui": "standing_hip_abduction",
-   "pocketphysio": []
+   "pocketphysio": [
+    "65b09dc54ad825d030407250",
+    "660a6144b08ac7518f1f7e8c"
+   ]
   },
   {
    "slug": "kineti-seated-band-hip-abduction",
@@ -265,6 +301,22 @@
    ]
   },
   {
+   "slug": "kineti-side-leg-swing-supported",
+   "lib": "kineti",
+   "name": "Balanço lateral da perna com apoio",
+   "desc": "Em pé, com as mãos no encosto de uma cadeira, balança uma perna para o lado e depois cruza um pouco à frente da outra, num movimento curto. Troca de perna.",
+   "focus": "Abdutores e adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-side-leg-swing-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e731"
+   ]
+  },
+  {
    "slug": "standing-side-leg-swing",
    "lib": "deskbreak",
    "name": "Balanço lateral da perna em pé",
@@ -276,9 +328,7 @@
    "video": "build/mannequin/videos/standing-side-leg-swing.mp4",
    "kineti_slug": "",
    "substitui": "",
-   "pocketphysio": [
-    "65a9272053a15212d048e731"
-   ]
+   "pocketphysio": []
   },
   {
    "slug": "reclined-butterfly",
@@ -340,11 +390,9 @@
    "view": "Lateral 3/4",
    "props": "—",
    "video": "build/mannequin/videos/back-leg-raise.mp4",
-   "kineti_slug": "standing_hip_extension",
+   "kineti_slug": "",
    "substitui": "",
-   "pocketphysio": [
-    "660a6145b08ac7518f1f80ce"
-   ]
+   "pocketphysio": []
   },
   {
    "slug": "kineti-standing-hip-extension-supported",
@@ -358,7 +406,9 @@
    "video": "build/mannequin/videos/kineti-standing-hip-extension-supported.mp4",
    "kineti_slug": "standing_hip_extension",
    "substitui": "standing_hip_extension",
-   "pocketphysio": []
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80ce"
+   ]
   },
   {
    "slug": "standing-knee-raise",
@@ -532,6 +582,42 @@
    ]
   },
   {
+   "slug": "kineti-wall-squat",
+   "lib": "kineti",
+   "name": "Agachamento na parede",
+   "desc": "Com as costas apoiadas na parede e os pés um passo à frente, desliza para baixo flexionando os joelhos e volta a subir devagar.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f811d",
+    "664744bf5c2c1f75d4d71e3e"
+   ]
+  },
+  {
+   "slug": "kineti-wall-ball-squat",
+   "lib": "kineti",
+   "name": "Agachamento na parede com bola suíça",
+   "desc": "Em pé, com a bola entre a parte baixa das costas e a parede e os pés um passo à frente, flexiona os joelhos enquanto a bola rola pela parede e sobe devagar.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral",
+   "props": "Parede, bola suíça",
+   "video": "build/mannequin/videos/kineti-wall-ball-squat.mp4",
+   "kineti_slug": "wall_ball_squat",
+   "substitui": "wall_ball_squat",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7ce0",
+    "660a6144b08ac7518f1f7ce2",
+    "660a6145b08ac7518f1f811f",
+    "664744bf5c2c1f75d4d71e3f"
+   ]
+  },
+  {
    "slug": "floor-head-to-knee-easy",
    "lib": "deskbreak",
    "name": "Alongamento de posteriores com uma perna estendida",
@@ -608,8 +694,23 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "660a6145b08ac7518f1f7f6b",
     "65b09dc54ad825d030407306"
+   ]
+  },
+  {
+   "slug": "kineti-standing-quad-stretch-supported",
+   "lib": "kineti",
+   "name": "Alongamento de quadríceps em pé com apoio",
+   "desc": "Em pé, com uma mão no encosto de uma cadeira ao lado, dobra o joelho levando o calcanhar em direção ao glúteo e mantém. Troca de perna.",
+   "focus": "Quadríceps",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio lateral)",
+   "video": "build/mannequin/videos/kineti-standing-quad-stretch-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f6b"
    ]
   },
   {
@@ -969,7 +1070,22 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "65a9272053a15212d048e527",
+    "65a9272053a15212d048e527"
+   ]
+  },
+  {
+   "slug": "kineti-ankle-circles-supported",
+   "lib": "kineti",
+   "name": "Circundução de tornozelo em pé com apoio",
+   "desc": "Em pé, com uma mão no encosto de uma cadeira ao lado, tira um pé do chão e desenha círculos com a ponta dos dedos. Troca o sentido e depois o pé.",
+   "focus": "Mobilidade do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio lateral)",
+   "video": "build/mannequin/videos/kineti-ankle-circles-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
     "65a9272153a15212d048eaef"
    ]
   },
@@ -1103,7 +1219,7 @@
    "desc": "Sentado na cama com as pernas estendidas, vira as solas dos pés para dentro e depois para fora, devagar.",
    "focus": "Mobilidade do tornozelo",
    "area": "tornozelos_pes",
-   "view": "Frontal, pés em destaque",
+   "view": "Elevada, pés em destaque",
    "props": "Cama",
    "video": "build/mannequin/videos/kineti-long-sit-ankle-inversion-eversion.mp4",
    "kineti_slug": "",
@@ -1146,7 +1262,12 @@
    "video": "build/mannequin/videos/kineti-single-leg-stance-supported.mp4",
    "kineti_slug": "single_leg_stance",
    "substitui": "single_leg_stance",
-   "pocketphysio": []
+   "pocketphysio": [
+    "65a9272053a15212d048e62b",
+    "65b09dc54ad825d0304073e1",
+    "65b09dc54ad825d0304073e2",
+    "660a6144b08ac7518f1f7d90"
+   ]
   },
   {
    "slug": "single-leg-arms-overhead",
@@ -1193,11 +1314,7 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "65a9272053a15212d048e5db",
-    "660a6144b08ac7518f1f7d90",
-    "65a9272053a15212d048e62b",
-    "65b09dc54ad825d0304073e2",
-    "65b09dc54ad825d0304073e1"
+    "65a9272053a15212d048e5db"
    ]
   },
   {
@@ -1244,9 +1361,23 @@
    "video": "build/mannequin/videos/balance-toe-heel-rock.mp4",
    "kineti_slug": "",
    "substitui": "",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-toe-heel-rock-supported",
+   "lib": "kineti",
+   "name": "Balanço pontas e calcanhares com apoio",
+   "desc": "Em pé, com as mãos no encosto de uma cadeira, sobe devagar na ponta dos pés, desce e eleva as pontas, ficando nos calcanhares.",
+   "focus": "Equilíbrio anteroposterior e tornozelos",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-toe-heel-rock-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
-    "660a6145b08ac7518f1f80d0",
-    "660a6144b08ac7518f1f7d8c"
+    "660a6144b08ac7518f1f7d8c",
+    "660a6145b08ac7518f1f80d0"
    ]
   },
   {
@@ -1289,13 +1420,9 @@
    "view": "Lateral 3/4",
    "props": "—",
    "video": "build/mannequin/videos/balance-slow-march.mp4",
-   "kineti_slug": "standing_marching",
+   "kineti_slug": "",
    "substitui": "",
-   "pocketphysio": [
-    "65b09dc54ad825d0304072f0",
-    "660a6145b08ac7518f1f7f34",
-    "664744bf5c2c1f75d4d71d98"
-   ]
+   "pocketphysio": []
   },
   {
    "slug": "heel-to-toe-walk-in-place",
@@ -1397,6 +1524,38 @@
    ]
   },
   {
+   "slug": "kineti-indoor-walking",
+   "lib": "kineti",
+   "name": "Caminhada",
+   "desc": "Caminha em ritmo confortável, com passos alternados, transferência de peso e balanço dos braços em oposição às pernas.",
+   "focus": "Marcha e condicionamento",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-indoor-walking.mp4",
+   "kineti_slug": "indoor_walking",
+   "substitui": "indoor_walking",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e3a"
+   ]
+  },
+  {
+   "slug": "kineti-variable-speed-walking",
+   "lib": "kineti",
+   "name": "Caminhada com velocidade variável",
+   "desc": "Começa caminhando devagar, com passos curtos, alonga os passos para andar um pouco mais rápido e volta ao ritmo inicial.",
+   "focus": "Marcha e condicionamento",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-variable-speed-walking.mp4",
+   "kineti_slug": "variable_speed_walking",
+   "substitui": "variable_speed_walking",
+   "pocketphysio": [
+    "65b09dc54ad825d030407244"
+   ]
+  },
+  {
    "slug": "knee-lift-pull-down",
    "lib": "deskbreak",
    "name": "Elevação de joelho com puxada dos braços",
@@ -1473,7 +1632,11 @@
    "video": "build/mannequin/videos/kineti-standing-marching-supported.mp4",
    "kineti_slug": "standing_marching",
    "substitui": "standing_marching",
-   "pocketphysio": []
+   "pocketphysio": [
+    "65b09dc54ad825d0304072f0",
+    "660a6145b08ac7518f1f7f34",
+    "664744bf5c2c1f75d4d71d98"
+   ]
   },
   {
    "slug": "march-in-place",

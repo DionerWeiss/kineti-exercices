@@ -40,12 +40,12 @@
   "nota": "sem a bancada"
  },
  "indoor_walking": {
-  "video": null,
-  "nota": "caminhada com deslocamento: falta a câmera que acompanha o corpo"
+  "video": "kineti-indoor-walking",
+  "nota": "a câmera acompanha o corpo e o piso quadriculado mostra o avanço"
  },
  "variable_speed_walking": {
-  "video": null,
-  "nota": "caminhada com deslocamento: falta a câmera que acompanha o corpo"
+  "video": "kineti-variable-speed-walking",
+  "nota": "a câmera acompanha o corpo e o piso quadriculado mostra o avanço"
  },
  "supine_pelvic_tilt": {
   "video": "pelvic-tilt-lying",
@@ -112,8 +112,8 @@
   "nota": ""
  },
  "sit_to_stand_exercise": {
-  "video": null,
-  "nota": "transição sentado-em pé: o desk-break prende a pelve na cadeira; precisa de teste"
+  "video": "kineti-sit-to-stand",
+  "nota": ""
  },
  "standing_hip_abduction": {
   "video": "kineti-standing-hip-abduction-supported",
@@ -192,8 +192,8 @@
   "nota": ""
  },
  "wall_ball_squat": {
-  "video": null,
-  "nota": "falta a parede atrás das costas e a bola suíça"
+  "video": "kineti-wall-ball-squat",
+  "nota": ""
  },
  "prone_press_up_on_elbows": {
   "video": "kineti-prone-press-up-elbows",

@@ -23,7 +23,8 @@ PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apo
          'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa', 'bed': 'Cama',
          'bandhands': 'Faixa elástica', 'bandanchor': 'Faixa elástica presa no batente',
          'bandanchor1': 'Faixa elástica presa no batente', 'bandfeet': 'Faixa elástica sob os pés',
-         'bandknees': 'Faixa elástica nas coxas'}
+         'bandknees': 'Faixa elástica nas coxas', 'chairfit': 'Cadeira', 'walk': '—', 'wallball': 'Parede, bola suíça',
+         'wallback': 'Parede'}
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',
          'kineti-standing-knee-flexion-supported': 'standing_knee_flexion',
@@ -69,7 +70,7 @@ def main():
         out.append({
             'slug': slug, 'lib': j['lib'], **texts[slug],
             'view': VIEWS[j['view']] + FRAMES[j.get('frame', 'full')],
-            'props': ', '.join([PROPS[p] for p in props] + (['Colchonete'] if lying else [])) or '—',
+            'props': ', '.join([PROPS[p] for p in props if PROPS[p] != '—'] + (['Colchonete'] if lying else [])) or '—',
             'video': f'build/mannequin/videos/{slug}.mp4',
             'kineti_slug': kslug,
             'substitui': libmap.get(slug, ''),

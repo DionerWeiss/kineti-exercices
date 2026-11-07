@@ -143,7 +143,23 @@ def palm(side):
 # --- set
 bpy.ops.mesh.primitive_plane_add(size=400)
 FLOOR = bpy.context.object
-FLOOR.data.materials.append(mat('floor', '#E6EAF0', 0.95))
+FLOORM = mat('floor', '#E6EAF0', 0.95)
+FLOOR.data.materials.append(FLOORM)
+_fnt = FLOORM.node_tree
+_chk = _fnt.nodes.new('ShaderNodeTexChecker')
+_chk.inputs['Color1'].default_value = lin('#E6EAF0')
+_chk.inputs['Color2'].default_value = lin('#DCE2EA')
+_chk.inputs['Scale'].default_value = 400 / 0.6  # 60 cm tiles on the 400 m plane
+_bsdf = next(n for n in _fnt.nodes if n.type == 'BSDF_PRINCIPLED')
+
+
+def floor_tiles(on):
+    """Tiles show that the body travels while the camera follows it (walking)."""
+    for l in list(_bsdf.inputs['Base Color'].links):
+        _fnt.links.remove(l)
+    if on:
+        _fnt.links.new(_chk.outputs['Color'], _bsdf.inputs['Base Color'])
+
 BED_TOP = 0.5  # with a bed, the mattress top is the mannequin's floor and the room floor sits this far below
 MATTC = mat('mattress', '#F1F4F8', 0.9)
 BANDC = mat('band', '#FF6D00', 0.5)
@@ -313,6 +329,21 @@ for job in JOBS:
     seated = 'chair' in props or 'ball' in props
     if seated:
         chair(0.12, 0.33, 1.0)
+    floor_tiles('walk' in props)
+    if 'chairfit' in props:  # a chair under the pelvis of the first pose (sit to stand: not a seated exercise)
+        hp = bone_head('hips')
+        top = hp.z - 0.075
+        y_back = hp.y + 0.2
+        bpy.ops.object.select_all(action='DESELECT')
+        n0 = len(temp)
+        chair(0.0, 0.21, 1.0)
+        for o in temp[n0:]:  # chair() draws around y = 0 with the seat at 0.45: move it under the pelvis
+            o.location.x += hp.x
+            o.location.y += hp.y - 0.04
+            o.location.z += top - 0.45 if o.location.z > 0.3 else 0
+            if o.location.z < 0.3:  # legs: stretch to the new seat height
+                o.scale.z *= top / 0.45
+                o.location.z = top / 2 - 0.02
     blo, bhi, bpts = motion_bounds(f0, f1)
     FLOOR.location.z = -BED_TOP if 'bed' in props else 0
     if 'bed' in props:
@@ -321,7 +352,7 @@ for job in JOBS:
         lx = max(ext.x + 0.25, 2.0 if long_x else 0.95)
         ly = max(ext.y + 0.25, 0.95 if long_x else 2.0)
         bed(c, lx, ly)
-    elif not seated and not props & {'support', 'side', 'wall'} and bhi.z < 1.4:
+    elif not seated and not props & {'support', 'side', 'wall', 'walk', 'chairfit', 'wallball', 'wallback'} and bhi.z < 1.4:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.3, 1.9 if long_x else 0.66)
@@ -381,6 +412,22 @@ for job in JOBS:
             ball.keyframe_insert('location', frame=f)
             ball.keyframe_insert('scale', frame=f)
 
+    if 'wallback' in props:  # wall touching the back over the whole motion (wall squat)
+        box((0, bhi.y + 0.055, 1.2), (1.4, 0.1, 2.4), WALLC)['noframe'] = True
+    if 'wallball' in props:  # wall behind the back, exercise ball between the lower back and the wall
+        BR = 0.3
+        spine0 = bone_head('spine')
+        wall_y = spine0.y + 0.12 + 2 * BR
+        box((0, wall_y + 0.05, 1.2), (1.4, 0.1, 2.4), WALLC)['noframe'] = True
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=BR, segments=48, ring_count=24)
+        sb = bpy.context.object
+        sb.data.materials.append(BALLC)
+        bpy.ops.object.shade_smooth()
+        sb.rotation_mode = 'QUATERNION'
+        temp.append(sb)
+        animate([(sb, lambda: Matrix.Translation(Vector((bone_head('spine').x, wall_y - BR, bone_head('spine').z + 0.08))))],
+                f0, f1)
+
     # Elastic bands, re-placed on every frame.
     if 'bandhands' in props:  # held between the hands
         animate([(rod(0.008, BANDC), lambda: seg_matrix(palm('L'), palm('R')))], f0, f1)
@@ -436,6 +483,19 @@ for job in JOBS:
 
     # Frame the whole motion: the body's vertices over every sampled frame, plus the props (not the mat or wall).
     lo, hi, pts = motion_bounds(f0, f1, part=part) if part != 'full' else (blo.copy(), bhi.copy(), list(bpts))
+    if 'walk' in props:  # the camera follows: frame the body around the hips, frame by frame
+        pts, h0 = [], bone_head('hips')
+        deps = bpy.context.evaluated_depsgraph_get()
+        for f in range(f0, f1 + 1, 3):
+            scene.frame_set(f)
+            dv = bone_head('hips') - h0
+            dv.z = 0
+            ev = body.evaluated_get(deps)
+            pts += [ev.matrix_world @ v.co - dv for k_, v in enumerate(ev.to_mesh().vertices) if k_ % 4 == 0]
+            ev.to_mesh_clear()
+        scene.frame_set(f0)
+        lo = Vector(map(min, *pts)) if False else Vector([min(p_[i] for p_ in pts) for i in range(3)])
+        hi = Vector([max(p_[i] for p_ in pts) for i in range(3)])
     if part == 'full':
         scene.frame_set(f0)
         deps = bpy.context.evaluated_depsgraph_get()
@@ -447,7 +507,7 @@ for job in JOBS:
             ev.to_mesh_clear()
     if 'bed' in props and part == 'full':
         pts += [Vector((p_.x, p_.y, -0.3)) for p_ in pts if p_.z < 0.1]  # some of the bed under the body
-    if (seated or props & {'support', 'side'}) and part != 'upper':
+    if (seated or props & {'support', 'side', 'chairfit'}) and part != 'upper':
         pts += [Vector((p_.x, p_.y, 0)) for p_ in pts if p_.z < 0.3]  # keep the floor under the feet in view
     centre, size = (lo + hi) / 2, (hi - lo)
     d = Vector(DIRS[view])
@@ -469,6 +529,17 @@ for job in JOBS:
         centre = centre + right * (max(xs) + min(xs)) / 2 * dist + up * (max(ys) + min(ys)) / 2 * dist
     cam.location = centre + d * dist
     cam.rotation_euler = (centre - cam.location).to_track_quat('-Z', 'Y').to_euler()
+    if cam.animation_data:
+        cam.animation_data_clear()
+    if 'walk' in props:
+        base = cam.location.copy()
+        h0 = bone_head('hips')
+        for f in range(f0, f1 + 1):
+            scene.frame_set(f)
+            dv = bone_head('hips') - h0
+            cam.location = base + Vector((dv.x, dv.y, 0))
+            cam.keyframe_insert('location', frame=f)
+        scene.frame_set(f0)
     print('JOB', name, f0, f1, sorted(props), 'dist', round(dist, 2), 'npts', len(pts), 'lo', tuple(round(v, 2) for v in lo), 'hi', tuple(round(v, 2) for v in hi))
     scene.render.filepath = f'{OUT}/{name}/f_'
     if STILL:

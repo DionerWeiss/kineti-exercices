@@ -1108,5 +1108,65 @@
   "Em pé, com os braços acima da cabeça segurando a faixa, puxa os cotovelos para baixo formando um W e volta devagar.",
   "Dorsais e escápulas",
   "ombros_escapulas"
+ ],
+ "kineti-indoor-walking": [
+  "Caminhada",
+  "Caminha em ritmo confortável, com passos alternados, transferência de peso e balanço dos braços em oposição às pernas.",
+  "Marcha e condicionamento",
+  "marcha"
+ ],
+ "kineti-variable-speed-walking": [
+  "Caminhada com velocidade variável",
+  "Começa caminhando devagar, com passos curtos, alonga os passos para andar um pouco mais rápido e volta ao ritmo inicial.",
+  "Marcha e condicionamento",
+  "marcha"
+ ],
+ "kineti-sit-to-stand": [
+  "Sentar e levantar",
+  "Sentado, com os braços cruzados sobre o peito e os pés firmes no chão, inclina o tronco à frente, levanta até ficar em pé e senta de volta devagar.",
+  "Força de membros inferiores e transferência",
+  "mobilidade_transferencias"
+ ],
+ "kineti-sit-to-stand-arms-forward": [
+  "Sentar e levantar com braços à frente",
+  "Sentado, com os braços estendidos à frente, inclina o tronco, levanta até ficar em pé e senta de volta devagar.",
+  "Força de membros inferiores e transferência",
+  "mobilidade_transferencias"
+ ],
+ "kineti-wall-ball-squat": [
+  "Agachamento na parede com bola suíça",
+  "Em pé, com a bola entre a parte baixa das costas e a parede e os pés um passo à frente, flexiona os joelhos enquanto a bola rola pela parede e sobe devagar.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "kineti-wall-squat": [
+  "Agachamento na parede",
+  "Com as costas apoiadas na parede e os pés um passo à frente, desliza para baixo flexionando os joelhos e volta a subir devagar.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "kineti-ankle-circles-supported": [
+  "Circundução de tornozelo em pé com apoio",
+  "Em pé, com uma mão no encosto de uma cadeira ao lado, tira um pé do chão e desenha círculos com a ponta dos dedos. Troca o sentido e depois o pé.",
+  "Mobilidade do tornozelo",
+  "tornozelos_pes"
+ ],
+ "kineti-toe-heel-rock-supported": [
+  "Balanço pontas e calcanhares com apoio",
+  "Em pé, com as mãos no encosto de uma cadeira, sobe devagar na ponta dos pés, desce e eleva as pontas, ficando nos calcanhares.",
+  "Equilíbrio anteroposterior e tornozelos",
+  "equilibrio"
+ ],
+ "kineti-standing-quad-stretch-supported": [
+  "Alongamento de quadríceps em pé com apoio",
+  "Em pé, com uma mão no encosto de uma cadeira ao lado, dobra o joelho levando o calcanhar em direção ao glúteo e mantém. Troca de perna.",
+  "Quadríceps",
+  "joelhos"
+ ],
+ "kineti-side-leg-swing-supported": [
+  "Balanço lateral da perna com apoio",
+  "Em pé, com as mãos no encosto de uma cadeira, balança uma perna para o lado e depois cruza um pouco à frente da outra, num movimento curto. Troca de perna.",
+  "Abdutores e adutores do quadril",
+  "quadril_gluteos"
  ]
 }

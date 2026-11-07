@@ -24,7 +24,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
 - **`library_map.json`:** para cada um dos 59 exercícios da biblioteca Kineti, o vídeo do manequim que o substitui, ou `null` e o motivo (dedos, rosto, faixa elástica, mesa, cama, degrau, caminhada). No catálogo, ele aparece no campo `substitui`.
 - **`texts_pt.json`:** nome, descrição, foco e área de cada vídeo, escritos à mão (`{slug: [nome, descrição, foco, área]}`). A descrição segue o que o vídeo mostra, e não o texto original do desk-break. Os movimentos Kineti que já estão na biblioteca usam os textos do `catalog.json` dela.
 - **`kineti_moves.json`:** movimentos escritos por nós, no formato do desk-break (veja `build/desk-break/library/AUTHORING.md`). Os ids começam com `kineti-`.
-- **Close-ups da mão** (`lib: "hand"`): a mão de madeira com dedos, no estilo do manequim, apoiada na mesa. `export_hand.py` exporta, quadro a quadro, a cinemática da mão do Lottie (`tool/build_library_hand_animations.py`), com as mesmas verificações. Depois `render_hand.py` monta segmentos, articulações, palma, mesa e câmera no Blender. São usados em punho, antebraço, abrir e fechar a mão e oposição do polegar.
+- **Close-ups da mão** (`lib: "hand"`): a mão de madeira com dedos, no estilo do manequim, apoiada na mesa. `export_hand.py` exporta, quadro a quadro, a cinemática da mão do Lottie (`tool/build_library_hand_animations.py`), com as mesmas verificações. Depois `render_hand.py` monta segmentos, articulações, palma, mesa e câmera no Blender. As cenas de `export_hand.py` são punho, antebraço, abrir e fechar a mão, oposição do polegar, apertar bola, dedos em L, flexão e abdução do polegar e desvio do punho.
 - **`render_mannequin.py`:** roda dentro do Blender. Repinta o manequim, aplica a marca, monta o cenário e a câmera, e renderiza.
 - **`build_lib.py`:** roda o `build_library.py` do desk-break num arquivo de movimentos e salva o `.blend`, que o original só grava para a biblioteca inteira.
 
@@ -51,7 +51,10 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `walk`: caminhada. A câmera acompanha a pelve e o piso fica quadriculado, para o avanço aparecer. O movimento usa `"once": true` e termina na mesma pose em que começa, deslocado um número inteiro de quadrados, então o vídeo emenda sem salto;
   - `chairfit`: cadeira sob a pelve da primeira pose, para sentar e levantar. Esse exercício não usa `seated`, que prenderia a pelve no assento;
   - `wallball`: parede atrás das costas e bola suíça entre a lombar e a parede;
-  - `wallback`: parede encostada nas costas durante todo o movimento.
+  - `wallback`: parede encostada nas costas durante todo o movimento;
+  - `swissseat`: bola suíça como assento, para exercícios sentados. Costuma vir com `move` reaproveitando o movimento da cadeira;
+  - `table`: mesa sob a mão ou as mãos que ficam paradas. Com uma mão só, é uma mesa pequena de canto, como no pêndulo de Codman.
+- **`move`** (opcional, em `jobs.json`): o movimento a tocar, quando o vídeo reaproveita o de outro job com acessórios diferentes (por exemplo, a marcha sentada na bola suíça usa `chair-march`).
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 
 ## Limites do manequim

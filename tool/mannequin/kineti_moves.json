@@ -5214,6 +5214,269 @@
      "hold": 0.6
     }
    ]
+  },
+  {
+   "id": "kineti-codman-pendulum",
+   "en": "Codman pendulum",
+   "amount_en": "1 minute",
+   "steps_en": [
+    "Lean forward, one hand on a table.",
+    "Let the other arm hang.",
+    "Swing it gently forward and back."
+   ],
+   "beat": 0.9,
+   "keys": [
+    {
+     "spine": [
+      55,
+      0,
+      0
+     ],
+     "leg": [
+      -8,
+      0,
+      4
+     ],
+     "knee": [
+      12,
+      0,
+      0
+     ],
+     "armL": [
+      -60,
+      0,
+      4
+     ],
+     "elbowL": [
+      -5,
+      0,
+      0
+     ],
+     "armR": [
+      -35,
+      0,
+      4
+     ]
+    },
+    {
+     "spine": [
+      55,
+      0,
+      0
+     ],
+     "leg": [
+      -8,
+      0,
+      4
+     ],
+     "knee": [
+      12,
+      0,
+      0
+     ],
+     "armL": [
+      -60,
+      0,
+      4
+     ],
+     "elbowL": [
+      -5,
+      0,
+      0
+     ],
+     "armR": [
+      -75,
+      0,
+      4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-table-weight-bearing",
+   "en": "Weight bearing on a table",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand, hands on a table.",
+    "Shift your weight onto your hands.",
+    "Shift back."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "arm": [
+      -35,
+      0,
+      6
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -50,
+      0,
+      6
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "spine": [
+      25,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.06
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-weight-shift-side-supported",
+   "en": "Side weight shift with support",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Hands on the back of a chair.",
+    "Shift your weight onto one leg.",
+    "Then onto the other."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "legL": [
+      0,
+      0,
+      8
+     ],
+     "legR": [
+      0,
+      0,
+      8
+     ],
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "legR": [
+      0,
+      0,
+      17
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      12,
+      0,
+      0
+     ],
+     "pos": [
+      0.11,
+      0,
+      0
+     ],
+     "hold": 0.8,
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      8
+     ],
+     "legR": [
+      0,
+      0,
+      8
+     ],
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      17
+     ],
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      12,
+      0,
+      0
+     ],
+     "pos": [
+      -0.11,
+      0,
+      0
+     ],
+     "hold": 0.8,
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    }
+   ]
   }
  ]
 }

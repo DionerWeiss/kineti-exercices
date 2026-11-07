@@ -24,7 +24,7 @@ PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apo
          'bandhands': 'Faixa elástica', 'bandanchor': 'Faixa elástica presa no batente',
          'bandanchor1': 'Faixa elástica presa no batente', 'bandfeet': 'Faixa elástica sob os pés',
          'bandknees': 'Faixa elástica nas coxas', 'chairfit': 'Cadeira', 'walk': '—', 'wallball': 'Parede, bola suíça',
-         'wallback': 'Parede'}
+         'wallback': 'Parede', 'swissseat': 'Bola suíça'}
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',
          'kineti-standing-knee-flexion-supported': 'standing_knee_flexion',

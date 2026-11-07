@@ -1460,7 +1460,10 @@
    "table"
   ],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e44",
+   "664744bf5c2c1f75d4d71e97"
+  ]
  },
  "kineti-forearm-pronation-supination": {
   "lib": "hand",
@@ -1480,7 +1483,13 @@
    "table"
   ],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "65a9272053a15212d048e84e",
+   "65b09dc54ad825d0304072f8",
+   "660a6144b08ac7518f1f7e63",
+   "660a61776a80d359d40dce42",
+   "664744bf5c2c1f75d4d71d8e"
+  ]
  },
  "kineti-thumb-opposition": {
   "lib": "hand",
@@ -1490,7 +1499,9 @@
    "table"
   ],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80ed"
+  ]
  },
  "external-rotation": {
   "lib": "deskbreak",
@@ -2128,6 +2139,207 @@
   "pocketphysio": [
    "660a6145b08ac7518f1f811d",
    "664744bf5c2c1f75d4d71e3e"
+  ]
+ },
+ "kineti-ball-seated-march": {
+  "lib": "deskbreak",
+  "move": "chair-march",
+  "view": "side3q",
+  "props": [
+   "swissseat"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048ea0f",
+   "660a6144b08ac7518f1f7e95"
+  ]
+ },
+ "kineti-ball-seated-knee-extension": {
+  "lib": "kineti",
+  "move": "kineti-seated-knee-extension",
+  "view": "side3q",
+  "props": [
+   "swissseat"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e4da"
+  ]
+ },
+ "kineti-ball-seated-shoulder-flexion": {
+  "lib": "kineti",
+  "move": "kineti-seated-shoulder-flexion",
+  "view": "side3q",
+  "props": [
+   "swissseat"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f3b"
+  ]
+ },
+ "kineti-ball-seated-shoulder-abduction": {
+  "lib": "kineti",
+  "move": "kineti-seated-shoulder-abduction",
+  "view": "front3q",
+  "props": [
+   "swissseat"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8012"
+  ]
+ },
+ "kineti-ball-seated-shoulder-abduction-dumbbell": {
+  "lib": "kineti",
+  "move": "kineti-seated-shoulder-abduction",
+  "view": "front3q",
+  "props": [
+   "swissseat",
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a61776a80d359d40dce53"
+  ]
+ },
+ "kineti-ball-pelvic-tilt": {
+  "lib": "deskbreak",
+  "move": "chair-cat-cow",
+  "view": "side3q",
+  "props": [
+   "swissseat"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e860",
+   "65a9272053a15212d048e54a"
+  ]
+ },
+ "kineti-ball-seated-trunk-rotation": {
+  "lib": "deskbreak",
+  "move": "chair-twist",
+  "view": "front3q",
+  "props": [
+   "swissseat"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f41"
+  ]
+ },
+ "kineti-ball-seated-band-row": {
+  "lib": "kineti",
+  "move": "kineti-seated-band-row",
+  "view": "side3q",
+  "props": [
+   "swissseat",
+   "bandanchor"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cd4"
+  ]
+ },
+ "kineti-grip-ball-squeeze": {
+  "lib": "hand",
+  "scene": "grip_ball_squeeze",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e1c",
+   "660a6145b08ac7518f1f7f63"
+  ]
+ },
+ "kineti-mcp-flexion": {
+  "lib": "hand",
+  "scene": "mcp_flexion",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e68",
+   "664744bf5c2c1f75d4d71d84",
+   "660a6144b08ac7518f1f7e69",
+   "664744bf5c2c1f75d4d71d85"
+  ]
+ },
+ "kineti-thumb-flexion": {
+  "lib": "hand",
+  "scene": "thumb_flexion",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e35"
+  ]
+ },
+ "kineti-thumb-abduction": {
+  "lib": "hand",
+  "scene": "thumb_abduction",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80f2",
+   "660a6145b08ac7518f1f80f0"
+  ]
+ },
+ "kineti-wrist-deviation": {
+  "lib": "hand",
+  "scene": "wrist_deviation",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f819f"
+  ]
+ },
+ "kineti-codman-pendulum": {
+  "lib": "kineti",
+  "view": "rside3q",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f50"
+  ]
+ },
+ "kineti-table-weight-bearing": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65b09dc54ad825d0304073d6",
+   "65a9272053a15212d048e8fb",
+   "65a9272053a15212d048e8f9",
+   "65b09dc54ad825d03040731d"
+  ]
+ },
+ "kineti-weight-shift-side-supported": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "support"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e41"
   ]
  }
 }

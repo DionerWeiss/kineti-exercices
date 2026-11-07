@@ -49,6 +49,7 @@ scene = bpy.context.scene
 body_c, joint_c = PALETTES[PALETTE]
 BODY, JOINT = mat('body', body_c, 0.65), mat('joint', joint_c, 0.6)
 TOP, SIDE = mat('table', '#E2E8F0', 0.7), mat('floor', '#D5DCE6', 0.8)
+BALLM = mat('ball', '#F2A65A', 0.45)
 
 
 def sphere(r, m):
@@ -115,8 +116,21 @@ bpy.ops.mesh.primitive_plane_add(size=60, location=(0, 0, -0.75))
 bpy.context.object.data.materials.append(SIDE)
 
 
+ball = None
+if 'ball' in FR[0]:
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=1, segments=48, ring_count=24)
+    ball = bpy.context.object
+    ball.data.materials.append(BALLM)
+    bpy.ops.object.shade_smooth()
+
+
 def pose(fr):
     f = FR[fr]
+    if ball is not None:  # ellipsoid from its centre and semi-axis vectors
+        a = [V(v) for v in f['ball']['axes']]
+        M = Matrix((a[0], a[1], a[2])).transposed().to_4x4()
+        M.translation = V(f['ball']['c'])
+        ball.matrix_world = M
     for o, kind, key, i in parts:
         pts = f[key]
         if kind == 'ball':
@@ -158,10 +172,12 @@ cam = bpy.context.object
 scene.camera = cam
 cam.data.lens = 50
 pts = [V(q) for f in FR[::2] for k in ('palm', 'thumb', 'index', 'middle', 'ring', 'little') for q in f[k]]
+if 'ball' in FR[0]:
+    pts += [V(FR[0]['ball']['c']) + V(v) * sg for v in FR[0]['ball']['axes'] for sg in (1, -1)]
 pts.append(V(FR[0]['forearm'][1]) + Vector((-0.08, 0, 0)))  # a bit of the forearm
 th = math.tan(cam.data.angle_x / 2)
 tv = th * H / W
-fill = 0.8
+fill = 0.74
 centre = sum(pts, Vector()) / len(pts)
 for _ in range(4):
     rel = [p - centre for p in pts]

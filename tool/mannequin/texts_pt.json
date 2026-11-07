@@ -1168,5 +1168,101 @@
   "Em pé, com as mãos no encosto de uma cadeira, balança uma perna para o lado e depois cruza um pouco à frente da outra, num movimento curto. Troca de perna.",
   "Abdutores e adutores do quadril",
   "quadril_gluteos"
+ ],
+ "kineti-grip-ball-squeeze": [
+  "Apertar bola",
+  "Com a mão apoiada na mesa e uma bola macia na palma, aperta a bola com os dedos e o polegar, segura e solta devagar.",
+  "Força de preensão",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-mcp-flexion": [
+  "Flexão dos dedos em L",
+  "Com a mão apoiada e os dedos estendidos, dobra os dedos só nas articulações da base, mantendo-os retos, até formar um L. Volta devagar.",
+  "Músculos intrínsecos da mão",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-thumb-flexion": [
+  "Flexão do polegar",
+  "Com a palma para cima, leva a ponta do polegar pela palma em direção à base do dedo mínimo e volta devagar.",
+  "Mobilidade do polegar",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-thumb-abduction": [
+  "Abdução e adução do polegar",
+  "Com a palma para cima, afasta o polegar do indicador, abrindo a mão, e volta a encostá-lo ao lado do indicador.",
+  "Mobilidade do polegar",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-wrist-deviation": [
+  "Desvio radial e ulnar do punho",
+  "Com a palma apoiada na mesa, desliza a mão para o lado do polegar, volta ao centro e desliza para o lado do dedo mínimo, sem mexer o antebraço.",
+  "Mobilidade do punho",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-ball-seated-march": [
+  "Marcha sentado na bola suíça",
+  "Sentado na bola suíça com o tronco ereto, eleva um joelho e depois o outro, como numa marcha, mantendo o equilíbrio.",
+  "Flexores do quadril e controle do tronco",
+  "marcha"
+ ],
+ "kineti-ball-seated-knee-extension": [
+  "Extensão de joelho sentado na bola suíça",
+  "Sentado na bola suíça com os pés no chão, estende um joelho elevando o pé à frente e volta devagar, mantendo o equilíbrio.",
+  "Quadríceps e controle do tronco",
+  "joelhos"
+ ],
+ "kineti-ball-seated-shoulder-flexion": [
+  "Flexão de ombros sentado na bola suíça",
+  "Sentado na bola suíça, eleva os dois braços estendidos pela frente até acima da cabeça e desce devagar, mantendo o tronco estável.",
+  "Flexão do ombro e controle do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-seated-shoulder-abduction": [
+  "Abdução de ombros sentado na bola suíça",
+  "Sentado na bola suíça, abre os braços estendidos pela lateral até um pouco acima dos ombros e desce devagar.",
+  "Abdução do ombro e controle do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-seated-shoulder-abduction-dumbbell": [
+  "Abdução de ombros com halteres na bola suíça",
+  "Sentado na bola suíça, com um halter em cada mão, abre os braços pela lateral até um pouco acima dos ombros e desce devagar.",
+  "Deltoide e controle do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-pelvic-tilt": [
+  "Mobilização pélvica na bola suíça",
+  "Sentado na bola suíça com as mãos nos joelhos, arredonda as costas levando a pelve para trás e depois arqueia, levando a pelve para a frente.",
+  "Mobilidade lombopélvica",
+  "tronco_coluna"
+ ],
+ "kineti-ball-seated-trunk-rotation": [
+  "Rotação de tronco sentado na bola suíça",
+  "Sentado na bola suíça com os braços cruzados sobre o peito, gira o tronco para um lado e para o outro, mantendo os joelhos para a frente.",
+  "Rotação da coluna e equilíbrio",
+  "tronco_coluna"
+ ],
+ "kineti-ball-seated-band-row": [
+  "Remada com faixa elástica sentado na bola suíça",
+  "Sentado na bola suíça, com a faixa presa à frente, puxa até as mãos chegarem às costelas e volta devagar, mantendo o tronco estável.",
+  "Dorsais e controle do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-codman-pendulum": [
+  "Pêndulo de Codman",
+  "Com o tronco inclinado à frente e uma mão apoiada na mesa, deixa o outro braço pendurado e relaxado e o balança suavemente para a frente e para trás.",
+  "Mobilidade do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-table-weight-bearing": [
+  "Descarga de peso nas mãos na mesa",
+  "Em pé, com as mãos apoiadas na mesa, transfere o peso do corpo para as mãos e volta, mantendo os cotovelos estendidos.",
+  "Estabilidade escapular",
+  "ombros_escapulas"
+ ],
+ "kineti-weight-shift-side-supported": [
+  "Transferência lateral de peso com apoio",
+  "Em pé, com as mãos no encosto de uma cadeira, transfere o peso devagar para uma perna e depois para a outra, sem tirar os pés do chão.",
+  "Controle do centro de massa",
+  "equilibrio"
  ]
 }

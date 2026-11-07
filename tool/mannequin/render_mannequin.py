@@ -1,7 +1,7 @@
 """Kineti mannequin renderer: desk-break rig + actions, repainted, Kineti mark on the chest, exercise props.
 
     blender -b <lib.blend> --python render_mannequin.py -- <out_dir> <palette> <logo.png> <job> ...
-job = id:view[:prop+prop...[:upper|lower]]   view = side | front | top3q | side3q | front3q | floor | rside3q | back3q
+job = id:view[:prop+prop...[:upper|lower[:move]]]   (move: the action to play, default id)   view = side | front | top3q | side3q | front3q | floor | rside3q | back3q
 props: chair, support, wall, roll, ball, cuff, dumbbell
 env STILL=1 renders only the first, middle and last frame.
 """
@@ -163,6 +163,7 @@ def floor_tiles(on):
 BED_TOP = 0.5  # with a bed, the mattress top is the mannequin's floor and the room floor sits this far below
 MATTC = mat('mattress', '#F1F4F8', 0.9)
 BANDC = mat('band', '#FF6D00', 0.5)
+SWISSC = mat('swiss', '#5B8DEF', 0.35)
 MATC = mat('mat', '#B9C6D6', 0.9)
 CHAIRC = mat('chair', '#A0AEC0', 0.7)
 WALLC = mat('wall', '#E8ECF1', 0.95)
@@ -318,7 +319,7 @@ for job in JOBS:
     for o in temp:
         bpy.data.objects.remove(o)
     temp.clear()
-    act = bpy.data.actions[name]
+    act = bpy.data.actions[parts[4] if len(parts) > 4 and parts[4] else name]  # a job may reuse another move
     ad.action = act
     if hasattr(ad, 'action_slot') and getattr(act, 'slots', None):
         ad.action_slot = act.slots[0]
@@ -326,8 +327,16 @@ for job in JOBS:
     scene.frame_start, scene.frame_end = f0, f1
     scene.frame_set(f0)
 
-    seated = 'chair' in props or 'ball' in props
-    if seated:
+    seated = bool(props & {'chair', 'ball', 'swissseat'})
+    if 'swissseat' in props:  # exercise ball as the seat: 55 cm, squashed a little under the pelvis (seat 0.45)
+        hp = bone_head('hips')
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.27, segments=48, ring_count=24, location=(hp.x, hp.y + 0.03, 0.235))
+        o = bpy.context.object
+        o.scale = (1.05, 1.05, 0.87)
+        o.data.materials.append(SWISSC)
+        bpy.ops.object.shade_smooth()
+        temp.append(o)
+    elif seated:
         chair(0.12, 0.33, 1.0)
     floor_tiles('walk' in props)
     if 'chairfit' in props:  # a chair under the pelvis of the first pose (sit to stand: not a seated exercise)
@@ -352,7 +361,7 @@ for job in JOBS:
         lx = max(ext.x + 0.25, 2.0 if long_x else 0.95)
         ly = max(ext.y + 0.25, 0.95 if long_x else 2.0)
         bed(c, lx, ly)
-    elif not seated and not props & {'support', 'side', 'wall', 'walk', 'chairfit', 'wallball', 'wallback'} and bhi.z < 1.4:
+    elif not seated and not props & {'support', 'side', 'wall', 'walk', 'chairfit', 'wallball', 'wallback', 'table'} and bhi.z < 1.4:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.3, 1.9 if long_x else 0.66)
@@ -412,6 +421,32 @@ for job in JOBS:
             ball.keyframe_insert('location', frame=f)
             ball.keyframe_insert('scale', frame=f)
 
+    if 'table' in props:  # a table under the hand(s) that stay put; it extends away from the body
+        travel = {}
+        for sd in ('L', 'R'):
+            ps = []
+            for f in range(f0, f1 + 1, 3):
+                scene.frame_set(f)
+                ps.append(palm(sd))
+            travel[sd] = (max((q - ps[0]).length for q in ps), ps[0])
+        scene.frame_set(f0)
+        still = [sd for sd in travel if travel[sd][0] < 0.05] or [min(travel, key=lambda k_: travel[k_][0])]
+        pc = sum((travel[sd][1] for sd in still), Vector()) / len(still)
+        hp = bone_head('hips')
+        away = pc - hp
+        away.z = 0
+        away = away.normalized() if away.length > 0.02 else Vector((0, -1, 0))
+        top = pc.z - 0.025
+        long_ax = Vector((-away.y, away.x, 0))
+        if len(still) == 1:  # one hand on it (Codman): a small side table, clear of the other arm
+            c, w_, dpt = pc + away * 0.2, 0.5, 0.5
+        else:
+            c, w_, dpt = pc + away * 0.3, 1.1, 0.7
+        lx, ly = abs(long_ax.x) * w_ + abs(away.x) * dpt, abs(long_ax.y) * w_ + abs(away.y) * dpt
+        box((c.x, c.y, top - 0.02), (lx, ly, 0.04), CHAIRC)
+        for sx in (-1, 1):
+            for sy in (-1, 1):
+                box((c.x + sx * (lx / 2 - 0.05), c.y + sy * (ly / 2 - 0.05), (top - 0.04) / 2), (0.04, 0.04, top - 0.04), CHAIRC)
     if 'wallback' in props:  # wall touching the back over the whole motion (wall squat)
         box((0, bhi.y + 0.055, 1.2), (1.4, 0.1, 2.4), WALLC)['noframe'] = True
     if 'wallball' in props:  # wall behind the back, exercise ball between the lower back and the wall
@@ -507,7 +542,7 @@ for job in JOBS:
             ev.to_mesh_clear()
     if 'bed' in props and part == 'full':
         pts += [Vector((p_.x, p_.y, -0.3)) for p_ in pts if p_.z < 0.1]  # some of the bed under the body
-    if (seated or props & {'support', 'side', 'chairfit'}) and part != 'upper':
+    if (seated or props & {'support', 'side', 'chairfit', 'table'}) and part != 'upper':
         pts += [Vector((p_.x, p_.y, 0)) for p_ in pts if p_.z < 0.3]  # keep the floor under the feet in view
     centre, size = (lo + hi) / 2, (hi - lo)
     d = Vector(DIRS[view])

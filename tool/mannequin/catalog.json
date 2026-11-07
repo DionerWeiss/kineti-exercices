@@ -822,6 +822,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-seated-knee-extension",
+   "lib": "kineti",
+   "name": "Extensão de joelho sentado na bola suíça",
+   "desc": "Sentado na bola suíça com os pés no chão, estende um joelho elevando o pé à frente e volta devagar, mantendo o equilíbrio.",
+   "focus": "Quadríceps e controle do tronco",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-seated-knee-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4da"
+   ]
+  },
+  {
    "slug": "kineti-short-arc-quad",
    "lib": "kineti",
    "name": "Extensão de joelho sobre rolo",
@@ -1507,6 +1523,22 @@
    ]
   },
   {
+   "slug": "kineti-weight-shift-side-supported",
+   "lib": "kineti",
+   "name": "Transferência lateral de peso com apoio",
+   "desc": "Em pé, com as mãos no encosto de uma cadeira, transfere o peso devagar para uma perna e depois para a outra, sem tirar os pés do chão.",
+   "focus": "Controle do centro de massa",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-weight-shift-side-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e41"
+   ]
+  },
+  {
    "slug": "reverse-lunge-knee-drive",
    "lib": "deskbreak",
    "name": "Afundo reverso com elevação de joelho",
@@ -1673,6 +1705,23 @@
    "substitui": "seated_marching",
    "pocketphysio": [
     "660a6145b08ac7518f1f7ffa"
+   ]
+  },
+  {
+   "slug": "kineti-ball-seated-march",
+   "lib": "deskbreak",
+   "name": "Marcha sentado na bola suíça",
+   "desc": "Sentado na bola suíça com o tronco ereto, eleva um joelho e depois o outro, como numa marcha, mantendo o equilíbrio.",
+   "focus": "Flexores do quadril e controle do tronco",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-seated-march.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea0f",
+    "660a6144b08ac7518f1f7e95"
    ]
   },
   {
@@ -2243,6 +2292,23 @@
    ]
   },
   {
+   "slug": "kineti-ball-pelvic-tilt",
+   "lib": "deskbreak",
+   "name": "Mobilização pélvica na bola suíça",
+   "desc": "Sentado na bola suíça com as mãos nos joelhos, arredonda as costas levando a pelve para trás e depois arqueia, levando a pelve para a frente.",
+   "focus": "Mobilidade lombopélvica",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-pelvic-tilt.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e860",
+    "65a9272053a15212d048e54a"
+   ]
+  },
+  {
    "slug": "standing-windmill-rotation",
    "lib": "deskbreak",
    "name": "Moinho de vento em pé",
@@ -2488,6 +2554,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-seated-trunk-rotation",
+   "lib": "deskbreak",
+   "name": "Rotação de tronco sentado na bola suíça",
+   "desc": "Sentado na bola suíça com os braços cruzados sobre o peito, gira o tronco para um lado e para o outro, mantendo os joelhos para a frente.",
+   "focus": "Rotação da coluna e equilíbrio",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-seated-trunk-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f41"
+   ]
+  },
+  {
    "slug": "neck-rotation",
    "lib": "deskbreak",
    "name": "Rotação do pescoço",
@@ -2605,6 +2687,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-seated-shoulder-abduction-dumbbell",
+   "lib": "kineti",
+   "name": "Abdução de ombros com halteres na bola suíça",
+   "desc": "Sentado na bola suíça, com um halter em cada mão, abre os braços pela lateral até um pouco acima dos ombros e desce devagar.",
+   "focus": "Deltoide e controle do tronco",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Bola suíça, Halteres",
+   "video": "build/mannequin/videos/kineti-ball-seated-shoulder-abduction-dumbbell.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce53"
+   ]
+  },
+  {
    "slug": "lateral-raise",
    "lib": "deskbreak",
    "name": "Abdução de ombros em pé",
@@ -2634,6 +2732,22 @@
    "kineti_slug": "seated_shoulder_abduction",
    "substitui": "seated_shoulder_abduction",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-ball-seated-shoulder-abduction",
+   "lib": "kineti",
+   "name": "Abdução de ombros sentado na bola suíça",
+   "desc": "Sentado na bola suíça, abre os braços estendidos pela lateral até um pouco acima dos ombros e desce devagar.",
+   "focus": "Abdução do ombro e controle do tronco",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-seated-shoulder-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8012"
+   ]
   },
   {
    "slug": "kineti-band-pull-apart",
@@ -2732,6 +2846,25 @@
    "substitui": "arm_circles",
    "pocketphysio": [
     "673c9258e10df73c8302d7a7"
+   ]
+  },
+  {
+   "slug": "kineti-table-weight-bearing",
+   "lib": "kineti",
+   "name": "Descarga de peso nas mãos na mesa",
+   "desc": "Em pé, com as mãos apoiadas na mesa, transfere o peso do corpo para as mãos e volta, mantendo os cotovelos estendidos.",
+   "focus": "Estabilidade escapular",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-table-weight-bearing.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304073d6",
+    "65a9272053a15212d048e8fb",
+    "65a9272053a15212d048e8f9",
+    "65b09dc54ad825d03040731d"
    ]
   },
   {
@@ -2950,6 +3083,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-seated-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Flexão de ombros sentado na bola suíça",
+   "desc": "Sentado na bola suíça, eleva os dois braços estendidos pela frente até acima da cabeça e desce devagar, mantendo o tronco estável.",
+   "focus": "Flexão do ombro e controle do tronco",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-seated-shoulder-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f3b"
+   ]
+  },
+  {
    "slug": "protraction-retraction",
    "lib": "deskbreak",
    "name": "Protração e retração escapular",
@@ -3012,6 +3161,38 @@
    "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7cb7"
+   ]
+  },
+  {
+   "slug": "kineti-codman-pendulum",
+   "lib": "kineti",
+   "name": "Pêndulo de Codman",
+   "desc": "Com o tronco inclinado à frente e uma mão apoiada na mesa, deixa o outro braço pendurado e relaxado e o balança suavemente para a frente e para trás.",
+   "focus": "Mobilidade do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-codman-pendulum.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f50"
+   ]
+  },
+  {
+   "slug": "kineti-ball-seated-band-row",
+   "lib": "kineti",
+   "name": "Remada com faixa elástica sentado na bola suíça",
+   "desc": "Sentado na bola suíça, com a faixa presa à frente, puxa até as mãos chegarem às costelas e volta devagar, mantendo o tronco estável.",
+   "focus": "Dorsais e controle do tronco",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça, Faixa elástica presa no batente",
+   "video": "build/mannequin/videos/kineti-ball-seated-band-row.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cd4"
    ]
   },
   {
@@ -3231,6 +3412,23 @@
    ]
   },
   {
+   "slug": "kineti-thumb-abduction",
+   "lib": "hand",
+   "name": "Abdução e adução do polegar",
+   "desc": "Com a palma para cima, afasta o polegar do indicador, abrindo a mão, e volta a encostá-lo ao lado do indicador.",
+   "focus": "Mobilidade do polegar",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-thumb-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80f2",
+    "660a6145b08ac7518f1f80f0"
+   ]
+  },
+  {
    "slug": "kineti-open-close-hand",
    "lib": "hand",
    "name": "Abrir e fechar a mão",
@@ -3242,7 +3440,13 @@
    "video": "build/mannequin/videos/kineti-open-close-hand.mp4",
    "kineti_slug": "open_close_hand",
    "substitui": "open_close_hand",
-   "pocketphysio": []
+   "pocketphysio": [
+    "65a9272053a15212d048e84e",
+    "65b09dc54ad825d0304072f8",
+    "660a6144b08ac7518f1f7e63",
+    "660a61776a80d359d40dce42",
+    "664744bf5c2c1f75d4d71d8e"
+   ]
   },
   {
    "slug": "wrist-extensor-stretch",
@@ -3296,6 +3500,23 @@
    ]
   },
   {
+   "slug": "kineti-grip-ball-squeeze",
+   "lib": "hand",
+   "name": "Apertar bola",
+   "desc": "Com a mão apoiada na mesa e uma bola macia na palma, aperta a bola com os dedos e o polegar, segura e solta devagar.",
+   "focus": "Força de preensão",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-grip-ball-squeeze.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e1c",
+    "660a6145b08ac7518f1f7f63"
+   ]
+  },
+  {
    "slug": "chair-wrist-circles",
    "lib": "deskbreak",
    "name": "Circundução de punhos sentado",
@@ -3311,6 +3532,22 @@
     "660e50b42d1659b1aaba486f",
     "660a6145b08ac7518f1f8124",
     "660e4d342d1659b1aaba463b"
+   ]
+  },
+  {
+   "slug": "kineti-wrist-deviation",
+   "lib": "hand",
+   "name": "Desvio radial e ulnar do punho",
+   "desc": "Com a palma apoiada na mesa, desliza a mão para o lado do polegar, volta ao centro e desliza para o lado do dedo mínimo, sem mexer o antebraço.",
+   "focus": "Mobilidade do punho",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-wrist-deviation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f819f"
    ]
   },
   {
@@ -3360,6 +3597,41 @@
    ]
   },
   {
+   "slug": "kineti-thumb-flexion",
+   "lib": "hand",
+   "name": "Flexão do polegar",
+   "desc": "Com a palma para cima, leva a ponta do polegar pela palma em direção à base do dedo mínimo e volta devagar.",
+   "focus": "Mobilidade do polegar",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-thumb-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e35"
+   ]
+  },
+  {
+   "slug": "kineti-mcp-flexion",
+   "lib": "hand",
+   "name": "Flexão dos dedos em L",
+   "desc": "Com a mão apoiada e os dedos estendidos, dobra os dedos só nas articulações da base, mantendo-os retos, até formar um L. Volta devagar.",
+   "focus": "Músculos intrínsecos da mão",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-mcp-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e68",
+    "664744bf5c2c1f75d4d71d84",
+    "660a6144b08ac7518f1f7e69",
+    "664744bf5c2c1f75d4d71d85"
+   ]
+  },
+  {
    "slug": "kineti-wrist-flexion-extension",
    "lib": "hand",
    "name": "Flexão e extensão de punho",
@@ -3371,7 +3643,10 @@
    "video": "build/mannequin/videos/kineti-wrist-flexion-extension.mp4",
    "kineti_slug": "wrist_flexion_extension",
    "substitui": "wrist_flexion_extension",
-   "pocketphysio": []
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e44",
+    "664744bf5c2c1f75d4d71e97"
+   ]
   },
   {
    "slug": "kineti-thumb-opposition",
@@ -3385,7 +3660,9 @@
    "video": "build/mannequin/videos/kineti-thumb-opposition.mp4",
    "kineti_slug": "thumb_opposition",
    "substitui": "thumb_opposition",
-   "pocketphysio": []
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80ed"
+   ]
   },
   {
    "slug": "kineti-forearm-pronation-supination",

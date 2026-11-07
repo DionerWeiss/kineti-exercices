@@ -7,7 +7,7 @@ repainted with the Kineti palette and mark (render_mannequin.py).
     python3 tool/mannequin/mannequin.py render [ids...]            # MP4 in build/mannequin/videos/<id>.mp4
 
 Without ids, every job in jobs.json. Each job: {"lib": "deskbreak"|"kineti"|"hand" (with "scene": a hand scene of export_hand.py), "view": ..., "props": [...],
-"frame": "full"|"upper"|"lower", "pocketphysio": [ids]}. Views and props: see render_mannequin.py (DIRS, props).
+"frame": "full"|"upper"|"lower", "pocketphysio": [ids], "move": optional action to reuse (default the id)}. Views and props: see render_mannequin.py (DIRS, props).
 Env: KINETI_BLENDER (default: the Windows install), MANNEQUIN_PALETTE (default areia).
 """
 import json, os, subprocess, sys
@@ -68,7 +68,8 @@ def jobs(ids):
 def run(sel, outdir, still=None):
     by_lib = {}
     for i, j in sel.items():
-        by_lib.setdefault(j['lib'], []).append(f"{i}:{j['view']}:{'+'.join(j.get('props', []))}:{j.get('frame', 'full')}")
+        by_lib.setdefault(j['lib'], []).append(
+            f"{i}:{j['view']}:{'+'.join(j.get('props', []))}:{j.get('frame', 'full')}:{j.get('move', '')}")
     for lib, js in by_lib.items():
         for k in range(0, len(js), 20):  # several jobs per Blender launch
             blender(win(LIBS[lib]), '--python', win(HERE / 'render_mannequin.py'), '--', win(outdir), PALETTE,

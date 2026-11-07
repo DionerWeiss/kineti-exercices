@@ -195,6 +195,17 @@ def chair(y_seat, y_back, back_top=1.0):
             box((x, y, 0.205), (0.03, 0.03, 0.41), CHAIRC)
 
 
+def chair_side(x_back, y, out, back_top):
+    """Chair beside the body: backrest plane at x_back (the hand rests on it), seat further out (out = +1 or -1)."""
+    xs = x_back + 0.22 * out
+    box((xs, y, 0.43), (0.44, 0.46, 0.04), CHAIRC)
+    hb = back_top - 0.45
+    box((x_back, y, 0.45 + hb / 2), (0.03, 0.46, hb), CHAIRC)
+    for yy in (y - 0.2, y + 0.2):
+        for xx in (xs + 0.19 * out, x_back):
+            box((xx, yy, 0.205), (0.03, 0.03, 0.41), CHAIRC)
+
+
 def cyl(loc, r, depth, axis, m, parent=None):
     rot = {'x': (0, math.radians(90), 0), 'y': (math.radians(90), 0, 0), 'z': (0, 0, 0)}[axis]
     bpy.ops.mesh.primitive_cylinder_add(radius=r, depth=depth, location=loc, rotation=rot, vertices=32)
@@ -258,7 +269,7 @@ for job in JOBS:
     if seated:
         chair(0.12, 0.33, 1.0)
     blo, bhi, bpts = motion_bounds(f0, f1)
-    if not seated and 'support' not in props and 'wall' not in props and bhi.z < 1.4:
+    if not seated and not props & {'support', 'side', 'wall'} and bhi.z < 1.4:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.3, 1.9 if long_x else 0.66)
@@ -268,6 +279,11 @@ for job in JOBS:
         pl, pr = palm('L'), palm('R')
         y = (pl.y + pr.y) / 2
         chair(y - 0.22, y, back_top=min(pl.z, pr.z) - 0.04)
+    if 'side' in props:  # one hand on the backrest of a chair beside the body
+        hx = bone_head('hips').x
+        p_ = max((palm('L'), palm('R')), key=lambda v: abs(v.x - hx))
+        out = 1 if p_.x > hx else -1
+        chair_side(p_.x + 0.02 * out, p_.y, out, p_.z - 0.04)
     if 'wall' in props:
         y = min(palm('L').y, palm('R').y) - 0.03
         box((0, y - 0.05, 1.2), (1.4, 0.1, 2.4), WALLC)['noframe'] = True
@@ -324,7 +340,7 @@ for job in JOBS:
             ev = o.evaluated_get(deps)
             pts += [ev.matrix_world @ v.co for v in ev.to_mesh().vertices]
             ev.to_mesh_clear()
-    if (seated or 'support' in props) and part != 'upper':
+    if (seated or props & {'support', 'side'}) and part != 'upper':
         pts += [Vector((p_.x, p_.y, 0)) for p_ in pts if p_.z < 0.3]  # keep the floor under the feet in view
     centre, size = (lo + hi) / 2, (hi - lo)
     d = Vector(DIRS[view])

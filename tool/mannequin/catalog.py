@@ -18,7 +18,7 @@ OUT = HERE / 'catalog.json'
 VIEWS = {'side': 'Lateral', 'front': 'Frontal', 'side3q': 'Lateral 3/4', 'front3q': 'Frontal 3/4', 'rside3q': 'Lateral 3/4',
          'back3q': 'Posterior 3/4', 'top3q': 'Elevada', 'floor': 'Lateral elevada'}
 FRAMES = {'upper': ', do peito para cima', 'lower': ', pés em destaque', 'full': ''}
-PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
+PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apoio lateral)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
          'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete'}
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',
@@ -51,12 +51,14 @@ def main():
     if missing or bad or dup:
         raise SystemExit(f'sem texto: {missing}; área inválida: {bad}; nome repetido: {dup}')
 
+    libmap = {v['video']: k for k, v in json.load(open(HERE / 'library_map.json')).items() if v['video']}
     out = []
     for slug, j in jobs.items():
         props = list(j.get('props', []))
         rel = collections.Counter(pocket[i]['kineti_slug'] for i in j['pocketphysio']
                                   if pocket[i].get('relacao_kineti') == 'identico' and pocket[i].get('kineti_slug'))
-        kslug = kineti_slug(slug) if kineti_slug(slug) in kin else (rel.most_common(1)[0][0] if rel else '')
+        # the library exercise this video replaces (library_map.json); otherwise only an indicative match
+        kslug = libmap.get(slug) or (rel.most_common(1)[0][0] if rel else '')
         cat = desk.get(slug, {}).get('category', '')
         # no chão o render põe o colchonete (só a deusa, do grupo yoga, é em pé)
         lying = j['view'] == 'floor' or cat.startswith('floor') or (cat == 'yoga' and slug != 'goddess-pose-gentle')
@@ -66,6 +68,7 @@ def main():
             'props': ', '.join([PROPS[p] for p in props] + (['Colchonete'] if lying else [])) or '—',
             'video': f'build/mannequin/videos/{slug}.mp4',
             'kineti_slug': kslug,
+            'substitui': libmap.get(slug, ''),
             'pocketphysio': j['pocketphysio'],
         })
     order = [a['id'] for a in kcat['areas']]

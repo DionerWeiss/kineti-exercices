@@ -1,0 +1,238 @@
+{
+ "bed_rolling": {
+  "video": null,
+  "nota": "falta a cama e a rolagem precisa de teste"
+ },
+ "lying_to_sitting": {
+  "video": null,
+  "nota": "falta a cama e a transição deitado-sentado"
+ },
+ "standing_hip_flexion": {
+  "video": "kineti-standing-hip-flexion-supported",
+  "nota": ""
+ },
+ "standing_hip_extension": {
+  "video": "kineti-standing-hip-extension-supported",
+  "nota": ""
+ },
+ "seated_knee_extension": {
+  "video": "kineti-seated-knee-extension",
+  "nota": ""
+ },
+ "seated_knee_extension_ankle_weight": {
+  "video": "kineti-seated-knee-extension-ankle-weight",
+  "nota": ""
+ },
+ "ankle_pumps": {
+  "video": "kineti-supine-ankle-pumps",
+  "nota": ""
+ },
+ "standing_heel_raise": {
+  "video": "kineti-calf-raise-supported",
+  "nota": ""
+ },
+ "feet_together_stance": {
+  "video": "kineti-feet-together-stance",
+  "nota": "sem a bancada"
+ },
+ "semi_tandem_stance": {
+  "video": "kineti-semi-tandem-stance",
+  "nota": "sem a bancada"
+ },
+ "indoor_walking": {
+  "video": null,
+  "nota": "caminhada com deslocamento: falta a câmera que acompanha o corpo"
+ },
+ "variable_speed_walking": {
+  "video": null,
+  "nota": "caminhada com deslocamento: falta a câmera que acompanha o corpo"
+ },
+ "supine_pelvic_tilt": {
+  "video": "pelvic-tilt-lying",
+  "nota": ""
+ },
+ "seated_trunk_rotation": {
+  "video": "chair-twist",
+  "nota": ""
+ },
+ "shoulder_shrugs": {
+  "video": "chair-shoulder-shrugs",
+  "nota": ""
+ },
+ "scapular_retraction": {
+  "video": "chair-scapular-squeeze",
+  "nota": "cadeira com encosto e vista frontal; o manequim não tem escápulas"
+ },
+ "elbow_flexion": {
+  "video": "chair-biceps-curl",
+  "nota": "os dois braços"
+ },
+ "elbow_flexion_dumbbell": {
+  "video": "kineti-seated-elbow-curl-dumbbell",
+  "nota": ""
+ },
+ "diaphragmatic_breathing": {
+  "video": null,
+  "nota": "o manequim não mostra a respiração"
+ },
+ "pursed_lip_breathing": {
+  "video": null,
+  "nota": "o manequim não tem rosto"
+ },
+ "abdominal_crunches": {
+  "video": "kineti-crunch-hands-behind-head",
+  "nota": ""
+ },
+ "arm_circles": {
+  "video": "arm-circles-small",
+  "nota": ""
+ },
+ "ankle_circles": {
+  "video": "chair-ankle-circles",
+  "nota": ""
+ },
+ "seated_marching": {
+  "video": "chair-march",
+  "nota": "braços balançando, e não nas laterais do assento"
+ },
+ "seated_shoulder_flexion": {
+  "video": "kineti-seated-shoulder-flexion",
+  "nota": ""
+ },
+ "seated_shoulder_abduction": {
+  "video": "kineti-seated-shoulder-abduction",
+  "nota": ""
+ },
+ "seated_heel_toe_raises": {
+  "video": "chair-heel-toe-rock",
+  "nota": ""
+ },
+ "seated_overhead_press": {
+  "video": "kineti-seated-overhead-press",
+  "nota": ""
+ },
+ "sit_to_stand_exercise": {
+  "video": null,
+  "nota": "transição sentado-em pé: o desk-break prende a pelve na cadeira; precisa de teste"
+ },
+ "standing_hip_abduction": {
+  "video": "kineti-standing-hip-abduction-supported",
+  "nota": "duas mãos no encosto, à frente"
+ },
+ "standing_knee_flexion": {
+  "video": "kineti-standing-knee-flexion-supported",
+  "nota": ""
+ },
+ "mini_squat": {
+  "video": "kineti-mini-squat-supported",
+  "nota": ""
+ },
+ "standing_marching": {
+  "video": "kineti-standing-marching-supported",
+  "nota": ""
+ },
+ "wall_push_up": {
+  "video": "kineti-wall-push-up",
+  "nota": ""
+ },
+ "lateral_weight_shift": {
+  "video": "balance-weight-shift-side",
+  "nota": "sem a bancada"
+ },
+ "single_leg_stance": {
+  "video": "kineti-single-leg-stance-supported",
+  "nota": "encosto da cadeira no lugar da bancada"
+ },
+ "step_up": {
+  "video": null,
+  "nota": "falta o degrau, e o contato automático só existe com o chão"
+ },
+ "bridge": {
+  "video": "glute-bridge",
+  "nota": ""
+ },
+ "heel_slides": {
+  "video": "heel-slides",
+  "nota": "começa com os joelhos dobrados"
+ },
+ "straight_leg_raise": {
+  "video": "straight-leg-raise",
+  "nota": ""
+ },
+ "supine_hip_abduction": {
+  "video": "kineti-supine-hip-abduction",
+  "nota": ""
+ },
+ "single_knee_to_chest": {
+  "video": "knee-to-chest-single",
+  "nota": ""
+ },
+ "short_arc_quad": {
+  "video": "kineti-short-arc-quad",
+  "nota": ""
+ },
+ "seated_band_row": {
+  "video": null,
+  "nota": "falta a faixa elástica"
+ },
+ "band_pull_apart": {
+  "video": null,
+  "nota": "falta a faixa elástica (pull-aparts é a versão sem faixa)"
+ },
+ "band_shoulder_external_rotation": {
+  "video": null,
+  "nota": "falta a faixa elástica"
+ },
+ "seated_band_hip_abduction": {
+  "video": null,
+  "nota": "falta a faixa elástica"
+ },
+ "adductor_ball_squeeze": {
+  "video": "kineti-adductor-ball-squeeze",
+  "nota": ""
+ },
+ "wall_ball_squat": {
+  "video": null,
+  "nota": "falta a parede atrás das costas e a bola suíça"
+ },
+ "prone_press_up_on_elbows": {
+  "video": "kineti-prone-press-up-elbows",
+  "nota": ""
+ },
+ "prone_hip_extension": {
+  "video": "prone-leg-lift",
+  "nota": "braços ao lado do corpo"
+ },
+ "bird_dog": {
+  "video": "bird-dog",
+  "nota": ""
+ },
+ "cat_camel": {
+  "video": "cat-cow",
+  "nota": ""
+ },
+ "side_lying_clamshell": {
+  "video": "kineti-side-lying-clamshell",
+  "nota": ""
+ },
+ "side_lying_hip_abduction": {
+  "video": "side-lying-leg-lift",
+  "nota": ""
+ },
+ "wrist_flexion_extension": {
+  "video": null,
+  "nota": "falta a mesa"
+ },
+ "forearm_pronation_supination": {
+  "video": null,
+  "nota": "falta a mesa"
+ },
+ "open_close_hand": {
+  "video": null,
+  "nota": "o manequim não tem dedos"
+ },
+ "thumb_opposition": {
+  "video": null,
+  "nota": "o manequim não tem dedos"
+ }
+}

@@ -730,5 +730,101 @@
   "Em pé, com os cotovelos junto ao corpo, flexiona os cotovelos levando os halteres até os ombros e desce devagar.",
   "Bíceps",
   "cotovelos_punhos_maos"
+ ],
+ "kineti-standing-hip-extension-supported": [
+  "Extensão de quadril em pé com apoio",
+  "Em pé, com as mãos no encosto de uma cadeira, leva uma perna estendida para trás com o tronco ereto e retorna.",
+  "Glúteo máximo",
+  "quadril_gluteos"
+ ],
+ "kineti-crunch-hands-behind-head": [
+  "Abdominal com mãos na nuca",
+  "Deitado de costas, com os joelhos flexionados e as mãos atrás da cabeça, cotovelos abertos, eleva a cabeça e as escápulas do colchonete e desce devagar.",
+  "Abdominais",
+  "tronco_coluna"
+ ],
+ "kineti-seated-knee-extension": [
+  "Extensão de joelho sentado",
+  "Sentado com as costas eretas e os pés no chão, estende um joelho elevando o pé à frente e retorna devagar, com a coxa apoiada no assento.",
+  "Quadríceps",
+  "joelhos"
+ ],
+ "kineti-supine-ankle-pumps": [
+  "Bomba de tornozelo deitado",
+  "Deitado de costas, com as pernas estendidas, puxa as pontas dos pés em direção ao corpo e depois as aponta para longe, devagar.",
+  "Tornozelos e circulação",
+  "tornozelos_pes"
+ ],
+ "kineti-feet-together-stance": [
+  "Em pé com os pés juntos",
+  "Em pé, com os pés unidos e os braços relaxados, mantém a posição com pequenas oscilações naturais, sem mexer os pés.",
+  "Equilíbrio estático",
+  "equilibrio"
+ ],
+ "kineti-semi-tandem-stance": [
+  "Postura em semitandem",
+  "Em pé, com um pé parcialmente à frente do outro, mantém a posição com pequenas correções de equilíbrio.",
+  "Equilíbrio com base reduzida",
+  "equilibrio"
+ ],
+ "kineti-seated-shoulder-flexion": [
+  "Flexão de ombros sentado",
+  "Sentado, eleva os dois braços pela frente, com os cotovelos estendidos, até acima da cabeça e desce devagar.",
+  "Flexão do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-shoulder-abduction": [
+  "Abdução de ombros sentado",
+  "Sentado, abre os dois braços pela lateral, com os cotovelos estendidos, até um pouco acima dos ombros e desce devagar.",
+  "Abdução do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-overhead-press": [
+  "Desenvolvimento com halteres sentado",
+  "Sentado, com um halter em cada mão na altura dos ombros e os cotovelos abertos, empurra os pesos para cima até quase estender os cotovelos e desce devagar.",
+  "Deltoide e tríceps",
+  "ombros_escapulas"
+ ],
+ "kineti-prone-press-up-elbows": [
+  "Apoio nos antebraços de bruços",
+  "Deitado de bruços, eleva o peito apoiando-se nos antebraços, com os cotovelos sob os ombros e o quadril no colchonete. Segura e desce devagar.",
+  "Extensão da coluna",
+  "tronco_coluna"
+ ],
+ "kineti-side-lying-clamshell": [
+  "Ostra",
+  "Deitado de lado, com quadril e joelhos dobrados e os pés juntos, abre o joelho de cima como uma concha, sem separar os pés, e fecha devagar.",
+  "Glúteo médio e rotadores",
+  "quadril_gluteos"
+ ],
+ "kineti-standing-marching-supported": [
+  "Marcha em pé com apoio",
+  "Em pé, com uma mão no encosto de uma cadeira ao lado, eleva um joelho de cada vez, com o tronco ereto e o braço livre acompanhando.",
+  "Flexores do quadril e equilíbrio",
+  "marcha"
+ ],
+ "kineti-single-leg-stance-supported": [
+  "Apoio unipodal com apoio",
+  "Com uma mão no encosto de uma cadeira ao lado, tira um pé do chão com o joelho dobrado e se mantém. Depois apoia o pé.",
+  "Equilíbrio unipodal",
+  "equilibrio"
+ ],
+ "kineti-standing-hip-flexion-supported": [
+  "Flexão de quadril em pé com apoio",
+  "Em pé, com uma mão no encosto de uma cadeira ao lado, eleva um joelho à frente com o tronco ereto e abaixa o pé devagar.",
+  "Flexores do quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-seated-knee-extension-ankle-weight": [
+  "Extensão de joelho sentado com tornozeleira",
+  "Sentado, com uma tornozeleira, estende um joelho elevando o pé à frente e retorna devagar, com a coxa apoiada e o tronco estável.",
+  "Quadríceps",
+  "joelhos"
+ ],
+ "kineti-seated-elbow-curl-dumbbell": [
+  "Flexão de cotovelo com halteres sentado",
+  "Sentado, com um halter em cada mão, flexiona os cotovelos aproximando os pesos dos ombros e desce devagar.",
+  "Bíceps e cotovelo",
+  "cotovelos_punhos_maos"
  ]
 }

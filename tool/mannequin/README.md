@@ -21,6 +21,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `video`: o MP4 em `build/mannequin/videos/`;
   - `kineti_slug`: o exercício equivalente da biblioteca Kineti, quando há. Nos vídeos do desk-break, ele vem da comparação feita no PocketPhysio e é só indicativo;
   - `pocketphysio`: os ids atendidos.
+- **`library_map.json`:** para cada um dos 59 exercícios da biblioteca Kineti, o vídeo do manequim que o substitui, ou `null` e o motivo (dedos, rosto, faixa elástica, mesa, cama, degrau, caminhada). No catálogo, ele aparece no campo `substitui`.
 - **`texts_pt.json`:** nome, descrição, foco e área de cada vídeo, escritos à mão (`{slug: [nome, descrição, foco, área]}`). A descrição segue o que o vídeo mostra, e não o texto original do desk-break. Os movimentos Kineti que já estão na biblioteca usam os textos do `catalog.json` dela.
 - **`kineti_moves.json`:** movimentos escritos por nós, no formato do desk-break (veja `build/desk-break/library/AUTHORING.md`). Os ids começam com `kineti-`.
 - **`render_mannequin.py`:** roda dentro do Blender. Repinta o manequim, aplica a marca, monta o cenário e a câmera, e renderiza.
@@ -33,7 +34,8 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
 - **Colchonete:** cobre a área ocupada pelo corpo durante todo o movimento. Só aparece sem `chair`, `ball`, `support` ou `wall`.
 - **Acessórios:**
   - `chair`: cadeira, com o manequim sentado;
-  - `support`: encosto de cadeira na altura das mãos;
+  - `support`: encosto de cadeira à frente, na altura das mãos;
+  - `side`: cadeira ao lado, com a mão que está mais afastada do corpo no encosto;
   - `wall`: parede na frente das mãos;
   - `roll`: rolo sob o joelho;
   - `ball`: bola entre os joelhos, que achata;

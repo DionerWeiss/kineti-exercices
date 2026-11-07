@@ -1316,5 +1316,120 @@
   "pocketphysio": [
    "660a6144b08ac7518f1f7c9f"
   ]
+ },
+ "kineti-standing-hip-extension-supported": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "support"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-crunch-hands-behind-head": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-seated-knee-extension": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "chair"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-supine-ankle-pumps": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-feet-together-stance": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-semi-tandem-stance": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-seated-shoulder-flexion": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "chair"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-seated-shoulder-abduction": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "chair"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-seated-overhead-press": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "chair",
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-prone-press-up-elbows": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-side-lying-clamshell": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-standing-marching-supported": {
+  "lib": "kineti",
+  "view": "rside3q",
+  "props": [
+   "side"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-single-leg-stance-supported": {
+  "lib": "kineti",
+  "view": "rside3q",
+  "props": [
+   "side"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-standing-hip-flexion-supported": {
+  "lib": "kineti",
+  "view": "rside3q",
+  "props": [
+   "side"
+  ],
+  "frame": "full",
+  "pocketphysio": []
  }
 }

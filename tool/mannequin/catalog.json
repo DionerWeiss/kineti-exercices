@@ -54,6 +54,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/side-lying-leg-lift.mp4",
    "kineti_slug": "side_lying_hip_abduction",
+   "substitui": "side_lying_hip_abduction",
    "pocketphysio": [
     "673c9258e10df73c8302d7e4",
     "65a9272053a15212d048e7f1",
@@ -72,6 +73,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/kineti-supine-hip-abduction.mp4",
    "kineti_slug": "supine_hip_abduction",
+   "substitui": "supine_hip_abduction",
    "pocketphysio": []
   },
   {
@@ -85,6 +87,7 @@
    "props": "—",
    "video": "build/mannequin/videos/side-leg-raise.mp4",
    "kineti_slug": "standing_hip_abduction",
+   "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7e8c",
     "65b09dc54ad825d030407250"
@@ -101,6 +104,7 @@
    "props": "Cadeira (apoio)",
    "video": "build/mannequin/videos/kineti-standing-hip-abduction-supported.mp4",
    "kineti_slug": "standing_hip_abduction",
+   "substitui": "standing_hip_abduction",
    "pocketphysio": []
   },
   {
@@ -114,6 +118,7 @@
    "props": "Bola pequena",
    "video": "build/mannequin/videos/kineti-adductor-ball-squeeze.mp4",
    "kineti_slug": "adductor_ball_squeeze",
+   "substitui": "adductor_ball_squeeze",
    "pocketphysio": []
   },
   {
@@ -127,6 +132,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/side-lying-inner-thigh.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e80a"
    ]
@@ -142,6 +148,7 @@
    "props": "—",
    "video": "build/mannequin/videos/goddess-pose-gentle.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7da"
    ]
@@ -157,6 +164,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/floor-butterfly-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e741"
    ]
@@ -172,6 +180,7 @@
    "props": "—",
    "video": "build/mannequin/videos/lunge-hip-flexor-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e7e3",
     "65a9272053a15212d048e735"
@@ -188,6 +197,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/figure-four-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e743"
    ]
@@ -203,6 +213,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-figure-four.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e732"
    ]
@@ -218,6 +229,7 @@
    "props": "—",
    "video": "build/mannequin/videos/cross-leg-side-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e751"
    ]
@@ -233,6 +245,7 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-side-leg-swing.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e731"
    ]
@@ -248,6 +261,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/reclined-butterfly.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e755"
    ]
@@ -263,6 +277,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/donkey-kick.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7b0"
    ]
@@ -278,6 +293,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-leg-lift.mp4",
    "kineti_slug": "prone_hip_extension",
+   "substitui": "prone_hip_extension",
    "pocketphysio": [
     "65a9272053a15212d048e7db",
     "65a9272053a15212d048e72d",
@@ -295,9 +311,38 @@
    "props": "—",
    "video": "build/mannequin/videos/back-leg-raise.mp4",
    "kineti_slug": "standing_hip_extension",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f80ce"
    ]
+  },
+  {
+   "slug": "kineti-standing-hip-extension-supported",
+   "lib": "kineti",
+   "name": "Extensão de quadril em pé com apoio",
+   "desc": "Em pé, com as mãos no encosto de uma cadeira, leva uma perna estendida para trás com o tronco ereto e retorna.",
+   "focus": "Glúteo máximo",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-standing-hip-extension-supported.mp4",
+   "kineti_slug": "standing_hip_extension",
+   "substitui": "standing_hip_extension",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-standing-hip-flexion-supported",
+   "lib": "kineti",
+   "name": "Flexão de quadril em pé com apoio",
+   "desc": "Em pé, com uma mão no encosto de uma cadeira ao lado, eleva um joelho à frente com o tronco ereto e abaixa o pé devagar.",
+   "focus": "Flexores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio lateral)",
+   "video": "build/mannequin/videos/kineti-standing-hip-flexion-supported.mp4",
+   "kineti_slug": "standing_hip_flexion",
+   "substitui": "standing_hip_flexion",
+   "pocketphysio": []
   },
   {
    "slug": "knee-to-chest-single",
@@ -310,6 +355,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/knee-to-chest-single.mp4",
    "kineti_slug": "single_knee_to_chest",
+   "substitui": "single_knee_to_chest",
    "pocketphysio": [
     "65b09dc54ad825d0304073ce",
     "65a9272053a15212d048e7de"
@@ -326,9 +372,24 @@
    "props": "—",
    "video": "build/mannequin/videos/wide-mini-squat.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d798"
    ]
+  },
+  {
+   "slug": "kineti-side-lying-clamshell",
+   "lib": "kineti",
+   "name": "Ostra",
+   "desc": "Deitado de lado, com quadril e joelhos dobrados e os pés juntos, abre o joelho de cima como uma concha, sem separar os pés, e fecha devagar.",
+   "focus": "Glúteo médio e rotadores",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-side-lying-clamshell.mp4",
+   "kineti_slug": "side_lying_clamshell",
+   "substitui": "side_lying_clamshell",
+   "pocketphysio": []
   },
   {
    "slug": "glute-bridge",
@@ -341,6 +402,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/glute-bridge.mp4",
    "kineti_slug": "bridge",
+   "substitui": "bridge",
    "pocketphysio": [
     "673c9258e10df73c8302d76e",
     "65a9272053a15212d048e85b",
@@ -358,6 +420,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/kineti-single-leg-bridge.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e742",
     "65a9272053a15212d048e7e9",
@@ -377,6 +440,7 @@
    "props": "—",
    "video": "build/mannequin/videos/shallow-split-squat.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea3a",
     "673c9258e10df73c8302d78e"
@@ -393,6 +457,7 @@
    "props": "—",
    "video": "build/mannequin/videos/sit-back-squat.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e9f2",
     "673c9258e10df73c8302d746"
@@ -409,6 +474,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/floor-head-to-knee-easy.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e82f"
    ]
@@ -424,6 +490,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/lying-hamstring-stretch.mp4",
    "kineti_slug": "straight_leg_raise",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e80c"
    ]
@@ -439,6 +506,7 @@
    "props": "Cadeira, Colchonete",
    "video": "build/mannequin/videos/chair-hamstring-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407247"
    ]
@@ -454,6 +522,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/side-lying-quad-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e83c"
    ]
@@ -469,6 +538,7 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-quad-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f7f6b",
     "65b09dc54ad825d030407306"
@@ -485,6 +555,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/heel-slides.mp4",
    "kineti_slug": "heel_slides",
+   "substitui": "heel_slides",
    "pocketphysio": [
     "65a9272053a15212d048e6e9",
     "65a9272053a15212d048e817",
@@ -504,6 +575,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/straight-leg-raise.mp4",
    "kineti_slug": "straight_leg_raise",
+   "substitui": "straight_leg_raise",
    "pocketphysio": [
     "65b09dc54ad825d03040733a",
     "65b09dc54ad825d030407348",
@@ -514,16 +586,31 @@
    ]
   },
   {
+   "slug": "kineti-seated-knee-extension",
+   "lib": "kineti",
+   "name": "Extensão de joelho sentado",
+   "desc": "Sentado com as costas eretas e os pés no chão, estende um joelho elevando o pé à frente e retorna devagar, com a coxa apoiada no assento.",
+   "focus": "Quadríceps",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-knee-extension.mp4",
+   "kineti_slug": "seated_knee_extension",
+   "substitui": "seated_knee_extension",
+   "pocketphysio": []
+  },
+  {
    "slug": "kineti-seated-knee-extension-ankle-weight",
    "lib": "kineti",
-   "name": "Extensão de joelho com tornozeleira",
-   "desc": "Mesmo movimento do exercício 5, com uma tornozeleira discreta na perna que se movimenta. Coxa apoiada e tronco estável.",
-   "focus": "Quadríceps com carga",
+   "name": "Extensão de joelho sentado com tornozeleira",
+   "desc": "Sentado, com uma tornozeleira, estende um joelho elevando o pé à frente e retorna devagar, com a coxa apoiada e o tronco estável.",
+   "focus": "Quadríceps",
    "area": "joelhos",
    "view": "Lateral 3/4",
    "props": "Cadeira, Tornozeleira",
    "video": "build/mannequin/videos/kineti-seated-knee-extension-ankle-weight.mp4",
    "kineti_slug": "seated_knee_extension_ankle_weight",
+   "substitui": "seated_knee_extension_ankle_weight",
    "pocketphysio": []
   },
   {
@@ -537,6 +624,7 @@
    "props": "Rolo, Colchonete",
    "video": "build/mannequin/videos/kineti-short-arc-quad.mp4",
    "kineti_slug": "short_arc_quad",
+   "substitui": "short_arc_quad",
    "pocketphysio": []
   },
   {
@@ -550,6 +638,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-heel-to-seat.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407224"
    ]
@@ -565,6 +654,7 @@
    "props": "Cadeira (apoio)",
    "video": "build/mannequin/videos/kineti-standing-knee-flexion-supported.mp4",
    "kineti_slug": "standing_knee_flexion",
+   "substitui": "standing_knee_flexion",
    "pocketphysio": []
   },
   {
@@ -578,6 +668,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/floor-long-sit-forward-fold.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e50f"
    ]
@@ -592,7 +683,8 @@
    "view": "Lateral 3/4",
    "props": "—",
    "video": "build/mannequin/videos/mini-squat.mp4",
-   "kineti_slug": "mini_squat",
+   "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407201",
     "65a9272053a15212d048e6fe",
@@ -611,6 +703,7 @@
    "props": "Cadeira (apoio)",
    "video": "build/mannequin/videos/kineti-mini-squat-supported.mp4",
    "kineti_slug": "mini_squat",
+   "substitui": "mini_squat",
    "pocketphysio": [
     "65a9272053a15212d048e852",
     "660a6145b08ac7518f1f7f46"
@@ -627,6 +720,7 @@
    "props": "—",
    "video": "build/mannequin/videos/mini-squat-hold.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d790"
    ]
@@ -642,6 +736,7 @@
    "props": "Parede",
    "video": "build/mannequin/videos/kineti-wall-calf-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7e7d",
     "660a6144b08ac7518f1f7e7e",
@@ -661,9 +756,24 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-heel-toe-rock.mp4",
    "kineti_slug": "seated_heel_toe_raises",
+   "substitui": "seated_heel_toe_raises",
    "pocketphysio": [
     "65a9272053a15212d048e4fe"
    ]
+  },
+  {
+   "slug": "kineti-supine-ankle-pumps",
+   "lib": "kineti",
+   "name": "Bomba de tornozelo deitado",
+   "desc": "Deitado de costas, com as pernas estendidas, puxa as pontas dos pés em direção ao corpo e depois as aponta para longe, devagar.",
+   "focus": "Tornozelos e circulação",
+   "area": "tornozelos_pes",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-ankle-pumps.mp4",
+   "kineti_slug": "ankle_pumps",
+   "substitui": "ankle_pumps",
+   "pocketphysio": []
   },
   {
    "slug": "chair-ankle-pumps",
@@ -676,6 +786,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-ankle-pumps.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e509",
     "65b09dc54ad825d030407208"
@@ -692,6 +803,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/floor-ankle-pumps.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407209",
     "660a61776a80d359d40dce48"
@@ -707,7 +819,8 @@
    "view": "Lateral elevada",
    "props": "Colchonete",
    "video": "build/mannequin/videos/ankle-circles.mp4",
-   "kineti_slug": "ankle_circles",
+   "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e527",
     "65a9272153a15212d048eaef"
@@ -724,6 +837,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-ankle-circles.mp4",
    "kineti_slug": "ankle_circles",
+   "substitui": "ankle_circles",
    "pocketphysio": [
     "65b09dc54ad825d030407205",
     "65a9272053a15212d048e505",
@@ -742,6 +856,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-toe-raises.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407309"
    ]
@@ -757,6 +872,7 @@
    "props": "Cadeira (apoio)",
    "video": "build/mannequin/videos/kineti-single-calf-raise-supported.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407249",
     "660a6144b08ac7518f1f7d86",
@@ -775,6 +891,7 @@
    "props": "Cadeira (apoio)",
    "video": "build/mannequin/videos/kineti-calf-raise-supported.mp4",
    "kineti_slug": "standing_heel_raise",
+   "substitui": "standing_heel_raise",
    "pocketphysio": [
     "65a9272053a15212d048e52c",
     "660a6144b08ac7518f1f7cb1",
@@ -792,6 +909,7 @@
    "props": "—",
    "video": "build/mannequin/videos/calf-raise.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d03040724a",
     "673c9258e10df73c8302d7c9"
@@ -808,6 +926,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-heel-raises.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e4ff"
    ]
@@ -823,9 +942,24 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/downward-dog-pedal.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e532"
    ]
+  },
+  {
+   "slug": "kineti-single-leg-stance-supported",
+   "lib": "kineti",
+   "name": "Apoio unipodal com apoio",
+   "desc": "Com uma mão no encosto de uma cadeira ao lado, tira um pé do chão com o joelho dobrado e se mantém. Depois apoia o pé.",
+   "focus": "Equilíbrio unipodal",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio lateral)",
+   "video": "build/mannequin/videos/kineti-single-leg-stance-supported.mp4",
+   "kineti_slug": "single_leg_stance",
+   "substitui": "single_leg_stance",
+   "pocketphysio": []
   },
   {
    "slug": "single-leg-head-turns",
@@ -838,6 +972,7 @@
    "props": "—",
    "video": "build/mannequin/videos/single-leg-head-turns.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e625"
    ]
@@ -853,6 +988,7 @@
    "props": "—",
    "video": "build/mannequin/videos/balance-single-leg-stand.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e5db",
     "660a6144b08ac7518f1f7d90",
@@ -872,6 +1008,7 @@
    "props": "—",
    "video": "build/mannequin/videos/balance-airplane-mild.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407350"
    ]
@@ -887,10 +1024,25 @@
    "props": "—",
    "video": "build/mannequin/videos/balance-toe-heel-rock.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f80d0",
     "660a6144b08ac7518f1f7d8c"
    ]
+  },
+  {
+   "slug": "kineti-feet-together-stance",
+   "lib": "kineti",
+   "name": "Em pé com os pés juntos",
+   "desc": "Em pé, com os pés unidos e os braços relaxados, mantém a posição com pequenas oscilações naturais, sem mexer os pés.",
+   "focus": "Equilíbrio estático",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-feet-together-stance.mp4",
+   "kineti_slug": "feet_together_stance",
+   "substitui": "feet_together_stance",
+   "pocketphysio": []
   },
   {
    "slug": "balance-knee-raise-hold",
@@ -903,6 +1055,7 @@
    "props": "—",
    "video": "build/mannequin/videos/balance-knee-raise-hold.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e611"
    ]
@@ -918,6 +1071,7 @@
    "props": "—",
    "video": "build/mannequin/videos/balance-slow-march.mp4",
    "kineti_slug": "standing_marching",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304072f0",
     "660a6145b08ac7518f1f7f34",
@@ -935,10 +1089,25 @@
    "props": "—",
    "video": "build/mannequin/videos/clock-reach-foot.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e6e8",
     "65a9272053a15212d048e6e5"
    ]
+  },
+  {
+   "slug": "kineti-semi-tandem-stance",
+   "lib": "kineti",
+   "name": "Postura em semitandem",
+   "desc": "Em pé, com um pé parcialmente à frente do outro, mantém a posição com pequenas correções de equilíbrio.",
+   "focus": "Equilíbrio com base reduzida",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-semi-tandem-stance.mp4",
+   "kineti_slug": "semi_tandem_stance",
+   "substitui": "semi_tandem_stance",
+   "pocketphysio": []
   },
   {
    "slug": "heel-to-toe-stand",
@@ -951,6 +1120,7 @@
    "props": "—",
    "video": "build/mannequin/videos/heel-to-toe-stand.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407219"
    ]
@@ -965,7 +1135,8 @@
    "view": "Frontal 3/4",
    "props": "—",
    "video": "build/mannequin/videos/balance-weight-shift-side.mp4",
-   "kineti_slug": "",
+   "kineti_slug": "lateral_weight_shift",
+   "substitui": "lateral_weight_shift",
    "pocketphysio": [
     "65a9272053a15212d048e610",
     "65a9272053a15212d048e5e2"
@@ -982,6 +1153,7 @@
    "props": "—",
    "video": "build/mannequin/videos/reverse-lunge-knee-drive.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7c4",
     "673c9258e10df73c8302d7de"
@@ -998,6 +1170,7 @@
    "props": "—",
    "video": "build/mannequin/videos/knee-lift-pull-down.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e6e6"
    ]
@@ -1013,9 +1186,24 @@
    "props": "—",
    "video": "build/mannequin/videos/cross-knee-tap.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7e3"
    ]
+  },
+  {
+   "slug": "kineti-standing-marching-supported",
+   "lib": "kineti",
+   "name": "Marcha em pé com apoio",
+   "desc": "Em pé, com uma mão no encosto de uma cadeira ao lado, eleva um joelho de cada vez, com o tronco ereto e o braço livre acompanhando.",
+   "focus": "Flexores do quadril e equilíbrio",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio lateral)",
+   "video": "build/mannequin/videos/kineti-standing-marching-supported.mp4",
+   "kineti_slug": "standing_marching",
+   "substitui": "standing_marching",
+   "pocketphysio": []
   },
   {
    "slug": "march-in-place",
@@ -1028,6 +1216,7 @@
    "props": "—",
    "video": "build/mannequin/videos/march-in-place.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304072ef",
     "65a9272053a15212d048e62c",
@@ -1048,6 +1237,7 @@
    "props": "Cadeira, Colchonete",
    "video": "build/mannequin/videos/chair-march.mp4",
    "kineti_slug": "seated_marching",
+   "substitui": "seated_marching",
    "pocketphysio": [
     "660a6145b08ac7518f1f7ffa"
    ]
@@ -1063,6 +1253,7 @@
    "props": "—",
    "video": "build/mannequin/videos/grapevine.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e62a",
     "65a9272053a15212d048e600"
@@ -1079,9 +1270,24 @@
    "props": "—",
    "video": "build/mannequin/videos/fast-feet-small.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7eb"
    ]
+  },
+  {
+   "slug": "kineti-crunch-hands-behind-head",
+   "lib": "kineti",
+   "name": "Abdominal com mãos na nuca",
+   "desc": "Deitado de costas, com os joelhos flexionados e as mãos atrás da cabeça, cotovelos abertos, eleva a cabeça e as escápulas do colchonete e desce devagar.",
+   "focus": "Abdominais",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-crunch-hands-behind-head.mp4",
+   "kineti_slug": "abdominal_crunches",
+   "substitui": "abdominal_crunches",
+   "pocketphysio": []
   },
   {
    "slug": "kineti-curl-up-arms-crossed",
@@ -1094,6 +1300,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/kineti-curl-up-arms-crossed.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e6f6",
     "65a9272153a15212d048ea3f",
@@ -1111,6 +1318,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/gentle-curl-up.mp4",
    "kineti_slug": "abdominal_crunches",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d769",
     "673c9258e10df73c8302d79c",
@@ -1128,10 +1336,25 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-c-curve.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea24",
     "65b09dc54ad825d030407312"
    ]
+  },
+  {
+   "slug": "kineti-prone-press-up-elbows",
+   "lib": "kineti",
+   "name": "Apoio nos antebraços de bruços",
+   "desc": "Deitado de bruços, eleva o peito apoiando-se nos antebraços, com os cotovelos sob os ombros e o quadril no colchonete. Segura e desce devagar.",
+   "focus": "Extensão da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-prone-press-up-elbows.mp4",
+   "kineti_slug": "prone_press_up_on_elbows",
+   "substitui": "prone_press_up_on_elbows",
+   "pocketphysio": []
   },
   {
    "slug": "round-and-open",
@@ -1144,6 +1367,7 @@
    "props": "—",
    "video": "build/mannequin/videos/round-and-open.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e922"
    ]
@@ -1159,6 +1383,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/slow-bicycle-legs.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e745",
     "65a9272053a15212d048e6fd"
@@ -1175,6 +1400,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/pelvic-tilt-lying.mp4",
    "kineti_slug": "supine_pelvic_tilt",
+   "substitui": "supine_pelvic_tilt",
    "pocketphysio": [
     "65a9272053a15212d048e85f"
    ]
@@ -1190,6 +1416,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/gentle-cobra.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7af",
     "673c9258e10df73c8302d79b"
@@ -1206,6 +1433,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-opposite-lift.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e6ec"
    ]
@@ -1221,6 +1449,7 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-back-extension.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e53e",
     "660a6145b08ac7518f1f7f5e",
@@ -1238,6 +1467,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/seated-back-extension.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f80e9",
     "65a9272153a15212d048e9ed"
@@ -1254,6 +1484,7 @@
    "props": "—",
    "video": "build/mannequin/videos/neck-nod.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71d76"
    ]
@@ -1269,6 +1500,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-neck-nod.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048eaf4"
    ]
@@ -1284,6 +1516,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/cat-cow.mp4",
    "kineti_slug": "cat_camel",
+   "substitui": "cat_camel",
    "pocketphysio": [
     "65a9272153a15212d048ea21"
    ]
@@ -1299,6 +1532,7 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-cat-cow.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea16"
    ]
@@ -1314,6 +1548,7 @@
    "props": "Cadeira, Colchonete",
    "video": "build/mannequin/videos/chair-cat-cow.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f7f5f"
    ]
@@ -1329,6 +1564,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-neck-tilt.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e63d",
     "65a9272053a15212d048e63b"
@@ -1345,6 +1581,7 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-side-bend-reach.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304073cf",
     "65a9272153a15212d048ea43"
@@ -1361,6 +1598,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/seated-side-bend.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea0a"
    ]
@@ -1376,6 +1614,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/dead-bug.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e9f7",
     "65b09dc54ad825d030407235"
@@ -1392,6 +1631,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/knees-to-chest-hug.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e749",
     "65b09dc54ad825d03040721e"
@@ -1408,6 +1648,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/open-book.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea3e"
    ]
@@ -1423,6 +1664,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/supine-marching.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e706",
     "65a9272053a15212d048e4d6"
@@ -1439,6 +1681,7 @@
    "props": "—",
    "video": "build/mannequin/videos/standing-windmill-rotation.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7ea",
     "673c9258e10df73c8302d766"
@@ -1455,6 +1698,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-swimmers.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e8f4"
    ]
@@ -1470,6 +1714,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/thread-the-needle.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048eaf5"
    ]
@@ -1485,6 +1730,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/bird-dog.mp4",
    "kineti_slug": "bird_dog",
+   "substitui": "bird_dog",
    "pocketphysio": [
     "673c9258e10df73c8302d750"
    ]
@@ -1500,6 +1746,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/bird-dog-easy.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304072f7"
    ]
@@ -1515,6 +1762,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/plank-full.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d793"
    ]
@@ -1530,6 +1778,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/plank-on-knees.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e8ff"
    ]
@@ -1545,6 +1794,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/knee-plank.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e704"
    ]
@@ -1560,6 +1810,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/table-to-downward-dog.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7a9"
    ]
@@ -1575,6 +1826,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-chin-tuck.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7e36",
     "65a9272053a15212d048e4ca"
@@ -1591,6 +1843,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/supine-twist.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea1d",
     "65a9272153a15212d048ea23"
@@ -1607,6 +1860,7 @@
    "props": "Cadeira, Colchonete",
    "video": "build/mannequin/videos/chair-twist.mp4",
    "kineti_slug": "seated_trunk_rotation",
+   "substitui": "seated_trunk_rotation",
    "pocketphysio": [
     "660a6145b08ac7518f1f810b"
    ]
@@ -1622,6 +1876,7 @@
    "props": "—",
    "video": "build/mannequin/videos/neck-rotation.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71d77"
    ]
@@ -1637,6 +1892,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-superman.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7ed"
    ]
@@ -1652,6 +1908,7 @@
    "props": "Halteres",
    "video": "build/mannequin/videos/kineti-lateral-raise-dumbbell.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f8010"
    ]
@@ -1667,10 +1924,25 @@
    "props": "—",
    "video": "build/mannequin/videos/lateral-raise.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e959",
     "65a9272153a15212d048e966"
    ]
+  },
+  {
+   "slug": "kineti-seated-shoulder-abduction",
+   "lib": "kineti",
+   "name": "Abdução de ombros sentado",
+   "desc": "Sentado, abre os dois braços pela lateral, com os cotovelos estendidos, até um pouco acima dos ombros e desce devagar.",
+   "focus": "Abdução do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-shoulder-abduction.mp4",
+   "kineti_slug": "seated_shoulder_abduction",
+   "substitui": "seated_shoulder_abduction",
+   "pocketphysio": []
   },
   {
    "slug": "chest-opener-clasp",
@@ -1683,6 +1955,7 @@
    "props": "—",
    "video": "build/mannequin/videos/chest-opener-clasp.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e956",
     "65a9272053a15212d048e90f"
@@ -1699,6 +1972,7 @@
    "props": "—",
    "video": "build/mannequin/videos/pull-aparts.mp4",
    "kineti_slug": "band_pull_apart",
+   "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7c9d"
    ]
@@ -1714,6 +1988,7 @@
    "props": "—",
    "video": "build/mannequin/videos/open-close-swings.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7ca"
    ]
@@ -1729,6 +2004,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-cross-body-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e910"
    ]
@@ -1744,9 +2020,24 @@
    "props": "—",
    "video": "build/mannequin/videos/arm-circles-small.mp4",
    "kineti_slug": "arm_circles",
+   "substitui": "arm_circles",
    "pocketphysio": [
     "673c9258e10df73c8302d7a7"
    ]
+  },
+  {
+   "slug": "kineti-seated-overhead-press",
+   "lib": "kineti",
+   "name": "Desenvolvimento com halteres sentado",
+   "desc": "Sentado, com um halter em cada mão na altura dos ombros e os cotovelos abertos, empurra os pesos para cima até quase estender os cotovelos e desce devagar.",
+   "focus": "Deltoide e tríceps",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Halteres",
+   "video": "build/mannequin/videos/kineti-seated-overhead-press.mp4",
+   "kineti_slug": "seated_overhead_press",
+   "substitui": "seated_overhead_press",
+   "pocketphysio": []
   },
   {
    "slug": "lying-arm-reach",
@@ -1759,6 +2050,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/lying-arm-reach.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d03040732d",
     "65b09dc54ad825d030407330",
@@ -1776,7 +2068,8 @@
    "view": "Frontal 3/4, do peito para cima",
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-shoulder-shrugs.mp4",
-   "kineti_slug": "",
+   "kineti_slug": "shoulder_shrugs",
+   "substitui": "shoulder_shrugs",
    "pocketphysio": [
     "660a6144b08ac7518f1f7cdc"
    ]
@@ -1792,6 +2085,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-y-raise.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e904"
    ]
@@ -1807,6 +2101,7 @@
    "props": "Halteres",
    "video": "build/mannequin/videos/kineti-front-raise-dumbbell.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f80fb",
     "664744bf5c2c1f75d4d71e11",
@@ -1824,6 +2119,21 @@
    "props": "Parede",
    "video": "build/mannequin/videos/kineti-wall-push-up.mp4",
    "kineti_slug": "wall_push_up",
+   "substitui": "wall_push_up",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-seated-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Flexão de ombros sentado",
+   "desc": "Sentado, eleva os dois braços pela frente, com os cotovelos estendidos, até acima da cabeça e desce devagar.",
+   "focus": "Flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-shoulder-flexion.mp4",
+   "kineti_slug": "seated_shoulder_flexion",
+   "substitui": "seated_shoulder_flexion",
    "pocketphysio": []
   },
   {
@@ -1837,6 +2147,7 @@
    "props": "—",
    "video": "build/mannequin/videos/protraction-retraction.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea55",
     "65a9272153a15212d048e933"
@@ -1853,6 +2164,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/prone-w-squeeze.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e861",
     "65a9272053a15212d048e917",
@@ -1871,6 +2183,7 @@
    "props": "—",
    "video": "build/mannequin/videos/scapular-squeeze.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea25"
    ]
@@ -1886,6 +2199,7 @@
    "props": "Cadeira, Colchonete",
    "video": "build/mannequin/videos/chair-scapular-squeeze.mp4",
    "kineti_slug": "scapular_retraction",
+   "substitui": "scapular_retraction",
    "pocketphysio": [
     "65b09dc54ad825d030407318"
    ]
@@ -1901,6 +2215,7 @@
    "props": "—",
    "video": "build/mannequin/videos/shoulder-rolls-forward.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407241"
    ]
@@ -1916,6 +2231,7 @@
    "props": "—",
    "video": "build/mannequin/videos/shoulder-rolls-back.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e95d",
     "65a9272153a15212d048e9e3"
@@ -1932,6 +2248,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-shoulder-rolls.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a61776a80d359d40dce77",
     "65b09dc54ad825d030407327"
@@ -1948,6 +2265,7 @@
    "props": "—",
    "video": "build/mannequin/videos/punches.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7ac"
    ]
@@ -1963,6 +2281,7 @@
    "props": "—",
    "video": "build/mannequin/videos/wrist-extensor-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304073df",
     "65b09dc54ad825d0304071f7",
@@ -1980,6 +2299,7 @@
    "props": "—",
    "video": "build/mannequin/videos/wrist-flexor-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304071f9",
     "65b09dc54ad825d030407240"
@@ -1996,6 +2316,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-wrist-stretch.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d0304071fa"
    ]
@@ -2011,6 +2332,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-wrist-circles.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660e50b42d1659b1aaba486f",
     "660a6145b08ac7518f1f8124",
@@ -2020,14 +2342,15 @@
   {
    "slug": "kineti-seated-elbow-curl-dumbbell",
    "lib": "kineti",
-   "name": "Flexão de cotovelo com peso leve",
-   "desc": "Mesmo movimento do exercício 17, com um pequeno halter. Aproxima o peso do ombro e abaixa o antebraço lentamente. Tronco estável.",
-   "focus": "Bíceps com carga",
+   "name": "Flexão de cotovelo com halteres sentado",
+   "desc": "Sentado, com um halter em cada mão, flexiona os cotovelos aproximando os pesos dos ombros e desce devagar.",
+   "focus": "Bíceps e cotovelo",
    "area": "cotovelos_punhos_maos",
    "view": "Frontal 3/4",
    "props": "Cadeira, Halteres",
    "video": "build/mannequin/videos/kineti-seated-elbow-curl-dumbbell.mp4",
    "kineti_slug": "elbow_flexion_dumbbell",
+   "substitui": "elbow_flexion_dumbbell",
    "pocketphysio": []
   },
   {
@@ -2041,6 +2364,7 @@
    "props": "Cadeira",
    "video": "build/mannequin/videos/chair-biceps-curl.mp4",
    "kineti_slug": "elbow_flexion",
+   "substitui": "elbow_flexion",
    "pocketphysio": [
     "65a9272053a15212d048e74d"
    ]
@@ -2056,6 +2380,7 @@
    "props": "Halteres",
    "video": "build/mannequin/videos/kineti-standing-curl-dumbbell.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7c9f"
    ]
@@ -2071,6 +2396,7 @@
    "props": "Colchonete",
    "video": "build/mannequin/videos/savasana-rest.mp4",
    "kineti_slug": "",
+   "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407308"
    ]

@@ -1973,6 +1973,268 @@
      "hold": 0.5
     }
    ]
+  },
+  {
+   "id": "kineti-seated-front-raise-dumbbell",
+   "en": "Seated front raise with dumbbells",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, dumbbells at your sides.",
+    "Raise straight arms in front, overhead.",
+    "Lower slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -170,
+      0,
+      8
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-shoulder-shrugs-dumbbell",
+   "en": "Shoulder shrugs with dumbbells",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Dumbbells at your sides.",
+    "Lift your shoulders to your ears.",
+    "Lower slowly."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {},
+    {
+     "arm.pos": [
+      0,
+      0.055,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-standing-knee-flexion-cuff",
+   "en": "Standing knee flexion with ankle weight",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold the back of a chair.",
+    "Bend one knee, heel toward the buttock.",
+    "Lower slowly."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legL": [
+      6,
+      0,
+      0
+     ],
+     "kneeL": [
+      95,
+      0,
+      0
+     ],
+     "hold": 0.5
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legR": [
+      6,
+      0,
+      0
+     ],
+     "kneeR": [
+      95,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-soleus-stretch",
+   "en": "Wall soleus stretch",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hands on the wall, one leg back.",
+    "Back heel down, back knee bent.",
+    "Sink down and forward."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "arm": [
+      -90,
+      0,
+      8
+     ],
+     "elbow": [
+      -25,
+      0,
+      0
+     ],
+     "hand": [
+      -70,
+      0,
+      0
+     ],
+     "legL": [
+      -20,
+      0,
+      0
+     ],
+     "kneeL": [
+      10,
+      0,
+      0
+     ],
+     "legR": [
+      20,
+      0,
+      0
+     ],
+     "footR": [
+      10,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      10,
+      0,
+      0
+     ],
+     "arm": [
+      -88,
+      0,
+      8
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "hand": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -35,
+      0,
+      0
+     ],
+     "kneeL": [
+      40,
+      0,
+      0
+     ],
+     "footL": [
+      -5,
+      0,
+      0
+     ],
+     "legR": [
+      18,
+      0,
+      0
+     ],
+     "footR": [
+      -28,
+      0,
+      0
+     ],
+     "hold": 2,
+     "kneeR": [
+      30,
+      0,
+      0
+     ]
+    }
+   ]
   }
  ]
 }

@@ -52,7 +52,9 @@
    "chair",
    "cuff"
   ],
-  "pocketphysio": []
+  "pocketphysio": [
+   "65b09dc54ad825d0304072e6"
+  ]
  },
  "kineti-seated-elbow-curl-dumbbell": {
   "lib": "kineti",
@@ -79,8 +81,9 @@
    "chair"
   ],
   "pocketphysio": [
-   "660a6145b08ac7518f1f80e9",
-   "65a9272153a15212d048e9ed"
+   "65a9272053a15212d048e857",
+   "65a9272153a15212d048e9ed",
+   "660a6145b08ac7518f1f80e9"
   ],
   "frame": "full"
  },
@@ -340,7 +343,10 @@
    "chair"
   ],
   "pocketphysio": [
-   "660a6145b08ac7518f1f7f5f"
+   "65b09dc54ad825d0304072fb",
+   "660a6145b08ac7518f1f7f5f",
+   "660a6145b08ac7518f1f7f60",
+   "664744bf5c2c1f75d4d71da3"
   ],
   "frame": "full"
  },
@@ -956,6 +962,7 @@
   "props": [],
   "pocketphysio": [
    "65a9272153a15212d048ea3a",
+   "65a9272153a15212d048ea3b",
    "673c9258e10df73c8302d78e"
   ],
   "frame": "full"
@@ -1239,9 +1246,11 @@
   ],
   "frame": "full",
   "pocketphysio": [
+   "660a6144b08ac7518f1f7e79",
    "660a6144b08ac7518f1f7e7d",
    "660a6144b08ac7518f1f7e7e",
    "660a6145b08ac7518f1f80cd",
+   "664744bf5c2c1f75d4d71d89",
    "664744bf5c2c1f75d4d71d8a",
    "664744bf5c2c1f75d4d71e3d"
   ]
@@ -1340,7 +1349,10 @@
    "chair"
   ],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "65a9272053a15212d048e7ff",
+   "65a9272053a15212d048e810"
+  ]
  },
  "kineti-supine-ankle-pumps": {
   "lib": "kineti",
@@ -1370,7 +1382,9 @@
    "chair"
   ],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "65b09dc54ad825d03040722e"
+  ]
  },
  "kineti-seated-shoulder-abduction": {
   "lib": "kineti",
@@ -1403,7 +1417,12 @@
   "view": "floor",
   "props": [],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "65a9272053a15212d048e73e",
+   "65b09dc54ad825d03040724d",
+   "660a6144b08ac7518f1f7ca8",
+   "660a6144b08ac7518f1f7e3f"
+  ]
  },
  "kineti-standing-marching-supported": {
   "lib": "kineti",
@@ -1471,5 +1490,279 @@
   ],
   "frame": "full",
   "pocketphysio": []
+ },
+ "external-rotation": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048eadb"
+  ]
+ },
+ "heel-to-toe-walk-in-place": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e5f2",
+   "664744bf5c2c1f75d4d71e34",
+   "660a6144b08ac7518f1f7e8b"
+  ]
+ },
+ "toe-taps": {
+  "lib": "deskbreak",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e73f",
+   "65a9272053a15212d048e70f"
+  ]
+ },
+ "standing-trunk-twist": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048ea34",
+   "65a9272053a15212d048e5de"
+  ]
+ },
+ "side-step-arm-swing": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e5f5",
+   "65a9272053a15212d048e602"
+  ]
+ },
+ "high-knee-march": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e6de",
+   "673c9258e10df73c8302d7f6"
+  ]
+ },
+ "jab-cross-step": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e5fd",
+   "65a9272053a15212d048e5f9",
+   "65b09dc54ad825d030407227",
+   "65b09dc54ad825d030407228"
+  ]
+ },
+ "skater-step-no-hop": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "673c9258e10df73c8302d7bd"
+  ]
+ },
+ "standing-knee-raise": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e7ee"
+  ]
+ },
+ "chair-upper-back-stretch": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [
+   "chair"
+  ],
+  "frame": "upper",
+  "pocketphysio": [
+   "65b09dc54ad825d03040731e",
+   "65a9272153a15212d048ea2f"
+  ]
+ },
+ "posture-reset": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e859"
+  ]
+ },
+ "trap-stretch": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "upper",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80de",
+   "660a6145b08ac7518f1f8106",
+   "65a9272053a15212d048e64b"
+  ]
+ },
+ "warrior-1-gentle": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048ea36"
+  ]
+ },
+ "seated-spinal-twist": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [
+   "chair"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f810c"
+  ]
+ },
+ "triceps-kickback": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e70d"
+  ]
+ },
+ "single-leg-arms-overhead": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e5dc"
+  ]
+ },
+ "balance-leg-swing-front-back": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272153a15212d048ea4d"
+  ]
+ },
+ "butt-kick-walk": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "673c9258e10df73c8302d7c7"
+  ]
+ },
+ "reverse-toe-tap-reach": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65b09dc54ad825d0304072ee"
+  ]
+ },
+ "chair-straight-leg-raise": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [
+   "chair"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e803"
+  ]
+ },
+ "hinge-reach-forward": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e5e0"
+  ]
+ },
+ "standing-uppercuts": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65b09dc54ad825d030407229"
+  ]
+ },
+ "t-arms-trunk-rotation": {
+  "lib": "deskbreak",
+  "view": "front3q",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e5fe"
+  ]
+ },
+ "kineti-seated-front-raise-dumbbell": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "chair",
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8041",
+   "660a6145b08ac7518f1f803f"
+  ]
+ },
+ "kineti-shoulder-shrugs-dumbbell": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80a9",
+   "660a61776a80d359d40dce80"
+  ]
+ },
+ "kineti-standing-knee-flexion-cuff": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "support",
+   "cuff"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f1b"
+  ]
+ },
+ "kineti-wall-soleus-stretch": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "wall"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e21",
+   "660a6145b08ac7518f1f80ba"
+  ]
  }
 }

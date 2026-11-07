@@ -1,0 +1,2079 @@
+{
+ "areas": [
+  {
+   "id": "mobilidade_transferencias",
+   "name": "Mobilidade e transferências"
+  },
+  {
+   "id": "quadril_gluteos",
+   "name": "Quadril e glúteos"
+  },
+  {
+   "id": "joelhos",
+   "name": "Joelhos"
+  },
+  {
+   "id": "tornozelos_pes",
+   "name": "Tornozelos e pés"
+  },
+  {
+   "id": "equilibrio",
+   "name": "Equilíbrio e prevenção de quedas"
+  },
+  {
+   "id": "marcha",
+   "name": "Marcha e capacidade funcional"
+  },
+  {
+   "id": "tronco_coluna",
+   "name": "Tronco e coluna"
+  },
+  {
+   "id": "ombros_escapulas",
+   "name": "Ombros e escápulas"
+  },
+  {
+   "id": "cotovelos_punhos_maos",
+   "name": "Cotovelos, punhos e mãos"
+  },
+  {
+   "id": "respiracao",
+   "name": "Respiração e expansão torácica"
+  }
+ ],
+ "license": "Manequim e movimentos do desk-break: MIT, Copyright (c) 2026 Shlomy Reshef (parametric.co.il), github.com/shlomorsh/desk-break",
+ "exercises": [
+  {
+   "slug": "side-lying-leg-lift",
+   "lib": "deskbreak",
+   "name": "Abdução de quadril de lado",
+   "desc": "Deitado de lado, com a perna de baixo flexionada, eleva devagar a perna de cima estendida, com a ponta do pé para a frente. Desce com controle.",
+   "focus": "Glúteo médio",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/side-lying-leg-lift.mp4",
+   "kineti_slug": "side_lying_hip_abduction",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7e4",
+    "65a9272053a15212d048e7f1",
+    "65b09dc54ad825d03040724e",
+    "65b09dc54ad825d030407338"
+   ]
+  },
+  {
+   "slug": "kineti-supine-hip-abduction",
+   "lib": "kineti",
+   "name": "Abdução de quadril deitado",
+   "desc": "Deitado, pernas estendidas e pontas dos pés para cima. Desliza uma perna para o lado sobre o colchonete e volta ao centro, sem girar o quadril.",
+   "focus": "Glúteo médio e abdutores",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-hip-abduction.mp4",
+   "kineti_slug": "supine_hip_abduction",
+   "pocketphysio": []
+  },
+  {
+   "slug": "side-leg-raise",
+   "lib": "deskbreak",
+   "name": "Abdução de quadril em pé",
+   "desc": "Em pé, eleva uma perna estendida para o lado com a ponta do pé para a frente e o tronco ereto. Desce devagar.",
+   "focus": "Glúteo médio",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/side-leg-raise.mp4",
+   "kineti_slug": "standing_hip_abduction",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e8c",
+    "65b09dc54ad825d030407250"
+   ]
+  },
+  {
+   "slug": "kineti-standing-hip-abduction-supported",
+   "lib": "kineti",
+   "name": "Abdução de quadril em pé, com apoio",
+   "desc": "Em pé, uma mão no encosto da cadeira ao lado. Leva a perna de fora lateralmente, joelho estendido e ponta do pé para a frente, e retorna sem inclinar o tronco.",
+   "focus": "Glúteo médio e abdutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-standing-hip-abduction-supported.mp4",
+   "kineti_slug": "standing_hip_abduction",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-adductor-ball-squeeze",
+   "lib": "kineti",
+   "name": "Adução com bola entre os joelhos",
+   "desc": "Sentado, uma bola macia entre os joelhos e pés apoiados. Aperta a bola com os joelhos, segura alguns segundos e solta devagar.",
+   "focus": "Adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "Bola pequena",
+   "video": "build/mannequin/videos/kineti-adductor-ball-squeeze.mp4",
+   "kineti_slug": "adductor_ball_squeeze",
+   "pocketphysio": []
+  },
+  {
+   "slug": "side-lying-inner-thigh",
+   "lib": "deskbreak",
+   "name": "Adução de quadril de lado",
+   "desc": "Deitado de lado, apoia a perna de cima flexionada à frente e eleva um pouco a perna de baixo estendida. Desce devagar.",
+   "focus": "Adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/side-lying-inner-thigh.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e80a"
+   ]
+  },
+  {
+   "slug": "goddess-pose-gentle",
+   "lib": "deskbreak",
+   "name": "Agachamento sumô com braços em W",
+   "desc": "Em pé, com os pés afastados e as pontas para fora, flexiona levemente os joelhos com os braços em W, subindo e descendo devagar.",
+   "focus": "Membros inferiores e postura",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/goddess-pose-gentle.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7da"
+   ]
+  },
+  {
+   "slug": "floor-butterfly-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento borboleta",
+   "desc": "Sentado no chão, junta as solas dos pés e deixa os joelhos caírem para os lados, segurando os pés com as mãos e mantendo o tronco ereto.",
+   "focus": "Adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/floor-butterfly-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e741"
+   ]
+  },
+  {
+   "slug": "lunge-hip-flexor-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de flexores do quadril em pé",
+   "desc": "Em pé, dá um passo grande à frente com o joelho da frente levemente flexionado e encaixa a pelve, alongando a frente da coxa de trás.",
+   "focus": "Flexores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/lunge-hip-flexor-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7e3",
+    "65a9272053a15212d048e735"
+   ]
+  },
+  {
+   "slug": "figure-four-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento em 4 deitado",
+   "desc": "Deitado de costas, apoia um tornozelo sobre o joelho oposto, eleva a perna de baixo e puxa-a em direção ao peito. Troca de lado.",
+   "focus": "Glúteos e piriforme",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/figure-four-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e743"
+   ]
+  },
+  {
+   "slug": "chair-figure-four",
+   "lib": "deskbreak",
+   "name": "Alongamento em 4 sentado",
+   "desc": "Sentado, apoia um tornozelo sobre o joelho oposto e, com as costas retas, inclina o tronco levemente à frente. Troca de lado.",
+   "focus": "Glúteos e piriforme",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-figure-four.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e732"
+   ]
+  },
+  {
+   "slug": "cross-leg-side-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento lateral com pernas cruzadas",
+   "desc": "Em pé, cruza uma perna atrás da outra, projeta o quadril para o lado da perna de trás e eleva um braço, inclinando o tronco para o lado oposto. Troca de lado.",
+   "focus": "Trato iliotibial e flancos",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/cross-leg-side-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e751"
+   ]
+  },
+  {
+   "slug": "standing-side-leg-swing",
+   "lib": "deskbreak",
+   "name": "Balanço lateral da perna em pé",
+   "desc": "Em pé, balança uma perna para o lado e depois cruza um pouco à frente da outra, num movimento curto e suave. Troca de perna.",
+   "focus": "Abdutores e adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-side-leg-swing.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e731"
+   ]
+  },
+  {
+   "slug": "reclined-butterfly",
+   "lib": "deskbreak",
+   "name": "Borboleta deitado",
+   "desc": "Deitado de costas, junta as solas dos pés e deixa os joelhos caírem para os lados, com os braços soltos ao lado do corpo, respirando com calma.",
+   "focus": "Adutores do quadril e relaxamento",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/reclined-butterfly.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e755"
+   ]
+  },
+  {
+   "slug": "donkey-kick",
+   "lib": "deskbreak",
+   "name": "Coice em quatro apoios",
+   "desc": "Em quatro apoios, empurra um calcanhar em direção ao teto mantendo o joelho flexionado. Desce devagar sem arquear as costas.",
+   "focus": "Glúteo máximo",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/donkey-kick.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7b0"
+   ]
+  },
+  {
+   "slug": "prone-leg-lift",
+   "lib": "deskbreak",
+   "name": "Extensão de quadril de bruços",
+   "desc": "Deitado de bruços, eleva uma perna estendida um pouco do chão, mantendo o quadril apoiado. Desce e troca de perna.",
+   "focus": "Glúteos e lombar",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-leg-lift.mp4",
+   "kineti_slug": "prone_hip_extension",
+   "pocketphysio": [
+    "65a9272053a15212d048e7db",
+    "65a9272053a15212d048e72d",
+    "65b09dc54ad825d030407253"
+   ]
+  },
+  {
+   "slug": "back-leg-raise",
+   "lib": "deskbreak",
+   "name": "Extensão de quadril em pé",
+   "desc": "Em pé, com o tronco levemente inclinado à frente, eleva uma perna estendida para trás contraindo o glúteo.",
+   "focus": "Glúteo máximo",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/back-leg-raise.mp4",
+   "kineti_slug": "standing_hip_extension",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80ce"
+   ]
+  },
+  {
+   "slug": "knee-to-chest-single",
+   "lib": "deskbreak",
+   "name": "Joelho ao peito unilateral",
+   "desc": "Deitado de costas, com os joelhos flexionados, abraça um joelho e puxa-o em direção ao peito, com a cabeça e os ombros no chão. Troca de perna.",
+   "focus": "Lombar e glúteos",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/knee-to-chest-single.mp4",
+   "kineti_slug": "single_knee_to_chest",
+   "pocketphysio": [
+    "65b09dc54ad825d0304073ce",
+    "65a9272053a15212d048e7de"
+   ]
+  },
+  {
+   "slug": "wide-mini-squat",
+   "lib": "deskbreak",
+   "name": "Miniagachamento sumô",
+   "desc": "Em pé, com os pés bem afastados e as pontas um pouco para fora, desce um pouco abrindo os joelhos na direção dos pés.",
+   "focus": "Adutores, quadríceps e glúteos",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/wide-mini-squat.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d798"
+   ]
+  },
+  {
+   "slug": "glute-bridge",
+   "lib": "deskbreak",
+   "name": "Ponte de glúteos",
+   "desc": "Deitado de costas, com os joelhos flexionados, empurra os calcanhares e eleva o quadril até alinhar ombros e joelhos. Mantém 2 segundos e desce devagar.",
+   "focus": "Glúteos e posteriores da coxa",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/glute-bridge.mp4",
+   "kineti_slug": "bridge",
+   "pocketphysio": [
+    "673c9258e10df73c8302d76e",
+    "65a9272053a15212d048e85b",
+    "65b09dc54ad825d03040722f"
+   ]
+  },
+  {
+   "slug": "kineti-single-leg-bridge",
+   "lib": "kineti",
+   "name": "Ponte unilateral",
+   "desc": "Deitado de costas, com um joelho flexionado e a outra perna estendida, eleva o quadril mantendo a perna estendida alinhada à coxa. Desce devagar.",
+   "focus": "Glúteos e estabilidade pélvica",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-single-leg-bridge.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e742",
+    "65a9272053a15212d048e7e9",
+    "65a9272153a15212d048eb0c",
+    "673c9258e10df73c8302d74a",
+    "673c9258e10df73c8302d7d7"
+   ]
+  },
+  {
+   "slug": "shallow-split-squat",
+   "lib": "deskbreak",
+   "name": "Afundo parcial",
+   "desc": "Em pé, com um pé um passo grande à frente do outro e o calcanhar de trás elevado, desce um pouco sem tirar os pés do lugar.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/shallow-split-squat.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea3a",
+    "673c9258e10df73c8302d78e"
+   ]
+  },
+  {
+   "slug": "sit-back-squat",
+   "lib": "deskbreak",
+   "name": "Agachamento",
+   "desc": "Em pé, leva o quadril para trás como se fosse sentar numa cadeira imaginária, inclinando o tronco e estendendo os braços à frente.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/sit-back-squat.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9f2",
+    "673c9258e10df73c8302d746"
+   ]
+  },
+  {
+   "slug": "floor-head-to-knee-easy",
+   "lib": "deskbreak",
+   "name": "Alongamento de posteriores com uma perna estendida",
+   "desc": "Sentado no chão, com uma perna estendida e o outro pé junto à parte interna da coxa, gira o tronco para a perna estendida e inclina à frente. Troca de lado.",
+   "focus": "Posteriores da coxa",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/floor-head-to-knee-easy.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e82f"
+   ]
+  },
+  {
+   "slug": "lying-hamstring-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de posteriores deitado",
+   "desc": "Deitado de costas, eleva uma perna estendida, segura atrás da coxa e puxa suavemente. Troca de perna.",
+   "focus": "Posteriores da coxa",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/lying-hamstring-stretch.mp4",
+   "kineti_slug": "straight_leg_raise",
+   "pocketphysio": [
+    "65a9272053a15212d048e80c"
+   ]
+  },
+  {
+   "slug": "chair-hamstring-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de posteriores sentado",
+   "desc": "Na borda da cadeira, estende uma perna à frente com o calcanhar no chão e a ponta do pé para cima. Com as costas retas, inclina o tronco à frente a partir do quadril.",
+   "focus": "Posteriores da coxa",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Cadeira, Colchonete",
+   "video": "build/mannequin/videos/chair-hamstring-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407247"
+   ]
+  },
+  {
+   "slug": "side-lying-quad-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de quadríceps de lado",
+   "desc": "Deitado de lado, com a cabeça apoiada no braço, segura o pé de cima e leva o calcanhar em direção ao glúteo, com os joelhos juntos. Troca de lado.",
+   "focus": "Quadríceps",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/side-lying-quad-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e83c"
+   ]
+  },
+  {
+   "slug": "standing-quad-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de quadríceps em pé",
+   "desc": "Em pé, flexiona um joelho e segura o tornozelo atrás do corpo, levando o calcanhar em direção ao glúteo.",
+   "focus": "Quadríceps",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-quad-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f6b",
+    "65b09dc54ad825d030407306"
+   ]
+  },
+  {
+   "slug": "heel-slides",
+   "lib": "deskbreak",
+   "name": "Deslizamento de calcanhar",
+   "desc": "Deitado de costas, com os joelhos flexionados, desliza um calcanhar pelo chão até estender a perna. Volta devagar e troca de perna.",
+   "focus": "Mobilidade do joelho e do quadril",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/heel-slides.mp4",
+   "kineti_slug": "heel_slides",
+   "pocketphysio": [
+    "65a9272053a15212d048e6e9",
+    "65a9272053a15212d048e817",
+    "65a9272053a15212d048e84b",
+    "65b09dc54ad825d03040734d",
+    "65a9272053a15212d048e52f"
+   ]
+  },
+  {
+   "slug": "straight-leg-raise",
+   "lib": "deskbreak",
+   "name": "Elevação da perna estendida",
+   "desc": "Deitado de costas, com um joelho flexionado, eleva a outra perna estendida até a altura do joelho dobrado. Desce devagar e troca de perna.",
+   "focus": "Quadríceps e flexores do quadril",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/straight-leg-raise.mp4",
+   "kineti_slug": "straight_leg_raise",
+   "pocketphysio": [
+    "65b09dc54ad825d03040733a",
+    "65b09dc54ad825d030407348",
+    "65a9272053a15212d048e825",
+    "660a61776a80d359d40dce9c",
+    "65a9272053a15212d048e808",
+    "65a9272053a15212d048e4e2"
+   ]
+  },
+  {
+   "slug": "kineti-seated-knee-extension-ankle-weight",
+   "lib": "kineti",
+   "name": "Extensão de joelho com tornozeleira",
+   "desc": "Mesmo movimento do exercício 5, com uma tornozeleira discreta na perna que se movimenta. Coxa apoiada e tronco estável.",
+   "focus": "Quadríceps com carga",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Tornozeleira",
+   "video": "build/mannequin/videos/kineti-seated-knee-extension-ankle-weight.mp4",
+   "kineti_slug": "seated_knee_extension_ankle_weight",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-short-arc-quad",
+   "lib": "kineti",
+   "name": "Extensão de joelho sobre rolo",
+   "desc": "Deitado, com uma toalha enrolada sob o joelho. Estende o joelho elevando o calcanhar, segura e abaixa devagar, com a parte de trás do joelho sempre apoiada no rolo.",
+   "focus": "Quadríceps",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Rolo, Colchonete",
+   "video": "build/mannequin/videos/kineti-short-arc-quad.mp4",
+   "kineti_slug": "short_arc_quad",
+   "pocketphysio": []
+  },
+  {
+   "slug": "prone-heel-to-seat",
+   "lib": "deskbreak",
+   "name": "Flexão de joelho de bruços",
+   "desc": "Deitado de bruços, com os braços ao lado do corpo, flexiona um joelho levando o calcanhar em direção ao glúteo. Desce devagar e troca de perna.",
+   "focus": "Posteriores da coxa e mobilidade do joelho",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-heel-to-seat.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407224"
+   ]
+  },
+  {
+   "slug": "kineti-standing-knee-flexion-supported",
+   "lib": "kineti",
+   "name": "Flexão de joelho em pé, com apoio",
+   "desc": "Em pé, uma mão no encosto. Dobra o joelho levando o calcanhar em direção ao glúteo, com a coxa parada, e apoia o pé de volta lentamente.",
+   "focus": "Isquiotibiais",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-standing-knee-flexion-supported.mp4",
+   "kineti_slug": "standing_knee_flexion",
+   "pocketphysio": []
+  },
+  {
+   "slug": "floor-long-sit-forward-fold",
+   "lib": "deskbreak",
+   "name": "Flexão do tronco sentado com pernas estendidas",
+   "desc": "Sentado no chão, com as pernas estendidas à frente, leva as mãos em direção aos pés inclinando o tronco a partir do quadril.",
+   "focus": "Cadeia posterior",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/floor-long-sit-forward-fold.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e50f"
+   ]
+  },
+  {
+   "slug": "mini-squat",
+   "lib": "deskbreak",
+   "name": "Miniagachamento",
+   "desc": "Em pé, com os pés afastados na largura dos ombros e os braços à frente, desce um pouco como se fosse sentar numa cadeira alta.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/mini-squat.mp4",
+   "kineti_slug": "mini_squat",
+   "pocketphysio": [
+    "65b09dc54ad825d030407201",
+    "65a9272053a15212d048e6fe",
+    "65a9272053a15212d048e840",
+    "673c9258e10df73c8302d78f"
+   ]
+  },
+  {
+   "slug": "kineti-mini-squat-supported",
+   "lib": "kineti",
+   "name": "Miniagachamento com apoio",
+   "desc": "Em pé, segurando o encosto de uma cadeira, leva o quadril para trás e flexiona um pouco os joelhos. Volta a ficar ereto.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-mini-squat-supported.mp4",
+   "kineti_slug": "mini_squat",
+   "pocketphysio": [
+    "65a9272053a15212d048e852",
+    "660a6145b08ac7518f1f7f46"
+   ]
+  },
+  {
+   "slug": "mini-squat-hold",
+   "lib": "deskbreak",
+   "name": "Miniagachamento isométrico",
+   "desc": "Desce num agachamento curto com os braços estendidos à frente e mantém a posição respirando com calma.",
+   "focus": "Quadríceps e glúteos",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/mini-squat-hold.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d790"
+   ]
+  },
+  {
+   "slug": "kineti-wall-calf-stretch",
+   "lib": "kineti",
+   "name": "Alongamento de panturrilha na parede",
+   "desc": "Com as mãos na parede e uma perna atrás, mantém o calcanhar de trás no chão e o joelho estendido, e inclina o corpo em direção à parede.",
+   "focus": "Panturrilha (gastrocnêmio)",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-calf-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e7d",
+    "660a6144b08ac7518f1f7e7e",
+    "660a6145b08ac7518f1f80cd",
+    "664744bf5c2c1f75d4d71d8a",
+    "664744bf5c2c1f75d4d71e3d"
+   ]
+  },
+  {
+   "slug": "chair-heel-toe-rock",
+   "lib": "deskbreak",
+   "name": "Balanço calcanhar e ponta sentado",
+   "desc": "Sentado, com os pés no chão, sobe na ponta dos pés e depois balança para os calcanhares, elevando as pontas.",
+   "focus": "Mobilidade do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-heel-toe-rock.mp4",
+   "kineti_slug": "seated_heel_toe_raises",
+   "pocketphysio": [
+    "65a9272053a15212d048e4fe"
+   ]
+  },
+  {
+   "slug": "chair-ankle-pumps",
+   "lib": "deskbreak",
+   "name": "Bomba de tornozelo sentado",
+   "desc": "Sentado, com as pernas estendidas à frente e os calcanhares no chão, aponta os pés para longe e depois puxa as pontas em sua direção, em ritmo constante.",
+   "focus": "Tornozelos e circulação",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-ankle-pumps.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e509",
+    "65b09dc54ad825d030407208"
+   ]
+  },
+  {
+   "slug": "floor-ankle-pumps",
+   "lib": "deskbreak",
+   "name": "Bomba de tornozelo sentado no chão",
+   "desc": "Sentado no chão, com as pernas estendidas, aponta os pés para a frente e depois puxa as pontas em sua direção.",
+   "focus": "Tornozelos e circulação",
+   "area": "tornozelos_pes",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/floor-ankle-pumps.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407209",
+    "660a61776a80d359d40dce48"
+   ]
+  },
+  {
+   "slug": "ankle-circles",
+   "lib": "deskbreak",
+   "name": "Circundução de tornozelo em pé",
+   "desc": "Em pé, tira um pé do chão e desenha círculos com a ponta dos dedos. Troca o sentido e depois o pé.",
+   "focus": "Mobilidade do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/ankle-circles.mp4",
+   "kineti_slug": "ankle_circles",
+   "pocketphysio": [
+    "65a9272053a15212d048e527",
+    "65a9272153a15212d048eaef"
+   ]
+  },
+  {
+   "slug": "chair-ankle-circles",
+   "lib": "deskbreak",
+   "name": "Circundução de tornozelo sentado",
+   "desc": "Sentado, tira um pé do chão e desenha círculos com ele nos dois sentidos. Depois troca de pé.",
+   "focus": "Mobilidade do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-ankle-circles.mp4",
+   "kineti_slug": "ankle_circles",
+   "pocketphysio": [
+    "65b09dc54ad825d030407205",
+    "65a9272053a15212d048e505",
+    "65a9272053a15212d048e4f5",
+    "65b09dc54ad825d030407206"
+   ]
+  },
+  {
+   "slug": "chair-toe-raises",
+   "lib": "deskbreak",
+   "name": "Elevação das pontas dos pés sentado",
+   "desc": "Sentado, com os calcanhares no chão, eleva a parte da frente dos pés e desce devagar.",
+   "focus": "Dorsiflexores do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-toe-raises.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407309"
+   ]
+  },
+  {
+   "slug": "kineti-single-calf-raise-supported",
+   "lib": "kineti",
+   "name": "Elevação de calcanhar unilateral com apoio",
+   "desc": "Em pé, segurando o encosto de uma cadeira, eleva um pé para trás e sobe na ponta do outro. Desce devagar e troca de perna.",
+   "focus": "Panturrilha",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-single-calf-raise-supported.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407249",
+    "660a6144b08ac7518f1f7d86",
+    "660a6145b08ac7518f1f80d9",
+    "660a61776a80d359d40dce3a"
+   ]
+  },
+  {
+   "slug": "kineti-calf-raise-supported",
+   "lib": "kineti",
+   "name": "Elevação de calcanhares com apoio",
+   "desc": "Em pé, segurando o encosto de uma cadeira, sobe devagar na ponta dos pés e desce até encostar os calcanhares.",
+   "focus": "Panturrilhas",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio)",
+   "video": "build/mannequin/videos/kineti-calf-raise-supported.mp4",
+   "kineti_slug": "standing_heel_raise",
+   "pocketphysio": [
+    "65a9272053a15212d048e52c",
+    "660a6144b08ac7518f1f7cb1",
+    "660a6145b08ac7518f1f7f62"
+   ]
+  },
+  {
+   "slug": "calf-raise",
+   "lib": "deskbreak",
+   "name": "Elevação de calcanhares em pé",
+   "desc": "Em pé, sobe devagar na ponta dos pés e desce até encostar os calcanhares.",
+   "focus": "Panturrilhas",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/calf-raise.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040724a",
+    "673c9258e10df73c8302d7c9"
+   ]
+  },
+  {
+   "slug": "chair-heel-raises",
+   "lib": "deskbreak",
+   "name": "Elevação de calcanhares sentado",
+   "desc": "Sentado, com os pés apoiados no chão, eleva os calcanhares ficando na ponta dos pés. Desce devagar.",
+   "focus": "Panturrilhas",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-heel-raises.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4ff"
+   ]
+  },
+  {
+   "slug": "downward-dog-pedal",
+   "lib": "deskbreak",
+   "name": "V invertido pedalando",
+   "desc": "Na posição de V invertido, flexiona um joelho enquanto abaixa o outro calcanhar, alternando devagar como se caminhasse no lugar.",
+   "focus": "Panturrilhas e posteriores da coxa",
+   "area": "tornozelos_pes",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/downward-dog-pedal.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e532"
+   ]
+  },
+  {
+   "slug": "single-leg-head-turns",
+   "lib": "deskbreak",
+   "name": "Apoio unipodal com giro da cabeça",
+   "desc": "Apoiado numa perna, gira a cabeça devagar para a direita e para a esquerda sem perder o equilíbrio.",
+   "focus": "Equilíbrio e integração vestibular",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/single-leg-head-turns.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e625"
+   ]
+  },
+  {
+   "slug": "balance-single-leg-stand",
+   "lib": "deskbreak",
+   "name": "Apoio unipodal com joelho flexionado",
+   "desc": "Em pé, tira um pé do chão com o joelho flexionado e fixa o olhar num ponto à frente. Troca de perna.",
+   "focus": "Equilíbrio estático",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/balance-single-leg-stand.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e5db",
+    "660a6144b08ac7518f1f7d90",
+    "65a9272053a15212d048e62b",
+    "65b09dc54ad825d0304073e2",
+    "65b09dc54ad825d0304073e1"
+   ]
+  },
+  {
+   "slug": "balance-airplane-mild",
+   "lib": "deskbreak",
+   "name": "Aviãozinho",
+   "desc": "Em pé, inclina o tronco à frente e eleva uma perna estendida para trás, com os braços abertos e as costas retas. Volta devagar.",
+   "focus": "Equilíbrio unipodal e cadeia posterior",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/balance-airplane-mild.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407350"
+   ]
+  },
+  {
+   "slug": "balance-toe-heel-rock",
+   "lib": "deskbreak",
+   "name": "Balanço pontas e calcanhares",
+   "desc": "Em pé, sobe devagar na ponta dos pés. Desce e eleva as pontas, ficando apoiado nos calcanhares.",
+   "focus": "Equilíbrio anteroposterior e tornozelos",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/balance-toe-heel-rock.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80d0",
+    "660a6144b08ac7518f1f7d8c"
+   ]
+  },
+  {
+   "slug": "balance-knee-raise-hold",
+   "lib": "deskbreak",
+   "name": "Equilíbrio com joelho elevado",
+   "desc": "Em pé, eleva um joelho até a altura do quadril e mantém 3 segundos. Abaixa devagar e troca de perna.",
+   "focus": "Equilíbrio unipodal",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/balance-knee-raise-hold.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e611"
+   ]
+  },
+  {
+   "slug": "balance-slow-march",
+   "lib": "deskbreak",
+   "name": "Marcha lenta com pausa",
+   "desc": "Em pé, eleva um joelho e faz uma pausa no alto. Abaixa sem bater o pé e eleva a outra perna.",
+   "focus": "Equilíbrio dinâmico",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/balance-slow-march.mp4",
+   "kineti_slug": "standing_marching",
+   "pocketphysio": [
+    "65b09dc54ad825d0304072f0",
+    "660a6145b08ac7518f1f7f34",
+    "664744bf5c2c1f75d4d71d98"
+   ]
+  },
+  {
+   "slug": "clock-reach-foot",
+   "lib": "deskbreak",
+   "name": "Passo no relógio",
+   "desc": "Apoiado numa perna com o joelho levemente flexionado, toca a ponta do outro pé à frente, ao lado e atrás, como os ponteiros de um relógio.",
+   "focus": "Equilíbrio unipodal e controle do quadril",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/clock-reach-foot.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6e8",
+    "65a9272053a15212d048e6e5"
+   ]
+  },
+  {
+   "slug": "heel-to-toe-stand",
+   "lib": "deskbreak",
+   "name": "Postura em tandem",
+   "desc": "Em pé, coloca um pé exatamente à frente do outro, calcanhar encostado nos dedos, com os braços levemente abertos. Troca o pé da frente.",
+   "focus": "Equilíbrio com base estreita",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/heel-to-toe-stand.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407219"
+   ]
+  },
+  {
+   "slug": "balance-weight-shift-side",
+   "lib": "deskbreak",
+   "name": "Transferência de peso lateral",
+   "desc": "Em pé, com os pés afastados na largura dos ombros, transfere o peso devagar para uma perna e depois para a outra.",
+   "focus": "Controle do centro de massa",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/balance-weight-shift-side.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e610",
+    "65a9272053a15212d048e5e2"
+   ]
+  },
+  {
+   "slug": "reverse-lunge-knee-drive",
+   "lib": "deskbreak",
+   "name": "Afundo reverso com elevação de joelho",
+   "desc": "Dá um pequeno passo para trás flexionando os joelhos. Empurra o pé de trás e eleva esse joelho à frente, balançando os braços em oposição.",
+   "focus": "Força de membros inferiores e coordenação",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/reverse-lunge-knee-drive.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7c4",
+    "673c9258e10df73c8302d7de"
+   ]
+  },
+  {
+   "slug": "knee-lift-pull-down",
+   "lib": "deskbreak",
+   "name": "Elevação de joelho com puxada dos braços",
+   "desc": "Com os braços estendidos acima da cabeça, eleva um joelho e puxa os braços para baixo em direção a ele. Volta a estender os braços.",
+   "focus": "Coordenação e condicionamento leve",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/knee-lift-pull-down.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6e6"
+   ]
+  },
+  {
+   "slug": "cross-knee-tap",
+   "lib": "deskbreak",
+   "name": "Joelho cruzado à mão oposta",
+   "desc": "Em pé, eleva um braço na diagonal. Sobe o joelho oposto em direção ao centro do corpo e leva a mão até ele. Alterna os lados.",
+   "focus": "Coordenação e condicionamento leve",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/cross-knee-tap.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7e3"
+   ]
+  },
+  {
+   "slug": "march-in-place",
+   "lib": "deskbreak",
+   "name": "Marcha estacionária",
+   "desc": "Em pé e olhando à frente, eleva um joelho e depois o outro, como numa caminhada, balançando os braços em oposição às pernas.",
+   "focus": "Condicionamento e padrão de marcha",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/march-in-place.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304072ef",
+    "65a9272053a15212d048e62c",
+    "673c9258e10df73c8302d7e1",
+    "65a9272053a15212d048e609",
+    "65a9272053a15212d048e5ee",
+    "65a9272053a15212d048e60f"
+   ]
+  },
+  {
+   "slug": "chair-march",
+   "lib": "deskbreak",
+   "name": "Marcha sentado",
+   "desc": "Sentado na borda da cadeira, eleva um joelho e depois o outro, como numa marcha, balançando os braços no ritmo.",
+   "focus": "Flexores do quadril e condicionamento",
+   "area": "marcha",
+   "view": "Lateral elevada",
+   "props": "Cadeira, Colchonete",
+   "video": "build/mannequin/videos/chair-march.mp4",
+   "kineti_slug": "seated_marching",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7ffa"
+   ]
+  },
+  {
+   "slug": "grapevine",
+   "lib": "deskbreak",
+   "name": "Passo cruzado lateral",
+   "desc": "Dá um passo para o lado, cruza o outro pé por trás, dá outro passo lateral e junta os pés. Depois volta para o outro lado.",
+   "focus": "Coordenação e deslocamento lateral",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/grapevine.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e62a",
+    "65a9272053a15212d048e600"
+   ]
+  },
+  {
+   "slug": "fast-feet-small",
+   "lib": "deskbreak",
+   "name": "Passos rápidos no lugar",
+   "desc": "Com os joelhos soltos e o tronco levemente inclinado, dá passos curtos e rápidos no lugar, na ponta dos pés, movendo os braços no ritmo.",
+   "focus": "Agilidade e condicionamento",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/fast-feet-small.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7eb"
+   ]
+  },
+  {
+   "slug": "kineti-curl-up-arms-crossed",
+   "lib": "kineti",
+   "name": "Abdominal supra com braços cruzados",
+   "desc": "Deitado de costas, com os joelhos flexionados e os braços cruzados sobre o peito, eleva um pouco a cabeça e os ombros. Desce devagar.",
+   "focus": "Abdominais",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-curl-up-arms-crossed.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6f6",
+    "65a9272153a15212d048ea3f",
+    "673c9258e10df73c8302d770"
+   ]
+  },
+  {
+   "slug": "gentle-curl-up",
+   "lib": "deskbreak",
+   "name": "Abdominal supra suave",
+   "desc": "Deitado de costas, com os joelhos flexionados, recolhe o queixo e eleva um pouco a cabeça e os ombros, levando as mãos em direção aos joelhos. Desce devagar.",
+   "focus": "Abdominais",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/gentle-curl-up.mp4",
+   "kineti_slug": "abdominal_crunches",
+   "pocketphysio": [
+    "673c9258e10df73c8302d769",
+    "673c9258e10df73c8302d79c",
+    "65a9272153a15212d048ea33"
+   ]
+  },
+  {
+   "slug": "standing-c-curve",
+   "lib": "deskbreak",
+   "name": "Alongamento em C das costas",
+   "desc": "Em pé, com os dedos entrelaçados e os braços estendidos à frente, empurra as mãos para longe, arredonda a parte alta das costas e leva o queixo ao peito.",
+   "focus": "Romboides e trapézio médio",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-c-curve.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea24",
+    "65b09dc54ad825d030407312"
+   ]
+  },
+  {
+   "slug": "round-and-open",
+   "lib": "deskbreak",
+   "name": "Arredondar e abrir o tronco",
+   "desc": "Em pé, arredonda as costas como se abraçasse uma bola grande e abaixa o queixo. Depois abre os braços para os lados e para trás, elevando o peito.",
+   "focus": "Mobilidade torácica e abertura do peito",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/round-and-open.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e922"
+   ]
+  },
+  {
+   "slug": "slow-bicycle-legs",
+   "lib": "deskbreak",
+   "name": "Bicicleta lenta",
+   "desc": "Deitado de costas, com os joelhos elevados, estende uma perna no ar enquanto o outro joelho vem ao peito, alternando devagar como se pedalasse.",
+   "focus": "Abdominais e coordenação das pernas",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/slow-bicycle-legs.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e745",
+    "65a9272053a15212d048e6fd"
+   ]
+  },
+  {
+   "slug": "pelvic-tilt-lying",
+   "lib": "deskbreak",
+   "name": "Báscula pélvica deitado",
+   "desc": "Deitado de costas, com os joelhos flexionados e os pés no chão, pressiona a lombar contra o chão inclinando a pelve. Solta devagar, num movimento pequeno.",
+   "focus": "Controle lombopélvico",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/pelvic-tilt-lying.mp4",
+   "kineti_slug": "supine_pelvic_tilt",
+   "pocketphysio": [
+    "65a9272053a15212d048e85f"
+   ]
+  },
+  {
+   "slug": "gentle-cobra",
+   "lib": "deskbreak",
+   "name": "Cobra suave",
+   "desc": "Deitado de bruços, com as mãos ao lado do peito e os cotovelos junto ao corpo, pressiona levemente e eleva o peito mantendo os cotovelos flexionados. Desce devagar.",
+   "focus": "Extensão da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/gentle-cobra.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7af",
+    "673c9258e10df73c8302d79b"
+   ]
+  },
+  {
+   "slug": "prone-opposite-lift",
+   "lib": "deskbreak",
+   "name": "Elevação de braço e perna opostos de bruços",
+   "desc": "Deitado de bruços, com os braços à frente, eleva um braço e a perna oposta um pouco do chão. Desce e troca de lado.",
+   "focus": "Extensores da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-opposite-lift.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6ec"
+   ]
+  },
+  {
+   "slug": "standing-back-extension",
+   "lib": "deskbreak",
+   "name": "Extensão lombar em pé",
+   "desc": "Em pé, com as mãos na parte baixa das costas, eleva o peito e inclina o tronco levemente para trás. Mantém 2 segundos e volta.",
+   "focus": "Coluna lombar",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-back-extension.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e53e",
+    "660a6145b08ac7518f1f7f5e",
+    "664744bf5c2c1f75d4d71da2"
+   ]
+  },
+  {
+   "slug": "seated-back-extension",
+   "lib": "deskbreak",
+   "name": "Extensão torácica sentado",
+   "desc": "Sentado, com as mãos atrás da cabeça, eleva o peito, abre os cotovelos e olha um pouco para cima. Volta à postura ereta.",
+   "focus": "Coluna torácica e postura",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/seated-back-extension.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80e9",
+    "65a9272153a15212d048e9ed"
+   ]
+  },
+  {
+   "slug": "neck-nod",
+   "lib": "deskbreak",
+   "name": "Flexão e extensão do pescoço",
+   "desc": "Em pé, abaixa devagar o queixo em direção ao peito, volta e olha um pouco para cima, sem jogar a cabeça para trás.",
+   "focus": "Mobilidade cervical",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/neck-nod.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d76"
+   ]
+  },
+  {
+   "slug": "chair-neck-nod",
+   "lib": "deskbreak",
+   "name": "Flexão e extensão do pescoço sentado",
+   "desc": "Sentado, abaixa devagar o queixo em direção ao peito e depois olha um pouco para cima, sem jogar a cabeça para trás.",
+   "focus": "Mobilidade cervical",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-neck-nod.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048eaf4"
+   ]
+  },
+  {
+   "slug": "cat-cow",
+   "lib": "deskbreak",
+   "name": "Gato e camelo",
+   "desc": "Em quatro apoios, arredonda as costas olhando para a barriga. Depois deixa a barriga descer e eleva o olhar.",
+   "focus": "Mobilidade da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/cat-cow.mp4",
+   "kineti_slug": "cat_camel",
+   "pocketphysio": [
+    "65a9272153a15212d048ea21"
+   ]
+  },
+  {
+   "slug": "standing-cat-cow",
+   "lib": "deskbreak",
+   "name": "Gato e camelo em pé",
+   "desc": "Com os joelhos flexionados e as mãos nas coxas, arredonda as costas e recolhe o queixo. Depois projeta o peito à frente e eleva o olhar.",
+   "focus": "Mobilidade da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-cat-cow.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea16"
+   ]
+  },
+  {
+   "slug": "chair-cat-cow",
+   "lib": "deskbreak",
+   "name": "Gato e camelo sentado",
+   "desc": "Sentado, com as mãos nos joelhos, arqueia as costas projetando o peito e eleva o olhar. Depois arredonda as costas e abaixa o queixo.",
+   "focus": "Mobilidade da coluna e da pelve",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Cadeira, Colchonete",
+   "video": "build/mannequin/videos/chair-cat-cow.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f5f"
+   ]
+  },
+  {
+   "slug": "chair-neck-tilt",
+   "lib": "deskbreak",
+   "name": "Inclinação lateral do pescoço sentado",
+   "desc": "Sentado e ereto, com os ombros relaxados, aproxima a orelha do ombro sem elevar o ombro. Mantém 3 segundos, volta e troca de lado.",
+   "focus": "Alongamento lateral do pescoço",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-neck-tilt.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e63d",
+    "65a9272053a15212d048e63b"
+   ]
+  },
+  {
+   "slug": "standing-side-bend-reach",
+   "lib": "deskbreak",
+   "name": "Inclinação lateral do tronco em pé",
+   "desc": "Em pé, com os pés afastados na largura do quadril, eleva um braço acima da cabeça e inclina para o lado oposto, deslizando a outra mão pela coxa. Repete do outro lado.",
+   "focus": "Flancos e mobilidade lateral da coluna",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-side-bend-reach.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304073cf",
+    "65a9272153a15212d048ea43"
+   ]
+  },
+  {
+   "slug": "seated-side-bend",
+   "lib": "deskbreak",
+   "name": "Inclinação lateral do tronco sentado",
+   "desc": "Sentado e ereto, eleva um braço acima da cabeça e inclina o tronco para o lado oposto, com a outra mão em direção ao chão. Repete do outro lado.",
+   "focus": "Flancos e mobilidade lateral da coluna",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/seated-side-bend.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea0a"
+   ]
+  },
+  {
+   "slug": "dead-bug",
+   "lib": "deskbreak",
+   "name": "Inseto morto",
+   "desc": "Deitado de costas, com os braços para o teto e os joelhos elevados a 90°, leva um braço acima da cabeça e estende a perna oposta. Volta e troca de lado, com a lombar apoiada.",
+   "focus": "Estabilidade do tronco e coordenação",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/dead-bug.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9f7",
+    "65b09dc54ad825d030407235"
+   ]
+  },
+  {
+   "slug": "knees-to-chest-hug",
+   "lib": "deskbreak",
+   "name": "Joelhos ao peito",
+   "desc": "Deitado de costas, eleva os dois joelhos, abraça-os e puxa-os em direção ao peito, balançando suavemente de um lado para o outro.",
+   "focus": "Relaxamento da lombar",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/knees-to-chest-hug.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e749",
+    "65b09dc54ad825d03040721e"
+   ]
+  },
+  {
+   "slug": "open-book",
+   "lib": "deskbreak",
+   "name": "Livro aberto",
+   "desc": "Deitado de lado, com os joelhos flexionados à frente e os braços estendidos, abre o braço de cima para o outro lado, acompanhando com o olhar, e volta devagar.",
+   "focus": "Rotação torácica",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/open-book.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea3e"
+   ]
+  },
+  {
+   "slug": "supine-marching",
+   "lib": "deskbreak",
+   "name": "Marcha deitado",
+   "desc": "Deitado de costas, com os joelhos flexionados, eleva um pé até o joelho ficar sobre o quadril, mantendo a flexão. Desce sem bater e troca de perna.",
+   "focus": "Controle abdominal",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/supine-marching.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e706",
+    "65a9272053a15212d048e4d6"
+   ]
+  },
+  {
+   "slug": "standing-windmill-rotation",
+   "lib": "deskbreak",
+   "name": "Moinho de vento em pé",
+   "desc": "Com os pés afastados e o tronco inclinado à frente, abre os braços e gira o peito, uma mão para o chão e a outra para o teto, acompanhando com o olhar. Alterna os lados.",
+   "focus": "Rotação do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/standing-windmill-rotation.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7ea",
+    "673c9258e10df73c8302d766"
+   ]
+  },
+  {
+   "slug": "prone-swimmers",
+   "lib": "deskbreak",
+   "name": "Nado de bruços",
+   "desc": "Deitado de bruços, com os braços à frente e o peito levemente elevado, alterna braços e pernas opostos para cima e para baixo em movimentos curtos e rápidos.",
+   "focus": "Extensores da coluna e coordenação",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-swimmers.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e8f4"
+   ]
+  },
+  {
+   "slug": "thread-the-needle",
+   "lib": "deskbreak",
+   "name": "Passar a linha na agulha",
+   "desc": "Em quatro apoios, desliza um braço por baixo do corpo para o outro lado, deixando o ombro descer em direção ao chão. Volta e troca de lado.",
+   "focus": "Rotação torácica e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/thread-the-needle.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048eaf5"
+   ]
+  },
+  {
+   "slug": "bird-dog",
+   "lib": "deskbreak",
+   "name": "Perdigueiro",
+   "desc": "Em quatro apoios, com as costas retas, estende um braço à frente e a perna oposta para trás. Mantém 2 segundos, volta e troca de lado.",
+   "focus": "Estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/bird-dog.mp4",
+   "kineti_slug": "bird_dog",
+   "pocketphysio": [
+    "673c9258e10df73c8302d750"
+   ]
+  },
+  {
+   "slug": "bird-dog-easy",
+   "lib": "deskbreak",
+   "name": "Perdigueiro facilitado",
+   "desc": "Em quatro apoios, estende um braço à frente e volta. Depois desliza uma perna para trás e volta, um membro de cada vez.",
+   "focus": "Estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/bird-dog-easy.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304072f7"
+   ]
+  },
+  {
+   "slug": "plank-full",
+   "lib": "deskbreak",
+   "name": "Prancha alta",
+   "desc": "Com as mãos sob os ombros e as pernas estendidas para trás, mantém o corpo em linha reta da cabeça aos calcanhares, sem deixar o quadril cair ou subir.",
+   "focus": "Estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/plank-full.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d793"
+   ]
+  },
+  {
+   "slug": "plank-on-knees",
+   "lib": "deskbreak",
+   "name": "Prancha alta de joelhos",
+   "desc": "Com as mãos sob os ombros e os joelhos no chão, mantém o corpo em linha reta da cabeça aos joelhos, recolhendo o abdome.",
+   "focus": "Estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/plank-on-knees.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e8ff"
+   ]
+  },
+  {
+   "slug": "knee-plank",
+   "lib": "deskbreak",
+   "name": "Prancha de joelhos nos antebraços",
+   "desc": "Apoiado nos antebraços, com os cotovelos sob os ombros e os joelhos no chão, mantém o corpo alinhado da cabeça aos joelhos, contraindo o abdome.",
+   "focus": "Estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/knee-plank.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e704"
+   ]
+  },
+  {
+   "slug": "table-to-downward-dog",
+   "lib": "deskbreak",
+   "name": "Quatro apoios para V invertido",
+   "desc": "Em quatro apoios, eleva o quadril para cima e para trás formando um V invertido, com os joelhos soltos. Os calcanhares não precisam tocar o chão.",
+   "focus": "Cadeia posterior e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/table-to-downward-dog.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7a9"
+   ]
+  },
+  {
+   "slug": "chair-chin-tuck",
+   "lib": "deskbreak",
+   "name": "Retração cervical sentado",
+   "desc": "Sentado, com as costas no encosto e olhando à frente, leva a cabeça para trás em linha reta, como se fizesse um queixo duplo. Mantém 2 segundos e solta.",
+   "focus": "Postura cervical",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-chin-tuck.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e36",
+    "65a9272053a15212d048e4ca"
+   ]
+  },
+  {
+   "slug": "supine-twist",
+   "lib": "deskbreak",
+   "name": "Rotação de tronco deitado",
+   "desc": "Deitado de costas, com os braços abertos e os joelhos flexionados, deixa os dois joelhos caírem devagar para um lado, com os ombros no chão. Volta e troca de lado.",
+   "focus": "Rotação da coluna lombar",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/supine-twist.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea1d",
+    "65a9272153a15212d048ea23"
+   ]
+  },
+  {
+   "slug": "chair-twist",
+   "lib": "deskbreak",
+   "name": "Rotação de tronco sentado",
+   "desc": "Sentado, com os braços cruzados sobre o peito e os pés no chão, gira o tronco para o lado e olha para trás, mantendo os joelhos para a frente. Troca de lado.",
+   "focus": "Rotação da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Cadeira, Colchonete",
+   "video": "build/mannequin/videos/chair-twist.mp4",
+   "kineti_slug": "seated_trunk_rotation",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f810b"
+   ]
+  },
+  {
+   "slug": "neck-rotation",
+   "lib": "deskbreak",
+   "name": "Rotação do pescoço",
+   "desc": "Em pé, com as costas retas e o queixo paralelo ao chão, gira devagar a cabeça para olhar por cima do ombro, volta ao centro e gira para o outro lado.",
+   "focus": "Mobilidade cervical",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/neck-rotation.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d77"
+   ]
+  },
+  {
+   "slug": "prone-superman",
+   "lib": "deskbreak",
+   "name": "Super-homem",
+   "desc": "Deitado de bruços, com os braços estendidos à frente, eleva braços, peito e pernas um pouco do chão, olhando para baixo. Mantém 2 segundos e desce.",
+   "focus": "Extensores da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-superman.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7ed"
+   ]
+  },
+  {
+   "slug": "kineti-lateral-raise-dumbbell",
+   "lib": "kineti",
+   "name": "Abdução de ombros com halteres",
+   "desc": "Em pé, com um halter em cada mão, eleva os braços para os lados até a altura dos ombros e desce devagar.",
+   "focus": "Deltoide",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-lateral-raise-dumbbell.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8010"
+   ]
+  },
+  {
+   "slug": "lateral-raise",
+   "lib": "deskbreak",
+   "name": "Abdução de ombros em pé",
+   "desc": "Em pé, com os cotovelos levemente flexionados, eleva os braços para os lados até a altura dos ombros e desce devagar.",
+   "focus": "Deltoide",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/lateral-raise.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e959",
+    "65a9272153a15212d048e966"
+   ]
+  },
+  {
+   "slug": "chest-opener-clasp",
+   "lib": "deskbreak",
+   "name": "Abertura do peito com mãos atrás",
+   "desc": "Em pé, entrelaça as mãos atrás das costas, leva os ombros para trás e para baixo e eleva o peito.",
+   "focus": "Peitoral e postura",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/chest-opener-clasp.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e956",
+    "65a9272053a15212d048e90f"
+   ]
+  },
+  {
+   "slug": "pull-aparts",
+   "lib": "deskbreak",
+   "name": "Abertura horizontal dos braços",
+   "desc": "Em pé, com os braços estendidos à frente na altura dos ombros, abre-os para os lados aproximando as escápulas e volta devagar.",
+   "focus": "Escápulas e deltoide posterior",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/pull-aparts.mp4",
+   "kineti_slug": "band_pull_apart",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7c9d"
+   ]
+  },
+  {
+   "slug": "open-close-swings",
+   "lib": "deskbreak",
+   "name": "Abrir e cruzar os braços",
+   "desc": "Em pé, abre os braços para os lados e depois cruza-os à frente do peito, num movimento contínuo e suave.",
+   "focus": "Mobilidade dos ombros e do peito",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/open-close-swings.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7ca"
+   ]
+  },
+  {
+   "slug": "chair-cross-body-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de ombro cruzando o braço",
+   "desc": "Sentado, leva um braço estendido à frente do peito e puxa-o com a outra mão logo acima do cotovelo, com os ombros baixos. Troca de lado.",
+   "focus": "Parte posterior do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-cross-body-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e910"
+   ]
+  },
+  {
+   "slug": "arm-circles-small",
+   "lib": "deskbreak",
+   "name": "Círculos com os braços",
+   "desc": "Em pé, com os braços abertos na altura dos ombros, desenha pequenos círculos no ar e depois troca o sentido.",
+   "focus": "Resistência dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/arm-circles-small.mp4",
+   "kineti_slug": "arm_circles",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7a7"
+   ]
+  },
+  {
+   "slug": "lying-arm-reach",
+   "lib": "deskbreak",
+   "name": "Elevação de braço deitado",
+   "desc": "Deitado de costas, com os joelhos flexionados e os braços para o teto, leva um braço devagar acima da cabeça, volta e troca de braço, sem arquear as costas.",
+   "focus": "Flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/lying-arm-reach.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040732d",
+    "65b09dc54ad825d030407330",
+    "65a9272153a15212d048e92d",
+    "65a9272053a15212d048e856"
+   ]
+  },
+  {
+   "slug": "chair-shoulder-shrugs",
+   "lib": "deskbreak",
+   "name": "Elevação de ombros sentado",
+   "desc": "Sentado, com os braços relaxados ao lado do corpo, eleva os ombros até as orelhas, mantém um segundo e solta.",
+   "focus": "Trapézio superior",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-shoulder-shrugs.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cdc"
+   ]
+  },
+  {
+   "slug": "prone-y-raise",
+   "lib": "deskbreak",
+   "name": "Elevação em Y de bruços",
+   "desc": "Deitado de bruços, com os braços abertos em Y e os polegares para cima, eleva os braços um pouco, aproxima as escápulas e desce.",
+   "focus": "Trapézio inferior e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-y-raise.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e904"
+   ]
+  },
+  {
+   "slug": "kineti-front-raise-dumbbell",
+   "lib": "kineti",
+   "name": "Elevação frontal com halteres",
+   "desc": "Em pé, com os halteres à frente das coxas, eleva os braços estendidos até a altura dos ombros e desce devagar.",
+   "focus": "Deltoide anterior",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-front-raise-dumbbell.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80fb",
+    "664744bf5c2c1f75d4d71e11",
+    "664744bf5c2c1f75d4d71e37"
+   ]
+  },
+  {
+   "slug": "kineti-wall-push-up",
+   "lib": "kineti",
+   "name": "Flexão de braços na parede",
+   "desc": "De frente para a parede, mãos apoiadas na altura dos ombros. Dobra os cotovelos aproximando o peito da parede com o corpo alinhado e empurra de volta.",
+   "focus": "Peitoral, tríceps e serrátil",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-push-up.mp4",
+   "kineti_slug": "wall_push_up",
+   "pocketphysio": []
+  },
+  {
+   "slug": "protraction-retraction",
+   "lib": "deskbreak",
+   "name": "Protração e retração escapular",
+   "desc": "Em pé, com os braços estendidos à frente, empurra as mãos para longe e depois puxa para trás aproximando as escápulas, sem dobrar os cotovelos.",
+   "focus": "Serrátil e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/protraction-retraction.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea55",
+    "65a9272153a15212d048e933"
+   ]
+  },
+  {
+   "slug": "prone-w-squeeze",
+   "lib": "deskbreak",
+   "name": "Retração escapular em W de bruços",
+   "desc": "Deitado de bruços, com os cotovelos flexionados para os lados formando um W, eleva cotovelos e mãos e aproxima as escápulas. Mantém 2 segundos e desce.",
+   "focus": "Escápulas e postura",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/prone-w-squeeze.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e861",
+    "65a9272053a15212d048e917",
+    "65a9272153a15212d048e94e",
+    "65a9272153a15212d048ea28"
+   ]
+  },
+  {
+   "slug": "scapular-squeeze",
+   "lib": "deskbreak",
+   "name": "Retração escapular em pé",
+   "desc": "Em pé, com os cotovelos flexionados junto ao corpo, aproxima as escápulas e abre o peito. Mantém 3 segundos e solta.",
+   "focus": "Escápulas e postura",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/scapular-squeeze.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea25"
+   ]
+  },
+  {
+   "slug": "chair-scapular-squeeze",
+   "lib": "deskbreak",
+   "name": "Retração escapular sentado",
+   "desc": "Sentado, com os cotovelos flexionados junto ao corpo, aproxima as escápulas e projeta o peito. Mantém 3 segundos e solta.",
+   "focus": "Escápulas e postura",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Cadeira, Colchonete",
+   "video": "build/mannequin/videos/chair-scapular-squeeze.mp4",
+   "kineti_slug": "scapular_retraction",
+   "pocketphysio": [
+    "65b09dc54ad825d030407318"
+   ]
+  },
+  {
+   "slug": "shoulder-rolls-forward",
+   "lib": "deskbreak",
+   "name": "Rotação de ombros para a frente",
+   "desc": "Em pé, eleva os ombros em direção às orelhas e rola-os para a frente e para baixo, num círculo suave.",
+   "focus": "Mobilidade dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/shoulder-rolls-forward.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407241"
+   ]
+  },
+  {
+   "slug": "shoulder-rolls-back",
+   "lib": "deskbreak",
+   "name": "Rotação de ombros para trás",
+   "desc": "Em pé, eleva os ombros em direção às orelhas, leva-os para trás aproximando as escápulas e desce, num círculo amplo e lento.",
+   "focus": "Mobilidade dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/shoulder-rolls-back.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e95d",
+    "65a9272153a15212d048e9e3"
+   ]
+  },
+  {
+   "slug": "chair-shoulder-rolls",
+   "lib": "deskbreak",
+   "name": "Rotação de ombros sentado",
+   "desc": "Sentado, eleva os ombros em direção às orelhas, leva-os para trás aproximando as escápulas e desce, num círculo amplo e lento.",
+   "focus": "Mobilidade dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-shoulder-rolls.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce77",
+    "65b09dc54ad825d030407327"
+   ]
+  },
+  {
+   "slug": "punches",
+   "lib": "deskbreak",
+   "name": "Socos alternados",
+   "desc": "Em pé, com os joelhos soltos e as mãos junto ao queixo, soca à frente com uma mão e depois com a outra, sem travar o cotovelo.",
+   "focus": "Condicionamento e ombros",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/punches.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7ac"
+   ]
+  },
+  {
+   "slug": "wrist-extensor-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de extensores do punho",
+   "desc": "Em pé, com um braço estendido à frente e os dedos para baixo, pressiona suavemente o dorso da mão com a outra mão. Troca de mão.",
+   "focus": "Extensores do punho e antebraço",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/wrist-extensor-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304073df",
+    "65b09dc54ad825d0304071f7",
+    "65b09dc54ad825d03040734a"
+   ]
+  },
+  {
+   "slug": "wrist-flexor-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de flexores do punho",
+   "desc": "Em pé, com um braço estendido à frente, a palma para fora e os dedos para cima, puxa os dedos suavemente para trás com a outra mão. Troca de mão.",
+   "focus": "Flexores do punho e antebraço",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "—",
+   "video": "build/mannequin/videos/wrist-flexor-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304071f9",
+    "65b09dc54ad825d030407240"
+   ]
+  },
+  {
+   "slug": "chair-wrist-stretch",
+   "lib": "deskbreak",
+   "name": "Alongamento de flexores do punho sentado",
+   "desc": "Sentado, estende um braço à frente com a palma voltada para fora e puxa os dedos suavemente com a outra mão. Troca de mão.",
+   "focus": "Flexores do punho e antebraço",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-wrist-stretch.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304071fa"
+   ]
+  },
+  {
+   "slug": "chair-wrist-circles",
+   "lib": "deskbreak",
+   "name": "Circundução de punhos sentado",
+   "desc": "Sentado, com os cotovelos flexionados e os antebraços à frente, gira as mãos em círculos e depois troca o sentido.",
+   "focus": "Mobilidade dos punhos",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4, do peito para cima",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-wrist-circles.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660e50b42d1659b1aaba486f",
+    "660a6145b08ac7518f1f8124",
+    "660e4d342d1659b1aaba463b"
+   ]
+  },
+  {
+   "slug": "kineti-seated-elbow-curl-dumbbell",
+   "lib": "kineti",
+   "name": "Flexão de cotovelo com peso leve",
+   "desc": "Mesmo movimento do exercício 17, com um pequeno halter. Aproxima o peso do ombro e abaixa o antebraço lentamente. Tronco estável.",
+   "focus": "Bíceps com carga",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Halteres",
+   "video": "build/mannequin/videos/kineti-seated-elbow-curl-dumbbell.mp4",
+   "kineti_slug": "elbow_flexion_dumbbell",
+   "pocketphysio": []
+  },
+  {
+   "slug": "chair-biceps-curl",
+   "lib": "deskbreak",
+   "name": "Flexão de cotovelo sentado",
+   "desc": "Sentado, com os braços ao lado do corpo, flexiona os cotovelos levando os punhos até os ombros. Desce devagar.",
+   "focus": "Bíceps e cotovelo",
+   "area": "cotovelos_punhos_maos",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/chair-biceps-curl.mp4",
+   "kineti_slug": "elbow_flexion",
+   "pocketphysio": [
+    "65a9272053a15212d048e74d"
+   ]
+  },
+  {
+   "slug": "kineti-standing-curl-dumbbell",
+   "lib": "kineti",
+   "name": "Rosca direta com halteres em pé",
+   "desc": "Em pé, com os cotovelos junto ao corpo, flexiona os cotovelos levando os halteres até os ombros e desce devagar.",
+   "focus": "Bíceps",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-standing-curl-dumbbell.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7c9f"
+   ]
+  },
+  {
+   "slug": "savasana-rest",
+   "lib": "deskbreak",
+   "name": "Relaxamento deitado",
+   "desc": "Deitado de costas, com braços e pernas levemente afastados, respira devagar e relaxa o corpo inteiro.",
+   "focus": "Relaxamento e respiração",
+   "area": "respiracao",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/savasana-rest.mp4",
+   "kineti_slug": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407308"
+   ]
+  }
+ ]
+}

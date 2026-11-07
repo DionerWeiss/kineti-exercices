@@ -7,6 +7,7 @@ python3 tool/mannequin/mannequin.py setup            # clona o desk-break no com
 python3 tool/mannequin/mannequin.py build            # kineti_moves.json -> build/mannequin/kineti_lib/exercises.blend
 python3 tool/mannequin/mannequin.py sheet [ids...]   # 3 quadros por exercício -> build/mannequin/sheet_NN.png
 python3 tool/mannequin/mannequin.py render [ids...]  # MP4 -> build/mannequin/videos/<id>.mp4
+python3 tool/mannequin/catalog.py                    # catálogo em português -> tool/mannequin/catalog.json
 ```
 
 ## Arquivos
@@ -16,12 +17,18 @@ python3 tool/mannequin/mannequin.py render [ids...]  # MP4 -> build/mannequin/vi
   - `view`: a câmera;
   - `props`: os acessórios;
   - `pocketphysio`: os ids do catálogo em `research/pocketphysio/` que o vídeo atende.
+- **`catalog.json`** (gerado por `catalog.py`): um item por vídeo, no formato do `catalog.json` da biblioteca, com estes campos a mais:
+  - `video`: o MP4 em `build/mannequin/videos/`;
+  - `kineti_slug`: o exercício equivalente da biblioteca Kineti, quando há. Nos vídeos do desk-break, ele vem da comparação feita no PocketPhysio e é só indicativo;
+  - `pocketphysio`: os ids atendidos.
+- **`texts_pt.json`:** nome, descrição, foco e área de cada vídeo, escritos à mão (`{slug: [nome, descrição, foco, área]}`). A descrição segue o que o vídeo mostra, e não o texto original do desk-break. Os movimentos Kineti que já estão na biblioteca usam os textos do `catalog.json` dela.
 - **`kineti_moves.json`:** movimentos escritos por nós, no formato do desk-break (veja `build/desk-break/library/AUTHORING.md`). Os ids começam com `kineti-`.
 - **`render_mannequin.py`:** roda dentro do Blender. Repinta o manequim, aplica a marca, monta o cenário e a câmera, e renderiza.
 - **`build_lib.py`:** roda o `build_library.py` do desk-break num arquivo de movimentos e salva o `.blend`, que o original só grava para a biblioteca inteira.
 
 ## Câmera e cenário
 
+- **Enquadramento:** a câmera projeta os vértices do manequim, de todos os quadros amostrados, mais os acessórios (sem o colchonete e a parede), e ajusta largura e altura separadamente.
 - **Vistas** (`DIRS` em `render_mannequin.py`): `side`, `front`, `side3q`, `front3q`, `rside3q`, `back3q`, `top3q` e `floor`. A `floor` é de lado e alta, para quem está deitado. Com o corpo deitado ao longo do eixo X, as vistas giram 90°, então "lado" continua sendo de través.
 - **Colchonete:** cobre a área ocupada pelo corpo durante todo o movimento. Só aparece sem `chair`, `ball`, `support` ou `wall`.
 - **Acessórios:**

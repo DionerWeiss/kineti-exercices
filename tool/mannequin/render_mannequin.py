@@ -163,22 +163,25 @@ def box(loc, size, m):
 
 
 def motion_bounds(f0, f1, step=3, part='full'):
-    """Box around the body over the whole motion. part = upper (waist up) | lower (knees down) | full."""
-    lo, hi = Vector((1e9,) * 3), Vector((-1e9,) * 3)
+    """Box around the body over the whole motion, and a sample of its vertices.
+    part = upper (waist up) | lower (knees down) | full."""
+    lo, hi, pts = Vector((1e9,) * 3), Vector((-1e9,) * 3), []
     deps = bpy.context.evaluated_depsgraph_get()
     for f in range(f0, f1 + 1, step):
         scene.frame_set(f)
         ev = body.evaluated_get(deps)
         cut_up = bone_head('spine').z + 0.05
         cut_lo = max(bone_head('kneeL').z, bone_head('kneeR').z) + 0.12
-        for v in ev.to_mesh().vertices:
+        for k, v in enumerate(ev.to_mesh().vertices):
             p_ = ev.matrix_world @ v.co
             if part == 'upper' and p_.z < cut_up or part == 'lower' and p_.z > cut_lo:
                 continue
             lo = Vector(map(min, lo, p_)); hi = Vector(map(max, hi, p_))
+            if k % 4 == 0:
+                pts.append(p_)
         ev.to_mesh_clear()
     scene.frame_set(f0)
-    return lo, hi
+    return lo, hi, pts
 
 
 def chair(y_seat, y_back, back_top=1.0):
@@ -254,20 +257,20 @@ for job in JOBS:
     seated = 'chair' in props or 'ball' in props
     if seated:
         chair(0.12, 0.33, 1.0)
-    blo, bhi = motion_bounds(f0, f1)
+    blo, bhi, bpts = motion_bounds(f0, f1)
     if not seated and 'support' not in props and 'wall' not in props and bhi.z < 1.4:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.3, 1.9 if long_x else 0.66)
         ly = max(ext.y + 0.3, 0.66 if long_x else 1.9)
-        box((c.x, c.y, 0.004), (lx, ly, 0.008), MATC)
+        box((c.x, c.y, 0.004), (lx, ly, 0.008), MATC)['noframe'] = True
     if 'support' in props:
         pl, pr = palm('L'), palm('R')
         y = (pl.y + pr.y) / 2
         chair(y - 0.22, y, back_top=min(pl.z, pr.z) - 0.04)
     if 'wall' in props:
         y = min(palm('L').y, palm('R').y) - 0.03
-        box((0, y - 0.05, 1.2), (1.4, 0.1, 2.4), WALLC)
+        box((0, y - 0.05, 1.2), (1.4, 0.1, 2.4), WALLC)['noframe'] = True
     if 'roll' in props:
         k = bone_head('kneeL')
         r = max(0.05, (k.z - 0.05) / 2)
@@ -310,22 +313,40 @@ for job in JOBS:
             ball.keyframe_insert('location', frame=f)
             ball.keyframe_insert('scale', frame=f)
 
-    # Frame the whole motion with the props.
-    lo, hi = motion_bounds(f0, f1, part=part) if part != 'full' else (blo.copy(), bhi.copy())
+    # Frame the whole motion: the body's vertices over every sampled frame, plus the props (not the mat or wall).
+    lo, hi, pts = motion_bounds(f0, f1, part=part) if part != 'full' else (blo.copy(), bhi.copy(), list(bpts))
+    if part == 'full':
+        scene.frame_set(f0)
+        deps = bpy.context.evaluated_depsgraph_get()
+        for o in temp:
+            if o.get('noframe') or o.type != 'MESH':
+                continue
+            ev = o.evaluated_get(deps)
+            pts += [ev.matrix_world @ v.co for v in ev.to_mesh().vertices]
+            ev.to_mesh_clear()
     if (seated or 'support' in props) and part != 'upper':
-        lo.z = 0
+        pts += [Vector((p_.x, p_.y, 0)) for p_ in pts if p_.z < 0.3]  # keep the floor under the feet in view
     centre, size = (lo + hi) / 2, (hi - lo)
     d = Vector(DIRS[view])
     if size.z < 0.75 * max(size.x, size.y) and size.x > size.y:
         # lying along X: "side" should look across the body, so turn the views 90 degrees
         d = Matrix.Rotation(math.radians(-90), 3, 'Z') @ d
     d = d.normalized()
-    radius = max(size.length / 2, 0.5 if part == 'full' else 0.32)
-    vfov = 2 * math.atan(math.tan(cam.data.angle_x / 2) * H / W)  # sensor fit AUTO, landscape: angle_x is the width
-    dist = radius / math.sin(vfov / 2) * (0.95 if part == 'full' else 1.1)
+    th = math.tan(cam.data.angle_x / 2)  # sensor fit AUTO, landscape: angle_x is the width
+    tv = th * H / W
+    fill = 0.84 if part == 'full' else 0.8
+    right = d.cross(Vector((0, 0, 1))).normalized()
+    up = right.cross(d).normalized()
+    for _ in range(4):  # fit width and height separately, then re-centre on the projected extent
+        rel = [p_ - centre for p_ in pts]
+        dist = max([(0.5 if part == 'full' else 0.32) / tv] +
+                   [r.dot(d) + max(abs(r.dot(right)) / (th * fill), abs(r.dot(up)) / (tv * fill)) for r in rel])
+        xs = [r.dot(right) / (dist - r.dot(d)) for r in rel]
+        ys = [r.dot(up) / (dist - r.dot(d)) for r in rel]
+        centre = centre + right * (max(xs) + min(xs)) / 2 * dist + up * (max(ys) + min(ys)) / 2 * dist
     cam.location = centre + d * dist
     cam.rotation_euler = (centre - cam.location).to_track_quat('-Z', 'Y').to_euler()
-    print('JOB', name, f0, f1, sorted(props))
+    print('JOB', name, f0, f1, sorted(props), 'lo', tuple(round(v, 2) for v in lo), 'hi', tuple(round(v, 2) for v in hi))
     scene.render.filepath = f'{OUT}/{name}/f_'
     if STILL:
         for q in (float(x) for x in os.environ['STILL'].split(',')):

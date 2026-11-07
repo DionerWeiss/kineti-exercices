@@ -906,8 +906,7 @@
   "props": [],
   "pocketphysio": [
    "65b09dc54ad825d03040724a",
-   "660a6145b08ac7518f1f7f62",
-   "660a6144b08ac7518f1f7cb1"
+   "673c9258e10df73c8302d7c9"
   ],
   "frame": "full"
  },
@@ -971,18 +970,6 @@
   ],
   "frame": "full"
  },
- "single-calf-raise-supported": {
-  "lib": "deskbreak",
-  "view": "side3q",
-  "props": [],
-  "pocketphysio": [
-   "65b09dc54ad825d030407249",
-   "660a6144b08ac7518f1f7d86",
-   "660a61776a80d359d40dce3a",
-   "660a6145b08ac7518f1f80d9"
-  ],
-  "frame": "full"
- },
  "sit-back-squat": {
   "lib": "deskbreak",
   "view": "side3q",
@@ -1009,19 +996,6 @@
   "props": [],
   "pocketphysio": [
    "65a9272053a15212d048e731"
-  ],
-  "frame": "full"
- },
- "wall-calf-stretch": {
-  "lib": "deskbreak",
-  "view": "side3q",
-  "props": [],
-  "pocketphysio": [
-   "664744bf5c2c1f75d4d71e3d",
-   "660a6145b08ac7518f1f80cd",
-   "660a6144b08ac7518f1f7e7d",
-   "660a6144b08ac7518f1f7e7e",
-   "664744bf5c2c1f75d4d71d8a"
   ],
   "frame": "full"
  },
@@ -1058,6 +1032,7 @@
   "view": "front3q",
   "props": [],
   "pocketphysio": [
+   "65a9272153a15212d048e959",
    "65a9272153a15212d048e966"
   ],
   "frame": "full"
@@ -1228,5 +1203,118 @@
    "673c9258e10df73c8302d7a9"
   ],
   "frame": "full"
+ },
+ "kineti-calf-raise-supported": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "support"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e52c",
+   "660a6144b08ac7518f1f7cb1",
+   "660a6145b08ac7518f1f7f62"
+  ]
+ },
+ "kineti-single-calf-raise-supported": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "support"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65b09dc54ad825d030407249",
+   "660a6144b08ac7518f1f7d86",
+   "660a6145b08ac7518f1f80d9",
+   "660a61776a80d359d40dce3a"
+  ]
+ },
+ "kineti-wall-calf-stretch": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "wall"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e7d",
+   "660a6144b08ac7518f1f7e7e",
+   "660a6145b08ac7518f1f80cd",
+   "664744bf5c2c1f75d4d71d8a",
+   "664744bf5c2c1f75d4d71e3d"
+  ]
+ },
+ "kineti-mini-squat-supported": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "support"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e852",
+   "660a6145b08ac7518f1f7f46"
+  ]
+ },
+ "kineti-single-leg-bridge": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e742",
+   "65a9272053a15212d048e7e9",
+   "65a9272153a15212d048eb0c",
+   "673c9258e10df73c8302d74a",
+   "673c9258e10df73c8302d7d7"
+  ]
+ },
+ "kineti-curl-up-arms-crossed": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "frame": "full",
+  "pocketphysio": [
+   "65a9272053a15212d048e6f6",
+   "65a9272153a15212d048ea3f",
+   "673c9258e10df73c8302d770"
+  ]
+ },
+ "kineti-lateral-raise-dumbbell": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8010"
+  ]
+ },
+ "kineti-front-raise-dumbbell": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80fb",
+   "664744bf5c2c1f75d4d71e11",
+   "664744bf5c2c1f75d4d71e37"
+  ]
+ },
+ "kineti-standing-curl-dumbbell": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "dumbbell"
+  ],
+  "frame": "full",
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7c9f"
+  ]
  }
 }

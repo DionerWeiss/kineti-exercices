@@ -1,0 +1,734 @@
+{
+ "round-and-open": [
+  "Arredondar e abrir o tronco",
+  "Em pé, arredonda as costas como se abraçasse uma bola grande e abaixa o queixo. Depois abre os braços para os lados e para trás, elevando o peito.",
+  "Mobilidade torácica e abertura do peito",
+  "tronco_coluna"
+ ],
+ "seated-back-extension": [
+  "Extensão torácica sentado",
+  "Sentado, com as mãos atrás da cabeça, eleva o peito, abre os cotovelos e olha um pouco para cima. Volta à postura ereta.",
+  "Coluna torácica e postura",
+  "tronco_coluna"
+ ],
+ "seated-side-bend": [
+  "Inclinação lateral do tronco sentado",
+  "Sentado e ereto, eleva um braço acima da cabeça e inclina o tronco para o lado oposto, com a outra mão em direção ao chão. Repete do outro lado.",
+  "Flancos e mobilidade lateral da coluna",
+  "tronco_coluna"
+ ],
+ "standing-back-extension": [
+  "Extensão lombar em pé",
+  "Em pé, com as mãos na parte baixa das costas, eleva o peito e inclina o tronco levemente para trás. Mantém 2 segundos e volta.",
+  "Coluna lombar",
+  "tronco_coluna"
+ ],
+ "standing-c-curve": [
+  "Alongamento em C das costas",
+  "Em pé, com os dedos entrelaçados e os braços estendidos à frente, empurra as mãos para longe, arredonda a parte alta das costas e leva o queixo ao peito.",
+  "Romboides e trapézio médio",
+  "tronco_coluna"
+ ],
+ "standing-cat-cow": [
+  "Gato e camelo em pé",
+  "Com os joelhos flexionados e as mãos nas coxas, arredonda as costas e recolhe o queixo. Depois projeta o peito à frente e eleva o olhar.",
+  "Mobilidade da coluna",
+  "tronco_coluna"
+ ],
+ "standing-side-bend-reach": [
+  "Inclinação lateral do tronco em pé",
+  "Em pé, com os pés afastados na largura do quadril, eleva um braço acima da cabeça e inclina para o lado oposto, deslizando a outra mão pela coxa. Repete do outro lado.",
+  "Flancos e mobilidade lateral da coluna",
+  "tronco_coluna"
+ ],
+ "standing-windmill-rotation": [
+  "Moinho de vento em pé",
+  "Com os pés afastados e o tronco inclinado à frente, abre os braços e gira o peito, uma mão para o chão e a outra para o teto, acompanhando com o olhar. Alterna os lados.",
+  "Rotação do tronco",
+  "tronco_coluna"
+ ],
+ "balance-airplane-mild": [
+  "Aviãozinho",
+  "Em pé, inclina o tronco à frente e eleva uma perna estendida para trás, com os braços abertos e as costas retas. Volta devagar.",
+  "Equilíbrio unipodal e cadeia posterior",
+  "equilibrio"
+ ],
+ "balance-knee-raise-hold": [
+  "Equilíbrio com joelho elevado",
+  "Em pé, eleva um joelho até a altura do quadril e mantém 3 segundos. Abaixa devagar e troca de perna.",
+  "Equilíbrio unipodal",
+  "equilibrio"
+ ],
+ "balance-single-leg-stand": [
+  "Apoio unipodal com joelho flexionado",
+  "Em pé, tira um pé do chão com o joelho flexionado e fixa o olhar num ponto à frente. Troca de perna.",
+  "Equilíbrio estático",
+  "equilibrio"
+ ],
+ "balance-slow-march": [
+  "Marcha lenta com pausa",
+  "Em pé, eleva um joelho e faz uma pausa no alto. Abaixa sem bater o pé e eleva a outra perna.",
+  "Equilíbrio dinâmico",
+  "equilibrio"
+ ],
+ "balance-toe-heel-rock": [
+  "Balanço pontas e calcanhares",
+  "Em pé, sobe devagar na ponta dos pés. Desce e eleva as pontas, ficando apoiado nos calcanhares.",
+  "Equilíbrio anteroposterior e tornozelos",
+  "equilibrio"
+ ],
+ "balance-weight-shift-side": [
+  "Transferência de peso lateral",
+  "Em pé, com os pés afastados na largura dos ombros, transfere o peso devagar para uma perna e depois para a outra.",
+  "Controle do centro de massa",
+  "equilibrio"
+ ],
+ "clock-reach-foot": [
+  "Passo no relógio",
+  "Apoiado numa perna com o joelho levemente flexionado, toca a ponta do outro pé à frente, ao lado e atrás, como os ponteiros de um relógio.",
+  "Equilíbrio unipodal e controle do quadril",
+  "equilibrio"
+ ],
+ "heel-to-toe-stand": [
+  "Postura em tandem",
+  "Em pé, coloca um pé exatamente à frente do outro, calcanhar encostado nos dedos, com os braços levemente abertos. Troca o pé da frente.",
+  "Equilíbrio com base estreita",
+  "equilibrio"
+ ],
+ "single-leg-head-turns": [
+  "Apoio unipodal com giro da cabeça",
+  "Apoiado numa perna, gira a cabeça devagar para a direita e para a esquerda sem perder o equilíbrio.",
+  "Equilíbrio e integração vestibular",
+  "equilibrio"
+ ],
+ "cross-knee-tap": [
+  "Joelho cruzado à mão oposta",
+  "Em pé, eleva um braço na diagonal. Sobe o joelho oposto em direção ao centro do corpo e leva a mão até ele. Alterna os lados.",
+  "Coordenação e condicionamento leve",
+  "marcha"
+ ],
+ "fast-feet-small": [
+  "Passos rápidos no lugar",
+  "Com os joelhos soltos e o tronco levemente inclinado, dá passos curtos e rápidos no lugar, na ponta dos pés, movendo os braços no ritmo.",
+  "Agilidade e condicionamento",
+  "marcha"
+ ],
+ "grapevine": [
+  "Passo cruzado lateral",
+  "Dá um passo para o lado, cruza o outro pé por trás, dá outro passo lateral e junta os pés. Depois volta para o outro lado.",
+  "Coordenação e deslocamento lateral",
+  "marcha"
+ ],
+ "knee-lift-pull-down": [
+  "Elevação de joelho com puxada dos braços",
+  "Com os braços estendidos acima da cabeça, eleva um joelho e puxa os braços para baixo em direção a ele. Volta a estender os braços.",
+  "Coordenação e condicionamento leve",
+  "marcha"
+ ],
+ "march-in-place": [
+  "Marcha estacionária",
+  "Em pé e olhando à frente, eleva um joelho e depois o outro, como numa caminhada, balançando os braços em oposição às pernas.",
+  "Condicionamento e padrão de marcha",
+  "marcha"
+ ],
+ "reverse-lunge-knee-drive": [
+  "Afundo reverso com elevação de joelho",
+  "Dá um pequeno passo para trás flexionando os joelhos. Empurra o pé de trás e eleva esse joelho à frente, balançando os braços em oposição.",
+  "Força de membros inferiores e coordenação",
+  "marcha"
+ ],
+ "chair-ankle-circles": [
+  "Circundução de tornozelo sentado",
+  "Sentado, tira um pé do chão e desenha círculos com ele nos dois sentidos. Depois troca de pé.",
+  "Mobilidade do tornozelo",
+  "tornozelos_pes"
+ ],
+ "chair-ankle-pumps": [
+  "Bomba de tornozelo sentado",
+  "Sentado, com as pernas estendidas à frente e os calcanhares no chão, aponta os pés para longe e depois puxa as pontas em sua direção, em ritmo constante.",
+  "Tornozelos e circulação",
+  "tornozelos_pes"
+ ],
+ "chair-biceps-curl": [
+  "Flexão de cotovelo sentado",
+  "Sentado, com os braços ao lado do corpo, flexiona os cotovelos levando os punhos até os ombros. Desce devagar.",
+  "Bíceps e cotovelo",
+  "cotovelos_punhos_maos"
+ ],
+ "chair-cat-cow": [
+  "Gato e camelo sentado",
+  "Sentado, com as mãos nos joelhos, arqueia as costas projetando o peito e eleva o olhar. Depois arredonda as costas e abaixa o queixo.",
+  "Mobilidade da coluna e da pelve",
+  "tronco_coluna"
+ ],
+ "chair-chin-tuck": [
+  "Retração cervical sentado",
+  "Sentado, com as costas no encosto e olhando à frente, leva a cabeça para trás em linha reta, como se fizesse um queixo duplo. Mantém 2 segundos e solta.",
+  "Postura cervical",
+  "tronco_coluna"
+ ],
+ "chair-cross-body-stretch": [
+  "Alongamento de ombro cruzando o braço",
+  "Sentado, leva um braço estendido à frente do peito e puxa-o com a outra mão logo acima do cotovelo, com os ombros baixos. Troca de lado.",
+  "Parte posterior do ombro",
+  "ombros_escapulas"
+ ],
+ "chair-figure-four": [
+  "Alongamento em 4 sentado",
+  "Sentado, apoia um tornozelo sobre o joelho oposto e, com as costas retas, inclina o tronco levemente à frente. Troca de lado.",
+  "Glúteos e piriforme",
+  "quadril_gluteos"
+ ],
+ "chair-hamstring-stretch": [
+  "Alongamento de posteriores sentado",
+  "Na borda da cadeira, estende uma perna à frente com o calcanhar no chão e a ponta do pé para cima. Com as costas retas, inclina o tronco à frente a partir do quadril.",
+  "Posteriores da coxa",
+  "joelhos"
+ ],
+ "chair-heel-raises": [
+  "Elevação de calcanhares sentado",
+  "Sentado, com os pés apoiados no chão, eleva os calcanhares ficando na ponta dos pés. Desce devagar.",
+  "Panturrilhas",
+  "tornozelos_pes"
+ ],
+ "chair-heel-toe-rock": [
+  "Balanço calcanhar e ponta sentado",
+  "Sentado, com os pés no chão, sobe na ponta dos pés e depois balança para os calcanhares, elevando as pontas.",
+  "Mobilidade do tornozelo",
+  "tornozelos_pes"
+ ],
+ "chair-march": [
+  "Marcha sentado",
+  "Sentado na borda da cadeira, eleva um joelho e depois o outro, como numa marcha, balançando os braços no ritmo.",
+  "Flexores do quadril e condicionamento",
+  "marcha"
+ ],
+ "chair-neck-nod": [
+  "Flexão e extensão do pescoço sentado",
+  "Sentado, abaixa devagar o queixo em direção ao peito e depois olha um pouco para cima, sem jogar a cabeça para trás.",
+  "Mobilidade cervical",
+  "tronco_coluna"
+ ],
+ "chair-neck-tilt": [
+  "Inclinação lateral do pescoço sentado",
+  "Sentado e ereto, com os ombros relaxados, aproxima a orelha do ombro sem elevar o ombro. Mantém 3 segundos, volta e troca de lado.",
+  "Alongamento lateral do pescoço",
+  "tronco_coluna"
+ ],
+ "chair-scapular-squeeze": [
+  "Retração escapular sentado",
+  "Sentado, com os cotovelos flexionados junto ao corpo, aproxima as escápulas e projeta o peito. Mantém 3 segundos e solta.",
+  "Escápulas e postura",
+  "ombros_escapulas"
+ ],
+ "chair-shoulder-rolls": [
+  "Rotação de ombros sentado",
+  "Sentado, eleva os ombros em direção às orelhas, leva-os para trás aproximando as escápulas e desce, num círculo amplo e lento.",
+  "Mobilidade dos ombros",
+  "ombros_escapulas"
+ ],
+ "chair-shoulder-shrugs": [
+  "Elevação de ombros sentado",
+  "Sentado, com os braços relaxados ao lado do corpo, eleva os ombros até as orelhas, mantém um segundo e solta.",
+  "Trapézio superior",
+  "ombros_escapulas"
+ ],
+ "chair-toe-raises": [
+  "Elevação das pontas dos pés sentado",
+  "Sentado, com os calcanhares no chão, eleva a parte da frente dos pés e desce devagar.",
+  "Dorsiflexores do tornozelo",
+  "tornozelos_pes"
+ ],
+ "chair-twist": [
+  "Rotação de tronco sentado",
+  "Sentado, com os braços cruzados sobre o peito e os pés no chão, gira o tronco para o lado e olha para trás, mantendo os joelhos para a frente. Troca de lado.",
+  "Rotação da coluna",
+  "tronco_coluna"
+ ],
+ "chair-wrist-circles": [
+  "Circundução de punhos sentado",
+  "Sentado, com os cotovelos flexionados e os antebraços à frente, gira as mãos em círculos e depois troca o sentido.",
+  "Mobilidade dos punhos",
+  "cotovelos_punhos_maos"
+ ],
+ "chair-wrist-stretch": [
+  "Alongamento de flexores do punho sentado",
+  "Sentado, estende um braço à frente com a palma voltada para fora e puxa os dedos suavemente com a outra mão. Troca de mão.",
+  "Flexores do punho e antebraço",
+  "cotovelos_punhos_maos"
+ ],
+ "bird-dog": [
+  "Perdigueiro",
+  "Em quatro apoios, com as costas retas, estende um braço à frente e a perna oposta para trás. Mantém 2 segundos, volta e troca de lado.",
+  "Estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "bird-dog-easy": [
+  "Perdigueiro facilitado",
+  "Em quatro apoios, estende um braço à frente e volta. Depois desliza uma perna para trás e volta, um membro de cada vez.",
+  "Estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "cat-cow": [
+  "Gato e camelo",
+  "Em quatro apoios, arredonda as costas olhando para a barriga. Depois deixa a barriga descer e eleva o olhar.",
+  "Mobilidade da coluna",
+  "tronco_coluna"
+ ],
+ "dead-bug": [
+  "Inseto morto",
+  "Deitado de costas, com os braços para o teto e os joelhos elevados a 90°, leva um braço acima da cabeça e estende a perna oposta. Volta e troca de lado, com a lombar apoiada.",
+  "Estabilidade do tronco e coordenação",
+  "tronco_coluna"
+ ],
+ "donkey-kick": [
+  "Coice em quatro apoios",
+  "Em quatro apoios, empurra um calcanhar em direção ao teto mantendo o joelho flexionado. Desce devagar sem arquear as costas.",
+  "Glúteo máximo",
+  "quadril_gluteos"
+ ],
+ "figure-four-stretch": [
+  "Alongamento em 4 deitado",
+  "Deitado de costas, apoia um tornozelo sobre o joelho oposto, eleva a perna de baixo e puxa-a em direção ao peito. Troca de lado.",
+  "Glúteos e piriforme",
+  "quadril_gluteos"
+ ],
+ "gentle-cobra": [
+  "Cobra suave",
+  "Deitado de bruços, com as mãos ao lado do peito e os cotovelos junto ao corpo, pressiona levemente e eleva o peito mantendo os cotovelos flexionados. Desce devagar.",
+  "Extensão da coluna",
+  "tronco_coluna"
+ ],
+ "gentle-curl-up": [
+  "Abdominal supra suave",
+  "Deitado de costas, com os joelhos flexionados, recolhe o queixo e eleva um pouco a cabeça e os ombros, levando as mãos em direção aos joelhos. Desce devagar.",
+  "Abdominais",
+  "tronco_coluna"
+ ],
+ "glute-bridge": [
+  "Ponte de glúteos",
+  "Deitado de costas, com os joelhos flexionados, empurra os calcanhares e eleva o quadril até alinhar ombros e joelhos. Mantém 2 segundos e desce devagar.",
+  "Glúteos e posteriores da coxa",
+  "quadril_gluteos"
+ ],
+ "heel-slides": [
+  "Deslizamento de calcanhar",
+  "Deitado de costas, com os joelhos flexionados, desliza um calcanhar pelo chão até estender a perna. Volta devagar e troca de perna.",
+  "Mobilidade do joelho e do quadril",
+  "joelhos"
+ ],
+ "knee-plank": [
+  "Prancha de joelhos nos antebraços",
+  "Apoiado nos antebraços, com os cotovelos sob os ombros e os joelhos no chão, mantém o corpo alinhado da cabeça aos joelhos, contraindo o abdome.",
+  "Estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "knee-to-chest-single": [
+  "Joelho ao peito unilateral",
+  "Deitado de costas, com os joelhos flexionados, abraça um joelho e puxa-o em direção ao peito, com a cabeça e os ombros no chão. Troca de perna.",
+  "Lombar e glúteos",
+  "quadril_gluteos"
+ ],
+ "knees-to-chest-hug": [
+  "Joelhos ao peito",
+  "Deitado de costas, eleva os dois joelhos, abraça-os e puxa-os em direção ao peito, balançando suavemente de um lado para o outro.",
+  "Relaxamento da lombar",
+  "tronco_coluna"
+ ],
+ "lying-arm-reach": [
+  "Elevação de braço deitado",
+  "Deitado de costas, com os joelhos flexionados e os braços para o teto, leva um braço devagar acima da cabeça, volta e troca de braço, sem arquear as costas.",
+  "Flexão do ombro",
+  "ombros_escapulas"
+ ],
+ "lying-hamstring-stretch": [
+  "Alongamento de posteriores deitado",
+  "Deitado de costas, eleva uma perna estendida, segura atrás da coxa e puxa suavemente. Troca de perna.",
+  "Posteriores da coxa",
+  "joelhos"
+ ],
+ "open-book": [
+  "Livro aberto",
+  "Deitado de lado, com os joelhos flexionados à frente e os braços estendidos, abre o braço de cima para o outro lado, acompanhando com o olhar, e volta devagar.",
+  "Rotação torácica",
+  "tronco_coluna"
+ ],
+ "pelvic-tilt-lying": [
+  "Báscula pélvica deitado",
+  "Deitado de costas, com os joelhos flexionados e os pés no chão, pressiona a lombar contra o chão inclinando a pelve. Solta devagar, num movimento pequeno.",
+  "Controle lombopélvico",
+  "tronco_coluna"
+ ],
+ "prone-heel-to-seat": [
+  "Flexão de joelho de bruços",
+  "Deitado de bruços, com os braços ao lado do corpo, flexiona um joelho levando o calcanhar em direção ao glúteo. Desce devagar e troca de perna.",
+  "Posteriores da coxa e mobilidade do joelho",
+  "joelhos"
+ ],
+ "prone-leg-lift": [
+  "Extensão de quadril de bruços",
+  "Deitado de bruços, eleva uma perna estendida um pouco do chão, mantendo o quadril apoiado. Desce e troca de perna.",
+  "Glúteos e lombar",
+  "quadril_gluteos"
+ ],
+ "prone-opposite-lift": [
+  "Elevação de braço e perna opostos de bruços",
+  "Deitado de bruços, com os braços à frente, eleva um braço e a perna oposta um pouco do chão. Desce e troca de lado.",
+  "Extensores da coluna",
+  "tronco_coluna"
+ ],
+ "prone-superman": [
+  "Super-homem",
+  "Deitado de bruços, com os braços estendidos à frente, eleva braços, peito e pernas um pouco do chão, olhando para baixo. Mantém 2 segundos e desce.",
+  "Extensores da coluna",
+  "tronco_coluna"
+ ],
+ "prone-swimmers": [
+  "Nado de bruços",
+  "Deitado de bruços, com os braços à frente e o peito levemente elevado, alterna braços e pernas opostos para cima e para baixo em movimentos curtos e rápidos.",
+  "Extensores da coluna e coordenação",
+  "tronco_coluna"
+ ],
+ "prone-w-squeeze": [
+  "Retração escapular em W de bruços",
+  "Deitado de bruços, com os cotovelos flexionados para os lados formando um W, eleva cotovelos e mãos e aproxima as escápulas. Mantém 2 segundos e desce.",
+  "Escápulas e postura",
+  "ombros_escapulas"
+ ],
+ "prone-y-raise": [
+  "Elevação em Y de bruços",
+  "Deitado de bruços, com os braços abertos em Y e os polegares para cima, eleva os braços um pouco, aproxima as escápulas e desce.",
+  "Trapézio inferior e escápulas",
+  "ombros_escapulas"
+ ],
+ "side-lying-inner-thigh": [
+  "Adução de quadril de lado",
+  "Deitado de lado, apoia a perna de cima flexionada à frente e eleva um pouco a perna de baixo estendida. Desce devagar.",
+  "Adutores do quadril",
+  "quadril_gluteos"
+ ],
+ "side-lying-leg-lift": [
+  "Abdução de quadril de lado",
+  "Deitado de lado, com a perna de baixo flexionada, eleva devagar a perna de cima estendida, com a ponta do pé para a frente. Desce com controle.",
+  "Glúteo médio",
+  "quadril_gluteos"
+ ],
+ "side-lying-quad-stretch": [
+  "Alongamento de quadríceps de lado",
+  "Deitado de lado, com a cabeça apoiada no braço, segura o pé de cima e leva o calcanhar em direção ao glúteo, com os joelhos juntos. Troca de lado.",
+  "Quadríceps",
+  "joelhos"
+ ],
+ "slow-bicycle-legs": [
+  "Bicicleta lenta",
+  "Deitado de costas, com os joelhos elevados, estende uma perna no ar enquanto o outro joelho vem ao peito, alternando devagar como se pedalasse.",
+  "Abdominais e coordenação das pernas",
+  "tronco_coluna"
+ ],
+ "straight-leg-raise": [
+  "Elevação da perna estendida",
+  "Deitado de costas, com um joelho flexionado, eleva a outra perna estendida até a altura do joelho dobrado. Desce devagar e troca de perna.",
+  "Quadríceps e flexores do quadril",
+  "joelhos"
+ ],
+ "supine-marching": [
+  "Marcha deitado",
+  "Deitado de costas, com os joelhos flexionados, eleva um pé até o joelho ficar sobre o quadril, mantendo a flexão. Desce sem bater e troca de perna.",
+  "Controle abdominal",
+  "tronco_coluna"
+ ],
+ "supine-twist": [
+  "Rotação de tronco deitado",
+  "Deitado de costas, com os braços abertos e os joelhos flexionados, deixa os dois joelhos caírem devagar para um lado, com os ombros no chão. Volta e troca de lado.",
+  "Rotação da coluna lombar",
+  "tronco_coluna"
+ ],
+ "thread-the-needle": [
+  "Passar a linha na agulha",
+  "Em quatro apoios, desliza um braço por baixo do corpo para o outro lado, deixando o ombro descer em direção ao chão. Volta e troca de lado.",
+  "Rotação torácica e ombros",
+  "tronco_coluna"
+ ],
+ "floor-ankle-pumps": [
+  "Bomba de tornozelo sentado no chão",
+  "Sentado no chão, com as pernas estendidas, aponta os pés para a frente e depois puxa as pontas em sua direção.",
+  "Tornozelos e circulação",
+  "tornozelos_pes"
+ ],
+ "floor-butterfly-stretch": [
+  "Alongamento borboleta",
+  "Sentado no chão, junta as solas dos pés e deixa os joelhos caírem para os lados, segurando os pés com as mãos e mantendo o tronco ereto.",
+  "Adutores do quadril",
+  "quadril_gluteos"
+ ],
+ "floor-head-to-knee-easy": [
+  "Alongamento de posteriores com uma perna estendida",
+  "Sentado no chão, com uma perna estendida e o outro pé junto à parte interna da coxa, gira o tronco para a perna estendida e inclina à frente. Troca de lado.",
+  "Posteriores da coxa",
+  "joelhos"
+ ],
+ "floor-long-sit-forward-fold": [
+  "Flexão do tronco sentado com pernas estendidas",
+  "Sentado no chão, com as pernas estendidas à frente, leva as mãos em direção aos pés inclinando o tronco a partir do quadril.",
+  "Cadeia posterior",
+  "joelhos"
+ ],
+ "ankle-circles": [
+  "Circundução de tornozelo em pé",
+  "Em pé, tira um pé do chão e desenha círculos com a ponta dos dedos. Troca o sentido e depois o pé.",
+  "Mobilidade do tornozelo",
+  "tornozelos_pes"
+ ],
+ "back-leg-raise": [
+  "Extensão de quadril em pé",
+  "Em pé, com o tronco levemente inclinado à frente, eleva uma perna estendida para trás contraindo o glúteo.",
+  "Glúteo máximo",
+  "quadril_gluteos"
+ ],
+ "calf-raise": [
+  "Elevação de calcanhares em pé",
+  "Em pé, sobe devagar na ponta dos pés e desce até encostar os calcanhares.",
+  "Panturrilhas",
+  "tornozelos_pes"
+ ],
+ "cross-leg-side-stretch": [
+  "Alongamento lateral com pernas cruzadas",
+  "Em pé, cruza uma perna atrás da outra, projeta o quadril para o lado da perna de trás e eleva um braço, inclinando o tronco para o lado oposto. Troca de lado.",
+  "Trato iliotibial e flancos",
+  "quadril_gluteos"
+ ],
+ "lunge-hip-flexor-stretch": [
+  "Alongamento de flexores do quadril em pé",
+  "Em pé, dá um passo grande à frente com o joelho da frente levemente flexionado e encaixa a pelve, alongando a frente da coxa de trás.",
+  "Flexores do quadril",
+  "quadril_gluteos"
+ ],
+ "mini-squat": [
+  "Miniagachamento",
+  "Em pé, com os pés afastados na largura dos ombros e os braços à frente, desce um pouco como se fosse sentar numa cadeira alta.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "mini-squat-hold": [
+  "Miniagachamento isométrico",
+  "Desce num agachamento curto com os braços estendidos à frente e mantém a posição respirando com calma.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "shallow-split-squat": [
+  "Afundo parcial",
+  "Em pé, com um pé um passo grande à frente do outro e o calcanhar de trás elevado, desce um pouco sem tirar os pés do lugar.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "side-leg-raise": [
+  "Abdução de quadril em pé",
+  "Em pé, eleva uma perna estendida para o lado com a ponta do pé para a frente e o tronco ereto. Desce devagar.",
+  "Glúteo médio",
+  "quadril_gluteos"
+ ],
+ "sit-back-squat": [
+  "Agachamento",
+  "Em pé, leva o quadril para trás como se fosse sentar numa cadeira imaginária, inclinando o tronco e estendendo os braços à frente.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "standing-quad-stretch": [
+  "Alongamento de quadríceps em pé",
+  "Em pé, flexiona um joelho e segura o tornozelo atrás do corpo, levando o calcanhar em direção ao glúteo.",
+  "Quadríceps",
+  "joelhos"
+ ],
+ "standing-side-leg-swing": [
+  "Balanço lateral da perna em pé",
+  "Em pé, balança uma perna para o lado e depois cruza um pouco à frente da outra, num movimento curto e suave. Troca de perna.",
+  "Abdutores e adutores do quadril",
+  "quadril_gluteos"
+ ],
+ "wide-mini-squat": [
+  "Miniagachamento sumô",
+  "Em pé, com os pés bem afastados e as pontas um pouco para fora, desce um pouco abrindo os joelhos na direção dos pés.",
+  "Adutores, quadríceps e glúteos",
+  "quadril_gluteos"
+ ],
+ "arm-circles-small": [
+  "Círculos com os braços",
+  "Em pé, com os braços abertos na altura dos ombros, desenha pequenos círculos no ar e depois troca o sentido.",
+  "Resistência dos ombros",
+  "ombros_escapulas"
+ ],
+ "chest-opener-clasp": [
+  "Abertura do peito com mãos atrás",
+  "Em pé, entrelaça as mãos atrás das costas, leva os ombros para trás e para baixo e eleva o peito.",
+  "Peitoral e postura",
+  "ombros_escapulas"
+ ],
+ "lateral-raise": [
+  "Abdução de ombros em pé",
+  "Em pé, com os cotovelos levemente flexionados, eleva os braços para os lados até a altura dos ombros e desce devagar.",
+  "Deltoide",
+  "ombros_escapulas"
+ ],
+ "neck-nod": [
+  "Flexão e extensão do pescoço",
+  "Em pé, abaixa devagar o queixo em direção ao peito, volta e olha um pouco para cima, sem jogar a cabeça para trás.",
+  "Mobilidade cervical",
+  "tronco_coluna"
+ ],
+ "neck-rotation": [
+  "Rotação do pescoço",
+  "Em pé, com as costas retas e o queixo paralelo ao chão, gira devagar a cabeça para olhar por cima do ombro, volta ao centro e gira para o outro lado.",
+  "Mobilidade cervical",
+  "tronco_coluna"
+ ],
+ "open-close-swings": [
+  "Abrir e cruzar os braços",
+  "Em pé, abre os braços para os lados e depois cruza-os à frente do peito, num movimento contínuo e suave.",
+  "Mobilidade dos ombros e do peito",
+  "ombros_escapulas"
+ ],
+ "protraction-retraction": [
+  "Protração e retração escapular",
+  "Em pé, com os braços estendidos à frente, empurra as mãos para longe e depois puxa para trás aproximando as escápulas, sem dobrar os cotovelos.",
+  "Serrátil e escápulas",
+  "ombros_escapulas"
+ ],
+ "pull-aparts": [
+  "Abertura horizontal dos braços",
+  "Em pé, com os braços estendidos à frente na altura dos ombros, abre-os para os lados aproximando as escápulas e volta devagar.",
+  "Escápulas e deltoide posterior",
+  "ombros_escapulas"
+ ],
+ "punches": [
+  "Socos alternados",
+  "Em pé, com os joelhos soltos e as mãos junto ao queixo, soca à frente com uma mão e depois com a outra, sem travar o cotovelo.",
+  "Condicionamento e ombros",
+  "ombros_escapulas"
+ ],
+ "scapular-squeeze": [
+  "Retração escapular em pé",
+  "Em pé, com os cotovelos flexionados junto ao corpo, aproxima as escápulas e abre o peito. Mantém 3 segundos e solta.",
+  "Escápulas e postura",
+  "ombros_escapulas"
+ ],
+ "shoulder-rolls-back": [
+  "Rotação de ombros para trás",
+  "Em pé, eleva os ombros em direção às orelhas, leva-os para trás aproximando as escápulas e desce, num círculo amplo e lento.",
+  "Mobilidade dos ombros",
+  "ombros_escapulas"
+ ],
+ "shoulder-rolls-forward": [
+  "Rotação de ombros para a frente",
+  "Em pé, eleva os ombros em direção às orelhas e rola-os para a frente e para baixo, num círculo suave.",
+  "Mobilidade dos ombros",
+  "ombros_escapulas"
+ ],
+ "wrist-extensor-stretch": [
+  "Alongamento de extensores do punho",
+  "Em pé, com um braço estendido à frente e os dedos para baixo, pressiona suavemente o dorso da mão com a outra mão. Troca de mão.",
+  "Extensores do punho e antebraço",
+  "cotovelos_punhos_maos"
+ ],
+ "wrist-flexor-stretch": [
+  "Alongamento de flexores do punho",
+  "Em pé, com um braço estendido à frente, a palma para fora e os dedos para cima, puxa os dedos suavemente para trás com a outra mão. Troca de mão.",
+  "Flexores do punho e antebraço",
+  "cotovelos_punhos_maos"
+ ],
+ "downward-dog-pedal": [
+  "V invertido pedalando",
+  "Na posição de V invertido, flexiona um joelho enquanto abaixa o outro calcanhar, alternando devagar como se caminhasse no lugar.",
+  "Panturrilhas e posteriores da coxa",
+  "tornozelos_pes"
+ ],
+ "goddess-pose-gentle": [
+  "Agachamento sumô com braços em W",
+  "Em pé, com os pés afastados e as pontas para fora, flexiona levemente os joelhos com os braços em W, subindo e descendo devagar.",
+  "Membros inferiores e postura",
+  "quadril_gluteos"
+ ],
+ "plank-full": [
+  "Prancha alta",
+  "Com as mãos sob os ombros e as pernas estendidas para trás, mantém o corpo em linha reta da cabeça aos calcanhares, sem deixar o quadril cair ou subir.",
+  "Estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "plank-on-knees": [
+  "Prancha alta de joelhos",
+  "Com as mãos sob os ombros e os joelhos no chão, mantém o corpo em linha reta da cabeça aos joelhos, recolhendo o abdome.",
+  "Estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "reclined-butterfly": [
+  "Borboleta deitado",
+  "Deitado de costas, junta as solas dos pés e deixa os joelhos caírem para os lados, com os braços soltos ao lado do corpo, respirando com calma.",
+  "Adutores do quadril e relaxamento",
+  "quadril_gluteos"
+ ],
+ "savasana-rest": [
+  "Relaxamento deitado",
+  "Deitado de costas, com braços e pernas levemente afastados, respira devagar e relaxa o corpo inteiro.",
+  "Relaxamento e respiração",
+  "respiracao"
+ ],
+ "table-to-downward-dog": [
+  "Quatro apoios para V invertido",
+  "Em quatro apoios, eleva o quadril para cima e para trás formando um V invertido, com os joelhos soltos. Os calcanhares não precisam tocar o chão.",
+  "Cadeia posterior e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-calf-raise-supported": [
+  "Elevação de calcanhares com apoio",
+  "Em pé, segurando o encosto de uma cadeira, sobe devagar na ponta dos pés e desce até encostar os calcanhares.",
+  "Panturrilhas",
+  "tornozelos_pes"
+ ],
+ "kineti-single-calf-raise-supported": [
+  "Elevação de calcanhar unilateral com apoio",
+  "Em pé, segurando o encosto de uma cadeira, eleva um pé para trás e sobe na ponta do outro. Desce devagar e troca de perna.",
+  "Panturrilha",
+  "tornozelos_pes"
+ ],
+ "kineti-wall-calf-stretch": [
+  "Alongamento de panturrilha na parede",
+  "Com as mãos na parede e uma perna atrás, mantém o calcanhar de trás no chão e o joelho estendido, e inclina o corpo em direção à parede.",
+  "Panturrilha (gastrocnêmio)",
+  "tornozelos_pes"
+ ],
+ "kineti-mini-squat-supported": [
+  "Miniagachamento com apoio",
+  "Em pé, segurando o encosto de uma cadeira, leva o quadril para trás e flexiona um pouco os joelhos. Volta a ficar ereto.",
+  "Quadríceps e glúteos",
+  "joelhos"
+ ],
+ "kineti-single-leg-bridge": [
+  "Ponte unilateral",
+  "Deitado de costas, com um joelho flexionado e a outra perna estendida, eleva o quadril mantendo a perna estendida alinhada à coxa. Desce devagar.",
+  "Glúteos e estabilidade pélvica",
+  "quadril_gluteos"
+ ],
+ "kineti-curl-up-arms-crossed": [
+  "Abdominal supra com braços cruzados",
+  "Deitado de costas, com os joelhos flexionados e os braços cruzados sobre o peito, eleva um pouco a cabeça e os ombros. Desce devagar.",
+  "Abdominais",
+  "tronco_coluna"
+ ],
+ "kineti-lateral-raise-dumbbell": [
+  "Abdução de ombros com halteres",
+  "Em pé, com um halter em cada mão, eleva os braços para os lados até a altura dos ombros e desce devagar.",
+  "Deltoide",
+  "ombros_escapulas"
+ ],
+ "kineti-front-raise-dumbbell": [
+  "Elevação frontal com halteres",
+  "Em pé, com os halteres à frente das coxas, eleva os braços estendidos até a altura dos ombros e desce devagar.",
+  "Deltoide anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-standing-curl-dumbbell": [
+  "Rosca direta com halteres em pé",
+  "Em pé, com os cotovelos junto ao corpo, flexiona os cotovelos levando os halteres até os ombros e desce devagar.",
+  "Bíceps",
+  "cotovelos_punhos_maos"
+ ]
+}

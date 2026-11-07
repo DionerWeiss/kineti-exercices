@@ -1,51 +1,1110 @@
-{ "category": { "id": "kineti", "he": "kineti", "en": "Kineti" },
-  "exercises": [
-    { "id": "kineti-supine-hip-abduction", "en": "Supine hip abduction", "amount_en": "10 each leg",
-      "steps_en": ["Lie on your back, legs straight.", "Slide one leg out to the side.", "Bring it back slowly."],
-      "beat": 1.1, "view": "floor",
-      "keys": [ {"hips": [-90, 0, 0], "foot": [-15, 0, 0]},
-                {"hips": [-90, 0, 0], "foot": [-15, 0, 0], "legL": [0, 0, 28], "hold": 0.5},
-                {"hips": [-90, 0, 0], "foot": [-15, 0, 0]},
-                {"hips": [-90, 0, 0], "foot": [-15, 0, 0], "legR": [0, 0, 28], "hold": 0.5} ] },
-    { "id": "kineti-short-arc-quad", "en": "Short arc quad", "amount_en": "10 each leg",
-      "steps_en": ["Lie on your back with a roll under one knee.", "Straighten the knee, lifting the heel.", "Hold 2 s and lower."],
-      "beat": 1.1, "view": "floor",
-      "keys": [ {"hips": [-90, 0, 0], "legL": [-18, 0, 0], "kneeL": [50, 0, 0], "footL": [10, 0, 0]},
-                {"hips": [-90, 0, 0], "legL": [-18, 0, 0], "kneeL": [0, 0, 0], "footL": [-20, 0, 0], "hold": 1.5} ] },
-    { "id": "kineti-wall-push-up", "en": "Wall push-up", "amount_en": "10 reps",
-      "steps_en": ["Hands on the wall at shoulder height.", "Bend your elbows and bring your chest to the wall.", "Push back."],
-      "beat": 1.2,
-      "keys": [ {"hips": [15, 0, 0], "arm": [-105, 0, 8], "elbow": [0, 0, 0], "hand": [-90, 0, 0], "foot": [-15, 0, 0]},
-                {"hips": [25, 0, 0], "arm": [-82, 0, 8], "elbow": [-105, 0, 0], "hand": [-18, 0, 0], "foot": [-25, 0, 0], "hold": 0.4} ] },
-    { "id": "kineti-standing-hip-abduction-supported", "en": "Standing hip abduction with support", "amount_en": "10 each leg",
-      "steps_en": ["Hold the back of a chair.", "Lift one straight leg out to the side.", "Lower slowly, body upright."],
-      "beat": 1,
-      "keys": [ {"arm": [-55, 0, 6], "elbow": [-35, 0, 0]},
-                {"arm": [-55, 0, 6], "elbow": [-35, 0, 0], "legL": [0, 0, 28], "hold": 0.5},
-                {"arm": [-55, 0, 6], "elbow": [-35, 0, 0]},
-                {"arm": [-55, 0, 6], "elbow": [-35, 0, 0], "legR": [0, 0, 28], "hold": 0.5} ] },
-    { "id": "kineti-standing-knee-flexion-supported", "en": "Standing knee flexion with support", "amount_en": "10 each leg",
-      "steps_en": ["Hold the back of a chair.", "Bend one knee, heel toward the buttock.", "Thighs side by side. Lower slowly."],
-      "beat": 1,
-      "keys": [ {"arm": [-55, 0, 6], "elbow": [-35, 0, 0]},
-                {"arm": [-55, 0, 6], "elbow": [-35, 0, 0], "legL": [6, 0, 0], "kneeL": [95, 0, 0], "hold": 0.5},
-                {"arm": [-55, 0, 6], "elbow": [-35, 0, 0]},
-                {"arm": [-55, 0, 6], "elbow": [-35, 0, 0], "legR": [6, 0, 0], "kneeR": [95, 0, 0], "hold": 0.5} ] },
-    { "id": "kineti-adductor-ball-squeeze", "en": "Adductor ball squeeze", "amount_en": "10 x 5 s", "seated": true,
-      "steps_en": ["Sit with a ball between your knees.", "Squeeze the ball for 5 seconds.", "Relax slowly."],
-      "beat": 0.8,
-      "keys": [ {"leg": [-90, 0, 9], "knee": [90, 0, -3]},
-                {"leg": [-90, 0, 5.5], "knee": [90, 0, -1], "hold": 2} ] },
-    { "id": "kineti-seated-knee-extension-ankle-weight", "en": "Seated knee extension with ankle weight", "amount_en": "10 each leg", "seated": true,
-      "steps_en": ["Ankle weight on, sit up tall.", "Straighten one knee and pull toes up.", "Hold 2 s and lower slowly."],
-      "beat": 1.2,
-      "keys": [ {"legL": [-90, 0, 4], "legR": [-90, 0, 4], "kneeL": [90, 0, 0], "kneeR": [90, 0, 0]},
-                {"legL": [-90, 0, 4], "legR": [-90, 0, 4], "kneeL": [4, 0, 0], "kneeR": [90, 0, 0], "footL": [-25, 0, 0], "hold": 1.2},
-                {"legL": [-90, 0, 4], "legR": [-90, 0, 4], "kneeL": [90, 0, 0], "kneeR": [90, 0, 0]},
-                {"legL": [-90, 0, 4], "legR": [-90, 0, 4], "kneeL": [90, 0, 0], "kneeR": [4, 0, 0], "footR": [-25, 0, 0], "hold": 1.2} ] },
-    { "id": "kineti-seated-elbow-curl-dumbbell", "en": "Seated elbow curl with dumbbell", "amount_en": "12 reps", "seated": true,
-      "steps_en": ["Sit tall, a light dumbbell in each hand.", "Bend your elbows, bringing the weights up.", "Lower slowly."],
-      "beat": 1.1,
-      "keys": [ {"legL": [-90, 0, 4], "legR": [-90, 0, 4], "kneeL": [90, 0, 0], "kneeR": [90, 0, 0], "arm": [0, 0, 10], "elbow": [-8, 70, 0]},
-                {"legL": [-90, 0, 4], "legR": [-90, 0, 4], "kneeL": [90, 0, 0], "kneeR": [90, 0, 0], "arm": [0, 0, 10], "elbow": [-135, 70, 0], "hold": 0.4} ] }
-  ] }
+{
+ "category": {
+  "id": "kineti",
+  "he": "kineti",
+  "en": "Kineti"
+ },
+ "exercises": [
+  {
+   "id": "kineti-supine-hip-abduction",
+   "en": "Supine hip abduction",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Lie on your back, legs straight.",
+    "Slide one leg out to the side.",
+    "Bring it back slowly."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legL": [
+      0,
+      0,
+      28
+     ],
+     "hold": 0.5
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      0,
+      0,
+      28
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-short-arc-quad",
+   "en": "Short arc quad",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Lie on your back with a roll under one knee.",
+    "Straighten the knee, lifting the heel.",
+    "Hold 2 s and lower."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "legL": [
+      -18,
+      0,
+      0
+     ],
+     "kneeL": [
+      50,
+      0,
+      0
+     ],
+     "footL": [
+      10,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "legL": [
+      -18,
+      0,
+      0
+     ],
+     "kneeL": [
+      0,
+      0,
+      0
+     ],
+     "footL": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 1.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-push-up",
+   "en": "Wall push-up",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hands on the wall at shoulder height.",
+    "Bend your elbows and bring your chest to the wall.",
+    "Push back."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      15,
+      0,
+      0
+     ],
+     "arm": [
+      -105,
+      0,
+      8
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "hand": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      25,
+      0,
+      0
+     ],
+     "arm": [
+      -82,
+      0,
+      8
+     ],
+     "elbow": [
+      -105,
+      0,
+      0
+     ],
+     "hand": [
+      -18,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-standing-hip-abduction-supported",
+   "en": "Standing hip abduction with support",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Hold the back of a chair.",
+    "Lift one straight leg out to the side.",
+    "Lower slowly, body upright."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legL": [
+      0,
+      0,
+      28
+     ],
+     "hold": 0.5
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legR": [
+      0,
+      0,
+      28
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-standing-knee-flexion-supported",
+   "en": "Standing knee flexion with support",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Hold the back of a chair.",
+    "Bend one knee, heel toward the buttock.",
+    "Thighs side by side. Lower slowly."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legL": [
+      6,
+      0,
+      0
+     ],
+     "kneeL": [
+      95,
+      0,
+      0
+     ],
+     "hold": 0.5
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legR": [
+      6,
+      0,
+      0
+     ],
+     "kneeR": [
+      95,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-adductor-ball-squeeze",
+   "en": "Adductor ball squeeze",
+   "amount_en": "10 x 5 s",
+   "seated": true,
+   "steps_en": [
+    "Sit with a ball between your knees.",
+    "Squeeze the ball for 5 seconds.",
+    "Relax slowly."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      9
+     ],
+     "knee": [
+      90,
+      0,
+      -3
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      5.5
+     ],
+     "knee": [
+      90,
+      0,
+      -1
+     ],
+     "hold": 2
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-knee-extension-ankle-weight",
+   "en": "Seated knee extension with ankle weight",
+   "amount_en": "10 each leg",
+   "seated": true,
+   "steps_en": [
+    "Ankle weight on, sit up tall.",
+    "Straighten one knee and pull toes up.",
+    "Hold 2 s and lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "footL": [
+      -25,
+      0,
+      0
+     ],
+     "hold": 1.2
+    },
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -25,
+      0,
+      0
+     ],
+     "hold": 1.2
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-elbow-curl-dumbbell",
+   "en": "Seated elbow curl with dumbbell",
+   "amount_en": "12 reps",
+   "seated": true,
+   "steps_en": [
+    "Sit tall, a light dumbbell in each hand.",
+    "Bend your elbows, bringing the weights up.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      10
+     ],
+     "elbow": [
+      -8,
+      70,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -90,
+      0,
+      4
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      10
+     ],
+     "elbow": [
+      -135,
+      70,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-calf-raise-supported",
+   "en": "Calf raise with support",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Hold the back of a chair.",
+    "Rise onto your toes.",
+    "Lower slowly."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "foot": [
+      35,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-single-calf-raise-supported",
+   "en": "Single-leg calf raise with support",
+   "amount_en": "8 each leg",
+   "steps_en": [
+    "Hold the back of a chair.",
+    "Lift one foot behind you.",
+    "Rise onto the toes of the other foot."
+   ],
+   "beat": 1,
+   "keys": [
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legR": [
+      15,
+      0,
+      0
+     ],
+     "kneeR": [
+      70,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ],
+     "legR": [
+      15,
+      0,
+      0
+     ],
+     "kneeR": [
+      70,
+      0,
+      0
+     ],
+     "footL": [
+      35,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-calf-stretch",
+   "en": "Wall calf stretch",
+   "amount_en": "20 seconds each leg",
+   "steps_en": [
+    "Hands on the wall, one leg back.",
+    "Back heel down, back knee straight.",
+    "Lean toward the wall."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "arm": [
+      -90,
+      0,
+      8
+     ],
+     "elbow": [
+      -25,
+      0,
+      0
+     ],
+     "hand": [
+      -70,
+      0,
+      0
+     ],
+     "legL": [
+      -20,
+      0,
+      0
+     ],
+     "kneeL": [
+      10,
+      0,
+      0
+     ],
+     "legR": [
+      20,
+      0,
+      0
+     ],
+     "footR": [
+      10,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      10,
+      0,
+      0
+     ],
+     "arm": [
+      -88,
+      0,
+      8
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "hand": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -35,
+      0,
+      0
+     ],
+     "kneeL": [
+      40,
+      0,
+      0
+     ],
+     "footL": [
+      -5,
+      0,
+      0
+     ],
+     "legR": [
+      18,
+      0,
+      0
+     ],
+     "footR": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 2
+    }
+   ]
+  },
+  {
+   "id": "kineti-mini-squat-supported",
+   "en": "Mini squat with support",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold the back of a chair.",
+    "Sit back a little, knees over toes.",
+    "Stand up tall."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      -55,
+      0,
+      6
+     ],
+     "elbow": [
+      -35,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -72,
+      0,
+      6
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "leg": [
+      -35,
+      0,
+      4
+     ],
+     "knee": [
+      55,
+      0,
+      0
+     ],
+     "foot": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      18,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-single-leg-bridge",
+   "en": "Single-leg glute bridge",
+   "amount_en": "8 each leg",
+   "steps_en": [
+    "Lie on your back, one knee bent, the other leg straight.",
+    "Lift your hips.",
+    "Lower slowly."
+   ],
+   "beat": 1.3,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -45,
+      0,
+      0
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "legR": [
+      25,
+      0,
+      0
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "hold": 1.2
+    }
+   ]
+  },
+  {
+   "id": "kineti-curl-up-arms-crossed",
+   "en": "Curl-up with arms crossed",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Lie on your back, knees bent, arms crossed on your chest.",
+    "Lift your head and shoulders a little.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ],
+     "spine": [
+      22,
+      0,
+      0
+     ],
+     "neck": [
+      20,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ]
+  },
+  {
+   "id": "kineti-lateral-raise-dumbbell",
+   "en": "Lateral raise with dumbbells",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Dumbbells at your sides.",
+    "Raise your arms out to shoulder height.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {},
+    {
+     "arm": [
+      0,
+      0,
+      85
+     ],
+     "elbow": [
+      -12,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-front-raise-dumbbell",
+   "en": "Front raise with dumbbells",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Dumbbells in front of your thighs.",
+    "Raise your straight arms to shoulder height.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "arm": [
+      -8,
+      0,
+      4
+     ]
+    },
+    {
+     "arm": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-standing-curl-dumbbell",
+   "en": "Standing biceps curl with dumbbells",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Elbows at your sides.",
+    "Curl the dumbbells up to your shoulders.",
+    "Lower slowly."
+   ],
+   "beat": 1,
+   "keys": [
+    {},
+    {
+     "elbow": [
+      -140,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ]
+  }
+ ]
+}

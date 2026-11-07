@@ -362,7 +362,7 @@ for job in JOBS:
         centre = centre + right * (max(xs) + min(xs)) / 2 * dist + up * (max(ys) + min(ys)) / 2 * dist
     cam.location = centre + d * dist
     cam.rotation_euler = (centre - cam.location).to_track_quat('-Z', 'Y').to_euler()
-    print('JOB', name, f0, f1, sorted(props), 'lo', tuple(round(v, 2) for v in lo), 'hi', tuple(round(v, 2) for v in hi))
+    print('JOB', name, f0, f1, sorted(props), 'dist', round(dist, 2), 'npts', len(pts), 'lo', tuple(round(v, 2) for v in lo), 'hi', tuple(round(v, 2) for v in hi))
     scene.render.filepath = f'{OUT}/{name}/f_'
     if STILL:
         for q in (float(x) for x in os.environ['STILL'].split(',')):

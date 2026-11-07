@@ -73,11 +73,11 @@
  },
  "diaphragmatic_breathing": {
   "video": null,
-  "nota": "o manequim não mostra a respiração"
+  "nota": "removido do app em 07/11/2026: o manequim não mostra respiração nem rosto"
  },
  "pursed_lip_breathing": {
   "video": null,
-  "nota": "o manequim não tem rosto"
+  "nota": "removido do app em 07/11/2026: o manequim não mostra respiração nem rosto"
  },
  "abdominal_crunches": {
   "video": "kineti-crunch-hands-behind-head",
@@ -220,19 +220,19 @@
   "nota": ""
  },
  "wrist_flexion_extension": {
-  "video": null,
-  "nota": "falta a mesa"
+  "video": "kineti-wrist-flexion-extension",
+  "nota": "close-up da mão no Blender (render_hand.py), com a cinemática do Lottie"
  },
  "forearm_pronation_supination": {
-  "video": null,
-  "nota": "falta a mesa"
+  "video": "kineti-forearm-pronation-supination",
+  "nota": "close-up da mão no Blender (render_hand.py), com a cinemática do Lottie"
  },
  "open_close_hand": {
-  "video": null,
-  "nota": "o manequim não tem dedos"
+  "video": "kineti-open-close-hand",
+  "nota": "close-up da mão no Blender (render_hand.py), com a cinemática do Lottie"
  },
  "thumb_opposition": {
-  "video": null,
-  "nota": "o manequim não tem dedos"
+  "video": "kineti-thumb-opposition",
+  "nota": "close-up da mão no Blender (render_hand.py), com a cinemática do Lottie"
  }
 }

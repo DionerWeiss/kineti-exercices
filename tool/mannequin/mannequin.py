@@ -6,7 +6,7 @@ repainted with the Kineti palette and mark (render_mannequin.py).
     python3 tool/mannequin/mannequin.py sheet [ids...]             # stills + contact sheet build/mannequin/sheet_*.png
     python3 tool/mannequin/mannequin.py render [ids...]            # MP4 in build/mannequin/videos/<id>.mp4
 
-Without ids, every job in jobs.json. Each job: {"lib": "deskbreak"|"kineti", "view": ..., "props": [...],
+Without ids, every job in jobs.json. Each job: {"lib": "deskbreak"|"kineti"|"hand" (with "scene": a hand scene of export_hand.py), "view": ..., "props": [...],
 "frame": "full"|"upper"|"lower", "pocketphysio": [ids]}. Views and props: see render_mannequin.py (DIRS, props).
 Env: KINETI_BLENDER (default: the Windows install), MANNEQUIN_PALETTE (default areia).
 """
@@ -78,7 +78,8 @@ def run(sel, outdir, still=None):
 def sheet(ids):
     sel = jobs(ids)
     st = OUT / 'stills'
-    run(sel, st, still='0,0.25,0.5')
+    hands({i: j for i, j in sel.items() if j['lib'] == 'hand'}, st, still='0,0.25,0.5')
+    run({i: j for i, j in sel.items() if j['lib'] != 'hand'}, st, still='0,0.25,0.5')
     names = list(sel)
     for n in range(0, len(names), 12):  # 12 exercises x 3 frames per sheet
         chunk = names[n:n + 12]
@@ -99,10 +100,23 @@ def sheet(ids):
         print(out)
 
 
+def hands(sel, outdir, still=None):
+    """Hand close-ups (lib "hand"): Lottie hand kinematics exported by export_hand.py, rendered by render_hand.py."""
+    if not sel:
+        return
+    src = OUT / 'hand'
+    subprocess.run([sys.executable, str(HERE / 'export_hand.py'), str(src), *{j['scene'] for j in sel.values()}], check=True)
+    for name, j in sel.items():
+        (outdir / name).mkdir(parents=True, exist_ok=True)
+        blender('--factory-startup', '--python', win(HERE / 'render_hand.py'), '--', win(src / f"{j['scene']}.json"),
+                win(outdir / name), PALETTE, *([still] if still else []))
+
+
 def render(ids):
     sel = jobs(ids)
     frames = OUT / 'frames'
-    run(sel, frames)
+    hands({i: j for i, j in sel.items() if j['lib'] == 'hand'}, frames)
+    run({i: j for i, j in sel.items() if j['lib'] != 'hand'}, frames)
     vids = OUT / 'videos'
     vids.mkdir(parents=True, exist_ok=True)
     for name in sel:

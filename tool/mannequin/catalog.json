@@ -2271,6 +2271,20 @@
    ]
   },
   {
+   "slug": "kineti-open-close-hand",
+   "lib": "hand",
+   "name": "Abrir e fechar a mão",
+   "desc": "Mão apoiada na mesa, palma para cima. Abre bem os dedos, afastando-os, depois fecha a mão sem força, com o polegar por cima dos dedos, e abre de novo.",
+   "focus": "Mobilidade dos dedos",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-open-close-hand.mp4",
+   "kineti_slug": "open_close_hand",
+   "substitui": "open_close_hand",
+   "pocketphysio": []
+  },
+  {
    "slug": "wrist-extensor-stretch",
    "lib": "deskbreak",
    "name": "Alongamento de extensores do punho",
@@ -2368,6 +2382,48 @@
    "pocketphysio": [
     "65a9272053a15212d048e74d"
    ]
+  },
+  {
+   "slug": "kineti-wrist-flexion-extension",
+   "lib": "hand",
+   "name": "Flexão e extensão de punho",
+   "desc": "Antebraço apoiado na mesa, palma para baixo e a mão além da borda. Dobra o punho para baixo, volta, leva a mão para cima e retorna devagar, com os dedos relaxados.",
+   "focus": "Flexores e extensores do punho",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-wrist-flexion-extension.mp4",
+   "kineti_slug": "wrist_flexion_extension",
+   "substitui": "wrist_flexion_extension",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-thumb-opposition",
+   "lib": "hand",
+   "name": "Oposição do polegar",
+   "desc": "Mão apoiada na mesa, palma para cima. Toca a ponta do polegar na ponta do indicador, do médio, do anelar e do mínimo, uma de cada vez, e abre a mão.",
+   "focus": "Coordenação fina do polegar",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-thumb-opposition.mp4",
+   "kineti_slug": "thumb_opposition",
+   "substitui": "thumb_opposition",
+   "pocketphysio": []
+  },
+  {
+   "slug": "kineti-forearm-pronation-supination",
+   "lib": "hand",
+   "name": "Pronação e supinação",
+   "desc": "Antebraço apoiado na mesa, polegar para cima. Gira a palma para baixo, volta ao polegar para cima e gira a palma para cima, sem mexer o cotovelo.",
+   "focus": "Pronadores e supinadores do antebraço",
+   "area": "cotovelos_punhos_maos",
+   "view": "Detalhe da mão",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-forearm-pronation-supination.mp4",
+   "kineti_slug": "forearm_pronation_supination",
+   "substitui": "forearm_pronation_supination",
+   "pocketphysio": []
   },
   {
    "slug": "kineti-standing-curl-dumbbell",

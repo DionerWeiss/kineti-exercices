@@ -16,10 +16,11 @@ POCKET = REPO / 'research' / 'pocketphysio' / 'exercicios.json'
 OUT = HERE / 'catalog.json'
 
 VIEWS = {'side': 'Lateral', 'front': 'Frontal', 'side3q': 'Lateral 3/4', 'front3q': 'Frontal 3/4', 'rside3q': 'Lateral 3/4',
-         'back3q': 'Posterior 3/4', 'top3q': 'Elevada', 'floor': 'Lateral elevada'}
+         'back3q': 'Posterior 3/4', 'top3q': 'Elevada', 'floor': 'Lateral elevada',
+         'close': 'Detalhe da mão'}
 FRAMES = {'upper': ', do peito para cima', 'lower': ', pés em destaque', 'full': ''}
 PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apoio lateral)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
-         'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete'}
+         'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa'}
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',
          'kineti-standing-knee-flexion-supported': 'standing_knee_flexion',
@@ -40,7 +41,7 @@ def main():
 
     texts = {}
     for slug, j in jobs.items():
-        if j['lib'] == 'kineti' and kineti_slug(slug) in kin:
+        if j['lib'] in ('kineti', 'hand') and kineti_slug(slug) in kin:
             e = kin[kineti_slug(slug)]
             texts[slug] = {k: e[k] for k in ('name', 'desc', 'focus', 'area')}
     for slug, (name, desc, focus, area) in json.load(open(HERE / 'texts_pt.json')).items():

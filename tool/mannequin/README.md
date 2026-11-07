@@ -24,6 +24,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
 - **`library_map.json`:** para cada um dos 59 exercícios da biblioteca Kineti, o vídeo do manequim que o substitui, ou `null` e o motivo (dedos, rosto, faixa elástica, mesa, cama, degrau, caminhada). No catálogo, ele aparece no campo `substitui`.
 - **`texts_pt.json`:** nome, descrição, foco e área de cada vídeo, escritos à mão (`{slug: [nome, descrição, foco, área]}`). A descrição segue o que o vídeo mostra, e não o texto original do desk-break. Os movimentos Kineti que já estão na biblioteca usam os textos do `catalog.json` dela.
 - **`kineti_moves.json`:** movimentos escritos por nós, no formato do desk-break (veja `build/desk-break/library/AUTHORING.md`). Os ids começam com `kineti-`.
+- **Close-ups da mão** (`lib: "hand"`): a mão de madeira com dedos, no estilo do manequim, apoiada na mesa. `export_hand.py` exporta, quadro a quadro, a cinemática da mão do Lottie (`tool/build_library_hand_animations.py`), com as mesmas verificações. Depois `render_hand.py` monta segmentos, articulações, palma, mesa e câmera no Blender. São usados em punho, antebraço, abrir e fechar a mão e oposição do polegar.
 - **`render_mannequin.py`:** roda dentro do Blender. Repinta o manequim, aplica a marca, monta o cenário e a câmera, e renderiza.
 - **`build_lib.py`:** roda o `build_library.py` do desk-break num arquivo de movimentos e salva o `.blend`, que o original só grava para a biblioteca inteira.
 

@@ -1431,5 +1431,45 @@
   ],
   "frame": "full",
   "pocketphysio": []
+ },
+ "kineti-wrist-flexion-extension": {
+  "lib": "hand",
+  "scene": "wrist_flexion_extension",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-forearm-pronation-supination": {
+  "lib": "hand",
+  "scene": "forearm_pronation_supination",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-open-close-hand": {
+  "lib": "hand",
+  "scene": "open_close_hand",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": []
+ },
+ "kineti-thumb-opposition": {
+  "lib": "hand",
+  "scene": "thumb_opposition",
+  "view": "close",
+  "props": [
+   "table"
+  ],
+  "frame": "full",
+  "pocketphysio": []
  }
 }

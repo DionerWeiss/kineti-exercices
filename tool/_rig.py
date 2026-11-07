@@ -17,3 +17,5 @@ if not (RIG / 'figure3d.py').exists():
 for p in (str(Path(__file__).resolve().parent), str(RIG)):
     if p not in sys.path:
         sys.path.insert(0, p)
+
+import figure_style  # noqa: E402,F401  (library figure; inactive until figure_style.use(slug))

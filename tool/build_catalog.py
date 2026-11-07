@@ -10,8 +10,11 @@ SOURCES whose SCENES has it; slugs in EXTERNAL come from app builders that
 have no SCENES registry and are kept as committed.
 
 --check also validates the catalogue: every entry has a source and a file,
-no JSON is orphaned, every loop is 5 to 8 s (exercises) and every scene
-passes its geometric checks.
+no JSON is orphaned, every loop is 5 to 8 s (exercises), every scene
+passes its geometric checks and every styled slug exists.
+
+Exercises are drawn with the library figure (figure_style.py); the clinical
+test references keep the rig's own figure, to match the app.
 """
 
 import importlib
@@ -20,6 +23,7 @@ import sys
 from pathlib import Path
 
 import _rig  # noqa: F401  (rig on sys.path)
+import figure_style
 
 REPO = _rig.REPO
 SOURCES = [
@@ -31,12 +35,13 @@ SOURCES = [
     'build_library_props_animations',
     'build_library_floor_animations',
     'build_library_hand_animations',
+    'build_library_bed_animations',
     # app repository (tool/lottie)
     'build_home_exercise_animations',
     'build_hip_exercise_animations',
     'build_clinical_test_animations',
 ]
-EXTERNAL = {'bed_rolling', 'lying_to_sitting'}  # app bed-mobility builders, no SCENES registry
+EXTERNAL = set()  # slugs kept as committed files, with no builder here
 
 
 def targets():
@@ -94,12 +99,13 @@ def main(args):
             problems.append(f'{slug}: no builder has this scene')
             continue
         module, fn = found[slug]
+        is_exercise = path.parts[-3] == 'exercises'
         try:
-            data = build(fn)
+            with figure_style.style(slug if is_exercise else None):  # references keep the app's figure
+                data = build(fn)
         except AssertionError as e:
             problems.append(f'{slug}: geometric check failed: {e}')
             continue
-        is_exercise = path.parts[-3] == 'exercises'
         seconds = data['op'] / data['fr']
         if is_exercise and not 5.0 <= seconds <= 8.05:
             problems.append(f'{slug}: loop {seconds:.1f}s outside 5-8 s')
@@ -114,6 +120,7 @@ def main(args):
                 json.dump(data, fh, separators=(',', ':'), ensure_ascii=False)
             print(f'{str(path.relative_to(REPO)):58s} {seconds:4.1f}s {path.stat().st_size / 1024:6.1f} KB')
     if check and not slugs:
+        problems += [f'{s}: in figure_style.STYLE but not in catalog.json' for s in figure_style.STYLE if s not in paths]
         known = set(paths.values())
         for f in sorted(list(REPO.glob('exercises/*/*.json')) + list(REPO.glob('clinical_tests/*.json'))):
             if f not in known:

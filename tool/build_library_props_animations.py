@@ -256,6 +256,11 @@ def seated_knees(knee_half_gap, ankle_half_gap, arms=SIDE_ARMS):
 
 SEAT_TOP, SEAT_FRONT = 0.46, 0.23
 
+# Arms crossed on the chest, each hand on the opposite shoulder: keeps the
+# arms clear of the thighs, which carry the movement in the knee scenes.
+CROSSED_ARMS = {side: arm_ik((-0.06, 0.13, -sign * 0.1), (-0.5, 0.35, sign * 1.0))
+                for side, sign in (('near', 1), ('far', -1))}
+
 
 def thighs_on_seat(samples):
     for fr, g in samples:
@@ -270,8 +275,8 @@ def thighs_on_seat(samples):
 def seated_band_hip_abduction():
     """Seated, a band looped around both thighs just above the knees. The
     knees open apart against the band, feet planted, and close slowly."""
-    cam = Camera(yaw=74, pitch=24)
-    closed, opened = seated_knees(0.12, 0.13), seated_knees(0.27, 0.13)
+    cam = Camera(yaw=42, pitch=36)  # front, three-quarter and above: the thighs read on the seat
+    closed, opened = seated_knees(0.12, 0.13, CROSSED_ARMS), seated_knees(0.27, 0.13, CROSSED_ARMS)
     tr = Track()
     t = chain(tr, [(closed, 0.8), (opened, 1.5), (opened, 0.8), (closed, 1.9), (closed, 0.8)])
     extra = [(x, y, z) for x in (-0.3, 0.6) for y in (0.0, 1.0) for z in (-0.3, 0.3)]
@@ -312,16 +317,20 @@ BALL_D = 0.2  # soft ball between the knees
 def adductor_ball_squeeze():
     """Seated, a soft ball between the knees. The knees squeeze the ball,
     which flattens a little, hold, then release."""
-    cam = Camera(yaw=78, pitch=18)
+    cam = Camera(yaw=42, pitch=36)  # front, three-quarter and above: the ball reads between the thighs
     gap = lambda d: (d + W_LEG) / 2  # knee centre half-gap for a ball of width d
-    rest, squeeze = seated_knees(gap(BALL_D), gap(BALL_D)), seated_knees(gap(BALL_D - 0.05), gap(BALL_D))
+    # A soft ball can flatten well past a timid 5 cm; the squash has to read
+    # between the knees in a full-body frame.
+    squeeze_m = 0.11
+    rest = seated_knees(gap(BALL_D), gap(BALL_D), CROSSED_ARMS)
+    squeeze = seated_knees(gap(BALL_D - squeeze_m), gap(BALL_D), CROSSED_ARMS)
     tr = Track()
     t = chain(tr, [(rest, 0.8), (squeeze, 1.0), (squeeze, 2.2), (rest, 1.2), (rest, 0.8)])
     extra = [(x, y, z) for x in (-0.3, 0.6) for y in (0.0, 1.0) for z in (-0.3, 0.3)]
-    s = scene3d('Adução com bola entre os joelhos', cam, tr, extra)
+    s = scene3d('Adução com bola entre os joelhos', cam, tr, extra, width=2.4)
     floor_patch(s, cam, -0.75, 1.0, -0.6, 0.6)
     chair(s, cam)
-    yaw, pitch = math.radians(78), math.radians(18)
+    yaw, pitch = math.radians(42), math.radians(36)
 
     def ball(smp):
         centers, sizes = [], []
@@ -329,7 +338,7 @@ def adductor_ball_squeeze():
             kn, kf = g['near leg'][1], g['far leg'][1]
             c = mul(add(kn, kf), 0.5)
             width = kn[2] - kf[2] - W_LEG  # z extent of the squeezed ball
-            depth = BALL_D + (BALL_D - width) * 0.4  # bulges a little front to back and up
+            depth = BALL_D + (BALL_D - width) * 0.85  # bulges as the knees flatten it
             sx = 2 * math.hypot(depth / 2 * math.cos(yaw), width / 2 * math.sin(yaw))
             sy = 2 * math.hypot(depth / 2 * math.sin(pitch), depth / 2 * math.cos(pitch))
             centers.append((fr, cam.px(s, c)))
@@ -344,7 +353,7 @@ def adductor_ball_squeeze():
     thighs_on_seat(samples)
     for fr, g in samples:
         width = g['near leg'][1][2] - g['far leg'][1][2] - W_LEG
-        assert BALL_D - 0.056 < width < BALL_D + 1e-3, ('ball squeezed out of range', fr, width)
+        assert BALL_D - 0.12 < width < BALL_D + 1e-3, ('ball squeezed out of range', fr, width)
     return s
 
 

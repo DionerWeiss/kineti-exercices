@@ -58,7 +58,7 @@ def standing_hip_abduction():
     """Near-frontal view. The far hand rests on a chair backrest at the
     patient's side; the outside leg, knee straight and toes forward, moves
     out sideways and back while the trunk stays upright."""
-    cam = Camera(yaw=72, pitch=10)
+    cam = Camera(yaw=80, pitch=14)  # nearly frontal: the leg reads as going out to the side, not back
     chair_x, chair_z = 0.28, -0.55
     hand = (chair_x - 0.275, 1.012, chair_z + 0.19)
     far_ankle = (0.0, ANKLE, -0.09)

@@ -25,6 +25,8 @@
   /* Lottie roles, mirroring ClinicalDemonstrationLottie */
   --role-figure: #2563EB;
   --role-figure-back: #9DB9F6;
+  --role-figure-active: #FF6D00;
+  --role-figure-active-back: #FFC08F;
   --role-prop: #4A5568;
   --role-prop-soft: #E2E8F0;
   --role-floor: #DDE3EA;
@@ -45,7 +47,7 @@
     --fg: #E8EDF2; --fg-muted: #B0BEC5; --line: #2A3F56; --line-strong: #334B63;
     --accent: #60A5FA; --accent-soft: #1F3A5F; --accent-ink: #BFDBFE; --tertiary: #FF8A3D;
     --ok: #A7F3D0; --ok-bg: #0F3B30; --mid: #FDE68A; --mid-bg: #3D2E0C; --new: #FECACA; --new-bg: #4A1D1D;
-    --role-figure: #60A5FA; --role-figure-back: #2E5684; --role-prop: #B0BEC5; --role-prop-soft: #273B52;
+    --role-figure: #60A5FA; --role-figure-back: #2E5684; --role-figure-active: #FF8A3D; --role-figure-active-back: #8A4A22; --role-prop: #B0BEC5; --role-prop-soft: #273B52;
     --role-floor: #3A5068; --role-floor-plane: #1F3044; --role-guide: #B0BEC5; --role-marker: #FF8A3D;
     --role-highlight: #60A5FA; --role-shadow: #000000;
     color-scheme: dark;
@@ -56,7 +58,7 @@
   --fg: #E8EDF2; --fg-muted: #B0BEC5; --line: #2A3F56; --line-strong: #334B63;
   --accent: #60A5FA; --accent-soft: #1F3A5F; --accent-ink: #BFDBFE; --tertiary: #FF8A3D;
   --ok: #A7F3D0; --ok-bg: #0F3B30; --mid: #FDE68A; --mid-bg: #3D2E0C; --new: #FECACA; --new-bg: #4A1D1D;
-  --role-figure: #60A5FA; --role-figure-back: #2E5684; --role-prop: #B0BEC5; --role-prop-soft: #273B52;
+  --role-figure: #60A5FA; --role-figure-back: #2E5684; --role-figure-active: #FF8A3D; --role-figure-active-back: #8A4A22; --role-prop: #B0BEC5; --role-prop-soft: #273B52;
   --role-floor: #3A5068; --role-floor-plane: #1F3044; --role-guide: #B0BEC5; --role-marker: #FF8A3D;
   --role-highlight: #60A5FA; --role-shadow: #000000;
   color-scheme: dark;
@@ -97,6 +99,8 @@ header.top p { color: var(--fg-muted); max-width: 64ch; }
 .panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 20px; display: grid; gap: 14px; min-width: 0; }
 .stage { background: var(--stage); border-radius: var(--radius-sm); aspect-ratio: 16 / 10; max-width: 100%; width: 100%; overflow: hidden; position: relative; }
 .stage svg { display: block; }
+.stage video { display: block; width: 100%; height: 100%; object-fit: contain; background: #F2F5F9; }
+.stage .badge3d { position: absolute; top: 8px; left: 8px; font: 600 0.7rem/1 var(--font-mono); letter-spacing: 0.06em; padding: 4px 7px; border-radius: 6px; background: var(--accent); color: #fff; }
 .player-bar { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; justify-content: space-between; }
 .seg { display: flex; flex-wrap: wrap; gap: 6px; }
 button {
@@ -209,6 +213,10 @@ button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
     <div class="toolbar">
       <h2 id="ex-title">Exercícios</h2>
       <div class="seg" role="group" aria-label="Filtrar por esforço no rig" id="filters"></div>
+      <div class="seg" role="group" aria-label="Formato da animação" id="views">
+        <button type="button" id="view-3d" aria-pressed="true">Vídeo 3D quando houver</button>
+        <button type="button" id="view-lottie" aria-pressed="false">Lottie</button>
+      </div>
     </div>
     <div class="legend">
       <span><span class="chip tier tier-1">Rig atual</span> perfil em pé ou sentado, marcha</span>
@@ -251,7 +259,7 @@ function card(ex) {
         document.createTextNode('Animação pendente'),
         el('span', { class: 'file', text: `${ex.slug}.json` }),
       ]));
-  if (ex.file) cardStages.push({ container: slot, file: ex.file, anim: null });
+  if (ex.file) cardStages.push({ container: slot, file: ex.file, anim: null, video: `videos/${ex.area}/${ex.slug}.mp4` });
   const head = el('div', { class: 'card-head' }, [
     el('span', { class: 'num', text: String(ex.n).padStart(2, '0') }),
     el('div', { style: 'display:grid;gap:6px;min-width:0' }, [
@@ -295,6 +303,15 @@ function renderGroups() {
   if (typeof mountCards === 'function') mountCards();
 }
 
+for (const [id, v] of [['view-3d', true], ['view-lottie', false]]) {
+  document.getElementById(id).addEventListener('click', () => {
+    prefer3d = v;
+    document.getElementById('view-3d').setAttribute('aria-pressed', String(v));
+    document.getElementById('view-lottie').setAttribute('aria-pressed', String(!v));
+    mountCards();
+  });
+}
+
 function renderFilters() {
 [[0, 'Todos'], [1, TIER_LABEL[1]], [2, TIER_LABEL[2]], [3, TIER_LABEL[3]]].forEach(([tier, label]) => {
   const count = tier ? EXERCISES.filter(e => e.tier === tier).length : EXERCISES.length;
@@ -313,7 +330,7 @@ document.getElementById('sum-areas').textContent = new Set(EXERCISES.map(e => e.
 }
 
 // ---------- role legend
-const ROLES = ['figure', 'figure-back', 'prop', 'prop-soft', 'floor', 'floor-plane', 'guide', 'marker', 'highlight', 'stage', 'shadow'];
+const ROLES = ['figure', 'figure-back', 'figure-active', 'figure-active-back', 'prop', 'prop-soft', 'floor', 'floor-plane', 'guide', 'marker', 'highlight', 'stage', 'shadow'];
 const rolesEl = document.getElementById('roles');
 ROLES.forEach(r => rolesEl.append(el('span', { class: 'role' }, [el('i', { style: `background:var(--role-${r === 'stage' ? 'stage-swatch' : r})` }), document.createTextNode(r)])));
 document.documentElement.style.setProperty('--role-stage-swatch', 'var(--stage)');
@@ -397,9 +414,31 @@ async function animationData(file) {
   return data;
 }
 
+let prefer3d = true;
+const videoExists = {};
+async function hasVideo(path) {
+  if (!(path in videoExists)) {
+    try { videoExists[path] = (await fetch(path, { method: 'HEAD' })).ok; } catch (e) { videoExists[path] = false; }
+  }
+  return videoExists[path];
+}
+
 async function mountCards(keepFrame) {
   const autoplay = !matchMedia('(prefers-reduced-motion: reduce)').matches;
   for (const s of cardStages) {
+    if (prefer3d && await hasVideo(s.video)) {  // the 3D render, looped like the Lottie
+      if (s.anim) { s.anim.destroy(); s.anim = null; }
+      if (!s.container.querySelector('video')) {
+        const v = el('video', { src: s.video, loop: '', muted: '', playsinline: '', preload: 'metadata',
+          'aria-label': s.container.getAttribute('aria-label') });
+        v.muted = true;
+        if (autoplay) v.autoplay = true;
+        s.container.replaceChildren(v, el('span', { class: 'badge3d', text: '3D' }));
+        s.container.onclick = () => v.paused ? v.play() : v.pause();
+      }
+      continue;
+    }
+    if (s.container.querySelector('video')) s.container.replaceChildren();
     try {
       const data = await animationData(s.file);
       const frame = keepFrame && s.anim ? s.anim.currentFrame : 0;
@@ -408,7 +447,7 @@ async function mountCards(keepFrame) {
         animationData: data, rendererSettings: { preserveAspectRatio: 'xMidYMid meet' } });
       const a = s.anim;
       a.addEventListener('DOMLoaded', () => { a.goToAndStop(frame, true); if (autoplay) a.play(); });
-      s.container.addEventListener('click', () => a.isPaused ? a.play() : a.pause());
+      s.container.onclick = () => a.isPaused ? a.play() : a.pause();
     } catch (e) {
       s.container.replaceChildren(el('p', { class: 'empty', style: 'padding:20px', text: 'Não foi possível carregar a animação.' }));
     }

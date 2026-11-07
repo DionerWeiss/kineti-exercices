@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Preview 3D — Kineti</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+<style>
+  :root {
+    --bg: #F1F5F9;
+    --surface: #FFFFFF;
+    --stage: #F2F5FB;
+    --fg: #0D1B2A;
+    --muted: #4A5568;
+    --line: #E3E8EE;
+    --accent: #2563EB;
+    --tertiary: #FF6D00;
+    --font: "Poppins", "Segoe UI", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--font);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 64px; }
+  h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 3vw, 2.1rem); letter-spacing: -0.02em; }
+  .lead { margin: 0 0 28px; color: var(--muted); max-width: 62ch; }
+  .grid { display: grid; gap: 20px; }
+  article {
+    background: var(--surface);
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    overflow: hidden;
+  }
+  .stage {
+    background: var(--stage);
+    display: grid;
+    place-items: center;
+    min-height: 280px;
+  }
+  .stage img { width: 100%; height: auto; display: block; }
+  .meta { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; padding: 14px 16px 6px; }
+  h2 { margin: 0; font-size: 1.05rem; }
+  .note { margin: 0; padding: 0 16px 14px; color: var(--muted); font-size: 0.92rem; }
+  .frames { display: flex; gap: 8px; padding: 0 16px 16px; }
+  .frames button {
+    flex: 1;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    background: var(--stage);
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .frames button[aria-current="true"] { border-color: var(--tertiary); }
+  .frames img { width: 100%; height: 72px; object-fit: cover; object-position: center; display: block; }
+  .play {
+    border: 0;
+    background: var(--accent);
+    color: white;
+    font: 600 0.85rem var(--font);
+    border-radius: 999px;
+    padding: 6px 12px;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Preview 3D</h1>
+  <p class="lead">Quadros da versão com estúdio e acessórios. Cada faixa passa sozinha pelos quatro momentos do exercício.</p>
+  <div class="grid" id="grid"></div>
+</div>
+<script>
+const EXERCISES = [
+  { slug: "bridge", title: "Ponte", note: "Mãos no colchão, quadril sobe.", frames: ["f_0001", "f_0045", "f_0091", "f_0137"] },
+  { slug: "seated_shoulder_abduction", title: "Abdução de ombro", note: "Os dois braços abrem.", frames: ["f_0001", "f_0043", "f_0087", "f_0130"] },
+  { slug: "adductor_ball_squeeze", title: "Bola entre os joelhos", note: "A bola achata quando os joelhos fecham.", frames: ["f_0001", "f_0045", "f_0090", "f_0135"] },
+  { slug: "seated_overhead_press", title: "Desenvolvimento", note: "Halteres na palma.", frames: ["f_0001", "f_0040", "f_0081", "f_0121"] },
+  { slug: "elbow_flexion_dumbbell", title: "Flexão de cotovelo", note: "Um haltere na mão que dobra.", frames: ["f_0001", "f_0043", "f_0087", "f_0130"] },
+  { slug: "seated_knee_extension_ankle_weight", title: "Extensão de joelho", note: "Tornozeleira sobe com a perna.", frames: ["f_0001", "f_0045", "f_0090", "f_0135"] },
+  { slug: "wall_ball_squat", title: "Agachamento na parede", note: "Bola grande nas costas.", frames: ["f_0001", "f_0046", "f_0093", "f_0139"] }
+];
+
+const grid = document.getElementById("grid");
+const players = [];
+
+for (const ex of EXERCISES) {
+  const src = (name) => `build/3d/${ex.slug}/${name}.png`;
+  const article = document.createElement("article");
+  article.innerHTML = `
+    <div class="stage"><img alt=""></div>
+    <div class="meta">
+      <h2></h2>
+      <button class="play" type="button">Pausar</button>
+    </div>
+    <p class="note"></p>
+    <div class="frames"></div>`;
+  article.querySelector("h2").textContent = ex.title;
+  article.querySelector(".note").textContent = ex.note;
+  const main = article.querySelector(".stage img");
+  const strip = article.querySelector(".frames");
+  const buttons = ex.frames.map((name, i) => {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.innerHTML = `<img alt="Quadro ${i + 1} de ${ex.title}">`;
+    b.querySelector("img").src = src(name);
+    b.addEventListener("click", () => show(i, true));
+    strip.appendChild(b);
+    return b;
+  });
+  let index = 0;
+  let paused = false;
+  function show(i, fromClick) {
+    index = i;
+    main.src = src(ex.frames[i]);
+    main.alt = `${ex.title}, quadro ${i + 1}`;
+    buttons.forEach((b, n) => {
+      if (n === i) b.setAttribute("aria-current", "true");
+      else b.removeAttribute("aria-current");
+    });
+    if (fromClick) paused = true;
+    article.querySelector(".play").textContent = paused ? "Continuar" : "Pausar";
+  }
+  article.querySelector(".play").addEventListener("click", () => {
+    paused = !paused;
+    article.querySelector(".play").textContent = paused ? "Continuar" : "Pausar";
+  });
+  show(0, false);
+  players.push(() => { if (!paused) show((index + 1) % ex.frames.length, false); });
+  grid.appendChild(article);
+}
+
+setInterval(() => players.forEach((step) => step()), 700);
+</script>
+</body>
+</html>

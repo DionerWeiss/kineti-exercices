@@ -73,8 +73,9 @@ PRONE_HIP = math.degrees(math.asin((PRONE_Y - ON_MAT_LEG - 0.002) / L_THIGH))  #
 
 def prone_leg(lift=0.0):
     """Leg resting on the mat face down (shin level, toes pointed back); lift
-    0..1 raises the straight leg by hip extension."""
-    return leg_fk(hip=PRONE_HIP + (-12 - PRONE_HIP) * lift, knee=PRONE_HIP * (1 - lift) + 1.0 * lift, plantar=78)
+    0..1 raises the straight leg by hip extension, about 11 degrees: enough to
+    read, small enough that the pelvis and lower back stay down."""
+    return leg_fk(hip=PRONE_HIP + (-6 - PRONE_HIP) * lift, knee=PRONE_HIP * (1 - lift) + 1.0 * lift, plantar=78)
 
 
 def prone(**changes):
@@ -155,7 +156,7 @@ def prone_hip_extension():
 
     tr = Track()
     t = timeline(tr, at, [(0.0, 0.8), (1.0, 1.4), (1.0, 1.2), (0.0, 1.8), (0.0, 0.8)])
-    cam = Camera(yaw=10, pitch=16)
+    cam = Camera(yaw=14, pitch=22)
     extra = mat_box(-1.15, 0.95, 0.42)
     s = scene3d('Extensão de quadril em decúbito ventral', cam, tr, extra)
     floor_patch(s, cam, -1.35, 1.15, -0.7, 0.7)
@@ -170,7 +171,7 @@ def prone_hip_extension():
     for fr, g in samples:
         assert g['torso'] == g0['torso'] and g['far leg'] == g0['far leg'], ('only the near leg moves', fr)
     lifted = geometry(at(1.0))['near leg'][2][1] - g0['near leg'][2][1]
-    assert lifted > 0.15, ('lift too small to read', lifted)
+    assert 0.12 < lifted < 0.17, ('lift outside a small, readable range', lifted)
     return s
 
 

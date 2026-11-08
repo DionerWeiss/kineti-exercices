@@ -35,7 +35,7 @@ def blender(*args, env=None):
         e['WSLENV'] = ':'.join(list(env) + ([e['WSLENV']] if e.get('WSLENV') else []))
     r = subprocess.run([BLENDER, '-b', *args], capture_output=True, text=True, env=e)
     for line in r.stdout.splitlines():
-        if line.startswith(('JOB', 'DONE', 'OK', 'KEY', 'TOUCH', 'WARNING', 'ERROR', 'Traceback', 'Error', 'KeyError')) or 'Error' in line:
+        if line.startswith(('JOB', 'BALL', 'BALLF', 'HELDBALL', 'DONE', 'OK', 'KEY', 'TOUCH', 'WARNING', 'ERROR', 'Traceback', 'Error', 'KeyError')) or 'Error' in line:
             print(' ', line)
     if r.returncode:
         print(r.stdout[-2000:], r.stderr[-2000:])
@@ -73,7 +73,8 @@ def run(sel, outdir, still=None):
     for lib, js in by_lib.items():
         for k in range(0, len(js), 20):  # several jobs per Blender launch
             blender(win(LIBS[lib]), '--python', win(HERE / 'render_mannequin.py'), '--', win(outdir), PALETTE,
-                    win(HERE / 'kineti_mark.png'), *js[k:k + 20], env={'STILL': still} if still else None)
+                    win(HERE / 'kineti_mark.png'), *js[k:k + 20],
+                    env=({'STILL': still} if still else {}) | ({'BALL_DEBUG': '1'} if os.environ.get('BALL_DEBUG') else {}) or None)
 
 
 def sheet(ids):

@@ -272,6 +272,22 @@
    "pocketphysio": []
   },
   {
+   "slug": "kineti-band-ankles-hip-abduction",
+   "lib": "kineti",
+   "name": "Abdução do quadril com faixa nos tornozelos",
+   "desc": "Em pé, com uma faixa elástica em volta dos tornozelos, afasta uma perna para o lado esticando a faixa, sem inclinar o tronco, e volta devagar.",
+   "focus": "Glúteo médio e estabilizadores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal",
+   "props": "Faixa elástica nos tornozelos",
+   "video": "build/mannequin/videos/kineti-band-ankles-hip-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e8d"
+   ]
+  },
+  {
    "slug": "kineti-adductor-ball-squeeze",
    "lib": "kineti",
    "name": "Adução com bola entre os joelhos",
@@ -349,6 +365,22 @@
     "65a9272053a15212d048e7e3",
     "65a9272053a15212d048e735",
     "660a61776a80d359d40dce56"
+   ]
+  },
+  {
+   "slug": "kineti-strap-hamstring-knee-ext",
+   "lib": "kineti",
+   "name": "Alongamento dos posteriores com faixa, esticando o joelho",
+   "desc": "Deitado de costas com a coxa na vertical e uma faixa pela sola do pé, estica o joelho puxando a faixa, sustenta o alongamento e dobra de novo.",
+   "focus": "Alongamento dos posteriores da coxa",
+   "area": "quadril_gluteos",
+   "view": "Lateral",
+   "props": "Faixa elástica no pé",
+   "video": "build/mannequin/videos/kineti-strap-hamstring-knee-ext.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e827"
    ]
   },
   {
@@ -515,6 +547,71 @@
    ]
   },
   {
+   "slug": "kineti-strap-slr-stretch",
+   "lib": "kineti",
+   "name": "Elevação da perna esticada com faixa no pé",
+   "desc": "Deitado de costas com um joelho dobrado e uma faixa sob o pé da perna esticada, puxa a faixa elevando a perna reta e desce devagar.",
+   "focus": "Alongamento dos posteriores da coxa",
+   "area": "quadril_gluteos",
+   "view": "Lateral",
+   "props": "Faixa elástica no pé",
+   "video": "build/mannequin/videos/kineti-strap-slr-stretch.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e829",
+    "65b09dc54ad825d030407248"
+   ]
+  },
+  {
+   "slug": "kineti-ball-slr-opposite",
+   "lib": "kineti",
+   "name": "Elevação da perna esticada com o outro pé na bola",
+   "desc": "Deitado de costas com um pé apoiado na bola e o joelho dobrado, eleva a outra perna esticada alguns centímetros e desce devagar.",
+   "focus": "Flexores do quadril, quadríceps e estabilidade do tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-slr-opposite.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80b5"
+   ]
+  },
+  {
+   "slug": "kineti-band-ankles-knee-raise",
+   "lib": "kineti",
+   "name": "Elevação do joelho com faixa nos tornozelos",
+   "desc": "Em pé, com uma faixa elástica em volta dos tornozelos, sobe um joelho à frente contra a resistência, apoia o pé e alterna as pernas.",
+   "focus": "Flexores do quadril e controle do tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica nos tornozelos",
+   "video": "build/mannequin/videos/kineti-band-ankles-knee-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce62"
+   ]
+  },
+  {
+   "slug": "kineti-band-supine-leg-press",
+   "lib": "kineti",
+   "name": "Extensão da perna contra a faixa, deitado",
+   "desc": "Deitado de costas com o joelho dobrado e a faixa sob a sola do pé, empurra o pé esticando a perna contra a resistência e dobra de volta devagar.",
+   "focus": "Glúteos e quadríceps",
+   "area": "quadril_gluteos",
+   "view": "Lateral",
+   "props": "Faixa elástica no pé",
+   "video": "build/mannequin/videos/kineti-band-supine-leg-press.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7df"
+   ]
+  },
+  {
    "slug": "prone-leg-lift",
    "lib": "deskbreak",
    "name": "Extensão de quadril de bruços",
@@ -564,6 +661,71 @@
    ]
   },
   {
+   "slug": "kineti-ball-supine-plank-leg-extension",
+   "lib": "kineti",
+   "name": "Extensão do joelho com os ombros na bola suíça",
+   "desc": "Com os ombros apoiados na bola, o quadril elevado e os joelhos dobrados, estica um joelho levando a perna à frente, apoia o pé de volta e alterna.",
+   "focus": "Glúteos, quadríceps e estabilidade do tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-supine-plank-leg-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407344",
+    "664744bf5c2c1f75d4d71e27"
+   ]
+  },
+  {
+   "slug": "kineti-band-ankles-hip-extension",
+   "lib": "kineti",
+   "name": "Extensão do quadril com faixa nos tornozelos",
+   "desc": "Em pé, com uma faixa elástica em volta dos tornozelos, leva uma perna para trás com o joelho esticado, sem inclinar o tronco, e volta devagar.",
+   "focus": "Glúteos e posteriores da coxa",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica nos tornozelos",
+   "video": "build/mannequin/videos/kineti-band-ankles-hip-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "6613e9012d1659b1aabbb371"
+   ]
+  },
+  {
+   "slug": "kineti-ball-single-leg-curl",
+   "lib": "kineti",
+   "name": "Flexão de joelho unilateral na bola suíça",
+   "desc": "Com o quadril elevado e uma perna esticada para o alto, a outra perna dobra o joelho puxando a bola para perto do corpo e volta a esticar.",
+   "focus": "Posteriores da coxa, glúteos e tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-single-leg-curl.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e88"
+   ]
+  },
+  {
+   "slug": "kineti-ball-hamstring-curl",
+   "lib": "kineti",
+   "name": "Flexão de joelhos com os pés na bola suíça",
+   "desc": "Com os calcanhares na bola e o quadril elevado, dobra os joelhos trazendo a bola para perto do corpo e estica as pernas de novo, sem baixar o quadril.",
+   "focus": "Posteriores da coxa, glúteos e tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-hamstring-curl.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d64"
+   ]
+  },
+  {
    "slug": "standing-knee-raise",
    "lib": "deskbreak",
    "name": "Flexão de quadril em pé",
@@ -608,6 +770,22 @@
    "pocketphysio": [
     "65b09dc54ad825d0304073ce",
     "65a9272053a15212d048e7de"
+   ]
+  },
+  {
+   "slug": "kineti-ball-supine-plank-march",
+   "lib": "kineti",
+   "name": "Marcha com os ombros na bola suíça",
+   "desc": "Com os ombros apoiados na bola, o quadril elevado e os joelhos dobrados, levanta um pé do chão de cada vez, como numa marcha, sem deixar o quadril cair.",
+   "focus": "Glúteos, flexores do quadril e tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-supine-plank-march.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407255"
    ]
   },
   {
@@ -695,6 +873,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-bridge",
+   "lib": "kineti",
+   "name": "Ponte com os calcanhares na bola suíça",
+   "desc": "Deitado de costas com os calcanhares sobre a bola, eleva o quadril até alinhar ombros, quadril e calcanhares, e desce devagar.",
+   "focus": "Glúteos, posteriores da coxa e estabilidade do tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-bridge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7ca2"
+   ]
+  },
+  {
    "slug": "kineti-step-bridge",
    "lib": "kineti",
    "name": "Ponte com os pés no degrau",
@@ -767,6 +961,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-single-leg-bridge",
+   "lib": "kineti",
+   "name": "Ponte unilateral na bola suíça",
+   "desc": "Deitado de costas com um calcanhar na bola e a outra perna esticada para o alto, eleva o quadril mantendo o equilíbrio e desce devagar.",
+   "focus": "Glúteos, posteriores da coxa e estabilidade do tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-single-leg-bridge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8105"
+   ]
+  },
+  {
    "slug": "kineti-supine-knee-fall-out",
    "lib": "kineti",
    "name": "Queda lateral de um joelho deitado",
@@ -812,6 +1022,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea36"
+   ]
+  },
+  {
+   "slug": "kineti-split-squat-band",
+   "lib": "deskbreak",
+   "name": "Afundo estático com faixa no joelho da frente",
+   "desc": "Com um pé à frente e a faixa presa logo acima do joelho da frente, desce o corpo flexionando os joelhos sem deixar o joelho ceder e sobe.",
+   "focus": "Quadríceps, glúteos e controle do joelho",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-split-squat-band.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e28"
    ]
   },
   {
@@ -920,6 +1146,22 @@
    ]
   },
   {
+   "slug": "kineti-band-squat-arms-overhead",
+   "lib": "kineti",
+   "name": "Agachamento com os braços elevados contra a faixa",
+   "desc": "Em pé, com os braços acima da cabeça segurando a faixa presa embaixo, à frente, agacha levando o quadril para trás sem deixar os braços caírem e sobe.",
+   "focus": "Quadríceps, glúteos e extensores das costas",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-squat-arms-overhead.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80c7"
+   ]
+  },
+  {
    "slug": "kineti-squat-jumps",
    "lib": "kineti",
    "name": "Agachamento com salto",
@@ -971,6 +1213,38 @@
     "660a6145b08ac7518f1f811f",
     "664744bf5c2c1f75d4d71e3f",
     "660a6144b08ac7518f1f7ce4"
+   ]
+  },
+  {
+   "slug": "kineti-wall-ball-squat-adductor-ball",
+   "lib": "kineti",
+   "name": "Agachamento na parede com bola suíça e bola entre os joelhos",
+   "desc": "Com a bola suíça entre as costas e a parede e uma bola pequena entre os joelhos, agacha apertando a bola pequena e sobe devagar.",
+   "focus": "Quadríceps, glúteos e adutores",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Parede, bola suíça, Bola pequena",
+   "video": "build/mannequin/videos/kineti-wall-ball-squat-adductor-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7ce3"
+   ]
+  },
+  {
+   "slug": "kineti-wall-ball-single-leg-squat",
+   "lib": "kineti",
+   "name": "Agachamento unilateral com bola suíça na parede",
+   "desc": "Em pé com a bola entre as costas e a parede e um pé fora do chão, dobra o joelho da perna de apoio enquanto a bola rola pela parede e sobe devagar.",
+   "focus": "Quadríceps, glúteos e equilíbrio",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Parede, bola suíça",
+   "video": "build/mannequin/videos/kineti-wall-ball-single-leg-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f43"
    ]
   },
   {
@@ -1339,6 +1613,22 @@
    ]
   },
   {
+   "slug": "kineti-band-terminal-knee-ext",
+   "lib": "kineti",
+   "name": "Extensão terminal do joelho com faixa",
+   "desc": "Em pé, com a faixa atrás de um joelho e presa à frente, dobra levemente o joelho e estica por completo, empurrando contra a faixa.",
+   "focus": "Quadríceps (vasto medial)",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-terminal-knee-ext.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f1d"
+   ]
+  },
+  {
    "slug": "prone-heel-to-seat",
    "lib": "deskbreak",
    "name": "Flexão de joelho de bruços",
@@ -1383,6 +1673,38 @@
    "kineti_slug": "standing_knee_flexion",
    "substitui": "standing_knee_flexion",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-band-prone-hamstring-curl",
+   "lib": "kineti",
+   "name": "Flexão do joelho contra a faixa, de bruços",
+   "desc": "Deitado de bruços com a faixa presa no tornozelo, dobra o joelho levando o calcanhar até formar 90° e desce devagar.",
+   "focus": "Posteriores da coxa",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-prone-hamstring-curl.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce66"
+   ]
+  },
+  {
+   "slug": "kineti-band-seated-knee-flexion",
+   "lib": "kineti",
+   "name": "Flexão do joelho sentado contra a faixa",
+   "desc": "Sentado, com a faixa presa no tornozelo e num ponto à frente, dobra o joelho puxando o calcanhar para baixo da cadeira e volta devagar.",
+   "focus": "Posteriores da coxa",
+   "area": "joelhos",
+   "view": "Lateral",
+   "props": "Cadeira, Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-seated-knee-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f1a"
+   ]
   },
   {
    "slug": "kineti-seated-knee-flexion",
@@ -1466,6 +1788,22 @@
    "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d790"
+   ]
+  },
+  {
+   "slug": "kineti-ball-roll-supine",
+   "lib": "kineti",
+   "name": "Rolar a bola com um calcanhar, deitado",
+   "desc": "Deitado de costas com um pé no chão e o outro calcanhar na bola, dobra o joelho trazendo a bola para perto e empurra de volta esticando a perna.",
+   "focus": "Quadríceps, posteriores da coxa e controle do tronco",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-roll-supine.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e4d"
    ]
   },
   {
@@ -1925,6 +2263,23 @@
    ]
   },
   {
+   "slug": "kineti-ball-kneeling-arm-lift",
+   "lib": "kineti",
+   "name": "Ajoelhado com as mãos na bola, elevação de um braço",
+   "desc": "Ajoelhado com as mãos sobre a bola suíça à frente, eleva um braço esticado acima da cabeça, devolve a mão à bola e alterna.",
+   "focus": "Equilíbrio, estabilidade do tronco e ombros",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-kneeling-arm-lift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d92",
+    "660a6144b08ac7518f1f7d93"
+   ]
+  },
+  {
    "slug": "kineti-single-leg-stance-supported",
    "lib": "kineti",
    "name": "Apoio unipodal com apoio",
@@ -2183,6 +2538,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e60d"
+   ]
+  },
+  {
+   "slug": "kineti-march-ball-overhead",
+   "lib": "kineti",
+   "name": "Marcha no lugar elevando a bola acima da cabeça",
+   "desc": "Em pé, segura uma bola acima da cabeça; ao trazê-la ao peito, sobe um joelho, e volta a elevar a bola apoiando o pé, alternando as pernas.",
+   "focus": "Equilíbrio, coordenação e ombros",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-march-ball-overhead.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f35"
    ]
   },
   {
@@ -2858,6 +3229,22 @@
    ]
   },
   {
+   "slug": "kineti-band-oblique-crunch",
+   "lib": "kineti",
+   "name": "Abdominal oblíquo puxando a faixa presa atrás da cabeça",
+   "desc": "Deitado de costas com os joelhos dobrados e a faixa presa atrás da cabeça numa mão, eleva o tronco girando em direção ao joelho oposto e desce devagar.",
+   "focus": "Oblíquos e reto abdominal",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-oblique-crunch.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7ca9"
+   ]
+  },
+  {
    "slug": "kineti-curl-up-arms-crossed",
    "lib": "kineti",
    "name": "Abdominal supra com braços cruzados",
@@ -3056,6 +3443,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e859"
+   ]
+  },
+  {
+   "slug": "kineti-dead-bug-band",
+   "lib": "deskbreak",
+   "name": "Dead bug com faixa entre a mão e o pé oposto",
+   "desc": "Deitado de costas com braços e pernas para o alto e uma faixa entre uma mão e o pé oposto, estende esse braço e essa perna ao mesmo tempo e volta, alternando.",
+   "focus": "Abdômen e estabilidade lombar",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Faixa elástica no pé, Colchonete",
+   "video": "build/mannequin/videos/kineti-dead-bug-band.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9f6"
    ]
   },
   {
@@ -3494,6 +3897,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-supine-plank-reach",
+   "lib": "kineti",
+   "name": "Ombros na bola: braço acima da cabeça e pé oposto elevado",
+   "desc": "Com os ombros apoiados na bola, o quadril elevado e os joelhos dobrados, leva um braço acima da cabeça e levanta o pé oposto do chão, voltando e alternando.",
+   "focus": "Glúteos, abdômen e estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-supine-plank-reach.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80e2"
+   ]
+  },
+  {
    "slug": "thread-the-needle",
    "lib": "deskbreak",
    "name": "Passar a linha na agulha",
@@ -3578,6 +3997,39 @@
    ]
   },
   {
+   "slug": "kineti-ball-plank-tuck",
+   "lib": "kineti",
+   "name": "Prancha com as canelas na bola, joelhos ao peito",
+   "desc": "Em prancha com as mãos no chão e as canelas sobre a bola, puxa os joelhos em direção ao peito rolando a bola e estica as pernas de volta.",
+   "focus": "Abdômen, flexores do quadril e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-plank-tuck.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce3c",
+    "65a9272153a15212d048eafb"
+   ]
+  },
+  {
+   "slug": "kineti-ball-plank-single-knee",
+   "lib": "kineti",
+   "name": "Prancha com as canelas na bola, um joelho ao peito",
+   "desc": "Em prancha com as mãos no chão e as canelas sobre a bola, leva um joelho em direção ao peito, devolve a perna à bola e alterna.",
+   "focus": "Abdômen, flexores do quadril e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-plank-single-knee.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea51"
+   ]
+  },
+  {
    "slug": "kineti-plank-hip-extension",
    "lib": "kineti",
    "name": "Prancha com extensão de quadril",
@@ -3591,6 +4043,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea52"
+   ]
+  },
+  {
+   "slug": "kineti-ball-plank-forearms",
+   "lib": "kineti",
+   "name": "Prancha com os antebraços na bola suíça",
+   "desc": "Ajoelhado com os antebraços sobre a bola, estica as pernas até ficar em prancha com o corpo alinhado, sustenta e volta a apoiar os joelhos.",
+   "focus": "Abdômen, estabilizadores da escápula e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-plank-forearms.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048eaf9"
    ]
   },
   {
@@ -3656,6 +4124,23 @@
    "pocketphysio": [
     "660a6144b08ac7518f1f7e36",
     "65a9272053a15212d048e4ca"
+   ]
+  },
+  {
+   "slug": "kineti-ball-rollout-kneeling",
+   "lib": "kineti",
+   "name": "Rolamento à frente na bola suíça, ajoelhado",
+   "desc": "Ajoelhado com os antebraços na bola, rola a bola para a frente inclinando o corpo em linha reta e volta puxando com o abdômen.",
+   "focus": "Abdômen e estabilizadores do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-rollout-kneeling.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d56",
+    "660a6144b08ac7518f1f7ccf"
    ]
   },
   {
@@ -3773,6 +4258,55 @@
    "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71d77"
+   ]
+  },
+  {
+   "slug": "kineti-band-seated-trunk-rotation",
+   "lib": "kineti",
+   "name": "Rotação do tronco sentado contra a faixa",
+   "desc": "Sentado, com os braços esticados à frente segurando a faixa presa ao lado, gira o tronco para o lado oposto ao da faixa e volta devagar.",
+   "focus": "Oblíquos e rotadores do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal",
+   "props": "Cadeira, Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-seated-trunk-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8111",
+    "660a6145b08ac7518f1f8110"
+   ]
+  },
+  {
+   "slug": "kineti-seated-rotation-holding-ball",
+   "lib": "kineti",
+   "name": "Rotação do tronco sentado segurando uma bola grande",
+   "desc": "Sentado com os pés apoiados e uma bola grande à frente do corpo, gira o tronco para um lado levando a bola, volta ao centro e repete para o outro lado.",
+   "focus": "Rotadores e estabilizadores do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal",
+   "props": "Cadeira, Bola",
+   "video": "build/mannequin/videos/kineti-seated-rotation-holding-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea06"
+   ]
+  },
+  {
+   "slug": "kineti-ball-seated-lift-ball",
+   "lib": "kineti",
+   "name": "Sentado na bola suíça, elevação de uma bola à frente",
+   "desc": "Sentado na bola suíça com a coluna ereta, segura uma bola menor junto ao peito e a eleva à frente e acima da cabeça, voltando devagar.",
+   "focus": "Estabilidade do tronco e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça, Bola",
+   "video": "build/mannequin/videos/kineti-ball-seated-lift-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f39"
    ]
   },
   {
@@ -4156,6 +4690,86 @@
    "kineti_slug": "seated_overhead_press",
    "substitui": "seated_overhead_press",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-ball-band-diagonal-pull",
+   "lib": "kineti",
+   "name": "Diagonal com faixa presa ao lado, sentado na bola",
+   "desc": "Sentado na bola suíça, puxa a faixa presa ao lado oposto em diagonal para cima e para fora, cruzando a frente do corpo, e volta devagar.",
+   "focus": "Ombros e estabilidade do tronco",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Bola suíça, Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-ball-band-diagonal-pull.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e17"
+   ]
+  },
+  {
+   "slug": "kineti-chair-band-diagonal-pull",
+   "lib": "kineti",
+   "name": "Diagonal com faixa presa ao lado, sentado na cadeira (FNP)",
+   "desc": "Sentado na cadeira, puxa a faixa presa ao lado oposto em diagonal para cima e para fora e volta devagar.",
+   "focus": "Ombros e manguito rotador",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Cadeira, Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-chair-band-diagonal-pull.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cc1"
+   ]
+  },
+  {
+   "slug": "kineti-band-pnf-d1",
+   "lib": "kineti",
+   "name": "Diagonal de baixo para cima com faixa sob o pé (FNP)",
+   "desc": "Em pé, pisando numa ponta da faixa com o pé oposto, parte com a mão perto do quadril oposto e puxa em diagonal para cima e para fora, voltando devagar.",
+   "focus": "Ombros e manguito rotador",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Faixa elástica no pé",
+   "video": "build/mannequin/videos/kineti-band-pnf-d1.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cc3"
+   ]
+  },
+  {
+   "slug": "kineti-band-pnf-d2-extension",
+   "lib": "kineti",
+   "name": "Diagonal de cima para baixo com faixa (FNP D2)",
+   "desc": "Em pé, com um braço fixo acima da cabeça segurando a faixa, puxa com o outro braço em diagonal, cruzando o corpo até o quadril oposto, e volta devagar.",
+   "focus": "Ombros e estabilizadores do tronco",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Faixa elástica",
+   "video": "build/mannequin/videos/kineti-band-pnf-d2-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cc6"
+   ]
+  },
+  {
+   "slug": "kineti-band-diagonal-pull-seated",
+   "lib": "kineti",
+   "name": "Diagonal sentado com faixa",
+   "desc": "Sentado, com uma mão fixa na coxa segurando uma ponta da faixa, puxa a outra ponta com o braço esticado em diagonal para cima e para fora, voltando devagar.",
+   "focus": "Ombros e estabilizadores da escápula",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Cadeira, Faixa elástica",
+   "video": "build/mannequin/videos/kineti-band-diagonal-pull-seated.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e52"
+   ]
   },
   {
    "slug": "lying-arm-reach",
@@ -4574,6 +5188,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-seated-band-er-flexion",
+   "lib": "kineti",
+   "name": "Flexão dos ombros mantendo a faixa aberta, sentado na bola",
+   "desc": "Sentado na bola suíça com os cotovelos a 90° e as mãos afastadas na faixa, eleva os braços à frente até a altura dos ombros e desce devagar.",
+   "focus": "Ombros, manguito rotador e tronco",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça, Faixa elástica",
+   "video": "build/mannequin/videos/kineti-ball-seated-band-er-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce7e"
+   ]
+  },
+  {
    "slug": "protraction-retraction",
    "lib": "deskbreak",
    "name": "Protração e retração escapular",
@@ -4701,7 +5331,24 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "660a6144b08ac7518f1f7cd4"
+    "660a6144b08ac7518f1f7cd4",
+    "660a6145b08ac7518f1f80c9"
+   ]
+  },
+  {
+   "slug": "kineti-band-row-external-rotation",
+   "lib": "kineti",
+   "name": "Remada com rotação externa usando faixa",
+   "desc": "Em pé, com a faixa presa à frente na altura da cintura, puxa os cotovelos para fora até a altura dos ombros e gira os antebraços para cima, voltando devagar.",
+   "focus": "Trapézio, romboides e rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-row-external-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f7a"
    ]
   },
   {
@@ -4908,6 +5555,22 @@
    ]
   },
   {
+   "slug": "kineti-band-shoulder-er-90",
+   "lib": "kineti",
+   "name": "Rotação externa do ombro com faixa, braço a 90°",
+   "desc": "Em pé, com o braço aberto na altura do ombro e o cotovelo a 90°, gira o antebraço para cima contra a faixa e volta devagar.",
+   "focus": "Manguito rotador (rotadores externos)",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-shoulder-er-90.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f802f"
+   ]
+  },
+  {
    "slug": "kineti-side-lying-external-rotation",
    "lib": "kineti",
    "name": "Rotação externa do ombro deitado de lado",
@@ -4922,6 +5585,22 @@
    "pocketphysio": [
     "65a9272153a15212d048e938",
     "65a9272153a15212d048e93c"
+   ]
+  },
+  {
+   "slug": "kineti-ball-seated-band-er",
+   "lib": "kineti",
+   "name": "Rotação externa dos dois ombros com faixa, sentado na bola",
+   "desc": "Sentado na bola suíça com os cotovelos dobrados junto ao corpo segurando a faixa, afasta as mãos para os lados e volta devagar.",
+   "focus": "Manguito rotador e estabilidade do tronco",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Bola suíça, Faixa elástica",
+   "video": "build/mannequin/videos/kineti-ball-seated-band-er.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce7a"
    ]
   },
   {
@@ -4957,6 +5636,38 @@
    ]
   },
   {
+   "slug": "kineti-band-shoulder-ir-90",
+   "lib": "kineti",
+   "name": "Rotação interna do ombro com faixa, braço a 90°",
+   "desc": "Em pé, com o braço aberto na altura do ombro, o cotovelo a 90° e a faixa vindo de trás, gira o antebraço para a frente e volta devagar.",
+   "focus": "Manguito rotador (rotadores internos)",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-shoulder-ir-90.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f804b"
+   ]
+  },
+  {
+   "slug": "kineti-band-serratus-punch",
+   "lib": "kineti",
+   "name": "Soco à frente com faixa pelas costas",
+   "desc": "Em pé, com a faixa passando pelas costas e as mãos à frente do peito, estica um braço à frente como um soco, afastando o ombro das costas, e alterna.",
+   "focus": "Serrátil anterior e estabilizadores da escápula",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica",
+   "video": "build/mannequin/videos/kineti-band-serratus-punch.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cd9"
+   ]
+  },
+  {
    "slug": "punches",
    "lib": "deskbreak",
    "name": "Socos alternados",
@@ -4986,6 +5697,22 @@
    "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407229"
+   ]
+  },
+  {
+   "slug": "kineti-band-chest-press",
+   "lib": "kineti",
+   "name": "Supino em pé com faixa presa atrás",
+   "desc": "Em pé, com um pé à frente e a faixa presa atrás na altura dos ombros, empurra as mãos à frente até esticar os braços e volta devagar.",
+   "focus": "Peitorais, ombros e tríceps",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-chest-press.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e3e"
    ]
   },
   {

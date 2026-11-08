@@ -36,6 +36,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
 - **Enquadramento:** a câmera projeta os vértices do manequim, de todos os quadros amostrados, mais os acessórios (sem o colchonete e a parede), e ajusta largura e altura separadamente.
 - **Vistas** (`DIRS` em `render_mannequin.py`): `side`, `front`, `side3q`, `front3q`, `rside3q`, `back3q`, `top3q` e `floor`. A `floor` é de lado e alta, para quem está deitado. Com o corpo deitado ao longo do eixo X, as vistas giram 90°, então "lado" continua sendo de través.
 - **Colchonete:** cobre a área ocupada pelo corpo durante todo o movimento. Só aparece sem `chair`, `ball`, `support` ou `wall`.
+- **Folga entre poses-chave:** a interpolação entre duas poses pode levantar um pé ou um antebraço vários centímetros. Por exemplo, os calcanhares sobem 14 cm entre a ponte e a flexão de joelhos na bola. Quando o contato com um acessório importa, acrescente uma pose intermediária.
 - **Acessórios:**
   - `chair`: cadeira, com o manequim sentado;
   - `support`: encosto de cadeira à frente, na altura das mãos;
@@ -58,6 +59,14 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `swissseat`: bola suíça como assento, para exercícios sentados. Costuma vir com `move` reaproveitando o movimento da cadeira;
   - `table`: mesa sob a mão ou as mãos que ficam paradas. Com uma mão só, é uma mesa pequena de canto, como no pêndulo de Codman.
   - `step`: só o rótulo "Degrau" no catálogo. O degrau em si vem do `ground` do movimento.
+  - `bandankles`: alça em volta dos dois tornozelos;
+  - `band-<ponta>-<ponta>`: faixa entre duas pontas, refeita a cada quadro. Cada ponta pode ser:
+    - uma parte do corpo: `hL`/`hR` (palma), `fL`/`fR` (sola, faixa passada pelo pé), `aL`/`aR` (tornozelo), `kL`/`kR` (joelho) ou `sL`/`sR` (atrás do ombro, faixa pelas costas);
+    - um poste fixo: `F`, `B`, `L` ou `R` (direções do mundo −y, +y, +x, −x), a 0,6 m da outra ponta no primeiro quadro e na altura dela. Com `lo` ou `hi` (por exemplo `Flo`), fica junto ao chão ou a 1,95 m. Postes à frente ou atrás ficam um pouco mais abertos, para a faixa passar ao lado do corpo.
+    
+    Exemplos: `band-hR-B` (presa atrás, na mão direita), `band-fL-hL` + `band-fL-hR` (faixa no pé esquerdo, pontas nas mãos), `band-aL-F` (tornozelo até um poste à frente);
+  - `heldball`: bola segurada entre as palmas. O raio sai da distância entre as palmas no primeiro quadro (menos 3,5 cm), entre 8 e 30 cm, então os braços definem o tamanho da bola;
+  - `ballfeet`, `ballarms`, `ballhands`, `ballback`: bola suíça de 55 cm no chão, sob os pés, os antebraços, as mãos ou a parte alta das costas. Um `L` ou `R` no fim (`ballfeetR`) escolhe um lado só. A cada quadro, a bola fica sob essa parte, rolada para fora, na linha que vem da pelve, só o bastante para não entrar no corpo (assim ela tangencia uma perna inclinada). Com `ballhands`, a bola fica parada onde estava no primeiro quadro. A parte apoiada precisa estar a uns 50–55 cm do chão no movimento. Mãos ou antebraços apoiados podem ter uma caixa de `ground` na altura do topo da bola, que o build usa para plantar o contato e que não é desenhada. As mãos devem ficar perto da linha do meio (braço aduzido), porque a bola é redonda. O log `BALL <id> <tipo> float <x> pen <y>` mostra a maior folga e a maior interpenetração do vídeo, e `BALL_DEBUG=1` lista os quadros com folga acima de 2 cm.
 - **`move`** (opcional, em `jobs.json`): o movimento a tocar, quando o vídeo reaproveita o de outro job com acessórios diferentes (por exemplo, a marcha sentada na bola suíça usa `chair-march`).
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 

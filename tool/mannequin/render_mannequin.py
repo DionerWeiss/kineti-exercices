@@ -2,7 +2,7 @@
 
     blender -b <lib.blend> --python render_mannequin.py -- <out_dir> <palette> <logo.png> <job> ...
 job = id:view[:prop+prop...[:upper|lower[:move]]]   (move: the action to play, default id)   view = side | front | top3q | side3q | front3q | floor | rside3q | back3q
-props: chair, support, wall, roll, ball, cuff, dumbbell
+props: chair, support, wall, roll, ball, cuff, dumbbell, bands, exercise balls (see the code)
 env STILL=<fractions, e.g. 0,0.25,0.5> renders only those points of the motion.
 """
 import json
@@ -11,6 +11,7 @@ import os
 import sys
 
 import bpy
+import numpy as np
 from mathutils import Matrix, Vector
 
 argv = sys.argv[sys.argv.index('--') + 1:]
@@ -288,6 +289,92 @@ def cyl(loc, r, depth, axis, m, parent=None):
     return o
 
 
+def body_np():
+    """World positions of the deformed body's vertices, as an (N, 3) array."""
+    deps = bpy.context.evaluated_depsgraph_get()
+    ev = body.evaluated_get(deps)
+    me = ev.to_mesh()
+    co = np.empty(len(me.vertices) * 3, dtype=np.float64)
+    me.vertices.foreach_get('co', co)
+    ev.to_mesh_clear()
+    M = np.array(ev.matrix_world)
+    return co.reshape(-1, 3) @ M[:3, :3].T + M[:3, 3]
+
+
+def band_end(e):
+    s = e[1]
+    if e[0] == 'h':
+        return palm(s)
+    if e[0] == 'f':  # round the ball of the foot
+        a, t = bone_head('foot' + s), foot_tip(s)
+        return a + (t - a) * 0.75
+    if e[0] == 'a':
+        return bone_head('foot' + s)
+    if e[0] == 's':  # round the back, behind the shoulder (standing)
+        return bone_head('arm' + s) + Vector((0, 0.1, 0))
+    return bone_head('knee' + s)
+
+
+SWISS_R = 0.275  # a 55 cm exercise ball
+SUPPORT_BALLS = ('ballfeet', 'ballarms', 'ballhands', 'ballback')
+
+
+def support_ball(kind, f0, f1, name):
+    """An exercise ball on the floor under the feet / forearms / hands / upper back. On every frame it sits under
+    that part, rolled outward along the line from the pelvis just far enough not to cut into the body (so it is
+    tangent to a sloping leg). The part must be about a ball's height (0.55) above the floor in the move: a ground
+    box at that height under it lets the build plant hands/feet on the ball (the box itself is not drawn).
+    With ballhands the ball stays where it is on the first frame.
+    A trailing L or R picks one side (e.g. ballfeetR: only the right heel is on it)."""
+    part, side = (kind[:-1], kind[-1]) if kind[-1] in 'LR' else (kind, None)
+
+    def anchor():
+        if part == 'ballback':
+            n_, s_ = bone_head('neck'), bone_head('spine')
+            return n_ + (s_ - n_) * 0.3
+        if part == 'ballfeet':
+            ends = {s_: bone_head('foot' + s_) for s_ in 'LR'}
+        elif part == 'ballarms':
+            ends = {s_: (bone_head('elbow' + s_) + bone_head('hand' + s_)) / 2 for s_ in 'LR'}
+        else:
+            ends = {s_: (bone_head('hand' + s_) + arm.matrix_world @ arm.pose.bones['hand' + s_].tail) / 2 for s_ in 'LR'}
+        return ends[side] if side else (ends['L'] + ends['R']) / 2
+
+    bpy.ops.mesh.primitive_uv_sphere_add(radius=SWISS_R, segments=48, ring_count=24)
+    sb = bpy.context.object
+    sb.data.materials.append(SWISSC)
+    bpy.ops.object.shade_smooth()
+    temp.append(sb)
+    T = np.linspace(-0.5, 0.5, 101)
+    worst_float, worst_pen, pts = 0.0, 0.0, []
+    for f in range(f0, f1 + 1):
+        scene.frame_set(f)
+        if part == 'ballhands' and f > f0:  # hands resting on it: the ball stays put (one may lift off)
+            sb.keyframe_insert('location', frame=f)
+            continue
+        A, hp = anchor(), bone_head('hips')
+        d = np.array([A.x - hp.x, A.y - hp.y])
+        d = d / (np.linalg.norm(d) or 1)
+        C = np.zeros((len(T), 3))
+        C[:, :2] = np.array([A.x, A.y]) + T[:, None] * d
+        C[:, 2] = SWISS_R
+        V = body_np()
+        cl = np.array([np.sqrt(((V - c) ** 2).sum(1)).min() for c in C]) - SWISS_R
+        # the nearest spot, going outward from the part, where the ball no longer cuts into the body
+        free = np.flatnonzero((T >= -0.05) & (cl >= -0.006))
+        k = free[0] if len(free) else cl.argmax()
+        worst_float, worst_pen = max(worst_float, cl[k]), min(worst_pen, cl[k])
+        if os.environ.get('BALL_DEBUG') and cl[k] > 0.02:
+            print('BALLF', name, f, round(float(cl[k]), 3), 't', round(float(T[k]), 2))
+        sb.location = Vector(C[k])
+        sb.keyframe_insert('location', frame=f)
+        if (f - f0) % 3 == 0:
+            pts += [sb.location + Vector(v) * SWISS_R for v in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1))]
+    scene.frame_set(f0)
+    print('BALL', name, kind, 'float', round(float(worst_float), 3), 'pen', round(float(worst_pen), 3))
+    return pts
+
+
 world = scene.world or bpy.data.worlds.new('w')
 scene.world = world
 world.use_nodes = True
@@ -329,6 +416,7 @@ for job in JOBS:
     for o in temp:
         bpy.data.objects.remove(o)
     temp.clear()
+    extra = []
     act = bpy.data.actions[parts[4] if len(parts) > 4 and parts[4] else name]  # a job may reuse another move
     ad.action = act
     if hasattr(ad, 'action_slot') and getattr(act, 'slots', None):
@@ -337,7 +425,8 @@ for job in JOBS:
     scene.frame_start, scene.frame_end = f0, f1
     scene.frame_set(f0)
 
-    seated = bool(props & {'chair', 'ball', 'swissseat'})
+    # the knee ball means seated, unless the body leans on a wall (wall squat with a ball between the knees)
+    seated = bool(props & {'chair', 'swissseat'} or 'ball' in props and not props & {'wallball', 'wallback'})
     if 'swissseat' in props:  # exercise ball as the seat: 55 cm, squashed a little under the pelvis (seat 0.45)
         hp = bone_head('hips')
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.27, segments=48, ring_count=24, location=(hp.x, hp.y + 0.03, 0.235))
@@ -364,7 +453,9 @@ for job in JOBS:
                 o.scale.z *= top / 0.45
                 o.location.z = top / 2 - 0.02
     gr = json.loads(act['ground']) if 'ground' in act else None  # the height field the move was built on
-    if gr:  # each raised box drawn as an aerobic step: grey block, dark rubber top
+    if gr and any(p_.startswith(SUPPORT_BALLS) for p_ in props):
+        pass  # the raised box is the top of an exercise ball (drawn by support_ball)
+    elif gr:  # each raised box drawn as an aerobic step: grey block, dark rubber top
         base = gr.get('base', 0)
         for x0, x1, y0, y1, h in gr['boxes']:
             if h <= base + 0.03:
@@ -537,6 +628,69 @@ for job in JOBS:
             tori.append(o)
         animate([(tori[0], lambda: ring('L')), (tori[1], lambda: ring('R')),
                  (rod(0.008, BANDC), lambda: strand(1)), (rod(0.008, BANDC), lambda: strand(-1))], f0, f1)
+    if 'bandankles' in props:  # a loop around both ankles
+        RA = 0.055
+
+        def aring_c(sd):
+            a, k = bone_head('foot' + sd), bone_head('knee' + sd)
+            return a + (k - a).normalized() * 0.07, (a - k).normalized()
+
+        def aring(sd):
+            c, dr = aring_c(sd)
+            return Matrix.LocRotScale(c, Vector((0, 0, 1)).rotation_difference(dr), Vector((1, 1, 1)))
+
+        def astrand(sgn):
+            (cl, dl), (cr, dr_) = aring_c('L'), aring_c('R')
+            u = (dl + dr_).normalized().cross(cr - cl).normalized() * RA * sgn
+            return seg_matrix(cl + u, cr + u)
+
+        tori = []
+        for _ in range(2):
+            bpy.ops.mesh.primitive_torus_add(major_radius=RA, minor_radius=0.008, major_segments=32, minor_segments=8)
+            o = bpy.context.object
+            o.data.materials.append(BANDC)
+            o.rotation_mode = 'QUATERNION'
+            temp.append(o)
+            tori.append(o)
+        animate([(tori[0], lambda: aring('L')), (tori[1], lambda: aring('R')),
+                 (rod(0.008, BANDC), lambda: astrand(1)), (rod(0.008, BANDC), lambda: astrand(-1))], f0, f1)
+    # band-<end>-<end>: ends are hL/hR (palm), fL/fR (sole, a strap round the foot), aL/aR (ankle), kL/kR (knee), sL/sR (behind the shoulder),
+    # or a post F/B/L/R (world -y/+y/+x/-x) 0.6 m from the other end's start, at its height, or lo/hi (e.g. Blo).
+    for bp in sorted(p_ for p_ in props if p_.startswith('band-')):
+        ends = bp.split('-')[1:]
+        scene.frame_set(f0)
+        fixed = {}
+        for i_, e_ in enumerate(ends):
+            if e_[0] in 'FBLR' and (len(e_) == 1 or e_[1:] in ('lo', 'hi')):
+                o_ = band_end(ends[1 - i_])
+                dv = {'F': (0, -1), 'B': (0, 1), 'L': (1, 0), 'R': (-1, 0)}[e_[0]]
+                z_ = {'lo': 0.12, 'hi': 1.95}.get(e_[1:], o_.z)
+                fixed[i_] = Vector((o_.x + dv[0] * 0.6, o_.y + dv[1] * 0.6, z_))
+                hx = bone_head('hips').x
+                if dv[0] == 0 and abs(o_.x - hx) > 0.05:  # in front / behind: a little wider, so it runs past the body
+                    fixed[i_].x += 0.12 * (1 if o_.x > hx else -1)
+                box((fixed[i_].x, fixed[i_].y, 1.0), (0.05, 0.05, 2.0), CHAIRC)['noframe'] = True
+        fa = (lambda: fixed[0]) if 0 in fixed else (lambda e_=ends[0]: band_end(e_))
+        fb = (lambda: fixed[1]) if 1 in fixed else (lambda e_=ends[1]: band_end(e_))
+        animate([(rod(0.008, BANDC), lambda fa=fa, fb=fb: seg_matrix(fa(), fb()))], f0, f1)
+    if 'heldball' in props:  # a ball held between the palms
+        scene.frame_set(f0)
+        rb = min(max((palm('L') - palm('R')).length / 2 - 0.035, 0.08), 0.3)
+        print('HELDBALL', name, 'palms', round((palm('L') - palm('R')).length, 3), 'r', round(rb, 3))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=rb, segments=48, ring_count=24)
+        hb = bpy.context.object
+        hb.data.materials.append(BALLC)
+        bpy.ops.object.shade_smooth()
+        hb.rotation_mode = 'QUATERNION'
+        temp.append(hb)
+        animate([(hb, lambda: Matrix.Translation((palm('L') + palm('R')) / 2))], f0, f1)
+        for f in range(f0, f1 + 1, 3):
+            scene.frame_set(f)
+            c_ = (palm('L') + palm('R')) / 2
+            extra += [c_ + Vector(v) * rb for v in ((1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1))]
+        scene.frame_set(f0)
+    for kind in sorted(p_ for p_ in props if p_.startswith(SUPPORT_BALLS)):
+        extra += support_ball(kind, f0, f1, name)
 
     # Frame the whole motion: the body's vertices over every sampled frame, plus the props (not the mat or wall).
     lo, hi, pts = motion_bounds(f0, f1, part=part) if part != 'full' else (blo.copy(), bhi.copy(), list(bpts))
@@ -562,6 +716,7 @@ for job in JOBS:
             ev = o.evaluated_get(deps)
             pts += [ev.matrix_world @ v.co for v in ev.to_mesh().vertices]
             ev.to_mesh_clear()
+        pts += extra  # moving props, over the whole motion
     if 'bed' in props and part == 'full':
         pts += [Vector((p_.x, p_.y, -0.3)) for p_ in pts if p_.z < 0.1]  # some of the bed under the body
     if (seated or props & {'support', 'side', 'chairfit', 'table'}) and part != 'upper':

@@ -1804,5 +1804,275 @@
   "Sentado na bola suíça com a coluna neutra, eleva um braço esticado à frente, desce e alterna, mantendo o equilíbrio.",
   "Estabilidade do tronco e ombros",
   "tronco_coluna"
+ ],
+ "kineti-ball-bridge": [
+  "Ponte com os calcanhares na bola suíça",
+  "Deitado de costas com os calcanhares sobre a bola, eleva o quadril até alinhar ombros, quadril e calcanhares, e desce devagar.",
+  "Glúteos, posteriores da coxa e estabilidade do tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-single-leg-bridge": [
+  "Ponte unilateral na bola suíça",
+  "Deitado de costas com um calcanhar na bola e a outra perna esticada para o alto, eleva o quadril mantendo o equilíbrio e desce devagar.",
+  "Glúteos, posteriores da coxa e estabilidade do tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-hamstring-curl": [
+  "Flexão de joelhos com os pés na bola suíça",
+  "Com os calcanhares na bola e o quadril elevado, dobra os joelhos trazendo a bola para perto do corpo e estica as pernas de novo, sem baixar o quadril.",
+  "Posteriores da coxa, glúteos e tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-single-leg-curl": [
+  "Flexão de joelho unilateral na bola suíça",
+  "Com o quadril elevado e uma perna esticada para o alto, a outra perna dobra o joelho puxando a bola para perto do corpo e volta a esticar.",
+  "Posteriores da coxa, glúteos e tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-roll-supine": [
+  "Rolar a bola com um calcanhar, deitado",
+  "Deitado de costas com um pé no chão e o outro calcanhar na bola, dobra o joelho trazendo a bola para perto e empurra de volta esticando a perna.",
+  "Quadríceps, posteriores da coxa e controle do tronco",
+  "joelhos"
+ ],
+ "kineti-ball-slr-opposite": [
+  "Elevação da perna esticada com o outro pé na bola",
+  "Deitado de costas com um pé apoiado na bola e o joelho dobrado, eleva a outra perna esticada alguns centímetros e desce devagar.",
+  "Flexores do quadril, quadríceps e estabilidade do tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-plank-forearms": [
+  "Prancha com os antebraços na bola suíça",
+  "Ajoelhado com os antebraços sobre a bola, estica as pernas até ficar em prancha com o corpo alinhado, sustenta e volta a apoiar os joelhos.",
+  "Abdômen, estabilizadores da escápula e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-ball-plank-tuck": [
+  "Prancha com as canelas na bola, joelhos ao peito",
+  "Em prancha com as mãos no chão e as canelas sobre a bola, puxa os joelhos em direção ao peito rolando a bola e estica as pernas de volta.",
+  "Abdômen, flexores do quadril e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-ball-plank-single-knee": [
+  "Prancha com as canelas na bola, um joelho ao peito",
+  "Em prancha com as mãos no chão e as canelas sobre a bola, leva um joelho em direção ao peito, devolve a perna à bola e alterna.",
+  "Abdômen, flexores do quadril e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-ball-rollout-kneeling": [
+  "Rolamento à frente na bola suíça, ajoelhado",
+  "Ajoelhado com os antebraços na bola, rola a bola para a frente inclinando o corpo em linha reta e volta puxando com o abdômen.",
+  "Abdômen e estabilizadores do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-ball-kneeling-arm-lift": [
+  "Ajoelhado com as mãos na bola, elevação de um braço",
+  "Ajoelhado com as mãos sobre a bola suíça à frente, eleva um braço esticado acima da cabeça, devolve a mão à bola e alterna.",
+  "Equilíbrio, estabilidade do tronco e ombros",
+  "equilibrio"
+ ],
+ "kineti-ball-supine-plank-reach": [
+  "Ombros na bola: braço acima da cabeça e pé oposto elevado",
+  "Com os ombros apoiados na bola, o quadril elevado e os joelhos dobrados, leva um braço acima da cabeça e levanta o pé oposto do chão, voltando e alternando.",
+  "Glúteos, abdômen e estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-ball-supine-plank-march": [
+  "Marcha com os ombros na bola suíça",
+  "Com os ombros apoiados na bola, o quadril elevado e os joelhos dobrados, levanta um pé do chão de cada vez, como numa marcha, sem deixar o quadril cair.",
+  "Glúteos, flexores do quadril e tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-supine-plank-leg-extension": [
+  "Extensão do joelho com os ombros na bola suíça",
+  "Com os ombros apoiados na bola, o quadril elevado e os joelhos dobrados, estica um joelho levando a perna à frente, apoia o pé de volta e alterna.",
+  "Glúteos, quadríceps e estabilidade do tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-march-ball-overhead": [
+  "Marcha no lugar elevando a bola acima da cabeça",
+  "Em pé, segura uma bola acima da cabeça; ao trazê-la ao peito, sobe um joelho, e volta a elevar a bola apoiando o pé, alternando as pernas.",
+  "Equilíbrio, coordenação e ombros",
+  "equilibrio"
+ ],
+ "kineti-ball-seated-lift-ball": [
+  "Sentado na bola suíça, elevação de uma bola à frente",
+  "Sentado na bola suíça com a coluna ereta, segura uma bola menor junto ao peito e a eleva à frente e acima da cabeça, voltando devagar.",
+  "Estabilidade do tronco e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-seated-rotation-holding-ball": [
+  "Rotação do tronco sentado segurando uma bola grande",
+  "Sentado com os pés apoiados e uma bola grande à frente do corpo, gira o tronco para um lado levando a bola, volta ao centro e repete para o outro lado.",
+  "Rotadores e estabilizadores do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-wall-ball-single-leg-squat": [
+  "Agachamento unilateral com bola suíça na parede",
+  "Em pé com a bola entre as costas e a parede e um pé fora do chão, dobra o joelho da perna de apoio enquanto a bola rola pela parede e sobe devagar.",
+  "Quadríceps, glúteos e equilíbrio",
+  "joelhos"
+ ],
+ "kineti-wall-ball-squat-adductor-ball": [
+  "Agachamento na parede com bola suíça e bola entre os joelhos",
+  "Com a bola suíça entre as costas e a parede e uma bola pequena entre os joelhos, agacha apertando a bola pequena e sobe devagar.",
+  "Quadríceps, glúteos e adutores",
+  "joelhos"
+ ],
+ "kineti-band-ankles-hip-abduction": [
+  "Abdução do quadril com faixa nos tornozelos",
+  "Em pé, com uma faixa elástica em volta dos tornozelos, afasta uma perna para o lado esticando a faixa, sem inclinar o tronco, e volta devagar.",
+  "Glúteo médio e estabilizadores do quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-band-ankles-hip-extension": [
+  "Extensão do quadril com faixa nos tornozelos",
+  "Em pé, com uma faixa elástica em volta dos tornozelos, leva uma perna para trás com o joelho esticado, sem inclinar o tronco, e volta devagar.",
+  "Glúteos e posteriores da coxa",
+  "quadril_gluteos"
+ ],
+ "kineti-band-ankles-knee-raise": [
+  "Elevação do joelho com faixa nos tornozelos",
+  "Em pé, com uma faixa elástica em volta dos tornozelos, sobe um joelho à frente contra a resistência, apoia o pé e alterna as pernas.",
+  "Flexores do quadril e controle do tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-strap-slr-stretch": [
+  "Elevação da perna esticada com faixa no pé",
+  "Deitado de costas com um joelho dobrado e uma faixa sob o pé da perna esticada, puxa a faixa elevando a perna reta e desce devagar.",
+  "Alongamento dos posteriores da coxa",
+  "quadril_gluteos"
+ ],
+ "kineti-strap-hamstring-knee-ext": [
+  "Alongamento dos posteriores com faixa, esticando o joelho",
+  "Deitado de costas com a coxa na vertical e uma faixa pela sola do pé, estica o joelho puxando a faixa, sustenta o alongamento e dobra de novo.",
+  "Alongamento dos posteriores da coxa",
+  "quadril_gluteos"
+ ],
+ "kineti-band-supine-leg-press": [
+  "Extensão da perna contra a faixa, deitado",
+  "Deitado de costas com o joelho dobrado e a faixa sob a sola do pé, empurra o pé esticando a perna contra a resistência e dobra de volta devagar.",
+  "Glúteos e quadríceps",
+  "quadril_gluteos"
+ ],
+ "kineti-band-chest-press": [
+  "Supino em pé com faixa presa atrás",
+  "Em pé, com um pé à frente e a faixa presa atrás na altura dos ombros, empurra as mãos à frente até esticar os braços e volta devagar.",
+  "Peitorais, ombros e tríceps",
+  "ombros_escapulas"
+ ],
+ "kineti-band-serratus-punch": [
+  "Soco à frente com faixa pelas costas",
+  "Em pé, com a faixa passando pelas costas e as mãos à frente do peito, estica um braço à frente como um soco, afastando o ombro das costas, e alterna.",
+  "Serrátil anterior e estabilizadores da escápula",
+  "ombros_escapulas"
+ ],
+ "kineti-band-shoulder-er-90": [
+  "Rotação externa do ombro com faixa, braço a 90°",
+  "Em pé, com o braço aberto na altura do ombro e o cotovelo a 90°, gira o antebraço para cima contra a faixa e volta devagar.",
+  "Manguito rotador (rotadores externos)",
+  "ombros_escapulas"
+ ],
+ "kineti-band-shoulder-ir-90": [
+  "Rotação interna do ombro com faixa, braço a 90°",
+  "Em pé, com o braço aberto na altura do ombro, o cotovelo a 90° e a faixa vindo de trás, gira o antebraço para a frente e volta devagar.",
+  "Manguito rotador (rotadores internos)",
+  "ombros_escapulas"
+ ],
+ "kineti-band-pnf-d2-extension": [
+  "Diagonal de cima para baixo com faixa (FNP D2)",
+  "Em pé, com um braço fixo acima da cabeça segurando a faixa, puxa com o outro braço em diagonal, cruzando o corpo até o quadril oposto, e volta devagar.",
+  "Ombros e estabilizadores do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-band-pnf-d1": [
+  "Diagonal de baixo para cima com faixa sob o pé (FNP)",
+  "Em pé, pisando numa ponta da faixa com o pé oposto, parte com a mão perto do quadril oposto e puxa em diagonal para cima e para fora, voltando devagar.",
+  "Ombros e manguito rotador",
+  "ombros_escapulas"
+ ],
+ "kineti-band-squat-arms-overhead": [
+  "Agachamento com os braços elevados contra a faixa",
+  "Em pé, com os braços acima da cabeça segurando a faixa presa embaixo, à frente, agacha levando o quadril para trás sem deixar os braços caírem e sobe.",
+  "Quadríceps, glúteos e extensores das costas",
+  "joelhos"
+ ],
+ "kineti-band-row-external-rotation": [
+  "Remada com rotação externa usando faixa",
+  "Em pé, com a faixa presa à frente na altura da cintura, puxa os cotovelos para fora até a altura dos ombros e gira os antebraços para cima, voltando devagar.",
+  "Trapézio, romboides e rotadores externos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-band-seated-trunk-rotation": [
+  "Rotação do tronco sentado contra a faixa",
+  "Sentado, com os braços esticados à frente segurando a faixa presa ao lado, gira o tronco para o lado oposto ao da faixa e volta devagar.",
+  "Oblíquos e rotadores do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-band-diagonal-pull-seated": [
+  "Diagonal sentado com faixa",
+  "Sentado, com uma mão fixa na coxa segurando uma ponta da faixa, puxa a outra ponta com o braço esticado em diagonal para cima e para fora, voltando devagar.",
+  "Ombros e estabilizadores da escápula",
+  "ombros_escapulas"
+ ],
+ "kineti-band-oblique-crunch": [
+  "Abdominal oblíquo puxando a faixa presa atrás da cabeça",
+  "Deitado de costas com os joelhos dobrados e a faixa presa atrás da cabeça numa mão, eleva o tronco girando em direção ao joelho oposto e desce devagar.",
+  "Oblíquos e reto abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-band-prone-hamstring-curl": [
+  "Flexão do joelho contra a faixa, de bruços",
+  "Deitado de bruços com a faixa presa no tornozelo, dobra o joelho levando o calcanhar até formar 90° e desce devagar.",
+  "Posteriores da coxa",
+  "joelhos"
+ ],
+ "kineti-band-seated-knee-flexion": [
+  "Flexão do joelho sentado contra a faixa",
+  "Sentado, com a faixa presa no tornozelo e num ponto à frente, dobra o joelho puxando o calcanhar para baixo da cadeira e volta devagar.",
+  "Posteriores da coxa",
+  "joelhos"
+ ],
+ "kineti-band-terminal-knee-ext": [
+  "Extensão terminal do joelho com faixa",
+  "Em pé, com a faixa atrás de um joelho e presa à frente, dobra levemente o joelho e estica por completo, empurrando contra a faixa.",
+  "Quadríceps (vasto medial)",
+  "joelhos"
+ ],
+ "kineti-ball-seated-band-er": [
+  "Rotação externa dos dois ombros com faixa, sentado na bola",
+  "Sentado na bola suíça com os cotovelos dobrados junto ao corpo segurando a faixa, afasta as mãos para os lados e volta devagar.",
+  "Manguito rotador e estabilidade do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-seated-band-er-flexion": [
+  "Flexão dos ombros mantendo a faixa aberta, sentado na bola",
+  "Sentado na bola suíça com os cotovelos a 90° e as mãos afastadas na faixa, eleva os braços à frente até a altura dos ombros e desce devagar.",
+  "Ombros, manguito rotador e tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-band-diagonal-pull": [
+  "Diagonal com faixa presa ao lado, sentado na bola",
+  "Sentado na bola suíça, puxa a faixa presa ao lado oposto em diagonal para cima e para fora, cruzando a frente do corpo, e volta devagar.",
+  "Ombros e estabilidade do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-band-diagonal-pull": [
+  "Diagonal com faixa presa ao lado, sentado na cadeira (FNP)",
+  "Sentado na cadeira, puxa a faixa presa ao lado oposto em diagonal para cima e para fora e volta devagar.",
+  "Ombros e manguito rotador",
+  "ombros_escapulas"
+ ],
+ "kineti-dead-bug-band": [
+  "Dead bug com faixa entre a mão e o pé oposto",
+  "Deitado de costas com braços e pernas para o alto e uma faixa entre uma mão e o pé oposto, estende esse braço e essa perna ao mesmo tempo e volta, alternando.",
+  "Abdômen e estabilidade lombar",
+  "tronco_coluna"
+ ],
+ "kineti-split-squat-band": [
+  "Afundo estático com faixa no joelho da frente",
+  "Com um pé à frente e a faixa presa logo acima do joelho da frente, desce o corpo flexionando os joelhos sem deixar o joelho ceder e sobe.",
+  "Quadríceps, glúteos e controle do joelho",
+  "joelhos"
  ]
 }

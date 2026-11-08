@@ -2306,7 +2306,8 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "660a6144b08ac7518f1f7cd4"
+   "660a6144b08ac7518f1f7cd4",
+   "660a6145b08ac7518f1f80c9"
   ]
  },
  "kineti-grip-ball-squeeze": {
@@ -3291,5 +3292,483 @@
    "65a9272153a15212d048ea14"
   ],
   "move": "kineti-seated-alternating-front-raise"
+ },
+ "kineti-ball-bridge": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "ballfeet"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7ca2"
+  ]
+ },
+ "kineti-ball-single-leg-bridge": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballfeetR"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8105"
+  ]
+ },
+ "kineti-ball-hamstring-curl": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "ballfeet"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d64"
+  ]
+ },
+ "kineti-ball-single-leg-curl": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballfeetR"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e88"
+  ]
+ },
+ "kineti-ball-roll-supine": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballfeetR"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e4d"
+  ]
+ },
+ "kineti-ball-slr-opposite": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballfeetR"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80b5"
+  ]
+ },
+ "kineti-ball-plank-forearms": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "ballarms"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048eaf9"
+  ]
+ },
+ "kineti-ball-plank-tuck": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "ballfeet"
+  ],
+  "pocketphysio": [
+   "660a61776a80d359d40dce3c",
+   "65a9272153a15212d048eafb"
+  ]
+ },
+ "kineti-ball-plank-single-knee": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballfeet"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048ea51"
+  ]
+ },
+ "kineti-ball-rollout-kneeling": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "ballarms"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d56",
+   "660a6144b08ac7518f1f7ccf"
+  ]
+ },
+ "kineti-ball-kneeling-arm-lift": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballhands"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7d92",
+   "660a6144b08ac7518f1f7d93"
+  ]
+ },
+ "kineti-ball-supine-plank-reach": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballback"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80e2"
+  ]
+ },
+ "kineti-ball-supine-plank-march": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballback"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407255"
+  ]
+ },
+ "kineti-ball-supine-plank-leg-extension": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "ballback"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407344",
+   "664744bf5c2c1f75d4d71e27"
+  ]
+ },
+ "kineti-march-ball-overhead": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "heldball"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f35"
+  ]
+ },
+ "kineti-ball-seated-lift-ball": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "swissseat",
+   "heldball"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f39"
+  ]
+ },
+ "kineti-seated-rotation-holding-ball": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair",
+   "heldball"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048ea06"
+  ]
+ },
+ "kineti-wall-ball-single-leg-squat": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "wallball"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f43"
+  ]
+ },
+ "kineti-wall-ball-squat-adductor-ball": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "wallball",
+   "ball"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7ce3"
+  ],
+  "move": "kineti-wall-ball-squat"
+ },
+ "kineti-band-ankles-hip-abduction": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "bandankles"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e8d"
+  ]
+ },
+ "kineti-band-ankles-hip-extension": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bandankles"
+  ],
+  "pocketphysio": [
+   "6613e9012d1659b1aabbb371"
+  ]
+ },
+ "kineti-band-ankles-knee-raise": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bandankles"
+  ],
+  "pocketphysio": [
+   "660a61776a80d359d40dce62"
+  ]
+ },
+ "kineti-strap-slr-stretch": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "band-fL-hL",
+   "band-fL-hR"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e829",
+   "65b09dc54ad825d030407248"
+  ]
+ },
+ "kineti-strap-hamstring-knee-ext": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "band-fL-hL",
+   "band-fL-hR"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e827"
+  ]
+ },
+ "kineti-band-supine-leg-press": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "band-fL-hL",
+   "band-fL-hR"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e7df"
+  ]
+ },
+ "kineti-band-chest-press": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "band-hL-B",
+   "band-hR-B"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e3e"
+  ]
+ },
+ "kineti-band-serratus-punch": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "band-hL-sL",
+   "band-hR-sR"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cd9"
+  ]
+ },
+ "kineti-band-shoulder-er-90": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "band-hR-F"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f802f"
+  ]
+ },
+ "kineti-band-shoulder-ir-90": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "band-hR-B"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f804b"
+  ]
+ },
+ "kineti-band-pnf-d2-extension": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "band-hL-hR"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cc6"
+  ]
+ },
+ "kineti-band-pnf-d1": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "band-hR-fL"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cc3"
+  ]
+ },
+ "kineti-band-squat-arms-overhead": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "band-hL-Flo",
+   "band-hR-Flo"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80c7"
+  ]
+ },
+ "kineti-band-row-external-rotation": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "band-hL-F",
+   "band-hR-F"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f7a"
+  ]
+ },
+ "kineti-band-seated-trunk-rotation": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair",
+   "band-hL-L"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8111",
+   "660a6145b08ac7518f1f8110"
+  ]
+ },
+ "kineti-band-diagonal-pull-seated": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair",
+   "band-hL-hR"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7e52"
+  ]
+ },
+ "kineti-band-oblique-crunch": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "band-hR-Blo"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7ca9"
+  ]
+ },
+ "kineti-band-prone-hamstring-curl": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "band-aL-B"
+  ],
+  "pocketphysio": [
+   "660a61776a80d359d40dce66"
+  ]
+ },
+ "kineti-band-seated-knee-flexion": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "chair",
+   "band-aL-F"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f1a"
+  ]
+ },
+ "kineti-band-terminal-knee-ext": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "band-kR-F"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f1d"
+  ]
+ },
+ "kineti-ball-seated-band-er": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "swissseat",
+   "band-hL-hR"
+  ],
+  "pocketphysio": [
+   "660a61776a80d359d40dce7a"
+  ]
+ },
+ "kineti-ball-seated-band-er-flexion": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "swissseat",
+   "band-hL-hR"
+  ],
+  "pocketphysio": [
+   "660a61776a80d359d40dce7e"
+  ]
+ },
+ "kineti-ball-band-diagonal-pull": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "swissseat",
+   "band-hR-L"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e17"
+  ],
+  "move": "kineti-band-diagonal-pull-seated"
+ },
+ "kineti-chair-band-diagonal-pull": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair",
+   "band-hR-L"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cc1"
+  ],
+  "move": "kineti-band-diagonal-pull-seated"
+ },
+ "kineti-dead-bug-band": {
+  "lib": "deskbreak",
+  "view": "floor",
+  "props": [
+   "band-hL-fR"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048e9f6"
+  ],
+  "move": "dead-bug"
+ },
+ "kineti-split-squat-band": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [
+   "band-kL-F"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e28"
+  ],
+  "move": "shallow-split-squat"
  }
 }

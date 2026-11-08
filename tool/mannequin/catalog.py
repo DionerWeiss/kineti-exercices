@@ -24,7 +24,19 @@ PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apo
          'bandhands': 'Faixa elástica', 'bandanchor': 'Faixa elástica presa no batente',
          'bandanchor1': 'Faixa elástica presa no batente', 'bandfeet': 'Faixa elástica sob os pés',
          'bandknees': 'Faixa elástica nas coxas', 'chairfit': 'Cadeira', 'walk': '—', 'wallball': 'Parede, bola suíça',
-         'wallback': 'Parede', 'swissseat': 'Bola suíça', 'step': 'Degrau'}
+         'wallback': 'Parede', 'swissseat': 'Bola suíça', 'step': 'Degrau', 'heldball': 'Bola',
+         'bandankles': 'Faixa elástica nos tornozelos'}
+
+
+def prop_label(p):
+    if p.startswith(('ballfeet', 'ballarms', 'ballhands', 'ballback')):
+        return 'Bola suíça'
+    if p.startswith('band-'):  # band-<end>-<end> (render_mannequin.py)
+        ends = p.split('-')[1:]
+        if any(e[0] in 'FBLR' for e in ends):
+            return 'Faixa elástica presa'
+        return 'Faixa elástica no pé' if any(e[0] == 'f' for e in ends) else 'Faixa elástica'
+    return PROPS[p]
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',
          'kineti-standing-knee-flexion-supported': 'standing_knee_flexion',
@@ -70,7 +82,7 @@ def main():
         out.append({
             'slug': slug, 'lib': j['lib'], **texts[slug],
             'view': VIEWS[j['view']] + FRAMES[j.get('frame', 'full')],
-            'props': ', '.join([PROPS[p] for p in props if PROPS[p] != '—'] + (['Colchonete'] if lying else [])) or '—',
+            'props': ', '.join(dict.fromkeys([prop_label(p) for p in props if prop_label(p) != '—'] + (['Colchonete'] if lying else []))) or '—',
             'video': f'build/mannequin/videos/{slug}.mp4',
             'kineti_slug': kslug,
             'substitui': libmap.get(slug, ''),

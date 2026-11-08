@@ -1660,5 +1660,71 @@
   "Com um pé à frente do outro e um halter em cada mão, desce um pouco dobrando os joelhos e sobe, sem mover os pés.",
   "Quadríceps e glúteos com carga",
   "joelhos"
+ ],
+ "kineti-seated-arm-circles": [
+  "Círculos com os braços sentado",
+  "Sentado com a coluna ereta e os braços abertos na altura dos ombros, faz pequenos círculos no ar, nos dois sentidos.",
+  "Mobilidade e resistência dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-shoulder-rolls-forward": [
+  "Rolamento dos ombros para frente sentado",
+  "Sentado, eleva os ombros em direção às orelhas e rola para frente e para baixo em círculos lentos.",
+  "Mobilidade da cintura escapular",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-abduction-elbow-bent": [
+  "Abdução dos ombros com cotovelos dobrados sentado",
+  "Sentado, com os cotovelos dobrados a 90 graus, eleva os cotovelos para os lados até a altura dos ombros e desce devagar.",
+  "Deltoide médio",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-shoulder-abduction-180": [
+  "Abdução dos ombros até acima da cabeça sentado",
+  "Sentado, eleva os braços esticados pelos lados até acima da cabeça e desce devagar.",
+  "Amplitude de abdução do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-external-rotation": [
+  "Rotação externa dos ombros sentado",
+  "Sentado, com os cotovelos junto ao corpo e dobrados a 90 graus, abre os antebraços para fora e volta.",
+  "Rotadores externos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-horizontal-abduction": [
+  "Abdução horizontal dos ombros sentado",
+  "Sentado, com os braços esticados à frente na altura dos ombros, abre os braços para os lados e volta.",
+  "Deltoide posterior e escápulas",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-shoulder-extension": [
+  "Extensão dos ombros sentado",
+  "Sentado, com os braços esticados ao lado do corpo, leva os braços para trás e volta devagar.",
+  "Extensores do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-alternating-front-raise": [
+  "Elevação frontal alternada com halteres sentado",
+  "Sentado, segurando halteres, eleva um braço esticado à frente até a altura do ombro, desce e alterna.",
+  "Deltoide anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-seated-side-bend-arms-crossed": [
+  "Inclinação lateral do tronco sentado com braços cruzados",
+  "Sentado com os braços cruzados no peito, inclina o tronco para um lado e depois para o outro.",
+  "Mobilidade lateral do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-seated-side-bend-hands-head": [
+  "Inclinação lateral do tronco sentado com mãos atrás da cabeça",
+  "Sentado com as mãos atrás da cabeça e os cotovelos abertos, inclina o tronco para um lado e depois para o outro.",
+  "Mobilidade lateral do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-seated-knee-flexion": [
+  "Flexão do joelho sentado, alternada",
+  "Sentado, desliza um pé para trás sob a cadeira dobrando o joelho, volta e troca de perna.",
+  "Amplitude de flexão do joelho",
+  "joelhos"
  ]
 }

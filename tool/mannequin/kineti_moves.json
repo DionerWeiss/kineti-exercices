@@ -16329,6 +16329,998 @@
      "hold": 0.6
     }
    ]
+  },
+  {
+   "id": "kineti-seated-arm-circles",
+   "en": "Arm circles, sitting",
+   "amount_en": "15 seconds each way",
+   "steps_en": [
+    "Sit tall, arms out to the sides.",
+    "Draw small circles."
+   ],
+   "beat": 0.35,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      102
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -8,
+      0,
+      98
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -12,
+      0,
+      90
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -8,
+      0,
+      82
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      78
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      8,
+      0,
+      82
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      12,
+      0,
+      90
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      8,
+      0,
+      98
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-shoulder-rolls-forward",
+   "en": "Shoulder rolls forward, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall.",
+    "Lift the shoulders, roll them forward and down."
+   ],
+   "beat": 0.3,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0.05,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0.041,
+      0.028
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0.02,
+      0.04
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      -0.001,
+      0.028
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      -0.01,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      -0.001,
+      -0.028
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0.02,
+      -0.04
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0.041,
+      -0.028
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-abduction-elbow-bent",
+   "en": "Shoulder abduction with the elbows bent, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, elbows bent at 90 degrees.",
+    "Lift the elbows out to shoulder height.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      8
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      85
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-shoulder-abduction-180",
+   "en": "Shoulder abduction to overhead, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall.",
+    "Raise the straight arms out to the sides and overhead.",
+    "Lower slowly."
+   ],
+   "beat": 1.3,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      170
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-external-rotation",
+   "en": "Shoulder external rotation, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, elbows at the sides bent at 90 degrees.",
+    "Open the forearms outward.",
+    "Bring them back."
+   ],
+   "beat": 1.1,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      70,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-horizontal-abduction",
+   "en": "Shoulder horizontal abduction, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, arms straight in front at shoulder height.",
+    "Open them out to the sides.",
+    "Bring them back."
+   ],
+   "beat": 1.1,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -88,
+      0,
+      4
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -88,
+      0,
+      80
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-shoulder-extension",
+   "en": "Shoulder extension, arms straight, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, arms straight down.",
+    "Move them back behind the body.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      14
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      14
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-alternating-front-raise",
+   "en": "Alternating front raise, sitting",
+   "amount_en": "8 each arm",
+   "steps_en": [
+    "Sit tall.",
+    "Raise one straight arm to shoulder height, lower, then the other."
+   ],
+   "beat": 1.0,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "armL": [
+      -90,
+      0,
+      6
+     ],
+     "elbowL": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.3
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "armR": [
+      -90,
+      0,
+      6
+     ],
+     "elbowR": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-side-bend-arms-crossed",
+   "en": "Trunk side bending, arms crossed, sitting",
+   "amount_en": "8 each side",
+   "steps_en": [
+    "Sit tall, arms crossed on the chest.",
+    "Bend the trunk to one side, then the other."
+   ],
+   "beat": 1.2,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ],
+     "spine": [
+      0,
+      0,
+      24
+     ],
+     "hold": 0.5
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ],
+     "spine": [
+      0,
+      0,
+      -24
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-side-bend-hands-head",
+   "en": "Trunk side bending, hands behind the head, sitting",
+   "amount_en": "8 each side",
+   "steps_en": [
+    "Sit tall, hands behind the head.",
+    "Bend the trunk to one side, then the other."
+   ],
+   "beat": 1.2,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      90,
+      95
+     ],
+     "elbow": [
+      -145,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      90,
+      95
+     ],
+     "elbow": [
+      -145,
+      0,
+      0
+     ],
+     "spine": [
+      0,
+      0,
+      24
+     ],
+     "hold": 0.5
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      90,
+      95
+     ],
+     "elbow": [
+      -145,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      90,
+      95
+     ],
+     "elbow": [
+      -145,
+      0,
+      0
+     ],
+     "spine": [
+      0,
+      0,
+      -24
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-seated-knee-flexion",
+   "en": "Knee flexion, sitting, alternating",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Sit tall.",
+    "Slide one foot back under the chair, bending the knee.",
+    "Return and switch."
+   ],
+   "beat": 1.1,
+   "seated": true,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "legL": [
+      -70,
+      0,
+      4
+     ],
+     "kneeL": [
+      120,
+      0,
+      0
+     ],
+     "footL": [
+      35,
+      0,
+      0
+     ],
+     "touch": [
+      "footL"
+     ],
+     "hold": 0.4
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "legR": [
+      -70,
+      0,
+      4
+     ],
+     "kneeR": [
+      120,
+      0,
+      0
+     ],
+     "footR": [
+      35,
+      0,
+      0
+     ],
+     "touch": [
+      "footR"
+     ],
+     "hold": 0.4
+    }
+   ]
   }
  ]
 }

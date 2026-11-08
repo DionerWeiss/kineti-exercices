@@ -154,7 +154,8 @@
    "pocketphysio": [
     "65b09dc54ad825d0304071fe",
     "65b09dc54ad825d0304071ff",
-    "6613d8862d1659b1aabb9c5c"
+    "6613d8862d1659b1aabb9c5c",
+    "660a6144b08ac7518f1f7d63"
    ]
   },
   {
@@ -346,7 +347,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e7e3",
-    "65a9272053a15212d048e735"
+    "65a9272053a15212d048e735",
+    "660a61776a80d359d40dce56"
    ]
   },
   {
@@ -1178,7 +1180,8 @@
    "pocketphysio": [
     "65a9272053a15212d048e7ff",
     "65a9272053a15212d048e810",
-    "65b09dc54ad825d0304072e8"
+    "65b09dc54ad825d0304072e8",
+    "65a9272053a15212d048e833"
    ]
   },
   {
@@ -1277,6 +1280,22 @@
    "kineti_slug": "standing_knee_flexion",
    "substitui": "standing_knee_flexion",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-seated-knee-flexion",
+   "lib": "kineti",
+   "name": "Flexão do joelho sentado, alternada",
+   "desc": "Sentado, desliza um pé para trás sob a cadeira dobrando o joelho, volta e troca de perna.",
+   "focus": "Amplitude de flexão do joelho",
+   "area": "joelhos",
+   "view": "Lateral",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-knee-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e80b"
+   ]
   },
   {
    "slug": "floor-long-sit-forward-fold",
@@ -2258,7 +2277,9 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "664744bf5c2c1f75d4d71e41"
+    "664744bf5c2c1f75d4d71e41",
+    "660a6145b08ac7518f1f8120",
+    "664744bf5c2c1f75d4d71d96"
    ]
   },
   {
@@ -2766,7 +2787,8 @@
    "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d03040731e",
-    "65a9272153a15212d048ea2f"
+    "65a9272153a15212d048ea2f",
+    "660a61776a80d359d40dce74"
    ]
   },
   {
@@ -3131,7 +3153,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e63d",
-    "65a9272053a15212d048e63b"
+    "65a9272053a15212d048e63b",
+    "65a9272053a15212d048e632"
    ]
   },
   {
@@ -3164,7 +3187,40 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "65a9272153a15212d048ea0a"
+    "65a9272153a15212d048ea0a",
+    "65a9272053a15212d048e708"
+   ]
+  },
+  {
+   "slug": "kineti-seated-side-bend-arms-crossed",
+   "lib": "kineti",
+   "name": "Inclinação lateral do tronco sentado com braços cruzados",
+   "desc": "Sentado com os braços cruzados no peito, inclina o tronco para um lado e depois para o outro.",
+   "focus": "Mobilidade lateral do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-side-bend-arms-crossed.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80ff"
+   ]
+  },
+  {
+   "slug": "kineti-seated-side-bend-hands-head",
+   "lib": "kineti",
+   "name": "Inclinação lateral do tronco sentado com mãos atrás da cabeça",
+   "desc": "Sentado com as mãos atrás da cabeça e os cotovelos abertos, inclina o tronco para um lado e depois para o outro.",
+   "focus": "Mobilidade lateral do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-side-bend-hands-head.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce98"
    ]
   },
   {
@@ -3750,6 +3806,54 @@
    ]
   },
   {
+   "slug": "kineti-seated-shoulder-abduction-180",
+   "lib": "kineti",
+   "name": "Abdução dos ombros até acima da cabeça sentado",
+   "desc": "Sentado, eleva os braços esticados pelos lados até acima da cabeça e desce devagar.",
+   "focus": "Amplitude de abdução do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-shoulder-abduction-180.mp4",
+   "kineti_slug": "seated_shoulder_abduction",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f800e"
+   ]
+  },
+  {
+   "slug": "kineti-seated-abduction-elbow-bent",
+   "lib": "kineti",
+   "name": "Abdução dos ombros com cotovelos dobrados sentado",
+   "desc": "Sentado, com os cotovelos dobrados a 90 graus, eleva os cotovelos para os lados até a altura dos ombros e desce devagar.",
+   "focus": "Deltoide médio",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-abduction-elbow-bent.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8009"
+   ]
+  },
+  {
+   "slug": "kineti-seated-horizontal-abduction",
+   "lib": "kineti",
+   "name": "Abdução horizontal dos ombros sentado",
+   "desc": "Sentado, com os braços esticados à frente na altura dos ombros, abre os braços para os lados e volta.",
+   "focus": "Deltoide posterior e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-horizontal-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e929"
+   ]
+  },
+  {
    "slug": "kineti-band-pull-apart",
    "lib": "kineti",
    "name": "Abertura de braços com faixa elástica",
@@ -3849,6 +3953,22 @@
    ]
   },
   {
+   "slug": "kineti-seated-arm-circles",
+   "lib": "kineti",
+   "name": "Círculos com os braços sentado",
+   "desc": "Sentado com a coluna ereta e os braços abertos na altura dos ombros, faz pequenos círculos no ar, nos dois sentidos.",
+   "focus": "Mobilidade e resistência dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-arm-circles.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8054"
+   ]
+  },
+  {
    "slug": "kineti-table-weight-bearing",
    "lib": "kineti",
    "name": "Descarga de peso nas mãos na mesa",
@@ -3930,6 +4050,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e904"
+   ]
+  },
+  {
+   "slug": "kineti-seated-alternating-front-raise",
+   "lib": "kineti",
+   "name": "Elevação frontal alternada com halteres sentado",
+   "desc": "Sentado, segurando halteres, eleva um braço esticado à frente até a altura do ombro, desce e alterna.",
+   "focus": "Deltoide anterior",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Halteres",
+   "video": "build/mannequin/videos/kineti-seated-alternating-front-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407204"
    ]
   },
   {
@@ -4034,6 +4170,22 @@
    "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71e09"
+   ]
+  },
+  {
+   "slug": "kineti-seated-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão dos ombros sentado",
+   "desc": "Sentado, com os braços esticados ao lado do corpo, leva os braços para trás e volta devagar.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e927"
    ]
   },
   {
@@ -4408,7 +4560,25 @@
    "kineti_slug": "scapular_retraction",
    "substitui": "scapular_retraction",
    "pocketphysio": [
-    "65b09dc54ad825d030407318"
+    "65b09dc54ad825d030407318",
+    "65b09dc54ad825d030407319",
+    "660a6145b08ac7518f1f7ff1"
+   ]
+  },
+  {
+   "slug": "kineti-seated-shoulder-rolls-forward",
+   "lib": "kineti",
+   "name": "Rolamento dos ombros para frente sentado",
+   "desc": "Sentado, eleva os ombros em direção às orelhas e rola para frente e para baixo em círculos lentos.",
+   "focus": "Mobilidade da cintura escapular",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-shoulder-rolls-forward.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407243"
    ]
   },
   {
@@ -4526,6 +4696,22 @@
    "pocketphysio": [
     "65a9272153a15212d048e938",
     "65a9272153a15212d048e93c"
+   ]
+  },
+  {
+   "slug": "kineti-seated-external-rotation",
+   "lib": "kineti",
+   "name": "Rotação externa dos ombros sentado",
+   "desc": "Sentado, com os cotovelos junto ao corpo e dobrados a 90 graus, abre os antebraços para fora e volta.",
+   "focus": "Rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-seated-external-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8026"
    ]
   },
   {
@@ -4661,7 +4847,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "65b09dc54ad825d0304071fa"
+    "65b09dc54ad825d0304071fa",
+    "65b09dc54ad825d03040721d"
    ]
   },
   {
@@ -4815,7 +5002,9 @@
    "pocketphysio": [
     "664744bf5c2c1f75d4d71e44",
     "664744bf5c2c1f75d4d71e97",
-    "65a9272153a15212d048ea49"
+    "65a9272153a15212d048ea49",
+    "65a9272153a15212d048eb53",
+    "65b09dc54ad825d03040720f"
    ]
   },
   {

@@ -110,7 +110,8 @@
    "chair"
   ],
   "pocketphysio": [
-   "65a9272153a15212d048ea0a"
+   "65a9272153a15212d048ea0a",
+   "65a9272053a15212d048e708"
   ],
   "frame": "full"
  },
@@ -454,7 +455,8 @@
   ],
   "pocketphysio": [
    "65a9272053a15212d048e63d",
-   "65a9272053a15212d048e63b"
+   "65a9272053a15212d048e63b",
+   "65a9272053a15212d048e632"
   ],
   "frame": "upper"
  },
@@ -465,7 +467,9 @@
    "chair"
   ],
   "pocketphysio": [
-   "65b09dc54ad825d030407318"
+   "65b09dc54ad825d030407318",
+   "65b09dc54ad825d030407319",
+   "660a6145b08ac7518f1f7ff1"
   ],
   "frame": "full"
  },
@@ -535,7 +539,8 @@
    "chair"
   ],
   "pocketphysio": [
-   "65b09dc54ad825d0304071fa"
+   "65b09dc54ad825d0304071fa",
+   "65b09dc54ad825d03040721d"
   ],
   "frame": "upper"
  },
@@ -947,7 +952,8 @@
   "props": [],
   "pocketphysio": [
    "65a9272053a15212d048e7e3",
-   "65a9272053a15212d048e735"
+   "65a9272053a15212d048e735",
+   "660a61776a80d359d40dce56"
   ],
   "frame": "full"
  },
@@ -1368,7 +1374,8 @@
   "pocketphysio": [
    "65a9272053a15212d048e7ff",
    "65a9272053a15212d048e810",
-   "65b09dc54ad825d0304072e8"
+   "65b09dc54ad825d0304072e8",
+   "65a9272053a15212d048e833"
   ]
  },
  "kineti-supine-ankle-pumps": {
@@ -1497,7 +1504,9 @@
   "pocketphysio": [
    "664744bf5c2c1f75d4d71e44",
    "664744bf5c2c1f75d4d71e97",
-   "65a9272153a15212d048ea49"
+   "65a9272153a15212d048ea49",
+   "65a9272153a15212d048eb53",
+   "65b09dc54ad825d03040720f"
   ]
  },
  "kineti-forearm-pronation-supination": {
@@ -1638,7 +1647,8 @@
   "frame": "upper",
   "pocketphysio": [
    "65b09dc54ad825d03040731e",
-   "65a9272153a15212d048ea2f"
+   "65a9272153a15212d048ea2f",
+   "660a61776a80d359d40dce74"
   ]
  },
  "posture-reset": {
@@ -2170,7 +2180,8 @@
   "pocketphysio": [
    "65b09dc54ad825d0304071fe",
    "65b09dc54ad825d0304071ff",
-   "6613d8862d1659b1aabb9c5c"
+   "6613d8862d1659b1aabb9c5c",
+   "660a6144b08ac7518f1f7d63"
   ]
  },
  "kineti-wall-squat": {
@@ -2384,7 +2395,9 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "664744bf5c2c1f75d4d71e41"
+   "664744bf5c2c1f75d4d71e41",
+   "660a6145b08ac7518f1f8120",
+   "664744bf5c2c1f75d4d71d96"
   ]
  },
  "kineti-step-up": {
@@ -3039,5 +3052,116 @@
    "660a6145b08ac7518f1f7f32"
   ],
   "move": "shallow-split-squat"
+ },
+ "kineti-seated-arm-circles": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8054"
+  ]
+ },
+ "kineti-seated-shoulder-rolls-forward": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407243"
+  ]
+ },
+ "kineti-seated-abduction-elbow-bent": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8009"
+  ]
+ },
+ "kineti-seated-shoulder-abduction-180": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f800e"
+  ]
+ },
+ "kineti-seated-external-rotation": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f8026"
+  ]
+ },
+ "kineti-seated-horizontal-abduction": {
+  "lib": "kineti",
+  "view": "top3q",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048e929"
+  ]
+ },
+ "kineti-seated-shoulder-extension": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048e927"
+  ]
+ },
+ "kineti-seated-alternating-front-raise": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "chair",
+   "dumbbell"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407204"
+  ]
+ },
+ "kineti-seated-side-bend-arms-crossed": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80ff"
+  ]
+ },
+ "kineti-seated-side-bend-hands-head": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "660a61776a80d359d40dce98"
+  ]
+ },
+ "kineti-seated-knee-flexion": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "chair"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e80b"
+  ]
  }
 }

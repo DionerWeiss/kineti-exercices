@@ -2800,5 +2800,977 @@
   "Deitado de costas com o cotovelo dobrado a 90°, segura o antebraço com a outra mão e tenta esticar o cotovelo contra ela, sem deixá-lo mexer.",
   "Tríceps",
   "cotovelos_punhos_maos"
+ ],
+ "kineti-chair-heel-on-chair-knee-extension": [
+  "Extensão passiva do joelho com o calcanhar na cadeira da frente",
+  "Sentado, com o calcanhar apoiado no assento de outra cadeira à frente, deixa o joelho esticar e empurra a coxa suavemente com as mãos.",
+  "Amplitude de extensão do joelho",
+  "joelhos"
+ ],
+ "kineti-chair-band-ankle-eversion": [
+  "Eversão dos tornozelos contra a faixa, sentado",
+  "Sentado, com uma faixa elástica em volta da frente dos dois pés, gira as pontas dos pés para fora contra a faixa, com os calcanhares no chão, e volta devagar.",
+  "Fibulares (eversores)",
+  "tornozelos_pes"
+ ],
+ "kineti-chair-band-ankle-inversion": [
+  "Inversão do tornozelo contra a faixa, sentado",
+  "Sentado, com a faixa presa na parte interna do pé e num ponto ao lado, gira o pé para dentro contra a faixa, com o calcanhar no chão, e volta devagar.",
+  "Tibial posterior (inversores)",
+  "tornozelos_pes"
+ ],
+ "kineti-chair-ankle-inversion-eversion": [
+  "Inversão e eversão do tornozelo, sentado",
+  "Sentado, com o calcanhar fixo no chão, gira a ponta do pé para dentro e depois para fora, devagar.",
+  "Mobilidade e força do tornozelo",
+  "tornozelos_pes"
+ ],
+ "kineti-chair-beach-arms": [
+  "Cotovelos para a frente e para trás com as mãos atrás da cabeça, sentado",
+  "Sentado, com as mãos atrás da cabeça, junta os cotovelos à frente do rosto e depois os abre bem, apertando as escápulas.",
+  "Protração e retração das escápulas",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-soleus-strap": [
+  "Alongamento do sóleo com faixa, sentado",
+  "Sentado, com uma faixa sob a parte da frente do pé e o calcanhar no chão, puxa a faixa levantando a ponta do pé. Sustenta e relaxa.",
+  "Alongamento do sóleo",
+  "tornozelos_pes"
+ ],
+ "kineti-chair-triceps-dips": [
+  "Mergulho de tríceps na cadeira",
+  "Com as mãos na borda de uma cadeira firme e os pés no chão, dobra os cotovelos descendo o quadril à frente do assento e empurra para subir.",
+  "Tríceps e ombros",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-chair-dips-kick-out": [
+  "Mergulho na cadeira com chute à frente",
+  "Com as mãos na borda de uma cadeira, desce e sobe o quadril dobrando os cotovelos e, ao subir, estica uma perna à frente, alternando.",
+  "Tríceps, quadríceps e tronco",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-chair-hip-flexion-isometric": [
+  "Isometria de flexão do quadril, sentado",
+  "Sentado, com as mãos sobre a coxa, tenta levantar o joelho enquanto as mãos seguram, quase sem mexer. Sustenta e relaxa.",
+  "Flexores do quadril e quadríceps",
+  "quadril_gluteos"
+ ],
+ "kineti-chair-knee-flexion-assist": [
+  "Flexão do joelho assistida pela outra perna, sentado",
+  "Sentado, dobra o joelho levando o pé para baixo da cadeira e usa o tornozelo da outra perna para empurrar um pouco mais. Sustenta e relaxa.",
+  "Amplitude de flexão do joelho",
+  "joelhos"
+ ],
+ "kineti-chair-pulley-flexion": [
+  "Flexão do ombro assistida com roldana, sentado",
+  "Sentado, com uma roldana acima e atrás, puxa a corda para baixo com o braço bom, deixando o outro braço subir à frente até onde for confortável.",
+  "Amplitude de flexão do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-pulley-abduction": [
+  "Abdução do ombro assistida com roldana, sentado",
+  "Sentado, com a roldana acima e atrás, puxa a corda com o braço bom para elevar o outro braço pelo lado.",
+  "Amplitude de abdução do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-prayer-stretch": [
+  "Alongamento em prece dos punhos, sentado",
+  "Sentado, com as palmas juntas à frente do peito, desce as mãos em direção à cintura sem separar as palmas. Sustenta e volta.",
+  "Alongamento dos flexores do punho",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-chair-chin-tuck-forearms-table": [
+  "Retração do queixo com os antebraços na mesa",
+  "Sentado com os antebraços apoiados numa mesa e o tronco um pouco inclinado, recolhe o queixo e depois o leva em direção ao peito, voltando devagar.",
+  "Flexores profundos do pescoço",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-neck-isometric-forehead": [
+  "Isometria do pescoço com a mão na cabeça, sentado",
+  "Sentado com a coluna ereta, apoia a mão na testa ou na lateral da cabeça e empurra a cabeça contra ela sem deixar mexer. Sustenta e relaxa.",
+  "Força isométrica do pescoço",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-neck-flexion-stretch": [
+  "Alongamento do pescoço levando o queixo ao peito, sentado",
+  "Sentado, com as mãos atrás da cabeça, leva o queixo em direção ao peito e deixa o peso das mãos aumentar o alongamento. Sustenta e volta.",
+  "Alongamento da nuca e da coluna torácica alta",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-pelvic-tilt-table": [
+  "Báscula da pelve sentado, mãos na mesa",
+  "Sentado, com as mãos apoiadas numa mesa, arredonda a coluna lombar e depois a arqueia, alternando devagar.",
+  "Mobilidade lombar",
+  "tronco_coluna"
+ ],
+ "kineti-chair-shoulder-rotation-90-supported": [
+  "Rotação do ombro com o braço apoiado a 90°, sentado",
+  "Sentado, com o braço apoiado lateralmente na altura do ombro e o cotovelo a 90°, gira o antebraço para cima e depois para baixo.",
+  "Amplitude de rotação do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-band-internal-rotation": [
+  "Rotação interna do ombro contra a faixa, sentado",
+  "Sentado, com o cotovelo a 90° junto ao corpo e a faixa presa ao lado, gira o antebraço para dentro em direção à barriga e volta devagar.",
+  "Rotadores internos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-foot-tap-markers": [
+  "Tocar marcas no chão com o pé, sentado",
+  "Sentado na borda da cadeira, toca com a ponta do pé marcas no chão à frente, ao lado e na diagonal, voltando o pé a cada toque.",
+  "Coordenação e precisão do movimento da perna",
+  "equilibrio"
+ ],
+ "kineti-chair-side-bend-arm-on-table": [
+  "Alongamento dos adutores do ombro inclinando sobre a mesa",
+  "Sentado ao lado de uma mesa, com o braço esticado apoiado sobre ela, inclina o tronco em direção à mesa até sentir o alongamento na lateral. Sustenta e volta.",
+  "Alongamento do grande dorsal e da lateral do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-median-nerve-glide": [
+  "Deslizamento do nervo mediano, sentado",
+  "Sentado, abre o braço para o lado, estica o cotovelo levando o punho para trás e inclina a cabeça para o lado oposto, voltando devagar.",
+  "Mobilidade neural (túnel do carpo)",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-chair-hip-hike": [
+  "Elevação de um lado do quadril, sentado",
+  "Sentado com a postura ereta, levanta um lado do quadril tirando a nádega do assento, desce e alterna.",
+  "Quadrado lombar e transferência de peso",
+  "tronco_coluna"
+ ],
+ "kineti-chair-diagonal-reach": [
+  "Alcance em diagonal, do pé ao alto, sentado",
+  "Sentado, inclina o tronco para pegar algo perto do pé oposto e depois leva o braço em diagonal para cima e para fora, acompanhando com o olhar.",
+  "Rotação do tronco e alcance",
+  "tronco_coluna"
+ ],
+ "kineti-chair-ball-roll-side": [
+  "Rolar a bola suíça ao lado com o braço, sentado",
+  "Sentado sem encostar, com o braço apoiado numa bola suíça ao lado, rola a bola para a frente e para trás mantendo o tronco parado.",
+  "Estabilidade da escápula",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-arm-shake": [
+  "Sacudir os braços, sentado",
+  "Sentado com as costas eretas e os braços soltos ao lado do corpo, sacode os braços com movimentos rápidos e leves.",
+  "Relaxamento dos membros superiores",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-slump": [
+  "Mobilização neural em slump, sentado",
+  "Sentado, curva o tronco e abaixa a cabeça, depois estica um joelho e puxa a ponta do pé para cima até sentir uma leve tensão, voltando devagar.",
+  "Mobilidade do nervo ciático",
+  "quadril_gluteos"
+ ],
+ "kineti-chair-arm-rotation-supported": [
+  "Rotação do braço apoiado na mesa, sentado",
+  "Sentado, com o braço esticado para o lado sobre travesseiros numa mesa, gira o braço inteiro até a palma ficar para cima e depois para baixo.",
+  "Mobilidade do ombro e drenagem (linfedema)",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-hip-external-rotation": [
+  "Rotação externa do quadril sentado na bola suíça",
+  "Sentado na bola suíça, levanta um pouco um pé e leva o joelho para fora, mantendo o tronco estável, e volta.",
+  "Rotadores do quadril e estabilidade",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-leg-circles": [
+  "Círculos com a perna esticada sentado na bola suíça",
+  "Sentado na bola suíça com as mãos na cintura, estica uma perna à frente e desenha círculos com o pé, sem perder a postura.",
+  "Estabilidade do tronco e quadril",
+  "tronco_coluna"
+ ],
+ "kineti-ball-knee-lift-abduction": [
+  "Elevar o joelho e abrir para o lado, sentado na bola suíça",
+  "Sentado na bola suíça, eleva um joelho em direção ao peito e depois o leva para o lado, voltando devagar.",
+  "Quadril e estabilidade do tronco",
+  "quadril_gluteos"
+ ],
+ "kineti-ball-reverse-sit-up": [
+  "Inclinação para trás sentado na bola suíça",
+  "Sentado na bola suíça com os pés firmes e os braços cruzados, inclina o tronco para trás devagar e volta à posição.",
+  "Abdômen e estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-ball-bounce": [
+  "Quicar sentado na bola suíça",
+  "Sentado na bola suíça com os pés no chão e as mãos na cintura, faz pequenos quiques mantendo a coluna ereta.",
+  "Equilíbrio e controle postural",
+  "equilibrio"
+ ],
+ "kineti-ball-bounce-one-foot": [
+  "Quicar na bola suíça com um pé elevado",
+  "Sentado na bola suíça com um pé levemente fora do chão, faz pequenos quiques controlados sem perder o equilíbrio.",
+  "Equilíbrio e controle do tronco",
+  "equilibrio"
+ ],
+ "kineti-chair-levator-stretch": [
+  "Alongamento do elevador da escápula, sentado",
+  "Sentado, com uma mão atrás das costas, leva o nariz em direção à axila do lado oposto e sustenta, alternando os lados.",
+  "Alongamento do elevador da escápula e trapézio",
+  "ombros_escapulas"
+ ],
+ "kineti-chair-neck-side-stretch": [
+  "Alongamento lateral do pescoço, sentado",
+  "Sentado, com uma mão atrás das costas, inclina a cabeça para o lado oposto até sentir o alongamento na lateral do pescoço. Sustenta e alterna.",
+  "Alongamento dos escalenos e trapézio superior",
+  "ombros_escapulas"
+ ],
+ "chair-shoulder-press": [
+  "Desenvolvimento dos ombros com halteres, sentado",
+  "Sentado com a coluna ereta, segura os halteres na altura dos ombros e eleva os braços acima da cabeça, descendo devagar.",
+  "Deltoides e tríceps",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-shoulder-rolls": [
+  "Movimentos das escápulas sentado na bola suíça",
+  "Sentado ereto na bola suíça com as mãos nas coxas, movimenta os ombros para cima, para trás e para baixo, explorando as posições das escápulas.",
+  "Consciência e controle das escápulas",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-steering-wheel": [
+  "Girar o volante imaginário, sentado na bola suíça",
+  "Sentado na bola suíça com os braços esticados à frente, gira as mãos como se girasse um volante para um lado e para o outro, mantendo o tronco estável.",
+  "Estabilidade do tronco e ombros",
+  "tronco_coluna"
+ ],
+ "chair-forward-fold": [
+  "Alongamento das costas inclinando à frente, sentado",
+  "Sentado, inclina o tronco à frente levando os braços em direção ao chão e sustenta, sentindo o alongamento nas costas.",
+  "Alongamento do grande dorsal e das costas",
+  "tronco_coluna"
+ ],
+ "kineti-stand-feet-together-supported": [
+  "Equilíbrio em pé com os pés juntos, cadeira ao lado",
+  "Em pé, com os pés juntos e uma mão perto do encosto de uma cadeira ao lado, mantém o corpo ereto e estável. Pode progredir virando a cabeça ou fechando os olhos.",
+  "Equilíbrio estático",
+  "equilibrio"
+ ],
+ "kineti-stand-feet-apart-supported": [
+  "Equilíbrio em pé de olhos fechados, cadeira ao lado",
+  "Em pé, com os pés afastados e uma cadeira ao lado para segurança, fecha os olhos e mantém o corpo estável.",
+  "Equilíbrio sem a visão",
+  "equilibrio"
+ ],
+ "kineti-foam-stand-feet-together-supported": [
+  "Equilíbrio com os pés juntos sobre a almofada, cadeira ao lado",
+  "Em pé sobre uma almofada de espuma com os pés juntos e uma cadeira ao lado, mantém o equilíbrio. Pode progredir virando a cabeça ou fechando os olhos.",
+  "Equilíbrio em base instável",
+  "equilibrio"
+ ],
+ "kineti-foam-stand-supported": [
+  "Equilíbrio em pé sobre a almofada, cadeira ao lado",
+  "Em pé sobre uma almofada de espuma com os pés afastados e uma cadeira ao lado, mantém o equilíbrio. Pode progredir virando a cabeça ou fechando os olhos.",
+  "Equilíbrio em base instável",
+  "equilibrio"
+ ],
+ "kineti-tandem-stance-supported": [
+  "Apoio em tandem, um pé à frente do outro, cadeira ao lado",
+  "Em pé com um pé exatamente à frente do outro e uma cadeira ao lado, mantém o equilíbrio. Pode progredir virando a cabeça ou fechando os olhos.",
+  "Equilíbrio em base estreita",
+  "equilibrio"
+ ],
+ "kineti-tandem-stance-arms-out": [
+  "Apoio em tandem com os braços abertos",
+  "Em pé com um pé à frente do outro e os braços abertos para os lados, mantém o equilíbrio. Pode progredir fechando os olhos.",
+  "Equilíbrio em base estreita",
+  "equilibrio"
+ ],
+ "kineti-tandem-stance-nodding": [
+  "Apoio em tandem acenando a cabeça com o olhar fixo",
+  "Em pé com um pé à frente do outro, mantém os olhos num ponto fixo e acena a cabeça para cima e para baixo sem perder o equilíbrio.",
+  "Estabilização do olhar e equilíbrio (vestibular)",
+  "equilibrio"
+ ],
+ "kineti-foam-tandem-supported": [
+  "Apoio em tandem sobre a almofada, cadeira ao lado",
+  "Sobre uma almofada de espuma, com um pé à frente do outro e uma cadeira ao lado, mantém o equilíbrio.",
+  "Equilíbrio em base estreita e instável",
+  "equilibrio"
+ ],
+ "kineti-foam-tandem-arm-overhead": [
+  "Apoio em tandem na almofada elevando um braço",
+  "Sobre uma almofada de equilíbrio, com um pé à frente do outro, eleva um braço acima da cabeça, desce e alterna.",
+  "Equilíbrio dinâmico",
+  "equilibrio"
+ ],
+ "kineti-single-leg-arms-out": [
+  "Equilíbrio numa perna com os braços abertos",
+  "Em pé numa perna, com os braços abertos para os lados, mantém o equilíbrio. Pode progredir virando a cabeça.",
+  "Equilíbrio unipodal",
+  "equilibrio"
+ ],
+ "kineti-single-leg-arm-circles": [
+  "Equilíbrio numa perna fazendo círculos com os braços",
+  "Em pé numa perna, com os braços abertos, faz círculos com os braços sem perder o equilíbrio.",
+  "Equilíbrio unipodal dinâmico",
+  "equilibrio"
+ ],
+ "kineti-foam-feet-together-nodding": [
+  "Pés juntos na almofada acenando a cabeça",
+  "Em pé sobre uma almofada de equilíbrio com os pés juntos, leva o queixo ao peito e depois olha para cima, mantendo o equilíbrio.",
+  "Equilíbrio e estímulo vestibular",
+  "equilibrio"
+ ],
+ "kineti-standing-shrug-arms-out": [
+  "Elevação dos ombros com os braços abertos, em pé",
+  "Em pé, com os braços esticados e um pouco afastados do corpo, sobe os ombros em direção às orelhas e desce devagar.",
+  "Trapézio superior",
+  "ombros_escapulas"
+ ],
+ "kineti-pistol-squat": [
+  "Agachamento numa perna com a outra à frente (pistol)",
+  "Em pé numa perna, com a outra esticada à frente e os braços para a frente, agacha o mais fundo possível sem encostar o pé no chão e sobe.",
+  "Força das pernas e equilíbrio",
+  "joelhos"
+ ],
+ "kineti-single-leg-squat-supported": [
+  "Agachamento numa perna com apoio na cadeira",
+  "Segurando o encosto de uma cadeira, levanta um pé e flexiona o joelho da perna de apoio, descendo devagar, e sobe.",
+  "Quadríceps, glúteos e controle do joelho",
+  "joelhos"
+ ],
+ "kineti-single-leg-mini-squat": [
+  "Miniagachamento numa perna",
+  "Em pé numa perna, com a outra levemente para trás e as mãos na cintura, flexiona um pouco o joelho de apoio e volta, sem deixar o joelho ceder para dentro.",
+  "Controle do joelho e glúteo médio",
+  "joelhos"
+ ],
+ "kineti-goblet-squat": [
+  "Agachamento com peso no peito (goblet)",
+  "Em pé, segurando um peso junto ao peito, agacha levando o quadril para trás e para baixo e sobe.",
+  "Quadríceps, glúteos e tronco",
+  "joelhos"
+ ],
+ "kineti-squat-arms-crossed": [
+  "Agachamento lento com os braços cruzados",
+  "Em pé com os braços cruzados à frente, agacha devagar até onde conseguir controlar e sobe.",
+  "Força excêntrica das pernas",
+  "joelhos"
+ ],
+ "kineti-mini-squat-to-chair": [
+  "Miniagachamento em direção a uma cadeira alta",
+  "Em pé, de costas para uma cadeira alta, começa a sentar levando o quadril para trás com os braços à frente e sobe antes de encostar.",
+  "Força para levantar e sentar",
+  "mobilidade_transferencias"
+ ],
+ "kineti-side-to-side-squat": [
+  "Agachamento com passo lateral, alternando os lados",
+  "Em pé com os pés juntos, dá um passo largo para o lado agachando, volta e repete para o outro lado.",
+  "Pernas e quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-median-nerve-glide-standing": [
+  "Deslizamento do nervo mediano, em pé",
+  "Em pé, abre o braço para o lado, estica o cotovelo levando o punho para trás e inclina a cabeça para o lado oposto, voltando devagar.",
+  "Mobilidade neural",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-radial-nerve-glide-standing": [
+  "Deslizamento do nervo radial, em pé",
+  "Em pé, gira o braço para dentro e o leva para trás e para o lado com o punho dobrado, inclinando a cabeça para o lado oposto, e volta.",
+  "Mobilidade neural",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-ulnar-nerve-glide-standing": [
+  "Deslizamento do nervo ulnar, em pé",
+  "Em pé, com o braço aberto, dobra o cotovelo levando a mão em direção ao rosto, como uma máscara, e volta devagar.",
+  "Mobilidade neural",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-supraspinatus-stretch-behind-back": [
+  "Alongamento do ombro com o braço atrás das costas, em pé",
+  "Em pé, leva o braço para trás das costas e, com a outra mão, puxa o punho em direção ao lado oposto. Sustenta e alterna.",
+  "Alongamento do supraespinal",
+  "ombros_escapulas"
+ ],
+ "kineti-walk-clapping": [
+  "Caminhar batendo palmas a cada passo",
+  "Caminha para a frente com passos firmes e largos, batendo palmas a cada passo.",
+  "Coordenação e dupla tarefa na marcha",
+  "marcha"
+ ],
+ "kineti-split-stance-weight-shift": [
+  "Transferência de peso para a frente e para trás, cadeira ao lado",
+  "Em pé ao lado de uma cadeira, com um pé à frente, transfere o peso para a perna da frente e depois para a de trás.",
+  "Propulsão da marcha e equilíbrio",
+  "marcha"
+ ],
+ "kineti-jog-in-place": [
+  "Corrida no lugar",
+  "Em pé, simula uma corrida sem sair do lugar, elevando os joelhos alternadamente e balançando os braços.",
+  "Condicionamento cardiovascular",
+  "equilibrio"
+ ],
+ "arm-pendulum": [
+  "Pêndulo dos braços",
+  "Em pé, deixa os braços soltos e balança-os para a frente e para trás como um pêndulo, relaxando os ombros.",
+  "Mobilidade e relaxamento do ombro",
+  "ombros_escapulas"
+ ],
+ "wall-calf-stretch": [
+  "Alongamento da panturrilha com apoio na parede",
+  "Em pé, com as mãos na parede, leva uma perna para trás com o calcanhar no chão e inclina o corpo à frente até sentir o alongamento na panturrilha.",
+  "Alongamento da panturrilha",
+  "tornozelos_pes"
+ ],
+ "standing-hamstring-curl": [
+  "Flexão do joelho em pé com as mãos na parede",
+  "Em pé, com as mãos apoiadas na parede, dobra um joelho levando o calcanhar em direção ao glúteo e desce devagar, alternando.",
+  "Posteriores da coxa",
+  "joelhos"
+ ],
+ "chin-tuck": [
+  "Retração do queixo em pé",
+  "Em pé com a postura ereta, leva o queixo para trás formando um queixo duplo, sem inclinar a cabeça, sustenta e solta.",
+  "Flexores profundos do pescoço",
+  "ombros_escapulas"
+ ],
+ "front-raise": [
+  "Elevação frontal dos braços com halteres",
+  "Em pé, com um halter em cada mão, eleva os braços esticados à frente até a altura dos ombros e desce devagar.",
+  "Deltoide anterior",
+  "ombros_escapulas"
+ ],
+ "standing-crescent-side-bend": [
+  "Inclinação lateral do tronco com os braços acima da cabeça",
+  "Em pé, com os braços estendidos acima da cabeça, inclina o tronco para um lado, sustenta e alterna.",
+  "Alongamento da lateral do tronco",
+  "tronco_coluna"
+ ],
+ "standing-forward-fold-soft": [
+  "Flexão do tronco em pé com joelhos soltos",
+  "Em pé, inclina o tronco à frente deixando os braços pendurados em direção ao chão, sustenta e sobe devagar.",
+  "Alongamento dos posteriores e da coluna",
+  "tronco_coluna"
+ ],
+ "wrist-circles": [
+  "Círculos com os punhos em pé",
+  "Em pé, com os cotovelos dobrados junto ao corpo, faz círculos com os punhos nos dois sentidos.",
+  "Mobilidade dos punhos",
+  "cotovelos_punhos_maos"
+ ],
+ "standing-snow-angel": [
+  "Puxada dos braços de cima para baixo, em pé",
+  "Em pé, com os braços estendidos acima da cabeça, puxa os cotovelos para baixo até formar um W, apertando as escápulas, e volta.",
+  "Grande dorsal e escápulas",
+  "ombros_escapulas"
+ ],
+ "kineti-wall-angel": [
+  "Anjo na parede",
+  "Em pé com as costas, a cabeça e os braços encostados na parede, desliza os braços para cima e para baixo sem descolar da parede.",
+  "Postura e mobilidade dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-band-ankles-lateral-shuffle": [
+  "Passos laterais com faixa nos tornozelos",
+  "Com uma faixa elástica em volta dos tornozelos e os joelhos levemente dobrados, dá passos laterais mantendo a faixa esticada.",
+  "Glúteo médio",
+  "quadril_gluteos"
+ ],
+ "biceps-curl": [
+  "Rosca bíceps com halteres em pé",
+  "Em pé, com um halter em cada mão e as palmas voltadas para o corpo, dobra os cotovelos levando os pesos aos ombros e desce devagar.",
+  "Bíceps e braquiorradial",
+  "cotovelos_punhos_maos"
+ ],
+ "side-step-taps": [
+  "Passos laterais tocando o pé",
+  "Em pé, dá um passo para o lado tocando o pé no chão e volta, alternando os lados.",
+  "Equilíbrio lateral",
+  "equilibrio"
+ ],
+ "single-leg-mini-hinge": [
+  "Inclinação à frente numa perna (pegar um objeto)",
+  "Em pé numa perna, inclina o tronco à frente com as costas retas como se fosse pegar um objeto no chão e volta.",
+  "Equilíbrio unipodal e posteriores",
+  "equilibrio"
+ ],
+ "hinge-reach": [
+  "Inclinar o tronco para alcançar o chão, em pé",
+  "Em pé, inclina o tronco à frente dobrando o quadril para alcançar um objeto no chão e volta à posição ereta.",
+  "Alcance e controle do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-band-chest-press-back": [
+  "Supino em pé com faixa pelas costas",
+  "Em pé, com a faixa passando por trás das costas, empurra as mãos à frente até esticar os braços e volta devagar.",
+  "Peitorais, ombros e tríceps",
+  "ombros_escapulas"
+ ],
+ "kineti-wall-slide-flexion": [
+  "Deslizar a mão na parede elevando o braço",
+  "De frente para a parede, desliza a mão para cima pela parede o máximo que conseguir e desce devagar.",
+  "Amplitude de flexão do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-band-knee-lateral-stance": [
+  "Estabilização lateral do joelho com faixa, numa perna",
+  "Com uma faixa presa por fora do joelho e a mão numa cadeira ao lado, fica numa perna controlando o joelho contra a faixa.",
+  "Estabilidade do joelho",
+  "joelhos"
+ ],
+ "kineti-band-knee-medial-squat": [
+  "Miniagachamento com faixa puxando o joelho para dentro",
+  "Com uma faixa abaixo do joelho puxando-o para dentro e as mãos na cadeira, faz miniagachamentos sem deixar o joelho ceder.",
+  "Controle do joelho e glúteo médio",
+  "joelhos"
+ ],
+ "kineti-band-knee-back-squat": [
+  "Controle da hiperextensão do joelho com faixa",
+  "Com uma faixa atrás do joelho presa atrás, dobra levemente os joelhos e volta sem travar o joelho em hiperextensão.",
+  "Controle do joelho",
+  "joelhos"
+ ],
+ "kineti-walk-stride-marks": [
+  "Marcha com passos longos sobre marcas",
+  "Caminha pisando sobre marcas no chão afastadas o suficiente para exigir passos mais longos, passando um pé à frente do outro.",
+  "Comprimento do passo",
+  "marcha"
+ ],
+ "kineti-step-to-marks": [
+  "Marcha passo a passo sobre marcas",
+  "Dá um passo à frente pisando numa marca no chão e traz o outro pé para junto, avançando marca por marca.",
+  "Treino de marcha",
+  "marcha"
+ ],
+ "kineti-supine-elbow-flexion": [
+  "Flexão dos cotovelos deitado",
+  "Deitado de costas com os braços ao lado do corpo, dobra os cotovelos levando as mãos em direção aos ombros e estica devagar.",
+  "Amplitude do cotovelo",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-supine-shoulder-abduction-elbow-bent": [
+  "Abdução do ombro com o cotovelo dobrado, deitado",
+  "Deitado de costas com o cotovelo dobrado a 90° junto ao corpo, desliza o braço para o lado até a altura do ombro e volta.",
+  "Amplitude de abdução do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-tabletop-knees-open": [
+  "Abrir os joelhos com as pernas a 90°, deitado",
+  "Deitado de costas com quadris e joelhos a 90°, afasta os joelhos para os lados sem mexer a pelve e junta de novo.",
+  "Estabilidade lombar e rotadores do quadril",
+  "tronco_coluna"
+ ],
+ "kineti-long-arm-crunch": [
+  "Abdominal com os braços esticados acima da cabeça",
+  "Deitado de costas com os joelhos dobrados e os braços esticados acima da cabeça, eleva o tronco mantendo os braços junto às orelhas e desce devagar.",
+  "Reto abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-knee-up-crunch": [
+  "Abdominal com as pernas para o alto",
+  "Deitado de costas com as pernas esticadas para o teto, eleva o tronco levando as mãos em direção aos pés e desce devagar.",
+  "Reto abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-twisting-crunch": [
+  "Abdominal com rotação, mãos atrás da cabeça",
+  "Deitado de costas com os joelhos dobrados e as mãos atrás da cabeça, eleva o tronco girando para um lado, desce e alterna.",
+  "Oblíquos e reto abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-v-sit-up": [
+  "Abdominal em V",
+  "Deitado de costas com braços e pernas esticados, eleva o tronco e as pernas ao mesmo tempo formando um V e desce devagar.",
+  "Reto abdominal e flexores do quadril",
+  "tronco_coluna"
+ ],
+ "kineti-reverse-crunch": [
+  "Abdominal invertido",
+  "Deitado de costas com as pernas dobradas no ar, leva os joelhos em direção ao peito tirando o quadril do chão e desce devagar.",
+  "Abdômen inferior",
+  "tronco_coluna"
+ ],
+ "kineti-leg-spreaders": [
+  "Abrir e fechar as pernas elevadas, deitado",
+  "Deitado de costas com as pernas esticadas e um pouco elevadas, afasta e junta as pernas sem encostar no chão.",
+  "Abdômen e adutores",
+  "tronco_coluna"
+ ],
+ "kineti-supine-arm-circles-up": [
+  "Círculos com o braço apontado para o teto, deitado",
+  "Deitado de costas com um braço esticado para o teto, desenha pequenos círculos mantendo a escápula estável e inverte o sentido.",
+  "Estabilidade da escápula",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-protraction": [
+  "Protração da escápula alcançando o teto, deitado",
+  "Deitado de costas com o braço esticado para o teto, empurra a mão mais para cima afastando a escápula do chão e volta.",
+  "Serrátil anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-hands-behind-head-stretch": [
+  "Alongamento com as mãos atrás da cabeça, cotovelos abertos, deitado",
+  "Deitado de costas com as mãos entrelaçadas atrás da cabeça, deixa os cotovelos se abrirem em direção ao chão e sustenta.",
+  "Alongamento dos rotadores internos e peitorais",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-chest-opener": [
+  "Abertura do peito com os braços abertos, deitado",
+  "Deitado de costas, abre os braços para os lados com as palmas para cima, sentindo o alongamento no peito, e sustenta.",
+  "Alongamento dos peitorais e extensão torácica",
+  "ombros_escapulas"
+ ],
+ "kineti-figure4-bridge": [
+  "Ponte com uma perna cruzada sobre o joelho",
+  "Deitado de costas com um tornozelo cruzado sobre o joelho oposto, eleva o quadril com a perna de apoio e desce devagar.",
+  "Glúteos e posteriores",
+  "quadril_gluteos"
+ ],
+ "kineti-supine-chin-tuck": [
+  "Retração do queixo deitado",
+  "Deitado de costas, recolhe o queixo em direção ao pescoço pressionando suavemente a nuca, sustenta e relaxa.",
+  "Flexores profundos do pescoço",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-head-lift": [
+  "Elevar a cabeça com o queixo recolhido, deitado",
+  "Deitado de costas, recolhe o queixo e levanta a cabeça alguns centímetros, desce devagar.",
+  "Flexores do pescoço",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-roll-to-side": [
+  "Rolar de costas para o lado",
+  "Deitado de costas, rola o corpo para o lado levando o joelho e o braço opostos e volta, mantendo o tronco firme.",
+  "Mobilidade e controle do tronco",
+  "mobilidade_transferencias"
+ ],
+ "kineti-supine-sciatic-glide": [
+  "Mobilização do nervo ciático, deitado",
+  "Deitado de costas, segura a coxa com o quadril a 90° e estica o joelho puxando a ponta do pé, depois dobra e aponta o pé.",
+  "Mobilidade neural",
+  "quadril_gluteos"
+ ],
+ "kineti-prone-on-elbows-protraction": [
+  "Protração das escápulas apoiado nos cotovelos, de bruços",
+  "De bruços apoiado nos antebraços, empurra o chão afastando as escápulas e depois deixa o peito descer entre elas.",
+  "Serrátil anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-prone-hip-rotation": [
+  "Rotação do quadril com o joelho dobrado, de bruços",
+  "Deitado de bruços com um joelho a 90°, deixa o pé cair para fora e depois para dentro, girando o quadril.",
+  "Rotação interna e externa do quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-prone-quad-stretch-strap": [
+  "Alongamento do quadríceps com faixa, de bruços",
+  "De bruços, com uma faixa passada pelo pé, puxa o calcanhar em direção ao glúteo até sentir o alongamento na frente da coxa e sustenta.",
+  "Alongamento do quadríceps",
+  "joelhos"
+ ],
+ "kineti-prone-hip-abduction": [
+  "Abdução do quadril deslizando a perna, de bruços",
+  "Deitado de bruços com o abdômen contraído, desliza uma perna para o lado sem girar a pelve e volta.",
+  "Glúteo médio e estabilidade lombar",
+  "quadril_gluteos"
+ ],
+ "kineti-one-leg-push-up": [
+  "Flexão de braço com uma perna elevada",
+  "Em prancha alta com uma perna elevada, flexiona os cotovelos descendo o peito e empurra de volta.",
+  "Peitorais, tríceps e tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-spiderman-push-up": [
+  "Flexão de braço homem-aranha",
+  "Em prancha alta, ao descer o peito leva um joelho em direção ao cotovelo do mesmo lado, empurra para subir e alterna.",
+  "Peitorais, tronco e quadril",
+  "ombros_escapulas"
+ ],
+ "kineti-push-up-rotation": [
+  "Flexão de braço com rotação para prancha lateral",
+  "Em prancha alta, faz uma flexão e, ao subir, gira o corpo para uma prancha lateral levando o braço ao teto, voltando e alternando.",
+  "Peitorais, ombros e oblíquos",
+  "ombros_escapulas"
+ ],
+ "kineti-incline-push-up": [
+  "Flexão de braço inclinada na cadeira",
+  "Com as mãos no assento de uma cadeira firme e o corpo reto, flexiona os cotovelos aproximando o peito do assento e empurra de volta.",
+  "Peitorais e tríceps",
+  "ombros_escapulas"
+ ],
+ "kineti-decline-push-up": [
+  "Flexão de braço declinada com os pés na cadeira",
+  "Em prancha com as mãos no chão e os pés sobre uma cadeira, flexiona os cotovelos descendo o peito e empurra de volta.",
+  "Peitorais superiores e ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-pike-push-up": [
+  "Flexão de braço em V invertido",
+  "Com o quadril elevado em V invertido, flexiona os cotovelos levando a cabeça em direção ao chão e empurra de volta.",
+  "Ombros e tríceps",
+  "ombros_escapulas"
+ ],
+ "kineti-plank-buzz-saw": [
+  "Prancha balançando para a frente e para trás",
+  "Em prancha sobre os antebraços, desloca o corpo para a frente e para trás pelos ombros, mantendo o corpo alinhado.",
+  "Abdômen e estabilidade dos ombros",
+  "tronco_coluna"
+ ],
+ "kineti-plank-commando": [
+  "Prancha comando: dos antebraços para as mãos",
+  "Em prancha sobre os antebraços, sobe uma mão de cada vez até a prancha alta e desce de volta aos antebraços, alternando.",
+  "Tronco, ombros e tríceps",
+  "tronco_coluna"
+ ],
+ "kineti-plank-protraction": [
+  "Protração das escápulas em prancha alta",
+  "Em prancha alta com os braços esticados, empurra o chão afastando as escápulas e depois deixa o peito descer entre os ombros.",
+  "Serrátil anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-long-sit-quad-set": [
+  "Contração do quadríceps sentado com as pernas esticadas",
+  "Sentado com as pernas esticadas, pressiona o joelho para baixo contraindo a coxa e puxando a ponta do pé, sustenta e relaxa.",
+  "Quadríceps e extensão do joelho",
+  "joelhos"
+ ],
+ "kineti-long-sit-band-dorsiflexion": [
+  "Dorsiflexão do tornozelo contra a faixa, sentado",
+  "Sentado com as pernas esticadas e a faixa presa à frente passando pelo pé, puxa a ponta do pé em sua direção e volta devagar.",
+  "Tibial anterior",
+  "tornozelos_pes"
+ ],
+ "kineti-long-sit-band-eversion": [
+  "Eversão dos tornozelos contra a faixa, sentado no chão",
+  "Sentado com as pernas esticadas e uma faixa em volta dos pés, gira os pés para fora contra a faixa e volta devagar.",
+  "Fibulares",
+  "tornozelos_pes"
+ ],
+ "kineti-long-sit-band-plantarflexion": [
+  "Flexão plantar contra a faixa, sentado no chão",
+  "Sentado com as pernas esticadas e a faixa passada pela planta do pé, empurra a ponta do pé para longe contra a faixa e volta devagar.",
+  "Panturrilha",
+  "tornozelos_pes"
+ ],
+ "kineti-long-sit-band-inversion": [
+  "Inversão do tornozelo contra a faixa, pernas cruzadas",
+  "Sentado com as pernas esticadas e cruzadas, com a faixa em volta dos pés, gira o pé de cima para dentro contra a faixa e volta.",
+  "Tibial posterior",
+  "tornozelos_pes"
+ ],
+ "kineti-reverse-plank": [
+  "Prancha invertida",
+  "Sentado com as pernas esticadas e as mãos atrás do quadril, eleva o quadril alinhando o corpo dos ombros aos calcanhares e sustenta.",
+  "Glúteos, posteriores e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-sit-wall-slide": [
+  "Deslizar os braços na parede, sentado",
+  "Sentado no chão com as costas e a cabeça apoiadas na parede, desliza os braços para cima e para baixo sem descolar da parede.",
+  "Postura e mobilidade dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-knee-lift-arms-out": [
+  "Elevar o joelho abrindo os braços, sentado na bola suíça",
+  "Sentado na bola suíça, levanta um joelho e abre os braços para os lados mantendo o equilíbrio, volta e alterna.",
+  "Equilíbrio e estabilidade do tronco",
+  "equilibrio"
+ ],
+ "kineti-v-sit-ball-rotation": [
+  "Rotação em V sentado segurando a bola",
+  "Sentado com os joelhos dobrados, inclina o tronco para trás e tira os pés do chão, girando de um lado para o outro com a bola nas mãos.",
+  "Oblíquos e estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-side-jackknife": [
+  "Canivete lateral",
+  "Deitado de lado com a mão atrás da cabeça, eleva a perna de cima e o tronco ao mesmo tempo, aproximando-os, e desce devagar.",
+  "Oblíquos",
+  "tronco_coluna"
+ ],
+ "kineti-side-plank": [
+  "Prancha lateral no antebraço",
+  "Deitado de lado apoiado no antebraço, eleva o quadril alinhando o corpo e sustenta, podendo elevar o braço de cima.",
+  "Oblíquos e estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-side-plank-rotation": [
+  "Prancha lateral com rotação",
+  "Em prancha lateral, leva o braço de cima por baixo do corpo girando o tronco e depois abre de volta em direção ao teto.",
+  "Oblíquos e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-side-plank-knees": [
+  "Prancha lateral sobre os joelhos",
+  "Deitado de lado apoiado no antebraço com os joelhos dobrados, eleva o quadril alinhando tronco e coxas e sustenta.",
+  "Oblíquos e estabilidade do ombro",
+  "tronco_coluna"
+ ],
+ "kineti-sleeper-stretch": [
+  "Alongamento do dorminhoco (sleeper stretch)",
+  "Deitado de lado sobre o braço a alongar, com o cotovelo à frente a 90°, usa a outra mão para levar o antebraço em direção ao chão e sustenta.",
+  "Alongamento da cápsula posterior do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-side-lying-ir-dumbbell": [
+  "Rotação interna do ombro com halter, deitado de lado",
+  "Deitado de lado sobre o braço a exercitar, com o cotovelo a 90° e um halter na mão, gira o antebraço em direção à barriga e desce devagar.",
+  "Rotadores internos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-quadruped-protraction": [
+  "Protração e retração das escápulas de quatro apoios",
+  "De quatro apoios, empurra o chão afastando as escápulas e depois deixa o peito descer entre elas, sem dobrar os cotovelos.",
+  "Serrátil e estabilidade da escápula",
+  "ombros_escapulas"
+ ],
+ "kineti-genie-sit": [
+  "Inclinação para trás ajoelhado",
+  "Ajoelhado com o corpo reto e os braços cruzados, inclina o corpo inteiro para trás a partir dos joelhos e volta.",
+  "Quadríceps e abdômen",
+  "joelhos"
+ ],
+ "floor-ankle-circles": [
+  "Círculos com os tornozelos sentado no chão",
+  "Sentado com as pernas esticadas, desenha círculos com os pés nos dois sentidos.",
+  "Mobilidade do tornozelo",
+  "tornozelos_pes"
+ ],
+ "chair-knee-extension": [
+  "Extensão do joelho sentado",
+  "Sentado com as pernas penduradas, estica um joelho elevando o pé até a perna ficar reta e desce devagar.",
+  "Quadríceps",
+  "joelhos"
+ ],
+ "lying-snow-angel": [
+  "Anjo na neve deitado",
+  "Deitado de costas, desliza os braços pelo chão de baixo para cima e volta, como se desenhasse um anjo na neve.",
+  "Mobilidade dos ombros e estabilidade lombar",
+  "ombros_escapulas"
+ ],
+ "plank-to-down-dog-flow": [
+  "Da prancha ao V invertido",
+  "Da prancha alta, eleva o quadril formando um V invertido e volta à prancha, alongando a cadeia posterior.",
+  "Alongamento da cadeia posterior e ombros",
+  "tronco_coluna"
+ ],
+ "low-lunge-kneeling": [
+  "Afundo baixo ajoelhado",
+  "Com um joelho no chão e o outro pé à frente, desloca o quadril à frente e eleva os braços, alongando a frente do quadril.",
+  "Alongamento dos flexores e adutores do quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-supine-trunk-rotation-arms": [
+  "Rotação do tronco com os braços à frente, deitado",
+  "Deitado de costas com os braços esticados para o teto, gira o tronco e os braços para um lado sem tirar o quadril do chão e alterna.",
+  "Mobilidade torácica",
+  "tronco_coluna"
+ ],
+ "kineti-tuck-jump": [
+  "Salto grupado",
+  "De pé, faz um pequeno agachamento e salta para cima levando os joelhos em direção ao peito, aterrissando com os joelhos flexionados.",
+  "Potência das pernas",
+  "equilibrio"
+ ],
+ "kineti-pop-squat": [
+  "Agachamento com salto abrindo os pés",
+  "Com os pés juntos, salta abrindo as pernas e aterrissa num agachamento largo, depois salta juntando os pés de novo.",
+  "Potência e resistência das pernas",
+  "quadril_gluteos"
+ ],
+ "kineti-jumping-lunge": [
+  "Afundo com salto trocando as pernas",
+  "Em posição de afundo, salta com força trocando as pernas no ar e aterrissa no afundo com a outra perna à frente.",
+  "Potência das pernas e coordenação",
+  "joelhos"
+ ],
+ "kineti-sumo-squat-jump": [
+  "Agachamento sumô com salto",
+  "Com os pés bem afastados e as pontas para fora, agacha e salta para cima, aterrissando de volta no agachamento.",
+  "Glúteos, adutores e potência",
+  "quadril_gluteos"
+ ],
+ "kineti-pulse-squat-jump": [
+  "Agachamento com pulsos e salto",
+  "Agacha até as coxas ficarem paralelas ao chão, faz pequenos pulsos e então salta para cima, aterrissando suave.",
+  "Resistência e potência das pernas",
+  "joelhos"
+ ],
+ "kineti-toe-touch-jack": [
+  "Agachamento tocando os pés com salto em estrela",
+  "Agacha tocando os pés com as mãos e salta abrindo braços e pernas em estrela, voltando ao agachamento.",
+  "Condicionamento e coordenação",
+  "equilibrio"
+ ],
+ "kineti-criss-cross-jump": [
+  "Saltos cruzando braços e pernas",
+  "Salta abrindo braços e pernas para os lados e depois cruzando-os à frente, alternando a perna que fica na frente.",
+  "Coordenação e condicionamento",
+  "equilibrio"
+ ],
+ "kineti-jump-rope-scissor": [
+  "Saltos em tesoura como na corda",
+  "Com as mãos como se segurasse uma corda de pular, dá pequenos saltos alternando os pés à frente e atrás.",
+  "Coordenação e condicionamento",
+  "equilibrio"
+ ],
+ "kineti-side-hops": [
+  "Pequenos saltos de um lado para o outro",
+  "De pé, dá pequenos saltos para um lado e para o outro, aterrissando com os joelhos levemente flexionados.",
+  "Agilidade e coordenação",
+  "equilibrio"
+ ],
+ "kineti-jump-twist": [
+  "Saltos girando o quadril",
+  "Com os joelhos levemente flexionados, salta girando o quadril e as pernas para um lado e para o outro, mantendo o peito voltado para a frente.",
+  "Oblíquos e coordenação",
+  "tronco_coluna"
+ ],
+ "kineti-jump-forward-back": [
+  "Saltos com os dois pés para a frente e para trás sobre a linha",
+  "Atrás de uma linha no chão, salta com os pés juntos para a frente passando a linha e volta saltando para trás.",
+  "Potência e controle da aterrissagem",
+  "equilibrio"
+ ],
+ "kineti-hop-hold": [
+  "Salto no lugar numa perna, segurando a aterrissagem",
+  "Em pé numa perna com as mãos na cintura, dá um pequeno salto no lugar, segura a aterrissagem por alguns segundos e troca de perna.",
+  "Controle do joelho e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-four-square-hops": [
+  "Saltos ao redor de quatro quadrados",
+  "Num quadriculado em cruz no chão, salta com os dois pés de um quadrado para o outro, dando a volta, e depois inverte o sentido.",
+  "Agilidade e coordenação",
+  "equilibrio"
+ ],
+ "kineti-step-fast-feet": [
+  "Troca rápida de pés no degrau",
+  "Com um pé sobre o degrau e o outro no chão, troca os pés com um pequeno salto num ritmo rápido.",
+  "Agilidade e coordenação",
+  "equilibrio"
+ ],
+ "kineti-bosu-heel-raise-supported": [
+  "Elevação dos calcanhares no BOSU com apoio",
+  "Em pé sobre o BOSU com as mãos num apoio, sobe na ponta dos pés o máximo que conseguir e desce devagar.",
+  "Panturrilha e equilíbrio",
+  "tornozelos_pes"
+ ],
+ "kineti-side-step-high-knee": [
+  "Passos laterais com o joelho alto",
+  "De lado para uma fileira de cones, dá passos laterais elevando bem o joelho como se passasse por cima deles.",
+  "Coordenação e equilíbrio dinâmico",
+  "equilibrio"
+ ],
+ "single-calf-raise-supported": [
+  "Elevação do calcanhar numa perna com apoio",
+  "Com as mãos no encosto de uma cadeira, sobe na ponta de um pé só e desce devagar.",
+  "Panturrilha",
+  "tornozelos_pes"
+ ],
+ "hinge-row-no-weight": [
+  "Remada com o tronco inclinado",
+  "Com o tronco inclinado à frente e as costas retas, puxa os halteres em direção ao abdômen, apertando as escápulas, e desce devagar.",
+  "Dorsais e romboides",
+  "ombros_escapulas"
+ ],
+ "arms-back-chest-stretch": [
+  "Alongamento do peito levando os braços para trás",
+  "Em pé, leva os braços para trás abrindo o peito até sentir o alongamento dos peitorais e sustenta.",
+  "Alongamento dos peitorais",
+  "ombros_escapulas"
  ]
 }

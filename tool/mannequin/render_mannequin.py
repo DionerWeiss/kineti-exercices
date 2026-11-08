@@ -522,8 +522,21 @@ for job in JOBS:
                 o.scale.z *= top / 0.45
                 o.location.z = top / 2 - 0.02
     gr = json.loads(act['ground']) if 'ground' in act else None  # the height field the move was built on
-    if gr and (any(p_.startswith(SUPPORT_BALLS) for p_ in props) or props & {'walker', 'walkergo'}):
+    if gr and (any(p_.startswith(SUPPORT_BALLS) for p_ in props) or props & {'walker', 'walkergo', 'swissseat'}):
         pass  # the raised box is the top of an exercise ball (drawn by support_ball) or the walker's handles
+    elif gr and 'chairbox' in props:  # each raised box is a chair seat, its backrest on the side away from the pelvis
+        hp = bone_head('hips')
+        for x0, x1, y0, y1, h in gr['boxes']:
+            if h <= 0.03:
+                continue
+            c = Vector(((x0 + x1) / 2, (y0 + y1) / 2, 0))
+            box((c.x, c.y, h - 0.02), (x1 - x0, y1 - y0, 0.04), CHAIRC)
+            sy = 1 if c.y > hp.y else -1
+            yb = y1 if sy > 0 else y0
+            box((c.x, yb, h + 0.27), (x1 - x0, 0.03, 0.55), CHAIRC)
+            for xx in (x0 + 0.03, x1 - 0.03):
+                for yy in (y0 + 0.03, y1 - 0.03):
+                    box((xx, yy, (h - 0.04) / 2), (0.03, 0.03, h - 0.04), CHAIRC)
     elif gr and 'pillow' in props:  # each raised box is a stack of pillows (on a small table when it is high)
         base = gr.get('base', 0)
         for x0, x1, y0, y1, h in gr['boxes']:
@@ -605,9 +618,15 @@ for job in JOBS:
         p_ = max((palm('L'), palm('R')), key=lambda v: abs(v.x - hx))
         out = 1 if p_.x > hx else -1
         chair_side(p_.x + 0.02 * out, p_.y, out, p_.z - 0.04)
-    if 'wall' in props:
-        y = min(palm('L').y, palm('R').y) - 0.03
-        box((0, y - 0.05, 1.2), (1.4, 0.1, 2.4), WALLC)['noframe'] = True
+    if 'wall' in props:  # in front of the hands, facing the way the hands reach from the pelvis (moves may be turned)
+        pm = (palm('L') + palm('R')) / 2
+        dv = pm - bone_head('hips')
+        dv.z = 0
+        dv = dv.normalized() if dv.length > 0.05 else Vector((0, -1, 0))
+        c = pm + dv * 0.08
+        o = box((c.x, c.y, 1.2), (1.4, 0.1, 2.4), WALLC)
+        o.rotation_euler.z = math.atan2(dv.x, -dv.y)
+        o['noframe'] = True
     if 'roll' in props:
         k = bone_head('kneeL')
         r = max(0.05, (k.z - 0.05) / 2)
@@ -1016,6 +1035,14 @@ for job in JOBS:
         wb.rotation_mode = 'QUATERNION'
         temp.append(wb)
         animate([(wb, lambda end=end, dv=dv: Matrix.Translation(band_end(end) + dv * rb))], f0, f1)
+    if 'pulley' in props:  # an overhead pulley above and behind the head, a rope from hand to hand over it
+        scene.frame_set(f0)
+        hd = bone_head('neck')
+        P = Vector((hd.x, hd.y + 0.25, hd.z + 0.75))
+        cyl((P.x, P.y, P.z), 0.05, 0.02, 'x', GRIPC)
+        box((P.x, P.y + 0.06, P.z + 0.3), (0.04, 0.04, 0.6), CHAIRC)['noframe'] = True
+        extra.append(P + Vector((0, 0, 0.06)))
+        animate([(rod(0.006, BANDC), lambda: seg_matrix(palm('L'), P)), (rod(0.006, BANDC), lambda: seg_matrix(palm('R'), P))], f0, f1)
     if 'kneepillow' in props:  # a folded pillow squeezed between the knees
         bpy.ops.mesh.primitive_uv_sphere_add(radius=1, segments=32, ring_count=16)
         kp = bpy.context.object

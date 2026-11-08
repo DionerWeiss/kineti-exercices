@@ -42,7 +42,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `stool`: banqueta (cadeira sem encosto), com o manequim sentado. Serve quando algo passa atrás das costas;
   - `support`: encosto de cadeira à frente, na altura das mãos;
   - `side`: cadeira ao lado, com a mão que está mais afastada do corpo no encosto;
-  - `wall`: parede na frente das mãos;
+  - `wall`: parede logo à frente das mãos, virada para a direção em que as mãos vão a partir da pelve (funciona também com os movimentos do desk-break, que vêm girados);
   - `roll`: rolo sob o joelho;
   - `ball`: bola entre os joelhos, que achata. Só põe a cadeira quando a pelve está na altura do assento (agachamento em pé e ponte também usam a bola);
   - `cuff`: tornozeleira;
@@ -88,7 +88,9 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `wallpress-<ponta>-<direção>`: bola entre uma mão ou um pé e uma parede além dela (`F`, `B`, `L`, `R`), na distância máxima que a ponta alcança;
   - `bosuflat`: BOSU com a cúpula para baixo (plataforma em cima), no lugar da caixa de `ground`;
   - `pillow`: cada caixa de `ground` vira uma pilha de travesseiros, ou uma mesa com travesseiro em cima quando passa de 45 cm. Sob a cabeça, flexione um pouco o pescoço (`neck [14]` para 6 cm), senão a cabeça levanta o corpo inteiro;
-  - `kneepillow`: travesseiro dobrado entre os joelhos.
+  - `kneepillow`: travesseiro dobrado entre os joelhos;
+  - `pulley`: roldana acima e atrás da cabeça, com a corda de uma mão à outra passando por ela;
+  - `chairbox`: cada caixa de `ground` vira o assento de uma cadeira, com o encosto do lado oposto à pelve (mergulho de tríceps, calcanhar no assento da frente, flexão inclinada). Com `swissseat`, a caixa sob a pelve não é desenhada (quiques na bola).
 - **Paredes e câmera:** as paredes dos acessórios ficam na frente ou ao lado do corpo. Escolha uma vista que não fique atrás delas (por exemplo `side`, e não `front3q`, com a parede à frente).
 - **`move`** (opcional, em `jobs.json`): o movimento a tocar, quando o vídeo reaproveita o de outro job com acessórios diferentes (por exemplo, a marcha sentada na bola suíça usa `chair-march`).
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.

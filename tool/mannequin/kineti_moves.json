@@ -12736,6 +12736,1895 @@
      "hold": 0.5
     }
    ]
+  },
+  {
+   "id": "kineti-supine-ankle-circles",
+   "en": "Ankle circles, lying on the back",
+   "amount_en": "10 each way",
+   "steps_en": [
+    "Lie on your back, legs straight.",
+    "Draw circles with both feet."
+   ],
+   "beat": 0.45,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      25,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      8,
+      0,
+      22
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "foot": [
+      8,
+      0,
+      -22
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-high-knees",
+   "en": "High knees on the spot",
+   "amount_en": "30 seconds",
+   "steps_en": [
+    "Jog on the spot.",
+    "Bring the knees up to hip height.",
+    "Swing the arms."
+   ],
+   "beat": 0.22,
+   "keys": [
+    {
+     "legL": [
+      -75,
+      0,
+      0
+     ],
+     "kneeL": [
+      95,
+      0,
+      0
+     ],
+     "armR": [
+      -45,
+      0,
+      6
+     ],
+     "armL": [
+      35,
+      0,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -12,
+      0,
+      0
+     ],
+     "knee": [
+      25,
+      0,
+      0
+     ],
+     "foot": [
+      20,
+      0,
+      0
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "lift": 0.05
+    },
+    {
+     "legR": [
+      -75,
+      0,
+      0
+     ],
+     "kneeR": [
+      95,
+      0,
+      0
+     ],
+     "armL": [
+      -45,
+      0,
+      6
+     ],
+     "armR": [
+      35,
+      0,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -12,
+      0,
+      0
+     ],
+     "knee": [
+      25,
+      0,
+      0
+     ],
+     "foot": [
+      20,
+      0,
+      0
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "lift": 0.05
+    }
+   ]
+  },
+  {
+   "id": "kineti-jumping-jacks",
+   "en": "Jumping jacks",
+   "amount_en": "20 reps",
+   "steps_en": [
+    "Jump the feet apart and raise the arms overhead.",
+    "Jump back together, arms down."
+   ],
+   "beat": 0.28,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      10
+     ],
+     "leg": [
+      0,
+      0,
+      2
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      90
+     ],
+     "leg": [
+      0,
+      0,
+      9
+     ],
+     "knee": [
+      10,
+      0,
+      0
+     ],
+     "foot": [
+      20,
+      0,
+      0
+     ],
+     "lift": 0.07
+    },
+    {
+     "arm": [
+      0,
+      0,
+      165
+     ],
+     "leg": [
+      0,
+      0,
+      16
+     ],
+     "knee": [
+      12,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      90
+     ],
+     "leg": [
+      0,
+      0,
+      9
+     ],
+     "knee": [
+      10,
+      0,
+      0
+     ],
+     "foot": [
+      20,
+      0,
+      0
+     ],
+     "lift": 0.07
+    }
+   ]
+  },
+  {
+   "id": "kineti-squat-jumps",
+   "en": "Squat jumps",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Squat down.",
+    "Jump up, arms overhead.",
+    "Land softly back into a squat."
+   ],
+   "beat": 0.45,
+   "keys": [
+    {},
+    {
+     "leg": [
+      -70,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -28,
+      0,
+      0
+     ],
+     "spine": [
+      32,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.22
+     ],
+     "arm": [
+      30,
+      0,
+      8
+     ]
+    },
+    {
+     "arm": [
+      -160,
+      0,
+      10
+     ],
+     "foot": [
+      35,
+      0,
+      0
+     ],
+     "lift": 0.25
+    },
+    {
+     "leg": [
+      -45,
+      0,
+      6
+     ],
+     "knee": [
+      60,
+      0,
+      0
+     ],
+     "foot": [
+      -18,
+      0,
+      0
+     ],
+     "spine": [
+      20,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.14
+     ],
+     "arm": [
+      -40,
+      0,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-close-push-up",
+   "en": "Close-grip push-up",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Plank with the hands close together.",
+    "Lower the chest, elbows close to the body.",
+    "Push back up."
+   ],
+   "beat": 1.0,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      -4
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ]
+    },
+    {
+     "hips": [
+      77.5,
+      0,
+      0
+     ],
+     "arm": [
+      -25,
+      0,
+      -4
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ],
+     "hold": 0.2
+    }
+   ]
+  },
+  {
+   "id": "kineti-plank-hip-extension",
+   "en": "Plank with hip extension",
+   "amount_en": "6 each leg",
+   "steps_en": [
+    "Hold a plank on your hands.",
+    "Lift one straight leg.",
+    "Lower it and switch."
+   ],
+   "beat": 1.0,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ]
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ],
+     "legL": [
+      22,
+      0,
+      0
+     ],
+     "hold": 0.6
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ]
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ],
+     "legR": [
+      22,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-mountain-climber",
+   "en": "Mountain climber",
+   "amount_en": "20 reps",
+   "steps_en": [
+    "Plank on your hands.",
+    "Drive one knee towards the chest.",
+    "Switch legs in a steady rhythm."
+   ],
+   "beat": 0.4,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ],
+     "legL": [
+      -115,
+      0,
+      0
+     ],
+     "kneeL": [
+      145,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ]
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ],
+     "legR": [
+      -115,
+      0,
+      0
+     ],
+     "kneeR": [
+      145,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-curtsy-lunge",
+   "en": "Curtsy lunge",
+   "amount_en": "8 each leg",
+   "steps_en": [
+    "Hands on the waist.",
+    "Step one leg back and across, behind the other.",
+    "Lower, return and switch."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      -20,
+      -75,
+      40
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -42,
+      0,
+      0
+     ],
+     "kneeL": [
+      85,
+      0,
+      0
+     ],
+     "footL": [
+      -28,
+      0,
+      0
+     ],
+     "legR": [
+      24,
+      0,
+      -22
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "footR": [
+      45,
+      0,
+      0
+     ],
+     "touch": [
+      "footR"
+     ],
+     "arm": [
+      -20,
+      -75,
+      40
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.04
+     ],
+     "hold": 0.4
+    },
+    {
+     "arm": [
+      -20,
+      -75,
+      40
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -42,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "footR": [
+      -28,
+      0,
+      0
+     ],
+     "legL": [
+      24,
+      0,
+      -22
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "footL": [
+      45,
+      0,
+      0
+     ],
+     "touch": [
+      "footL"
+     ],
+     "arm": [
+      -20,
+      -75,
+      40
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.04
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-squat-arms-forward-dumbbells",
+   "en": "Squat with arms forward, holding dumbbells",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold dumbbells with the arms straight forward.",
+    "Squat down.",
+    "Stand up."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "arm": [
+      -85,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -70,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -28,
+      0,
+      0
+     ],
+     "spine": [
+      32,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.22
+     ],
+     "arm": [
+      -85,
+      0,
+      8
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-bend-and-reach",
+   "en": "Bend and reach",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Squat and reach the hands towards the floor.",
+    "Stand up and reach overhead."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      -165,
+      0,
+      10
+     ]
+    },
+    {
+     "leg": [
+      -70,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -28,
+      0,
+      0
+     ],
+     "spine": [
+      60,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.22
+     ],
+     "neck": [
+      10,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      8
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-crunch-legs-90",
+   "en": "Crunch with the legs at 90/90",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, hips and knees at 90 degrees.",
+    "Curl the head and shoulders up.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "spine": [
+      26,
+      0,
+      0
+     ],
+     "neck": [
+      20,
+      0,
+      0
+     ],
+     "arm": [
+      -45,
+      0,
+      6
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-bent-leg-lift",
+   "en": "Bent-leg lift, lying on the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Lift both knees to 90 degrees.",
+    "Lower the feet slowly."
+   ],
+   "beat": 1.3,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-leg-raises",
+   "en": "Leg raises",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, legs straight.",
+    "Raise both legs.",
+    "Lower them slowly."
+   ],
+   "beat": 1.4,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -70,
+      0,
+      0
+     ],
+     "foot": [
+      -10,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-flutter-kicks",
+   "en": "Flutter kicks",
+   "amount_en": "30 seconds",
+   "steps_en": [
+    "Lie on your back, legs straight and a little raised.",
+    "Kick up and down in small, quick movements."
+   ],
+   "beat": 0.35,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "legL": [
+      -30,
+      0,
+      0
+     ],
+     "legR": [
+      -14,
+      0,
+      0
+     ],
+     "neck": [
+      15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "legL": [
+      -14,
+      0,
+      0
+     ],
+     "legR": [
+      -30,
+      0,
+      0
+     ],
+     "neck": [
+      15,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-bridge-marching",
+   "en": "Bridge with marching",
+   "amount_en": "6 each leg",
+   "steps_en": [
+    "Lift the hips into a bridge.",
+    "Lift one foot, then the other, keeping the hips level."
+   ],
+   "beat": 0.9,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "legL": [
+      -30,
+      0,
+      0
+     ],
+     "kneeL": [
+      95,
+      0,
+      0
+     ],
+     "hold": 0.4
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "legR": [
+      -30,
+      0,
+      0
+     ],
+     "kneeR": [
+      95,
+      0,
+      0
+     ],
+     "hold": 0.4
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-standing-shoulder-extension",
+   "en": "Standing shoulder extension, arms straight",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Stand with the arms straight.",
+    "Move them back behind the body.",
+    "Return slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      45,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-walk-looking-up-down",
+   "en": "Walking, looking up and down",
+   "amount_en": "1 minute",
+   "steps_en": [
+    "Walk at a comfortable pace.",
+    "Look up, then down, as you walk."
+   ],
+   "beat": 0.55,
+   "once": true,
+   "keys": [
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      0
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      0
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.0
+     ],
+     "neck": [
+      -22,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "legR": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      55.0,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "neck": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      0
+     ],
+     "legL": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      18.0,
+      0,
+      0
+     ],
+     "armR": [
+      18.0,
+      0,
+      6
+     ],
+     "armL": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.6
+     ],
+     "neck": [
+      24,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "legL": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      55.0,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.9
+     ],
+     "neck": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      0
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      0
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.2
+     ],
+     "neck": [
+      -22,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "legR": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      55.0,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.5
+     ],
+     "neck": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      0
+     ],
+     "legL": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      18.0,
+      0,
+      0
+     ],
+     "armR": [
+      18.0,
+      0,
+      6
+     ],
+     "armL": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.8
+     ],
+     "neck": [
+      24,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "legL": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      55.0,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      2.1
+     ],
+     "neck": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      0
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      0
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      2.4
+     ],
+     "neck": [
+      -22,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-calf-raise-dumbbells",
+   "en": "Heel raise holding dumbbells",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Hold a dumbbell in each hand.",
+    "Rise onto the toes.",
+    "Lower slowly."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      10
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      10
+     ],
+     "foot": [
+      35,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
   }
  ]
 }

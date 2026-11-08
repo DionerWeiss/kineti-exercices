@@ -1474,5 +1474,113 @@
   "Deitado de lado, eleva o braço de cima esticado à frente até acima da cabeça e desce devagar.",
   "Amplitude de flexão do ombro",
   "ombros_escapulas"
+ ],
+ "kineti-supine-ankle-circles": [
+  "Círculos com os tornozelos deitado",
+  "Deitado de costas com as pernas esticadas, desenha círculos com os dois pés, nos dois sentidos.",
+  "Mobilidade do tornozelo e circulação",
+  "tornozelos_pes"
+ ],
+ "kineti-high-knees": [
+  "Corrida no lugar com joelhos altos",
+  "Corre no lugar levando os joelhos à altura do quadril, com os braços acompanhando o movimento.",
+  "Condicionamento e coordenação",
+  "marcha"
+ ],
+ "kineti-jumping-jacks": [
+  "Polichinelo",
+  "Salta afastando as pernas e elevando os braços acima da cabeça. Salta de volta juntando pernas e braços.",
+  "Condicionamento e coordenação",
+  "equilibrio"
+ ],
+ "kineti-squat-jumps": [
+  "Agachamento com salto",
+  "Agacha, salta para cima com os braços acima da cabeça e aterrissa macio de volta no agachamento.",
+  "Potência de membros inferiores",
+  "joelhos"
+ ],
+ "kineti-close-push-up": [
+  "Flexão de braços com mãos próximas",
+  "Em prancha, com as mãos próximas sob o peito, desce com os cotovelos junto ao corpo e empurra de volta.",
+  "Tríceps e peitoral",
+  "ombros_escapulas"
+ ],
+ "kineti-plank-hip-extension": [
+  "Prancha com extensão de quadril",
+  "Em prancha sobre as mãos, eleva uma perna esticada para trás, desce e troca de perna, sem deixar o quadril girar.",
+  "Estabilidade do tronco e glúteos",
+  "tronco_coluna"
+ ],
+ "kineti-mountain-climber": [
+  "Escalador",
+  "Em prancha sobre as mãos, leva um joelho em direção ao peito e volta, alternando as pernas num ritmo constante.",
+  "Tronco e condicionamento",
+  "tronco_coluna"
+ ],
+ "kineti-curtsy-lunge": [
+  "Avanço cruzado",
+  "Com as mãos na cintura, leva uma perna para trás cruzando atrás da outra, desce o joelho e volta. Troca de perna.",
+  "Glúteo médio e quadríceps",
+  "quadril_gluteos"
+ ],
+ "kineti-squat-arms-forward-dumbbells": [
+  "Agachamento com braços à frente e halteres",
+  "Segurando halteres com os braços estendidos à frente, agacha e volta a ficar em pé.",
+  "Quadríceps, glúteos e ombros",
+  "joelhos"
+ ],
+ "kineti-bend-and-reach": [
+  "Agachar e alcançar",
+  "Agacha levando as mãos em direção ao chão e depois sobe alcançando acima da cabeça.",
+  "Mobilidade e condicionamento",
+  "joelhos"
+ ],
+ "kineti-crunch-legs-90": [
+  "Abdominal com pernas a 90 graus",
+  "Deitado de costas com quadris e joelhos a 90 graus, eleva cabeça e ombros em direção aos joelhos e desce devagar.",
+  "Abdominais",
+  "tronco_coluna"
+ ],
+ "kineti-supine-bent-leg-lift": [
+  "Elevação das pernas dobradas deitado",
+  "Deitado de costas com os joelhos dobrados, eleva as duas pernas até quadris e joelhos ficarem a 90 graus e desce devagar.",
+  "Estabilização abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-leg-raises": [
+  "Elevação das pernas esticadas",
+  "Deitado de costas, eleva as duas pernas esticadas juntas e desce devagar sem deixar a lombar arquear.",
+  "Abdominais inferiores e flexores do quadril",
+  "tronco_coluna"
+ ],
+ "kineti-flutter-kicks": [
+  "Batida de pernas deitado",
+  "Deitado de costas com as pernas esticadas e um pouco elevadas, alterna pequenas batidas para cima e para baixo.",
+  "Resistência abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-bridge-marching": [
+  "Ponte com marcha",
+  "Em ponte, com o quadril elevado, tira um pé do chão e depois o outro, mantendo o quadril nivelado.",
+  "Glúteos e estabilidade da pelve",
+  "quadril_gluteos"
+ ],
+ "kineti-standing-shoulder-extension": [
+  "Extensão dos ombros em pé",
+  "Em pé com os braços esticados, leva os braços para trás do corpo e volta devagar.",
+  "Extensores do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-walk-looking-up-down": [
+  "Caminhada olhando para cima e para baixo",
+  "Caminha em ritmo confortável, alternando o olhar para cima e para baixo durante a caminhada.",
+  "Equilíbrio dinâmico e sistema vestibular",
+  "marcha"
+ ],
+ "kineti-calf-raise-dumbbells": [
+  "Elevação de calcanhares com halteres",
+  "Em pé, com um halter em cada mão ao lado do corpo, sobe na ponta dos pés e desce devagar.",
+  "Panturrilha com carga",
+  "tornozelos_pes"
  ]
 }

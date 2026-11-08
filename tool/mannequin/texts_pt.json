@@ -1348,5 +1348,29 @@
   "Deitado de costas com um pé sobre o degrau e a outra perna estendida para cima, eleva o quadril empurrando o calcanhar. Desce devagar.",
   "Glúteo e estabilidade da pelve",
   "quadril_gluteos"
+ ],
+ "kineti-bed-sit-weight-shift": [
+  "Transferência de peso sentado na beira da cama",
+  "Sentado na beira da cama com os braços cruzados, desloca o peso para um lado do quadril, tirando levemente o outro lado do colchão. Volta ao centro e troca de lado.",
+  "Controle de tronco e equilíbrio sentado",
+  "mobilidade_transferencias"
+ ],
+ "kineti-bed-sit-weight-shift-reach": [
+  "Transferência de peso sentado com alcance",
+  "Sentado na beira da cama, eleva um braço na diagonal para cima e para o lado enquanto desloca o peso para esse lado. Volta ao centro e troca de lado.",
+  "Controle de tronco e alcance",
+  "mobilidade_transferencias"
+ ],
+ "kineti-bed-sit-lean-forearm": [
+  "Inclinação lateral com apoio do braço na cama",
+  "Sentado na beira da cama, inclina o tronco para um lado até apoiar a mão no colchão, com o cotovelo dobrado. Empurra e volta a sentar ereto.",
+  "Controle de tronco e descarga de peso no braço",
+  "mobilidade_transferencias"
+ ],
+ "kineti-bed-prop-on-elbows": [
+  "Apoio nos cotovelos deitado",
+  "Deitado de costas na cama, eleva o tronco apoiando o peso nos cotovelos e antebraços. Sustenta e desce devagar.",
+  "Mobilidade no leito e força de membros superiores",
+  "mobilidade_transferencias"
  ]
 }

@@ -2509,5 +2509,55 @@
   "pocketphysio": [
    "664744bf5c2c1f75d4d71e19"
   ]
+ },
+ "kineti-lying-to-sitting": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bed"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e4db"
+  ]
+ },
+ "kineti-bed-sit-weight-shift": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "bed"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e4dd"
+  ]
+ },
+ "kineti-bed-sit-weight-shift-reach": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "bed"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e4fc"
+  ]
+ },
+ "kineti-bed-sit-lean-forearm": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "bed"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e4d9"
+  ]
+ },
+ "kineti-bed-prop-on-elbows": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "bed"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e4ed"
+  ]
  }
 }

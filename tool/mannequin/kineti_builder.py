@@ -4,7 +4,8 @@
 #   "ground": {"base": 0, "boxes": [[xmin, xmax, ymin, ymax, h], ...]}
 #   key "touch": ["footL", "handR", "footR:leg", ...] = authoring aid: turns that knee/elbow (or with ":leg" /
 #   ":arm" the hip/shoulder) about x, to the root nearest the written angle, until the foot/hand rests on the
-#   ground at the same height as the body's other contacts.   (Blender world metres: x right->left,
+#   ground at the same height as the body's other contacts. Without a side ("hand:arm") it solves the left and
+#   gives the right the same angle.   (Blender world metres: x right->left,
 #   y backwards (the figure faces -y), heights z). Grounding, resting parts, planted feet/hands and the
 #   floor push-up all measure height above the ground under each vertex. The action keeps it as act['ground'].
 #   Run through tool/mannequin/build_lib.py (DESK_LIB = desk-break's library folder, for mannequin.blend).
@@ -251,7 +252,10 @@ def settle(ex, F, lift):
                     slid = (zmin < 2 * TOUCH and np.linalg.norm(moved) > SLIDE                # still on the floor
                             and np.linalg.norm(by_body) < 0.5 * np.linalg.norm(moved))
                     lifted = min(zmin, zmin - by_body[2])      # how high the leg itself raised it, not a body tilt
+                    Wk = LOC[ENDV[e]] @ Rfk.T + hfk           # (ground) the keys took it over a higher surface (a leg
+                    moved_off = GROUND is not None and ground(Wk[[above(Wk).argmin()], :2])[0] > st['g0'] + 0.03   # coming back onto a bed)
                     if lifted > LIFT_HI: st['mode'] = 'free'             # lifted: already eased back onto the keys
+                    elif moved_off: st.update(mode='fade', k=0, dp=st['head'] - hfk, dq=st['R'] @ Rfk.T)
                     elif resting[i][li] or slid: st.update(mode='fade', k=0, dp=st['head'] - hfk, dq=st['R'] @ Rfk.T)
                 R, h = Rfk, hfk
                 if st['mode'] == 'fade':
@@ -264,7 +268,7 @@ def settle(ex, F, lift):
                 if st['mode'] != 'plant' and zmin < TOUCH and not resting[i][li] and speed < SETTLED:
                     W = LOC[ENDV[e]] @ R.T + h
                     za = above(W)
-                    st.update(mode='plant', Rref=R @ Be[:3, :3].T, W=W, C=za < za.min() + .003,
+                    st.update(mode='plant', Rref=R @ Be[:3, :3].T, W=W, C=za < za.min() + .003, g0=ground(W[[za.argmin()], :2])[0],
                               fk0=hfk, rel0=rel)
                     lifted = zmin
                 if st['mode'] == 'plant':
@@ -332,9 +336,13 @@ def end_gap(e, skip=()):
 
 def solve_touch(name, k, key, seated):
     specs = key.pop('touch')
-    ends = [BI[sp.partition(':')[0]] for sp in specs]
+    sided = lambda e: e if e[-1] in 'LR' else e + 'L'      # "foot" / "hand": solve the left, apply to both sides
+    ends = [BI[sided(sp.partition(':')[0])] for sp in specs]
+    ends += [BI[sided(sp.partition(':')[0])[:-1] + 'R'] for sp in specs if sp.partition(':')[0][-1] not in 'LR']
     for spec in specs:
         end, _, by = spec.partition(':')                  # "footL" bends the knee, "footL:leg" swings the hip
+        both = end[-1] not in 'LR'
+        end = sided(end)
         side, kind = end[-1], end[:-1]
         by = by or {'foot': 'knee', 'hand': 'elbow'}[kind]
         mid = by + side
@@ -343,21 +351,23 @@ def solve_touch(name, k, key, seated):
         base = list(key.get(mid, key.get(by, REST.get(by, [0, 0, 0]))))
         e = BI[end]
         gaps = []
+        setk = lambda a: {**key, mid: [a, base[1], base[2]], **({by + 'R': [a, base[1], base[2]]} if both else {})}
         for a in angs:
-            pose({**key, mid: [a, base[1], base[2]]}, seated)
+            pose(setk(a), seated)
             gaps.append(end_gap(e, ends))
         if os.environ.get('TOUCH_DEBUG'): print('GAPS', name, k, end, ' '.join(f'{x}:{g:+.3f}' for x, g in list(zip(angs, gaps))[::5]))
         roots = [a0 + (a1 - a0) * g0 / (g0 - g1) for a0, a1, g0, g1 in zip(angs, angs[1:], gaps, gaps[1:])
                  if (g0 <= 0) != (g1 <= 0)]
         ok = []
         for r in sorted(roots, key=lambda r: abs(r - base[0])):   # a step edge makes false roots: check each one
-            pose({**key, mid: [r, base[1], base[2]]}, seated)
+            pose(setk(r), seated)
             if abs(end_gap(e, ends)) < 0.005: ok.append(r); break
         if ok: a = ok[0]
         else:
             a = angs[int(np.argmin(np.abs(gaps)))]
             print(f'WARNING {name}[{k}] {end} cannot reach the ground (gap {min(np.abs(gaps)):.3f} at {mid} {a})')
         key[mid] = [round(a, 1), base[1], base[2]]
+        if both: key[by + 'R'] = list(key[mid])
         print(f'TOUCH {name}[{k}] {mid} {base[0]} -> {key[mid][0]}')
 
 

@@ -44,6 +44,54 @@
  "license": "Manequim e movimentos do desk-break: MIT, Copyright (c) 2026 Shlomy Reshef (parametric.co.il), github.com/shlomorsh/desk-break",
  "exercises": [
   {
+   "slug": "kineti-bed-prop-on-elbows",
+   "lib": "kineti",
+   "name": "Apoio nos cotovelos deitado",
+   "desc": "Deitado de costas na cama, eleva o tronco apoiando o peso nos cotovelos e antebraços. Sustenta e desce devagar.",
+   "focus": "Mobilidade no leito e força de membros superiores",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-bed-prop-on-elbows.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4ed"
+   ]
+  },
+  {
+   "slug": "kineti-bed-sit-lean-forearm",
+   "lib": "kineti",
+   "name": "Inclinação lateral com apoio do braço na cama",
+   "desc": "Sentado na beira da cama, inclina o tronco para um lado até apoiar a mão no colchão, com o cotovelo dobrado. Empurra e volta a sentar ereto.",
+   "focus": "Controle de tronco e descarga de peso no braço",
+   "area": "mobilidade_transferencias",
+   "view": "Frontal",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-bed-sit-lean-forearm.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4d9"
+   ]
+  },
+  {
+   "slug": "kineti-lying-to-sitting",
+   "lib": "kineti",
+   "name": "Passar de deitado para sentado",
+   "desc": "Rola para o lado, aproxima as pernas da borda, apoia os braços e eleva o tronco até sentar com os pés no chão. Retorno controlado à posição deitada.",
+   "focus": "Tronco e membros superiores",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-lying-to-sitting.mp4",
+   "kineti_slug": "lying_to_sitting",
+   "substitui": "lying_to_sitting",
+   "pocketphysio": [
+    "65a9272053a15212d048e4db"
+   ]
+  },
+  {
    "slug": "kineti-bed-rolling",
    "lib": "kineti",
    "name": "Rolar na cama",
@@ -91,6 +139,38 @@
     "65b09dc54ad825d0304071fe",
     "65b09dc54ad825d0304071ff",
     "6613d8862d1659b1aabb9c5c"
+   ]
+  },
+  {
+   "slug": "kineti-bed-sit-weight-shift-reach",
+   "lib": "kineti",
+   "name": "Transferência de peso sentado com alcance",
+   "desc": "Sentado na beira da cama, eleva um braço na diagonal para cima e para o lado enquanto desloca o peso para esse lado. Volta ao centro e troca de lado.",
+   "focus": "Controle de tronco e alcance",
+   "area": "mobilidade_transferencias",
+   "view": "Frontal",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-bed-sit-weight-shift-reach.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4fc"
+   ]
+  },
+  {
+   "slug": "kineti-bed-sit-weight-shift",
+   "lib": "kineti",
+   "name": "Transferência de peso sentado na beira da cama",
+   "desc": "Sentado na beira da cama com os braços cruzados, desloca o peso para um lado do quadril, tirando levemente o outro lado do colchão. Volta ao centro e troca de lado.",
+   "focus": "Controle de tronco e equilíbrio sentado",
+   "area": "mobilidade_transferencias",
+   "view": "Frontal",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-bed-sit-weight-shift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4dd"
    ]
   },
   {

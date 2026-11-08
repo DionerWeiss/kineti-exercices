@@ -4,8 +4,8 @@
   "nota": "cama no lugar do colchonete"
  },
  "lying_to_sitting": {
-  "video": null,
-  "nota": "falta a cama e a transição deitado-sentado"
+  "video": "kineti-lying-to-sitting",
+  "nota": "cama como campo de alturas (chão em -0,45 m), rola de lado e senta na borda"
  },
  "standing_hip_flexion": {
   "video": "kineti-standing-hip-flexion-supported",

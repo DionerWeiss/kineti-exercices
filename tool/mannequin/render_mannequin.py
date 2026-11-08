@@ -251,13 +251,20 @@ def foot_tip(s):
     return arm.matrix_world @ arm.pose.bones['foot' + s].tail
 
 
-def bed(c, lx, ly):
-    """Mattress whose top is the mannequin's floor (z = 0), on a frame, the room floor BED_TOP below."""
-    box((c.x, c.y, -0.09), (lx, ly, 0.18), MATTC)['noframe'] = True
-    box((c.x, c.y, -0.3), (lx + 0.06, ly + 0.06, 0.24), CHAIRC)['noframe'] = True
+def bed(c, lx, ly, drop=None, frame=False):
+    """Mattress whose top is the mannequin's floor (z = 0), on a frame, the room floor drop (BED_TOP) below.
+    frame=True lets the camera fit the bed too (a body that leaves it, e.g. sitting up on its edge)."""
+    drop = drop or BED_TOP
+    base_top = drop - 0.06
+    parts = [box((c.x, c.y, -0.09), (lx, ly, 0.18), MATTC),
+             box((c.x, c.y, -(0.18 + base_top) / 2), (lx + 0.06, ly + 0.06, base_top - 0.18), CHAIRC)]
     for dx in (-1, 1):
         for dy in (-1, 1):
-            box((c.x + dx * (lx / 2 - 0.05), c.y + dy * (ly / 2 - 0.05), -0.46), (0.06, 0.06, 0.08), CHAIRC)['noframe'] = True
+            parts.append(box((c.x + dx * (lx / 2 - 0.05), c.y + dy * (ly / 2 - 0.05), -(base_top + drop) / 2),
+                             (0.06, 0.06, drop - base_top), CHAIRC))
+    for o in parts:
+        if not frame:
+            o['noframe'] = True
 
 
 def chair_side(x_back, y, out, back_top):
@@ -363,17 +370,20 @@ for job in JOBS:
             if h <= base + 0.03:
                 continue
             c = ((x0 + x1) / 2, (y0 + y1) / 2)
+            if 'bed' in props:  # the raised box is a bed whose top is the box (sitting on its edge, feet on the floor)
+                bed(Vector((*c, 0)), x1 - x0, y1 - y0, drop=h - base, frame=True)
+                continue
             box((*c, (base + h - 0.02) / 2), (x1 - x0, y1 - y0, h - 0.02 - base), STEPC)
             box((*c, h - 0.01), (x1 - x0 + 0.006, y1 - y0 + 0.006, 0.02), STEPTOP)
     blo, bhi, bpts = motion_bounds(f0, f1)
-    FLOOR.location.z = -BED_TOP if 'bed' in props else gr.get('base', 0) if gr else 0
-    if 'bed' in props:
+    FLOOR.location.z = gr.get('base', 0) if gr else -BED_TOP if 'bed' in props else 0
+    if 'bed' in props and not gr:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.25, 2.0 if long_x else 0.95)
         ly = max(ext.y + 0.25, 0.95 if long_x else 2.0)
         bed(c, lx, ly)
-    elif not seated and not props & {'support', 'side', 'wall', 'walk', 'chairfit', 'wallball', 'wallback', 'table'} and bhi.z < 1.4:
+    elif not seated and not props & {'bed', 'support', 'side', 'wall', 'walk', 'chairfit', 'wallball', 'wallback', 'table'} and bhi.z < 1.4:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y
         lx = max(ext.x + 0.3, 1.9 if long_x else 0.66)

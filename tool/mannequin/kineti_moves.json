@@ -8909,6 +8909,879 @@
      ]
     }
    ]
+  },
+  {
+   "id": "kineti-lying-to-sitting",
+   "en": "Lying to sitting",
+   "amount_en": "5 reps",
+   "steps_en": [
+    "Lie on your back, bend the knees.",
+    "Roll onto your side facing the edge.",
+    "Push up with the arms while the legs come off the bed.",
+    "Sit on the edge, feet on the floor. Lie back down the same way."
+   ],
+   "beat": 1.1,
+   "ground": {
+    "base": -0.45,
+    "boxes": [
+     [
+      -0.55,
+      0.45,
+      -1.15,
+      1.05,
+      0.0
+     ]
+    ]
+   },
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      90,
+      0
+     ],
+     "leg": [
+      -85,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -10,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      0
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "pos": [
+      0.1,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      90,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      -10,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      0
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "pos": [
+      0.12,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -45,
+      90,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "spine": [
+      10,
+      0,
+      0
+     ],
+     "armL": [
+      5,
+      0,
+      45
+     ],
+     "elbowL": [
+      -20,
+      0,
+      0
+     ],
+     "touch": [
+      "handL"
+     ],
+     "armR": [
+      -55,
+      0,
+      -10
+     ],
+     "elbowR": [
+      -25,
+      0,
+      0
+     ],
+     "pos": [
+      0.13,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      0,
+      90,
+      0
+     ],
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "arm": [
+      -15,
+      0,
+      18
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0.14,
+      0,
+      0
+     ],
+     "hold": 1.0
+    },
+    {
+     "hips": [
+      -45,
+      90,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "spine": [
+      10,
+      0,
+      0
+     ],
+     "armL": [
+      5,
+      0,
+      45
+     ],
+     "elbowL": [
+      -20,
+      0,
+      0
+     ],
+     "touch": [
+      "handL"
+     ],
+     "armR": [
+      -55,
+      0,
+      -10
+     ],
+     "elbowR": [
+      -25,
+      0,
+      0
+     ],
+     "pos": [
+      0.13,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      90,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      -10,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      0
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "pos": [
+      0.12,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      90,
+      0
+     ],
+     "leg": [
+      -85,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -10,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      0
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "pos": [
+      0.1,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-bed-sit-weight-shift",
+   "en": "Sitting weight shift, edge of bed",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Sit on the edge of the bed, arms crossed.",
+    "Shift your weight onto one hip, the other lifts a little.",
+    "Back to the middle, then the other side."
+   ],
+   "beat": 1.2,
+   "ground": {
+    "base": -0.45,
+    "boxes": [
+     [
+      -0.9,
+      0.9,
+      -0.3,
+      0.6,
+      0.0
+     ]
+    ]
+   },
+   "keys": [
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "hips": [
+      0,
+      0,
+      12
+     ],
+     "spine": [
+      0,
+      0,
+      -19.200000000000003
+     ],
+     "neck": [
+      0,
+      0,
+      -4.800000000000001
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ],
+     "hold": 0.6
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "hips": [
+      0,
+      0,
+      -12
+     ],
+     "spine": [
+      0,
+      0,
+      19.200000000000003
+     ],
+     "neck": [
+      0,
+      0,
+      4.800000000000001
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-bed-sit-weight-shift-reach",
+   "en": "Sitting weight shift with reach, edge of bed",
+   "amount_en": "8 each side",
+   "steps_en": [
+    "Sit on the edge of the bed.",
+    "Reach one arm up and out while shifting onto that hip.",
+    "Back to the middle, then the other side."
+   ],
+   "beat": 1.3,
+   "ground": {
+    "base": -0.45,
+    "boxes": [
+     [
+      -0.9,
+      0.9,
+      -0.3,
+      0.6,
+      0.0
+     ]
+    ]
+   },
+   "keys": [
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "arm": [
+      -28,
+      0,
+      8
+     ],
+     "elbow": [
+      -55,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "hips": [
+      0,
+      0,
+      8
+     ],
+     "spine": [
+      0,
+      0,
+      -12.8
+     ],
+     "neck": [
+      0,
+      0,
+      -3.2
+     ],
+     "arm": [
+      -28,
+      0,
+      8
+     ],
+     "elbow": [
+      -55,
+      0,
+      0
+     ],
+     "armR": [
+      -140,
+      0,
+      45
+     ],
+     "elbowR": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.6
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "arm": [
+      -28,
+      0,
+      8
+     ],
+     "elbow": [
+      -55,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "hips": [
+      0,
+      0,
+      -8
+     ],
+     "spine": [
+      0,
+      0,
+      12.8
+     ],
+     "neck": [
+      0,
+      0,
+      3.2
+     ],
+     "arm": [
+      -28,
+      0,
+      8
+     ],
+     "elbow": [
+      -55,
+      0,
+      0
+     ],
+     "armL": [
+      -140,
+      0,
+      45
+     ],
+     "elbowL": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-bed-sit-lean-forearm",
+   "en": "Sitting, lean onto the forearm, edge of bed",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Sit on the edge of the bed.",
+    "Lean to one side onto your arm.",
+    "Push back up to sitting."
+   ],
+   "beat": 1.4,
+   "ground": {
+    "base": -0.45,
+    "boxes": [
+     [
+      -0.9,
+      0.9,
+      -0.3,
+      0.6,
+      0.0
+     ]
+    ]
+   },
+   "keys": [
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR"
+     ],
+     "arm": [
+      -28,
+      0,
+      8
+     ],
+     "elbow": [
+      -55,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -84,
+      0,
+      0
+     ],
+     "knee": [
+      84,
+      0,
+      0
+     ],
+     "touch": [
+      "footL",
+      "footR",
+      "handR:arm"
+     ],
+     "hips": [
+      0,
+      0,
+      -16
+     ],
+     "spine": [
+      0,
+      0,
+      58
+     ],
+     "neck": [
+      0,
+      0,
+      -25
+     ],
+     "armR": [
+      -10,
+      0,
+      25
+     ],
+     "elbowR": [
+      -105,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      10
+     ],
+     "elbowL": [
+      -40,
+      0,
+      0
+     ],
+     "hold": 1.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-bed-prop-on-elbows",
+   "en": "Lying, prop up onto the elbows",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Lie on your back.",
+    "Prop yourself up onto your elbows and forearms.",
+    "Lower slowly."
+   ],
+   "beat": 1.4,
+   "view": "floor",
+   "ground": {
+    "base": -0.45,
+    "boxes": [
+     [
+      -0.5,
+      0.5,
+      -1.15,
+      1.05,
+      0.0
+     ]
+    ]
+   },
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "spine": [
+      40,
+      0,
+      0
+     ],
+     "neck": [
+      10,
+      0,
+      0
+     ],
+     "arm": [
+      50,
+      0,
+      12
+     ],
+     "elbow": [
+      -95,
+      0,
+      0
+     ],
+     "touch": [
+      "handL:arm",
+      "handR:arm"
+     ],
+     "hold": 1.2
+    }
+   ]
   }
  ]
 }

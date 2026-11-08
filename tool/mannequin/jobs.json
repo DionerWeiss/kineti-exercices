@@ -283,7 +283,8 @@
    "673c9258e10df73c8302d7e1",
    "65a9272053a15212d048e609",
    "65a9272053a15212d048e5ee",
-   "65a9272053a15212d048e60f"
+   "65a9272053a15212d048e60f",
+   "65a9272053a15212d048e549"
   ],
   "frame": "full"
  },
@@ -563,7 +564,8 @@
   "props": [],
   "pocketphysio": [
    "65a9272153a15212d048e9f7",
-   "65b09dc54ad825d030407235"
+   "65b09dc54ad825d030407235",
+   "65a9272053a15212d048e5dd"
   ],
   "frame": "full"
  },
@@ -581,7 +583,8 @@
   "view": "floor",
   "props": [],
   "pocketphysio": [
-   "65a9272053a15212d048e743"
+   "65a9272053a15212d048e743",
+   "65a9272053a15212d048e7eb"
   ],
   "frame": "full"
  },
@@ -613,7 +616,8 @@
   "pocketphysio": [
    "673c9258e10df73c8302d76e",
    "65a9272053a15212d048e85b",
-   "65b09dc54ad825d03040722f"
+   "65b09dc54ad825d03040722f",
+   "673c9258e10df73c8302d7b1"
   ],
   "frame": "full"
  },
@@ -817,7 +821,8 @@
    "65a9272053a15212d048e825",
    "660a61776a80d359d40dce9c",
    "65a9272053a15212d048e808",
-   "65a9272053a15212d048e4e2"
+   "65a9272053a15212d048e4e2",
+   "65a9272053a15212d048e83b"
   ],
   "frame": "full"
  },
@@ -910,7 +915,8 @@
   "props": [],
   "pocketphysio": [
    "65b09dc54ad825d03040724a",
-   "673c9258e10df73c8302d7c9"
+   "673c9258e10df73c8302d7c9",
+   "65a9272053a15212d048e534"
   ],
   "frame": "full"
  },
@@ -1003,7 +1009,8 @@
   "view": "side3q",
   "props": [],
   "pocketphysio": [
-   "673c9258e10df73c8302d798"
+   "673c9258e10df73c8302d798",
+   "673c9258e10df73c8302d794"
   ],
   "frame": "full"
  },
@@ -1358,7 +1365,10 @@
   "view": "front3q",
   "props": [],
   "frame": "full",
-  "pocketphysio": []
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80d2",
+   "664744bf5c2c1f75d4d71d66"
+  ]
  },
  "kineti-semi-tandem-stance": {
   "lib": "kineti",
@@ -1462,7 +1472,8 @@
   "frame": "full",
   "pocketphysio": [
    "664744bf5c2c1f75d4d71e44",
-   "664744bf5c2c1f75d4d71e97"
+   "664744bf5c2c1f75d4d71e97",
+   "65a9272153a15212d048ea49"
   ]
  },
  "kineti-forearm-pronation-supination": {
@@ -1885,7 +1896,9 @@
   "pocketphysio": [
    "65a9272153a15212d048ea32",
    "65b09dc54ad825d03040720e",
-   "65b09dc54ad825d030407325"
+   "65b09dc54ad825d030407325",
+   "65b09dc54ad825d030407336",
+   "65b09dc54ad825d030407324"
   ]
  },
  "kineti-side-lying-shoulder-extension": {
@@ -2075,7 +2088,9 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "664744bf5c2c1f75d4d71e3a"
+   "664744bf5c2c1f75d4d71e3a",
+   "65a9272053a15212d048e61a",
+   "65a9272053a15212d048e6d5"
   ]
  },
  "kineti-variable-speed-walking": {
@@ -2303,7 +2318,8 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "660a6145b08ac7518f1f819f"
+   "660a6145b08ac7518f1f819f",
+   "65a9272153a15212d048eadd"
   ]
  },
  "kineti-codman-pendulum": {
@@ -2558,6 +2574,161 @@
   ],
   "pocketphysio": [
    "65a9272053a15212d048e4ed"
+  ]
+ },
+ "kineti-push-up": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d784"
+  ]
+ },
+ "kineti-knee-push-up": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d77a"
+  ]
+ },
+ "kineti-wide-push-up": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d797"
+  ]
+ },
+ "kineti-forward-lunge": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d77e",
+   "65a9272153a15212d048ea39",
+   "673c9258e10df73c8302d757"
+  ]
+ },
+ "kineti-backward-lunge": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e60b"
+  ]
+ },
+ "kineti-squat-dumbbells": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "dumbbell"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d7a",
+   "664744bf5c2c1f75d4d71d7b",
+   "664744bf5c2c1f75d4d71e26",
+   "660a6144b08ac7518f1f7e54"
+  ]
+ },
+ "kineti-prisoner-squat": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d782"
+  ]
+ },
+ "kineti-backward-walking": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "walk"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407215",
+   "65b09dc54ad825d03040721a"
+  ]
+ },
+ "kineti-heel-walking": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "walk"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e536",
+   "65a9272053a15212d048e712"
+  ]
+ },
+ "kineti-toe-walking": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "walk"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e720",
+   "65a9272053a15212d048e843"
+  ]
+ },
+ "kineti-march-arms-forward": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e60a"
+  ]
+ },
+ "kineti-march-arms-forward-dumbbells": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "dumbbell"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e60d"
+  ],
+  "move": "kineti-march-arms-forward"
+ },
+ "kineti-turn-360": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e5e1"
+  ]
+ },
+ "kineti-turn-180": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e5e4"
+  ]
+ },
+ "kineti-feet-together-arms-out": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d6d"
+  ]
+ },
+ "kineti-supine-shoulder-rotation-90": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272153a15212d048e943"
+  ]
+ },
+ "kineti-side-lying-shoulder-flexion": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272153a15212d048e945"
   ]
  }
 }

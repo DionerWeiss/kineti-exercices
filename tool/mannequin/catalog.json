@@ -345,7 +345,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "65a9272053a15212d048e743"
+    "65a9272053a15212d048e743",
+    "65a9272053a15212d048e7eb"
    ]
   },
   {
@@ -567,7 +568,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "673c9258e10df73c8302d798"
+    "673c9258e10df73c8302d798",
+    "673c9258e10df73c8302d794"
    ]
   },
   {
@@ -621,7 +623,8 @@
    "pocketphysio": [
     "673c9258e10df73c8302d76e",
     "65a9272053a15212d048e85b",
-    "65b09dc54ad825d03040722f"
+    "65b09dc54ad825d03040722f",
+    "673c9258e10df73c8302d7b1"
    ]
   },
   {
@@ -709,6 +712,41 @@
    "pocketphysio": [
     "65a9272153a15212d048e9f2",
     "673c9258e10df73c8302d746"
+   ]
+  },
+  {
+   "slug": "kineti-squat-dumbbells",
+   "lib": "kineti",
+   "name": "Agachamento com halteres",
+   "desc": "Em pé, com um halter em cada mão ao lado do corpo, leva o quadril para trás e para baixo e volta a ficar em pé.",
+   "focus": "Quadríceps e glúteos com carga",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-squat-dumbbells.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d7a",
+    "664744bf5c2c1f75d4d71d7b",
+    "664744bf5c2c1f75d4d71e26",
+    "660a6144b08ac7518f1f7e54"
+   ]
+  },
+  {
+   "slug": "kineti-prisoner-squat",
+   "lib": "kineti",
+   "name": "Agachamento com mãos atrás da cabeça",
+   "desc": "Com as mãos atrás da cabeça e os cotovelos abertos, agacha mantendo o peito aberto e volta a ficar em pé.",
+   "focus": "Quadríceps, glúteos e postura do tronco",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-prisoner-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d782"
    ]
   },
   {
@@ -844,6 +882,40 @@
    ]
   },
   {
+   "slug": "kineti-backward-lunge",
+   "lib": "kineti",
+   "name": "Avanço para trás com mãos na cintura",
+   "desc": "Com as mãos na cintura, dá um passo para trás e desce o joelho de trás. Volta à posição inicial e troca de perna.",
+   "focus": "Quadríceps, glúteos e controle do joelho",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-backward-lunge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e60b"
+   ]
+  },
+  {
+   "slug": "kineti-forward-lunge",
+   "lib": "kineti",
+   "name": "Avanço à frente",
+   "desc": "Dá um passo à frente e desce o joelho de trás em direção ao chão, com o tronco ereto. Empurra com a perna da frente para voltar e troca de perna.",
+   "focus": "Quadríceps, glúteos e equilíbrio",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-forward-lunge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d77e",
+    "65a9272153a15212d048ea39",
+    "673c9258e10df73c8302d757"
+   ]
+  },
+  {
    "slug": "kineti-step-down-backward",
    "lib": "kineti",
    "name": "Descida do degrau para trás",
@@ -914,7 +986,8 @@
     "65a9272053a15212d048e825",
     "660a61776a80d359d40dce9c",
     "65a9272053a15212d048e808",
-    "65a9272053a15212d048e4e2"
+    "65a9272053a15212d048e4e2",
+    "65a9272053a15212d048e83b"
    ]
   },
   {
@@ -1441,7 +1514,8 @@
    "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d03040724a",
-    "673c9258e10df73c8302d7c9"
+    "673c9258e10df73c8302d7c9",
+    "65a9272053a15212d048e534"
    ]
   },
   {
@@ -1676,7 +1750,10 @@
    "video": "build/mannequin/videos/kineti-feet-together-stance.mp4",
    "kineti_slug": "feet_together_stance",
    "substitui": "feet_together_stance",
-   "pocketphysio": []
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80d2",
+    "664744bf5c2c1f75d4d71d66"
+   ]
   },
   {
    "slug": "balance-knee-raise-hold",
@@ -1695,6 +1772,38 @@
    ]
   },
   {
+   "slug": "kineti-turn-180",
+   "lib": "kineti",
+   "name": "Giro de 180 graus em pé",
+   "desc": "Em pé, gira meia volta com passos curtos e depois volta.",
+   "focus": "Equilíbrio dinâmico",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-turn-180.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e5e4"
+   ]
+  },
+  {
+   "slug": "kineti-turn-360",
+   "lib": "kineti",
+   "name": "Giro de 360 graus em pé",
+   "desc": "Em pé, gira no lugar com passos curtos até dar uma volta completa.",
+   "focus": "Equilíbrio dinâmico",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-turn-360.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e5e1"
+   ]
+  },
+  {
    "slug": "balance-slow-march",
    "lib": "deskbreak",
    "name": "Marcha lenta com pausa",
@@ -1707,6 +1816,38 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-march-arms-forward",
+   "lib": "kineti",
+   "name": "Marcha no lugar com braços à frente",
+   "desc": "Com os braços estendidos à frente na altura dos ombros, marcha no lugar elevando os joelhos.",
+   "focus": "Coordenação e resistência de ombros",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-march-arms-forward.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e60a"
+   ]
+  },
+  {
+   "slug": "kineti-march-arms-forward-dumbbells",
+   "lib": "kineti",
+   "name": "Marcha no lugar com braços à frente e halteres",
+   "desc": "Segurando halteres com os braços estendidos à frente, marcha no lugar elevando os joelhos.",
+   "focus": "Coordenação e força de ombros",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-march-arms-forward-dumbbells.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e60d"
+   ]
   },
   {
    "slug": "heel-to-toe-walk-in-place",
@@ -1787,6 +1928,22 @@
    "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71d5e"
+   ]
+  },
+  {
+   "slug": "kineti-feet-together-arms-out",
+   "lib": "kineti",
+   "name": "Pés juntos com braços abertos",
+   "desc": "Em pé com os pés juntos e os braços abertos para os lados, mantém o equilíbrio com pequenas oscilações do tronco.",
+   "focus": "Equilíbrio estático",
+   "area": "equilibrio",
+   "view": "Frontal",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-feet-together-arms-out.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d6d"
    ]
   },
   {
@@ -1886,7 +2043,9 @@
    "kineti_slug": "indoor_walking",
    "substitui": "indoor_walking",
    "pocketphysio": [
-    "664744bf5c2c1f75d4d71e3a"
+    "664744bf5c2c1f75d4d71e3a",
+    "65a9272053a15212d048e61a",
+    "65a9272053a15212d048e6d5"
    ]
   },
   {
@@ -1903,6 +2062,57 @@
    "substitui": "variable_speed_walking",
    "pocketphysio": [
     "65b09dc54ad825d030407244"
+   ]
+  },
+  {
+   "slug": "kineti-toe-walking",
+   "lib": "kineti",
+   "name": "Caminhada na ponta dos pés",
+   "desc": "Caminha na ponta dos pés, com os calcanhares elevados, balançando os braços.",
+   "focus": "Panturrilha e equilíbrio",
+   "area": "marcha",
+   "view": "Lateral",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-toe-walking.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e720",
+    "65a9272053a15212d048e843"
+   ]
+  },
+  {
+   "slug": "kineti-heel-walking",
+   "lib": "kineti",
+   "name": "Caminhada nos calcanhares",
+   "desc": "Caminha apoiado só nos calcanhares, com as pontas dos pés elevadas, balançando os braços.",
+   "focus": "Dorsiflexores do tornozelo",
+   "area": "marcha",
+   "view": "Lateral",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-heel-walking.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e536",
+    "65a9272053a15212d048e712"
+   ]
+  },
+  {
+   "slug": "kineti-backward-walking",
+   "lib": "kineti",
+   "name": "Caminhada para trás",
+   "desc": "Caminha para trás com passos curtos e controlados, mantendo o tronco ereto.",
+   "focus": "Equilíbrio e controle da marcha",
+   "area": "marcha",
+   "view": "Lateral",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-backward-walking.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407215",
+    "65b09dc54ad825d03040721a"
    ]
   },
   {
@@ -2006,7 +2216,8 @@
     "673c9258e10df73c8302d7e1",
     "65a9272053a15212d048e609",
     "65a9272053a15212d048e5ee",
-    "65a9272053a15212d048e60f"
+    "65a9272053a15212d048e60f",
+    "65a9272053a15212d048e549"
    ]
   },
   {
@@ -2573,7 +2784,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e9f7",
-    "65b09dc54ad825d030407235"
+    "65b09dc54ad825d030407235",
+    "65a9272053a15212d048e5dd"
    ]
   },
   {
@@ -2968,7 +3180,9 @@
    "pocketphysio": [
     "65a9272153a15212d048ea32",
     "65b09dc54ad825d03040720e",
-    "65b09dc54ad825d030407325"
+    "65b09dc54ad825d030407325",
+    "65b09dc54ad825d030407336",
+    "65b09dc54ad825d030407324"
    ]
   },
   {
@@ -3339,6 +3553,54 @@
    ]
   },
   {
+   "slug": "kineti-push-up",
+   "lib": "kineti",
+   "name": "Flexão de braços",
+   "desc": "Em prancha, com as mãos no chão abaixo dos ombros e apoio na ponta dos pés, dobra os cotovelos e desce o peito. Empurra de volta, com o corpo em linha.",
+   "focus": "Peitoral, tríceps e estabilidade do tronco",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-push-up.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d784"
+   ]
+  },
+  {
+   "slug": "kineti-knee-push-up",
+   "lib": "kineti",
+   "name": "Flexão de braços com joelhos apoiados",
+   "desc": "Com as mãos e os joelhos no chão e o corpo alinhado da cabeça aos joelhos, desce o peito dobrando os cotovelos e empurra de volta.",
+   "focus": "Peitoral e tríceps, versão mais leve",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-knee-push-up.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d77a"
+   ]
+  },
+  {
+   "slug": "kineti-wide-push-up",
+   "lib": "kineti",
+   "name": "Flexão de braços com mãos afastadas",
+   "desc": "Em prancha, com as mãos mais abertas que os ombros, desce o peito e empurra de volta.",
+   "focus": "Peitoral e ombros",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-wide-push-up.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d797"
+   ]
+  },
+  {
    "slug": "kineti-wall-push-up",
    "lib": "kineti",
    "name": "Flexão de braços na parede",
@@ -3431,6 +3693,22 @@
    "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f7f3b"
+   ]
+  },
+  {
+   "slug": "kineti-side-lying-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Flexão do ombro deitado de lado",
+   "desc": "Deitado de lado, eleva o braço de cima esticado à frente até acima da cabeça e desce devagar.",
+   "focus": "Amplitude de flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-side-lying-shoulder-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e945"
    ]
   },
   {
@@ -3666,6 +3944,22 @@
    ]
   },
   {
+   "slug": "kineti-supine-shoulder-rotation-90",
+   "lib": "kineti",
+   "name": "Rotação do ombro a 90 graus deitado",
+   "desc": "Deitado de costas, com o braço aberto ao lado e o cotovelo a 90 graus, gira o antebraço para cima e para trás e depois para baixo.",
+   "focus": "Rotação externa e interna do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-shoulder-rotation-90.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e943"
+   ]
+  },
+  {
    "slug": "kineti-band-shoulder-external-rotation",
    "lib": "kineti",
    "name": "Rotação externa de ombro com faixa elástica",
@@ -3882,7 +4176,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "660a6145b08ac7518f1f819f"
+    "660a6145b08ac7518f1f819f",
+    "65a9272153a15212d048eadd"
    ]
   },
   {
@@ -3980,7 +4275,8 @@
    "substitui": "wrist_flexion_extension",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71e44",
-    "664744bf5c2c1f75d4d71e97"
+    "664744bf5c2c1f75d4d71e97",
+    "65a9272153a15212d048ea49"
    ]
   },
   {

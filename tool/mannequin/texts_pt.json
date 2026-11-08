@@ -1372,5 +1372,107 @@
   "Deitado de costas na cama, eleva o tronco apoiando o peso nos cotovelos e antebraços. Sustenta e desce devagar.",
   "Mobilidade no leito e força de membros superiores",
   "mobilidade_transferencias"
+ ],
+ "kineti-push-up": [
+  "Flexão de braços",
+  "Em prancha, com as mãos no chão abaixo dos ombros e apoio na ponta dos pés, dobra os cotovelos e desce o peito. Empurra de volta, com o corpo em linha.",
+  "Peitoral, tríceps e estabilidade do tronco",
+  "ombros_escapulas"
+ ],
+ "kineti-knee-push-up": [
+  "Flexão de braços com joelhos apoiados",
+  "Com as mãos e os joelhos no chão e o corpo alinhado da cabeça aos joelhos, desce o peito dobrando os cotovelos e empurra de volta.",
+  "Peitoral e tríceps, versão mais leve",
+  "ombros_escapulas"
+ ],
+ "kineti-wide-push-up": [
+  "Flexão de braços com mãos afastadas",
+  "Em prancha, com as mãos mais abertas que os ombros, desce o peito e empurra de volta.",
+  "Peitoral e ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-forward-lunge": [
+  "Avanço à frente",
+  "Dá um passo à frente e desce o joelho de trás em direção ao chão, com o tronco ereto. Empurra com a perna da frente para voltar e troca de perna.",
+  "Quadríceps, glúteos e equilíbrio",
+  "joelhos"
+ ],
+ "kineti-backward-lunge": [
+  "Avanço para trás com mãos na cintura",
+  "Com as mãos na cintura, dá um passo para trás e desce o joelho de trás. Volta à posição inicial e troca de perna.",
+  "Quadríceps, glúteos e controle do joelho",
+  "joelhos"
+ ],
+ "kineti-squat-dumbbells": [
+  "Agachamento com halteres",
+  "Em pé, com um halter em cada mão ao lado do corpo, leva o quadril para trás e para baixo e volta a ficar em pé.",
+  "Quadríceps e glúteos com carga",
+  "joelhos"
+ ],
+ "kineti-prisoner-squat": [
+  "Agachamento com mãos atrás da cabeça",
+  "Com as mãos atrás da cabeça e os cotovelos abertos, agacha mantendo o peito aberto e volta a ficar em pé.",
+  "Quadríceps, glúteos e postura do tronco",
+  "joelhos"
+ ],
+ "kineti-backward-walking": [
+  "Caminhada para trás",
+  "Caminha para trás com passos curtos e controlados, mantendo o tronco ereto.",
+  "Equilíbrio e controle da marcha",
+  "marcha"
+ ],
+ "kineti-heel-walking": [
+  "Caminhada nos calcanhares",
+  "Caminha apoiado só nos calcanhares, com as pontas dos pés elevadas, balançando os braços.",
+  "Dorsiflexores do tornozelo",
+  "marcha"
+ ],
+ "kineti-toe-walking": [
+  "Caminhada na ponta dos pés",
+  "Caminha na ponta dos pés, com os calcanhares elevados, balançando os braços.",
+  "Panturrilha e equilíbrio",
+  "marcha"
+ ],
+ "kineti-march-arms-forward": [
+  "Marcha no lugar com braços à frente",
+  "Com os braços estendidos à frente na altura dos ombros, marcha no lugar elevando os joelhos.",
+  "Coordenação e resistência de ombros",
+  "equilibrio"
+ ],
+ "kineti-march-arms-forward-dumbbells": [
+  "Marcha no lugar com braços à frente e halteres",
+  "Segurando halteres com os braços estendidos à frente, marcha no lugar elevando os joelhos.",
+  "Coordenação e força de ombros",
+  "equilibrio"
+ ],
+ "kineti-turn-360": [
+  "Giro de 360 graus em pé",
+  "Em pé, gira no lugar com passos curtos até dar uma volta completa.",
+  "Equilíbrio dinâmico",
+  "equilibrio"
+ ],
+ "kineti-turn-180": [
+  "Giro de 180 graus em pé",
+  "Em pé, gira meia volta com passos curtos e depois volta.",
+  "Equilíbrio dinâmico",
+  "equilibrio"
+ ],
+ "kineti-feet-together-arms-out": [
+  "Pés juntos com braços abertos",
+  "Em pé com os pés juntos e os braços abertos para os lados, mantém o equilíbrio com pequenas oscilações do tronco.",
+  "Equilíbrio estático",
+  "equilibrio"
+ ],
+ "kineti-supine-shoulder-rotation-90": [
+  "Rotação do ombro a 90 graus deitado",
+  "Deitado de costas, com o braço aberto ao lado e o cotovelo a 90 graus, gira o antebraço para cima e para trás e depois para baixo.",
+  "Rotação externa e interna do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-side-lying-shoulder-flexion": [
+  "Flexão do ombro deitado de lado",
+  "Deitado de lado, eleva o braço de cima esticado à frente até acima da cabeça e desce devagar.",
+  "Amplitude de flexão do ombro",
+  "ombros_escapulas"
  ]
 }

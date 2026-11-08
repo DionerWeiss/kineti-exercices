@@ -679,6 +679,7 @@ for job in JOBS:
             travel[sd] = (max((q - ps[0]).length for q in ps), ps[0])
         scene.frame_set(f0)
         still = [sd for sd in travel if travel[sd][0] < 0.05] or [min(travel, key=lambda k_: travel[k_][0])]
+        still = [sd for sd in 'LR' if 'table' + sd in props] or still  # tableL/tableR: only that hand is on it
         pc = sum((travel[sd][1] for sd in still), Vector()) / len(still)
         hp = bone_head('hips')
         away = pc - hp
@@ -1035,6 +1036,55 @@ for job in JOBS:
         wb.rotation_mode = 'QUATERNION'
         temp.append(wb)
         animate([(wb, lambda end=end, dv=dv: Matrix.Translation(band_end(end) + dv * rb))], f0, f1)
+    # wallat-<end>-<dir>[p]: a flat wall (or, with p, a 12 cm door-frame post) touching a hand, foot, knee or the
+    # outside of an elbow (band_end codes plus eL/eR) where it reaches furthest towards F/B/L/R (isometric presses).
+    for wa in [p_ for p_ in props if p_.startswith('wallat-')]:
+        _, end, dr = wa.split('-')
+        post = dr.endswith('p')
+        dv = {'F': Vector((0, -1, 0)), 'B': Vector((0, 1, 0)), 'L': Vector((1, 0, 0)), 'R': Vector((-1, 0, 0))}[dr[0]]
+        pt = (lambda s=end[1]: bone_head('elbow' + s)) if end[0] == 'e' else (lambda e=end: band_end(e))
+        reach = over_frames(lambda: pt().copy(), 2)
+        c0 = max(reach, key=lambda q: q.dot(dv))  # the post / wall sits where the part reaches furthest
+        far = c0.dot(dv)
+        c0 = c0 - dv * c0.dot(dv) + dv * (far + {'e': 0.045, 'k': 0.055, 'h': 0.03}.get(end[0], 0.04) + 0.02)
+        w_ = 0.12 if post else 1.4
+        box((c0.x, c0.y, 1.2 if post else 1.5), (w_, 0.04, 2.4 if post else 3) if dv.x == 0 else (0.04, w_, 2.4 if post else 3),
+            CHAIRC if post else WALLC)['noframe'] = True
+    for ap in [p_ for p_ in props if p_.startswith('armpillow')]:  # armpillowL/R: a folded pillow between elbow and trunk
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=1, segments=32, ring_count=16)
+        apo = bpy.context.object
+        apo.data.materials.append(PILLOWC)
+        bpy.ops.object.shade_smooth()
+        apo.rotation_mode = 'QUATERNION'
+        temp.append(apo)
+
+        def apm(s=ap[-1]):
+            e = bone_head('elbow' + s)
+            sp = bone_head('spine')
+            t = Vector((sp.x, e.y, e.z))
+            dvec = e - t
+            gap = max(dvec.length - 0.045 - 0.12, 0.04)
+            c = e - dvec.normalized() * (0.045 + gap / 2)
+            return Matrix.LocRotScale(c + Vector((0, 0, 0.04)), Vector((1, 0, 0)).rotation_difference(dvec), Vector((gap / 2 + 0.01, 0.12, 0.14)))
+        animate([(apo, apm)], f0, f1)
+    tbp = next((p_ for p_ in props if p_.startswith('tableball')), None)
+    if tbp:  # tableball[L|R]: a 40 cm ball on a table under the palm that rolls it (default: the one furthest forward)
+        RB = 0.2
+        hp0 = bone_head('hips')
+        sd = tbp[-1] if tbp[-1] in 'LR' else max('LR', key=lambda s_: (palm(s_) - hp0).xy.length)
+        top = min(over_frames(lambda: palm(sd).z, 2)) - 2 * RB - 0.01
+        pc = palm(sd)
+        box((pc.x, pc.y, top - 0.02), (0.8, 0.6, 0.04), CHAIRC)
+        for sx in (-1, 1):
+            for sy in (-1, 1):
+                box((pc.x + sx * 0.35, pc.y + sy * 0.25, (top - 0.04) / 2), (0.04, 0.04, top - 0.04), CHAIRC)
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=RB, segments=48, ring_count=24)
+        tb = bpy.context.object
+        tb.data.materials.append(SWISSC)
+        bpy.ops.object.shade_smooth()
+        tb.rotation_mode = 'QUATERNION'
+        temp.append(tb)
+        animate([(tb, lambda: Matrix.Translation(Vector((palm(sd).x, palm(sd).y, top + RB))))], f0, f1)
     if 'pulley' in props:  # an overhead pulley above and behind the head, a rope from hand to hand over it
         scene.frame_set(f0)
         hd = bone_head('neck')
@@ -1074,6 +1124,13 @@ for job in JOBS:
         scene.frame_set(f0)
     for kind in sorted(p_ for p_ in props if p_.startswith(SUPPORT_BALLS)):
         extra += support_ball(kind, f0, f1, name)
+        if 'ballwall' in props:  # a wall just beyond the ball, on the side away from the pelvis (first frame)
+            scene.frame_set(f0)
+            c = temp[-1].matrix_world.translation.copy()
+            d = c - bone_head('hips')
+            d = Vector((math.copysign(1, d.x), 0, 0)) if abs(d.x) > abs(d.y) else Vector((0, math.copysign(1, d.y), 0))
+            w = c + d * (SWISS_R + 0.02)
+            box((w.x, w.y, 1.2), (0.04, 1.4, 2.4) if d.x else (1.4, 0.04, 2.4), WALLC)['noframe'] = True
     # Sticks: stick (through both palms), stick-<a>-<b>, stickend-<a>-<b>, stickfloor-<a>[-<b>] (see stick_seg).
     for sp in sorted(p_ for p_ in props if p_ == 'stick' or p_.startswith(('stick-', 'stickend-', 'stickfloor-'))):
         kind, *ends = sp.split('-')

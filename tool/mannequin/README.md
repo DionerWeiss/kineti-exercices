@@ -86,6 +86,11 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `waistball`: bola passada ao redor da cintura, na mão direita na primeira metade e na esquerda na segunda;
   - `pball-<tamanho>-<parte>[0]`: bola pequena no chão sob uma parte (`v`: bola de 22 cm, `t`: bolinha de tênis; partes `hL`/`hR`, `fL`/`fR`, `cL`/`cR` panturrilha, `kL`/`kR` atrás do joelho). Com `0` no fim, fica parada onde estava no primeiro quadro;
   - `wallpress-<ponta>-<direção>`: bola entre uma mão ou um pé e uma parede além dela (`F`, `B`, `L`, `R`), na distância máxima que a ponta alcança;
+  - `wallat-<ponta>-<direção>[p]`: parede lisa encostada numa mão, num pé, num joelho ou na parte de fora de um cotovelo (códigos da faixa, mais `eL`/`eR`), onde a ponta mais avança na direção `F`, `B`, `L` ou `R` (isometrias contra a parede). Com `p` no fim, é um batente de porta de 12 cm em vez da parede;
+  - `armpillowL`, `armpillowR`: travesseiro dobrado entre o cotovelo e o tronco;
+  - `tableball[L|R]`: bola de 40 cm sobre uma mesa, sob a mão que a rola (sem letra, a mão mais à frente do corpo). A mesa fica 41 cm abaixo da palma mais baixa;
+  - `ballwall`: parede logo depois da bola suíça de apoio, do lado oposto à pelve (pé empurrando a bola contra a parede);
+  - `tableL`, `tableR`: junto com `table`, só aquela mão fica na mesa (a outra pode ficar parada ao lado do corpo);
   - `bosuflat`: BOSU com a cúpula para baixo (plataforma em cima), no lugar da caixa de `ground`;
   - `pillow`: cada caixa de `ground` vira uma pilha de travesseiros, ou uma mesa com travesseiro em cima quando passa de 45 cm. Sob a cabeça, flexione um pouco o pescoço (`neck [14]` para 6 cm), senão a cabeça levanta o corpo inteiro;
   - `kneepillow`: travesseiro dobrado entre os joelhos;

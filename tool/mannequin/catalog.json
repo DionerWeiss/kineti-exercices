@@ -449,6 +449,22 @@
    ]
   },
   {
+   "slug": "kineti-chair-iso-hip-adduction-hand",
+   "lib": "kineti",
+   "name": "Adução isométrica do quadril com a mão, sentado",
+   "desc": "Sentado com os pés apoiados, coloca a mão na parte de dentro do joelho oposto e empurra o joelho para dentro contra a mão, sem tirar o pé do lugar, e sustenta.",
+   "focus": "Adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-iso-hip-adduction-hand.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d58"
+   ]
+  },
+  {
    "slug": "low-lunge-kneeling",
    "lib": "deskbreak",
    "name": "Afundo baixo ajoelhado",
@@ -795,6 +811,23 @@
    ]
   },
   {
+   "slug": "kineti-supine-iso-glute-set",
+   "lib": "kineti",
+   "name": "Contração isométrica dos glúteos deitado",
+   "desc": "Deitado de costas com as pernas esticadas e as mãos sobre a barriga, aperta os glúteos e pressiona os calcanhares contra a superfície, sem mover o corpo, e sustenta.",
+   "focus": "Glúteo máximo",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-iso-glute-set.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304072de",
+    "65b09dc54ad825d030407246"
+   ]
+  },
+  {
    "slug": "kineti-ball-knee-lift-abduction",
    "lib": "kineti",
    "name": "Elevar o joelho e abrir para o lado, sentado na bola suíça",
@@ -977,6 +1010,38 @@
    ]
   },
   {
+   "slug": "kineti-supine-iso-hip-extension-hands",
+   "lib": "kineti",
+   "name": "Extensão isométrica do quadril contra as mãos, deitado",
+   "desc": "Deitado de costas, eleva uma perna com quadril e joelho a 90 graus e segura atrás da coxa. Faz força com a coxa para baixo contra as mãos, sem movimento, e sustenta.",
+   "focus": "Glúteo máximo e isquiotibiais",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-iso-hip-extension-hands.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7e2"
+   ]
+  },
+  {
+   "slug": "kineti-iso-hip-extension-standing",
+   "lib": "kineti",
+   "name": "Extensão isométrica do quadril em pé",
+   "desc": "Em pé, leva uma perna levemente para trás com o joelho esticado, faz força para trás contraindo o glúteo e sustenta, sem inclinar o tronco.",
+   "focus": "Glúteo máximo",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-iso-hip-extension-standing.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407264"
+   ]
+  },
+  {
    "slug": "kineti-ball-single-leg-curl",
    "lib": "kineti",
    "name": "Flexão de joelho unilateral na bola suíça",
@@ -1038,6 +1103,38 @@
    "kineti_slug": "standing_hip_flexion",
    "substitui": "standing_hip_flexion",
    "pocketphysio": []
+  },
+  {
+   "slug": "kineti-supine-iso-hip-flexion-hands",
+   "lib": "kineti",
+   "name": "Flexão isométrica do quadril contra as mãos, deitado",
+   "desc": "Deitado de costas, eleva um joelho a 90 graus e apoia as mãos sobre a coxa. Empurra o joelho contra as mãos, que seguram, mantendo a outra perna esticada, e sustenta.",
+   "focus": "Flexores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-iso-hip-flexion-hands.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7e6"
+   ]
+  },
+  {
+   "slug": "kineti-supine-glute-iso-ball-wall",
+   "lib": "kineti",
+   "name": "Glúteo isométrico empurrando a bola contra a parede",
+   "desc": "Deitado de costas, com um pé no chão e o outro calcanhar sobre uma bola suíça encostada na parede, quadril e joelho a 90 graus, empurra o calcanhar contra a bola contraindo o glúteo e sustenta.",
+   "focus": "Glúteo máximo",
+   "area": "quadril_gluteos",
+   "view": "Lateral",
+   "props": "Bola suíça, Parede",
+   "video": "build/mannequin/videos/kineti-supine-glute-iso-ball-wall.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e87"
+   ]
   },
   {
    "slug": "kineti-chair-hip-flexion-isometric",
@@ -1312,6 +1409,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-iso-bridge-hold",
+   "lib": "kineti",
+   "name": "Ponte isométrica com os ombros na bola",
+   "desc": "Com a cabeça e os ombros apoiados na bola suíça e os pés no chão, eleva o quadril até o corpo ficar reto como uma ponte e sustenta a posição.",
+   "focus": "Glúteos e tronco",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-iso-bridge-hold.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e739"
+   ]
+  },
+  {
    "slug": "kineti-single-leg-bridge",
    "lib": "kineti",
    "name": "Ponte unilateral",
@@ -1429,6 +1542,22 @@
    "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d03040724f"
+   ]
+  },
+  {
+   "slug": "kineti-chair-iso-hip-ir-wall",
+   "lib": "kineti",
+   "name": "Rotação interna isométrica do quadril contra a parede, sentado",
+   "desc": "Sentado de lado para a parede, encosta a parte de fora do pé nela e empurra o pé para fora, como se girasse a perna para dentro, sem mover o joelho, e sustenta.",
+   "focus": "Rotadores internos do quadril",
+   "area": "quadril_gluteos",
+   "view": "Frontal, pés em destaque",
+   "props": "Cadeira, Parede",
+   "video": "build/mannequin/videos/kineti-chair-iso-hip-ir-wall.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e98"
    ]
   },
   {
@@ -2342,6 +2471,22 @@
    ]
   },
   {
+   "slug": "kineti-wall-iso-knee-extension-ball",
+   "lib": "kineti",
+   "name": "Extensão terminal do joelho contra bola na parede",
+   "desc": "Em pé, com uma bola pequena ou uma toalha enrolada entre a parede e a parte de trás do joelho, pressiona o joelho para trás esticando a perna, com o calcanhar no chão, e sustenta.",
+   "focus": "Quadríceps e extensão completa do joelho",
+   "area": "joelhos",
+   "view": "Lateral",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-iso-knee-extension-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f1c"
+   ]
+  },
+  {
    "slug": "prone-heel-to-seat",
    "lib": "deskbreak",
    "name": "Flexão de joelho de bruços",
@@ -2517,6 +2662,24 @@
    "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7cf"
+   ]
+  },
+  {
+   "slug": "kineti-supine-iso-hamstring-set",
+   "lib": "kineti",
+   "name": "Isometria dos isquiotibiais deitado",
+   "desc": "Deitado de costas com os joelhos dobrados, estende um pouco uma das pernas e pressiona o calcanhar contra o chão, sentindo a parte de trás da coxa contrair, sem movimento, e sustenta.",
+   "focus": "Isquiotibiais",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-supine-iso-hamstring-set.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407267",
+    "65b09dc54ad825d030407268",
+    "65a9272053a15212d048e837"
    ]
   },
   {
@@ -3060,6 +3223,23 @@
    ]
   },
   {
+   "slug": "kineti-chair-iso-ankle-dorsiflexion",
+   "lib": "kineti",
+   "name": "Dorsiflexão isométrica do tornozelo, um pé sobre o outro",
+   "desc": "Sentado, coloca um pé sobre o outro e tenta levantar a ponta do pé de baixo enquanto o pé de cima segura, sem movimento, e sustenta.",
+   "focus": "Tibial anterior",
+   "area": "tornozelos_pes",
+   "view": "Frontal 3/4, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-iso-ankle-dorsiflexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e506",
+    "65b09dc54ad825d03040720a"
+   ]
+  },
+  {
    "slug": "chair-toe-raises",
    "lib": "deskbreak",
    "name": "Elevação das pontas dos pés sentado",
@@ -3200,6 +3380,22 @@
    ]
   },
   {
+   "slug": "kineti-wall-single-heel-raise-hold",
+   "lib": "kineti",
+   "name": "Elevação dos calcanhares sustentada numa perna, mãos na parede",
+   "desc": "De frente para a parede com as mãos apoiadas, sobe na ponta dos dois pés, tira um pé do chão e sustenta o peso na outra perna com o calcanhar elevado, depois apoia o pé e desce devagar.",
+   "focus": "Panturrilha",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-single-heel-raise-hold.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cb2"
+   ]
+  },
+  {
    "slug": "kineti-step-heel-drop",
    "lib": "kineti",
    "name": "Elevação e descida de calcanhares no degrau",
@@ -3255,6 +3451,22 @@
    ]
   },
   {
+   "slug": "kineti-wall-iso-ankle-eversion",
+   "lib": "kineti",
+   "name": "Eversão isométrica do tornozelo contra a parede",
+   "desc": "Em pé, encosta a lateral de fora do pé na base da parede e pressiona como se quisesse empurrá-la para o lado, sem mover o resto do corpo, e sustenta.",
+   "focus": "Fibulares",
+   "area": "tornozelos_pes",
+   "view": "Frontal",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-iso-ankle-eversion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce49"
+   ]
+  },
+  {
    "slug": "kineti-long-sit-band-plantar-flexion",
    "lib": "kineti",
    "name": "Flexão plantar com faixa elástica sentado",
@@ -3286,6 +3498,22 @@
    "substitui": "",
    "pocketphysio": [
     "6613db652d1659b1aabba005"
+   ]
+  },
+  {
+   "slug": "kineti-wall-iso-ankle-plantarflexion",
+   "lib": "kineti",
+   "name": "Flexão plantar isométrica contra a parede",
+   "desc": "De frente para a parede, com as mãos apoiadas, encosta a ponta de um pé na parede com o calcanhar no chão e empurra a parede com os dedos, sustentando.",
+   "focus": "Panturrilha",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-iso-ankle-plantarflexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d87"
    ]
   },
   {
@@ -3357,6 +3585,22 @@
    "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7d80"
+   ]
+  },
+  {
+   "slug": "kineti-chair-iso-ankle-inversion",
+   "lib": "kineti",
+   "name": "Inversão isométrica dos tornozelos, sentado",
+   "desc": "Sentado com os calcanhares no chão, vira as pontas dos pés para dentro até os dedões se tocarem e pressiona um contra o outro, sustentando a força.",
+   "focus": "Tibial posterior",
+   "area": "tornozelos_pes",
+   "view": "Frontal, pés em destaque",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-iso-ankle-inversion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d79"
    ]
   },
   {
@@ -4200,6 +4444,22 @@
    "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7d95"
+   ]
+  },
+  {
+   "slug": "kineti-vrt-figure-eight",
+   "lib": "kineti",
+   "name": "Estabilização do olhar seguindo o polegar em oito",
+   "desc": "Em pé, com o braço esticado à frente e o polegar para cima, desenha um oito deitado no ar e acompanha o polegar só com os olhos, mantendo a cabeça parada.",
+   "focus": "Controle do olhar e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-vrt-figure-eight.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048eb00"
    ]
   },
   {
@@ -6143,6 +6403,38 @@
    ]
   },
   {
+   "slug": "kineti-supine-ta-knees-out",
+   "lib": "kineti",
+   "name": "Ativação do abdômen abrindo os joelhos",
+   "desc": "Deitado de costas com os joelhos dobrados e as mãos sobre a barriga, mantém o abdômen firme e afasta os joelhos para os lados devagar, sem mexer a lombar, e volta.",
+   "focus": "Transverso do abdômen",
+   "area": "tronco_coluna",
+   "view": "Elevada",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-supine-ta-knees-out.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040734e"
+   ]
+  },
+  {
+   "slug": "kineti-quadruped-core-hold",
+   "lib": "kineti",
+   "name": "Ativação do abdômen e do assoalho pélvico em quatro apoios",
+   "desc": "Em quatro apoios, com as mãos sob os ombros e os joelhos sob o quadril, puxa o umbigo em direção às costas contraindo a barriga, sem mover a coluna, e sustenta.",
+   "focus": "Transverso do abdômen e assoalho pélvico",
+   "area": "tronco_coluna",
+   "view": "Lateral",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-quadruped-core-hold.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e4c"
+   ]
+  },
+  {
    "slug": "kineti-ta-recruitment",
    "lib": "kineti",
    "name": "Ativação do transverso do abdômen, deitado",
@@ -6324,6 +6616,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e9f6"
+   ]
+  },
+  {
+   "slug": "kineti-supine-straight-leg-lower",
+   "lib": "kineti",
+   "name": "Descida da perna esticada deitado",
+   "desc": "Deitado de costas, traz um joelho ao peito segurando a coxa, estica a perna para o alto e desce devagar com ela reta até o chão, mantendo o abdômen contraído.",
+   "focus": "Controle do abdômen e da pelve",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-straight-leg-lower.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e918"
    ]
   },
   {
@@ -6808,6 +7116,22 @@
     "65a9272153a15212d048e9f7",
     "65b09dc54ad825d030407235",
     "65a9272053a15212d048e5dd"
+   ]
+  },
+  {
+   "slug": "kineti-chair-legs-knee-to-chest",
+   "lib": "kineti",
+   "name": "Joelho ao peito com as pernas sobre a cadeira",
+   "desc": "Deitado de costas com as panturrilhas apoiadas numa cadeira, traz um joelho em direção ao peito de forma lenta e controlada, volta o pé para a cadeira e alterna, mantendo o abdômen ativo.",
+   "focus": "Transverso do abdômen e flexores do quadril",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-legs-knee-to-chest.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce91"
    ]
   },
   {
@@ -7885,6 +8209,54 @@
    ]
   },
   {
+   "slug": "kineti-band-iso-abduction-step",
+   "lib": "kineti",
+   "name": "Abdução isométrica com faixa, dando um passo",
+   "desc": "Com a faixa presa embaixo, do outro lado, cruzando à frente do tronco e o braço esticado ao lado do corpo, dá um passo para longe da fixação mantendo o braço firme e sustenta.",
+   "focus": "Deltoide médio",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-iso-abduction-step.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f800c"
+   ]
+  },
+  {
+   "slug": "kineti-wall-iso-shoulder-abduction",
+   "lib": "kineti",
+   "name": "Abdução isométrica do ombro contra a parede",
+   "desc": "De lado para a parede, com o braço junto ao corpo e o cotovelo dobrado a 90 graus, pressiona a parte de fora do cotovelo contra a parede e sustenta.",
+   "focus": "Deltoide médio",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-iso-shoulder-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f800b"
+   ]
+  },
+  {
+   "slug": "kineti-chair-iso-shoulder-abduction",
+   "lib": "kineti",
+   "name": "Abdução isométrica do ombro sentado",
+   "desc": "Sentado com a coluna ereta, a outra mão fica na parte de fora do braço, logo acima do cotovelo. Empurra o braço para fora contra a mão, sem movimento, e sustenta.",
+   "focus": "Deltoide médio",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-iso-shoulder-abduction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304072e0"
+   ]
+  },
+  {
    "slug": "kineti-band-pull-apart",
    "lib": "kineti",
    "name": "Abertura de braços com faixa elástica",
@@ -7967,6 +8339,70 @@
    "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7ca"
+   ]
+  },
+  {
+   "slug": "kineti-band-iso-adduction-step",
+   "lib": "kineti",
+   "name": "Adução isométrica com faixa presa no alto, dando um passo",
+   "desc": "De lado para a faixa presa no alto, com o braço esticado junto ao corpo, dá um passo para longe da fixação mantendo o braço firme contra o tronco e sustenta.",
+   "focus": "Adutores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-iso-adduction-step.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8015"
+   ]
+  },
+  {
+   "slug": "kineti-chair-iso-adduction-pillow",
+   "lib": "kineti",
+   "name": "Adução isométrica do ombro apertando um travesseiro",
+   "desc": "Sentado com a coluna ereta, coloca um travesseiro dobrado entre a parte de dentro do braço e o tronco e aperta o braço contra ele, com os ombros relaxados, sustentando.",
+   "focus": "Adutores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Cadeira, Travesseiro",
+   "video": "build/mannequin/videos/kineti-chair-iso-adduction-pillow.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e91e"
+   ]
+  },
+  {
+   "slug": "kineti-iso-shoulder-adduction-self",
+   "lib": "kineti",
+   "name": "Adução isométrica do ombro com a outra mão",
+   "desc": "Em pé, com o cotovelo dobrado e o braço um pouco à frente, a outra mão fica na parte de dentro do cotovelo. Aperta o braço em direção ao corpo contra a mão, sem movimento, e sustenta.",
+   "focus": "Força dos adutores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-iso-shoulder-adduction-self.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9dd"
+   ]
+  },
+  {
+   "slug": "kineti-chair-iso-adduction-pillow-table",
+   "lib": "kineti",
+   "name": "Adução isométrica do ombro sobre travesseiro na mesa",
+   "desc": "Sentado de lado para a mesa, com o braço apoiado sobre um travesseiro e o cotovelo dobrado, pressiona o braço para baixo contra o travesseiro e sustenta.",
+   "focus": "Adutores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Travesseiros",
+   "video": "build/mannequin/videos/kineti-chair-iso-adduction-pillow-table.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8013"
    ]
   },
   {
@@ -8123,6 +8559,22 @@
    ]
   },
   {
+   "slug": "kineti-wall-er-stretch-door-frame",
+   "lib": "kineti",
+   "name": "Alongamento dos rotadores internos no batente",
+   "desc": "Em pé, apoia a palma e o antebraço no batente com o cotovelo dobrado a 90 graus junto ao tronco e gira o corpo para o lado oposto até sentir o alongamento na frente do ombro.",
+   "focus": "Alongamento dos rotadores internos",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Batente de porta",
+   "video": "build/mannequin/videos/kineti-wall-er-stretch-door-frame.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce7f"
+   ]
+  },
+  {
    "slug": "kineti-chair-neck-side-stretch",
    "lib": "kineti",
    "name": "Alongamento lateral do pescoço, sentado",
@@ -8172,6 +8624,22 @@
    ]
   },
   {
+   "slug": "kineti-kneel-ball-side-lean",
+   "lib": "kineti",
+   "name": "Apoio lateral na bola suíça ajoelhado",
+   "desc": "Ajoelhado no colchonete com a bola suíça ao lado, apoia a mão sobre ela com o cotovelo esticado e inclina o tronco para o lado, passando o peso para o braço, e sustenta.",
+   "focus": "Estabilidade da escápula",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-kneel-ball-side-lean.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e932"
+   ]
+  },
+  {
    "slug": "kineti-side-lying-middle-trap",
    "lib": "kineti",
    "name": "Ativação do trapézio médio, deitado de lado",
@@ -8217,6 +8685,24 @@
    "substitui": "",
    "pocketphysio": [
     "660a61776a80d359d40dce6b"
+   ]
+  },
+  {
+   "slug": "kineti-table-ball-circles",
+   "lib": "kineti",
+   "name": "Círculos com a bola sobre a mesa",
+   "desc": "Em pé, com a mão sobre uma bola apoiada na mesa e as escápulas encaixadas para trás e para baixo, faz pequenos círculos lentos com a bola, mantendo o braço estendido e o tronco estável.",
+   "focus": "Estabilidade da escápula",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça sobre a mesa",
+   "video": "build/mannequin/videos/kineti-table-ball-circles.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea30",
+    "65b09dc54ad825d03040731b",
+    "65b09dc54ad825d03040731c"
    ]
   },
   {
@@ -8334,6 +8820,22 @@
     "660a6145b08ac7518f1f811b",
     "664744bf5c2c1f75d4d71d83",
     "660a61776a80d359d40dce9e"
+   ]
+  },
+  {
+   "slug": "kineti-high-sit-hand-slide-back",
+   "lib": "kineti",
+   "name": "Deslizar a mão para trás sentado",
+   "desc": "Sentado com a coluna ereta e a palma apoiada ao lado do corpo, leva a escápula para trás e para baixo e, mantendo essa ativação, desliza a mão para trás e volta.",
+   "focus": "Controle da escápula",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cama",
+   "video": "build/mannequin/videos/kineti-high-sit-hand-slide-back.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e91a"
    ]
   },
   {
@@ -8904,6 +9406,73 @@
    ]
   },
   {
+   "slug": "kineti-band-iso-extension-step",
+   "lib": "kineti",
+   "name": "Extensão isométrica com faixa, dando um passo para trás",
+   "desc": "De frente para a faixa presa, com o braço esticado ao lado do corpo, dá um passo para trás mantendo o braço parado para esticar a faixa e sustenta, voltando devagar.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-iso-extension-step.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8021"
+   ]
+  },
+  {
+   "slug": "kineti-wall-iso-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão isométrica do ombro com as costas na parede",
+   "desc": "De costas para a parede, com os cotovelos dobrados a 90 graus, pressiona a parte de trás dos braços contra a parede, aproximando as escápulas, e sustenta.",
+   "focus": "Extensores do ombro e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-iso-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f06",
+    "660a6145b08ac7518f1f8020"
+   ]
+  },
+  {
+   "slug": "kineti-table-iso-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão isométrica do ombro contra a mesa",
+   "desc": "De costas para uma mesa, com o braço ao lado do corpo, pressiona a palma da mão para trás contra a borda da mesa, mantendo o cotovelo esticado e o corpo parado, e sustenta.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Mesa",
+   "video": "build/mannequin/videos/kineti-table-iso-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea2e"
+   ]
+  },
+  {
+   "slug": "kineti-supine-iso-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão isométrica dos ombros deitado",
+   "desc": "Deitado de costas com os braços esticados ao lado do corpo e as palmas para baixo, pressiona os braços e os ombros contra a superfície e sustenta.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-iso-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304072e1",
+    "65b09dc54ad825d030407266",
+    "65a9272153a15212d048ea2c"
+   ]
+  },
+  {
    "slug": "kineti-push-up-rotation",
    "lib": "kineti",
    "name": "Flexão de braço com rotação para prancha lateral",
@@ -9234,6 +9803,38 @@
    "substitui": "",
    "pocketphysio": [
     "660a61776a80d359d40dce7e"
+   ]
+  },
+  {
+   "slug": "kineti-wall-iso-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Flexão isométrica do ombro contra a parede",
+   "desc": "De frente para a parede, com o braço esticado à frente e a palma apoiada na altura do ombro, empurra a parede sem dobrar o cotovelo e sustenta.",
+   "focus": "Deltoide anterior",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-iso-shoulder-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e14"
+   ]
+  },
+  {
+   "slug": "kineti-chair-iso-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Flexão isométrica do ombro sentado",
+   "desc": "Sentado, com o cotovelo dobrado a 90 graus ao lado do corpo, a outra mão fica na frente do braço, acima do cotovelo. Empurra o braço para a frente contra a mão, sem movimento, e sustenta.",
+   "focus": "Deltoide anterior",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-iso-shoulder-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e923"
    ]
   },
   {
@@ -9713,6 +10314,22 @@
    ]
   },
   {
+   "slug": "kineti-chair-scapular-retraction-arm-on-table",
+   "lib": "kineti",
+   "name": "Retração e depressão da escápula com o braço apoiado",
+   "desc": "Sentado com o braço apoiado de lado sobre uma mesa, puxa a escápula para trás e para baixo num movimento pequeno, mantendo o tronco firme, e sustenta.",
+   "focus": "Trapézio médio e inferior",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Travesseiros",
+   "video": "build/mannequin/videos/kineti-chair-scapular-retraction-arm-on-table.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7ff0"
+   ]
+  },
+  {
    "slug": "prone-w-squeeze",
    "lib": "deskbreak",
    "name": "Retração escapular em W de bruços",
@@ -9763,6 +10380,22 @@
     "65b09dc54ad825d030407318",
     "65b09dc54ad825d030407319",
     "660a6145b08ac7518f1f7ff1"
+   ]
+  },
+  {
+   "slug": "kineti-supine-iso-scapular-retraction",
+   "lib": "kineti",
+   "name": "Retração isométrica das escápulas deitado",
+   "desc": "Deitado de costas com as pernas esticadas, pressiona as escápulas contra o chão aproximando-as da coluna, sem tirar o tronco do lugar, e sustenta.",
+   "focus": "Romboides e trapézio médio",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-iso-scapular-retraction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e906"
    ]
   },
   {
@@ -10082,6 +10715,56 @@
    ]
   },
   {
+   "slug": "kineti-wall-iso-shoulder-er",
+   "lib": "kineti",
+   "name": "Rotação externa isométrica com as costas na parede",
+   "desc": "De costas para a parede, com os cotovelos dobrados, gira os antebraços para fora até o dorso das mãos encostar na parede e pressiona, sustentando com a postura ereta.",
+   "focus": "Rotadores externos e escápulas",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Parede",
+   "video": "build/mannequin/videos/kineti-wall-iso-shoulder-er.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8031",
+    "660a6145b08ac7518f1f8032"
+   ]
+  },
+  {
+   "slug": "kineti-band-iso-er-step",
+   "lib": "kineti",
+   "name": "Rotação externa isométrica com faixa, dando um passo",
+   "desc": "Com a faixa presa do outro lado do corpo e o cotovelo dobrado a 90 graus, dá um passo para longe da fixação mantendo o braço parado e sustenta, voltando devagar.",
+   "focus": "Rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-iso-er-step.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f802b"
+   ]
+  },
+  {
+   "slug": "kineti-iso-shoulder-er-self",
+   "lib": "kineti",
+   "name": "Rotação externa isométrica do ombro com a outra mão",
+   "desc": "Em pé, com o cotovelo dobrado a 90 graus junto ao corpo, a outra mão segura o lado de fora do punho. Tenta girar o antebraço para fora sem deixar o braço se mover e sustenta.",
+   "focus": "Força dos rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-iso-shoulder-er-self.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e962",
+    "65a9272153a15212d048e95e"
+   ]
+  },
+  {
    "slug": "kineti-band-shoulder-internal-rotation",
    "lib": "kineti",
    "name": "Rotação interna de ombro com faixa elástica",
@@ -10179,6 +10862,71 @@
    ]
   },
   {
+   "slug": "kineti-iso-shoulder-ir-abdomen",
+   "lib": "kineti",
+   "name": "Rotação interna isométrica com a mão na barriga",
+   "desc": "Em pé, com a palma da mão sobre a barriga e o cotovelo um pouco à frente, pressiona a mão contra o abdômen sem mover o braço e sustenta.",
+   "focus": "Força dos rotadores internos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-iso-shoulder-ir-abdomen.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8048"
+   ]
+  },
+  {
+   "slug": "kineti-band-iso-ir-step",
+   "lib": "kineti",
+   "name": "Rotação interna isométrica com faixa, dando um passo",
+   "desc": "De lado para a faixa presa, com o cotovelo dobrado a 90 graus e colado ao corpo, dá um passo para longe da fixação sem deixar o braço girar e sustenta, voltando devagar.",
+   "focus": "Rotadores internos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica presa",
+   "video": "build/mannequin/videos/kineti-band-iso-ir-step.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f804a"
+   ]
+  },
+  {
+   "slug": "kineti-iso-shoulder-ir-self",
+   "lib": "kineti",
+   "name": "Rotação interna isométrica do ombro com a outra mão",
+   "desc": "Em pé, com o cotovelo dobrado a 90 graus junto ao corpo, a outra mão segura o lado de dentro do punho. Tenta girar o antebraço para dentro sem deixar o braço se mover e sustenta.",
+   "focus": "Força dos rotadores internos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-iso-shoulder-ir-self.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e948"
+   ]
+  },
+  {
+   "slug": "kineti-wall-iso-shoulder-ir",
+   "lib": "kineti",
+   "name": "Rotação interna isométrica do ombro no batente",
+   "desc": "Em pé junto ao batente de uma porta, com o cotovelo dobrado a 90 graus, apoia a parte de dentro do antebraço e do punho e pressiona como se girasse o braço para dentro, sustentando.",
+   "focus": "Rotadores internos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Batente de porta",
+   "video": "build/mannequin/videos/kineti-wall-iso-shoulder-ir.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8049",
+    "664744bf5c2c1f75d4d71e16"
+   ]
+  },
+  {
    "slug": "kineti-chair-arm-shake",
    "lib": "kineti",
    "name": "Sacudir os braços, sentado",
@@ -10272,6 +11020,22 @@
    "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7e3e"
+   ]
+  },
+  {
+   "slug": "kineti-chair-kneel-weight-shift",
+   "lib": "kineti",
+   "name": "Transferência de peso para os braços ajoelhado",
+   "desc": "Ajoelhado em frente a uma cadeira com os antebraços no assento, inclina o tronco para a frente passando o peso para os braços, com a coluna alinhada e os ombros para baixo, e volta.",
+   "focus": "Estabilidade da escápula",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Cadeira",
+   "video": "build/mannequin/videos/kineti-chair-kneel-weight-shift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce71"
    ]
   },
   {

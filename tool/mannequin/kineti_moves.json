@@ -51564,6 +51564,4163 @@
     }
    ],
    "once": true
+  },
+  {
+   "id": "kineti-iso-shoulder-er-self",
+   "en": "Isometric shoulder external rotation: the other hand blocks the wrist from outside",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Elbow bent at 90, at your side.",
+    "Other hand on the outside of the wrist.",
+    "Push out, the hand stops it. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -45,
+      0,
+      -50
+     ],
+     "elbowL": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      4,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -45,
+      0,
+      -50
+     ],
+     "elbowL": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-iso-shoulder-ir-self",
+   "en": "Isometric shoulder internal rotation: the other hand blocks the wrist from inside",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Elbow bent at 90, at your side.",
+    "Other hand on the inside of the wrist.",
+    "Push in, the hand stops it. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -40,
+      0,
+      -38
+     ],
+     "elbowL": [
+      -45,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      -4,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -40,
+      0,
+      -38
+     ],
+     "elbowL": [
+      -45,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-iso-shoulder-adduction-self",
+   "en": "Isometric shoulder adduction: the other hand on the inside of the elbow",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Elbow bent, arm a little forward.",
+    "Other hand on the inside of the elbow.",
+    "Squeeze the arm in against the hand. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -15,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      -45
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -15,
+      0,
+      2
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      -45
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-iso-shoulder-ir-abdomen",
+   "en": "Isometric internal rotation: palm pressing into the belly",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Palm on the belly, elbow a little forward.",
+    "Press the hand into the belly.",
+    "Keep the wrist firm. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -15,
+      -70,
+      8
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -15,
+      -72,
+      8
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-iso-hip-extension-standing",
+   "en": "Isometric hip extension standing: leg slightly back, squeeze the glute",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Stand tall.",
+    "Leg slightly back, knee straight.",
+    "Push it back, squeeze the glute. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legL": [
+      12,
+      0,
+      3
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legL": [
+      14,
+      0,
+      3
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-vrt-figure-eight",
+   "en": "Arm forward, thumb up: trace a lying figure eight, eyes on the thumb",
+   "amount_en": "1 min",
+   "steps_en": [
+    "Arm forward, thumb up.",
+    "Trace a lying figure eight.",
+    "Head still, eyes on the thumb."
+   ],
+   "beat": 0.55,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -90,
+      0,
+      4
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -100,
+      0,
+      22
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -80,
+      0,
+      22
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -90,
+      0,
+      4
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -100,
+      0,
+      -18
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -80,
+      0,
+      -18
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-chair-iso-shoulder-abduction",
+   "en": "Seated isometric abduction: the other hand on the outside of the arm",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit tall, elbow bent.",
+    "Other hand on the outside of the arm, above the elbow.",
+    "Push the arm out against it. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      -15,
+      0,
+      6
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -40,
+      0,
+      -55
+     ],
+     "elbowL": [
+      -30,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      -15,
+      0,
+      8
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -40,
+      0,
+      -55
+     ],
+     "elbowL": [
+      -30,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-shoulder-flexion",
+   "en": "Seated isometric flexion: the other hand on the front of the arm",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit tall, elbow bent at your side.",
+    "Other hand on the front of the arm.",
+    "Push the arm forward against it. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      -50
+     ],
+     "elbowL": [
+      -70,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      -2,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      -50
+     ],
+     "elbowL": [
+      -70,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-hip-adduction-hand",
+   "en": "Seated isometric adduction: knee pushes in against the other hand",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit, feet flat.",
+    "Hand on the inside of the other knee.",
+    "Push the knee in against the hand. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      20,
+      0,
+      0
+     ],
+     "armL": [
+      -50,
+      0,
+      -25
+     ],
+     "elbowL": [
+      -10,
+      0,
+      0
+     ],
+     "armR": [
+      -20,
+      0,
+      5
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      20,
+      0,
+      0
+     ],
+     "armL": [
+      -50,
+      0,
+      -25
+     ],
+     "elbowL": [
+      -10,
+      0,
+      0
+     ],
+     "armR": [
+      -20,
+      0,
+      5
+     ],
+     "legR": [
+      -90,
+      0,
+      4
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-ankle-dorsiflexion",
+   "en": "Seated: one foot on top of the other, lift the lower toes against it",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit, one foot on top of the other.",
+    "Lift the lower toes.",
+    "The top foot stops them. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "legR": [
+      -95,
+      0,
+      -20
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "footR": [
+      10,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "legR": [
+      -95,
+      0,
+      -20
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "footR": [
+      10,
+      0,
+      0
+     ],
+     "footL": [
+      -3,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-ankle-inversion",
+   "en": "Seated: toes turned in until the big toes meet, press them together",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit, heels on the floor.",
+    "Turn the toes in until the big toes meet.",
+    "Press them together. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      -25,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      -27,
+      0
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-hip-ir-wall",
+   "en": "Seated: outside of the foot against a wall, push out without moving the knee",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit beside a wall.",
+    "Outside of the foot against it.",
+    "Push the foot out, knee still. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "legR": [
+      -90,
+      0,
+      10
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "legR": [
+      -90,
+      -3,
+      10
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-adduction-pillow",
+   "en": "Seated: squeeze a pillow between the arm and the side of the body",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit tall.",
+    "Pillow between the arm and your side.",
+    "Squeeze it, shoulders relaxed. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      18
+     ],
+     "elbowR": [
+      -80,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      16
+     ],
+     "elbowR": [
+      -80,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-iso-adduction-pillow-table",
+   "en": "Seated beside a table, arm 90/90 on a pillow: press the arm down",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit beside a table.",
+    "Arm 90/90 on a pillow.",
+    "Press the arm down into it. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      85
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      83
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true,
+   "ground": {
+    "boxes": [
+     [
+      -0.95,
+      -0.3,
+      -0.2,
+      0.2,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-chair-scapular-retraction-arm-on-table",
+   "en": "Seated, arm resting on a table at the side: draw the shoulder blade back and down",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Sit, arm resting on a table at the side.",
+    "Draw the shoulder blade back and down.",
+    "Trunk still. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      85
+     ],
+     "elbowR": [
+      -30,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      85
+     ],
+     "elbowR": [
+      -30,
+      0,
+      0
+     ],
+     "armR.pos": [
+      0,
+      0,
+      -0.03
+     ],
+     "hold": 2.0
+    }
+   ],
+   "seated": true,
+   "ground": {
+    "boxes": [
+     [
+      -0.95,
+      -0.3,
+      -0.2,
+      0.2,
+      0.9
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-wall-iso-shoulder-flexion",
+   "en": "Facing a wall, straight arm forward: push the palm into the wall",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Face a wall.",
+    "Straight arm forward, palm on the wall.",
+    "Push into the wall. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -90,
+      0,
+      6
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "handR": [
+      -80,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -91,
+      0,
+      6
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "handR": [
+      -80,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-shoulder-abduction",
+   "en": "Side to a wall, elbow bent: push the outside of the elbow into the wall",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Side to a wall.",
+    "Elbow bent at 90.",
+    "Push the outside of the elbow into the wall. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      12
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      13
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-shoulder-ir",
+   "en": "Forearm against a door frame, elbow bent: press inward",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Stand at a door frame.",
+    "Elbow bent, forearm against it.",
+    "Press in, as if turning the arm in. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      -3,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-shoulder-er",
+   "en": "Back to the wall, elbows bent: turn the forearms out and press the backs of the hands into the wall",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Back to the wall, elbows bent.",
+    "Turn the forearms out.",
+    "Press the backs of the hands into the wall. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      5,
+      95,
+      10
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      5,
+      97,
+      10
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-shoulder-extension",
+   "en": "Back to the wall, elbows bent: press the backs of the arms into the wall, shoulder blades back",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Back to the wall, elbows bent at 90.",
+    "Press the backs of the arms into the wall.",
+    "Shoulder blades back and down. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      8
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      3,
+      0,
+      8
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0,
+      -0.02
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-ankle-plantarflexion",
+   "en": "Facing a wall, hands on it: push the toes into the wall, heel down",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Face a wall, hands on it.",
+    "Toes on the wall, heel down.",
+    "Push the toes into the wall. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legL": [
+      15,
+      0,
+      3
+     ],
+     "legR": [
+      -15,
+      0,
+      3
+     ]
+    },
+    {
+     "arm": [
+      -75,
+      0,
+      8
+     ],
+     "legL": [
+      15,
+      0,
+      3
+     ],
+     "legR": [
+      -15,
+      0,
+      3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "hand": [
+      -70,
+      0,
+      0
+     ],
+     "footR": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -75,
+      0,
+      8
+     ],
+     "legL": [
+      15,
+      0,
+      3
+     ],
+     "legR": [
+      -15,
+      0,
+      3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "hand": [
+      -70,
+      0,
+      0
+     ],
+     "footR": [
+      -18,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-ankle-eversion",
+   "en": "Outside of the foot against a wall: push the foot out into it",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Stand beside a wall.",
+    "Outside of the foot against it.",
+    "Push the foot out into the wall. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legR": [
+      0,
+      0,
+      8
+     ],
+     "armR": [
+      0,
+      0,
+      2
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legR": [
+      0,
+      0,
+      8
+     ],
+     "armR": [
+      0,
+      0,
+      2
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legR": [
+      0,
+      0,
+      8
+     ],
+     "armR": [
+      0,
+      0,
+      2
+     ],
+     "footR": [
+      0,
+      0,
+      -4
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-single-heel-raise-hold",
+   "en": "Hands on a wall: up on the toes, lift one foot and hold, then lower",
+   "amount_en": "5 x 10 s each leg",
+   "steps_en": [
+    "Hands on the wall, up on both toes.",
+    "Lift one foot and hold.",
+    "Foot down, lower both heels."
+   ],
+   "beat": 0.9,
+   "keys": [
+    {
+     "arm": [
+      -80,
+      0,
+      8
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "hand": [
+      -75,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -80,
+      0,
+      8
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "hand": [
+      -75,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -80,
+      0,
+      8
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "hand": [
+      -75,
+      0,
+      0
+     ],
+     "footR": [
+      30,
+      0,
+      0
+     ],
+     "kneeL": [
+      80,
+      0,
+      0
+     ],
+     "legL": [
+      5,
+      0,
+      0
+     ],
+     "hold": 2.0
+    },
+    {
+     "arm": [
+      -80,
+      0,
+      8
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "hand": [
+      -75,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-iso-knee-extension-ball",
+   "en": "Small ball between the back of the knee and a wall: straighten the knee into it",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Back to the wall, small ball behind the knee.",
+    "Knee slightly bent.",
+    "Straighten it into the ball. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legR": [
+      -12,
+      0,
+      3
+     ],
+     "kneeR": [
+      24,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-table-iso-shoulder-extension",
+   "en": "Back to a table: press the palm back into the edge, elbow straight",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Back to a table.",
+    "Palm on the edge, elbow straight.",
+    "Press back into it. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      12,
+      0,
+      10
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "handR": [
+      -60,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      13,
+      0,
+      10
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "handR": [
+      -60,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-wall-er-stretch-door-frame",
+   "en": "Forearm on a door frame, elbow bent at the side: turn the body away",
+   "amount_en": "3 x 30 s",
+   "steps_en": [
+    "Forearm on a door frame, elbow at your side.",
+    "Turn the body away.",
+    "Hold the stretch."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      35,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "hips": [
+      0,
+      35,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-table-ball-circles",
+   "en": "Hand on a ball on a table: small slow circles, shoulder blade set",
+   "amount_en": "1 min",
+   "steps_en": [
+    "Hand on a ball on a table.",
+    "Shoulder blade back and down.",
+    "Small slow circles."
+   ],
+   "beat": 0.6,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -38,
+      0,
+      10
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -32,
+      0,
+      10
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -32,
+      0,
+      2
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -38,
+      0,
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-iso-ir-step",
+   "en": "Band from the side, elbow bent: step away and hold the arm still",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Band from the side, elbow bent at 90.",
+    "Step away, arm still.",
+    "Hold, then step back."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "legL": [
+      -30,
+      0,
+      12
+     ],
+     "kneeL": [
+      50,
+      0,
+      0
+     ],
+     "pos": [
+      0.05,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      0.11,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ],
+     "pos": [
+      0.22,
+      0,
+      0
+     ],
+     "hold": 1.5
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      0.11,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-iso-er-step",
+   "en": "Band across the body, elbow bent: step away and hold the arm still",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Band across the body, elbow bent at 90.",
+    "Step away, arm still.",
+    "Hold, then step back."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "legR": [
+      -30,
+      0,
+      12
+     ],
+     "kneeR": [
+      50,
+      0,
+      0
+     ],
+     "pos": [
+      -0.05,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      -0.11,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ],
+     "pos": [
+      -0.22,
+      0,
+      0
+     ],
+     "hold": 1.5
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      -0.11,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-iso-abduction-step",
+   "en": "Band low across the body, arm straight at the side: step away and hold",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Band low across the body, arm straight.",
+    "Step away, arm at your side.",
+    "Hold, then step back."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "legR": [
+      -30,
+      0,
+      12
+     ],
+     "kneeR": [
+      50,
+      0,
+      0
+     ],
+     "pos": [
+      -0.05,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      -0.11,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ],
+     "pos": [
+      -0.22,
+      0,
+      0
+     ],
+     "hold": 1.5
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      -0.11,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-iso-adduction-step",
+   "en": "Band high at the side, arm straight: step away and hold the arm at the body",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Band high at your side, arm straight.",
+    "Step away, arm at your body.",
+    "Hold, then step back."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "legL": [
+      -30,
+      0,
+      12
+     ],
+     "kneeL": [
+      50,
+      0,
+      0
+     ],
+     "pos": [
+      0.05,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      0.11,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      3
+     ],
+     "pos": [
+      0.22,
+      0,
+      0
+     ],
+     "hold": 1.5
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      4
+     ],
+     "leg": [
+      0,
+      0,
+      10
+     ],
+     "pos": [
+      0.11,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-band-iso-extension-step",
+   "en": "Facing the band, arm straight at the side: step back and hold",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Face the band, arm straight at your side.",
+    "Step back, arm still.",
+    "Hold, then step forward."
+   ],
+   "beat": 0.8,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -5,
+      0,
+      4
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -5,
+      0,
+      4
+     ],
+     "legL": [
+      20,
+      0,
+      3
+     ],
+     "kneeL": [
+      45,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.06
+     ]
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -5,
+      0,
+      4
+     ],
+     "pos": [
+      0,
+      0,
+      -0.22
+     ],
+     "hold": 1.5
+    },
+    {
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      -5,
+      0,
+      4
+     ],
+     "legR": [
+      20,
+      0,
+      3
+     ],
+     "kneeR": [
+      45,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.12
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-iso-hamstring-set",
+   "en": "Crook lying: slide one heel out a little and press it into the floor",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Slide one heel out a little.",
+    "Press the heel into the floor. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -30,
+      0,
+      0
+     ],
+     "kneeR": [
+      60,
+      0,
+      0
+     ],
+     "footR": [
+      -5,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -28,
+      0,
+      0
+     ],
+     "kneeR": [
+      60,
+      0,
+      0
+     ],
+     "footR": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-iso-shoulder-extension",
+   "en": "Lying on the back, arms straight at the sides: press them into the floor",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, arms at your sides.",
+    "Palms down.",
+    "Press the arms into the floor. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      2,
+      0,
+      6
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-iso-scapular-retraction",
+   "en": "Lying on the back: press the shoulder blades into the floor and together",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, arms at your sides.",
+    "Press the shoulder blades down and together.",
+    "Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "arm.pos": [
+      0,
+      0,
+      -0.02
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-iso-glute-set",
+   "en": "Lying on the back, hands on the belly: squeeze the glutes",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, legs straight.",
+    "Hands on the belly.",
+    "Squeeze the glutes. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      5,
+      -70,
+      20
+     ],
+     "elbow": [
+      -70,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -88,
+      0,
+      0
+     ],
+     "arm": [
+      5,
+      -70,
+      20
+     ],
+     "elbow": [
+      -70,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-iso-hip-flexion-hands",
+   "en": "Lying on the back, knee up at 90: push the thigh into the hands",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, one knee up at 90.",
+    "Hands on the thigh.",
+    "Push the knee into the hands. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -38,
+      0,
+      -8
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -38,
+      0,
+      -8
+     ],
+     "legR": [
+      -92,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-iso-hip-extension-hands",
+   "en": "Lying on the back, hands behind the raised thigh: push the thigh down into them",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, one knee up at 90.",
+    "Hands behind the thigh.",
+    "Push the thigh down into them. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -30,
+      0,
+      -8
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "spine": [
+      10,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -30,
+      0,
+      -8
+     ],
+     "legR": [
+      -88,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "spine": [
+      10,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-ta-knees-out",
+   "en": "Crook lying, hands on the belly: let the knees open slowly, back still",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Hands on the belly, belly firm.",
+    "Let the knees open slowly, back still."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      5,
+      -70,
+      20
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "elbow": [
+      -70,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      5,
+      -70,
+      20
+     ],
+     "leg": [
+      -45,
+      -20,
+      30
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "elbow": [
+      -70,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-straight-leg-lower",
+   "en": "Knee to the chest, straighten the leg up, lower it straight to the floor",
+   "amount_en": "8 each leg",
+   "steps_en": [
+    "Bring a knee to the chest.",
+    "Straighten the leg up.",
+    "Lower it straight to the floor."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -35,
+      0,
+      -10
+     ],
+     "legR": [
+      -110,
+      0,
+      0
+     ],
+     "kneeR": [
+      120,
+      0,
+      0
+     ],
+     "elbow": [
+      -50,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "legR": [
+      -45,
+      0,
+      0
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-chair-legs-knee-to-chest",
+   "en": "Lying with the calves on a chair: bring one knee to the chest, then the other",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Lie with the calves on a chair.",
+    "Bring one knee to the chest.",
+    "Back to the chair, switch."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ],
+     "legR": [
+      -125,
+      0,
+      0
+     ],
+     "kneeR": [
+      120,
+      0,
+      0
+     ],
+     "hold": 0.4
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ],
+     "legL": [
+      -125,
+      0,
+      0
+     ],
+     "kneeL": [
+      120,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.3,
+      0.3,
+      -0.75,
+      -0.36,
+      0.46
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-supine-glute-iso-ball-wall",
+   "en": "Lying on the back, heel on a ball against a wall: push the heel into the ball",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Lie on your back, one foot on the floor.",
+    "Other heel on a ball against a wall.",
+    "Push the heel into the ball. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "footR": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -88,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "footR": [
+      0,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-quadruped-core-hold",
+   "en": "On hands and knees: draw the belly in without moving the back, hold",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "On hands and knees.",
+    "Draw the belly button in.",
+    "Back still. Hold."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      0
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "leg": [
+      -90,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      0
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "spine": [
+      3,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-ball-iso-bridge-hold",
+   "en": "Shoulders on a ball, feet on the floor: lift the hips level and hold",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Shoulders on a ball, feet on the floor.",
+    "Lift the hips until level.",
+    "Hold the bridge."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "hips": [
+      -62,
+      0,
+      0
+     ],
+     "leg": [
+      -30,
+      0,
+      0
+     ],
+     "knee": [
+      100,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -82,
+      0,
+      0
+     ],
+     "leg": [
+      -8,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "hold": 2.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-chair-kneel-weight-shift",
+   "en": "Kneeling, forearms on a chair seat: shift the weight forward onto the arms",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Kneel in front of a chair.",
+    "Forearms on the seat.",
+    "Shift your weight forward onto the arms."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "leg": [
+      -50,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "hips": [
+      50,
+      0,
+      0
+     ],
+     "arm": [
+      -45,
+      0,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -58,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "hips": [
+      58,
+      0,
+      0
+     ],
+     "arm": [
+      -52,
+      0,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.05
+     ],
+     "hold": 1.0
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.28,
+      0.28,
+      -0.9,
+      -0.42,
+      0.47
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-kneel-ball-side-lean",
+   "en": "Kneeling, hand on a ball at the side, elbow straight: lean onto it and hold",
+   "amount_en": "5 x 10 s",
+   "steps_en": [
+    "Kneel, ball at your side.",
+    "Hand on the ball, elbow straight.",
+    "Lean onto it and hold."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      30
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "touch": [
+      "handR:arm"
+     ]
+    },
+    {
+     "leg": [
+      0,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      30
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "touch": [
+      "handR:arm"
+     ],
+     "spine": [
+      0,
+      0,
+      -12
+     ],
+     "hold": 1.5
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.8,
+      -0.3,
+      -0.25,
+      0.25,
+      0.52
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-high-sit-hand-slide-back",
+   "en": "Sitting high, palm on the surface beside you: set the shoulder blade, slide the hand back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit tall, palm on the surface beside you.",
+    "Set the shoulder blade back and down.",
+    "Slide the hand back."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      5,
+      0,
+      15
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      5,
+      0,
+      15
+     ],
+     "elbowR": [
+      0,
+      0,
+      0
+     ],
+     "armR.pos": [
+      0,
+      0,
+      -0.02
+     ],
+     "hold": 0.5
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      -5
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "armR": [
+      25,
+      0,
+      15
+     ],
+     "elbowR": [
+      -10,
+      0,
+      0
+     ],
+     "armR.pos": [
+      0,
+      0,
+      -0.02
+     ],
+     "hold": 0.5
+    }
+   ],
+   "seated": true
   }
  ]
 }

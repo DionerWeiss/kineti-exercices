@@ -20,7 +20,7 @@ VIEWS = {'side': 'Lateral', 'front': 'Frontal', 'side3q': 'Lateral 3/4', 'front3
          'close': 'Detalhe da mão'}
 FRAMES = {'upper': ', do peito para cima', 'lower': ', pés em destaque', 'full': ''}
 PROPS = {'chair': 'Cadeira', 'stool': 'Banqueta', 'pulley': 'Roldana', 'chairbox': 'Cadeira', 'pillow': 'Travesseiros', 'kneepillow': 'Travesseiro entre os joelhos', 'bosuflat': 'BOSU (cúpula para baixo)', 'walker': 'Andador', 'walkergo': 'Andador', 'caneL': 'Bengala', 'caneR': 'Bengala', 'bedfit': 'Cama', 'chairbehind': 'Cadeira (atrás)', 'wobble': 'Almofada de equilíbrio', 'board': 'Disco de equilíbrio', 'bosu': 'BOSU', 'line': 'Marca no chão', 'marks': 'Marcas no chão', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apoio lateral)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
-         'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa', 'bed': 'Cama',
+         'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa', 'tableL': 'Mesa', 'tableR': 'Mesa', 'tableball': 'Bola suíça sobre a mesa', 'tableballL': 'Bola suíça sobre a mesa', 'tableballR': 'Bola suíça sobre a mesa', 'ballwall': 'Parede', 'bed': 'Cama',
          'bandhands': 'Faixa elástica', 'bandanchor': 'Faixa elástica presa no batente',
          'bandanchor1': 'Faixa elástica presa no batente', 'bandfeet': 'Faixa elástica sob os pés',
          'bandknees': 'Faixa elástica nas coxas', 'chairfit': 'Cadeira', 'walk': '—', 'wallball': 'Parede, bola suíça',
@@ -40,6 +40,10 @@ def prop_label(p):
         return 'Bola'
     if p.startswith('pball-'):
         return 'Bolinha de tênis' if p.split('-')[1] == 't' else 'Bola'
+    if p.startswith('wallat-'):
+        return 'Batente de porta' if p.endswith('p') else 'Parede'
+    if p.startswith('armpillow'):
+        return 'Travesseiro'
     if p.startswith('ladder-'):
         return 'Escada de agilidade no chão'
     if p.startswith('towel-'):

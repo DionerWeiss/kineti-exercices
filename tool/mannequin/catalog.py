@@ -16,10 +16,10 @@ POCKET = REPO / 'research' / 'pocketphysio' / 'exercicios.json'
 OUT = HERE / 'catalog.json'
 
 VIEWS = {'side': 'Lateral', 'front': 'Frontal', 'side3q': 'Lateral 3/4', 'front3q': 'Frontal 3/4', 'rside3q': 'Lateral 3/4',
-         'back3q': 'Posterior 3/4', 'top3q': 'Elevada', 'floor': 'Lateral elevada',
+         'back3q': 'Posterior 3/4', 'back': 'Posterior', 'top3q': 'Elevada', 'floor': 'Lateral elevada',
          'close': 'Detalhe da mão'}
 FRAMES = {'upper': ', do peito para cima', 'lower': ', pés em destaque', 'full': ''}
-PROPS = {'chair': 'Cadeira', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apoio lateral)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
+PROPS = {'chair': 'Cadeira', 'stool': 'Banqueta', 'wobble': 'Almofada de equilíbrio', 'board': 'Disco de equilíbrio', 'bosu': 'BOSU', 'line': 'Marca no chão', 'marks': 'Marcas no chão', 'support': 'Cadeira (apoio)', 'side': 'Cadeira (apoio lateral)', 'wall': 'Parede', 'roll': 'Rolo', 'ball': 'Bola pequena',
          'cuff': 'Tornozeleira', 'dumbbell': 'Halteres', 'mat': 'Colchonete', 'table': 'Mesa', 'bed': 'Cama',
          'bandhands': 'Faixa elástica', 'bandanchor': 'Faixa elástica presa no batente',
          'bandanchor1': 'Faixa elástica presa no batente', 'bandfeet': 'Faixa elástica sob os pés',
@@ -36,6 +36,10 @@ def prop_label(p):
         if any(e[0] in 'FBLR' for e in ends):
             return 'Faixa elástica presa'
         return 'Faixa elástica no pé' if any(e[0] == 'f' for e in ends) else 'Faixa elástica'
+    if p.startswith('towel-'):
+        return 'Toalha'
+    if p == 'stick' or p.startswith(('stick-', 'stickend-', 'stickfloor-')):
+        return 'Bastão'
     return PROPS[p]
 
 KSLUG = {'kineti-standing-hip-abduction-supported': 'standing_hip_abduction',

@@ -1025,6 +1025,22 @@
    ]
   },
   {
+   "slug": "kineti-stick-lunge-rotation",
+   "lib": "kineti",
+   "name": "Afundo com rotação do tronco segurando um bastão",
+   "desc": "Com um pé à frente e o bastão à frente do corpo, desce no afundo dobrando os dois joelhos e gira o tronco para o lado da perna da frente. Volta e alterna.",
+   "focus": "Pernas, rotação do tronco e equilíbrio",
+   "area": "joelhos",
+   "view": "Frontal 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-lunge-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea38"
+   ]
+  },
+  {
    "slug": "kineti-split-squat-band",
    "lib": "deskbreak",
    "name": "Afundo estático com faixa no joelho da frente",
@@ -1675,6 +1691,22 @@
    "pocketphysio": []
   },
   {
+   "slug": "kineti-towel-assisted-knee-flexion",
+   "lib": "kineti",
+   "name": "Flexão do joelho assistida com toalha, deitado",
+   "desc": "Deitado de costas com uma toalha passada pelo pé, puxa a toalha deslizando o calcanhar em direção ao quadril e estica a perna de volta devagar.",
+   "focus": "Amplitude de flexão do joelho",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Toalha, Colchonete",
+   "video": "build/mannequin/videos/kineti-towel-assisted-knee-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e826"
+   ]
+  },
+  {
    "slug": "kineti-band-prone-hamstring-curl",
    "lib": "kineti",
    "name": "Flexão do joelho contra a faixa, de bruços",
@@ -1859,6 +1891,55 @@
    ]
   },
   {
+   "slug": "kineti-calf-stretch-toes-up",
+   "lib": "kineti",
+   "name": "Alongamento da panturrilha com a ponta do pé num apoio",
+   "desc": "Em pé, com a ponta de um pé sobre um pequeno apoio e o calcanhar no chão, inclina o corpo à frente com o joelho esticado. Sustenta e volta.",
+   "focus": "Alongamento da panturrilha",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-calf-stretch-toes-up.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e80",
+    "660a6144b08ac7518f1f7e82"
+   ]
+  },
+  {
+   "slug": "kineti-towel-calf-stretch-long-sit",
+   "lib": "kineti",
+   "name": "Alongamento da panturrilha com toalha, sentado com as pernas esticadas",
+   "desc": "Sentado com as pernas esticadas e uma toalha passada pela planta do pé, puxa a toalha trazendo os dedos em sua direção. Sustenta e relaxa.",
+   "focus": "Alongamento do gastrocnêmio",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Toalha",
+   "video": "build/mannequin/videos/kineti-towel-calf-stretch-long-sit.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e533"
+   ]
+  },
+  {
+   "slug": "kineti-calf-stretch-toes-up-both",
+   "lib": "kineti",
+   "name": "Alongamento das panturrilhas com a ponta dos pés num rolo",
+   "desc": "Em pé, com a ponta dos dois pés sobre um rolo de toalha e os calcanhares no chão, inclina o corpo à frente com os joelhos esticados. Sustenta e volta.",
+   "focus": "Alongamento das panturrilhas",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-calf-stretch-toes-up-both.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e81"
+   ]
+  },
+  {
    "slug": "kineti-wall-calf-stretch",
    "lib": "kineti",
    "name": "Alongamento de panturrilha na parede",
@@ -1878,6 +1959,22 @@
     "664744bf5c2c1f75d4d71d89",
     "664744bf5c2c1f75d4d71d8a",
     "664744bf5c2c1f75d4d71e3d"
+   ]
+  },
+  {
+   "slug": "kineti-towel-soleus-roll-long-sit",
+   "lib": "kineti",
+   "name": "Alongamento do sóleo com toalha, joelho dobrado sobre um rolo",
+   "desc": "Sentado, com o joelho levemente dobrado sobre um rolo e uma toalha passada pelo pé, puxa a toalha trazendo os dedos em sua direção. Sustenta e relaxa.",
+   "focus": "Alongamento do sóleo",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Toalha, Rolo",
+   "video": "build/mannequin/videos/kineti-towel-soleus-roll-long-sit.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80be"
    ]
   },
   {
@@ -1912,6 +2009,22 @@
    "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f80b9"
+   ]
+  },
+  {
+   "slug": "kineti-stick-half-kneel-soleus",
+   "lib": "kineti",
+   "name": "Alongamento do sóleo semiajoelhado, com bastão para apoio",
+   "desc": "Com um joelho no chão e o outro pé à frente, segura um bastão vertical para equilíbrio e leva o joelho da frente para além dos dedos, sem tirar o calcanhar do chão. Sustenta e volta.",
+   "focus": "Alongamento do sóleo e do tornozelo",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-half-kneel-soleus.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80bc"
    ]
   },
   {
@@ -2263,6 +2376,72 @@
    ]
   },
   {
+   "slug": "kineti-wobble-squat",
+   "lib": "kineti",
+   "name": "Agachamento na almofada de equilíbrio",
+   "desc": "Em pé sobre a almofada de equilíbrio, com os pés afastados, agacha até 90° levando os braços à frente e sobe devagar.",
+   "focus": "Quadríceps, glúteos e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Almofada de equilíbrio",
+   "video": "build/mannequin/videos/kineti-wobble-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e24",
+    "664744bf5c2c1f75d4d71e25"
+   ]
+  },
+  {
+   "slug": "kineti-bosu-squat",
+   "lib": "kineti",
+   "name": "Agachamento no BOSU",
+   "desc": "Em pé sobre a cúpula do BOSU, com os pés na largura do quadril, agacha com os braços à frente para equilibrar e sobe devagar.",
+   "focus": "Quadríceps, glúteos e estabilidade",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "BOSU",
+   "video": "build/mannequin/videos/kineti-bosu-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80c4",
+    "664744bf5c2c1f75d4d71e29"
+   ]
+  },
+  {
+   "slug": "kineti-bosu-squat-rotation-ball",
+   "lib": "kineti",
+   "name": "Agachamento no BOSU com rotação do tronco, segurando uma bola",
+   "desc": "Em pé sobre o BOSU, com uma bola nas mãos e os braços à frente, agacha e, embaixo, gira o tronco para um lado e para o outro antes de subir.",
+   "focus": "Pernas, rotação do tronco e equilíbrio",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "BOSU, Bola",
+   "video": "build/mannequin/videos/kineti-bosu-squat-rotation-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80c3"
+   ]
+  },
+  {
+   "slug": "kineti-board-squat-deep",
+   "lib": "kineti",
+   "name": "Agachamento profundo no disco de equilíbrio",
+   "desc": "Em pé sobre o disco de equilíbrio, com os braços à frente, agacha fundo dobrando joelhos e quadril sem perder o equilíbrio e sobe devagar.",
+   "focus": "Quadríceps, glúteos e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Disco de equilíbrio",
+   "video": "build/mannequin/videos/kineti-board-squat-deep.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d79"
+   ]
+  },
+  {
    "slug": "kineti-ball-kneeling-arm-lift",
    "lib": "kineti",
    "name": "Ajoelhado com as mãos na bola, elevação de um braço",
@@ -2426,6 +2605,38 @@
    ]
   },
   {
+   "slug": "kineti-chair-stick-weight-shift",
+   "lib": "kineti",
+   "name": "Círculos com o bastão apoiado no chão, sentado",
+   "desc": "Sentado com os pés afastados e as mãos num bastão apoiado no chão à frente, inclina o corpo em círculos amplos, como se mexesse um caldeirão, e inverte o sentido.",
+   "focus": "Transferência de peso e controle do tronco",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Bastão",
+   "video": "build/mannequin/videos/kineti-chair-stick-weight-shift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d8b"
+   ]
+  },
+  {
+   "slug": "kineti-board-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Elevação dos braços em pé no disco de equilíbrio",
+   "desc": "Em pé sobre o disco de equilíbrio com os pés juntos, eleva os dois braços esticados até a altura das orelhas e desce devagar, mantendo o equilíbrio.",
+   "focus": "Equilíbrio e controle postural",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Disco de equilíbrio",
+   "video": "build/mannequin/videos/kineti-board-shoulder-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d63"
+   ]
+  },
+  {
    "slug": "kineti-feet-together-stance",
    "lib": "kineti",
    "name": "Em pé com os pés juntos",
@@ -2463,6 +2674,38 @@
    ]
   },
   {
+   "slug": "kineti-board-lumbar-extension",
+   "lib": "kineti",
+   "name": "Extensão do tronco em pé no disco de equilíbrio",
+   "desc": "Em pé sobre o disco de equilíbrio, com as mãos na lombar, inclina o tronco suavemente para trás olhando para cima e volta devagar.",
+   "focus": "Mobilidade da coluna e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Disco de equilíbrio",
+   "video": "build/mannequin/videos/kineti-board-lumbar-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d60"
+   ]
+  },
+  {
+   "slug": "kineti-board-lumbar-flexion",
+   "lib": "kineti",
+   "name": "Flexão do tronco em pé no disco de equilíbrio",
+   "desc": "Em pé sobre o disco de equilíbrio, inclina o tronco à frente levando as mãos em direção aos pés e volta devagar, mantendo o equilíbrio.",
+   "focus": "Mobilidade da coluna e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Disco de equilíbrio",
+   "video": "build/mannequin/videos/kineti-board-lumbar-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d61"
+   ]
+  },
+  {
    "slug": "kineti-turn-180",
    "lib": "kineti",
    "name": "Giro de 180 graus em pé",
@@ -2492,6 +2735,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e5e1"
+   ]
+  },
+  {
+   "slug": "kineti-board-side-flexion",
+   "lib": "kineti",
+   "name": "Inclinação lateral do tronco no disco de equilíbrio",
+   "desc": "Em pé sobre o disco de equilíbrio com os pés juntos, inclina o tronco para um lado, com o outro braço passando por cima da cabeça, volta ao centro e alterna.",
+   "focus": "Mobilidade lateral da coluna e equilíbrio",
+   "area": "equilibrio",
+   "view": "Frontal",
+   "props": "Disco de equilíbrio",
+   "video": "build/mannequin/videos/kineti-board-side-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d62"
    ]
   },
   {
@@ -2672,6 +2931,24 @@
    ]
   },
   {
+   "slug": "kineti-single-leg-hop-line",
+   "lib": "kineti",
+   "name": "Saltos numa perna sobre a linha no chão",
+   "desc": "Em pé numa perna só, atrás de uma linha no chão, salta à frente passando a linha e volta saltando para trás, com o joelho alinhado com o pé.",
+   "focus": "Potência, controle do joelho e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Marca no chão",
+   "video": "build/mannequin/videos/kineti-single-leg-hop-line.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80b3",
+    "660a6145b08ac7518f1f80b1",
+    "660a6145b08ac7518f1f80b2"
+   ]
+  },
+  {
    "slug": "kineti-step-up-knee-drive",
    "lib": "kineti",
    "name": "Subida no degrau com elevação do joelho",
@@ -2686,6 +2963,23 @@
    "pocketphysio": [
     "65b09dc54ad825d030407346",
     "664744bf5c2c1f75d4d71e2f"
+   ]
+  },
+  {
+   "slug": "kineti-step-tap-markers-supported",
+   "lib": "kineti",
+   "name": "Tocar marcas no chão com o pé, apoiado na cadeira",
+   "desc": "Em pé, com uma mão no encosto de uma cadeira ao lado, toca com a ponta do pé marcas no chão à frente, na diagonal e ao lado, voltando o pé ao lugar a cada toque.",
+   "focus": "Coordenação, precisão do passo e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Cadeira (apoio lateral), Marcas no chão",
+   "video": "build/mannequin/videos/kineti-step-tap-markers-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e45",
+    "660a6144b08ac7518f1f7e47"
    ]
   },
   {
@@ -3299,6 +3593,22 @@
    ]
   },
   {
+   "slug": "kineti-chair-stick-lat-stretch",
+   "lib": "kineti",
+   "name": "Alongamento das costas com as mãos no bastão, sentado",
+   "desc": "Sentado, com as mãos no topo de um bastão apoiado no chão à frente, inclina o tronco à frente deixando o bastão inclinar e a cabeça passar entre os braços, e volta devagar.",
+   "focus": "Alongamento do grande dorsal e das costas",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Bastão",
+   "video": "build/mannequin/videos/kineti-chair-stick-lat-stretch.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e934"
+   ]
+  },
+  {
    "slug": "trap-stretch",
    "lib": "deskbreak",
    "name": "Alongamento do trapézio superior",
@@ -3576,6 +3886,22 @@
    ]
   },
   {
+   "slug": "kineti-chair-stick-thoracic-ext",
+   "lib": "kineti",
+   "name": "Extensão torácica com bastão atrás das costas, sentado",
+   "desc": "Sentado numa banqueta, com o bastão atrás das costas preso na dobra dos cotovelos, inclina o tronco para trás olhando para cima e volta devagar.",
+   "focus": "Mobilidade da coluna torácica",
+   "area": "tronco_coluna",
+   "view": "Posterior 3/4",
+   "props": "Banqueta, Bastão",
+   "video": "build/mannequin/videos/kineti-chair-stick-thoracic-ext.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9f5"
+   ]
+  },
+  {
    "slug": "seated-back-extension",
    "lib": "deskbreak",
    "name": "Extensão torácica sentado",
@@ -3676,6 +4002,22 @@
     "660a6145b08ac7518f1f7f5f",
     "660a6145b08ac7518f1f7f60",
     "664744bf5c2c1f75d4d71da3"
+   ]
+  },
+  {
+   "slug": "kineti-ball-stick-tilt",
+   "lib": "kineti",
+   "name": "Inclinação do bastão sentado na bola",
+   "desc": "Sentado na bola suíça com o bastão à frente na altura dos ombros, inclina o bastão subindo uma ponta e descendo a outra, sem mexer o tronco, e alterna.",
+   "focus": "Estabilidade do tronco e ombros",
+   "area": "tronco_coluna",
+   "view": "Frontal",
+   "props": "Bola suíça, Bastão",
+   "video": "build/mannequin/videos/kineti-ball-stick-tilt.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f3f"
    ]
   },
   {
@@ -4261,6 +4603,38 @@
    ]
   },
   {
+   "slug": "kineti-stick-supine-trunk-rotation",
+   "lib": "kineti",
+   "name": "Rotação do tronco com bastão, deitado",
+   "desc": "Deitado de costas com as pernas esticadas e o bastão para o teto, gira o tronco e os braços para um lado sem tirar o quadril do lugar, volta ao centro e alterna.",
+   "focus": "Mobilidade da coluna torácica",
+   "area": "tronco_coluna",
+   "view": "Elevada",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-supine-trunk-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea29"
+   ]
+  },
+  {
+   "slug": "kineti-ball-stick-trunk-rotation",
+   "lib": "kineti",
+   "name": "Rotação do tronco com bastão, sentado na bola",
+   "desc": "Sentado na bola suíça com os cotovelos dobrados junto ao corpo segurando um bastão, gira o tronco e a cabeça para um lado, volta ao centro e alterna, mantendo a postura ereta.",
+   "focus": "Rotação do tronco e estabilidade",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "Bola suíça, Bastão",
+   "video": "build/mannequin/videos/kineti-ball-stick-trunk-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f40"
+   ]
+  },
+  {
    "slug": "kineti-band-seated-trunk-rotation",
    "lib": "kineti",
    "name": "Rotação do tronco sentado contra a faixa",
@@ -4496,6 +4870,24 @@
    ]
   },
   {
+   "slug": "kineti-stick-abduction-aarom",
+   "lib": "kineti",
+   "name": "Abdução do ombro assistida com bastão",
+   "desc": "Em pé, segura a ponta do bastão com a mão do braço a exercitar e, com a outra mão, empurra o bastão para elevar esse braço pelo lado até o alto, voltando devagar.",
+   "focus": "Amplitude de abdução do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-abduction-aarom.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407320",
+    "65a9272153a15212d048e954",
+    "65a9272153a15212d048e957"
+   ]
+  },
+  {
    "slug": "kineti-seated-shoulder-abduction-180",
    "lib": "kineti",
    "name": "Abdução dos ombros até acima da cabeça sentado",
@@ -4624,6 +5016,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e910"
+   ]
+  },
+  {
+   "slug": "kineti-stick-supine-ir-stretch-90",
+   "lib": "kineti",
+   "name": "Alongamento dos rotadores internos com bastão, braço a 90°, deitado",
+   "desc": "Deitado de costas com o braço aberto e o cotovelo a 90°, segura o bastão com as duas mãos e, com a mão do outro lado, empurra girando o antebraço para trás. Sustenta e volta.",
+   "focus": "Alongamento da frente do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Bastão, Colchonete",
+   "video": "build/mannequin/videos/kineti-stick-supine-ir-stretch-90.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e94c"
    ]
   },
   {
@@ -4808,6 +5216,106 @@
    ]
   },
   {
+   "slug": "kineti-stick-flexion-90",
+   "lib": "kineti",
+   "name": "Elevação do bastão até a altura dos ombros",
+   "desc": "Em pé, segura um bastão à frente das coxas e eleva os braços esticados até a altura dos ombros, descendo devagar sem encolher os ombros.",
+   "focus": "Flexores do ombro e postura",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-flexion-90.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048eae0"
+   ]
+  },
+  {
+   "slug": "kineti-stick-wide-raise",
+   "lib": "kineti",
+   "name": "Elevação do bastão com pegada aberta",
+   "desc": "Em pé, segura um bastão com as mãos bem afastadas à frente das coxas e eleva os braços esticados num arco amplo até acima da cabeça, descendo devagar.",
+   "focus": "Amplitude de elevação dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-wide-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407225"
+   ]
+  },
+  {
+   "slug": "kineti-stick-chest-lift",
+   "lib": "kineti",
+   "name": "Elevação do bastão do peito até acima da cabeça",
+   "desc": "Em pé, segura um bastão na altura do peito e empurra para cima até esticar os braços acima da cabeça, voltando devagar ao peito.",
+   "focus": "Amplitude dos ombros e drenagem (linfedema)",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-chest-lift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e91c"
+   ]
+  },
+  {
+   "slug": "kineti-stick-wall-flexion",
+   "lib": "kineti",
+   "name": "Elevação dos braços com bastão, de costas para a parede",
+   "desc": "Em pé, de costas para a parede, segura um bastão à frente das coxas e eleva os braços esticados até acima da cabeça, descendo devagar.",
+   "focus": "Amplitude de flexão dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bastão, Parede",
+   "video": "build/mannequin/videos/kineti-stick-wall-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d5d"
+   ]
+  },
+  {
+   "slug": "kineti-stick-supine-flexion",
+   "lib": "kineti",
+   "name": "Elevação dos braços com bastão, deitado",
+   "desc": "Deitado de costas com os joelhos dobrados e o bastão sobre as coxas, eleva os braços esticados para o teto e continua até levar o bastão acima da cabeça, voltando devagar.",
+   "focus": "Amplitude de flexão dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Bastão, Colchonete",
+   "video": "build/mannequin/videos/kineti-stick-supine-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce7d",
+    "65b09dc54ad825d030407335",
+    "65b09dc54ad825d030407333"
+   ]
+  },
+  {
+   "slug": "kineti-stick-shoulder-flexion",
+   "lib": "kineti",
+   "name": "Elevação dos braços com bastão, em pé",
+   "desc": "Em pé, segura um bastão à frente das coxas e eleva os braços esticados até o bastão passar acima da cabeça, descendo devagar.",
+   "focus": "Amplitude de flexão dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-shoulder-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407331",
+    "65b09dc54ad825d030407332",
+    "65a9272153a15212d048e9db"
+   ]
+  },
+  {
    "slug": "kineti-prone-m-raise",
    "lib": "kineti",
    "name": "Elevação dos braços em M de bruços",
@@ -4941,6 +5449,23 @@
     "660a6145b08ac7518f1f801c",
     "660a6145b08ac7518f1f8022",
     "664744bf5c2c1f75d4d71e0a"
+   ]
+  },
+  {
+   "slug": "kineti-stick-extension",
+   "lib": "kineti",
+   "name": "Extensão dos ombros com bastão atrás do corpo",
+   "desc": "Em pé, segura um bastão atrás do corpo com os braços esticados e afasta o bastão das costas elevando os braços para trás, sem inclinar o tronco, e desce devagar.",
+   "focus": "Amplitude de extensão dos ombros",
+   "area": "ombros_escapulas",
+   "view": "Posterior 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407329",
+    "65b09dc54ad825d03040732a"
    ]
   },
   {
@@ -5169,6 +5694,22 @@
    "pocketphysio": [
     "660a6145b08ac7518f1f7f3b",
     "660a61776a80d359d40dce5c"
+   ]
+  },
+  {
+   "slug": "kineti-chair-stick-flexion-vertical",
+   "lib": "kineti",
+   "name": "Flexão do ombro assistida com bastão vertical, sentado",
+   "desc": "Sentado, segura o bastão na vertical com a mão do braço a exercitar no topo e, com a outra mão, empurra o bastão para cima elevando o braço o mais alto possível. Desce devagar.",
+   "focus": "Amplitude de flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Bastão",
+   "video": "build/mannequin/videos/kineti-chair-stick-flexion-vertical.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f803c"
    ]
   },
   {
@@ -5555,6 +6096,55 @@
    ]
   },
   {
+   "slug": "kineti-stick-er-aarom",
+   "lib": "kineti",
+   "name": "Rotação externa do ombro assistida com bastão",
+   "desc": "Em pé, com os cotovelos dobrados a 90° junto ao corpo e o bastão nas duas mãos, empurra o bastão para um lado, girando o outro antebraço para fora sem afastar o cotovelo.",
+   "focus": "Amplitude de rotação externa do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-er-aarom.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e965"
+   ]
+  },
+  {
+   "slug": "kineti-stick-wall-er-aarom",
+   "lib": "kineti",
+   "name": "Rotação externa do ombro assistida com bastão, de costas para a parede",
+   "desc": "De costas para a parede, com os cotovelos dobrados a 90° junto ao corpo, empurra o bastão para um lado, girando o outro antebraço para fora. Sustenta e volta.",
+   "focus": "Amplitude de rotação externa do ombro",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Bastão, Parede",
+   "video": "build/mannequin/videos/kineti-stick-wall-er-aarom.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce7b",
+    "664744bf5c2c1f75d4d71e0d"
+   ]
+  },
+  {
+   "slug": "kineti-stick-supine-er-side",
+   "lib": "kineti",
+   "name": "Rotação externa do ombro assistida com bastão, deitado",
+   "desc": "Deitado de costas com os cotovelos dobrados junto ao corpo e o bastão nas mãos, empurra o bastão para um lado, girando o outro antebraço para fora. Sustenta e volta.",
+   "focus": "Amplitude de rotação externa do ombro",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-supine-er-side.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e950"
+   ]
+  },
+  {
    "slug": "kineti-band-shoulder-er-90",
    "lib": "kineti",
    "name": "Rotação externa do ombro com faixa, braço a 90°",
@@ -5633,6 +6223,38 @@
    "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f804c"
+   ]
+  },
+  {
+   "slug": "kineti-stick-ir-behind-back",
+   "lib": "kineti",
+   "name": "Rotação interna do ombro assistida com bastão atrás das costas",
+   "desc": "Em pé, com o bastão na vertical atrás das costas, uma mão acima da cabeça e a outra na lombar, a mão de cima puxa o bastão para o alto, fazendo a de baixo subir pelas costas.",
+   "focus": "Amplitude de rotação interna do ombro",
+   "area": "ombros_escapulas",
+   "view": "Posterior",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-ir-behind-back.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9e1"
+   ]
+  },
+  {
+   "slug": "kineti-towel-ir-behind-back",
+   "lib": "kineti",
+   "name": "Rotação interna do ombro assistida com toalha atrás das costas",
+   "desc": "Em pé, com uma toalha atrás das costas, uma mão acima da cabeça e a outra na lombar, a mão de cima puxa a toalha para o alto, fazendo a de baixo subir pelas costas.",
+   "focus": "Amplitude de rotação interna do ombro",
+   "area": "ombros_escapulas",
+   "view": "Posterior",
+   "props": "Toalha",
+   "video": "build/mannequin/videos/kineti-towel-ir-behind-back.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e15"
    ]
   },
   {
@@ -5903,6 +6525,39 @@
    "substitui": "elbow_flexion",
    "pocketphysio": [
     "65a9272053a15212d048e74d"
+   ]
+  },
+  {
+   "slug": "kineti-stick-supine-curl",
+   "lib": "kineti",
+   "name": "Flexão de cotovelos com bastão, deitado",
+   "desc": "Deitado de costas com os joelhos dobrados e o bastão nas mãos com os braços para o teto, dobra os cotovelos trazendo o bastão até o peito e estica de volta.",
+   "focus": "Amplitude do cotovelo",
+   "area": "cotovelos_punhos_maos",
+   "view": "Lateral elevada",
+   "props": "Bastão, Colchonete",
+   "video": "build/mannequin/videos/kineti-stick-supine-curl.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e58"
+   ]
+  },
+  {
+   "slug": "kineti-stick-curl",
+   "lib": "kineti",
+   "name": "Flexão de cotovelos com bastão, em pé",
+   "desc": "Em pé, segura um bastão com as palmas para cima e os braços esticados, dobra os cotovelos trazendo o bastão em direção aos ombros e estica de volta devagar.",
+   "focus": "Bíceps e amplitude do cotovelo",
+   "area": "cotovelos_punhos_maos",
+   "view": "Lateral 3/4",
+   "props": "Bastão",
+   "video": "build/mannequin/videos/kineti-stick-curl.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407239",
+    "65b09dc54ad825d03040723a"
    ]
   },
   {

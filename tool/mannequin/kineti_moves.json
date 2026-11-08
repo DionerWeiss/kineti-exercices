@@ -21843,6 +21843,3146 @@
     }
    ],
    "seated": true
+  },
+  {
+   "id": "kineti-stick-curl",
+   "en": "Elbow curl holding a stick, standing",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Hold a stick, palms up, arms down.",
+    "Bend the elbows, bringing the stick up.",
+    "Lower it slowly."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "arm": [
+      -25,
+      0,
+      -2
+     ]
+    },
+    {
+     "arm": [
+      -15,
+      0,
+      -2
+     ],
+     "elbow": [
+      -135,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-shoulder-flexion",
+   "en": "Shoulder flexion holding a stick, standing",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold a stick in front of the thighs.",
+    "Raise it overhead, elbows straight.",
+    "Lower it slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "arm": [
+      -25,
+      0,
+      -2
+     ]
+    },
+    {
+     "arm": [
+      -170,
+      0,
+      4
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-flexion-90",
+   "en": "Raise a stick to shoulder height, standing",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Hold a stick in front of the thighs.",
+    "Raise it to shoulder height.",
+    "Lower it slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      -25,
+      0,
+      -2
+     ]
+    },
+    {
+     "arm": [
+      -90,
+      0,
+      2
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-chest-lift",
+   "en": "Lift a stick from the chest to overhead, standing",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold a stick at the chest.",
+    "Push it up overhead.",
+    "Bring it back to the chest."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "arm": [
+      -25,
+      0,
+      10
+     ],
+     "elbow": [
+      -120,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -170,
+      0,
+      10
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-wide-raise",
+   "en": "Raise a stick overhead with a wide grip, standing",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold a stick wide in front of the thighs.",
+    "Raise it overhead in a wide arc.",
+    "Lower it slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "arm": [
+      -25,
+      0,
+      18
+     ]
+    },
+    {
+     "arm": [
+      -160,
+      0,
+      30
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-abduction-aarom",
+   "en": "Assisted shoulder abduction with a stick, standing",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold the end of a stick in the hand to work.",
+    "Push with the other hand, raising the arm out to the side.",
+    "Lower it slowly."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "armR": [
+      -15,
+      0,
+      8
+     ],
+     "armL": [
+      -25,
+      0,
+      -5
+     ],
+     "elbowL": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "armR": [
+      -10,
+      0,
+      165
+     ],
+     "armL": [
+      -35,
+      0,
+      -30
+     ],
+     "elbowL": [
+      -70,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-extension",
+   "en": "Shoulder extension with a stick behind the back, standing",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Hold a stick behind you.",
+    "Lift it back, away from the body.",
+    "Lower it slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      25,
+      0,
+      4
+     ]
+    },
+    {
+     "arm": [
+      55,
+      0,
+      4
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-ir-behind-back",
+   "en": "Assisted shoulder internal rotation with a stick behind the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stick behind the back: one hand up, one hand low.",
+    "Pull up with the top hand.",
+    "Let it slide down."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "armR": [
+      -170,
+      0,
+      -8
+     ],
+     "elbowR": [
+      -150,
+      0,
+      0
+     ],
+     "armL": [
+      50,
+      -75,
+      15
+     ],
+     "elbowL": [
+      -95,
+      0,
+      0
+     ]
+    },
+    {
+     "armR": [
+      -175,
+      0,
+      -5
+     ],
+     "elbowR": [
+      -110,
+      0,
+      0
+     ],
+     "armL": [
+      40,
+      -85,
+      15
+     ],
+     "elbowL": [
+      -125,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-er-aarom",
+   "en": "Assisted shoulder external rotation with a stick, elbows at the sides",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Elbows bent at your sides, stick in both hands.",
+    "Push the stick to one side, turning the other arm out.",
+    "Return slowly."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "armR": [
+      0,
+      55,
+      4
+     ],
+     "armL": [
+      0,
+      -35,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-supine-curl",
+   "en": "Elbow curl with a stick, lying on the back",
+   "amount_en": "12 reps",
+   "steps_en": [
+    "Lie on your back, stick held up to the ceiling.",
+    "Bend the elbows, bringing the stick to the chest.",
+    "Push it back up."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      10
+     ],
+     "elbow": [
+      -120,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-supine-flexion",
+   "en": "Shoulder flexion with a stick, lying on the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, stick on the thighs.",
+    "Raise it up and back overhead.",
+    "Bring it back slowly."
+   ],
+   "beat": 1.5,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -35,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -170,
+      0,
+      6
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-supine-trunk-rotation",
+   "en": "Upper trunk rotation holding a stick up, lying on the back",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Lie on your back, stick held up.",
+    "Turn the upper trunk and arms to one side.",
+    "Return and switch."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "spine": [
+      0,
+      20,
+      0
+     ],
+     "neck": [
+      0,
+      15,
+      0
+     ],
+     "armL": [
+      -90,
+      0,
+      40
+     ],
+     "armR": [
+      -90,
+      0,
+      -30
+     ],
+     "hold": 0.3
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "spine": [
+      0,
+      -20,
+      0
+     ],
+     "neck": [
+      0,
+      -15,
+      0
+     ],
+     "armL": [
+      -90,
+      0,
+      -30
+     ],
+     "armR": [
+      -90,
+      0,
+      40
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-supine-ir-stretch-90",
+   "en": "Shoulder internal rotators stretch with a stick, arm out at 90, lying on the back",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Lie on your back, arm out, elbow at 90.",
+    "Push the stick, turning the forearm back.",
+    "Hold, then return."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      88
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -90,
+      0,
+      -10
+     ],
+     "elbowL": [
+      -30,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "armR": [
+      -70,
+      0,
+      88
+     ],
+     "elbowR": [
+      -90,
+      0,
+      0
+     ],
+     "armL": [
+      -120,
+      0,
+      -5
+     ],
+     "elbowL": [
+      -30,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-supine-er-side",
+   "en": "Assisted shoulder external rotation with a stick, elbows at the sides, lying on the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, elbows bent at your sides.",
+    "Push the stick, turning one forearm out.",
+    "Return slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      55,
+      6
+     ],
+     "armL": [
+      0,
+      -35,
+      6
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-ball-stick-trunk-rotation",
+   "en": "Trunk rotation holding a stick, elbows bent, sitting on an exercise ball",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Sit on the ball, elbows bent, stick in the hands.",
+    "Turn the trunk to one side.",
+    "Return and switch."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "spine": [
+      0,
+      -35,
+      0
+     ],
+     "neck": [
+      0,
+      -15,
+      0
+     ],
+     "hold": 0.3
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      4
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "spine": [
+      0,
+      35,
+      0
+     ],
+     "neck": [
+      0,
+      15,
+      0
+     ],
+     "hold": 0.3
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-ball-stick-tilt",
+   "en": "Tilt a stick held out in front, sitting on an exercise ball",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Sit on the ball, stick held out in front.",
+    "Tilt the stick, one end up.",
+    "Level it and switch."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "armL": [
+      -115,
+      0,
+      8
+     ],
+     "armR": [
+      -65,
+      0,
+      8
+     ],
+     "hold": 0.3
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "armL": [
+      -65,
+      0,
+      8
+     ],
+     "armR": [
+      -115,
+      0,
+      8
+     ],
+     "hold": 0.3
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-stick-lat-stretch",
+   "en": "Back and latissimus stretch, hands on a stick, sitting",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Sit, hands on top of a stick on the floor.",
+    "Lean forward, head between the arms.",
+    "Sit back up slowly."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -45,
+      0,
+      -14
+     ],
+     "elbow": [
+      -50,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "spine": [
+      45,
+      0,
+      0
+     ],
+     "neck": [
+      15,
+      0,
+      0
+     ],
+     "arm": [
+      -150,
+      0,
+      -8
+     ],
+     "elbow": [
+      -5,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-stick-weight-shift",
+   "en": "Stir circles with a stick planted on the floor, sitting",
+   "amount_en": "5 circles each way",
+   "steps_en": [
+    "Sit, hands on a stick planted on the floor.",
+    "Lean around in a circle.",
+    "Switch direction."
+   ],
+   "beat": 1.0,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -60,
+      0,
+      -12
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -60,
+      0,
+      -12
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      25,
+      0,
+      15
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -75,
+      0,
+      -12
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      32,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      -60,
+      0,
+      -12
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      25,
+      0,
+      -15
+     ]
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-stick-thoracic-ext",
+   "en": "Thoracic extension over a stick hooked behind the back, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit, stick hooked behind the back in the elbows.",
+    "Lean back and look up.",
+    "Return slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      15
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      15
+     ],
+     "elbow": [
+      -90,
+      0,
+      0
+     ],
+     "spine": [
+      -20,
+      0,
+      0
+     ],
+     "neck": [
+      -25,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-chair-stick-flexion-vertical",
+   "en": "Assisted shoulder flexion with a vertical stick, sitting",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Sit, stick upright, the arm to work on top.",
+    "Push up with the other hand.",
+    "Lower it slowly."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "armR": [
+      -40,
+      0,
+      6
+     ],
+     "elbowR": [
+      -100,
+      0,
+      0
+     ],
+     "armL": [
+      -20,
+      0,
+      -8
+     ],
+     "elbowL": [
+      -70,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      6
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "armR": [
+      -165,
+      0,
+      6
+     ],
+     "elbowR": [
+      -10,
+      0,
+      0
+     ],
+     "armL": [
+      -110,
+      0,
+      -5
+     ],
+     "elbowL": [
+      -60,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ],
+   "seated": true
+  },
+  {
+   "id": "kineti-stick-lunge-rotation",
+   "en": "Lunge with trunk rotation holding a stick in front",
+   "amount_en": "8 each side",
+   "steps_en": [
+    "Stand, stick held in front.",
+    "Lunge and turn to the front leg.",
+    "Come back up."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "legL": [
+      -20,
+      0,
+      3
+     ],
+     "footL": [
+      20,
+      0,
+      0
+     ],
+     "legR": [
+      20,
+      0,
+      3
+     ],
+     "footR": [
+      -20,
+      0,
+      0
+     ],
+     "arm": [
+      -80,
+      0,
+      8
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -80,
+      0,
+      3
+     ],
+     "footL": [
+      -5,
+      0,
+      0
+     ],
+     "legR": [
+      15,
+      0,
+      3
+     ],
+     "footR": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      -80,
+      0,
+      8
+     ],
+     "elbow": [
+      -10,
+      0,
+      0
+     ],
+     "kneeL": [
+      85,
+      0,
+      0
+     ],
+     "kneeR": [
+      80,
+      0,
+      0
+     ],
+     "touch": [
+      "footR"
+     ],
+     "spine": [
+      0,
+      35,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-stick-half-kneel-soleus",
+   "en": "Soleus stretch in half kneeling, holding a stick for balance",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Half kneel, hand on a stick for balance.",
+    "Move the front knee forward, heel down.",
+    "Hold, then return."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "legL": [
+      -75,
+      0,
+      0
+     ],
+     "kneeL": [
+      80,
+      0,
+      0
+     ],
+     "footL": [
+      -5,
+      0,
+      0
+     ],
+     "legR": [
+      20,
+      0,
+      0
+     ],
+     "kneeR": [
+      75,
+      0,
+      0
+     ],
+     "footR": [
+      40,
+      0,
+      0
+     ],
+     "armR": [
+      -45,
+      0,
+      10
+     ],
+     "elbowR": [
+      -40,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      0
+     ],
+     "elbowL": [
+      -30,
+      0,
+      0
+     ],
+     "touch": [
+      "footR"
+     ]
+    },
+    {
+     "legL": [
+      -60,
+      0,
+      0
+     ],
+     "kneeL": [
+      115,
+      0,
+      0
+     ],
+     "footL": [
+      -30,
+      0,
+      0
+     ],
+     "legR": [
+      20,
+      0,
+      0
+     ],
+     "kneeR": [
+      75,
+      0,
+      0
+     ],
+     "footR": [
+      40,
+      0,
+      0
+     ],
+     "armR": [
+      -55,
+      0,
+      10
+     ],
+     "elbowR": [
+      -40,
+      0,
+      0
+     ],
+     "armL": [
+      -30,
+      0,
+      0
+     ],
+     "elbowL": [
+      -30,
+      0,
+      0
+     ],
+     "touch": [
+      "footR"
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ]
+  },
+  {
+   "id": "kineti-board-squat-deep",
+   "en": "Deep squat on a balance board, arms forward",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand on the board, arms forward.",
+    "Squat deep, keeping balance.",
+    "Stand up slowly."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      5
+     ],
+     "arm": [
+      -20,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -95,
+      0,
+      6
+     ],
+     "knee": [
+      118,
+      0,
+      0
+     ],
+     "foot": [
+      -32,
+      0,
+      0
+     ],
+     "spine": [
+      38,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.48
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "hold": 0.4
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.22,
+      0.22,
+      -0.26,
+      0.18,
+      0.09
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-wobble-squat",
+   "en": "Squat on a wobble cushion, arms forward",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand on the cushion, feet apart.",
+    "Squat to 90 degrees, arms forward.",
+    "Stand up slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      5
+     ],
+     "arm": [
+      -20,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -80,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.36
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "hold": 0.4
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.22,
+      0.22,
+      -0.26,
+      0.18,
+      0.07
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-bosu-squat",
+   "en": "Squat on a BOSU, arms forward",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand on the BOSU dome.",
+    "Squat, arms forward for balance.",
+    "Stand up slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      5
+     ],
+     "arm": [
+      -20,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -80,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.36
+     ],
+     "arm": [
+      -90,
+      0,
+      6
+     ],
+     "hold": 0.4
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.31,
+      0.31,
+      -0.35,
+      0.27,
+      0.19
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-bosu-squat-rotation-ball",
+   "en": "Squat on a BOSU turning the trunk, holding a ball",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Stand on the BOSU holding a ball out in front.",
+    "Squat and turn to each side.",
+    "Stand up."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      5
+     ],
+     "arm": [
+      -85,
+      0,
+      -3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -80,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.36
+     ],
+     "arm": [
+      -85,
+      0,
+      -3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -80,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      30,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.36
+     ],
+     "arm": [
+      -85,
+      0,
+      -3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.2
+    },
+    {
+     "leg": [
+      -80,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      -30,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.36
+     ],
+     "arm": [
+      -85,
+      0,
+      -3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.2
+    },
+    {
+     "leg": [
+      -80,
+      0,
+      6
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      -0.36
+     ],
+     "arm": [
+      -85,
+      0,
+      -3
+     ],
+     "elbow": [
+      -20,
+      0,
+      0
+     ]
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.31,
+      0.31,
+      -0.35,
+      0.27,
+      0.19
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-board-shoulder-flexion",
+   "en": "Shoulder flexion standing on a balance board",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Stand on the board, feet together.",
+    "Raise both arms up to the ears.",
+    "Lower them slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      1
+     ],
+     "arm": [
+      -10,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      0,
+      0,
+      1
+     ],
+     "arm": [
+      -170,
+      0,
+      8
+     ],
+     "hold": 0.4
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.22,
+      0.22,
+      -0.26,
+      0.18,
+      0.09
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-board-lumbar-flexion",
+   "en": "Bend forward standing on a balance board",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Stand on the board.",
+    "Bend forward, hands towards the feet.",
+    "Come back up slowly."
+   ],
+   "beat": 1.5,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      5
+     ],
+     "arm": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      -45,
+      0,
+      5
+     ],
+     "arm": [
+      -75,
+      0,
+      4
+     ],
+     "hips": [
+      45,
+      0,
+      0
+     ],
+     "spine": [
+      30,
+      0,
+      0
+     ],
+     "neck": [
+      10,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.22,
+      0.22,
+      -0.26,
+      0.18,
+      0.09
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-board-lumbar-extension",
+   "en": "Lean back, hands on the lower back, standing on a balance board",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Stand on the board, hands on the lower back.",
+    "Lean back gently, looking up.",
+    "Come back slowly."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      5
+     ],
+     "arm": [
+      45,
+      -60,
+      15
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      8,
+      0,
+      5
+     ],
+     "arm": [
+      45,
+      -60,
+      15
+     ],
+     "elbow": [
+      -100,
+      0,
+      0
+     ],
+     "hips": [
+      -8,
+      0,
+      0
+     ],
+     "spine": [
+      -20,
+      0,
+      0
+     ],
+     "neck": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.22,
+      0.22,
+      -0.26,
+      0.18,
+      0.09
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-board-side-flexion",
+   "en": "Side bend standing on a balance board",
+   "amount_en": "8 each side",
+   "steps_en": [
+    "Stand on the board, feet together.",
+    "Bend to one side, other arm overhead.",
+    "Return and switch."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      1
+     ],
+     "arm": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      0,
+      0,
+      1
+     ],
+     "spine": [
+      0,
+      0,
+      25
+     ],
+     "armL": [
+      0,
+      0,
+      5
+     ],
+     "armR": [
+      0,
+      0,
+      150
+     ],
+     "elbowR": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.3
+    },
+    {
+     "leg": [
+      0,
+      0,
+      1
+     ],
+     "arm": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "leg": [
+      0,
+      0,
+      1
+     ],
+     "spine": [
+      0,
+      0,
+      -25
+     ],
+     "armR": [
+      0,
+      0,
+      5
+     ],
+     "armL": [
+      0,
+      0,
+      150
+     ],
+     "elbowL": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.22,
+      0.22,
+      -0.26,
+      0.18,
+      0.09
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-single-leg-hop-line",
+   "en": "Single leg hops forward and back over a line on the floor",
+   "amount_en": "10 hops",
+   "steps_en": [
+    "Stand on one leg behind a line.",
+    "Hop forward over the line.",
+    "Hop back."
+   ],
+   "beat": 0.45,
+   "keys": [
+    {
+     "legR": [
+      -25,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      12
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -10,
+      0,
+      0
+     ],
+     "kneeL": [
+      15,
+      0,
+      0
+     ],
+     "footL": [
+      -5,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -25,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      12
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -30,
+      0,
+      0
+     ],
+     "kneeL": [
+      45,
+      0,
+      0
+     ],
+     "footL": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -25,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      12
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -10,
+      0,
+      0
+     ],
+     "kneeL": [
+      10,
+      0,
+      0
+     ],
+     "footL": [
+      20,
+      0,
+      0
+     ],
+     "lift": 0.12,
+     "pos": [
+      0,
+      -0.17,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -25,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      12
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -30,
+      0,
+      0
+     ],
+     "kneeL": [
+      45,
+      0,
+      0
+     ],
+     "footL": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      -0.34,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -25,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      12
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -10,
+      0,
+      0
+     ],
+     "kneeL": [
+      10,
+      0,
+      0
+     ],
+     "footL": [
+      20,
+      0,
+      0
+     ],
+     "lift": 0.12,
+     "pos": [
+      0,
+      -0.17,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -25,
+      0,
+      0
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      12
+     ],
+     "elbow": [
+      -60,
+      0,
+      0
+     ],
+     "legL": [
+      -30,
+      0,
+      0
+     ],
+     "kneeL": [
+      45,
+      0,
+      0
+     ],
+     "footL": [
+      -20,
+      0,
+      0
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-step-tap-markers-supported",
+   "en": "Step and tap marks on the floor, holding a chair at the side",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Stand holding a chair at your side.",
+    "Tap the marks in front, diagonal and to the side.",
+    "Bring the foot back each time."
+   ],
+   "beat": 0.9,
+   "keys": [
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "footR": [
+      5,
+      0,
+      0
+     ],
+     "hold": 0.3,
+     "legR": [
+      -26,
+      0,
+      0
+     ]
+    },
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "footR": [
+      5,
+      0,
+      0
+     ],
+     "hold": 0.3,
+     "legR": [
+      -18,
+      0,
+      18
+     ]
+    },
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "footR": [
+      -25,
+      0,
+      0
+     ],
+     "hold": 0.3,
+     "legR": [
+      0,
+      0,
+      25
+     ]
+    },
+    {
+     "armL": [
+      -15,
+      0,
+      28
+     ],
+     "elbowL": [
+      -35,
+      0,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      50,
+      0,
+      0
+     ],
+     "foot": [
+      -25,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      8
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-towel-calf-stretch-long-sit",
+   "en": "Calf stretch pulling a towel round the foot, sitting with legs straight",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Sit, legs straight, towel round one foot.",
+    "Pull the towel, toes towards you.",
+    "Hold, then relax."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ],
+     "arm": [
+      -55,
+      0,
+      8
+     ],
+     "elbow": [
+      -40,
+      0,
+      0
+     ],
+     "footL": [
+      15,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ],
+     "arm": [
+      -40,
+      0,
+      8
+     ],
+     "elbow": [
+      -75,
+      0,
+      0
+     ],
+     "footL": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ]
+  },
+  {
+   "id": "kineti-towel-soleus-roll-long-sit",
+   "en": "Soleus stretch with a towel, knee bent over a roll, sitting",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Sit, knee bent over a roll, towel round the foot.",
+    "Pull the towel, toes towards you.",
+    "Hold, then relax."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ],
+     "arm": [
+      -55,
+      0,
+      8
+     ],
+     "elbow": [
+      -40,
+      0,
+      0
+     ],
+     "legL": [
+      -110,
+      0,
+      4
+     ],
+     "kneeL": [
+      40,
+      0,
+      0
+     ],
+     "footL": [
+      15,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      -90,
+      0,
+      4
+     ],
+     "spine": [
+      8,
+      0,
+      0
+     ],
+     "arm": [
+      -40,
+      0,
+      8
+     ],
+     "elbow": [
+      -75,
+      0,
+      0
+     ],
+     "legL": [
+      -110,
+      0,
+      4
+     ],
+     "kneeL": [
+      40,
+      0,
+      0
+     ],
+     "footL": [
+      -20,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ]
+  },
+  {
+   "id": "kineti-towel-assisted-knee-flexion",
+   "en": "Assisted knee bend pulling a towel round the foot, lying on the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, towel round one foot.",
+    "Pull the towel, sliding the heel up.",
+    "Straighten the leg slowly."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -50,
+      0,
+      8
+     ],
+     "elbow": [
+      -30,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "arm": [
+      -30,
+      0,
+      8
+     ],
+     "elbow": [
+      -95,
+      0,
+      0
+     ],
+     "legL": [
+      -60,
+      0,
+      0
+     ],
+     "kneeL": [
+      110,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      0
+     ],
+     "touch": [
+      "footL"
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-calf-stretch-toes-up",
+   "en": "Calf stretch with the toes of one foot up on a block, standing",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Stand, toes of one foot on a block, heel down.",
+    "Lean forward, knee straight.",
+    "Hold, then return."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "legL": [
+      -10,
+      0,
+      3
+     ],
+     "footL": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      10,
+      0,
+      3
+     ],
+     "footR": [
+      -10,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      10
+     ]
+    },
+    {
+     "legL": [
+      -20,
+      0,
+      3
+     ],
+     "footL": [
+      -25,
+      0,
+      0
+     ],
+     "legR": [
+      0,
+      0,
+      3
+     ],
+     "footR": [
+      0,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      10
+     ],
+     "hips": [
+      10,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      0.03,
+      0.23,
+      -0.36,
+      -0.24,
+      0.05
+     ]
+    ]
+   }
+  },
+  {
+   "id": "kineti-calf-stretch-toes-up-both",
+   "en": "Calf stretch with the toes of both feet up on a roll, standing",
+   "amount_en": "5 x 20 s",
+   "steps_en": [
+    "Stand, toes of both feet on a roll, heels down.",
+    "Lean forward, knees straight.",
+    "Hold, then return."
+   ],
+   "beat": 1.4,
+   "keys": [
+    {
+     "leg": [
+      0,
+      0,
+      4
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      10
+     ]
+    },
+    {
+     "leg": [
+      -8,
+      0,
+      4
+     ],
+     "foot": [
+      -22,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      10
+     ],
+     "hips": [
+      8,
+      0,
+      0
+     ],
+     "hold": 0.8
+    }
+   ],
+   "ground": {
+    "boxes": [
+     [
+      -0.27,
+      0.27,
+      -0.23,
+      -0.11,
+      0.05
+     ]
+    ]
+   }
   }
  ]
 }

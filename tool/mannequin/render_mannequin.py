@@ -175,6 +175,12 @@ ROLLC = mat('roll', '#7FB7AE', 0.8)
 BALLC = mat('ball', '#F2A65A', 0.45)
 CUFFC = mat('cuff', '#3D4A5C', 0.7)
 DBC = mat('db', '#46505E', 0.4)
+STICKC = mat('stick', '#3F6E8C', 0.5)
+TOWELC = mat('towel', '#F3EFE6', 0.95)
+WOBBLEC = mat('wobble', '#7C6FD6', 0.5)
+BOSUC = mat('bosu', '#2F80ED', 0.35)
+MARKC = mat('mark', '#F5593D', 0.6)
+TAPEC = mat('tape', '#3D4A5C', 0.8)
 temp = []
 
 
@@ -210,10 +216,11 @@ def motion_bounds(f0, f1, step=3, part='full'):
 
 
 def chair(y_seat, y_back, back_top=1.0):
-    """Seat top at 0.45, seat centred on y_seat, backrest plane at y_back."""
+    """Seat top at 0.45, seat centred on y_seat, backrest plane at y_back (no backrest when back_top <= 0.45: a stool)."""
     box((0, y_seat, 0.43), (0.46, 0.44, 0.04), CHAIRC)
     hb = back_top - 0.45
-    box((0, y_back, 0.45 + hb / 2), (0.46, 0.03, hb), CHAIRC)
+    if hb > 0.01:
+        box((0, y_back, 0.45 + hb / 2), (0.46, 0.03, hb), CHAIRC)
     sgn = 1 if y_back > y_seat else -1
     for x in (-0.2, 0.2):
         for y in (y_seat - 0.19 * sgn, y_back):
@@ -315,6 +322,28 @@ def band_end(e):
     return bone_head('knee' + s)
 
 
+def stick_end(e):
+    """band_end, plus eL/eR: just behind the elbow (a dowel hooked in the elbows, behind the back)."""
+    if e[0] == 'e':
+        return bone_head('elbow' + e[1]) + Vector((0, 0.06, 0))
+    return band_end(e)
+
+
+STICK_L = 1.05  # a 105 cm dowel
+
+
+def stick_seg(kind, ends):
+    """(start, end) of a stick for the current pose. stick / stick-a-b: through both ends, centred;
+    stickend-a-b: its end just past a. (stickfloor is placed in the job loop: its tip stays planted.)"""
+    a, b = (stick_end(e) for e in ends)
+    dv = (b - a).normalized()
+    if kind == 'stickend':
+        s0 = a - dv * 0.05
+        return s0, s0 + dv * max(STICK_L, (b - a).length + 0.15)
+    c, h = (a + b) / 2, max(STICK_L, (b - a).length + 0.2) / 2
+    return c - dv * h, c + dv * h
+
+
 SWISS_R = 0.275  # a 55 cm exercise ball
 SUPPORT_BALLS = ('ballfeet', 'ballarms', 'ballhands', 'ballback')
 
@@ -405,7 +434,7 @@ scene.render.fps = 30
 scene.render.image_settings.file_format = 'PNG'
 scene.view_settings.view_transform = 'Standard'
 
-DIRS = {'side': (1, 0, 0.18), 'front': (0, -1, 0.2), 'top3q': (0.55, -0.8, 0.9), 'side3q': (0.85, -0.45, 0.3),
+DIRS = {'side': (1, 0, 0.18), 'front': (0, -1, 0.2), 'top3q': (0.55, -0.8, 0.9), 'side3q': (0.85, -0.45, 0.3), 'back': (0.35, 1, 0.25),
         'front3q': (0.5, -0.85, 0.3), 'floor': (1, -0.3, 0.6), 'rside3q': (-0.85, -0.45, 0.3), 'back3q': (0.8, 0.55, 0.35)}
 
 for job in JOBS:
@@ -426,7 +455,7 @@ for job in JOBS:
     scene.frame_set(f0)
 
     # the knee ball means seated, unless the body leans on a wall (wall squat with a ball between the knees)
-    seated = bool(props & {'chair', 'swissseat'} or 'ball' in props and not props & {'wallball', 'wallback'})
+    seated = bool(props & {'chair', 'stool', 'swissseat'} or 'ball' in props and not props & {'wallball', 'wallback'})
     if 'swissseat' in props:  # exercise ball as the seat: 55 cm, squashed a little under the pelvis (seat 0.45)
         hp = bone_head('hips')
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.27, segments=48, ring_count=24, location=(hp.x, hp.y + 0.03, 0.235))
@@ -436,7 +465,7 @@ for job in JOBS:
         bpy.ops.object.shade_smooth()
         temp.append(o)
     elif seated:
-        chair(0.12, 0.33, 1.0)
+        chair(0.12, 0.33, 0.45 if 'stool' in props else 1.0)
     floor_tiles('walk' in props)
     if 'chairfit' in props:  # a chair under the pelvis of the first pose (sit to stand: not a seated exercise)
         hp = bone_head('hips')
@@ -455,6 +484,28 @@ for job in JOBS:
     gr = json.loads(act['ground']) if 'ground' in act else None  # the height field the move was built on
     if gr and any(p_.startswith(SUPPORT_BALLS) for p_ in props):
         pass  # the raised box is the top of an exercise ball (drawn by support_ball)
+    elif gr and props & {'wobble', 'board', 'bosu'}:  # the raised box is the top of a balance disc under the feet
+        for x0, x1, y0, y1, h in gr['boxes']:
+            if h <= 0.03:
+                continue
+            c, r = ((x0 + x1) / 2, (y0 + y1) / 2), max(x1 - x0, y1 - y0) / 2
+            if 'wobble' in props:  # an air cushion
+                cyl((*c, h / 2), r, h, 'z', WOBBLEC)
+            elif 'board' in props:  # a round board on a half-sphere pivot
+                cyl((*c, h - 0.0125), r, 0.025, 'z', STEPTOP)
+                bpy.ops.mesh.primitive_uv_sphere_add(radius=h - 0.025, segments=32, ring_count=16, location=(*c, 0))
+                o = bpy.context.object
+                o.data.materials.append(STEPC)
+                bpy.ops.object.shade_smooth()
+                temp.append(o)
+            else:  # BOSU: a dome on a dark ring (the floor hides the lower half)
+                bpy.ops.mesh.primitive_uv_sphere_add(radius=r, segments=48, ring_count=24, location=(*c, 0))
+                o = bpy.context.object
+                o.scale.z = (h + 0.015) / r
+                o.data.materials.append(BOSUC)
+                bpy.ops.object.shade_smooth()
+                temp.append(o)
+                cyl((*c, 0.015), r + 0.012, 0.03, 'z', STEPTOP)
     elif gr:  # each raised box drawn as an aerobic step: grey block, dark rubber top
         base = gr.get('base', 0)
         for x0, x1, y0, y1, h in gr['boxes']:
@@ -656,7 +707,7 @@ for job in JOBS:
                  (rod(0.008, BANDC), lambda: astrand(1)), (rod(0.008, BANDC), lambda: astrand(-1))], f0, f1)
     # band-<end>-<end>: ends are hL/hR (palm), fL/fR (sole, a strap round the foot), aL/aR (ankle), kL/kR (knee), sL/sR (behind the shoulder),
     # or a post F/B/L/R (world -y/+y/+x/-x) 0.6 m from the other end's start, at its height, or lo/hi (e.g. Blo).
-    for bp in sorted(p_ for p_ in props if p_.startswith('band-')):
+    for bp in sorted(p_ for p_ in props if p_.startswith(('band-', 'towel-'))):  # a towel: same ends, thick and white
         ends = bp.split('-')[1:]
         scene.frame_set(f0)
         fixed = {}
@@ -672,7 +723,37 @@ for job in JOBS:
                 box((fixed[i_].x, fixed[i_].y, 1.0), (0.05, 0.05, 2.0), CHAIRC)['noframe'] = True
         fa = (lambda: fixed[0]) if 0 in fixed else (lambda e_=ends[0]: band_end(e_))
         fb = (lambda: fixed[1]) if 1 in fixed else (lambda e_=ends[1]: band_end(e_))
-        animate([(rod(0.008, BANDC), lambda fa=fa, fb=fb: seg_matrix(fa(), fb()))], f0, f1)
+        animate([(rod(0.008, BANDC) if bp.startswith('band-') else rod(0.02, TOWELC), lambda fa=fa, fb=fb: seg_matrix(fa(), fb()))], f0, f1)
+    if 'line' in props:  # a tape line on the floor, across the way the body travels, halfway
+        hs = []
+        for f in range(f0, f1 + 1, 2):
+            scene.frame_set(f)
+            hs.append(bone_head('hips'))
+        scene.frame_set(f0)
+        ax = 0 if max(h_.x for h_ in hs) - min(h_.x for h_ in hs) > max(h_.y for h_ in hs) - min(h_.y for h_ in hs) else 1
+        mid = (max(h_[ax] for h_ in hs) + min(h_[ax] for h_ in hs)) / 2
+        cx, cy = sum(h_.x for h_ in hs) / len(hs), sum(h_.y for h_ in hs) / len(hs)
+        loc = (mid, cy, 0.002) if ax == 0 else (cx, mid, 0.002)
+        box(loc, (0.04, 0.8, 0.004) if ax == 0 else (0.8, 0.04, 0.004), TAPEC)['noframe'] = True
+    if 'marks' in props:  # dots on the floor where a foot is put down away from where it started
+        def sole(s):
+            return (bone_head('foot' + s) + foot_tip(s)) / 2
+        for s in 'LR':
+            scene.frame_set(f0)
+            p0 = sole(s)
+            spots = []
+            for f in range(f0, f1 + 1):
+                scene.frame_set(f)
+                q = sole(s)
+                if q.z < p0.z + 0.015 and ((q - p0) * Vector((1, 1, 0))).length > 0.15:
+                    if spots and (spots[-1][-1] - q).length < 0.08:
+                        spots[-1].append(q)
+                    else:
+                        spots.append([q])
+            for sp_ in spots:
+                c = sum(sp_, Vector()) / len(sp_)
+                cyl((c.x, c.y, 0.003), 0.075, 0.006, 'z', MARKC)['noframe'] = True
+        scene.frame_set(f0)
     if 'heldball' in props:  # a ball held between the palms
         scene.frame_set(f0)
         rb = min(max((palm('L') - palm('R')).length / 2 - 0.035, 0.08), 0.3)
@@ -691,6 +772,28 @@ for job in JOBS:
         scene.frame_set(f0)
     for kind in sorted(p_ for p_ in props if p_.startswith(SUPPORT_BALLS)):
         extra += support_ball(kind, f0, f1, name)
+    # Sticks: stick (through both palms), stick-<a>-<b>, stickend-<a>-<b>, stickfloor-<a>[-<b>] (see stick_seg).
+    for sp in sorted(p_ for p_ in props if p_ == 'stick' or p_.startswith(('stick-', 'stickend-', 'stickfloor-'))):
+        kind, *ends = sp.split('-')
+        ends = ends or ['hL', 'hR']
+        scene.frame_set(f0)
+        if kind == 'stickfloor':  # planted under the hand(s) of the first frame, length fixed from there
+            top = sum((stick_end(e) for e in ends), Vector()) / len(ends)
+            tip = Vector((top.x, top.y, FLOOR.location.z))
+            L0 = (top - tip).length + 0.06
+
+            def seg(ends=ends, tip=tip, L0=L0):
+                top = sum((stick_end(e) for e in ends), Vector()) / len(ends)
+                dv = top - tip
+                return tip, tip + dv.normalized() * max(L0, dv.length + 0.04)
+        else:
+            def seg(kind=kind, ends=ends):
+                return stick_seg(kind, ends)
+        animate([(rod(0.013, STICKC), lambda seg=seg: seg_matrix(*seg()))], f0, f1)
+        for f in range(f0, f1 + 1, 3):
+            scene.frame_set(f)
+            extra += list(seg())
+        scene.frame_set(f0)
 
     # Frame the whole motion: the body's vertices over every sampled frame, plus the props (not the mat or wall).
     lo, hi, pts = motion_bounds(f0, f1, part=part) if part != 'full' else (blo.copy(), bhi.copy(), list(bpts))

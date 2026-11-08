@@ -2074,5 +2074,245 @@
   "Com um pé à frente e a faixa presa logo acima do joelho da frente, desce o corpo flexionando os joelhos sem deixar o joelho ceder e sobe.",
   "Quadríceps, glúteos e controle do joelho",
   "joelhos"
+ ],
+ "kineti-stick-curl": [
+  "Flexão de cotovelos com bastão, em pé",
+  "Em pé, segura um bastão com as palmas para cima e os braços esticados, dobra os cotovelos trazendo o bastão em direção aos ombros e estica de volta devagar.",
+  "Bíceps e amplitude do cotovelo",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-stick-shoulder-flexion": [
+  "Elevação dos braços com bastão, em pé",
+  "Em pé, segura um bastão à frente das coxas e eleva os braços esticados até o bastão passar acima da cabeça, descendo devagar.",
+  "Amplitude de flexão dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-flexion-90": [
+  "Elevação do bastão até a altura dos ombros",
+  "Em pé, segura um bastão à frente das coxas e eleva os braços esticados até a altura dos ombros, descendo devagar sem encolher os ombros.",
+  "Flexores do ombro e postura",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-chest-lift": [
+  "Elevação do bastão do peito até acima da cabeça",
+  "Em pé, segura um bastão na altura do peito e empurra para cima até esticar os braços acima da cabeça, voltando devagar ao peito.",
+  "Amplitude dos ombros e drenagem (linfedema)",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-wide-raise": [
+  "Elevação do bastão com pegada aberta",
+  "Em pé, segura um bastão com as mãos bem afastadas à frente das coxas e eleva os braços esticados num arco amplo até acima da cabeça, descendo devagar.",
+  "Amplitude de elevação dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-abduction-aarom": [
+  "Abdução do ombro assistida com bastão",
+  "Em pé, segura a ponta do bastão com a mão do braço a exercitar e, com a outra mão, empurra o bastão para elevar esse braço pelo lado até o alto, voltando devagar.",
+  "Amplitude de abdução do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-extension": [
+  "Extensão dos ombros com bastão atrás do corpo",
+  "Em pé, segura um bastão atrás do corpo com os braços esticados e afasta o bastão das costas elevando os braços para trás, sem inclinar o tronco, e desce devagar.",
+  "Amplitude de extensão dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-ir-behind-back": [
+  "Rotação interna do ombro assistida com bastão atrás das costas",
+  "Em pé, com o bastão na vertical atrás das costas, uma mão acima da cabeça e a outra na lombar, a mão de cima puxa o bastão para o alto, fazendo a de baixo subir pelas costas.",
+  "Amplitude de rotação interna do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-er-aarom": [
+  "Rotação externa do ombro assistida com bastão",
+  "Em pé, com os cotovelos dobrados a 90° junto ao corpo e o bastão nas duas mãos, empurra o bastão para um lado, girando o outro antebraço para fora sem afastar o cotovelo.",
+  "Amplitude de rotação externa do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-supine-curl": [
+  "Flexão de cotovelos com bastão, deitado",
+  "Deitado de costas com os joelhos dobrados e o bastão nas mãos com os braços para o teto, dobra os cotovelos trazendo o bastão até o peito e estica de volta.",
+  "Amplitude do cotovelo",
+  "cotovelos_punhos_maos"
+ ],
+ "kineti-stick-supine-flexion": [
+  "Elevação dos braços com bastão, deitado",
+  "Deitado de costas com os joelhos dobrados e o bastão sobre as coxas, eleva os braços esticados para o teto e continua até levar o bastão acima da cabeça, voltando devagar.",
+  "Amplitude de flexão dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-supine-trunk-rotation": [
+  "Rotação do tronco com bastão, deitado",
+  "Deitado de costas com as pernas esticadas e o bastão para o teto, gira o tronco e os braços para um lado sem tirar o quadril do lugar, volta ao centro e alterna.",
+  "Mobilidade da coluna torácica",
+  "tronco_coluna"
+ ],
+ "kineti-stick-supine-ir-stretch-90": [
+  "Alongamento dos rotadores internos com bastão, braço a 90°, deitado",
+  "Deitado de costas com o braço aberto e o cotovelo a 90°, segura o bastão com as duas mãos e, com a mão do outro lado, empurra girando o antebraço para trás. Sustenta e volta.",
+  "Alongamento da frente do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-supine-er-side": [
+  "Rotação externa do ombro assistida com bastão, deitado",
+  "Deitado de costas com os cotovelos dobrados junto ao corpo e o bastão nas mãos, empurra o bastão para um lado, girando o outro antebraço para fora. Sustenta e volta.",
+  "Amplitude de rotação externa do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-ball-stick-trunk-rotation": [
+  "Rotação do tronco com bastão, sentado na bola",
+  "Sentado na bola suíça com os cotovelos dobrados junto ao corpo segurando um bastão, gira o tronco e a cabeça para um lado, volta ao centro e alterna, mantendo a postura ereta.",
+  "Rotação do tronco e estabilidade",
+  "tronco_coluna"
+ ],
+ "kineti-ball-stick-tilt": [
+  "Inclinação do bastão sentado na bola",
+  "Sentado na bola suíça com o bastão à frente na altura dos ombros, inclina o bastão subindo uma ponta e descendo a outra, sem mexer o tronco, e alterna.",
+  "Estabilidade do tronco e ombros",
+  "tronco_coluna"
+ ],
+ "kineti-chair-stick-lat-stretch": [
+  "Alongamento das costas com as mãos no bastão, sentado",
+  "Sentado, com as mãos no topo de um bastão apoiado no chão à frente, inclina o tronco à frente deixando o bastão inclinar e a cabeça passar entre os braços, e volta devagar.",
+  "Alongamento do grande dorsal e das costas",
+  "tronco_coluna"
+ ],
+ "kineti-chair-stick-weight-shift": [
+  "Círculos com o bastão apoiado no chão, sentado",
+  "Sentado com os pés afastados e as mãos num bastão apoiado no chão à frente, inclina o corpo em círculos amplos, como se mexesse um caldeirão, e inverte o sentido.",
+  "Transferência de peso e controle do tronco",
+  "equilibrio"
+ ],
+ "kineti-chair-stick-thoracic-ext": [
+  "Extensão torácica com bastão atrás das costas, sentado",
+  "Sentado numa banqueta, com o bastão atrás das costas preso na dobra dos cotovelos, inclina o tronco para trás olhando para cima e volta devagar.",
+  "Mobilidade da coluna torácica",
+  "tronco_coluna"
+ ],
+ "kineti-chair-stick-flexion-vertical": [
+  "Flexão do ombro assistida com bastão vertical, sentado",
+  "Sentado, segura o bastão na vertical com a mão do braço a exercitar no topo e, com a outra mão, empurra o bastão para cima elevando o braço o mais alto possível. Desce devagar.",
+  "Amplitude de flexão do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-lunge-rotation": [
+  "Afundo com rotação do tronco segurando um bastão",
+  "Com um pé à frente e o bastão à frente do corpo, desce no afundo dobrando os dois joelhos e gira o tronco para o lado da perna da frente. Volta e alterna.",
+  "Pernas, rotação do tronco e equilíbrio",
+  "joelhos"
+ ],
+ "kineti-stick-half-kneel-soleus": [
+  "Alongamento do sóleo semiajoelhado, com bastão para apoio",
+  "Com um joelho no chão e o outro pé à frente, segura um bastão vertical para equilíbrio e leva o joelho da frente para além dos dedos, sem tirar o calcanhar do chão. Sustenta e volta.",
+  "Alongamento do sóleo e do tornozelo",
+  "tornozelos_pes"
+ ],
+ "kineti-stick-wall-flexion": [
+  "Elevação dos braços com bastão, de costas para a parede",
+  "Em pé, de costas para a parede, segura um bastão à frente das coxas e eleva os braços esticados até acima da cabeça, descendo devagar.",
+  "Amplitude de flexão dos ombros",
+  "ombros_escapulas"
+ ],
+ "kineti-stick-wall-er-aarom": [
+  "Rotação externa do ombro assistida com bastão, de costas para a parede",
+  "De costas para a parede, com os cotovelos dobrados a 90° junto ao corpo, empurra o bastão para um lado, girando o outro antebraço para fora. Sustenta e volta.",
+  "Amplitude de rotação externa do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-board-squat-deep": [
+  "Agachamento profundo no disco de equilíbrio",
+  "Em pé sobre o disco de equilíbrio, com os braços à frente, agacha fundo dobrando joelhos e quadril sem perder o equilíbrio e sobe devagar.",
+  "Quadríceps, glúteos e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-wobble-squat": [
+  "Agachamento na almofada de equilíbrio",
+  "Em pé sobre a almofada de equilíbrio, com os pés afastados, agacha até 90° levando os braços à frente e sobe devagar.",
+  "Quadríceps, glúteos e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-bosu-squat": [
+  "Agachamento no BOSU",
+  "Em pé sobre a cúpula do BOSU, com os pés na largura do quadril, agacha com os braços à frente para equilibrar e sobe devagar.",
+  "Quadríceps, glúteos e estabilidade",
+  "equilibrio"
+ ],
+ "kineti-bosu-squat-rotation-ball": [
+  "Agachamento no BOSU com rotação do tronco, segurando uma bola",
+  "Em pé sobre o BOSU, com uma bola nas mãos e os braços à frente, agacha e, embaixo, gira o tronco para um lado e para o outro antes de subir.",
+  "Pernas, rotação do tronco e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-board-shoulder-flexion": [
+  "Elevação dos braços em pé no disco de equilíbrio",
+  "Em pé sobre o disco de equilíbrio com os pés juntos, eleva os dois braços esticados até a altura das orelhas e desce devagar, mantendo o equilíbrio.",
+  "Equilíbrio e controle postural",
+  "equilibrio"
+ ],
+ "kineti-board-lumbar-flexion": [
+  "Flexão do tronco em pé no disco de equilíbrio",
+  "Em pé sobre o disco de equilíbrio, inclina o tronco à frente levando as mãos em direção aos pés e volta devagar, mantendo o equilíbrio.",
+  "Mobilidade da coluna e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-board-lumbar-extension": [
+  "Extensão do tronco em pé no disco de equilíbrio",
+  "Em pé sobre o disco de equilíbrio, com as mãos na lombar, inclina o tronco suavemente para trás olhando para cima e volta devagar.",
+  "Mobilidade da coluna e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-board-side-flexion": [
+  "Inclinação lateral do tronco no disco de equilíbrio",
+  "Em pé sobre o disco de equilíbrio com os pés juntos, inclina o tronco para um lado, com o outro braço passando por cima da cabeça, volta ao centro e alterna.",
+  "Mobilidade lateral da coluna e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-single-leg-hop-line": [
+  "Saltos numa perna sobre a linha no chão",
+  "Em pé numa perna só, atrás de uma linha no chão, salta à frente passando a linha e volta saltando para trás, com o joelho alinhado com o pé.",
+  "Potência, controle do joelho e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-step-tap-markers-supported": [
+  "Tocar marcas no chão com o pé, apoiado na cadeira",
+  "Em pé, com uma mão no encosto de uma cadeira ao lado, toca com a ponta do pé marcas no chão à frente, na diagonal e ao lado, voltando o pé ao lugar a cada toque.",
+  "Coordenação, precisão do passo e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-towel-calf-stretch-long-sit": [
+  "Alongamento da panturrilha com toalha, sentado com as pernas esticadas",
+  "Sentado com as pernas esticadas e uma toalha passada pela planta do pé, puxa a toalha trazendo os dedos em sua direção. Sustenta e relaxa.",
+  "Alongamento do gastrocnêmio",
+  "tornozelos_pes"
+ ],
+ "kineti-towel-soleus-roll-long-sit": [
+  "Alongamento do sóleo com toalha, joelho dobrado sobre um rolo",
+  "Sentado, com o joelho levemente dobrado sobre um rolo e uma toalha passada pelo pé, puxa a toalha trazendo os dedos em sua direção. Sustenta e relaxa.",
+  "Alongamento do sóleo",
+  "tornozelos_pes"
+ ],
+ "kineti-towel-assisted-knee-flexion": [
+  "Flexão do joelho assistida com toalha, deitado",
+  "Deitado de costas com uma toalha passada pelo pé, puxa a toalha deslizando o calcanhar em direção ao quadril e estica a perna de volta devagar.",
+  "Amplitude de flexão do joelho",
+  "joelhos"
+ ],
+ "kineti-calf-stretch-toes-up": [
+  "Alongamento da panturrilha com a ponta do pé num apoio",
+  "Em pé, com a ponta de um pé sobre um pequeno apoio e o calcanhar no chão, inclina o corpo à frente com o joelho esticado. Sustenta e volta.",
+  "Alongamento da panturrilha",
+  "tornozelos_pes"
+ ],
+ "kineti-calf-stretch-toes-up-both": [
+  "Alongamento das panturrilhas com a ponta dos pés num rolo",
+  "Em pé, com a ponta dos dois pés sobre um rolo de toalha e os calcanhares no chão, inclina o corpo à frente com os joelhos esticados. Sustenta e volta.",
+  "Alongamento das panturrilhas",
+  "tornozelos_pes"
+ ],
+ "kineti-towel-ir-behind-back": [
+  "Rotação interna do ombro assistida com toalha atrás das costas",
+  "Em pé, com uma toalha atrás das costas, uma mão acima da cabeça e a outra na lombar, a mão de cima puxa a toalha para o alto, fazendo a de baixo subir pelas costas.",
+  "Amplitude de rotação interna do ombro",
+  "ombros_escapulas"
  ]
 }

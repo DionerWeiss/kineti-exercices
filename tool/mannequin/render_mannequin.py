@@ -181,6 +181,10 @@ WOBBLEC = mat('wobble', '#7C6FD6', 0.5)
 BOSUC = mat('bosu', '#2F80ED', 0.35)
 MARKC = mat('mark', '#F5593D', 0.6)
 TAPEC = mat('tape', '#3D4A5C', 0.8)
+LADDERC = mat('ladder', '#F5B800', 0.6)
+WALKERC = mat('walker', '#AEB8C6', 0.3)
+GRIPC = mat('grip', '#3D4A5C', 0.8)
+PILLOWC = mat('pillow', '#F4F1EC', 0.95)
 temp = []
 
 
@@ -294,6 +298,29 @@ def cyl(loc, r, depth, axis, m, parent=None):
     bpy.ops.object.shade_smooth()
     temp.append(o)
     return o
+
+
+def walker_parts(w, hz):
+    """A rolling walker around its handle centre (origin): grips at x = +-w/2 at height 0, legs down to -hz."""
+    objs = []
+    for sx in (-1, 1):
+        x = sx * w / 2
+        g = rod(0.018, GRIPC); g.matrix_world = seg_matrix(Vector((x, 0.07, 0)), Vector((x, -0.07, 0))); objs.append(g)
+        top = rod(0.012, WALKERC); top.matrix_world = seg_matrix(Vector((x, 0.14, -0.02)), Vector((x, -0.3, -0.02))); objs.append(top)
+        for y in (-0.3, 0.14):
+            lg = rod(0.012, WALKERC); lg.matrix_world = seg_matrix(Vector((x, y, -0.02)), Vector((x, y, -hz + 0.05))); objs.append(lg)
+        objs.append(cyl((x, -0.3, -hz + 0.04), 0.04, 0.025, 'x', GRIPC))
+        tip = rod(0.016, GRIPC); tip.matrix_world = seg_matrix(Vector((x, 0.14, -hz + 0.05)), Vector((x, 0.14, -hz))); objs.append(tip)
+    for z in (-0.02, -0.45 * hz):
+        cb = rod(0.012, WALKERC); cb.matrix_world = seg_matrix(Vector((-w / 2, -0.3, z)), Vector((w / 2, -0.3, z))); objs.append(cb)
+    bpy.ops.object.empty_add(location=(0, 0, 0))
+    root = bpy.context.object
+    temp.append(root)
+    for o in objs:
+        mw = o.matrix_world.copy()
+        o.parent = root
+        o.matrix_world = mw
+    return root
 
 
 def body_np():
@@ -455,7 +482,8 @@ for job in JOBS:
     scene.frame_set(f0)
 
     # the knee ball means seated, unless the body leans on a wall (wall squat with a ball between the knees)
-    seated = bool(props & {'chair', 'stool', 'swissseat'} or 'ball' in props and not props & {'wallball', 'wallback'})
+    # (and only when the pelvis is at seat height: a standing squat or a bridge can hold it too)
+    seated = bool(props & {'chair', 'stool', 'swissseat'} or 'ball' in props and not props & {'wallball', 'wallback'} and 0.38 < bone_head('hips').z < 0.68)
     if 'swissseat' in props:  # exercise ball as the seat: 55 cm, squashed a little under the pelvis (seat 0.45)
         hp = bone_head('hips')
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.27, segments=48, ring_count=24, location=(hp.x, hp.y + 0.03, 0.235))
@@ -467,6 +495,18 @@ for job in JOBS:
     elif seated:
         chair(0.12, 0.33, 0.45 if 'stool' in props else 1.0)
     floor_tiles('walk' in props)
+    if 'chairbehind' in props:  # a chair just behind someone standing (mini squats towards it)
+        hp = bone_head('hips')
+        n0 = len(temp)
+        chair(0.0, 0.21, 1.0)
+        for o in temp[n0:]:
+            o.location.x += hp.x
+            o.location.y += hp.y + 0.36
+    if 'bedfit' in props:  # a bed under the pelvis of the first pose, its long side behind the legs (sitting on its edge)
+        hp = bone_head('hips')
+        top = hp.z - 0.075
+        box((hp.x, hp.y + 0.33, top - 0.09), (1.9, 0.9, 0.18), MATTC)
+        box((hp.x, hp.y + 0.33, (top - 0.18) / 2), (1.94, 0.94, top - 0.18), CHAIRC)
     if 'chairfit' in props:  # a chair under the pelvis of the first pose (sit to stand: not a seated exercise)
         hp = bone_head('hips')
         top = hp.z - 0.075
@@ -482,9 +522,27 @@ for job in JOBS:
                 o.scale.z *= top / 0.45
                 o.location.z = top / 2 - 0.02
     gr = json.loads(act['ground']) if 'ground' in act else None  # the height field the move was built on
-    if gr and any(p_.startswith(SUPPORT_BALLS) for p_ in props):
-        pass  # the raised box is the top of an exercise ball (drawn by support_ball)
-    elif gr and props & {'wobble', 'board', 'bosu'}:  # the raised box is the top of a balance disc under the feet
+    if gr and (any(p_.startswith(SUPPORT_BALLS) for p_ in props) or props & {'walker', 'walkergo'}):
+        pass  # the raised box is the top of an exercise ball (drawn by support_ball) or the walker's handles
+    elif gr and 'pillow' in props:  # each raised box is a stack of pillows (on a small table when it is high)
+        base = gr.get('base', 0)
+        for x0, x1, y0, y1, h in gr['boxes']:
+            if h <= base + 0.03:
+                continue
+            c = ((x0 + x1) / 2, (y0 + y1) / 2)
+            z = base
+            if h - base > 0.45:  # a table under one pillow
+                box((*c, (base + h - 0.1) / 2), (x1 - x0 + 0.1, y1 - y0 + 0.1, h - 0.1 - base), CHAIRC)
+                z = h - 0.1
+            n = max(1, round((h - z) / 0.12))
+            th = (h - z) / n
+            for i_ in range(n):
+                o = box((*c, z + th * (i_ + 0.5)), (x1 - x0 - 0.02 * (i_ % 2), y1 - y0, th * 0.98), PILLOWC)
+                bpy.ops.object.transform_apply(location=False, rotation=False, scale=True)
+                bv = o.modifiers.new('round', 'BEVEL')
+                bv.width, bv.segments = min(0.04, th * 0.45), 4
+                bpy.ops.object.shade_smooth()
+    elif gr and props & {'wobble', 'board', 'bosu', 'bosuflat'}:  # the raised box is the top of a balance disc under the feet
         for x0, x1, y0, y1, h in gr['boxes']:
             if h <= 0.03:
                 continue
@@ -496,6 +554,13 @@ for job in JOBS:
                 bpy.ops.mesh.primitive_uv_sphere_add(radius=h - 0.025, segments=32, ring_count=16, location=(*c, 0))
                 o = bpy.context.object
                 o.data.materials.append(STEPC)
+                bpy.ops.object.shade_smooth()
+                temp.append(o)
+            elif 'bosuflat' in props:  # BOSU dome down: the flat platform on top
+                cyl((*c, h - 0.015), r, 0.03, 'z', STEPTOP)
+                bpy.ops.mesh.primitive_cone_add(radius1=0.1, radius2=r, depth=h - 0.03, vertices=48, location=(*c, (h - 0.03) / 2))
+                o = bpy.context.object
+                o.data.materials.append(BOSUC)
                 bpy.ops.object.shade_smooth()
                 temp.append(o)
             else:  # BOSU: a dome on a dark ring (the floor hides the lower half)
@@ -754,6 +819,216 @@ for job in JOBS:
                 c = sum(sp_, Vector()) / len(sp_)
                 cyl((c.x, c.y, 0.003), 0.075, 0.006, 'z', MARKC)['noframe'] = True
         scene.frame_set(f0)
+    for lp in [p_ for p_ in props if p_.startswith('ladder-')]:  # an agility ladder along the way the body travels, rungs every <cm>
+        S = int(lp.split('-')[1]) / 100
+        hs, sol = [], []
+        for f in range(f0, f1 + 1, 2):
+            scene.frame_set(f)
+            hs.append(bone_head('hips'))
+        scene.frame_set(f0)
+        ax = 0 if abs(hs[-1].x - hs[0].x) > abs(hs[-1].y - hs[0].y) else 1
+        low = min(('L', 'R'), key=lambda s_: bone_head('foot' + s_).z)
+        c0 = (bone_head('foot' + low) + foot_tip(low)) / 2  # the first planted foot sits mid-square
+        a0, a1 = min(h_[ax] for h_ in hs) - 2.5, max(h_[ax] for h_ in hs) + 2.5
+        side = hs[0][1 - ax]
+        k0 = math.floor((a0 - c0[ax]) / S)
+        for k in range(k0, k0 + int((a1 - a0) / S) + 3):
+            a = c0[ax] + (k + 0.5) * S
+            box((a, side, 0.004) if ax == 0 else (side, a, 0.004), (0.035, 0.5, 0.008) if ax == 0 else (0.5, 0.035, 0.008), LADDERC)['noframe'] = True
+        L_, mid_ = a1 - a0, (a0 + a1) / 2
+        for sgn in (-1, 1):
+            loc = (mid_, side + sgn * 0.25, 0.004) if ax == 0 else (side + sgn * 0.25, mid_, 0.004)
+            box(loc, (L_, 0.03, 0.008) if ax == 0 else (0.03, L_, 0.008), LADDERC)['noframe'] = True
+    if props & {'walker', 'walkergo'}:  # a rolling walker: handles at the palms (walker: the first frame they reach forward)
+        best = None
+        for f in range(f0, f1 + 1, 2):  # the first frame with the hands well in front of the pelvis
+            scene.frame_set(f)
+            P = (palm('L') + palm('R')) / 2
+            if bone_head('hips').y - P.y > 0.2:
+                best = (P, (palm('L') - palm('R')).length)
+                break
+        scene.frame_set(f0)
+        P0, w = best or ((palm('L') + palm('R')) / 2 + Vector((0, -0.3, 0)), 0.5)
+        if 'walkergo' in props:
+            P0 = (palm('L') + palm('R')) / 2
+            w = (palm('L') - palm('R')).length
+        wr = walker_parts(max(w, 0.46), P0.z)
+        if 'walkergo' in props:
+            def wk():
+                P = (palm('L') + palm('R')) / 2
+                return Matrix.Translation(Vector((P.x, P.y, max(P.z, P0.z))))
+            animate([(wr, wk)], f0, f1)
+            for f in range(f0, f1 + 1, 4):
+                scene.frame_set(f)
+                P = (palm('L') + palm('R')) / 2
+                extra += [P + Vector((0.3, 0.2, 0)), P + Vector((-0.3, -0.35, -P0.z))]
+            scene.frame_set(f0)
+        else:
+            wr.location = P0
+            extra += [P0 + Vector((0.3, 0.2, 0)), P0 + Vector((-0.3, -0.35, -P0.z))]
+    for cp in [p_ for p_ in props if p_ in ('caneL', 'caneR')]:  # a walking cane from the palm to the floor
+        sd = cp[-1]
+        out = 1 if sd == 'L' else -1
+
+        def cane_shaft(sd=sd, out=out):
+            t = palm(sd)
+            return seg_matrix(Vector((t.x + out * 0.04, t.y - 0.02, 0)), t + Vector((0, 0, 0.03)))
+
+        def cane_grip(sd=sd):
+            t = palm(sd) + Vector((0, 0, 0.03))
+            return seg_matrix(t + Vector((0, 0.03, 0)), t + Vector((0, -0.11, 0)))
+        animate([(rod(0.012, STICKC), cane_shaft), (rod(0.015, GRIPC), cane_grip)], f0, f1)
+    # Balls that leave the hands: throw-<holder>-<target>-<t0>_<t1>[-<t0>_<t1>...]. Between t0 and t1 (fractions of the
+    # clip) the ball flies from the holder to the target and back; otherwise it sits at the holder: h (between the palms),
+    # fL/fR (on the floor in front of the foot). Targets: wall/wallL/wallR (a wall 0.8 m away), floor (a bounce halfway),
+    # floorx (the same, alternately to the left and right), up (a toss of 0.55 m).
+    BR_ = 0.11
+
+    def over_frames(fn, step):
+        vals = []
+        for f_ in range(f0, f1 + 1, step):
+            scene.frame_set(f_)
+            vals.append(fn())
+        scene.frame_set(f0)
+        return vals
+    for tp in [p_ for p_ in props if p_.startswith('throw-')]:
+        _, holder, target, *wins = tp.split('-')
+        wins = [tuple(float(v) for v in w.split('_')) for w in wins]
+
+        def hold_at(holder=holder):
+            if holder == 'h':
+                return (palm('L') + palm('R')) / 2 + Vector((0, -0.03, 0))
+            t = foot_tip(holder[1])
+            return Vector((t.x, t.y - BR_, BR_))
+        N = f1 - f0
+        wall = None
+        if target.startswith('wall'):
+            dv = {'wall': Vector((0, -1, 0)), 'wallL': Vector((1, 0, 0)), 'wallR': Vector((-1, 0, 0))}[target]
+            far = max(over_frames(lambda: hold_at().dot(dv), 3))
+            scene.frame_set(f0)
+            wall = (dv, far + 0.8)
+            c0 = hold_at()
+            c0 = c0 - dv * c0.dot(dv) + dv * (wall[1] + 0.02)
+            sz = (1.4, 0.04, 3) if dv.x == 0 else (0.04, 1.4, 3)
+            box((c0.x, c0.y, 1.5), sz, WALLC)['noframe'] = True
+        pos_ = {}
+        for f in range(f0, f1 + 1):
+            scene.frame_set(f)
+            pos_[f] = hold_at()
+        out = {}
+        for f in range(f0, f1 + 1):
+            u = (f - f0) / N
+            w = next(((a, b, k) for k, (a, b) in enumerate(wins) if a <= u <= b), None)
+            if not w:
+                out[f] = pos_[f]
+                continue
+            a, b, k = w
+            fa, fb = f0 + round(a * N), f0 + round(b * N)
+            P0, P1 = pos_[fa], pos_[fb]
+            v = (u - a) / (b - a)
+            if target.startswith('wall'):
+                dv, d = wall
+                T = (P0 + P1) / 2
+                T = T - dv * T.dot(dv) + dv * (d - BR_)
+                T.z = (P0.z + 0.1) if holder == 'h' else BR_
+            elif target.startswith('floor'):
+                T = (P0 + P1) / 2
+                T = Vector((T.x + (0.2 * (1 if k % 2 == 0 else -1) if target == 'floorx' else 0), T.y - 0.05, BR_))
+            else:
+                T = (P0 + P1) / 2 + Vector((0, 0, 0.55))
+            if target == 'up':
+                q = P0.lerp(P1, v)
+                q.z += 0.55 * math.sin(math.pi * v) + (P0.z + (P1.z - P0.z) * v - q.z)
+                out[f] = q
+            else:
+                q = P0.lerp(T, v * 2) if v < 0.5 else T.lerp(P1, v * 2 - 1)
+                if target.startswith('wall') and holder == 'h':
+                    q.z += 0.08 * math.sin(math.pi * (v * 2 % 1))
+                out[f] = q
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=BR_, segments=32, ring_count=16)
+        tb = bpy.context.object
+        tb.data.materials.append(BALLC)
+        bpy.ops.object.shade_smooth()
+        tb.rotation_mode = 'QUATERNION'
+        temp.append(tb)
+        for f in range(f0, f1 + 1):
+            tb.location = out[f]
+            tb.keyframe_insert('location', frame=f)
+        extra += [out[f] + Vector((0, 0, BR_)) for f in range(f0, f1 + 1, 3)] + [out[f] - Vector((0, 0, BR_)) for f in range(f0, f1 + 1, 3)]
+        scene.frame_set(f0)
+    if 'waistball' in props:  # passed round the waist: in the right hand for the first half, the left for the second
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=0.1, segments=32, ring_count=16)
+        wb = bpy.context.object
+        wb.data.materials.append(BALLC)
+        bpy.ops.object.shade_smooth()
+        temp.append(wb)
+        for f in range(f0, f1 + 1):
+            scene.frame_set(f)
+            u = (f - f0) / (f1 - f0)
+            wb.location = palm('R' if u < 0.5 else 'L')
+            wb.keyframe_insert('location', frame=f)
+        scene.frame_set(f0)
+    # pball-<size>-<part>[0]: a small ball on the floor under a part (v: 22 cm ball, t: tennis ball; parts hL/hR palm,
+    # fL/fR sole, cL/cR calf, kL/kR back of the knee); a trailing 0 leaves it where it was at the first frame.
+    for pp in [p_ for p_ in props if p_.startswith('pball-')]:
+        _, size, part = pp.split('-')
+        static = part.endswith('0')
+        part = part[:2]
+        r = {'v': 0.11, 't': 0.034}[size]
+
+        def under(part=part):
+            sd = part[1]
+            if part[0] == 'h':
+                q = palm(sd)
+            elif part[0] == 'f':
+                q = (bone_head('foot' + sd) + foot_tip(sd)) / 2
+            elif part[0] == 'c':
+                q = (bone_head('knee' + sd) + bone_head('foot' + sd)) / 2
+            else:
+                q = bone_head('knee' + sd)
+            return Matrix.Translation(Vector((q.x, q.y, FLOOR.location.z + r)))
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=r, segments=32, ring_count=16)
+        pb = bpy.context.object
+        pb.data.materials.append(BALLC if size == 'v' else mat('tennis', '#C8E64A', 0.7))
+        bpy.ops.object.shade_smooth()
+        pb.rotation_mode = 'QUATERNION'
+        temp.append(pb)
+        if static:
+            scene.frame_set(f0)
+            pb.matrix_world = under()
+        else:
+            animate([(pb, under)], f0, f1)
+    # wallpress-<end>-<dir>: a ball between a hand or foot (band_end codes) and a wall beyond it (F/B/L/R), the wall
+    # where the ball touches it at its furthest.
+    for wp in [p_ for p_ in props if p_.startswith('wallpress-')]:
+        _, end, dr = wp.split('-')
+        dv = {'F': Vector((0, -1, 0)), 'B': Vector((0, 1, 0)), 'L': Vector((1, 0, 0)), 'R': Vector((-1, 0, 0))}[dr]
+        rb = 0.11
+        far = max(over_frames(lambda: band_end(end).dot(dv), 2))
+        scene.frame_set(f0)
+        c0 = band_end(end)
+        c0 = c0 - dv * c0.dot(dv) + dv * (far + 2 * rb + 0.02)
+        box((c0.x, c0.y, 1.5), (1.4, 0.04, 3) if dv.x == 0 else (0.04, 1.4, 3), WALLC)['noframe'] = True
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=rb, segments=32, ring_count=16)
+        wb = bpy.context.object
+        wb.data.materials.append(BALLC)
+        bpy.ops.object.shade_smooth()
+        wb.rotation_mode = 'QUATERNION'
+        temp.append(wb)
+        animate([(wb, lambda end=end, dv=dv: Matrix.Translation(band_end(end) + dv * rb))], f0, f1)
+    if 'kneepillow' in props:  # a folded pillow squeezed between the knees
+        bpy.ops.mesh.primitive_uv_sphere_add(radius=1, segments=32, ring_count=16)
+        kp = bpy.context.object
+        kp.data.materials.append(PILLOWC)
+        bpy.ops.object.shade_smooth()
+        kp.rotation_mode = 'QUATERNION'
+        temp.append(kp)
+
+        def kpm():
+            a, b = bone_head('kneeL'), bone_head('kneeR')
+            gap = max((a - b).length - 0.1, 0.04)
+            return Matrix.LocRotScale((a + b) / 2, Vector((1, 0, 0)).rotation_difference(a - b), Vector((gap / 2 + 0.01, 0.13, 0.11)))
+        animate([(kp, kpm)], f0, f1)
     if 'heldball' in props:  # a ball held between the palms
         scene.frame_set(f0)
         rb = min(max((palm('L') - palm('R')).length / 2 - 0.035, 0.08), 0.3)

@@ -44,7 +44,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `side`: cadeira ao lado, com a mão que está mais afastada do corpo no encosto;
   - `wall`: parede na frente das mãos;
   - `roll`: rolo sob o joelho;
-  - `ball`: bola entre os joelhos, que achata;
+  - `ball`: bola entre os joelhos, que achata. Só põe a cadeira quando a pelve está na altura do assento (agachamento em pé e ponte também usam a bola);
   - `cuff`: tornozeleira;
   - `dumbbell`: halteres nas mãos;
   - `bed`: cama. O colchão fica no nível do chão do manequim, então o contato automático continua funcionando, e o piso do quarto fica 50 cm abaixo. Substitui o colchonete;
@@ -75,7 +75,21 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `towel-<a>-<b>`: toalha entre duas pontas, com os códigos da faixa (por exemplo `towel-fL-hL` + `towel-fL-hR`, toalha passada pelo pé);
   - `wobble`, `board`, `bosu`: almofada de equilíbrio, disco de equilíbrio ou BOSU sob os pés. O movimento leva uma caixa de `ground` sob os pés, com a altura do topo (7, 9 e 19 cm), e o acessório é desenhado no lugar da caixa, com o diâmetro dela;
   - `line`: fita no chão, atravessada no meio do caminho que a pelve percorre (saltos para a frente e para trás sobre a linha);
-  - `marks`: marcas redondas no chão onde um pé pousa longe de onde começou (tocar alvos no chão).
+  - `marks`: marcas redondas no chão onde um pé pousa longe de onde começou (tocar alvos no chão);
+  - `ladder-<cm>`: escada de agilidade no chão, ao longo do caminho da pelve, com degraus a cada `<cm>` e o primeiro pé no meio de um quadrado. Com `walk`, o deslocamento do vídeo precisa ser múltiplo do quadrado do piso (60 cm) e do degrau, para emendar (por exemplo, 1,2 m com degraus de 40 cm);
+  - `walker`: andador parado, com as manoplas nas mãos do primeiro quadro em que elas ficam 20 cm à frente da pelve. Para as mãos ficarem nas manoplas enquanto o corpo agacha, use uma caixa de `ground` na altura delas e `touch: ["hand:arm"]` (o andador esconde a caixa);
+  - `walkergo`: andador que acompanha as mãos a cada quadro (marcha com andador);
+  - `caneL`, `caneR`: bengala da palma até o chão, acompanhando a mão;
+  - `bedfit`: cama sob a pelve da primeira pose (levantar da beira da cama);
+  - `chairbehind`: cadeira logo atrás de quem está em pé (miniagachamento em direção à cadeira);
+  - `throw-<quem>-<alvo>-<t0>_<t1>[-<t0>_<t1>...]`: bola que sai das mãos (`h`) ou do pé (`fL`/`fR`, no chão à frente dele) entre `t0` e `t1` (frações do vídeo), vai até o alvo e volta. Alvos: `wall`, `wallL`, `wallR` (parede a 0,8 m), `floor` (quique no meio do caminho), `floorx` (quique alternando os lados) e `up` (lançamento de 55 cm). As frações saem dos tempos das poses: cada pose dura `beat`, mais o seu `hold`;
+  - `waistball`: bola passada ao redor da cintura, na mão direita na primeira metade e na esquerda na segunda;
+  - `pball-<tamanho>-<parte>[0]`: bola pequena no chão sob uma parte (`v`: bola de 22 cm, `t`: bolinha de tênis; partes `hL`/`hR`, `fL`/`fR`, `cL`/`cR` panturrilha, `kL`/`kR` atrás do joelho). Com `0` no fim, fica parada onde estava no primeiro quadro;
+  - `wallpress-<ponta>-<direção>`: bola entre uma mão ou um pé e uma parede além dela (`F`, `B`, `L`, `R`), na distância máxima que a ponta alcança;
+  - `bosuflat`: BOSU com a cúpula para baixo (plataforma em cima), no lugar da caixa de `ground`;
+  - `pillow`: cada caixa de `ground` vira uma pilha de travesseiros, ou uma mesa com travesseiro em cima quando passa de 45 cm. Sob a cabeça, flexione um pouco o pescoço (`neck [14]` para 6 cm), senão a cabeça levanta o corpo inteiro;
+  - `kneepillow`: travesseiro dobrado entre os joelhos.
+- **Paredes e câmera:** as paredes dos acessórios ficam na frente ou ao lado do corpo. Escolha uma vista que não fique atrás delas (por exemplo `side`, e não `front3q`, com a parede à frente).
 - **`move`** (opcional, em `jobs.json`): o movimento a tocar, quando o vídeo reaproveita o de outro job com acessórios diferentes (por exemplo, a marcha sentada na bola suíça usa `chair-march`).
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 

@@ -92,6 +92,38 @@
    ]
   },
   {
+   "slug": "kineti-bed-walker-sit-to-stand",
+   "lib": "kineti",
+   "name": "Levantar da beira da cama com andador",
+   "desc": "Sentado na beira da cama com o andador à frente, empurra a cama com as mãos para levantar, segura o andador e depois senta de volta.",
+   "focus": "Transferência da cama para em pé",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cama, Andador",
+   "video": "build/mannequin/videos/kineti-bed-walker-sit-to-stand.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040721b"
+   ]
+  },
+  {
+   "slug": "kineti-walker-mini-squat",
+   "lib": "kineti",
+   "name": "Miniagachamento com andador e cadeira atrás",
+   "desc": "Em pé, com as mãos no andador e uma cadeira atrás, começa a sentar levando o quadril para trás, para antes de encostar e volta a ficar em pé.",
+   "focus": "Força para levantar e sentar",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Andador, Cadeira (atrás)",
+   "video": "build/mannequin/videos/kineti-walker-mini-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407202"
+   ]
+  },
+  {
    "slug": "kineti-lying-to-sitting",
    "lib": "kineti",
    "name": "Passar de deitado para sentado",
@@ -140,6 +172,23 @@
    ]
   },
   {
+   "slug": "kineti-walker-sit-to-stand-arms",
+   "lib": "kineti",
+   "name": "Sentar e levantar com apoio das mãos, com andador",
+   "desc": "Sentado com as mãos no assento e o andador à frente, empurra com as mãos e as pernas para levantar, segura o andador e depois busca o assento para sentar.",
+   "focus": "Transferência sentado para em pé",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Andador",
+   "video": "build/mannequin/videos/kineti-walker-sit-to-stand-arms.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4e6",
+    "65a9272053a15212d048e4eb"
+   ]
+  },
+  {
    "slug": "kineti-sit-to-stand-arms-forward",
    "lib": "kineti",
    "name": "Sentar e levantar com braços à frente",
@@ -156,6 +205,23 @@
     "65b09dc54ad825d0304071ff",
     "6613d8862d1659b1aabb9c5c",
     "660a6144b08ac7518f1f7d63"
+   ]
+  },
+  {
+   "slug": "kineti-walker-sit-to-stand-arms-crossed",
+   "lib": "kineti",
+   "name": "Sentar e levantar de braços cruzados, com andador",
+   "desc": "Sentado na ponta da cadeira com os braços cruzados, inclina o tronco e levanta, segura o andador em pé e depois senta de volta devagar.",
+   "focus": "Transferência sentado para em pé",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral 3/4",
+   "props": "Cadeira, Andador",
+   "video": "build/mannequin/videos/kineti-walker-sit-to-stand-arms-crossed.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304071fd",
+    "65a9272053a15212d048e4f0"
    ]
   },
   {
@@ -288,6 +354,22 @@
    ]
   },
   {
+   "slug": "kineti-pillow-inclined-knee-fall-out",
+   "lib": "kineti",
+   "name": "Abertura do joelho com o tronco elevado em travesseiros",
+   "desc": "Deitado com o tronco elevado por travesseiros e os joelhos dobrados, afasta um joelho para o lado devagar sem mexer a pelve e volta.",
+   "focus": "Controle da pelve e assoalho pélvico",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-pillow-inclined-knee-fall-out.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048eaf1"
+   ]
+  },
+  {
    "slug": "kineti-adductor-ball-squeeze",
    "lib": "kineti",
    "name": "Adução com bola entre os joelhos",
@@ -315,6 +397,38 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e80a"
+   ]
+  },
+  {
+   "slug": "kineti-ball-floor-to-overhead-squat",
+   "lib": "kineti",
+   "name": "Agachamento com bola do chão até acima da cabeça",
+   "desc": "Em pé com a bola à frente, inclina o tronco até tocar a bola no chão e depois agacha fundo elevando a bola acima da cabeça.",
+   "focus": "Força global e mobilidade",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-ball-floor-to-overhead-squat.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce44"
+   ]
+  },
+  {
+   "slug": "kineti-squat-knee-ball",
+   "lib": "kineti",
+   "name": "Agachamento curto apertando a bola entre os joelhos",
+   "desc": "Em pé, com uma bola entre os joelhos e as mãos na cintura, agacha até uns 45° apertando a bola e sobe.",
+   "focus": "Adutores, quadríceps e glúteos",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola pequena",
+   "video": "build/mannequin/videos/kineti-squat-knee-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "6613e5df2d1659b1aabbb19c"
    ]
   },
   {
@@ -430,6 +544,39 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e751"
+   ]
+  },
+  {
+   "slug": "kineti-supine-ball-squeeze",
+   "lib": "kineti",
+   "name": "Apertar a bola entre os joelhos, deitado",
+   "desc": "Deitado de costas com os joelhos dobrados e uma bola entre eles, aperta a bola aproximando as coxas, sustenta e relaxa.",
+   "focus": "Adutores do quadril",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola pequena",
+   "video": "build/mannequin/videos/kineti-supine-ball-squeeze.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e744",
+    "65b09dc54ad825d0304072dd"
+   ]
+  },
+  {
+   "slug": "kineti-knee-pillow-squeeze",
+   "lib": "kineti",
+   "name": "Apertar o travesseiro entre os joelhos, deitado",
+   "desc": "Deitado de costas com os joelhos dobrados e um travesseiro dobrado entre eles, aperta o travesseiro, sustenta e relaxa.",
+   "focus": "Adutores e assoalho pélvico",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Travesseiro entre os joelhos, Travesseiros",
+   "video": "build/mannequin/videos/kineti-knee-pillow-squeeze.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e74c"
    ]
   },
   {
@@ -825,6 +972,23 @@
    ]
   },
   {
+   "slug": "kineti-bridge-ball-squeeze",
+   "lib": "deskbreak",
+   "name": "Ponte apertando a bola entre os joelhos",
+   "desc": "Deitado de costas com os joelhos dobrados e uma bola entre eles, aperta a bola e eleva o quadril até alinhar tronco e coxas, descendo devagar.",
+   "focus": "Glúteos, adutores e abdômen",
+   "area": "quadril_gluteos",
+   "view": "Lateral 3/4",
+   "props": "Bola pequena",
+   "video": "build/mannequin/videos/kineti-bridge-ball-squeeze.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "6613e3f62d1659b1aabbb0ff",
+    "660a6144b08ac7518f1f7ca3"
+   ]
+  },
+  {
    "slug": "kineti-bridge-on-heels",
    "lib": "kineti",
    "name": "Ponte apoiada nos calcanhares",
@@ -1212,6 +1376,22 @@
    ]
   },
   {
+   "slug": "kineti-wall-squat-knee-ball",
+   "lib": "kineti",
+   "name": "Agachamento na parede apertando a bola entre os joelhos",
+   "desc": "Com as costas apoiadas na parede e uma bola entre os joelhos, desce deslizando pela parede apertando a bola e sobe.",
+   "focus": "Quadríceps e adutores",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Parede, Bola pequena",
+   "video": "build/mannequin/videos/kineti-wall-squat-knee-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cdf"
+   ]
+  },
+  {
    "slug": "kineti-wall-ball-squat",
    "lib": "kineti",
    "name": "Agachamento na parede com bola suíça",
@@ -1432,6 +1612,22 @@
    ]
   },
   {
+   "slug": "kineti-supine-quad-set-ball",
+   "lib": "kineti",
+   "name": "Contração do quadríceps contra a bola sob o joelho, deitado",
+   "desc": "Deitado de costas com uma bola macia atrás do joelho, pressiona o joelho para baixo contraindo a coxa, sustenta e relaxa.",
+   "focus": "Quadríceps",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Bolinha de tênis, Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-quad-set-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407340"
+   ]
+  },
+  {
    "slug": "kineti-step-down-backward",
    "lib": "kineti",
    "name": "Descida do degrau para trás",
@@ -1539,6 +1735,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e803"
+   ]
+  },
+  {
+   "slug": "kineti-supine-ball-knee-extension",
+   "lib": "kineti",
+   "name": "Esticar uma perna apertando a bola entre os joelhos, deitado",
+   "desc": "Deitado de costas com uma bola entre os joelhos, aperta a bola enquanto estica uma das pernas e volta devagar.",
+   "focus": "Vasto medial e adutores",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Bola pequena",
+   "video": "build/mannequin/videos/kineti-supine-ball-knee-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407341"
    ]
   },
   {
@@ -2093,6 +2305,23 @@
    ]
   },
   {
+   "slug": "kineti-pillow-legs-ankle-pumps",
+   "lib": "kineti",
+   "name": "Bombeamento dos tornozelos com as pernas elevadas em travesseiros",
+   "desc": "Deitado de costas com as pernas apoiadas numa pilha de travesseiros, acima do nível do coração, aponta e puxa os pés devagar.",
+   "focus": "Retorno venoso e drenagem (linfedema)",
+   "area": "tornozelos_pes",
+   "view": "Lateral elevada",
+   "props": "Travesseiros, Colchonete",
+   "video": "build/mannequin/videos/kineti-pillow-legs-ankle-pumps.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce67",
+    "65b09dc54ad825d03040723b"
+   ]
+  },
+  {
    "slug": "ankle-circles",
    "lib": "deskbreak",
    "name": "Circundução de tornozelo em pé",
@@ -2344,6 +2573,119 @@
    ]
   },
   {
+   "slug": "kineti-gastroc-ball-wall-isometric",
+   "lib": "kineti",
+   "name": "Isometria da panturrilha contra a bola na parede, sentado",
+   "desc": "Sentado no chão com a perna esticada e a planta do pé numa bola encostada na parede, empurra a bola com o joelho reto, sustenta e relaxa.",
+   "focus": "Força do gastrocnêmio",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-gastroc-ball-wall-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7e7a"
+   ]
+  },
+  {
+   "slug": "kineti-eversion-ball-wall-isometric",
+   "lib": "kineti",
+   "name": "Isometria de eversão do tornozelo contra a bola, sentado",
+   "desc": "Sentado com a perna esticada e uma bola entre a lateral do pé e a parede, pressiona a lateral do pé contra a bola, sustenta e relaxa.",
+   "focus": "Fibulares (eversores)",
+   "area": "tornozelos_pes",
+   "view": "Frontal 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-eversion-ball-wall-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d75"
+   ]
+  },
+  {
+   "slug": "kineti-inversion-ball-wall-isometric",
+   "lib": "kineti",
+   "name": "Isometria de inversão do tornozelo contra a bola, sentado",
+   "desc": "Sentado com uma perna esticada e a outra dobrada, com uma bola entre a parte interna do pé e a parede, pressiona o pé contra a bola, sustenta e relaxa.",
+   "focus": "Tibial posterior (inversores)",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-inversion-ball-wall-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d7a"
+   ]
+  },
+  {
+   "slug": "kineti-soleus-ball-wall-isometric",
+   "lib": "kineti",
+   "name": "Isometria do sóleo contra a bola na parede, sentado",
+   "desc": "Sentado no chão com as mãos atrás e o joelho levemente dobrado, empurra a bola contra a parede com a planta do pé, sustenta e relaxa.",
+   "focus": "Força do sóleo",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-soleus-ball-wall-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80b7"
+   ]
+  },
+  {
+   "slug": "kineti-calf-ball-release",
+   "lib": "kineti",
+   "name": "Liberação da panturrilha com bolinha, sentado",
+   "desc": "Sentado com as mãos apoiadas atrás e uma bolinha sob a panturrilha, desliza a perna para a frente e para trás sobre a bola.",
+   "focus": "Liberação miofascial da panturrilha",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "Bolinha de tênis",
+   "video": "build/mannequin/videos/kineti-calf-ball-release.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e9e7",
+    "660a6145b08ac7518f1f7f5d"
+   ]
+  },
+  {
+   "slug": "kineti-pillow-one-leg-relax",
+   "lib": "kineti",
+   "name": "Perna elevada em travesseiros para relaxar, deitado",
+   "desc": "Deitado de costas com uma perna esticada no chão e a outra elevada sobre travesseiros, mantém a perna relaxada e mexe o tornozelo devagar.",
+   "focus": "Drenagem e relaxamento (linfedema)",
+   "area": "tornozelos_pes",
+   "view": "Lateral elevada",
+   "props": "Travesseiros, Colchonete",
+   "video": "build/mannequin/videos/kineti-pillow-one-leg-relax.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f28"
+   ]
+  },
+  {
+   "slug": "kineti-chair-plantar-ball-roll",
+   "lib": "kineti",
+   "name": "Rolar a bolinha sob a planta do pé, sentado",
+   "desc": "Sentado com a coluna reta, rola uma bolinha sob a planta do pé, do calcanhar aos dedos, pressionando o quanto for confortável.",
+   "focus": "Liberação da fáscia plantar",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Cadeira, Bolinha de tênis",
+   "video": "build/mannequin/videos/kineti-chair-plantar-ball-roll.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e510"
+   ]
+  },
+  {
    "slug": "kineti-hops",
    "lib": "kineti",
    "name": "Saltitos no lugar",
@@ -2373,6 +2715,38 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e532"
+   ]
+  },
+  {
+   "slug": "kineti-supine-gaze-nod",
+   "lib": "kineti",
+   "name": "Acenar a cabeça com o olhar fixo no polegar, deitado",
+   "desc": "Deitado de costas com um braço esticado para cima e o olhar no polegar, balança a cabeça para cima e para baixo sem tirar os olhos do dedo.",
+   "focus": "Estabilização do olhar (vestibular)",
+   "area": "equilibrio",
+   "view": "Lateral",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-supine-gaze-nod.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6dc"
+   ]
+  },
+  {
+   "slug": "kineti-bosu-flat-squat-throw",
+   "lib": "kineti",
+   "name": "Agachamento com arremesso na parede, sobre o BOSU invertido",
+   "desc": "Em pé sobre a plataforma do BOSU, agacha segurando a bola e, ao subir, arremessa contra a parede, pegando-a no retorno.",
+   "focus": "Pernas, equilíbrio e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "BOSU (cúpula para baixo), Bola",
+   "video": "build/mannequin/videos/kineti-bosu-flat-squat-throw.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7db2"
    ]
   },
   {
@@ -2459,6 +2833,22 @@
    ]
   },
   {
+   "slug": "kineti-wobble-single-leg-supported",
+   "lib": "kineti",
+   "name": "Apoio numa perna sobre a almofada, ao lado da cadeira",
+   "desc": "Em pé ao lado de uma cadeira, com um pé no centro de uma almofada, levanta o outro pé e mantém o equilíbrio.",
+   "focus": "Propriocepção e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Almofada de equilíbrio, Cadeira (apoio lateral)",
+   "video": "build/mannequin/videos/kineti-wobble-single-leg-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f69"
+   ]
+  },
+  {
    "slug": "kineti-single-leg-stance-supported",
    "lib": "kineti",
    "name": "Apoio unipodal com apoio",
@@ -2526,6 +2916,70 @@
    ]
   },
   {
+   "slug": "kineti-wall-throw",
+   "lib": "kineti",
+   "name": "Arremessar e pegar a bola na parede, em pé",
+   "desc": "Em pé de frente para a parede, arremessa a bola com as duas mãos a partir do peito e a pega no retorno, mantendo o corpo firme.",
+   "focus": "Coordenação, reação e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-throw.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7db0"
+   ]
+  },
+  {
+   "slug": "kineti-wall-throw-single-leg",
+   "lib": "kineti",
+   "name": "Arremessar e pegar a bola na parede, numa perna só",
+   "desc": "Em pé numa perna, com o outro joelho dobrado para trás, arremessa a bola contra a parede e a pega no retorno.",
+   "focus": "Equilíbrio unipodal e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-throw-single-leg.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d9d"
+   ]
+  },
+  {
+   "slug": "kineti-bosu-flat-throw",
+   "lib": "kineti",
+   "name": "Arremessar e pegar a bola na parede, sobre o BOSU invertido",
+   "desc": "Em pé sobre a plataforma do BOSU com a cúpula para baixo, arremessa a bola contra a parede e a pega no retorno, mantendo a base estável.",
+   "focus": "Equilíbrio dinâmico e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "BOSU (cúpula para baixo), Bola",
+   "video": "build/mannequin/videos/kineti-bosu-flat-throw.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7db1"
+   ]
+  },
+  {
+   "slug": "kineti-wall-throw-tandem",
+   "lib": "kineti",
+   "name": "Arremessar e pegar a bola na parede, um pé à frente do outro",
+   "desc": "Com um pé exatamente à frente do outro, arremessa a bola contra a parede e a pega no retorno, sem perder o equilíbrio.",
+   "focus": "Equilíbrio em base estreita e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-throw-tandem.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7dc4"
+   ]
+  },
+  {
    "slug": "balance-airplane-mild",
    "lib": "deskbreak",
    "name": "Aviãozinho",
@@ -2586,6 +3040,22 @@
    "pocketphysio": [
     "660a6144b08ac7518f1f7d8c",
     "660a6145b08ac7518f1f80d0"
+   ]
+  },
+  {
+   "slug": "kineti-single-leg-wall-kick",
+   "lib": "kineti",
+   "name": "Chutar a bola na parede, equilibrando numa perna",
+   "desc": "Em pé de frente para a parede, chuta a bola suavemente contra ela e, quando volta, para a bola com o pé, mantendo o equilíbrio na outra perna.",
+   "focus": "Equilíbrio unipodal e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-single-leg-wall-kick.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d97"
    ]
   },
   {
@@ -2674,6 +3144,22 @@
    ]
   },
   {
+   "slug": "kineti-walker-balance-hands-off",
+   "lib": "kineti",
+   "name": "Equilíbrio em pé no andador, soltando as mãos",
+   "desc": "Em pé dentro do andador, solta uma mão de cada vez e depois as duas, mantendo o equilíbrio, e volta a segurar.",
+   "focus": "Equilíbrio em pé",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Andador",
+   "video": "build/mannequin/videos/kineti-walker-balance-hands-off.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e622"
+   ]
+  },
+  {
    "slug": "kineti-board-lumbar-extension",
    "lib": "kineti",
    "name": "Extensão do tronco em pé no disco de equilíbrio",
@@ -2754,6 +3240,38 @@
    ]
   },
   {
+   "slug": "kineti-toss-gaze",
+   "lib": "kineti",
+   "name": "Jogar a bola para cima acompanhando com o olhar",
+   "desc": "Em pé, lança a bola para cima e acompanha o movimento com os olhos e a cabeça até pegá-la de novo.",
+   "focus": "Estabilização do olhar (vestibular)",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-toss-gaze.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cf3"
+   ]
+  },
+  {
+   "slug": "kineti-wobble-toss",
+   "lib": "kineti",
+   "name": "Jogar a bola para cima e pegar, sobre a almofada de equilíbrio",
+   "desc": "Em pé sobre a almofada de equilíbrio, lança a bola um pouco para cima e a pega de novo, mantendo a postura.",
+   "focus": "Equilíbrio e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Almofada de equilíbrio, Bola",
+   "video": "build/mannequin/videos/kineti-wobble-toss.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7db3"
+   ]
+  },
+  {
    "slug": "balance-slow-march",
    "lib": "deskbreak",
    "name": "Marcha lenta com pausa",
@@ -2831,6 +3349,38 @@
     "65a9272053a15212d048e5f2",
     "664744bf5c2c1f75d4d71e34",
     "660a6144b08ac7518f1f7e8b"
+   ]
+  },
+  {
+   "slug": "kineti-waist-pass-single-leg",
+   "lib": "kineti",
+   "name": "Passar a bola ao redor da cintura numa perna só",
+   "desc": "Em pé numa perna, passa a bola ao redor da cintura, trocando de mão na frente e atrás das costas.",
+   "focus": "Equilíbrio unipodal e coordenação",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-waist-pass-single-leg.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d99"
+   ]
+  },
+  {
+   "slug": "kineti-waist-pass-tandem-foam",
+   "lib": "kineti",
+   "name": "Passar a bola ao redor da cintura, um pé à frente do outro na almofada",
+   "desc": "Sobre uma almofada de equilíbrio, com um pé à frente do outro, passa a bola ao redor da cintura trocando de mão.",
+   "focus": "Equilíbrio em base instável",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "Almofada de equilíbrio, Bola",
+   "video": "build/mannequin/videos/kineti-waist-pass-tandem-foam.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7dc3"
    ]
   },
   {
@@ -2928,6 +3478,103 @@
    "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71d6d"
+   ]
+  },
+  {
+   "slug": "kineti-floor-bounce",
+   "lib": "kineti",
+   "name": "Quicar a bola no chão e pegar, em pé",
+   "desc": "Em pé com os pés afastados, joga a bola contra o chão à frente e a pega quando ela sobe.",
+   "focus": "Coordenação e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-floor-bounce.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7da3",
+    "664744bf5c2c1f75d4d71d6f"
+   ]
+  },
+  {
+   "slug": "kineti-floor-bounce-single-leg",
+   "lib": "kineti",
+   "name": "Quicar a bola no chão numa perna só",
+   "desc": "Em pé numa perna, quica a bola no chão à frente e a pega no retorno, mantendo o corpo estável.",
+   "focus": "Equilíbrio unipodal e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-floor-bounce-single-leg.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d94"
+   ]
+  },
+  {
+   "slug": "kineti-floor-bounce-tandem",
+   "lib": "kineti",
+   "name": "Quicar a bola no chão, um pé à frente do outro",
+   "desc": "Com um pé à frente do outro, quica a bola no chão e a pega, mantendo o equilíbrio.",
+   "focus": "Equilíbrio em base estreita e coordenação",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-floor-bounce-tandem.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7dbc"
+   ]
+  },
+  {
+   "slug": "kineti-single-leg-ball-roll",
+   "lib": "kineti",
+   "name": "Rolar a bola com o pé, equilibrando na outra perna",
+   "desc": "Em pé numa perna, com o outro pé sobre uma bola, rola a bola para a frente, para trás e para o lado sem perder o equilíbrio.",
+   "focus": "Equilíbrio unipodal e controle do quadril",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-single-leg-ball-roll.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d9c"
+   ]
+  },
+  {
+   "slug": "kineti-single-leg-ball-circle",
+   "lib": "kineti",
+   "name": "Rolar a bola em círculo ao redor da perna de apoio",
+   "desc": "Em pé numa perna, com o outro pé sobre uma bola, rola a bola desenhando um círculo ao redor da perna de apoio.",
+   "focus": "Equilíbrio unipodal e controle do quadril",
+   "area": "equilibrio",
+   "view": "Frontal 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-single-leg-ball-circle.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d9b"
+   ]
+  },
+  {
+   "slug": "kineti-ladder-jumps",
+   "lib": "kineti",
+   "name": "Saltos com os dois pés na escada de agilidade",
+   "desc": "Com as mãos na cintura, salta com os pés juntos para dentro de cada quadrado da escada no chão, aterrissando com os joelhos flexionados.",
+   "focus": "Potência, coordenação e aterrissagem",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Escada de agilidade no chão",
+   "video": "build/mannequin/videos/kineti-ladder-jumps.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d94"
    ]
   },
   {
@@ -3134,6 +3781,38 @@
    ]
   },
   {
+   "slug": "kineti-ladder-walk",
+   "lib": "kineti",
+   "name": "Caminhada na escada de agilidade",
+   "desc": "Caminha para a frente ao longo da escada no chão, pondo um pé em cada quadrado, com a postura ereta e o olhar à frente.",
+   "focus": "Coordenação, ritmo e controle do passo",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Escada de agilidade no chão",
+   "video": "build/mannequin/videos/kineti-ladder-walk.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d86"
+   ]
+  },
+  {
+   "slug": "kineti-ladder-walk-looking-down",
+   "lib": "kineti",
+   "name": "Caminhada na escada de agilidade olhando os pés",
+   "desc": "Caminha ao longo da escada no chão, um pé em cada quadrado, com a cabeça inclinada para acompanhar onde os pés pisam.",
+   "focus": "Coordenação e precisão do passo",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Escada de agilidade no chão",
+   "video": "build/mannequin/videos/kineti-ladder-walk-looking-down.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d87"
+   ]
+  },
+  {
    "slug": "kineti-toe-walking",
    "lib": "kineti",
    "name": "Caminhada na ponta dos pés",
@@ -3203,6 +3882,38 @@
    ]
   },
   {
+   "slug": "kineti-walk-waist-pass",
+   "lib": "kineti",
+   "name": "Caminhar passando a bola ao redor da cintura",
+   "desc": "Caminha devagar em linha reta enquanto passa a bola de uma mão para a outra ao redor da cintura.",
+   "focus": "Coordenação e dupla tarefa na marcha",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-walk-waist-pass.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e5f8"
+   ]
+  },
+  {
+   "slug": "kineti-walk-ball-bounce-sides",
+   "lib": "kineti",
+   "name": "Caminhar quicando a bola do lado oposto ao passo",
+   "desc": "Caminha para a frente segurando a bola e, a cada passo, quica a bola no chão do lado oposto à perna que avança.",
+   "focus": "Coordenação e dupla tarefa na marcha",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-walk-ball-bounce-sides.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8116"
+   ]
+  },
+  {
    "slug": "kineti-high-knees",
    "lib": "kineti",
    "name": "Corrida no lugar com joelhos altos",
@@ -3252,6 +3963,70 @@
    ]
   },
   {
+   "slug": "kineti-walker-step-through",
+   "lib": "kineti",
+   "name": "Marcha com andador, passo alternado",
+   "desc": "Com as mãos no andador, caminha com passos alternados, um pé passando à frente do outro, levando o andador junto.",
+   "focus": "Treino de marcha com andador",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Andador",
+   "video": "build/mannequin/videos/kineti-walker-step-through.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e727"
+   ]
+  },
+  {
+   "slug": "kineti-walker-step-to",
+   "lib": "kineti",
+   "name": "Marcha com andador, um passo por vez",
+   "desc": "Com as mãos no andador, empurra-o à frente, dá um passo com a perna mais fraca e traz a outra para junto, repetindo o ciclo.",
+   "focus": "Treino de marcha com andador",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Andador",
+   "video": "build/mannequin/videos/kineti-walker-step-to.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407245"
+   ]
+  },
+  {
+   "slug": "kineti-cane-step-through",
+   "lib": "kineti",
+   "name": "Marcha com bengala, passo alternado",
+   "desc": "Com a bengala na mão oposta à perna mais fraca, avança a bengala com a perna fraca e passa a perna forte à frente, tocando o calcanhar primeiro.",
+   "focus": "Treino de marcha com bengala",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bengala",
+   "video": "build/mannequin/videos/kineti-cane-step-through.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e722"
+   ]
+  },
+  {
+   "slug": "kineti-cane-step-to",
+   "lib": "kineti",
+   "name": "Marcha com bengala, um passo por vez",
+   "desc": "Com a bengala na mão oposta à perna mais fraca, avança a bengala, dá um passo com a perna fraca até ela e traz a outra para junto.",
+   "focus": "Treino de marcha com bengala",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bengala",
+   "video": "build/mannequin/videos/kineti-cane-step-to.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e72b"
+   ]
+  },
+  {
    "slug": "butt-kick-walk",
    "lib": "deskbreak",
    "name": "Marcha com calcanhar ao glúteo",
@@ -3282,6 +4057,38 @@
    "pocketphysio": [
     "65a9272053a15212d048e6de",
     "673c9258e10df73c8302d7f6"
+   ]
+  },
+  {
+   "slug": "kineti-tandem-walk-ball-toss",
+   "lib": "kineti",
+   "name": "Marcha em linha jogando a bola para cima",
+   "desc": "Caminha em linha reta, calcanhar à frente dos dedos, jogando a bola para cima e pegando a cada passo.",
+   "focus": "Equilíbrio dinâmico e dupla tarefa",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-tandem-walk-ball-toss.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e5ea"
+   ]
+  },
+  {
+   "slug": "kineti-tandem-walk-ball-bounce",
+   "lib": "kineti",
+   "name": "Marcha em linha quicando a bola",
+   "desc": "Caminha em linha reta pondo o calcanhar encostado na ponta do outro pé e, a cada passo, quica a bola no chão e a pega.",
+   "focus": "Equilíbrio dinâmico e dupla tarefa",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-tandem-walk-ball-bounce.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80e5"
    ]
   },
   {
@@ -3428,6 +4235,55 @@
    ]
   },
   {
+   "slug": "kineti-ladder-step-in",
+   "lib": "kineti",
+   "name": "Passos com os dois pés em cada quadrado da escada",
+   "desc": "De frente para a escada no chão, põe um pé no quadrado e depois o outro, avançando quadrado por quadrado.",
+   "focus": "Coordenação e controle do passo",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Escada de agilidade no chão",
+   "video": "build/mannequin/videos/kineti-ladder-step-in.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f24",
+    "664744bf5c2c1f75d4d71d95"
+   ]
+  },
+  {
+   "slug": "kineti-ladder-side-step",
+   "lib": "kineti",
+   "name": "Passos laterais na escada de agilidade",
+   "desc": "De lado para a escada no chão, dá um passo lateral para dentro do quadrado e traz o outro pé, seguindo até o fim.",
+   "focus": "Coordenação lateral e equilíbrio",
+   "area": "marcha",
+   "view": "Frontal 3/4",
+   "props": "Escada de agilidade no chão",
+   "video": "build/mannequin/videos/kineti-ladder-side-step.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f25"
+   ]
+  },
+  {
+   "slug": "kineti-ladder-quick-steps",
+   "lib": "kineti",
+   "name": "Passos rápidos na escada de agilidade",
+   "desc": "Avança pela escada no chão com passos rápidos, pondo os dois pés em cada quadrado e sempre começando pela mesma perna.",
+   "focus": "Agilidade, coordenação e velocidade",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Escada de agilidade no chão",
+   "video": "build/mannequin/videos/kineti-ladder-quick-steps.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f23"
+   ]
+  },
+  {
    "slug": "fast-feet-small",
    "lib": "deskbreak",
    "name": "Passos rápidos no lugar",
@@ -3523,6 +4379,22 @@
    ]
   },
   {
+   "slug": "kineti-crunch-oblique-ball",
+   "lib": "kineti",
+   "name": "Abdominal oblíquo levando a bola para o lado",
+   "desc": "Deitado de costas com os joelhos dobrados e a bola sobre o peito, eleva o tronco levando a bola em direção a um lado, desce e alterna.",
+   "focus": "Oblíquos e reto abdominal",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-crunch-oblique-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e703"
+   ]
+  },
+  {
    "slug": "kineti-band-oblique-crunch",
    "lib": "kineti",
    "name": "Abdominal oblíquo puxando a faixa presa atrás da cabeça",
@@ -3572,6 +4444,22 @@
     "673c9258e10df73c8302d769",
     "673c9258e10df73c8302d79c",
     "65a9272153a15212d048ea33"
+   ]
+  },
+  {
+   "slug": "kineti-squat-rotation-ball",
+   "lib": "kineti",
+   "name": "Agachamento com rotação do tronco, segurando a bola",
+   "desc": "Em pé com a bola à frente do peito, agacha e, embaixo, gira o tronco devagar para um lado e para o outro antes de subir.",
+   "focus": "Pernas e estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-squat-rotation-ball.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80fe"
    ]
   },
   {
@@ -3671,6 +4559,70 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e922"
+   ]
+  },
+  {
+   "slug": "kineti-ball-seated-wall-throw",
+   "lib": "kineti",
+   "name": "Arremessar e pegar a bola na parede, sentado na bola suíça",
+   "desc": "Sentado na bola suíça com os pés no chão, arremessa uma bola menor contra a parede e a pega no retorno, mantendo a coluna neutra.",
+   "focus": "Estabilidade do tronco e coordenação",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça, Bola",
+   "video": "build/mannequin/videos/kineti-ball-seated-wall-throw.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f3e"
+   ]
+  },
+  {
+   "slug": "kineti-kneel-rotational-throw",
+   "lib": "kineti",
+   "name": "Arremesso com rotação do tronco, ajoelhado",
+   "desc": "Ajoelhado, gira o tronco levando a bola para um lado e a arremessa contra a parede à frente, pegando-a no retorno.",
+   "focus": "Potência de rotação do tronco",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-kneel-rotational-throw.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cf4"
+   ]
+  },
+  {
+   "slug": "kineti-half-kneel-side-throw",
+   "lib": "kineti",
+   "name": "Arremesso lateral com rotação, semiajoelhado",
+   "desc": "Semiajoelhado de lado para a parede, gira o tronco para longe dela com a bola e a arremessa de lado contra a parede, pegando-a no retorno.",
+   "focus": "Potência de rotação do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-half-kneel-side-throw.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cf5"
+   ]
+  },
+  {
+   "slug": "kineti-ta-recruitment",
+   "lib": "kineti",
+   "name": "Ativação do transverso do abdômen, deitado",
+   "desc": "Deitado de costas com os joelhos dobrados e os dedos na parte interna dos ossos do quadril, puxa o baixo ventre para dentro devagar e sustenta respirando.",
+   "focus": "Transverso do abdômen e estabilidade lombar",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-ta-recruitment.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80fa"
    ]
   },
   {
@@ -3849,6 +4801,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e6ec"
+   ]
+  },
+  {
+   "slug": "kineti-side-lying-trunk-lift",
+   "lib": "kineti",
+   "name": "Elevação lateral do tronco, deitado de lado",
+   "desc": "Deitado de lado com as pernas levemente dobradas, eleva a cabeça e a parte de cima do tronco para o lado e desce devagar.",
+   "focus": "Oblíquos e quadrado lombar",
+   "area": "tronco_coluna",
+   "view": "Lateral",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-side-lying-trunk-lift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407349"
    ]
   },
   {
@@ -4156,6 +5124,22 @@
    ]
   },
   {
+   "slug": "kineti-knees-to-chest-rock",
+   "lib": "kineti",
+   "name": "Joelhos ao peito balançando de um lado para o outro, deitado",
+   "desc": "Deitado de costas com os joelhos dobrados junto ao peito e as mãos neles, balança as pernas unidas suavemente de um lado para o outro.",
+   "focus": "Mobilidade e relaxamento lombar",
+   "area": "tronco_coluna",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-knees-to-chest-rock.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407220"
+   ]
+  },
+  {
    "slug": "open-book",
    "lib": "deskbreak",
    "name": "Livro aberto",
@@ -4255,6 +5239,22 @@
    ]
   },
   {
+   "slug": "kineti-ball-seated-waist-pass",
+   "lib": "kineti",
+   "name": "Passar a bola ao redor da cintura, sentado na bola suíça",
+   "desc": "Sentado na bola suíça com a coluna neutra, passa uma bola menor ao redor da cintura, trocando de mão atrás das costas.",
+   "focus": "Estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "Bola suíça, Bola",
+   "video": "build/mannequin/videos/kineti-ball-seated-waist-pass.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f3d"
+   ]
+  },
+  {
    "slug": "thread-the-needle",
    "lib": "deskbreak",
    "name": "Passar a linha na agulha",
@@ -4302,6 +5302,22 @@
    "pocketphysio": [
     "65b09dc54ad825d0304072f7",
     "65a9272053a15212d048e701"
+   ]
+  },
+  {
+   "slug": "kineti-prone-relaxed",
+   "lib": "kineti",
+   "name": "Posição de relaxamento de bruços",
+   "desc": "Deitado de barriga para baixo com o rosto virado para um lado e os braços ao longo do corpo, relaxa e respira devagar.",
+   "focus": "Relaxamento e extensão da coluna",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-prone-relaxed.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407307"
    ]
   },
   {
@@ -4635,6 +5651,22 @@
    ]
   },
   {
+   "slug": "kineti-long-sit-ball-rotation",
+   "lib": "kineti",
+   "name": "Rotação do tronco com bola, sentado com as pernas esticadas",
+   "desc": "Sentado no chão com as pernas esticadas e a bola segura à frente do peito, gira o tronco para um lado e depois para o outro.",
+   "focus": "Rotação e controle do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-long-sit-ball-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7dca"
+   ]
+  },
+  {
    "slug": "kineti-band-seated-trunk-rotation",
    "lib": "kineti",
    "name": "Rotação do tronco sentado contra a faixa",
@@ -4665,6 +5697,23 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea06"
+   ]
+  },
+  {
+   "slug": "kineti-lumbar-rotation-balls",
+   "lib": "kineti",
+   "name": "Rotação lombar com bola entre os joelhos e bola nas mãos",
+   "desc": "Deitado de costas, com uma bola entre os joelhos e outra segura com os braços para o teto, leva os joelhos juntos para um lado e volta, alternando.",
+   "focus": "Estabilidade e rotação do tronco",
+   "area": "tronco_coluna",
+   "view": "Elevada",
+   "props": "Bola pequena, Bola",
+   "video": "build/mannequin/videos/kineti-lumbar-rotation-balls.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f79",
+    "660a6145b08ac7518f1f7f2d"
    ]
   },
   {
@@ -5035,6 +6084,38 @@
    ]
   },
   {
+   "slug": "kineti-side-lying-middle-trap",
+   "lib": "kineti",
+   "name": "Ativação do trapézio médio, deitado de lado",
+   "desc": "Deitado de lado com o braço de cima apoiado num travesseiro à frente, puxa a escápula para trás em direção à coluna, sustenta e relaxa.",
+   "focus": "Trapézio médio e estabilizadores da escápula",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-side-lying-middle-trap.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e641"
+   ]
+  },
+  {
+   "slug": "kineti-pillow-arm-elevated",
+   "lib": "kineti",
+   "name": "Braço elevado em travesseiros, deitado",
+   "desc": "Deitado de costas, apoia o braço numa pilha de travesseiros com a mão acima do cotovelo e dobra e estica o cotovelo devagar.",
+   "focus": "Drenagem do membro superior (linfedema)",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-pillow-arm-elevated.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea2b"
+   ]
+  },
+  {
    "slug": "arm-circles-small",
    "lib": "deskbreak",
    "name": "Círculos com os braços",
@@ -5177,6 +6258,54 @@
    "substitui": "",
    "pocketphysio": [
     "660a6144b08ac7518f1f7e52"
+   ]
+  },
+  {
+   "slug": "kineti-side-lying-neck-lift",
+   "lib": "kineti",
+   "name": "Elevar a cabeça de lado, deitado de lado",
+   "desc": "Deitado de lado com a cabeça num travesseiro, levanta a cabeça em direção ao ombro de cima, olhando para a frente, e desce devagar.",
+   "focus": "Flexores laterais do pescoço",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-side-lying-neck-lift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80db"
+   ]
+  },
+  {
+   "slug": "kineti-wall-ball-flexion",
+   "lib": "kineti",
+   "name": "Elevar o braço rolando a bola na parede",
+   "desc": "De frente para a parede, com a bola entre a palma e a parede, desliza a bola para cima o máximo que conseguir e desce devagar.",
+   "focus": "Amplitude de flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-ball-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce7c"
+   ]
+  },
+  {
+   "slug": "kineti-side-lying-ball-roll-flexion",
+   "lib": "kineti",
+   "name": "Elevar o braço rolando a bola, deitado de lado",
+   "desc": "Deitado de lado com a mão de cima sobre uma bola no chão à frente, rola a bola para cima levando o braço acima da cabeça e volta.",
+   "focus": "Amplitude de flexão do ombro",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-side-lying-ball-roll-flexion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f8036"
    ]
   },
   {
@@ -5395,6 +6524,22 @@
     "660a6145b08ac7518f1f80fb",
     "664744bf5c2c1f75d4d71e11",
     "664744bf5c2c1f75d4d71e37"
+   ]
+  },
+  {
+   "slug": "kineti-wall-ball-push",
+   "lib": "kineti",
+   "name": "Empurrar a bola na parede com uma mão",
+   "desc": "Em pé, com uma mão sobre a bola apoiada na parede na altura do ombro, empurra levando o ombro à frente, sustenta e relaxa.",
+   "focus": "Estabilizadores da escápula",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-ball-push.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce6e"
    ]
   },
   {
@@ -5745,6 +6890,55 @@
    ]
   },
   {
+   "slug": "kineti-supine-neck-side-bend",
+   "lib": "kineti",
+   "name": "Inclinação lateral do pescoço, deitado",
+   "desc": "Deitado de costas com um travesseiro pequeno sob a cabeça, inclina a orelha em direção ao ombro, volta e alterna.",
+   "focus": "Mobilidade cervical",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-supine-neck-side-bend.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e648"
+   ]
+  },
+  {
+   "slug": "kineti-supine-shoulder-ext-ball-isometric",
+   "lib": "kineti",
+   "name": "Isometria de extensão do ombro contra a bola, deitado",
+   "desc": "Deitado de costas com a mão e o antebraço sobre uma bola pequena, pressiona o braço para baixo, sustenta e relaxa.",
+   "focus": "Extensores do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Bola, Colchonete",
+   "video": "build/mannequin/videos/kineti-supine-shoulder-ext-ball-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f801d"
+   ]
+  },
+  {
+   "slug": "kineti-supine-er-isometric",
+   "lib": "kineti",
+   "name": "Isometria de rotação externa do ombro, deitado",
+   "desc": "Deitado de costas com o cotovelo a 90° junto ao corpo, segura o punho com a outra mão e faz força para girar o braço para fora, sem deixá-lo mexer.",
+   "focus": "Rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-supine-er-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040732c",
+    "660a61776a80d359d40dce79"
+   ]
+  },
+  {
    "slug": "protraction-retraction",
    "lib": "deskbreak",
    "name": "Protração e retração escapular",
@@ -5927,6 +7121,38 @@
    ]
   },
   {
+   "slug": "kineti-side-lying-ball-retraction",
+   "lib": "kineti",
+   "name": "Retração da escápula com a mão na bola, deitado de lado",
+   "desc": "Deitado de lado com a mão de cima sobre uma bola, puxa a escápula para trás em direção à coluna, sustenta e relaxa.",
+   "focus": "Estabilizadores da escápula",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-side-lying-ball-retraction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce6d"
+   ]
+  },
+  {
+   "slug": "kineti-prone-scapular-retraction",
+   "lib": "kineti",
+   "name": "Retração das escápulas de bruços",
+   "desc": "Deitado de bruços com um travesseiro sob o tronco e os braços ao lado do corpo, levanta as mãos apertando as escápulas uma contra a outra e desce devagar.",
+   "focus": "Romboides e trapézio médio",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-prone-scapular-retraction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7fec"
+   ]
+  },
+  {
    "slug": "prone-w-squeeze",
    "lib": "deskbreak",
    "name": "Retração escapular em W de bruços",
@@ -5996,6 +7222,22 @@
    ]
   },
   {
+   "slug": "kineti-wall-ball-circles",
+   "lib": "kineti",
+   "name": "Rolar a bola na parede em pequenos círculos",
+   "desc": "Em pé de frente para a parede, com a mão sobre a bola na altura do ombro, rola a bola para cima, para baixo e para os lados em movimentos curtos.",
+   "focus": "Estabilidade e controle do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Bola",
+   "video": "build/mannequin/videos/kineti-wall-ball-circles.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a61776a80d359d40dce6f"
+   ]
+  },
+  {
    "slug": "shoulder-rolls-forward",
    "lib": "deskbreak",
    "name": "Rotação de ombros para a frente",
@@ -6059,6 +7301,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048e943"
+   ]
+  },
+  {
+   "slug": "kineti-pillow-supine-shoulder-rotation",
+   "lib": "kineti",
+   "name": "Rotação do ombro com o cotovelo sobre travesseiro, deitado",
+   "desc": "Deitado de costas com o braço sobre um travesseiro e o cotovelo a 90°, gira o antebraço para fora e para dentro sem tirar o cotovelo do lugar.",
+   "focus": "Amplitude de rotação do ombro",
+   "area": "ombros_escapulas",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-pillow-supine-shoulder-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e940"
    ]
   },
   {
@@ -6440,7 +7698,10 @@
    "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71e1c",
-    "660a6145b08ac7518f1f7f63"
+    "660a6145b08ac7518f1f7f63",
+    "65b09dc54ad825d03040723e",
+    "660a6145b08ac7518f1f81a5",
+    "664744bf5c2c1f75d4d71e1d"
    ]
   },
   {
@@ -6459,6 +7720,22 @@
     "660e50b42d1659b1aaba486f",
     "660a6145b08ac7518f1f8124",
     "660e4d342d1659b1aaba463b"
+   ]
+  },
+  {
+   "slug": "kineti-wrist-circles-elbow-supported",
+   "lib": "kineti",
+   "name": "Círculos com o punho, cotovelo apoiado, sentado",
+   "desc": "Sentado com o cotovelo dobrado a 90° apoiado em travesseiros sobre uma mesa, faz círculos lentos com o punho e inverte o sentido.",
+   "focus": "Mobilidade do punho e drenagem (linfedema)",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Travesseiros",
+   "video": "build/mannequin/videos/kineti-wrist-circles-elbow-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304073d8"
    ]
   },
   {
@@ -6561,6 +7838,22 @@
    ]
   },
   {
+   "slug": "kineti-elbow-bends-arm-supported",
+   "lib": "kineti",
+   "name": "Flexão do cotovelo com o braço apoiado ao lado, sentado",
+   "desc": "Sentado com o braço esticado para o lado, apoiado em travesseiros sobre uma mesa na altura do ombro, dobra o cotovelo levando a mão ao ombro e estica de novo.",
+   "focus": "Drenagem e amplitude do cotovelo (linfedema)",
+   "area": "cotovelos_punhos_maos",
+   "view": "Frontal 3/4",
+   "props": "Cadeira, Travesseiros",
+   "video": "build/mannequin/videos/kineti-elbow-bends-arm-supported.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e864"
+   ]
+  },
+  {
    "slug": "kineti-thumb-flexion",
    "lib": "hand",
    "name": "Flexão do polegar",
@@ -6613,6 +7906,22 @@
     "65a9272153a15212d048ea49",
     "65a9272153a15212d048eb53",
     "65b09dc54ad825d03040720f"
+   ]
+  },
+  {
+   "slug": "kineti-supine-triceps-isometric",
+   "lib": "kineti",
+   "name": "Isometria de extensão do cotovelo, deitado",
+   "desc": "Deitado de costas com o cotovelo dobrado a 90°, segura o antebraço com a outra mão e tenta esticar o cotovelo contra ela, sem deixá-lo mexer.",
+   "focus": "Tríceps",
+   "area": "cotovelos_punhos_maos",
+   "view": "Elevada",
+   "props": "Travesseiros",
+   "video": "build/mannequin/videos/kineti-supine-triceps-isometric.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e70a"
    ]
   },
   {

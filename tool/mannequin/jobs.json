@@ -589,7 +589,8 @@
   "view": "floor",
   "props": [],
   "pocketphysio": [
-   "673c9258e10df73c8302d7b0"
+   "673c9258e10df73c8302d7b0",
+   "65a9272153a15212d048eaf8"
   ],
   "frame": "full"
  },
@@ -687,7 +688,8 @@
    "65b09dc54ad825d03040732d",
    "65b09dc54ad825d030407330",
    "65a9272153a15212d048e92d",
-   "65a9272053a15212d048e856"
+   "65a9272053a15212d048e856",
+   "65b09dc54ad825d030407334"
   ],
   "frame": "full"
  },
@@ -696,7 +698,8 @@
   "view": "floor",
   "props": [],
   "pocketphysio": [
-   "65a9272053a15212d048e80c"
+   "65a9272053a15212d048e80c",
+   "65a9272053a15212d048e835"
   ],
   "frame": "full"
  },
@@ -734,7 +737,8 @@
   "pocketphysio": [
    "65a9272053a15212d048e7db",
    "65a9272053a15212d048e72d",
-   "65b09dc54ad825d030407253"
+   "65b09dc54ad825d030407253",
+   "65a9272053a15212d048e7dc"
   ],
   "frame": "full"
  },
@@ -859,7 +863,8 @@
   "props": [],
   "pocketphysio": [
    "65a9272153a15212d048ea1d",
-   "65a9272153a15212d048ea23"
+   "65a9272153a15212d048ea23",
+   "65a9272153a15212d048ea03"
   ],
   "frame": "full"
  },
@@ -1575,7 +1580,8 @@
   "frame": "full",
   "pocketphysio": [
    "65a9272053a15212d048e73f",
-   "65a9272053a15212d048e70f"
+   "65a9272053a15212d048e70f",
+   "65a9272053a15212d048e4de"
   ]
  },
  "standing-trunk-twist": {
@@ -1960,7 +1966,8 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "65b09dc54ad825d03040732e"
+   "65b09dc54ad825d03040732e",
+   "65a9272153a15212d048e946"
   ]
  },
  "kineti-supine-pullover": {
@@ -1983,7 +1990,8 @@
   "frame": "full",
   "pocketphysio": [
    "65a9272053a15212d048e7fe",
-   "65b09dc54ad825d03040733b"
+   "65b09dc54ad825d03040733b",
+   "65b09dc54ad825d03040733c"
   ]
  },
  "kineti-bed-rolling": {
@@ -3162,6 +3170,98 @@
   ],
   "pocketphysio": [
    "65a9272053a15212d048e80b"
+  ]
+ },
+ "kineti-prone-t-raise": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e905"
+  ]
+ },
+ "kineti-prone-m-raise": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e908"
+  ]
+ },
+ "kineti-prone-shoulder-extension": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272153a15212d048e93e",
+   "65a9272053a15212d048e919"
+  ]
+ },
+ "kineti-supine-scapular-protraction": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272153a15212d048e92a",
+   "65a9272053a15212d048e8f3",
+   "65a9272053a15212d048e91b"
+  ]
+ },
+ "kineti-bridge-on-heels": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e747"
+  ]
+ },
+ "kineti-bridge-heel-raise": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e6f0"
+  ]
+ },
+ "kineti-supine-knee-fall-out": {
+  "lib": "kineti",
+  "view": "top3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e700"
+  ]
+ },
+ "kineti-supine-hip-internal-rotation": {
+  "lib": "kineti",
+  "view": "top3q",
+  "props": [],
+  "pocketphysio": [
+   "65b09dc54ad825d03040724f"
+  ]
+ },
+ "kineti-double-heel-slides": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e4d0"
+  ]
+ },
+ "kineti-crook-lying-knee-extension": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65b09dc54ad825d0304073fc",
+   "65a9272053a15212d048e913"
+  ]
+ },
+ "kineti-crunch-reach-alternating": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e6f7"
   ]
  }
 }

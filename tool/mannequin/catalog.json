@@ -493,7 +493,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "673c9258e10df73c8302d7b0"
+    "673c9258e10df73c8302d7b0",
+    "65a9272153a15212d048eaf8"
    ]
   },
   {
@@ -528,7 +529,8 @@
    "pocketphysio": [
     "65a9272053a15212d048e7db",
     "65a9272053a15212d048e72d",
-    "65b09dc54ad825d030407253"
+    "65b09dc54ad825d030407253",
+    "65a9272053a15212d048e7dc"
    ]
   },
   {
@@ -645,6 +647,38 @@
    ]
   },
   {
+   "slug": "kineti-bridge-on-heels",
+   "lib": "kineti",
+   "name": "Ponte apoiada nos calcanhares",
+   "desc": "Deitado de costas com os calcanhares no chão e as pontas dos pés para cima, eleva o quadril e desce devagar.",
+   "focus": "Posteriores da coxa e glúteos",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-bridge-on-heels.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e747"
+   ]
+  },
+  {
+   "slug": "kineti-bridge-heel-raise",
+   "lib": "kineti",
+   "name": "Ponte com elevação dos calcanhares",
+   "desc": "Em ponte, sobe na ponta dos pés, desce os calcanhares e depois o quadril.",
+   "focus": "Glúteos e panturrilha",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-bridge-heel-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6f0"
+   ]
+  },
+  {
    "slug": "kineti-bridge-marching",
    "lib": "kineti",
    "name": "Ponte com marcha",
@@ -730,6 +764,38 @@
    "substitui": "",
    "pocketphysio": [
     "664744bf5c2c1f75d4d71e19"
+   ]
+  },
+  {
+   "slug": "kineti-supine-knee-fall-out",
+   "lib": "kineti",
+   "name": "Queda lateral de um joelho deitado",
+   "desc": "Deitado de costas com os joelhos dobrados, deixa um joelho cair para o lado com controle e volta, sem girar a pelve.",
+   "focus": "Estabilização da pelve e mobilidade do quadril",
+   "area": "quadril_gluteos",
+   "view": "Elevada",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-supine-knee-fall-out.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e700"
+   ]
+  },
+  {
+   "slug": "kineti-supine-hip-internal-rotation",
+   "lib": "kineti",
+   "name": "Rotação interna do quadril deitado",
+   "desc": "Deitado de costas com os joelhos dobrados e os pés afastados, deixa os joelhos caírem para dentro e volta.",
+   "focus": "Amplitude de rotação interna do quadril",
+   "area": "quadril_gluteos",
+   "view": "Elevada",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-supine-hip-internal-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d03040724f"
    ]
   },
   {
@@ -934,7 +1000,8 @@
    "kineti_slug": "straight_leg_raise",
    "substitui": "",
    "pocketphysio": [
-    "65a9272053a15212d048e80c"
+    "65a9272053a15212d048e80c",
+    "65a9272053a15212d048e835"
    ]
   },
   {
@@ -1146,7 +1213,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e7fe",
-    "65b09dc54ad825d03040733b"
+    "65b09dc54ad825d03040733b",
+    "65b09dc54ad825d03040733c"
    ]
   },
   {
@@ -1163,6 +1231,23 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e803"
+   ]
+  },
+  {
+   "slug": "kineti-crook-lying-knee-extension",
+   "lib": "kineti",
+   "name": "Extensão alternada do joelho deitado",
+   "desc": "Deitado de costas com os joelhos dobrados, eleva uma coxa e estica o joelho, dobra de volta e desce. Alterna as pernas.",
+   "focus": "Quadríceps e mobilidade do joelho",
+   "area": "joelhos",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-crook-lying-knee-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d0304073fc",
+    "65a9272053a15212d048e913"
    ]
   },
   {
@@ -2708,6 +2793,22 @@
    ]
   },
   {
+   "slug": "kineti-crunch-reach-alternating",
+   "lib": "kineti",
+   "name": "Abdominal alcançando à frente alternado",
+   "desc": "Deitado de costas com os joelhos dobrados, eleva o tronco levando uma mão à frente e cruzando o corpo. Desce e alterna.",
+   "focus": "Abdominais e oblíquos",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-crunch-reach-alternating.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e6f7"
+   ]
+  },
+  {
    "slug": "kineti-crunch-hands-behind-head",
    "lib": "kineti",
    "name": "Abdominal com mãos na nuca",
@@ -2936,6 +3037,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e859"
+   ]
+  },
+  {
+   "slug": "kineti-double-heel-slides",
+   "lib": "kineti",
+   "name": "Deslizamento dos dois calcanhares",
+   "desc": "Deitado de costas com os joelhos dobrados, desliza os dois calcanhares até esticar as pernas e volta, mantendo o abdome ativo.",
+   "focus": "Estabilização abdominal",
+   "area": "tronco_coluna",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-double-heel-slides.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e4d0"
    ]
   },
   {
@@ -3536,7 +3653,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea1d",
-    "65a9272153a15212d048ea23"
+    "65a9272153a15212d048ea23",
+    "65a9272153a15212d048ea03"
    ]
   },
   {
@@ -3651,7 +3769,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e73f",
-    "65a9272053a15212d048e70f"
+    "65a9272053a15212d048e70f",
+    "65a9272053a15212d048e4de"
    ]
   },
   {
@@ -4017,7 +4136,8 @@
     "65b09dc54ad825d03040732d",
     "65b09dc54ad825d030407330",
     "65a9272153a15212d048e92d",
-    "65a9272053a15212d048e856"
+    "65a9272053a15212d048e856",
+    "65b09dc54ad825d030407334"
    ]
   },
   {
@@ -4034,6 +4154,38 @@
    "substitui": "shoulder_shrugs",
    "pocketphysio": [
     "660a6144b08ac7518f1f7cdc"
+   ]
+  },
+  {
+   "slug": "kineti-prone-m-raise",
+   "lib": "kineti",
+   "name": "Elevação dos braços em M de bruços",
+   "desc": "Deitado de bruços com os braços baixos ao lado do corpo e as palmas para baixo, eleva os braços e desce devagar.",
+   "focus": "Estabilizadores da escápula",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-prone-m-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e908"
+   ]
+  },
+  {
+   "slug": "kineti-prone-t-raise",
+   "lib": "kineti",
+   "name": "Elevação dos braços em T de bruços",
+   "desc": "Deitado de bruços com os braços abertos para os lados, eleva os braços aproximando as escápulas e desce devagar.",
+   "focus": "Trapézio médio e romboides",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-prone-t-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e905"
    ]
   },
   {
@@ -4138,6 +4290,23 @@
     "660a6145b08ac7518f1f801c",
     "660a6145b08ac7518f1f8022",
     "664744bf5c2c1f75d4d71e0a"
+   ]
+  },
+  {
+   "slug": "kineti-prone-shoulder-extension",
+   "lib": "kineti",
+   "name": "Extensão dos ombros de bruços",
+   "desc": "Deitado de bruços com os braços ao longo do corpo, eleva os dois braços em direção ao teto e desce devagar.",
+   "focus": "Extensores do ombro e retração escapular",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-prone-shoulder-extension.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e93e",
+    "65a9272053a15212d048e919"
    ]
   },
   {
@@ -4281,7 +4450,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "65b09dc54ad825d03040732e"
+    "65b09dc54ad825d03040732e",
+    "65a9272153a15212d048e946"
    ]
   },
   {
@@ -4380,6 +4550,24 @@
    "pocketphysio": [
     "65a9272153a15212d048ea55",
     "65a9272153a15212d048e933"
+   ]
+  },
+  {
+   "slug": "kineti-supine-scapular-protraction",
+   "lib": "kineti",
+   "name": "Protração escapular deitado",
+   "desc": "Deitado de costas com os braços apontando para o teto, empurra as mãos mais para cima, afastando as escápulas do chão, e volta.",
+   "focus": "Serrátil anterior",
+   "area": "ombros_escapulas",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-supine-scapular-protraction.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e92a",
+    "65a9272053a15212d048e8f3",
+    "65a9272053a15212d048e91b"
    ]
   },
   {

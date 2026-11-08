@@ -1726,5 +1726,71 @@
   "Sentado, desliza um pé para trás sob a cadeira dobrando o joelho, volta e troca de perna.",
   "Amplitude de flexão do joelho",
   "joelhos"
+ ],
+ "kineti-prone-t-raise": [
+  "Elevação dos braços em T de bruços",
+  "Deitado de bruços com os braços abertos para os lados, eleva os braços aproximando as escápulas e desce devagar.",
+  "Trapézio médio e romboides",
+  "ombros_escapulas"
+ ],
+ "kineti-prone-m-raise": [
+  "Elevação dos braços em M de bruços",
+  "Deitado de bruços com os braços baixos ao lado do corpo e as palmas para baixo, eleva os braços e desce devagar.",
+  "Estabilizadores da escápula",
+  "ombros_escapulas"
+ ],
+ "kineti-prone-shoulder-extension": [
+  "Extensão dos ombros de bruços",
+  "Deitado de bruços com os braços ao longo do corpo, eleva os dois braços em direção ao teto e desce devagar.",
+  "Extensores do ombro e retração escapular",
+  "ombros_escapulas"
+ ],
+ "kineti-supine-scapular-protraction": [
+  "Protração escapular deitado",
+  "Deitado de costas com os braços apontando para o teto, empurra as mãos mais para cima, afastando as escápulas do chão, e volta.",
+  "Serrátil anterior",
+  "ombros_escapulas"
+ ],
+ "kineti-bridge-on-heels": [
+  "Ponte apoiada nos calcanhares",
+  "Deitado de costas com os calcanhares no chão e as pontas dos pés para cima, eleva o quadril e desce devagar.",
+  "Posteriores da coxa e glúteos",
+  "quadril_gluteos"
+ ],
+ "kineti-bridge-heel-raise": [
+  "Ponte com elevação dos calcanhares",
+  "Em ponte, sobe na ponta dos pés, desce os calcanhares e depois o quadril.",
+  "Glúteos e panturrilha",
+  "quadril_gluteos"
+ ],
+ "kineti-supine-knee-fall-out": [
+  "Queda lateral de um joelho deitado",
+  "Deitado de costas com os joelhos dobrados, deixa um joelho cair para o lado com controle e volta, sem girar a pelve.",
+  "Estabilização da pelve e mobilidade do quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-supine-hip-internal-rotation": [
+  "Rotação interna do quadril deitado",
+  "Deitado de costas com os joelhos dobrados e os pés afastados, deixa os joelhos caírem para dentro e volta.",
+  "Amplitude de rotação interna do quadril",
+  "quadril_gluteos"
+ ],
+ "kineti-double-heel-slides": [
+  "Deslizamento dos dois calcanhares",
+  "Deitado de costas com os joelhos dobrados, desliza os dois calcanhares até esticar as pernas e volta, mantendo o abdome ativo.",
+  "Estabilização abdominal",
+  "tronco_coluna"
+ ],
+ "kineti-crook-lying-knee-extension": [
+  "Extensão alternada do joelho deitado",
+  "Deitado de costas com os joelhos dobrados, eleva uma coxa e estica o joelho, dobra de volta e desce. Alterna as pernas.",
+  "Quadríceps e mobilidade do joelho",
+  "joelhos"
+ ],
+ "kineti-crunch-reach-alternating": [
+  "Abdominal alcançando à frente alternado",
+  "Deitado de costas com os joelhos dobrados, eleva o tronco levando uma mão à frente e cruzando o corpo. Desce e alterna.",
+  "Abdominais e oblíquos",
+  "tronco_coluna"
  ]
 }

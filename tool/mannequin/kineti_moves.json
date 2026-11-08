@@ -17321,6 +17321,1027 @@
      "hold": 0.4
     }
    ]
+  },
+  {
+   "id": "kineti-prone-t-raise",
+   "en": "Prone T raise",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your stomach, arms out to the sides.",
+    "Lift the arms, squeezing the shoulder blades.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      88
+     ]
+    },
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      20,
+      0,
+      88
+     ],
+     "spine": [
+      -8,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-prone-m-raise",
+   "en": "Prone M raise, palms down",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your stomach, arms low at the sides, palms down.",
+    "Lift the arms.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      35
+     ]
+    },
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      20,
+      0,
+      35
+     ],
+     "spine": [
+      -8,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-prone-shoulder-extension",
+   "en": "Prone shoulder extension, both arms",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your stomach, arms along the body.",
+    "Lift both arms towards the ceiling.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      0,
+      0,
+      8
+     ]
+    },
+    {
+     "hips": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "arm": [
+      28,
+      0,
+      8
+     ],
+     "spine": [
+      -6,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-scapular-protraction",
+   "en": "Scapular protraction, lying on the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, arms up to the ceiling.",
+    "Reach higher, lifting the shoulder blades.",
+    "Lower them back."
+   ],
+   "beat": 1.0,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      0
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "arm": [
+      -90,
+      0,
+      0
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "arm.pos": [
+      0,
+      0,
+      0.05
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-bridge-on-heels",
+   "en": "Bridge on the heels",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, heels on the floor, toes up.",
+    "Lift the hips.",
+    "Lower slowly."
+   ],
+   "beat": 1.3,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -35,
+      0,
+      0
+     ],
+     "touch": [
+      "foot"
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "foot": [
+      -35,
+      0,
+      0
+     ],
+     "touch": [
+      "foot"
+     ],
+     "hold": 1.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-bridge-heel-raise",
+   "en": "Bridge with heel raise",
+   "amount_en": "8 reps",
+   "steps_en": [
+    "Lift the hips into a bridge.",
+    "Rise onto the toes.",
+    "Lower the heels, then the hips."
+   ],
+   "beat": 1.0,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "touch": [
+      "foot"
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "touch": [
+      "foot"
+     ]
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "hold": 0.6
+    },
+    {
+     "hips": [
+      -118,
+      0,
+      0
+     ],
+     "leg": [
+      25,
+      0,
+      0
+     ],
+     "knee": [
+      120,
+      0,
+      0
+     ],
+     "arm": [
+      40,
+      0,
+      6
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "touch": [
+      "foot"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-knee-fall-out",
+   "en": "Single knee fall out, lying on the back",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Let one knee fall out to the side.",
+    "Bring it back."
+   ],
+   "beat": 1.2,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legL": [
+      -45,
+      -20,
+      38
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-supine-hip-internal-rotation",
+   "en": "Hip internal rotation, lying on the back",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, knees bent, feet apart.",
+    "Let the knees fall inward.",
+    "Bring them back."
+   ],
+   "beat": 1.2,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      12
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      28,
+      8
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-double-heel-slides",
+   "en": "Heel slides with both legs",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Slide both heels until the legs are straight.",
+    "Slide them back."
+   ],
+   "beat": 1.3,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      0,
+      0,
+      0
+     ],
+     "knee": [
+      3,
+      0,
+      0
+     ],
+     "foot": [
+      0,
+      0,
+      0
+     ],
+     "hold": 0.3
+    }
+   ]
+  },
+  {
+   "id": "kineti-crook-lying-knee-extension",
+   "en": "Alternate knee extension, lying with knees bent",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Lift one thigh and straighten the knee.",
+    "Bend it back and lower. Switch."
+   ],
+   "beat": 1.0,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legL": [
+      -90,
+      0,
+      0
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legL": [
+      -90,
+      0,
+      0
+     ],
+     "kneeL": [
+      8,
+      0,
+      0
+     ],
+     "hold": 0.4
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legL": [
+      -90,
+      0,
+      0
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      8,
+      0,
+      0
+     ],
+     "hold": 0.4
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      -90,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-crunch-reach-alternating",
+   "en": "Crunch reaching forward, alternating",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Lie on your back, knees bent.",
+    "Curl up reaching one hand forward across the body.",
+    "Lower and switch."
+   ],
+   "beat": 1.1,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "spine": [
+      24,
+      14,
+      0
+     ],
+     "neck": [
+      18,
+      0,
+      0
+     ],
+     "armR": [
+      -60,
+      0,
+      -25
+     ],
+     "armL": [
+      -40,
+      0,
+      6
+     ],
+     "hold": 0.4
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      0,
+      0
+     ],
+     "leg": [
+      -45,
+      0,
+      0
+     ],
+     "knee": [
+      95,
+      0,
+      0
+     ],
+     "foot": [
+      -15,
+      0,
+      0
+     ],
+     "spine": [
+      24,
+      -14,
+      0
+     ],
+     "neck": [
+      18,
+      0,
+      0
+     ],
+     "armL": [
+      -60,
+      0,
+      -25
+     ],
+     "armR": [
+      -40,
+      0,
+      6
+     ],
+     "hold": 0.4
+    }
+   ]
   }
  ]
 }

@@ -35,7 +35,7 @@ def blender(*args, env=None):
         e['WSLENV'] = ':'.join(list(env) + ([e['WSLENV']] if e.get('WSLENV') else []))
     r = subprocess.run([BLENDER, '-b', *args], capture_output=True, text=True, env=e)
     for line in r.stdout.splitlines():
-        if line.startswith(('JOB', 'DONE', 'OK', 'Traceback', 'Error', 'KeyError')) or 'Error' in line:
+        if line.startswith(('JOB', 'DONE', 'OK', 'KEY', 'TOUCH', 'WARNING', 'ERROR', 'Traceback', 'Error', 'KeyError')) or 'Error' in line:
             print(' ', line)
     if r.returncode:
         print(r.stdout[-2000:], r.stderr[-2000:])
@@ -52,7 +52,7 @@ def setup():
 def build():
     out = OUT / 'kineti_lib'
     out.mkdir(parents=True, exist_ok=True)
-    blender('-P', win(HERE / 'build_lib.py'), '--', win(DESK / 'library' / 'build_library.py'), win(HERE / 'kineti_moves.json'),
+    blender('-P', win(HERE / 'build_lib.py'), '--', win(DESK / 'library'), win(HERE / 'kineti_moves.json'),
             win(out))
 
 

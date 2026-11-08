@@ -144,8 +144,8 @@
   "nota": "encosto da cadeira no lugar da bancada"
  },
  "step_up": {
-  "video": null,
-  "nota": "falta o degrau, e o contato automático só existe com o chão"
+  "video": "kineti-step-up",
+  "nota": "degrau como campo de alturas no builder (kineti_builder.py)"
  },
  "bridge": {
   "video": "glute-bridge",

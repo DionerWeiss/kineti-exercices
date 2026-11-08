@@ -2341,5 +2341,173 @@
   "pocketphysio": [
    "664744bf5c2c1f75d4d71e41"
   ]
+ },
+ "kineti-step-up": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e617",
+   "65a9272053a15212d048e815"
+  ]
+ },
+ "kineti-step-up-alternate": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80d8",
+   "65b09dc54ad825d030407347",
+   "65a9272053a15212d048e623",
+   "65a9272053a15212d048e7f4",
+   "65a9272053a15212d048e734"
+  ]
+ },
+ "kineti-step-up-opposite-arm": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e802"
+  ]
+ },
+ "kineti-step-up-same-arm": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e7f9"
+  ]
+ },
+ "kineti-step-up-knee-drive": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407346",
+   "664744bf5c2c1f75d4d71e2f"
+  ]
+ },
+ "kineti-step-foot-hold": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d5e"
+  ]
+ },
+ "kineti-step-toe-taps": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e62d",
+   "65a9272053a15212d048e543"
+  ]
+ },
+ "kineti-step-down-backward": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e7f0"
+  ]
+ },
+ "kineti-lateral-step-down": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80cc"
+  ]
+ },
+ "kineti-step-hip-hike": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e70b",
+   "660a6144b08ac7518f1f7e97"
+  ]
+ },
+ "kineti-step-heel-drop": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "wall",
+   "step"
+  ],
+  "pocketphysio": [
+   "65b09dc54ad825d030407238",
+   "664744bf5c2c1f75d4d71da0",
+   "660a6145b08ac7518f1f7f5b"
+  ]
+ },
+ "kineti-step-heel-drop-single": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "wall",
+   "step"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7d83",
+   "660a6145b08ac7518f1f7f59",
+   "660a6144b08ac7518f1f7d84",
+   "660a6144b08ac7518f1f7e84",
+   "65a9272053a15212d048e521"
+  ]
+ },
+ "kineti-step-soleus-stretch": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "wall",
+   "step"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80b9"
+  ]
+ },
+ "kineti-step-bridge": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d74",
+   "660a61776a80d359d40dce83"
+  ]
+ },
+ "kineti-step-single-leg-bridge": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [
+   "step"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e19"
+  ]
  }
 }

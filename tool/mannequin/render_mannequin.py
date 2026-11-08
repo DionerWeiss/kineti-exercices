@@ -3,8 +3,9 @@
     blender -b <lib.blend> --python render_mannequin.py -- <out_dir> <palette> <logo.png> <job> ...
 job = id:view[:prop+prop...[:upper|lower[:move]]]   (move: the action to play, default id)   view = side | front | top3q | side3q | front3q | floor | rside3q | back3q
 props: chair, support, wall, roll, ball, cuff, dumbbell
-env STILL=1 renders only the first, middle and last frame.
+env STILL=<fractions, e.g. 0,0.25,0.5> renders only those points of the motion.
 """
+import json
 import math
 import os
 import sys
@@ -166,6 +167,8 @@ BANDC = mat('band', '#FF6D00', 0.5)
 SWISSC = mat('swiss', '#5B8DEF', 0.35)
 MATC = mat('mat', '#B9C6D6', 0.9)
 CHAIRC = mat('chair', '#A0AEC0', 0.7)
+STEPC = mat('step', '#8E9BAE', 0.6)
+STEPTOP = mat('steptop', '#3D4A5C', 0.85)
 WALLC = mat('wall', '#E8ECF1', 0.95)
 ROLLC = mat('roll', '#7FB7AE', 0.8)
 BALLC = mat('ball', '#F2A65A', 0.45)
@@ -353,8 +356,17 @@ for job in JOBS:
             if o.location.z < 0.3:  # legs: stretch to the new seat height
                 o.scale.z *= top / 0.45
                 o.location.z = top / 2 - 0.02
+    gr = json.loads(act['ground']) if 'ground' in act else None  # the height field the move was built on
+    if gr:  # each raised box drawn as an aerobic step: grey block, dark rubber top
+        base = gr.get('base', 0)
+        for x0, x1, y0, y1, h in gr['boxes']:
+            if h <= base + 0.03:
+                continue
+            c = ((x0 + x1) / 2, (y0 + y1) / 2)
+            box((*c, (base + h - 0.02) / 2), (x1 - x0, y1 - y0, h - 0.02 - base), STEPC)
+            box((*c, h - 0.01), (x1 - x0 + 0.006, y1 - y0 + 0.006, 0.02), STEPTOP)
     blo, bhi, bpts = motion_bounds(f0, f1)
-    FLOOR.location.z = -BED_TOP if 'bed' in props else 0
+    FLOOR.location.z = -BED_TOP if 'bed' in props else gr.get('base', 0) if gr else 0
     if 'bed' in props:
         c, ext = (blo + bhi) / 2, bhi - blo
         long_x = ext.x > ext.y

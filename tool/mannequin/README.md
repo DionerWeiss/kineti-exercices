@@ -21,12 +21,15 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `video`: o MP4 em `build/mannequin/videos/`;
   - `kineti_slug`: o exercício equivalente da biblioteca Kineti, quando há. Nos vídeos do desk-break, ele vem da comparação feita no PocketPhysio e é só indicativo;
   - `pocketphysio`: os ids atendidos.
-- **`library_map.json`:** para cada um dos 59 exercícios da biblioteca Kineti, o vídeo do manequim que o substitui, ou `null` e o motivo (dedos, rosto, faixa elástica, mesa, cama, degrau, caminhada). No catálogo, ele aparece no campo `substitui`.
+- **`library_map.json`:** para cada um dos 59 exercícios da biblioteca Kineti, o vídeo do manequim que o substitui, ou `null` e o motivo. No catálogo, ele aparece no campo `substitui`.
 - **`texts_pt.json`:** nome, descrição, foco e área de cada vídeo, escritos à mão (`{slug: [nome, descrição, foco, área]}`). A descrição segue o que o vídeo mostra, e não o texto original do desk-break. Os movimentos Kineti que já estão na biblioteca usam os textos do `catalog.json` dela.
 - **`kineti_moves.json`:** movimentos escritos por nós, no formato do desk-break (veja `build/desk-break/library/AUTHORING.md`). Os ids começam com `kineti-`.
 - **Close-ups da mão** (`lib: "hand"`): a mão de madeira com dedos, no estilo do manequim, apoiada na mesa. `export_hand.py` exporta, quadro a quadro, a cinemática da mão do Lottie (`tool/build_library_hand_animations.py`), com as mesmas verificações. Depois `render_hand.py` monta segmentos, articulações, palma, mesa e câmera no Blender. As cenas de `export_hand.py` são punho, antebraço, abrir e fechar a mão, oposição do polegar, apertar bola, dedos em L, flexão e abdução do polegar e desvio do punho.
 - **`render_mannequin.py`:** roda dentro do Blender. Repinta o manequim, aplica a marca, monta o cenário e a câmera, e renderiza.
-- **`build_lib.py`:** roda o `build_library.py` do desk-break num arquivo de movimentos e salva o `.blend`, que o original só grava para a biblioteca inteira.
+- **`kineti_builder.py`:** cópia do `library/build_library.py` do desk-break (commit 8d475aa, MIT) com duas adições. Sem elas, gera exatamente as mesmas curvas que o original:
+  - `"ground"` no exercício: um campo de alturas `{"base": 0, "boxes": [[xmin, xmax, ymin, ymax, h], ...]}`, em metros no mundo do Blender (a figura olha para −y). O aterramento, as partes apoiadas, os pés e mãos presos e o empurrão para fora do chão passam a medir a altura acima da superfície sob cada vértice. Assim um pé apoia no degrau, ou o calcanhar fica para fora da borda. A ação guarda o campo em `act['ground']`, e o `render_mannequin.py` desenha cada caixa como um degrau;
+  - `"touch"` numa pose: ajuda de autoria. `["footL"]` dobra o joelho, e `["footL:leg"]` gira o quadril, até o pé tocar a superfície na mesma altura dos outros apoios (vale também para `handL`, com cotovelo ou `:arm`). Escolhe a raiz mais perto do ângulo escrito e descarta as falsas da borda do degrau. O build imprime `TOUCH` com o ângulo resolvido e, em exercícios com `ground`, uma linha `KEY` por pose com a altura de pés, mãos e pelve.
+- **`build_lib.py`:** roda o `kineti_builder.py` num arquivo de movimentos e salva o `.blend`, que o original só grava para a biblioteca inteira.
 
 ## Câmera e cenário
 
@@ -54,6 +57,7 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
   - `wallback`: parede encostada nas costas durante todo o movimento;
   - `swissseat`: bola suíça como assento, para exercícios sentados. Costuma vir com `move` reaproveitando o movimento da cadeira;
   - `table`: mesa sob a mão ou as mãos que ficam paradas. Com uma mão só, é uma mesa pequena de canto, como no pêndulo de Codman.
+  - `step`: só o rótulo "Degrau" no catálogo. O degrau em si vem do `ground` do movimento.
 - **`move`** (opcional, em `jobs.json`): o movimento a tocar, quando o vídeo reaproveita o de outro job com acessórios diferentes (por exemplo, a marcha sentada na bola suíça usa `chair-march`).
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 
@@ -62,7 +66,8 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
 - Sem dedos (a mão é uma luva) e sem rosto.
 - Sem clavícula: o encolher de ombros é `arm.pos`.
 - A coluna é um osso só.
-- O contato automático (mão ou pé que fica preso) só existe com o chão. Mão no encosto ou na parede funciona porque o acessório é posicionado onde a mão está, e não porque a mão se prende ao acessório.
+- O contato automático (mão ou pé que fica preso) só existe com o chão e com as caixas do `ground`. Mão no encosto ou na parede funciona porque o acessório é posicionado onde a mão está, e não porque a mão se prende ao acessório.
+- O aterramento é geométrico: o ponto mais baixo encosta na superfície. Uma pose pode "apoiar" na cabeça e nos pés com a pelve no ar, e as linhas `KEY` do build servem para pegar isso.
 
 ## Licença
 

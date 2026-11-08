@@ -1264,5 +1264,89 @@
   "Em pé, com as mãos no encosto de uma cadeira, transfere o peso devagar para uma perna e depois para a outra, sem tirar os pés do chão.",
   "Controle do centro de massa",
   "equilibrio"
+ ],
+ "kineti-step-up-alternate": [
+  "Subida no degrau alternando as pernas",
+  "De frente para o degrau, sobe com um pé e leva o outro. Desce na mesma ordem e, na volta seguinte, começa com a outra perna.",
+  "Força de quadril e joelho, equilíbrio",
+  "joelhos"
+ ],
+ "kineti-step-up-opposite-arm": [
+  "Subida no degrau com braço oposto",
+  "Sobe no degrau esticando a perna da frente e, ao mesmo tempo, eleva acima da cabeça o braço do lado oposto. Desce e troca de perna.",
+  "Força de membros inferiores e coordenação",
+  "joelhos"
+ ],
+ "kineti-step-up-same-arm": [
+  "Subida no degrau com braço do mesmo lado",
+  "Sobe no degrau esticando a perna da frente e eleva acima da cabeça o braço do mesmo lado. Desce e troca de perna.",
+  "Força de membros inferiores e coordenação",
+  "joelhos"
+ ],
+ "kineti-step-up-knee-drive": [
+  "Subida no degrau com elevação do joelho",
+  "Sobe no degrau com um pé e leva o joelho de trás à altura do quadril, equilibrando-se por um instante. Desce e troca de perna.",
+  "Força de quadril e equilíbrio unipodal",
+  "equilibrio"
+ ],
+ "kineti-step-foot-hold": [
+  "Pé no degrau sustentado",
+  "De frente para o degrau, apoia um pé sobre ele com o tronco reto e sustenta alguns segundos. Volta e troca de pé.",
+  "Equilíbrio e controle do tronco",
+  "equilibrio"
+ ],
+ "kineti-step-toe-taps": [
+  "Toques da ponta do pé no degrau",
+  "De frente para o degrau, toca de leve a ponta de um pé sobre ele e volta, alternando os pés num ritmo constante.",
+  "Equilíbrio, coordenação e agilidade",
+  "equilibrio"
+ ],
+ "kineti-step-down-backward": [
+  "Descida do degrau para trás",
+  "Em pé sobre o degrau, dobra o joelho de apoio e leva o outro pé para trás até tocar o chão. Volta a subir esticando a perna de apoio.",
+  "Controle excêntrico de quadril e joelho",
+  "joelhos"
+ ],
+ "kineti-lateral-step-down": [
+  "Descida lateral do degrau",
+  "Em pé sobre o degrau com uma perna, a outra fora da borda. Dobra o joelho de apoio até o pé livre tocar o chão ao lado e volta.",
+  "Controle do joelho e estabilidade do quadril",
+  "joelhos"
+ ],
+ "kineti-step-hip-hike": [
+  "Elevação da pelve no degrau",
+  "Em pé sobre o degrau com uma perna, a outra solta ao lado. Deixa a pelve descer do lado livre e depois eleva acima da linha, sem dobrar os joelhos.",
+  "Glúteo médio e quadrado lombar",
+  "quadril_gluteos"
+ ],
+ "kineti-step-heel-drop": [
+  "Elevação e descida de calcanhares no degrau",
+  "Com a frente dos pés na borda do degrau e as mãos na parede, sobe na ponta dos pés e desce devagar até os calcanhares passarem abaixo do degrau.",
+  "Panturrilha e tendão de Aquiles",
+  "tornozelos_pes"
+ ],
+ "kineti-step-heel-drop-single": [
+  "Descida unilateral de calcanhar no degrau",
+  "Sobe na ponta dos dois pés na borda do degrau, tira um pé e desce devagar o calcanhar da perna de apoio. Mãos na parede para o equilíbrio.",
+  "Força excêntrica da panturrilha",
+  "tornozelos_pes"
+ ],
+ "kineti-step-soleus-stretch": [
+  "Alongamento do sóleo no degrau",
+  "Com a frente dos pés na borda do degrau e as mãos na parede, dobra levemente os joelhos e deixa os calcanhares descerem. Sustenta.",
+  "Flexibilidade do sóleo",
+  "tornozelos_pes"
+ ],
+ "kineti-step-bridge": [
+  "Ponte com os pés no degrau",
+  "Deitado de costas com os pés sobre o degrau, eleva o quadril até alinhar tronco e coxas. Desce devagar.",
+  "Glúteos e posteriores da coxa",
+  "quadril_gluteos"
+ ],
+ "kineti-step-single-leg-bridge": [
+  "Ponte unilateral com o pé no degrau",
+  "Deitado de costas com um pé sobre o degrau e a outra perna estendida para cima, eleva o quadril empurrando o calcanhar. Desce devagar.",
+  "Glúteo e estabilidade da pelve",
+  "quadril_gluteos"
  ]
 }

@@ -363,6 +363,23 @@
    ]
   },
   {
+   "slug": "kineti-step-hip-hike",
+   "lib": "kineti",
+   "name": "Elevação da pelve no degrau",
+   "desc": "Em pé sobre o degrau com uma perna, a outra solta ao lado. Deixa a pelve descer do lado livre e depois eleva acima da linha, sem dobrar os joelhos.",
+   "focus": "Glúteo médio e quadrado lombar",
+   "area": "quadril_gluteos",
+   "view": "Frontal",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-hip-hike.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e70b",
+    "660a6144b08ac7518f1f7e97"
+   ]
+  },
+  {
    "slug": "prone-leg-lift",
    "lib": "deskbreak",
    "name": "Extensão de quadril de bruços",
@@ -493,6 +510,23 @@
    ]
   },
   {
+   "slug": "kineti-step-bridge",
+   "lib": "kineti",
+   "name": "Ponte com os pés no degrau",
+   "desc": "Deitado de costas com os pés sobre o degrau, eleva o quadril até alinhar tronco e coxas. Desce devagar.",
+   "focus": "Glúteos e posteriores da coxa",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Degrau, Colchonete",
+   "video": "build/mannequin/videos/kineti-step-bridge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d74",
+    "660a61776a80d359d40dce83"
+   ]
+  },
+  {
    "slug": "glute-bridge",
    "lib": "deskbreak",
    "name": "Ponte de glúteos",
@@ -528,6 +562,22 @@
     "65a9272153a15212d048eb0c",
     "673c9258e10df73c8302d74a",
     "673c9258e10df73c8302d7d7"
+   ]
+  },
+  {
+   "slug": "kineti-step-single-leg-bridge",
+   "lib": "kineti",
+   "name": "Ponte unilateral com o pé no degrau",
+   "desc": "Deitado de costas com um pé sobre o degrau e a outra perna estendida para cima, eleva o quadril empurrando o calcanhar. Desce devagar.",
+   "focus": "Glúteo e estabilidade da pelve",
+   "area": "quadril_gluteos",
+   "view": "Lateral elevada",
+   "props": "Degrau, Colchonete",
+   "video": "build/mannequin/videos/kineti-step-single-leg-bridge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e19"
    ]
   },
   {
@@ -711,6 +761,38 @@
    "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f7f6b"
+   ]
+  },
+  {
+   "slug": "kineti-step-down-backward",
+   "lib": "kineti",
+   "name": "Descida do degrau para trás",
+   "desc": "Em pé sobre o degrau, dobra o joelho de apoio e leva o outro pé para trás até tocar o chão. Volta a subir esticando a perna de apoio.",
+   "focus": "Controle excêntrico de quadril e joelho",
+   "area": "joelhos",
+   "view": "Lateral",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-down-backward.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7f0"
+   ]
+  },
+  {
+   "slug": "kineti-lateral-step-down",
+   "lib": "kineti",
+   "name": "Descida lateral do degrau",
+   "desc": "Em pé sobre o degrau com uma perna, a outra fora da borda. Dobra o joelho de apoio até o pé livre tocar o chão ao lado e volta.",
+   "focus": "Controle do joelho e estabilidade do quadril",
+   "area": "joelhos",
+   "view": "Frontal 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-lateral-step-down.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80cc"
    ]
   },
   {
@@ -970,6 +1052,58 @@
    ]
   },
   {
+   "slug": "kineti-step-up-alternate",
+   "lib": "kineti",
+   "name": "Subida no degrau alternando as pernas",
+   "desc": "De frente para o degrau, sobe com um pé e leva o outro. Desce na mesma ordem e, na volta seguinte, começa com a outra perna.",
+   "focus": "Força de quadril e joelho, equilíbrio",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-up-alternate.mp4",
+   "kineti_slug": "step_up",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80d8",
+    "65b09dc54ad825d030407347",
+    "65a9272053a15212d048e623",
+    "65a9272053a15212d048e7f4",
+    "65a9272053a15212d048e734"
+   ]
+  },
+  {
+   "slug": "kineti-step-up-same-arm",
+   "lib": "kineti",
+   "name": "Subida no degrau com braço do mesmo lado",
+   "desc": "Sobe no degrau esticando a perna da frente e eleva acima da cabeça o braço do mesmo lado. Desce e troca de perna.",
+   "focus": "Força de membros inferiores e coordenação",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-up-same-arm.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e7f9"
+   ]
+  },
+  {
+   "slug": "kineti-step-up-opposite-arm",
+   "lib": "kineti",
+   "name": "Subida no degrau com braço oposto",
+   "desc": "Sobe no degrau esticando a perna da frente e, ao mesmo tempo, eleva acima da cabeça o braço do lado oposto. Desce e troca de perna.",
+   "focus": "Força de membros inferiores e coordenação",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-up-opposite-arm.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e802"
+   ]
+  },
+  {
    "slug": "kineti-wall-calf-stretch",
    "lib": "kineti",
    "name": "Alongamento de panturrilha na parede",
@@ -1006,6 +1140,22 @@
    "pocketphysio": [
     "664744bf5c2c1f75d4d71e21",
     "660a6145b08ac7518f1f80ba"
+   ]
+  },
+  {
+   "slug": "kineti-step-soleus-stretch",
+   "lib": "kineti",
+   "name": "Alongamento do sóleo no degrau",
+   "desc": "Com a frente dos pés na borda do degrau e as mãos na parede, dobra levemente os joelhos e deixa os calcanhares descerem. Sustenta.",
+   "focus": "Flexibilidade do sóleo",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Parede, Degrau",
+   "video": "build/mannequin/videos/kineti-step-soleus-stretch.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80b9"
    ]
   },
   {
@@ -1125,6 +1275,26 @@
    ]
   },
   {
+   "slug": "kineti-step-heel-drop-single",
+   "lib": "kineti",
+   "name": "Descida unilateral de calcanhar no degrau",
+   "desc": "Sobe na ponta dos dois pés na borda do degrau, tira um pé e desce devagar o calcanhar da perna de apoio. Mãos na parede para o equilíbrio.",
+   "focus": "Força excêntrica da panturrilha",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Parede, Degrau",
+   "video": "build/mannequin/videos/kineti-step-heel-drop-single.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7d83",
+    "660a6145b08ac7518f1f7f59",
+    "660a6144b08ac7518f1f7d84",
+    "660a6144b08ac7518f1f7e84",
+    "65a9272053a15212d048e521"
+   ]
+  },
+  {
    "slug": "chair-toe-raises",
    "lib": "deskbreak",
    "name": "Elevação das pontas dos pés sentado",
@@ -1208,6 +1378,24 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e4ff"
+   ]
+  },
+  {
+   "slug": "kineti-step-heel-drop",
+   "lib": "kineti",
+   "name": "Elevação e descida de calcanhares no degrau",
+   "desc": "Com a frente dos pés na borda do degrau e as mãos na parede, sobe na ponta dos pés e desce devagar até os calcanhares passarem abaixo do degrau.",
+   "focus": "Panturrilha e tendão de Aquiles",
+   "area": "tornozelos_pes",
+   "view": "Lateral",
+   "props": "Parede, Degrau",
+   "video": "build/mannequin/videos/kineti-step-heel-drop.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407238",
+    "664744bf5c2c1f75d4d71da0",
+    "660a6145b08ac7518f1f7f5b"
    ]
   },
   {
@@ -1503,6 +1691,56 @@
    "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407219"
+   ]
+  },
+  {
+   "slug": "kineti-step-foot-hold",
+   "lib": "kineti",
+   "name": "Pé no degrau sustentado",
+   "desc": "De frente para o degrau, apoia um pé sobre ele com o tronco reto e sustenta alguns segundos. Volta e troca de pé.",
+   "focus": "Equilíbrio e controle do tronco",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-foot-hold.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d5e"
+   ]
+  },
+  {
+   "slug": "kineti-step-up-knee-drive",
+   "lib": "kineti",
+   "name": "Subida no degrau com elevação do joelho",
+   "desc": "Sobe no degrau com um pé e leva o joelho de trás à altura do quadril, equilibrando-se por um instante. Desce e troca de perna.",
+   "focus": "Força de quadril e equilíbrio unipodal",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-up-knee-drive.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65b09dc54ad825d030407346",
+    "664744bf5c2c1f75d4d71e2f"
+   ]
+  },
+  {
+   "slug": "kineti-step-toe-taps",
+   "lib": "kineti",
+   "name": "Toques da ponta do pé no degrau",
+   "desc": "De frente para o degrau, toca de leve a ponta de um pé sobre ele e volta, alternando os pés num ritmo constante.",
+   "focus": "Equilíbrio, coordenação e agilidade",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-toe-taps.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e62d",
+    "65a9272053a15212d048e543"
    ]
   },
   {
@@ -1823,6 +2061,23 @@
    "substitui": "",
    "pocketphysio": [
     "673c9258e10df73c8302d7bd"
+   ]
+  },
+  {
+   "slug": "kineti-step-up",
+   "lib": "kineti",
+   "name": "Subida no degrau",
+   "desc": "Sobe no degrau com um pé, transfere o peso e traz o outro pé. Desce primeiro com o segundo pé e depois com o primeiro, sempre com controle.",
+   "focus": "Quadríceps, glúteos e equilíbrio",
+   "area": "marcha",
+   "view": "Lateral 3/4",
+   "props": "Degrau",
+   "video": "build/mannequin/videos/kineti-step-up.mp4",
+   "kineti_slug": "step_up",
+   "substitui": "step_up",
+   "pocketphysio": [
+    "65a9272053a15212d048e617",
+    "65a9272053a15212d048e815"
    ]
   },
   {

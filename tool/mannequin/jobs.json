@@ -2175,7 +2175,8 @@
    "660a6144b08ac7518f1f7ce0",
    "660a6144b08ac7518f1f7ce2",
    "660a6145b08ac7518f1f811f",
-   "664744bf5c2c1f75d4d71e3f"
+   "664744bf5c2c1f75d4d71e3f",
+   "660a6144b08ac7518f1f7ce4"
   ]
  },
  "kineti-sit-to-stand-arms-forward": {
@@ -2214,7 +2215,8 @@
   "frame": "full",
   "pocketphysio": [
    "65a9272153a15212d048ea0f",
-   "660a6144b08ac7518f1f7e95"
+   "660a6144b08ac7518f1f7e95",
+   "660a6144b08ac7518f1f7e48"
   ]
  },
  "kineti-ball-seated-knee-extension": {
@@ -2238,7 +2240,8 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "660a6145b08ac7518f1f7f3b"
+   "660a6145b08ac7518f1f7f3b",
+   "660a61776a80d359d40dce5c"
   ]
  },
  "kineti-ball-seated-shoulder-abduction": {
@@ -2250,7 +2253,8 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "660a6145b08ac7518f1f8012"
+   "660a6145b08ac7518f1f8012",
+   "660a6145b08ac7518f1f7f3a"
   ]
  },
  "kineti-ball-seated-shoulder-abduction-dumbbell": {
@@ -2288,7 +2292,8 @@
   ],
   "frame": "full",
   "pocketphysio": [
-   "660a6145b08ac7518f1f7f41"
+   "660a6145b08ac7518f1f7f41",
+   "660a6145b08ac7518f1f7f42"
   ]
  },
  "kineti-ball-seated-band-row": {
@@ -3263,5 +3268,28 @@
   "pocketphysio": [
    "65a9272053a15212d048e6f7"
   ]
+ },
+ "kineti-squat-mini-band": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "bandknees"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f80c6",
+   "660a6144b08ac7518f1f7ce7"
+  ],
+  "move": "kineti-squat-dumbbells"
+ },
+ "kineti-ball-seated-alternating-arm-raise": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [
+   "swissseat"
+  ],
+  "pocketphysio": [
+   "65a9272153a15212d048ea14"
+  ],
+  "move": "kineti-seated-alternating-front-raise"
  }
 }

@@ -887,6 +887,23 @@
    ]
   },
   {
+   "slug": "kineti-squat-mini-band",
+   "lib": "kineti",
+   "name": "Agachamento com mini-band nas coxas",
+   "desc": "Em pé, com uma faixa elástica em volta das coxas logo acima dos joelhos, agacha empurrando os joelhos para fora contra a faixa e volta a ficar em pé.",
+   "focus": "Glúteos, quadríceps e rotadores externos do quadril",
+   "area": "joelhos",
+   "view": "Frontal 3/4",
+   "props": "Faixa elástica nas coxas",
+   "video": "build/mannequin/videos/kineti-squat-mini-band.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f80c6",
+    "660a6144b08ac7518f1f7ce7"
+   ]
+  },
+  {
    "slug": "kineti-prisoner-squat",
    "lib": "kineti",
    "name": "Agachamento com mãos atrás da cabeça",
@@ -952,7 +969,8 @@
     "660a6144b08ac7518f1f7ce0",
     "660a6144b08ac7518f1f7ce2",
     "660a6145b08ac7518f1f811f",
-    "664744bf5c2c1f75d4d71e3f"
+    "664744bf5c2c1f75d4d71e3f",
+    "660a6144b08ac7518f1f7ce4"
    ]
   },
   {
@@ -2671,7 +2689,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272153a15212d048ea0f",
-    "660a6144b08ac7518f1f7e95"
+    "660a6144b08ac7518f1f7e95",
+    "660a6144b08ac7518f1f7e48"
    ]
   },
   {
@@ -3053,6 +3072,22 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e4d0"
+   ]
+  },
+  {
+   "slug": "kineti-ball-seated-alternating-arm-raise",
+   "lib": "kineti",
+   "name": "Elevação alternada dos braços sentado na bola",
+   "desc": "Sentado na bola suíça com a coluna neutra, eleva um braço esticado à frente, desce e alterna, mantendo o equilíbrio.",
+   "focus": "Estabilidade do tronco e ombros",
+   "area": "tronco_coluna",
+   "view": "Lateral 3/4",
+   "props": "Bola suíça",
+   "video": "build/mannequin/videos/kineti-ball-seated-alternating-arm-raise.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048ea14"
    ]
   },
   {
@@ -3720,7 +3755,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "660a6145b08ac7518f1f7f41"
+    "660a6145b08ac7518f1f7f41",
+    "660a6145b08ac7518f1f7f42"
    ]
   },
   {
@@ -3921,7 +3957,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "660a6145b08ac7518f1f8012"
+    "660a6145b08ac7518f1f8012",
+    "660a6145b08ac7518f1f7f3a"
    ]
   },
   {
@@ -4516,7 +4553,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "660a6145b08ac7518f1f7f3b"
+    "660a6145b08ac7518f1f7f3b",
+    "660a61776a80d359d40dce5c"
    ]
   },
   {

@@ -1792,5 +1792,17 @@
   "Deitado de costas com os joelhos dobrados, eleva o tronco levando uma mão à frente e cruzando o corpo. Desce e alterna.",
   "Abdominais e oblíquos",
   "tronco_coluna"
+ ],
+ "kineti-squat-mini-band": [
+  "Agachamento com mini-band nas coxas",
+  "Em pé, com uma faixa elástica em volta das coxas logo acima dos joelhos, agacha empurrando os joelhos para fora contra a faixa e volta a ficar em pé.",
+  "Glúteos, quadríceps e rotadores externos do quadril",
+  "joelhos"
+ ],
+ "kineti-ball-seated-alternating-arm-raise": [
+  "Elevação alternada dos braços sentado na bola",
+  "Sentado na bola suíça com a coluna neutra, eleva um braço esticado à frente, desce e alterna, mantendo o equilíbrio.",
+  "Estabilidade do tronco e ombros",
+  "tronco_coluna"
  ]
 }

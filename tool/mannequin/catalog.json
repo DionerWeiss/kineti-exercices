@@ -60,6 +60,22 @@
    ]
   },
   {
+   "slug": "kineti-kneel-sit-to-tall-kneel",
+   "lib": "kineti",
+   "name": "De sentado nos calcanhares para ajoelhado",
+   "desc": "Sentado sobre os calcanhares com os braços cruzados, sobe até ficar ajoelhado com o quadril estendido e desce devagar.",
+   "focus": "Glúteos e controle do tronco",
+   "area": "mobilidade_transferencias",
+   "view": "Lateral",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-kneel-sit-to-tall-kneel.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71d99"
+   ]
+  },
+  {
    "slug": "kineti-bed-sit-lean-forearm",
    "lib": "kineti",
    "name": "Inclinação lateral com apoio do braço na cama",
@@ -399,6 +415,24 @@
    ]
   },
   {
+   "slug": "kineti-lateral-lunge",
+   "lib": "kineti",
+   "name": "Avanço lateral",
+   "desc": "Dá um passo largo para o lado, dobra o joelho dessa perna mantendo a outra esticada e volta. Troca de lado.",
+   "focus": "Adutores, glúteos e quadríceps",
+   "area": "quadril_gluteos",
+   "view": "Frontal",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-lateral-lunge.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d74c",
+    "65a9272053a15212d048e849",
+    "673c9258e10df73c8302d77b"
+   ]
+  },
+  {
    "slug": "kineti-side-leg-swing-supported",
    "lib": "kineti",
    "name": "Balanço lateral da perna com apoio",
@@ -728,7 +762,8 @@
     "65a9272153a15212d048ea3a",
     "65a9272153a15212d048ea3b",
     "673c9258e10df73c8302d78e",
-    "673c9258e10df73c8302d78d"
+    "673c9258e10df73c8302d78d",
+    "65b09dc54ad825d0304073e3"
    ]
   },
   {
@@ -812,7 +847,8 @@
    "kineti_slug": "",
    "substitui": "",
    "pocketphysio": [
-    "673c9258e10df73c8302d7e8"
+    "673c9258e10df73c8302d7e8",
+    "673c9258e10df73c8302d779"
    ]
   },
   {
@@ -964,6 +1000,22 @@
    ]
   },
   {
+   "slug": "shallow-split-squat-dumbbells",
+   "lib": "deskbreak",
+   "name": "Avanço no lugar com halteres",
+   "desc": "Com um pé à frente do outro e um halter em cada mão, desce um pouco dobrando os joelhos e sobe, sem mover os pés.",
+   "focus": "Quadríceps e glúteos com carga",
+   "area": "joelhos",
+   "view": "Lateral 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/shallow-split-squat-dumbbells.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6145b08ac7518f1f7f32"
+   ]
+  },
+  {
    "slug": "kineti-backward-lunge",
    "lib": "kineti",
    "name": "Avanço para trás com mãos na cintura",
@@ -997,7 +1049,9 @@
     "673c9258e10df73c8302d77e",
     "65a9272153a15212d048ea39",
     "673c9258e10df73c8302d757",
-    "660a61776a80d359d40dce5b"
+    "660a61776a80d359d40dce5b",
+    "65b09dc54ad825d03040721f",
+    "65a9272153a15212d048ea46"
    ]
   },
   {
@@ -1717,6 +1771,22 @@
    ]
   },
   {
+   "slug": "kineti-hops",
+   "lib": "kineti",
+   "name": "Saltitos no lugar",
+   "desc": "Faz saltos pequenos no lugar, aterrissando macio com os dois pés.",
+   "focus": "Potência e absorção de impacto",
+   "area": "tornozelos_pes",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-hops.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e60c"
+   ]
+  },
+  {
    "slug": "downward-dog-pedal",
    "lib": "deskbreak",
    "name": "V invertido pedalando",
@@ -1863,6 +1933,22 @@
    ]
   },
   {
+   "slug": "kineti-front-kicks",
+   "lib": "kineti",
+   "name": "Chute frontal",
+   "desc": "Eleva o joelho e estende a perna à frente num chute controlado. Volta e troca de perna.",
+   "focus": "Flexores do quadril, quadríceps e equilíbrio",
+   "area": "equilibrio",
+   "view": "Lateral 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-front-kicks.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7ce"
+   ]
+  },
+  {
    "slug": "kineti-feet-together-stance",
    "lib": "kineti",
    "name": "Em pé com os pés juntos",
@@ -1876,7 +1962,11 @@
    "substitui": "feet_together_stance",
    "pocketphysio": [
     "660a6145b08ac7518f1f80d2",
-    "664744bf5c2c1f75d4d71d66"
+    "664744bf5c2c1f75d4d71d66",
+    "660a6144b08ac7518f1f7da8",
+    "660a6144b08ac7518f1f7da5",
+    "664744bf5c2c1f75d4d71d6a",
+    "660a6144b08ac7518f1f7da2"
    ]
   },
   {
@@ -2140,6 +2230,22 @@
    ]
   },
   {
+   "slug": "kineti-ap-weight-shift",
+   "lib": "kineti",
+   "name": "Transferência de peso à frente e atrás",
+   "desc": "Em pé, com um pé à frente do outro, transfere o peso para a perna da frente e depois para a de trás, sem tirar os pés do chão.",
+   "focus": "Equilíbrio e controle postural",
+   "area": "equilibrio",
+   "view": "Lateral",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-ap-weight-shift.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e542"
+   ]
+  },
+  {
    "slug": "kineti-weight-shift-side-supported",
    "lib": "kineti",
    "name": "Transferência lateral de peso com apoio",
@@ -2207,6 +2313,38 @@
    ]
   },
   {
+   "slug": "kineti-walking-inversion",
+   "lib": "kineti",
+   "name": "Caminhada na borda externa dos pés",
+   "desc": "Caminha apoiando o peso na borda de fora dos pés.",
+   "focus": "Controle do tornozelo e propriocepção",
+   "area": "marcha",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-walking-inversion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e61c"
+   ]
+  },
+  {
+   "slug": "kineti-walking-eversion",
+   "lib": "kineti",
+   "name": "Caminhada na borda interna dos pés",
+   "desc": "Caminha apoiando o peso na borda de dentro dos pés.",
+   "focus": "Controle do tornozelo e propriocepção",
+   "area": "marcha",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-walking-eversion.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272053a15212d048e61e"
+   ]
+  },
+  {
    "slug": "kineti-toe-walking",
    "lib": "kineti",
    "name": "Caminhada na ponta dos pés",
@@ -2237,7 +2375,8 @@
    "substitui": "",
    "pocketphysio": [
     "65a9272053a15212d048e536",
-    "65a9272053a15212d048e712"
+    "65a9272053a15212d048e712",
+    "65a9272053a15212d048e603"
    ]
   },
   {
@@ -2270,7 +2409,8 @@
    "substitui": "",
    "pocketphysio": [
     "65b09dc54ad825d030407215",
-    "65b09dc54ad825d03040721a"
+    "65b09dc54ad825d03040721a",
+    "65a9272053a15212d048e5eb"
    ]
   },
   {
@@ -3246,6 +3386,22 @@
    ]
   },
   {
+   "slug": "kineti-plank-jacks",
+   "lib": "kineti",
+   "name": "Prancha com polichinelo",
+   "desc": "Em prancha sobre as mãos, salta afastando e juntando os pés.",
+   "focus": "Tronco e condicionamento",
+   "area": "tronco_coluna",
+   "view": "Elevada",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-plank-jacks.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d7d9"
+   ]
+  },
+  {
    "slug": "knee-plank",
    "lib": "deskbreak",
    "name": "Prancha de joelhos nos antebraços",
@@ -3443,6 +3599,22 @@
    ]
   },
   {
+   "slug": "kineti-russian-twist",
+   "lib": "kineti",
+   "name": "Torção russa",
+   "desc": "Sentado, inclinado para trás com os pés fora do chão, gira o tronco para um lado e para o outro.",
+   "focus": "Oblíquos e estabilidade do tronco",
+   "area": "tronco_coluna",
+   "view": "Frontal 3/4",
+   "props": "—",
+   "video": "build/mannequin/videos/kineti-russian-twist.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "673c9258e10df73c8302d74b"
+   ]
+  },
+  {
    "slug": "kineti-side-lying-shoulder-abduction",
    "lib": "kineti",
    "name": "Abdução de ombro deitado de lado",
@@ -3459,7 +3631,9 @@
     "65b09dc54ad825d03040720e",
     "65b09dc54ad825d030407325",
     "65b09dc54ad825d030407336",
-    "65b09dc54ad825d030407324"
+    "65b09dc54ad825d030407324",
+    "65a9272153a15212d048e926",
+    "65a9272153a15212d048e925"
    ]
   },
   {
@@ -3847,6 +4021,22 @@
    ]
   },
   {
+   "slug": "kineti-standing-shoulder-extension-dumbbells",
+   "lib": "kineti",
+   "name": "Extensão dos ombros em pé com halteres",
+   "desc": "Em pé, segurando halteres com os braços esticados, leva os braços para trás do corpo e volta devagar.",
+   "focus": "Extensores do ombro com carga",
+   "area": "ombros_escapulas",
+   "view": "Lateral",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-standing-shoulder-extension-dumbbells.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "664744bf5c2c1f75d4d71e09"
+   ]
+  },
+  {
    "slug": "kineti-push-up",
    "lib": "kineti",
    "name": "Flexão de braços",
@@ -3922,7 +4112,9 @@
    "video": "build/mannequin/videos/kineti-wall-push-up.mp4",
    "kineti_slug": "wall_push_up",
    "substitui": "wall_push_up",
-   "pocketphysio": []
+   "pocketphysio": [
+    "673c9258e10df73c8302d795"
+   ]
   },
   {
    "slug": "kineti-supine-shoulder-flexion-90",
@@ -4100,6 +4292,22 @@
    "substitui": "",
    "pocketphysio": [
     "660a6145b08ac7518f1f7f50"
+   ]
+  },
+  {
+   "slug": "kineti-upright-row-dumbbells",
+   "lib": "kineti",
+   "name": "Remada alta com halteres",
+   "desc": "Com os halteres à frente das coxas, puxa até a altura do peito com os cotovelos altos e desce devagar.",
+   "focus": "Deltoide e trapézio",
+   "area": "ombros_escapulas",
+   "view": "Frontal 3/4",
+   "props": "Halteres",
+   "video": "build/mannequin/videos/kineti-upright-row-dumbbells.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "660a6144b08ac7518f1f7cd1"
    ]
   },
   {
@@ -4301,6 +4509,23 @@
    "pocketphysio": [
     "65a9272153a15212d048eadb",
     "65a9272153a15212d048e9de"
+   ]
+  },
+  {
+   "slug": "kineti-side-lying-external-rotation",
+   "lib": "kineti",
+   "name": "Rotação externa do ombro deitado de lado",
+   "desc": "Deitado de lado, com o cotovelo de cima dobrado a 90 graus junto ao corpo, gira o antebraço para cima e desce devagar.",
+   "focus": "Rotadores externos do ombro",
+   "area": "ombros_escapulas",
+   "view": "Lateral elevada",
+   "props": "Colchonete",
+   "video": "build/mannequin/videos/kineti-side-lying-external-rotation.mp4",
+   "kineti_slug": "",
+   "substitui": "",
+   "pocketphysio": [
+    "65a9272153a15212d048e938",
+    "65a9272153a15212d048e93c"
    ]
   },
   {

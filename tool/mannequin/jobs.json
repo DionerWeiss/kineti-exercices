@@ -25,7 +25,9 @@
   "props": [
    "wall"
   ],
-  "pocketphysio": []
+  "pocketphysio": [
+   "673c9258e10df73c8302d795"
+  ]
  },
  "kineti-standing-hip-abduction-supported": {
   "lib": "kineti",
@@ -978,7 +980,8 @@
    "65a9272153a15212d048ea3a",
    "65a9272153a15212d048ea3b",
    "673c9258e10df73c8302d78e",
-   "673c9258e10df73c8302d78d"
+   "673c9258e10df73c8302d78d",
+   "65b09dc54ad825d0304073e3"
   ],
   "frame": "full"
  },
@@ -1382,7 +1385,11 @@
   "frame": "full",
   "pocketphysio": [
    "660a6145b08ac7518f1f80d2",
-   "664744bf5c2c1f75d4d71d66"
+   "664744bf5c2c1f75d4d71d66",
+   "660a6144b08ac7518f1f7da8",
+   "660a6144b08ac7518f1f7da5",
+   "664744bf5c2c1f75d4d71d6a",
+   "660a6144b08ac7518f1f7da2"
   ]
  },
  "kineti-semi-tandem-stance": {
@@ -1918,7 +1925,9 @@
    "65b09dc54ad825d03040720e",
    "65b09dc54ad825d030407325",
    "65b09dc54ad825d030407336",
-   "65b09dc54ad825d030407324"
+   "65b09dc54ad825d030407324",
+   "65a9272153a15212d048e926",
+   "65a9272153a15212d048e925"
   ]
  },
  "kineti-side-lying-shoulder-extension": {
@@ -2628,7 +2637,9 @@
    "673c9258e10df73c8302d77e",
    "65a9272153a15212d048ea39",
    "673c9258e10df73c8302d757",
-   "660a61776a80d359d40dce5b"
+   "660a61776a80d359d40dce5b",
+   "65b09dc54ad825d03040721f",
+   "65a9272153a15212d048ea46"
   ]
  },
  "kineti-backward-lunge": {
@@ -2670,7 +2681,8 @@
   ],
   "pocketphysio": [
    "65b09dc54ad825d030407215",
-   "65b09dc54ad825d03040721a"
+   "65b09dc54ad825d03040721a",
+   "65a9272053a15212d048e5eb"
   ]
  },
  "kineti-heel-walking": {
@@ -2681,7 +2693,8 @@
   ],
   "pocketphysio": [
    "65a9272053a15212d048e536",
-   "65a9272053a15212d048e712"
+   "65a9272053a15212d048e712",
+   "65a9272053a15212d048e603"
   ]
  },
  "kineti-toe-walking": {
@@ -2786,7 +2799,8 @@
   "view": "side3q",
   "props": [],
   "pocketphysio": [
-   "673c9258e10df73c8302d7e8"
+   "673c9258e10df73c8302d7e8",
+   "673c9258e10df73c8302d779"
   ]
  },
  "kineti-close-push-up": {
@@ -2906,5 +2920,124 @@
   "pocketphysio": [
    "660a6144b08ac7518f1f7cb5"
   ]
+ },
+ "kineti-side-lying-external-rotation": {
+  "lib": "kineti",
+  "view": "floor",
+  "props": [],
+  "pocketphysio": [
+   "65a9272153a15212d048e938",
+   "65a9272153a15212d048e93c"
+  ]
+ },
+ "kineti-walking-inversion": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "walk"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e61c"
+  ]
+ },
+ "kineti-walking-eversion": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "walk"
+  ],
+  "pocketphysio": [
+   "65a9272053a15212d048e61e"
+  ]
+ },
+ "kineti-ap-weight-shift": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e542"
+  ]
+ },
+ "kineti-front-kicks": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d7ce"
+  ]
+ },
+ "kineti-hops": {
+  "lib": "kineti",
+  "view": "side3q",
+  "props": [],
+  "pocketphysio": [
+   "65a9272053a15212d048e60c"
+  ]
+ },
+ "kineti-upright-row-dumbbells": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [
+   "dumbbell"
+  ],
+  "pocketphysio": [
+   "660a6144b08ac7518f1f7cd1"
+  ]
+ },
+ "kineti-russian-twist": {
+  "lib": "kineti",
+  "view": "front3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d74b"
+  ]
+ },
+ "kineti-lateral-lunge": {
+  "lib": "kineti",
+  "view": "front",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d74c",
+   "65a9272053a15212d048e849",
+   "673c9258e10df73c8302d77b"
+  ]
+ },
+ "kineti-plank-jacks": {
+  "lib": "kineti",
+  "view": "top3q",
+  "props": [],
+  "pocketphysio": [
+   "673c9258e10df73c8302d7d9"
+  ]
+ },
+ "kineti-kneel-sit-to-tall-kneel": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71d99"
+  ]
+ },
+ "kineti-standing-shoulder-extension-dumbbells": {
+  "lib": "kineti",
+  "view": "side",
+  "props": [
+   "dumbbell"
+  ],
+  "pocketphysio": [
+   "664744bf5c2c1f75d4d71e09"
+  ],
+  "move": "kineti-standing-shoulder-extension"
+ },
+ "shallow-split-squat-dumbbells": {
+  "lib": "deskbreak",
+  "view": "side3q",
+  "props": [
+   "dumbbell"
+  ],
+  "pocketphysio": [
+   "660a6145b08ac7518f1f7f32"
+  ],
+  "move": "shallow-split-squat"
  }
 }

@@ -1582,5 +1582,83 @@
   "Em pé, com um halter em cada mão ao lado do corpo, sobe na ponta dos pés e desce devagar.",
   "Panturrilha com carga",
   "tornozelos_pes"
+ ],
+ "kineti-side-lying-external-rotation": [
+  "Rotação externa do ombro deitado de lado",
+  "Deitado de lado, com o cotovelo de cima dobrado a 90 graus junto ao corpo, gira o antebraço para cima e desce devagar.",
+  "Rotadores externos do ombro",
+  "ombros_escapulas"
+ ],
+ "kineti-walking-inversion": [
+  "Caminhada na borda externa dos pés",
+  "Caminha apoiando o peso na borda de fora dos pés.",
+  "Controle do tornozelo e propriocepção",
+  "marcha"
+ ],
+ "kineti-walking-eversion": [
+  "Caminhada na borda interna dos pés",
+  "Caminha apoiando o peso na borda de dentro dos pés.",
+  "Controle do tornozelo e propriocepção",
+  "marcha"
+ ],
+ "kineti-ap-weight-shift": [
+  "Transferência de peso à frente e atrás",
+  "Em pé, com um pé à frente do outro, transfere o peso para a perna da frente e depois para a de trás, sem tirar os pés do chão.",
+  "Equilíbrio e controle postural",
+  "equilibrio"
+ ],
+ "kineti-front-kicks": [
+  "Chute frontal",
+  "Eleva o joelho e estende a perna à frente num chute controlado. Volta e troca de perna.",
+  "Flexores do quadril, quadríceps e equilíbrio",
+  "equilibrio"
+ ],
+ "kineti-hops": [
+  "Saltitos no lugar",
+  "Faz saltos pequenos no lugar, aterrissando macio com os dois pés.",
+  "Potência e absorção de impacto",
+  "tornozelos_pes"
+ ],
+ "kineti-upright-row-dumbbells": [
+  "Remada alta com halteres",
+  "Com os halteres à frente das coxas, puxa até a altura do peito com os cotovelos altos e desce devagar.",
+  "Deltoide e trapézio",
+  "ombros_escapulas"
+ ],
+ "kineti-russian-twist": [
+  "Torção russa",
+  "Sentado, inclinado para trás com os pés fora do chão, gira o tronco para um lado e para o outro.",
+  "Oblíquos e estabilidade do tronco",
+  "tronco_coluna"
+ ],
+ "kineti-lateral-lunge": [
+  "Avanço lateral",
+  "Dá um passo largo para o lado, dobra o joelho dessa perna mantendo a outra esticada e volta. Troca de lado.",
+  "Adutores, glúteos e quadríceps",
+  "quadril_gluteos"
+ ],
+ "kineti-plank-jacks": [
+  "Prancha com polichinelo",
+  "Em prancha sobre as mãos, salta afastando e juntando os pés.",
+  "Tronco e condicionamento",
+  "tronco_coluna"
+ ],
+ "kineti-kneel-sit-to-tall-kneel": [
+  "De sentado nos calcanhares para ajoelhado",
+  "Sentado sobre os calcanhares com os braços cruzados, sobe até ficar ajoelhado com o quadril estendido e desce devagar.",
+  "Glúteos e controle do tronco",
+  "mobilidade_transferencias"
+ ],
+ "kineti-standing-shoulder-extension-dumbbells": [
+  "Extensão dos ombros em pé com halteres",
+  "Em pé, segurando halteres com os braços esticados, leva os braços para trás do corpo e volta devagar.",
+  "Extensores do ombro com carga",
+  "ombros_escapulas"
+ ],
+ "shallow-split-squat-dumbbells": [
+  "Avanço no lugar com halteres",
+  "Com um pé à frente do outro e um halter em cada mão, desce um pouco dobrando os joelhos e sobe, sem mover os pés.",
+  "Quadríceps e glúteos com carga",
+  "joelhos"
  ]
 }

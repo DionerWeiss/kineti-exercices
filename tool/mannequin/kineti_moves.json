@@ -14625,6 +14625,1710 @@
      "hold": 0.6
     }
    ]
+  },
+  {
+   "id": "kineti-side-lying-external-rotation",
+   "en": "Shoulder external rotation, lying on the side",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Lie on your side, top elbow bent at 90 degrees against the body.",
+    "Turn the forearm up.",
+    "Lower slowly."
+   ],
+   "beat": 1.2,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -90,
+      -85,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      0
+     ],
+     "elbowL": [
+      -90,
+      0,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -90,
+      -85,
+      0
+     ],
+     "leg": [
+      -25,
+      0,
+      0
+     ],
+     "knee": [
+      40,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      70,
+      0
+     ],
+     "elbowL": [
+      -90,
+      0,
+      0
+     ],
+     "hold": 0.5
+    }
+   ]
+  },
+  {
+   "id": "kineti-walking-inversion",
+   "en": "Walking on the outer edges of the feet",
+   "amount_en": "1 minute",
+   "steps_en": [
+    "Walk on the outer edges of the feet."
+   ],
+   "beat": 0.6,
+   "once": true,
+   "keys": [
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      18
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      18
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "legR": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      55.0,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "footL": [
+      0,
+      0,
+      18
+     ],
+     "footR": [
+      0,
+      0,
+      18
+     ]
+    },
+    {
+     "legR": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      18
+     ],
+     "legL": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      18.0,
+      0,
+      18
+     ],
+     "armR": [
+      18.0,
+      0,
+      6
+     ],
+     "armL": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.6
+     ]
+    },
+    {
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "legL": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      55.0,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.9
+     ],
+     "footL": [
+      0,
+      0,
+      18
+     ],
+     "footR": [
+      0,
+      0,
+      18
+     ]
+    },
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      18
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      18
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "legR": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      55.0,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.5
+     ],
+     "footL": [
+      0,
+      0,
+      18
+     ],
+     "footR": [
+      0,
+      0,
+      18
+     ]
+    },
+    {
+     "legR": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      18
+     ],
+     "legL": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      18.0,
+      0,
+      18
+     ],
+     "armR": [
+      18.0,
+      0,
+      6
+     ],
+     "armL": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.8
+     ]
+    },
+    {
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "legL": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      55.0,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      2.1
+     ],
+     "footL": [
+      0,
+      0,
+      18
+     ],
+     "footR": [
+      0,
+      0,
+      18
+     ]
+    },
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      18
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      18
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      2.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-walking-eversion",
+   "en": "Walking on the inner edges of the feet",
+   "amount_en": "1 minute",
+   "steps_en": [
+    "Walk on the inner edges of the feet."
+   ],
+   "beat": 0.6,
+   "once": true,
+   "keys": [
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      -14
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      -14
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.0
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "legR": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      55.0,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.3
+     ],
+     "footL": [
+      0,
+      0,
+      -14
+     ],
+     "footR": [
+      0,
+      0,
+      -14
+     ]
+    },
+    {
+     "legR": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      -14
+     ],
+     "legL": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      18.0,
+      0,
+      -14
+     ],
+     "armR": [
+      18.0,
+      0,
+      6
+     ],
+     "armL": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.6
+     ]
+    },
+    {
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "legL": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      55.0,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.9
+     ],
+     "footL": [
+      0,
+      0,
+      -14
+     ],
+     "footR": [
+      0,
+      0,
+      -14
+     ]
+    },
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      -14
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      -14
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.2
+     ]
+    },
+    {
+     "legL": [
+      0,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "legR": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      55.0,
+      0,
+      0
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.5
+     ],
+     "footL": [
+      0,
+      0,
+      -14
+     ],
+     "footR": [
+      0,
+      0,
+      -14
+     ]
+    },
+    {
+     "legR": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      4,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      -14
+     ],
+     "legL": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      12,
+      0,
+      0
+     ],
+     "footL": [
+      18.0,
+      0,
+      -14
+     ],
+     "armR": [
+      18.0,
+      0,
+      6
+     ],
+     "armL": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      1.8
+     ]
+    },
+    {
+     "legR": [
+      0,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "legL": [
+      -25.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      55.0,
+      0,
+      0
+     ],
+     "armR": [
+      0,
+      0,
+      6
+     ],
+     "armL": [
+      0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      2.1
+     ],
+     "footL": [
+      0,
+      0,
+      -14
+     ],
+     "footR": [
+      0,
+      0,
+      -14
+     ]
+    },
+    {
+     "legL": [
+      -22.0,
+      0,
+      0
+     ],
+     "kneeL": [
+      4,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      -14
+     ],
+     "legR": [
+      14.0,
+      0,
+      0
+     ],
+     "kneeR": [
+      12,
+      0,
+      0
+     ],
+     "footR": [
+      18.0,
+      0,
+      -14
+     ],
+     "armL": [
+      18.0,
+      0,
+      6
+     ],
+     "armR": [
+      -18.0,
+      0,
+      6
+     ],
+     "elbow": [
+      -15,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      2.4
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-ap-weight-shift",
+   "en": "Forward and backward weight shift",
+   "amount_en": "10 each way",
+   "steps_en": [
+    "Stand with one foot in front of the other.",
+    "Shift your weight forward, then back."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {
+     "legL": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      17,
+      0,
+      0
+     ],
+     "footR": [
+      -6,
+      0,
+      0
+     ],
+     "touch": [
+      "footL:leg"
+     ]
+    },
+    {
+     "legL": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      17,
+      0,
+      0
+     ],
+     "footR": [
+      -6,
+      0,
+      0
+     ],
+     "touch": [
+      "footL:leg"
+     ],
+     "pos": [
+      0,
+      0,
+      0.09
+     ],
+     "hold": 0.4
+    },
+    {
+     "legL": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      17,
+      0,
+      0
+     ],
+     "footR": [
+      -6,
+      0,
+      0
+     ],
+     "touch": [
+      "footL:leg"
+     ]
+    },
+    {
+     "legL": [
+      -15,
+      0,
+      0
+     ],
+     "legR": [
+      17,
+      0,
+      0
+     ],
+     "footR": [
+      -6,
+      0,
+      0
+     ],
+     "touch": [
+      "footL:leg"
+     ],
+     "pos": [
+      0,
+      0,
+      -0.09
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-front-kicks",
+   "en": "Front kicks",
+   "amount_en": "10 each leg",
+   "steps_en": [
+    "Lift the knee.",
+    "Kick the lower leg forward.",
+    "Bring it back and switch."
+   ],
+   "beat": 0.45,
+   "keys": [
+    {},
+    {
+     "legL": [
+      -60,
+      0,
+      0
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -80,
+      0,
+      0
+     ],
+     "kneeL": [
+      5,
+      0,
+      0
+     ],
+     "footL": [
+      -10,
+      0,
+      0
+     ],
+     "armR": [
+      -50,
+      0,
+      6
+     ],
+     "armL": [
+      30,
+      0,
+      6
+     ],
+     "kneeR": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "legL": [
+      -60,
+      0,
+      0
+     ],
+     "kneeL": [
+      90,
+      0,
+      0
+     ],
+     "kneeR": [
+      8,
+      0,
+      0
+     ]
+    },
+    {},
+    {
+     "legR": [
+      -60,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "kneeL": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -80,
+      0,
+      0
+     ],
+     "kneeR": [
+      5,
+      0,
+      0
+     ],
+     "footR": [
+      -10,
+      0,
+      0
+     ],
+     "armL": [
+      -50,
+      0,
+      6
+     ],
+     "armR": [
+      30,
+      0,
+      6
+     ],
+     "kneeL": [
+      8,
+      0,
+      0
+     ]
+    },
+    {
+     "legR": [
+      -60,
+      0,
+      0
+     ],
+     "kneeR": [
+      90,
+      0,
+      0
+     ],
+     "kneeL": [
+      8,
+      0,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-hops",
+   "en": "Hops on the spot",
+   "amount_en": "20 hops",
+   "steps_en": [
+    "Small jumps on the spot, landing softly on both feet."
+   ],
+   "beat": 0.3,
+   "keys": [
+    {
+     "knee": [
+      25,
+      0,
+      0
+     ],
+     "leg": [
+      -12,
+      0,
+      0
+     ],
+     "foot": [
+      -10,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      0,
+      8
+     ]
+    },
+    {
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "arm": [
+      -35,
+      0,
+      8
+     ],
+     "lift": 0.1
+    }
+   ]
+  },
+  {
+   "id": "kineti-upright-row-dumbbells",
+   "en": "Upright row with dumbbells",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Hold dumbbells in front of the thighs.",
+    "Pull them up to the chest, elbows high.",
+    "Lower slowly."
+   ],
+   "beat": 1.1,
+   "keys": [
+    {
+     "arm": [
+      -10,
+      -90,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ]
+    },
+    {
+     "arm": [
+      -45,
+      -90,
+      60
+     ],
+     "elbow": [
+      -145,
+      0,
+      0
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-russian-twist",
+   "en": "Russian twist",
+   "amount_en": "10 each side",
+   "steps_en": [
+    "Sit leaning back, feet off the floor.",
+    "Turn the trunk to one side, then the other."
+   ],
+   "beat": 0.8,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      -55,
+      0,
+      0
+     ],
+     "leg": [
+      -80,
+      0,
+      0
+     ],
+     "knee": [
+      70,
+      0,
+      0
+     ],
+     "foot": [
+      10,
+      0,
+      0
+     ],
+     "arm": [
+      -50,
+      0,
+      -30
+     ],
+     "elbow": [
+      -80,
+      0,
+      0
+     ],
+     "spine": [
+      10,
+      35,
+      0
+     ]
+    },
+    {
+     "hips": [
+      -55,
+      0,
+      0
+     ],
+     "leg": [
+      -80,
+      0,
+      0
+     ],
+     "knee": [
+      70,
+      0,
+      0
+     ],
+     "foot": [
+      10,
+      0,
+      0
+     ],
+     "arm": [
+      -50,
+      0,
+      -30
+     ],
+     "elbow": [
+      -80,
+      0,
+      0
+     ],
+     "spine": [
+      10,
+      -35,
+      0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "kineti-lateral-lunge",
+   "en": "Lateral lunge",
+   "amount_en": "8 each side",
+   "steps_en": [
+    "Step wide to the side.",
+    "Bend that knee, the other leg straight.",
+    "Push back and switch."
+   ],
+   "beat": 1.2,
+   "keys": [
+    {},
+    {
+     "legL": [
+      -55,
+      0,
+      30
+     ],
+     "kneeL": [
+      85,
+      0,
+      0
+     ],
+     "footL": [
+      -28,
+      0,
+      0
+     ],
+     "legR": [
+      0,
+      0,
+      46.5
+     ],
+     "kneeR": [
+      0,
+      0,
+      0
+     ],
+     "footR": [
+      0,
+      0,
+      20
+     ],
+     "spine": [
+      35,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      8
+     ],
+     "hold": 0.4
+    },
+    {},
+    {
+     "legR": [
+      -55,
+      0,
+      30
+     ],
+     "kneeR": [
+      85,
+      0,
+      0
+     ],
+     "footR": [
+      -28,
+      0,
+      0
+     ],
+     "legL": [
+      0,
+      0,
+      46.5
+     ],
+     "kneeL": [
+      0,
+      0,
+      0
+     ],
+     "footL": [
+      0,
+      0,
+      20
+     ],
+     "spine": [
+      35,
+      0,
+      0
+     ],
+     "arm": [
+      -70,
+      0,
+      8
+     ],
+     "hold": 0.4
+    }
+   ]
+  },
+  {
+   "id": "kineti-plank-jacks",
+   "en": "Plank jacks",
+   "amount_en": "15 reps",
+   "steps_en": [
+    "Hold a plank on the hands.",
+    "Jump the feet apart and back together."
+   ],
+   "beat": 0.35,
+   "view": "floor",
+   "keys": [
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ]
+    },
+    {
+     "hips": [
+      67,
+      0,
+      0
+     ],
+     "arm": [
+      -67,
+      0,
+      6
+     ],
+     "elbow": [
+      0,
+      0,
+      0
+     ],
+     "foot": [
+      30,
+      0,
+      0
+     ],
+     "touch": [
+      "hand:arm"
+     ],
+     "leg": [
+      0,
+      0,
+      14
+     ],
+     "lift": 0.0
+    }
+   ]
+  },
+  {
+   "id": "kineti-kneel-sit-to-tall-kneel",
+   "en": "Kneel sitting to tall kneeling",
+   "amount_en": "10 reps",
+   "steps_en": [
+    "Kneel sitting on your heels, arms crossed.",
+    "Rise to tall kneeling.",
+    "Sit back down slowly."
+   ],
+   "beat": 1.3,
+   "keys": [
+    {
+     "hips": [
+      0,
+      0,
+      0
+     ],
+     "leg": [
+      -75,
+      0,
+      0
+     ],
+     "knee": [
+      165,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "spine": [
+      15,
+      0,
+      0
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ]
+    },
+    {
+     "leg": [
+      0,
+      0,
+      0
+     ],
+     "knee": [
+      90,
+      0,
+      0
+     ],
+     "foot": [
+      40,
+      0,
+      0
+     ],
+     "pos": [
+      0,
+      0,
+      0.4
+     ],
+     "arm": [
+      -20,
+      -75,
+      0
+     ],
+     "elbow": [
+      -130,
+      0,
+      0
+     ],
+     "hold": 0.6
+    }
+   ]
   }
  ]
 }

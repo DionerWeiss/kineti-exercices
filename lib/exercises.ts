@@ -35,6 +35,12 @@ export type ExerciseRow = {
   reviewed_by_email: string | null;
   review_state: ReviewState;
   version_count: number;
+  source: "pocketphysio" | "kineti";
+  video_slug: string | null;
+  video_name: string | null;
+  /** Quantos exercícios usam o mesmo vídeo do manequim (inclui este). */
+  shared_count: number;
+  pocketphysio_ids: string[];
 };
 
 export type ExerciseWithVideo = ExerciseRow & { video_url: string | null };
@@ -59,6 +65,8 @@ export type ListFilters = {
   state: ReviewState | "all";
   area: string | null;
   q: string | null;
+  /** Só os exercícios que usam este vídeo do manequim. */
+  video: string | null;
   page: number;
 };
 
@@ -72,7 +80,7 @@ export function parseFilters(params: Record<string, string | string[] | undefine
     ? (rawState as ListFilters["state"])
     : "pending";
   const page = Math.max(1, Number.parseInt(one("pagina") ?? "1", 10) || 1);
-  return { state, area: one("area"), q: one("q"), page };
+  return { state, area: one("area"), q: one("q"), video: one("video"), page };
 }
 
 // Remove curingas do ILIKE e caracteres que quebram o filtro `or` do PostgREST.
@@ -94,9 +102,10 @@ export async function listExercises(filters: ListFilters) {
   const base = () => {
     let query = supabase.from("exercise_review_list").select("*", { count: "exact" });
     if (filters.area) query = query.eq("area_id", filters.area);
+    if (filters.video) query = query.eq("video_slug", filters.video);
     if (filters.q) {
       const p = likePattern(filters.q);
-      query = query.or(`name.ilike.${p},description.ilike.${p},slug.ilike.${p}`);
+      query = query.or(`name.ilike.${p},description.ilike.${p},video_name.ilike.${p},slug.ilike.${p}`);
     }
     return query;
   };
@@ -167,14 +176,24 @@ export async function getExercise(slug: string) {
   return { exercise: exercise as ExerciseRow, versions: withUrls };
 }
 
-/** Lista enxuta para o seletor da tela de upload. */
+export type ExerciseOption = Pick<
+  ExerciseRow,
+  "slug" | "name" | "area_name" | "review_state" | "version_count" | "video_name" | "shared_count"
+>;
+
+/** Lista enxuta para o seletor da tela de upload (o PostgREST devolve até 1.000 linhas por vez). */
 export async function listExerciseOptions() {
   const supabase = await createClient();
-  const { data, error } = await supabase
-    .from("exercise_review_list")
-    .select("slug, name, area_name, review_state, version_count")
-    .order("name")
-    .range(0, 4999);
-  if (error) throw error;
-  return data as Pick<ExerciseRow, "slug" | "name" | "area_name" | "review_state" | "version_count">[];
+  const options: ExerciseOption[] = [];
+  for (let from = 0; ; from += 1000) {
+    const { data, error } = await supabase
+      .from("exercise_review_list")
+      .select("slug, name, area_name, review_state, version_count, video_name, shared_count")
+      .order("name")
+      .order("slug")
+      .range(from, from + 999);
+    if (error) throw error;
+    options.push(...(data as ExerciseOption[]));
+    if (data.length < 1000) return options;
+  }
 }

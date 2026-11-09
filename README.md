@@ -13,6 +13,8 @@ O pipeline que gera os vídeos (manequim, Blender) continua em [`tool/`](tool/RE
 
 ## Como funciona
 
+- **Exercícios** são os do PocketPhysio que o manequim atende (exercícios com o mesmo nome e o mesmo vídeo viram um só, guardando todos os ids), mais os vídeos só do Kineti. Hoje são 1.223 exercícios para 688 vídeos.
+- Um vídeo do manequim fica uma vez no R2 (`mannequin/<video>.mp4`) e é a versão 1 de todos os exercícios que o usam. **A revisão é por exercício**: o mesmo vídeo pode servir para um exercício e não para outro. Um upload novo vale só para o exercício escolhido.
 - Cada upload cria uma linha em `exercise_videos`. O banco define `version`, quem enviou, quem revisou e as datas; o cliente só pode alterar `status` e `rejection_reason` (permissão por coluna).
 - Uma check constraint impede `rejected` sem motivo (mínimo de 3 caracteres).
 - A view `exercise_review_list` junta cada exercício à sua versão mais recente.
@@ -22,7 +24,7 @@ O pipeline que gera os vídeos (manequim, Blender) continua em [`tool/`](tool/RE
 
 ### 1. Supabase
 
-1. Crie um projeto e rode [`supabase/migrations/20261108000000_exercise_review.sql`](supabase/migrations/20261108000000_exercise_review.sql) no SQL Editor (ou use `supabase db push`).
+1. Crie um projeto e rode, em ordem, os arquivos de [`supabase/migrations/`](supabase/migrations/) no SQL Editor (ou use `supabase db push`).
 2. Em **Authentication → Sign In / Providers**, desligue **Allow new users to sign up**.
 3. Em **Authentication → URL Configuration**, defina o **Site URL** (ex.: `http://localhost:3000`) e adicione `http://localhost:3000/auth/confirm` às Redirect URLs.
 4. Em **Authentication → Email Templates**, troque o link dos templates abaixo para que o login aconteça no servidor:
@@ -41,12 +43,12 @@ O pipeline que gera os vídeos (manequim, Blender) continua em [`tool/`](tool/RE
 ```bash
 cp .env.example .env.local   # preencha Supabase e R2
 npm install
-npm run seed                 # importa áreas e os 688 exercícios de tool/mannequin/catalog.json
-npm run seed -- --videos     # opcional: sobe os MP4 de build/mannequin/videos como versão 1
+npm run seed                 # importa áreas e exercícios (tool/mannequin/catalog.json + research/pocketphysio)
+npm run seed -- --videos     # opcional: sobe os MP4 de build/mannequin/videos e liga cada exercício ao seu
 npm run dev
 ```
 
-O seed é idempotente: atualiza os exercícios existentes e só envia vídeo para exercícios que ainda não têm nenhuma versão. Use `--dry-run` para ver o que ele faria.
+O seed é idempotente: atualiza os exercícios existentes, só envia arquivos que ainda não estão no R2 e só liga vídeo a exercícios sem nenhuma versão. `--prune` apaga exercícios que saíram do catálogo, mas preserva os que já foram revisados ou receberam upload. Use `--dry-run` para ver o que ele faria.
 
 ## Scripts
 
@@ -55,7 +57,7 @@ O seed é idempotente: atualiza os exercícios existentes e só envia vídeo par
 | `npm run dev` | Servidor de desenvolvimento |
 | `npm run build` | Build de produção |
 | `npm run lint` / `npm run typecheck` | ESLint e TypeScript |
-| `npm run seed` | Importa o catálogo para o Supabase (`--videos`, `--dry-run`, `--catalog=<arquivo>`) |
+| `npm run seed` | Importa o catálogo para o Supabase (`--videos`, `--prune`, `--dry-run`) |
 
 ## Notas
 

@@ -44,7 +44,28 @@ async function ExerciseDetail({ params }: { params: PageProps<"/exercicios/[slug
               <span className="font-medium text-foreground/70">Foco:</span> {e.focus}
             </p>
           ) : null}
-          <p className="mt-2 font-mono text-xs text-muted">{e.slug}</p>
+          {e.video_slug ? (
+            <p className="mt-2 text-sm text-muted">
+              Vídeo do manequim: <span className="font-medium text-foreground/80">{e.video_name}</span>
+              {e.shared_count > 1 ? (
+                <>
+                  {" · "}
+                  <Link
+                    href={`/exercicios?status=all&video=${encodeURIComponent(e.video_slug)}`}
+                    className="text-brand hover:underline"
+                  >
+                    usado por mais {e.shared_count - 1}
+                  </Link>
+                </>
+              ) : null}
+            </p>
+          ) : null}
+          <p className="mt-2 font-mono text-xs text-muted">
+            {e.slug}
+            {e.pocketphysio_ids.length
+              ? ` · PocketPhysio ${e.pocketphysio_ids.length > 1 ? `(${e.pocketphysio_ids.length} fundidos)` : ""} ${e.pocketphysio_ids.join(", ")}`
+              : ""}
+          </p>
         </div>
         <Link
           href={`/upload?exercicio=${encodeURIComponent(e.slug)}`}

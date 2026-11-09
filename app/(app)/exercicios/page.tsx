@@ -34,6 +34,7 @@ function toQuery(filters: ListFilters, patch: Partial<ListFilters>) {
   params.set("status", next.state);
   if (next.area) params.set("area", next.area);
   if (next.q) params.set("q", next.q);
+  if (next.video) params.set("video", next.video);
   if (next.page > 1) params.set("pagina", String(next.page));
   return `/exercicios?${params}`;
 }
@@ -71,8 +72,20 @@ async function ExerciseList({ searchParams }: { searchParams: PageProps<"/exerci
         })}
       </nav>
 
+      {filters.video ? (
+        <p className="flex flex-wrap items-center gap-2 text-sm">
+          <span className="rounded-full bg-brand-soft px-3 py-1 text-brand">
+            Exercícios que usam o vídeo <span className="font-mono">{filters.video}</span>
+          </span>
+          <Link href={toQuery(filters, { video: null, page: 1 })} className="text-muted hover:underline">
+            limpar
+          </Link>
+        </p>
+      ) : null}
+
       <form action="/exercicios" className="flex flex-wrap gap-2">
         <input type="hidden" name="status" value={filters.state} />
+        {filters.video ? <input type="hidden" name="video" value={filters.video} /> : null}
         <input type="hidden" name="pagina" value="1" />
         <input
           type="search"

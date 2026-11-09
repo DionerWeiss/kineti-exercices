@@ -50,6 +50,17 @@ export function ExerciseCard({ exercise }: { exercise: ExerciseWithVideo }) {
         </div>
 
         <p className="text-sm text-foreground/80">{e.description}</p>
+        {e.shared_count > 1 && e.video_slug ? (
+          <p className="text-xs text-muted">
+            Vídeo “{e.video_name}” compartilhado com{" "}
+            <Link
+              href={`/exercicios?status=all&video=${encodeURIComponent(e.video_slug)}`}
+              className="text-brand hover:underline"
+            >
+              {e.shared_count - 1} {e.shared_count === 2 ? "outro exercício" : "outros exercícios"}
+            </Link>
+          </p>
+        ) : null}
         {e.focus ? (
           <p className="text-xs text-muted">
             <span className="font-medium text-foreground/70">Foco:</span> {e.focus}

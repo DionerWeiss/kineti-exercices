@@ -4,17 +4,11 @@ import Link from "next/link";
 import { useMemo, useRef, useState } from "react";
 import { confirmUpload, createUploadUrl } from "@/app/actions/upload";
 import { StatusBadge } from "@/components/status-badge";
-import type { ReviewState } from "@/lib/exercises";
+import type { ExerciseOption } from "@/lib/exercises";
 import { formatBytes } from "@/lib/format";
 import { ACCEPTED_TYPES, MAX_UPLOAD_BYTES } from "@/lib/upload-rules";
 
-type Option = {
-  slug: string;
-  name: string;
-  area_name: string | null;
-  review_state: ReviewState;
-  version_count: number;
-};
+type Option = ExerciseOption;
 
 type Phase =
   | { kind: "idle" }
@@ -62,7 +56,7 @@ export function UploadForm({ options, initialSlug }: { options: Option[]; initia
   const matches = useMemo(() => {
     const q = normalize(query.trim());
     const list = q
-      ? options.filter((o) => normalize(`${o.name} ${o.area_name ?? ""} ${o.slug}`).includes(q))
+      ? options.filter((o) => normalize(`${o.name} ${o.area_name ?? ""} ${o.video_name ?? ""} ${o.slug}`).includes(q))
       : options;
     return list.slice(0, 50);
   }, [options, query]);
@@ -131,6 +125,12 @@ export function UploadForm({ options, initialSlug }: { options: Option[]; initia
                   ? "primeiro vídeo"
                   : `vai virar a versão ${selected.version_count + 1}`}
               </p>
+              {selected.shared_count > 1 ? (
+                <p className="mt-1 text-xs text-muted">
+                  Hoje usa o vídeo “{selected.video_name}”, junto com mais {selected.shared_count - 1}. O envio
+                  novo vale só para este exercício.
+                </p>
+              ) : null}
             </div>
             <button
               type="button"

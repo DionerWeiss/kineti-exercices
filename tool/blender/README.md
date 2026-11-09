@@ -42,4 +42,4 @@ python3 tool/render_3d.py --all                     # todos, menos os close-ups 
 ## Ainda não coberto
 
 - Os close-ups de mão (lote 4) têm desenho próprio e precisam de uma cena 3D com os dedos do personagem.
-- O rolo de toalha do arco curto sai como os painéis e as barras que o builder já desenha, não como um cilindro de tecido.
+- O rolo de toalha do arco curto é um cilindro sob o joelho. O painel desenhado pelo builder é ignorado para não virar uma tábua ao lado do rolo.

@@ -233,6 +233,12 @@ def gadgets(slug, samples):
         sides = ('near', 'far') if slug == 'seated_overhead_press' else ('near',)
         for side in sides:
             dumbbell(side, seated.DUMBBELL_HALF)
+    elif slug == 'short_arc_quad':
+        knee = samples[0]['near leg'][1]
+        radius = 0.075
+        cy = knee[1] - kl.W_LEG / 2 - radius - 0.01
+        items.append({'type': 'towel', 'name': 'towel roll', 'radius': radius,
+                      'keys': [{'fr': s['fr'], 'a': [knee[0], cy, -0.02], 'b': [knee[0], cy, 0.26]} for s in samples]})
     elif slug == 'seated_knee_extension_ankle_weight':
         keys = []
         for s in samples:

@@ -60,7 +60,11 @@ def render(slug, area, still, width, arm):
         raise SystemExit(f'{slug}: Blender failed')
     frames = sorted(work.glob('f_*.png'))
     if still:
-        print(f'{slug}: {len(frames)} stills in {work.relative_to(REPO)} ({time.time() - t0:.0f} s)')
+        print(f'{slug}: {len(frames)} stills in {work.relative_to(REPO)} ({time.time() - t0:.0f} s)', flush=True)
+        index = REPO / 'build' / '3d' / 'index.json'
+        data = json.loads(index.read_text()) if index.exists() else {}
+        data[slug] = [p.name for p in frames]
+        index.write_text(json.dumps(data, indent=1))
         return
     out = REPO / 'videos' / area / f'{slug}.mp4'
     out.parent.mkdir(parents=True, exist_ok=True)

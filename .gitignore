@@ -1,3 +1,20 @@
+# Pipeline de vídeo
 __pycache__/
 *.pyc
 build/
+
+# Next.js app
+/node_modules
+/.next/
+/out/
+/coverage
+*.tsbuildinfo
+next-env.d.ts
+.vercel
+.DS_Store
+*.pem
+npm-debug.log*
+
+# env (o .env.example é versionado)
+.env*
+!.env.example

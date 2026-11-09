@@ -168,11 +168,17 @@ def build_set(props):
     for p in props:
         n, t = p['name'], p['type']
         if t == 'box':
+            if 'towel' in n:
+                continue
             rig_box(n, p['min'], p['max'])
         elif t == 'bar':
+            if 'towel' in n:
+                continue
             for i, (a, b) in enumerate(zip(p['points'], p['points'][1:])):
                 bar(f'{n} {i}', a, b, p['width'], material_for(n))
         elif t == 'panel':
+            if 'towel' in n:
+                continue
             panel(n, p['points'], material_for(n))
         elif t == 'sphere':
             sphere(n, p['center'], p['radius'], tinted(MAT['soft'], (0.36, 0.72, 0.98), (0.16, 0.45, 0.82), 'Ball'))
@@ -281,6 +287,18 @@ def build_gadgets(items):
                 poly.use_smooth = True
             for k in spec['keys']:
                 place_along(o, k['a'], k['b'])
+                key_pose(o, k['fr'] + 1)
+        elif kind == 'towel':
+            mat = studio_material('Towel', (0.86, 0.84, 0.78), 0.85)
+            bpy.ops.mesh.primitive_cylinder_add(vertices=24, radius=spec['radius'], depth=1.0)
+            o = bpy.context.active_object
+            o.name = spec['name']
+            o.data.materials.append(mat)
+            for poly in o.data.polygons:
+                poly.use_smooth = True
+            for k in spec['keys']:
+                a, b, d = place_along(o, k['a'], k['b'])
+                o.scale = (1.0, 1.0, max(d.length, 1e-3))
                 key_pose(o, k['fr'] + 1)
 
 
@@ -532,6 +550,7 @@ def pose_frame(s, lift=0.0):
     pose, heads, solved = {}, {}, {}
     flat_hands = set()
     pose_frame.hand_aim = {}
+    pose_frame.foot_raise = {}
     for name in ORDER:
         b = arm.bones[name]
         parent = b.parent.name if b.parent else None
@@ -577,6 +596,15 @@ def pose_frame(s, lift=0.0):
             Q[name] = swing(Q[parent], name, solved[name] - head)
         elif name.startswith('thigh_'):
             _, kn, an = (M(q) for q in s[f'{side} leg'])
+            heel, toe = s[f'{side} foot']
+            low = min(heel[1], toe[1])
+            tops = [top_y for x0, x1, z0, z1, top_y in SURFACES
+                    if x0 - 0.08 < toe[0] < x1 + 0.08 and z0 - 0.12 < toe[2] < z1 + 0.12 and -0.02 < low - top_y < 0.12]
+            if tops:
+                # The shoe hangs below the toe bone. Meet the highest support under the foot.
+                an = Vector(an)
+                pose_frame.foot_raise[sfx] = (max(tops) + 0.028) - low
+                an.z += pose_frame.foot_raise[sfx]
             knee, ankle = two_bone(head, an, LEN[name], LEN[f'calf_{sfx}'], kn)
             Q[name] = swing(Q[parent], name, knee - head)
             solved[f'calf_{sfx}'] = ankle
@@ -607,6 +635,9 @@ def pose_frame(s, lift=0.0):
         elif name.startswith('foot_'):
             heel, toe = (M(q) for q in s[f'{side} foot'])
             ankle_rig = M(s[f'{side} leg'][2])
+            dz = pose_frame.foot_raise.get(sfx, 0.0)
+            toe.z += dz
+            ankle_rig.z += dz
             Q[name] = swing(Q[parent], name, toe - ankle_rig)
         Q.setdefault(name, Q[parent] if parent else Quaternion())
         pose[name] = Matrix.Translation(head) @ (Q[name] @ REST_ROT[name]).to_matrix().to_4x4()

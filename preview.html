@@ -74,42 +74,30 @@
 <body>
 <div class="wrap">
   <h1>Preview 3D</h1>
-  <p class="lead">Quadros da versão com estúdio e acessórios. Cada faixa passa sozinha pelos quatro momentos do exercício.</p>
+  <p class="lead">Versão com o pé na superfície, a mão fora do corpo e os acessórios no lugar. Cada faixa passa pelos quatro momentos. Os exercícios entram aqui conforme o render termina.</p>
   <div class="grid" id="grid"></div>
 </div>
 <script>
-const EXERCISES = [
-  { slug: "bridge", title: "Ponte", note: "Mãos no colchão, quadril sobe.", frames: ["f_0001", "f_0045", "f_0091", "f_0137"] },
-  { slug: "seated_shoulder_abduction", title: "Abdução de ombro", note: "Os dois braços abrem.", frames: ["f_0001", "f_0043", "f_0087", "f_0130"] },
-  { slug: "adductor_ball_squeeze", title: "Bola entre os joelhos", note: "A bola achata quando os joelhos fecham.", frames: ["f_0001", "f_0045", "f_0090", "f_0135"] },
-  { slug: "seated_overhead_press", title: "Desenvolvimento", note: "Halteres na palma.", frames: ["f_0001", "f_0040", "f_0081", "f_0121"] },
-  { slug: "elbow_flexion_dumbbell", title: "Flexão de cotovelo", note: "Um haltere na mão que dobra.", frames: ["f_0001", "f_0043", "f_0087", "f_0130"] },
-  { slug: "seated_knee_extension_ankle_weight", title: "Extensão de joelho", note: "Tornozeleira sobe com a perna.", frames: ["f_0001", "f_0045", "f_0090", "f_0135"] },
-  { slug: "wall_ball_squat", title: "Agachamento na parede", note: "Bola grande nas costas.", frames: ["f_0001", "f_0046", "f_0093", "f_0139"] }
-];
-
 const grid = document.getElementById("grid");
 const players = [];
+const shown = new Set();
 
-for (const ex of EXERCISES) {
-  const src = (name) => `build/3d/${ex.slug}/${name}.png`;
+function addExercise(slug, title, frames) {
+  if (shown.has(slug)) return;
+  shown.add(slug);
+  const src = (name) => `build/3d/${slug}/${name}`;
   const article = document.createElement("article");
   article.innerHTML = `
     <div class="stage"><img alt=""></div>
-    <div class="meta">
-      <h2></h2>
-      <button class="play" type="button">Pausar</button>
-    </div>
-    <p class="note"></p>
+    <div class="meta"><h2></h2><button class="play" type="button">Pausar</button></div>
     <div class="frames"></div>`;
-  article.querySelector("h2").textContent = ex.title;
-  article.querySelector(".note").textContent = ex.note;
+  article.querySelector("h2").textContent = title;
   const main = article.querySelector(".stage img");
   const strip = article.querySelector(".frames");
-  const buttons = ex.frames.map((name, i) => {
+  const buttons = frames.map((name, i) => {
     const b = document.createElement("button");
     b.type = "button";
-    b.innerHTML = `<img alt="Quadro ${i + 1} de ${ex.title}">`;
+    b.innerHTML = `<img alt="Quadro ${i + 1} de ${title}">`;
     b.querySelector("img").src = src(name);
     b.addEventListener("click", () => show(i, true));
     strip.appendChild(b);
@@ -119,8 +107,8 @@ for (const ex of EXERCISES) {
   let paused = false;
   function show(i, fromClick) {
     index = i;
-    main.src = src(ex.frames[i]);
-    main.alt = `${ex.title}, quadro ${i + 1}`;
+    main.src = src(frames[i]);
+    main.alt = `${title}, quadro ${i + 1}`;
     buttons.forEach((b, n) => {
       if (n === i) b.setAttribute("aria-current", "true");
       else b.removeAttribute("aria-current");
@@ -133,10 +121,23 @@ for (const ex of EXERCISES) {
     article.querySelector(".play").textContent = paused ? "Continuar" : "Pausar";
   });
   show(0, false);
-  players.push(() => { if (!paused) show((index + 1) % ex.frames.length, false); });
+  players.push(() => { if (!paused) show((index + 1) % frames.length, false); });
   grid.appendChild(article);
 }
 
+async function refresh() {
+  const [cat, index] = await Promise.all([
+    fetch("catalog.json").then((r) => r.json()),
+    fetch("build/3d/index.json?" + Date.now()).then((r) => r.json())
+  ]);
+  const names = Object.fromEntries(cat.exercises.map((e) => [e.slug, e.name]));
+  for (const ex of cat.exercises) {
+    if (index[ex.slug]) addExercise(ex.slug, names[ex.slug] || ex.slug, index[ex.slug]);
+  }
+}
+
+refresh();
+setInterval(refresh, 20000);
 setInterval(() => players.forEach((step) => step()), 700);
 </script>
 </body>

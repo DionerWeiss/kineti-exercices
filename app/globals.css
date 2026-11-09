@@ -1,0 +1,51 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f4f6f9;
+  --surface: #ffffff;
+  --surface-muted: #eef2f6;
+  --foreground: #0d1b2a;
+  --muted: #5b6b7f;
+  --border: #dde3ea;
+  --brand: #2563eb;
+  --brand-strong: #1d4ed8;
+  --brand-soft: #eff6ff;
+  --ink: #0d1b2a;
+  --approve: #15803d;
+  --approve-soft: #e8f6ee;
+  --reject: #c2410c;
+  --reject-soft: #fdf0e8;
+  --pending: #a16207;
+  --pending-soft: #fdf6e3;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-border: var(--border);
+  --color-brand: var(--brand);
+  --color-brand-strong: var(--brand-strong);
+  --color-brand-soft: var(--brand-soft);
+  --color-ink: var(--ink);
+  --color-approve: var(--approve);
+  --color-approve-soft: var(--approve-soft);
+  --color-reject: var(--reject);
+  --color-reject-soft: var(--reject-soft);
+  --color-pending: var(--pending);
+  --color-pending-soft: var(--pending-soft);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 2px;
+}

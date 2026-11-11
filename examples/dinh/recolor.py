@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """Recolour Dinh tank tops to Kineti blue. Motion, layers and timing stay as-is.
 
-Each source file uses its own tank hexes (the Split Jump pair #E96A2A/#CC5E28 is
-absent here). Only those clothing fills are remapped. Skin, shorts, shoes and
-props are left alone. If a listed source hex is missing, or an unexpected
-clothing orange remains after the pass, the file is refused.
+Each source file uses its own tank hexes. Only those clothing fills are remapped.
+Skin, shorts, shoes and props are left alone. If a listed source hex is missing,
+or remains after the pass, the file is refused.
 """
 
 from __future__ import annotations
@@ -19,8 +18,9 @@ SRC = ROOT / "src"
 PRIMARY = "#2563EB"
 SHADOW = "#1E40AF"
 
-# Clothing fills only, discovered from layer names (ao / than / yem nguc / Thân).
+# Clothing fills only (ao / than / bra / yem nguc). Discovered per file.
 MAPS: dict[str, dict[str, str]] = {
+    # lote 1
     "cobra": {
         "#DB0000": PRIMARY,
     },
@@ -45,6 +45,71 @@ MAPS: dict[str, dict[str, str]] = {
         "#F81A48": PRIMARY,
         "#F73260": SHADOW,
         "#E80000": SHADOW,
+    },
+    # lote 2
+    "walking_hip_opener": {
+        "#F07561": PRIMARY,
+        "#D95E52": SHADOW,
+    },
+    "split_jump": {
+        "#E96A2A": PRIMARY,
+        "#CC5E28": SHADOW,
+    },
+    "t_plank": {
+        "#E96A2A": PRIMARY,
+        "#CC5E28": SHADOW,
+    },
+    "burpee_and_jump": {
+        "#E96A2A": PRIMARY,
+        "#CC5E28": SHADOW,
+    },
+    "press_up_toe_tap": {
+        "#EE7561": PRIMARY,
+        "#F07561": PRIMARY,
+    },
+    "box_jump": {
+        "#F07561": PRIMARY,
+    },
+    "clean_and_press": {
+        "#F07561": PRIMARY,
+        "#D95E52": SHADOW,
+    },
+    "military_push_ups": {
+        "#D66228": PRIMARY,
+    },
+    "squat_kicks": {
+        "#D66428": PRIMARY,
+        "#B43C26": SHADOW,
+    },
+    "staggered_push_ups": {
+        "#D66228": PRIMARY,
+    },
+    "punches": {
+        "#D66228": PRIMARY,
+    },
+    "wide_arm_push_up": {
+        "#D66228": PRIMARY,
+    },
+    "jumping_squats": {
+        "#D66228": PRIMARY,
+    },
+    "frog_press": {
+        "#DB0000": PRIMARY,
+        "#AF0000": SHADOW,
+    },
+    "seated_abs_circles": {
+        "#D66228": PRIMARY,
+    },
+    "inchworm": {
+        "#D66428": PRIMARY,
+    },
+    "jumping_jack": {
+        "#D66227": PRIMARY,
+        "#C95728": PRIMARY,
+        "#B43D26": SHADOW,
+    },
+    "lunge": {
+        "#E80000": PRIMARY,
     },
 }
 

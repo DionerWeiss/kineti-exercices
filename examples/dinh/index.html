@@ -24,6 +24,7 @@
   .wrap { max-width: 1180px; margin: 0 auto; padding: 32px 20px 64px; }
   h1 { margin: 0 0 8px; font-size: clamp(1.6rem, 3vw, 2.2rem); letter-spacing: -0.02em; }
   .lead { margin: 0 0 28px; color: var(--muted); max-width: 72ch; }
+  h2.section { margin: 28px 0 12px; font-size: 1.1rem; color: var(--accent-ink); }
   .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 340px), 1fr)); gap: 16px; }
   article { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 14px; display: grid; gap: 10px; align-content: start; }
   .stage { background: #fff; border-radius: 10px; aspect-ratio: 1; overflow: hidden; cursor: pointer; }
@@ -38,12 +39,17 @@
 <body>
 <div class="wrap">
   <h1>Dinh · azul Kineti</h1>
-  <p class="lead">Seis loops do Dinh Bui Xuan com o movimento original. Só a regata (ou o tronco colorido) foi trocada pelo azul do Kineti. Clique para pausar. Créditos em <code>CREDITS.md</code>.</p>
-  <div class="grid" id="grid"></div>
+  <p class="lead">Loops do Dinh Bui Xuan com o movimento original. Só a regata (ou o tronco colorido) foi trocada pelo azul do Kineti. Clique para pausar. Créditos em <code>CREDITS.md</code>.</p>
+
+  <h2 class="section">Lote 1 · mais simples</h2>
+  <div class="grid" id="lote1"></div>
+
+  <h2 class="section">Lote 2 · restante</h2>
+  <div class="grid" id="lote2"></div>
 </div>
 <script src="vendor/lottie.min.js"></script>
 <script>
-const SAMPLE = [
+const LOTE1 = [
   { slug: 'forearm_stretch', name: 'Alongamento de antebraço', place: 'Em pé', desc: 'Estende um braço à frente e puxa a mão com a outra, alongando o antebraço.' },
   { slug: 'shoulder_stretch', name: 'Alongamento de ombro', place: 'Em pé', desc: 'Cruza um braço na frente do peito e puxa com o outro, alongando o ombro.' },
   { slug: 'cobra', name: 'Cobra', place: 'Deitado de bruços', desc: 'De bruços, apoia as mãos e eleva o tronco em extensão, depois desce.' },
@@ -52,43 +58,69 @@ const SAMPLE = [
   { slug: 'step_up_on_chair', name: 'Subida na cadeira', place: 'Em pé', desc: 'Sobe com um pé na cadeira, sobe o outro e desce, alternando o ciclo.' }
 ];
 
-const grid = document.getElementById('grid');
+const LOTE2 = [
+  { slug: 'walking_hip_opener', name: 'Abertura de quadril caminhando', place: 'Em pé', desc: 'Passos largos com abertura de quadril, tronco ereto.' },
+  { slug: 'lunge', name: 'Afundo', place: 'Em pé', desc: 'Avança uma perna, desce o joelho de trás e volta.' },
+  { slug: 'military_push_ups', name: 'Flexão militar', place: 'Chão', desc: 'Flexão com o corpo alinhado, desce e sobe o peito.' },
+  { slug: 'wide_arm_push_up', name: 'Flexão com braços abertos', place: 'Chão', desc: 'Flexão com as mãos mais afastadas que os ombros.' },
+  { slug: 'staggered_push_ups', name: 'Flexão escalonada', place: 'Chão', desc: 'Flexão com uma mão mais à frente que a outra.' },
+  { slug: 't_plank', name: 'Prancha em T', place: 'Chão', desc: 'Da prancha, gira o tronco e abre o braço para o teto.' },
+  { slug: 'press_up_toe_tap', name: 'Prancha com toque do pé', place: 'Chão', desc: 'Em prancha, toca o pé para o lado e volta.' },
+  { slug: 'punches', name: 'Soco', place: 'Em pé', desc: 'Soca alternando os braços com o tronco estável.' },
+  { slug: 'frog_press', name: 'Frog press', place: 'Deitado', desc: 'Deitado, joelhos abertos, estende e flexiona as pernas.' },
+  { slug: 'seated_abs_circles', name: 'Círculos abdominais sentado', place: 'Sentado', desc: 'Sentado, pernas elevadas, desenha círculos com o tronco.' },
+  { slug: 'squat_kicks', name: 'Agachamento com chute', place: 'Em pé', desc: 'Agacha e, na subida, chuta uma perna à frente.' },
+  { slug: 'jumping_squats', name: 'Agachamento com salto', place: 'Em pé', desc: 'Agacha e salta, aterrissando de volta no agachamento.' },
+  { slug: 'jumping_jack', name: 'Polichinelo', place: 'Em pé', desc: 'Abre e fecha pernas e braços no salto.' },
+  { slug: 'split_jump', name: 'Split jump', place: 'Em pé', desc: 'Salta alternando a perna da frente no ar.' },
+  { slug: 'box_jump', name: 'Salto na caixa', place: 'Em pé', desc: 'Salta sobre a caixa, sobe e desce com controle.' },
+  { slug: 'burpee_and_jump', name: 'Burpee com salto', place: 'Em pé', desc: 'Agacha, prancha, flexão, volta e salta.' },
+  { slug: 'inchworm', name: 'Inchworm', place: 'Em pé', desc: 'Com as mãos no chão, anda até a prancha e volta.' },
+  { slug: 'clean_and_press', name: 'Clean and press com barra', place: 'Em pé', desc: 'Puxa a barra até os ombros e empurra acima da cabeça.' }
+];
+
 const autoplay = !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-SAMPLE.forEach(ex => {
-  const stage = document.createElement('div');
-  stage.className = 'stage';
-  stage.setAttribute('role', 'img');
-  stage.setAttribute('aria-label', ex.name);
-  const article = document.createElement('article');
-  article.innerHTML = `
-    <div class="head">
-      <span class="chip">${ex.place}</span>
-      <h2>${ex.name}</h2>
-    </div>`;
-  article.appendChild(stage);
-  const desc = document.createElement('p');
-  desc.className = 'desc';
-  desc.textContent = ex.desc;
-  article.appendChild(desc);
-  const meta = document.createElement('p');
-  meta.className = 'meta';
-  meta.textContent = ex.slug + '.json';
-  article.appendChild(meta);
-  grid.appendChild(article);
+function mount(list, gridId) {
+  const grid = document.getElementById(gridId);
+  list.forEach(ex => {
+    const stage = document.createElement('div');
+    stage.className = 'stage';
+    stage.setAttribute('role', 'img');
+    stage.setAttribute('aria-label', ex.name);
+    const article = document.createElement('article');
+    article.innerHTML = `
+      <div class="head">
+        <span class="chip">${ex.place}</span>
+        <h2>${ex.name}</h2>
+      </div>`;
+    article.appendChild(stage);
+    const desc = document.createElement('p');
+    desc.className = 'desc';
+    desc.textContent = ex.desc;
+    article.appendChild(desc);
+    const meta = document.createElement('p');
+    meta.className = 'meta';
+    meta.textContent = ex.slug + '.json';
+    article.appendChild(meta);
+    grid.appendChild(article);
 
-  const anim = lottie.loadAnimation({
-    container: stage,
-    renderer: 'svg',
-    loop: true,
-    autoplay,
-    path: ex.slug + '.json'
+    const anim = lottie.loadAnimation({
+      container: stage,
+      renderer: 'svg',
+      loop: true,
+      autoplay,
+      path: ex.slug + '.json'
+    });
+    stage.addEventListener('click', () => {
+      if (anim.isPaused) anim.play();
+      else anim.pause();
+    });
   });
-  stage.addEventListener('click', () => {
-    if (anim.isPaused) anim.play();
-    else anim.pause();
-  });
-});
+}
+
+mount(LOTE1, 'lote1');
+mount(LOTE2, 'lote2');
 </script>
 </body>
 </html>

@@ -1,8 +1,10 @@
-# Créditos · lote Dinh (azul Kineti)
+# Créditos · lotes Dinh (azul Kineti)
 
 Animação original: **Dinh Bui Xuan** em [LottieFiles](https://lottiefiles.com/buixuandinh).
 
-Alteração neste lote: só a cor da regata (ou do tronco colorido equivalente) para o azul do Kineti (`#2563EB` / `#1E40AF`). Keyframes, camadas e duração são os do arquivo original.
+Alteração nestes lotes: só a cor da regata (ou do tronco colorido equivalente) para o azul do Kineti (`#2563EB` / `#1E40AF`). Keyframes, camadas e duração são os do arquivo original.
+
+## Lote 1 · mais simples
 
 | Arquivo | Página no LottieFiles |
 | --- | --- |
@@ -12,6 +14,31 @@ Alteração neste lote: só a cor da regata (ou do tronco colorido equivalente) 
 | `squat_reach.json` | [Squat Reach](https://lottiefiles.com/free-animation/squat-reach-Dp1w6IjOlQ) |
 | `reverse_crunches.json` | [Reverse Crunches](https://lottiefiles.com/free-animation/reverse-crunches-79P2FMTS7Z) |
 | `step_up_on_chair.json` | [Step Up on Chair](https://lottiefiles.com/free-animation/step-up-on-chair-zcvfCJwhkF) |
+
+## Lote 2 · restante
+
+| Arquivo | Página no LottieFiles |
+| --- | --- |
+| `walking_hip_opener.json` | [Walking Hip Opener](https://lottiefiles.com/free-animation/walking-hip-opener-standard-yJtiYrJwk0) |
+| `lunge.json` | [Lunge](https://lottiefiles.com/free-animation/lunge-Ls3pMlE0a0) |
+| `military_push_ups.json` | [Military Push Ups](https://lottiefiles.com/free-animation/military-push-ups-sFmjfnsBQ9) |
+| `wide_arm_push_up.json` | [Wide Arm Push Up](https://lottiefiles.com/free-animation/wide-arm-push-up-KD96z4DT4Y) |
+| `staggered_push_ups.json` | [Staggered Push Ups](https://lottiefiles.com/free-animation/staggered-push-ups-zgWfOIvx3C) |
+| `t_plank.json` | [T Plank](https://lottiefiles.com/free-animation/t-plank-exercise-g5qVU6RPYY) |
+| `press_up_toe_tap.json` | [Press Up Toe Tap](https://lottiefiles.com/free-animation/press-up-postion-toe-tap-KunqnEdK18) |
+| `punches.json` | [Punches](https://lottiefiles.com/free-animation/punches-DK1guXUDFv) |
+| `frog_press.json` | [Frog Press](https://lottiefiles.com/free-animation/frog-press-LqkyGCKGpu) |
+| `seated_abs_circles.json` | [Seated Abs Circles](https://lottiefiles.com/free-animation/seated-abs-circles-kgOH7mJGKJ) |
+| `squat_kicks.json` | [Squat Kicks](https://lottiefiles.com/free-animation/squat-kicks-2UaqzO5zfR) |
+| `jumping_squats.json` | [Jumping Squats](https://lottiefiles.com/free-animation/jumping-squats-9hzVV8Ohi6) |
+| `jumping_jack.json` | [Jumping Jack](https://lottiefiles.com/free-animation/jumping-jack-Q3NN7cRkd4) |
+| `split_jump.json` | [Split Jump](https://lottiefiles.com/free-animation/split-jump-exercise-AHHpx1bumx) |
+| `box_jump.json` | [Box Jump](https://lottiefiles.com/free-animation/box-jump-exercise-dbDFpRb3Go) |
+| `burpee_and_jump.json` | [Burpee and Jump](https://lottiefiles.com/free-animation/burpee-and-jump-exercise-gCOcxxnr1X) |
+| `inchworm.json` | [Inchworm](https://lottiefiles.com/free-animation/inchworm-oMKbWGAaDD) |
+| `clean_and_press.json` | [Clean and Press](https://lottiefiles.com/free-animation/double-arm-clean-and-press-barbell-wpiqpl8RKn) |
+
+Fora destes lotes (não são exercício, ou são duplicata): fingerprint, QR, troféu, usage data, e as variantes `t-plank-excercise`, `squat-kick`, `seated-abs-circle`.
 
 Os JSON em `src/` são a fonte baixada do LottieFiles (formato embutido no `.lottie` público). A licença gratuita (Lottie Simple License) permite usar e modificar no produto; o JSON cru deste lote não é redistribuído como pacote de animações.
 

@@ -46,6 +46,10 @@
 
   <h2 class="section">Lote 2 · restante</h2>
   <div class="grid" id="lote2"></div>
+
+  <h2 class="section">Lote 3 · puppet clínico (manequim → Dinh)</h2>
+  <p class="lead" style="margin-top:-12px">O boneco do Split Jump dirigido pelos joints 3D do manequim, em perfil, com regata azul. Sentar e levantar fica para quando o Blender estiver disponível para exportar os joints.</p>
+  <div class="grid" id="lote3"></div>
 </div>
 <script src="vendor/lottie.min.js"></script>
 <script>
@@ -79,6 +83,12 @@ const LOTE2 = [
   { slug: 'clean_and_press', name: 'Clean and press com barra', place: 'Em pé', desc: 'Puxa a barra até os ombros e empurra acima da cabeça.' }
 ];
 
+const LOTE3 = [
+  { slug: 'ankle_pumps', path: 'puppet/ankle_pumps.json', name: 'Bombeamento de tornozelos', place: 'Deitado', desc: 'Deitado, move os tornozelos: pontas dos pés para o corpo e para longe.' },
+  { slug: 'heel_slides', path: 'puppet/heel_slides.json', name: 'Deslizamento do calcanhar', place: 'Deitado', desc: 'Deitado, desliza um calcanhar em direção ao quadril e estende de novo.' },
+  { slug: 'bridge', path: 'puppet/bridge.json', name: 'Ponte', place: 'Deitado', desc: 'Deitado, joelhos flexionados. Eleva o quadril e desce com controle.' }
+];
+
 const autoplay = !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function mount(list, gridId) {
@@ -101,7 +111,7 @@ function mount(list, gridId) {
     article.appendChild(desc);
     const meta = document.createElement('p');
     meta.className = 'meta';
-    meta.textContent = ex.slug + '.json';
+    meta.textContent = (ex.path || (ex.slug + '.json'));
     article.appendChild(meta);
     grid.appendChild(article);
 
@@ -110,7 +120,7 @@ function mount(list, gridId) {
       renderer: 'svg',
       loop: true,
       autoplay,
-      path: ex.slug + '.json'
+      path: ex.path || (ex.slug + '.json')
     });
     stage.addEventListener('click', () => {
       if (anim.isPaused) anim.play();
@@ -121,6 +131,7 @@ function mount(list, gridId) {
 
 mount(LOTE1, 'lote1');
 mount(LOTE2, 'lote2');
+mount(LOTE3, 'lote3');
 </script>
 </body>
 </html>

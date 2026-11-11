@@ -40,9 +40,29 @@ Alteração nestes lotes: só a cor da regata (ou do tronco colorido equivalente
 
 Fora destes lotes (não são exercício, ou são duplicata): fingerprint, QR, troféu, usage data, e as variantes `t-plank-excercise`, `squat-kick`, `seated-abs-circle`.
 
+## Lote 3 · puppet clínico
+
+O boneco do [Split Jump](https://lottiefiles.com/free-animation/split-jump-exercise-AHHpx1bumx) é dirigido pelos joints 3D do manequim (`drive_puppet.py --kineti`). Fonte do puppet: `E:\mannequin\puppet2d\scripts\split-jump-dinh.json`. Joints: `E:\mannequin\puppet2d\batch_test\joints_desk.json`.
+
+| Arquivo | Ação no manequim |
+| --- | --- |
+| `puppet/ankle_pumps.json` | `floor-ankle-pumps` |
+| `puppet/heel_slides.json` | `heel-slides` |
+| `puppet/bridge.json` | `glute-bridge` |
+
+`sit_to_stand` ainda não entra: falta o Blender no PATH para exportar `kineti-sit-to-stand` de `E:\mannequin\kineti_lib\exercises.blend`.
+
+Para regenerar o lote 3:
+
+```bash
+cd /mnt/e/mannequin/puppet2d/scripts
+.venv/bin/python -I drive_puppet.py split-jump-dinh.json ../batch_test/joints_desk.json floor-ankle-pumps \
+  /home/dioner/projects/kineti/animated_exercices/examples/dinh/puppet/ankle_pumps.json --kineti
+```
+
 Os JSON em `src/` são a fonte baixada do LottieFiles (formato embutido no `.lottie` público). A licença gratuita (Lottie Simple License) permite usar e modificar no produto; o JSON cru deste lote não é redistribuído como pacote de animações.
 
-Para regenerar as versões azuis a partir de `src/`:
+Para regenerar as versões azuis (lotes 1–2) a partir de `src/`:
 
 ```bash
 python3 examples/dinh/recolor.py

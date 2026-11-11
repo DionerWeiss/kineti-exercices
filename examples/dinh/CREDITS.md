@@ -42,22 +42,45 @@ Fora destes lotes (não são exercício, ou são duplicata): fingerprint, QR, tr
 
 ## Lote 3 · puppet clínico
 
-O boneco do [Split Jump](https://lottiefiles.com/free-animation/split-jump-exercise-AHHpx1bumx) é dirigido pelos joints 3D do manequim (`drive_puppet.py --kineti`). Fonte do puppet: `E:\mannequin\puppet2d\scripts\split-jump-dinh.json`. Joints: `E:\mannequin\puppet2d\batch_test\joints_desk.json`.
+O boneco do [Split Jump](https://lottiefiles.com/free-animation/split-jump-exercise-AHHpx1bumx) é dirigido pelos joints 3D do manequim (`drive_puppet.py --kineti`).
 
-| Arquivo | Ação no manequim |
+- Puppet: `E:\mannequin\puppet2d\scripts\split-jump-dinh.json`
+- Joints desk-break: `E:\mannequin\puppet2d\batch_test\joints_desk.json`
+- Joints kineti: `E:\mannequin\puppet2d\batch_clinical\joints_kineti.json` (exportado via MCP Blender de `E:\mannequin\kineti_lib\exercises.blend`)
+
+| Arquivo | Ação |
 | --- | --- |
 | `puppet/ankle_pumps.json` | `floor-ankle-pumps` |
 | `puppet/heel_slides.json` | `heel-slides` |
 | `puppet/bridge.json` | `glute-bridge` |
+| `puppet/straight_leg_raise.json` | `straight-leg-raise` |
+| `puppet/cat_camel.json` | `cat-cow` |
+| `puppet/abdominal_crunches.json` | `gentle-curl-up` |
+| `puppet/prone_hip_extension.json` | `donkey-kick` |
+| `puppet/supine_pelvic_tilt.json` | `pelvic-tilt-lying` |
+| `puppet/sit_to_stand_exercise.json` | `kineti-sit-to-stand` |
+| `puppet/seated_knee_extension.json` | `kineti-seated-knee-extension` |
+| `puppet/standing_hip_flexion.json` | `kineti-standing-hip-flexion-supported` |
+| `puppet/standing_hip_extension.json` | `kineti-standing-hip-extension-supported` |
+| `puppet/standing_knee_flexion.json` | `kineti-standing-knee-flexion-supported` |
+| `puppet/lying_to_sitting.json` | `kineti-lying-to-sitting` |
+| `puppet/supine_ankle_pumps.json` | `kineti-supine-ankle-pumps` |
+| `puppet/double_heel_slides.json` | `kineti-double-heel-slides` |
+| `puppet/single_leg_bridge.json` | `kineti-single-leg-bridge` |
+| `puppet/mini_squat.json` | `kineti-mini-squat-to-chair` |
+| `puppet/indoor_walking.json` | `kineti-indoor-walking` |
+| `puppet/standing_marching.json` | `kineti-standing-marching-supported` |
+| `puppet/feet_together_stance.json` | `kineti-feet-together-stance` |
+| `puppet/semi_tandem_stance.json` | `kineti-semi-tandem-stance` |
 
-`sit_to_stand` ainda não entra: falta o Blender no PATH para exportar `kineti-sit-to-stand` de `E:\mannequin\kineti_lib\exercises.blend`.
+Limite: o puppet é de perfil. Exercícios frontais (abdução) ou com rolagem forte (`lying_to_sitting`) saem com QA pior.
 
-Para regenerar o lote 3:
+Para regenerar um item:
 
 ```bash
 cd /mnt/e/mannequin/puppet2d/scripts
-.venv/bin/python -I drive_puppet.py split-jump-dinh.json ../batch_test/joints_desk.json floor-ankle-pumps \
-  /home/dioner/projects/kineti/animated_exercices/examples/dinh/puppet/ankle_pumps.json --kineti
+.venv/bin/python -I drive_puppet.py split-jump-dinh.json ../batch_clinical/joints_kineti.json kineti-sit-to-stand \
+  /home/dioner/projects/kineti/animated_exercices/examples/dinh/puppet/sit_to_stand_exercise.json --kineti
 ```
 
 Os JSON em `src/` são a fonte baixada do LottieFiles (formato embutido no `.lottie` público). A licença gratuita (Lottie Simple License) permite usar e modificar no produto; o JSON cru deste lote não é redistribuído como pacote de animações.

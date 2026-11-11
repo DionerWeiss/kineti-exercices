@@ -48,7 +48,7 @@
   <div class="grid" id="lote2"></div>
 
   <h2 class="section">Lote 3 · puppet clínico (manequim → Dinh)</h2>
-  <p class="lead" style="margin-top:-12px">O boneco do Split Jump dirigido pelos joints 3D do manequim, em perfil, com regata azul. Sentar e levantar fica para quando o Blender estiver disponível para exportar os joints.</p>
+  <p class="lead" style="margin-top:-12px">O boneco do Split Jump dirigido pelos joints 3D do manequim (desk-break + kineti), em perfil, com regata azul. Movimentos frontais ou com rolagem forte ainda ficam limitados neste puppet.</p>
   <div class="grid" id="lote3"></div>
 </div>
 <script src="vendor/lottie.min.js"></script>
@@ -84,9 +84,28 @@ const LOTE2 = [
 ];
 
 const LOTE3 = [
-  { slug: 'ankle_pumps', path: 'puppet/ankle_pumps.json', name: 'Bombeamento de tornozelos', place: 'Deitado', desc: 'Deitado, move os tornozelos: pontas dos pés para o corpo e para longe.' },
-  { slug: 'heel_slides', path: 'puppet/heel_slides.json', name: 'Deslizamento do calcanhar', place: 'Deitado', desc: 'Deitado, desliza um calcanhar em direção ao quadril e estende de novo.' },
-  { slug: 'bridge', path: 'puppet/bridge.json', name: 'Ponte', place: 'Deitado', desc: 'Deitado, joelhos flexionados. Eleva o quadril e desce com controle.' }
+  { slug: 'sit_to_stand_exercise', path: 'puppet/sit_to_stand_exercise.json', name: 'Sentar e levantar', place: 'Transferência', desc: 'Senta e levanta da cadeira com o tronco inclinando à frente.' },
+  { slug: 'seated_knee_extension', path: 'puppet/seated_knee_extension.json', name: 'Extensão de joelho sentado', place: 'Sentado', desc: 'Sentado, estende um joelho à frente e retorna.' },
+  { slug: 'mini_squat', path: 'puppet/mini_squat.json', name: 'Miniagachamento', place: 'Em pé', desc: 'Agacha um pouco em direção à cadeira e volta a ficar em pé.' },
+  { slug: 'standing_hip_flexion', path: 'puppet/standing_hip_flexion.json', name: 'Flexão de quadril em pé', place: 'Em pé', desc: 'Eleva um joelho à frente e abaixa o pé.' },
+  { slug: 'standing_hip_extension', path: 'puppet/standing_hip_extension.json', name: 'Extensão de quadril em pé', place: 'Em pé', desc: 'Leva uma perna para trás e retorna, tronco ereto.' },
+  { slug: 'standing_knee_flexion', path: 'puppet/standing_knee_flexion.json', name: 'Flexão de joelho em pé', place: 'Em pé', desc: 'Leva o calcanhar em direção ao glúteo e apoia de novo.' },
+  { slug: 'standing_marching', path: 'puppet/standing_marching.json', name: 'Marcha estacionária', place: 'Em pé', desc: 'Marcha no lugar elevando os joelhos.' },
+  { slug: 'indoor_walking', path: 'puppet/indoor_walking.json', name: 'Caminhada', place: 'Em pé', desc: 'Passos alternados com balanço dos braços.' },
+  { slug: 'feet_together_stance', path: 'puppet/feet_together_stance.json', name: 'Pés unidos', place: 'Equilíbrio', desc: 'Em pé com os pés unidos, pequenas oscilações.' },
+  { slug: 'semi_tandem_stance', path: 'puppet/semi_tandem_stance.json', name: 'Semitandem', place: 'Equilíbrio', desc: 'Um pé parcialmente à frente do outro.' },
+  { slug: 'ankle_pumps', path: 'puppet/ankle_pumps.json', name: 'Bombeamento de tornozelos', place: 'Deitado', desc: 'Move os tornozelos: pontas dos pés para o corpo e para longe.' },
+  { slug: 'supine_ankle_pumps', path: 'puppet/supine_ankle_pumps.json', name: 'Bombeamento (kineti)', place: 'Deitado', desc: 'Versão do movimento kineti de bombeamento de tornozelos.' },
+  { slug: 'heel_slides', path: 'puppet/heel_slides.json', name: 'Deslizamento do calcanhar', place: 'Deitado', desc: 'Desliza um calcanhar em direção ao quadril e estende de novo.' },
+  { slug: 'double_heel_slides', path: 'puppet/double_heel_slides.json', name: 'Deslizamento dos dois calcanhares', place: 'Deitado', desc: 'Desliza os dois calcanhares juntos em direção ao quadril.' },
+  { slug: 'bridge', path: 'puppet/bridge.json', name: 'Ponte', place: 'Deitado', desc: 'Eleva o quadril e desce com controle.' },
+  { slug: 'single_leg_bridge', path: 'puppet/single_leg_bridge.json', name: 'Ponte unipodal', place: 'Deitado', desc: 'Ponte com uma perna elevada.' },
+  { slug: 'straight_leg_raise', path: 'puppet/straight_leg_raise.json', name: 'Elevação da perna estendida', place: 'Deitado', desc: 'Eleva a perna estendida até a altura do joelho oposto.' },
+  { slug: 'supine_pelvic_tilt', path: 'puppet/supine_pelvic_tilt.json', name: 'Inclinação pélvica', place: 'Deitado', desc: 'Inclina a pelve aproximando a lombar do chão.' },
+  { slug: 'abdominal_crunches', path: 'puppet/abdominal_crunches.json', name: 'Abdominal', place: 'Deitado', desc: 'Eleva a cabeça e as escápulas e desce.' },
+  { slug: 'cat_camel', path: 'puppet/cat_camel.json', name: 'Gato-camelo', place: 'Quatro apoios', desc: 'Arredonda e afunda as costas em quatro apoios.' },
+  { slug: 'prone_hip_extension', path: 'puppet/prone_hip_extension.json', name: 'Extensão de quadril de bruços', place: 'De bruços', desc: 'Eleva a perna estendida por trás e desce.' },
+  { slug: 'lying_to_sitting', path: 'puppet/lying_to_sitting.json', name: 'Deitado para sentado', place: 'Transferência', desc: 'Passa de deitado para sentado (movimento 3D projetado em perfil; QA fraco).' }
 ];
 
 const autoplay = !matchMedia('(prefers-reduced-motion: reduce)').matches;

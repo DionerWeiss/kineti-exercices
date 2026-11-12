@@ -73,7 +73,70 @@ O boneco do [Split Jump](https://lottiefiles.com/free-animation/split-jump-exerc
 | `puppet/feet_together_stance.json` | `kineti-feet-together-stance` |
 | `puppet/semi_tandem_stance.json` | `kineti-semi-tandem-stance` |
 
-Limite: o puppet é de perfil. Exercícios frontais (abdução) ou com rolagem forte (`lying_to_sitting`) saem com QA pior.
+Limite: o puppet é de perfil. Exercícios frontais (abdução) ou com rolagem forte (`lying_to_sitting`, `bed_rolling`) saem com QA pior.
+
+## Lote 4 · restante do manequim
+
+Joints em `batch_clinical/joints_more_a.json`, `joints_more_b.json` e `joints_more_c.json`, exportados de `exercises.blend`.
+
+| Arquivo | Ação |
+| --- | --- |
+| `puppet/bed_rolling.json` | `kineti-bed-rolling` |
+| `puppet/variable_speed_walking.json` | `kineti-variable-speed-walking` |
+| `puppet/step_up.json` | `kineti-step-up` |
+| `puppet/seated_knee_extension_ankle_weight.json` | `kineti-seated-knee-extension-ankle-weight` |
+| `puppet/standing_heel_raise.json` | `kineti-calf-raise-supported` |
+| `puppet/wall_push_up.json` | `kineti-wall-push-up` |
+| `puppet/single_leg_stance.json` | `kineti-single-leg-stance-supported` |
+| `puppet/short_arc_quad.json` | `kineti-short-arc-quad` |
+| `puppet/wall_ball_squat.json` | `kineti-wall-ball-squat` |
+| `puppet/prone_press_up_on_elbows.json` | `kineti-prone-press-up-elbows` |
+| `puppet/seated_shoulder_flexion.json` | `kineti-seated-shoulder-flexion` |
+| `puppet/elbow_flexion.json` | `kineti-supine-elbow-flexion` |
+| `puppet/elbow_flexion_dumbbell.json` | `kineti-seated-elbow-curl-dumbbell` |
+| `puppet/ankle_circles.json` | `kineti-ankle-circles-supported` |
+| `puppet/arm_circles.json` | `kineti-seated-arm-circles` |
+| `puppet/shoulder_shrugs.json` | `kineti-shoulder-shrugs-dumbbell` |
+| `puppet/scapular_retraction.json` | `kineti-prone-scapular-retraction` |
+| `puppet/lateral_weight_shift.json` | `kineti-weight-shift-side-supported` |
+| `puppet/standing_hip_abduction.json` | `kineti-standing-hip-abduction-supported` |
+| `puppet/seated_overhead_press.json` | `kineti-seated-overhead-press` |
+| `puppet/seated_shoulder_abduction.json` | `kineti-seated-shoulder-abduction` |
+| `puppet/seated_band_row.json` | `kineti-seated-band-row` |
+| `puppet/band_pull_apart.json` | `kineti-band-pull-apart` |
+| `puppet/band_shoulder_external_rotation.json` | `kineti-band-shoulder-external-rotation` |
+| `puppet/seated_band_hip_abduction.json` | `kineti-seated-band-hip-abduction` |
+| `puppet/adductor_ball_squeeze.json` | `kineti-adductor-ball-squeeze` |
+| `puppet/supine_hip_abduction.json` | `kineti-supine-hip-abduction` |
+| `puppet/single_knee_to_chest.json` | `kineti-chair-legs-knee-to-chest` |
+| `puppet/seated_trunk_rotation.json` | `kineti-band-seated-trunk-rotation` |
+| `puppet/long_sit_quad_set.json` | `kineti-long-sit-quad-set` |
+| `puppet/standing_quad_stretch.json` | `kineti-standing-quad-stretch-supported` |
+
+## Lote 5 · um movimento, mais de um exercício
+
+O mesmo gesto do manequim, reaproveitado com outro acessório. Puppet de perfil. Ficaram de fora os que só se leem de frente, de costas ou de cima (rotação de ombros, bastão atrás das costas, anjo na parede, diagonal com faixa, rotação de tronco deitado).
+
+| Arquivo | Ação |
+| --- | --- |
+| `puppet/chair_march.json` | `chair-march` |
+| `puppet/chair_cat_cow.json` | `chair-cat-cow` |
+| `puppet/chair_twist.json` | `chair-twist` |
+| `puppet/seated_front_raise.json` | `kineti-seated-alternating-front-raise` |
+| `puppet/dead_bug.json` | `dead-bug` |
+| `puppet/split_squat.json` | `shallow-split-squat` |
+| `puppet/mini_squat_supported.json` | `kineti-mini-squat-supported` |
+| `puppet/squat_dumbbells.json` | `kineti-squat-dumbbells` |
+| `puppet/wall_squat.json` | `kineti-wall-squat` |
+| `puppet/march_arms_forward.json` | `kineti-march-arms-forward` |
+| `puppet/ladder_step.json` | `kineti-ladder-step-in` |
+| `puppet/band_chest_press.json` | `kineti-band-chest-press` |
+| `puppet/standing_shoulder_extension.json` | `kineti-standing-shoulder-extension` |
+| `puppet/stick_shoulder_flexion.json` | `kineti-stick-shoulder-flexion` |
+| `puppet/wall_arm_slide.json` | `kineti-wall-ball-flexion` |
+| `puppet/walker_sit_to_stand.json` | `kineti-walker-sit-to-stand-arms` |
+
+Sem ação de corpo inteiro neste blend: respiração diafragmática, respiração com lábios semicerrados, marcha sentada, bird-dog, abdução de quadril em decúbito lateral e elevação de calcanhar sentado. O clamshell de lado deita o corpo no eixo da câmera e o puppet não fecha. Punho, pronação, abrir a mão e oponência do polegar são detalhe de mão, não este boneco.
 
 Para regenerar um item:
 

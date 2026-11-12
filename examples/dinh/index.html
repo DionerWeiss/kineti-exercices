@@ -39,7 +39,7 @@
 <body>
 <div class="wrap">
   <h1>Dinh · azul Kineti</h1>
-  <p class="lead">Loops do Dinh Bui Xuan com o movimento original. Só a regata (ou o tronco colorido) foi trocada pelo azul do Kineti. Clique para pausar. Créditos em <code>CREDITS.md</code>.</p>
+  <p class="lead">Nome, posição e descrição vêm do catálogo PocketPhysio. O desenho é o gesto que a animação já faz. Quando o mesmo vídeo vale para mais de um exercício, os outros nomes ficam embaixo. Clique para pausar.</p>
 
   <h2 class="section">Lote 1 · mais simples</h2>
   <div class="grid" id="lote1"></div>
@@ -47,67 +47,52 @@
   <h2 class="section">Lote 2 · restante</h2>
   <div class="grid" id="lote2"></div>
 
-  <h2 class="section">Lote 3 · puppet clínico (manequim → Dinh)</h2>
-  <p class="lead" style="margin-top:-12px">O boneco do Split Jump dirigido pelos joints 3D do manequim (desk-break + kineti), em perfil, com regata azul. Movimentos frontais ou com rolagem forte ainda ficam limitados neste puppet.</p>
+  <h2 class="section">Lote 3 · clínicos</h2>
+  <p class="lead" style="margin-top:-12px">O boneco de perfil com o texto do exercício publicado que aquele gesto cobre.</p>
   <div class="grid" id="lote3"></div>
+
+  <h2 class="section">Lote 4 · mais do catálogo</h2>
+  <p class="lead" style="margin-top:-12px">Cadeira, degrau, parede, faixa, halter, caneleira e colchonete, com o nome do catálogo.</p>
+  <div class="grid" id="lote4"></div>
+
+  <h2 class="section">Lote 5 · o mesmo gesto, outro exercício</h2>
+  <p class="lead" style="margin-top:-12px">Movimentos que o catálogo reaproveita com cadeira, halter, bastão, faixa, andador, escada ou parede.</p>
+  <div class="grid" id="lote5"></div>
+
+  <h2 class="section">Lote 6 · alongamentos e controle</h2>
+  <p class="lead" style="margin-top:-12px">Panturrilha, passo com soco, perdigueiro, figura 4 e os deitados que o manequim faz de perfil.</p>
+  <div class="grid" id="lote6"></div>
+
+  <h2 class="section">Lote 7 · marcha e equilíbrio</h2>
+  <p class="lead" style="margin-top:-12px">Marcha, apoio numa perna, joelhos altos e o balanço dos pés.</p>
+  <div class="grid" id="lote7"></div>
+  <h2 class="section">Lote 8 · em pé, força e alongamento</h2>
+  <p class="lead" style="margin-top:-12px">Avanço, chute, remada, dobrar o tronco e abrir o peito.</p>
+  <div class="grid" id="lote8"></div>
+  <h2 class="section">Lote 9 · sentado e ajoelhado</h2>
+  <p class="lead" style="margin-top:-12px">Cadeira, bastão, mergulho e a passagem de sentado nos calcanhares para ajoelhado.</p>
+  <div class="grid" id="lote9"></div>
+  <h2 class="section">Lote 10 · deitado</h2>
+  <p class="lead" style="margin-top:-12px">Pernas, pullover, bastão e o ciático, de costas no colchonete ou na cama.</p>
+  <div class="grid" id="lote10"></div>
+  <h2 class="section">Lote 11 · no chão</h2>
+  <p class="lead" style="margin-top:-12px">Flexão, escalador, quatro apoios e os braços de bruços.</p>
+  <div class="grid" id="lote11"></div>
+  <h2 class="section">Lote 12 · degrau, bastão e parede</h2>
+  <p class="lead" style="margin-top:-12px">Subir e descer do degrau, bastão em pé e a bola na parede.</p>
+  <div class="grid" id="lote12"></div>
+
+  <h2 class="section">Lote 13 · bola, toalha e roldana</h2>
+  <p class="lead" style="margin-top:-12px">A bola suíça fica sob os pés ou os antebraços, a toalha liga o pé às mãos e a roldana passa a corda por cima da cabeça.</p>
+  <div class="grid" id="lote13"></div>
+
+  <h2 class="section">Lote 14 · mão e dedos</h2>
+  <p class="lead" style="margin-top:-12px">A mão com dedos, apoiada na mesa. O boneco de corpo inteiro não tem dedos, então estes são o desenho da mão.</p>
+  <div class="grid" id="lote14"></div>
 </div>
 <script src="vendor/lottie.min.js"></script>
+<script src="cards.js"></script>
 <script>
-const LOTE1 = [
-  { slug: 'forearm_stretch', name: 'Alongamento de antebraço', place: 'Em pé', desc: 'Estende um braço à frente e puxa a mão com a outra, alongando o antebraço.' },
-  { slug: 'shoulder_stretch', name: 'Alongamento de ombro', place: 'Em pé', desc: 'Cruza um braço na frente do peito e puxa com o outro, alongando o ombro.' },
-  { slug: 'cobra', name: 'Cobra', place: 'Deitado de bruços', desc: 'De bruços, apoia as mãos e eleva o tronco em extensão, depois desce.' },
-  { slug: 'squat_reach', name: 'Agachamento com alcance', place: 'Em pé', desc: 'Agacha e sobe alcançando os braços para cima.' },
-  { slug: 'reverse_crunches', name: 'Abdominal inverso', place: 'Deitado', desc: 'Deitado de costas, eleva o quadril e as pernas em direção ao peito e desce.' },
-  { slug: 'step_up_on_chair', name: 'Subida na cadeira', place: 'Em pé', desc: 'Sobe com um pé na cadeira, sobe o outro e desce, alternando o ciclo.' }
-];
-
-const LOTE2 = [
-  { slug: 'walking_hip_opener', name: 'Abertura de quadril caminhando', place: 'Em pé', desc: 'Passos largos com abertura de quadril, tronco ereto.' },
-  { slug: 'lunge', name: 'Afundo', place: 'Em pé', desc: 'Avança uma perna, desce o joelho de trás e volta.' },
-  { slug: 'military_push_ups', name: 'Flexão militar', place: 'Chão', desc: 'Flexão com o corpo alinhado, desce e sobe o peito.' },
-  { slug: 'wide_arm_push_up', name: 'Flexão com braços abertos', place: 'Chão', desc: 'Flexão com as mãos mais afastadas que os ombros.' },
-  { slug: 'staggered_push_ups', name: 'Flexão escalonada', place: 'Chão', desc: 'Flexão com uma mão mais à frente que a outra.' },
-  { slug: 't_plank', name: 'Prancha em T', place: 'Chão', desc: 'Da prancha, gira o tronco e abre o braço para o teto.' },
-  { slug: 'press_up_toe_tap', name: 'Prancha com toque do pé', place: 'Chão', desc: 'Em prancha, toca o pé para o lado e volta.' },
-  { slug: 'punches', name: 'Soco', place: 'Em pé', desc: 'Soca alternando os braços com o tronco estável.' },
-  { slug: 'frog_press', name: 'Frog press', place: 'Deitado', desc: 'Deitado, joelhos abertos, estende e flexiona as pernas.' },
-  { slug: 'seated_abs_circles', name: 'Círculos abdominais sentado', place: 'Sentado', desc: 'Sentado, pernas elevadas, desenha círculos com o tronco.' },
-  { slug: 'squat_kicks', name: 'Agachamento com chute', place: 'Em pé', desc: 'Agacha e, na subida, chuta uma perna à frente.' },
-  { slug: 'jumping_squats', name: 'Agachamento com salto', place: 'Em pé', desc: 'Agacha e salta, aterrissando de volta no agachamento.' },
-  { slug: 'jumping_jack', name: 'Polichinelo', place: 'Em pé', desc: 'Abre e fecha pernas e braços no salto.' },
-  { slug: 'split_jump', name: 'Split jump', place: 'Em pé', desc: 'Salta alternando a perna da frente no ar.' },
-  { slug: 'box_jump', name: 'Salto na caixa', place: 'Em pé', desc: 'Salta sobre a caixa, sobe e desce com controle.' },
-  { slug: 'burpee_and_jump', name: 'Burpee com salto', place: 'Em pé', desc: 'Agacha, prancha, flexão, volta e salta.' },
-  { slug: 'inchworm', name: 'Inchworm', place: 'Em pé', desc: 'Com as mãos no chão, anda até a prancha e volta.' },
-  { slug: 'clean_and_press', name: 'Clean and press com barra', place: 'Em pé', desc: 'Puxa a barra até os ombros e empurra acima da cabeça.' }
-];
-
-const LOTE3 = [
-  { slug: 'sit_to_stand_exercise', path: 'puppet/sit_to_stand_exercise.json', name: 'Sentar e levantar', place: 'Transferência', desc: 'Senta e levanta da cadeira com o tronco inclinando à frente.' },
-  { slug: 'seated_knee_extension', path: 'puppet/seated_knee_extension.json', name: 'Extensão de joelho sentado', place: 'Sentado', desc: 'Sentado, estende um joelho à frente e retorna.' },
-  { slug: 'mini_squat', path: 'puppet/mini_squat.json', name: 'Miniagachamento', place: 'Em pé', desc: 'Agacha um pouco em direção à cadeira e volta a ficar em pé.' },
-  { slug: 'standing_hip_flexion', path: 'puppet/standing_hip_flexion.json', name: 'Flexão de quadril em pé', place: 'Em pé', desc: 'Eleva um joelho à frente e abaixa o pé.' },
-  { slug: 'standing_hip_extension', path: 'puppet/standing_hip_extension.json', name: 'Extensão de quadril em pé', place: 'Em pé', desc: 'Leva uma perna para trás e retorna, tronco ereto.' },
-  { slug: 'standing_knee_flexion', path: 'puppet/standing_knee_flexion.json', name: 'Flexão de joelho em pé', place: 'Em pé', desc: 'Leva o calcanhar em direção ao glúteo e apoia de novo.' },
-  { slug: 'standing_marching', path: 'puppet/standing_marching.json', name: 'Marcha estacionária', place: 'Em pé', desc: 'Marcha no lugar elevando os joelhos.' },
-  { slug: 'indoor_walking', path: 'puppet/indoor_walking.json', name: 'Caminhada', place: 'Em pé', desc: 'Passos alternados com balanço dos braços.' },
-  { slug: 'feet_together_stance', path: 'puppet/feet_together_stance.json', name: 'Pés unidos', place: 'Equilíbrio', desc: 'Em pé com os pés unidos, pequenas oscilações.' },
-  { slug: 'semi_tandem_stance', path: 'puppet/semi_tandem_stance.json', name: 'Semitandem', place: 'Equilíbrio', desc: 'Um pé parcialmente à frente do outro.' },
-  { slug: 'ankle_pumps', path: 'puppet/ankle_pumps.json', name: 'Bombeamento de tornozelos', place: 'Deitado', desc: 'Move os tornozelos: pontas dos pés para o corpo e para longe.' },
-  { slug: 'supine_ankle_pumps', path: 'puppet/supine_ankle_pumps.json', name: 'Bombeamento (kineti)', place: 'Deitado', desc: 'Versão do movimento kineti de bombeamento de tornozelos.' },
-  { slug: 'heel_slides', path: 'puppet/heel_slides.json', name: 'Deslizamento do calcanhar', place: 'Deitado', desc: 'Desliza um calcanhar em direção ao quadril e estende de novo.' },
-  { slug: 'double_heel_slides', path: 'puppet/double_heel_slides.json', name: 'Deslizamento dos dois calcanhares', place: 'Deitado', desc: 'Desliza os dois calcanhares juntos em direção ao quadril.' },
-  { slug: 'bridge', path: 'puppet/bridge.json', name: 'Ponte', place: 'Deitado', desc: 'Eleva o quadril e desce com controle.' },
-  { slug: 'single_leg_bridge', path: 'puppet/single_leg_bridge.json', name: 'Ponte unipodal', place: 'Deitado', desc: 'Ponte com uma perna elevada.' },
-  { slug: 'straight_leg_raise', path: 'puppet/straight_leg_raise.json', name: 'Elevação da perna estendida', place: 'Deitado', desc: 'Eleva a perna estendida até a altura do joelho oposto.' },
-  { slug: 'supine_pelvic_tilt', path: 'puppet/supine_pelvic_tilt.json', name: 'Inclinação pélvica', place: 'Deitado', desc: 'Inclina a pelve aproximando a lombar do chão.' },
-  { slug: 'abdominal_crunches', path: 'puppet/abdominal_crunches.json', name: 'Abdominal', place: 'Deitado', desc: 'Eleva a cabeça e as escápulas e desce.' },
-  { slug: 'cat_camel', path: 'puppet/cat_camel.json', name: 'Gato-camelo', place: 'Quatro apoios', desc: 'Arredonda e afunda as costas em quatro apoios.' },
-  { slug: 'prone_hip_extension', path: 'puppet/prone_hip_extension.json', name: 'Extensão de quadril de bruços', place: 'De bruços', desc: 'Eleva a perna estendida por trás e desce.' },
-  { slug: 'lying_to_sitting', path: 'puppet/lying_to_sitting.json', name: 'Deitado para sentado', place: 'Transferência', desc: 'Passa de deitado para sentado (movimento 3D projetado em perfil; QA fraco).' }
-];
-
 const autoplay = !matchMedia('(prefers-reduced-motion: reduce)').matches;
 
 function mount(list, gridId) {
@@ -118,21 +103,26 @@ function mount(list, gridId) {
     stage.setAttribute('role', 'img');
     stage.setAttribute('aria-label', ex.name);
     const article = document.createElement('article');
-    article.innerHTML = `
-      <div class="head">
-        <span class="chip">${ex.place}</span>
-        <h2>${ex.name}</h2>
-      </div>`;
-    article.appendChild(stage);
+    const chip = document.createElement('span');
+    chip.className = 'chip';
+    chip.textContent = ex.equip ? (ex.place + ' · ' + ex.equip) : ex.place;
+    const title = document.createElement('h2');
+    title.textContent = ex.name;
+    const head = document.createElement('div');
+    head.className = 'head';
+    head.append(chip, title);
+    article.append(head, stage);
     const desc = document.createElement('p');
     desc.className = 'desc';
     desc.textContent = ex.desc;
-    article.appendChild(desc);
-    const meta = document.createElement('p');
-    meta.className = 'meta';
-    meta.textContent = (ex.path || (ex.slug + '.json'));
-    article.appendChild(meta);
-    grid.appendChild(article);
+    article.append(desc);
+    if (ex.also && ex.also.length) {
+      const also = document.createElement('p');
+      also.className = 'meta';
+      also.textContent = 'Também: ' + ex.also.join(' · ');
+      article.append(also);
+    }
+    grid.append(article);
 
     const anim = lottie.loadAnimation({
       container: stage,
@@ -148,9 +138,20 @@ function mount(list, gridId) {
   });
 }
 
-mount(LOTE1, 'lote1');
-mount(LOTE2, 'lote2');
-mount(LOTE3, 'lote3');
+mount(CARDS.lote1, 'lote1');
+mount(CARDS.lote2, 'lote2');
+mount(CARDS.lote3, 'lote3');
+mount(CARDS.lote4, 'lote4');
+mount(CARDS.lote5, 'lote5');
+mount(CARDS.lote6, 'lote6');
+mount(CARDS.lote7, 'lote7');
+mount(CARDS.lote8, 'lote8');
+mount(CARDS.lote9, 'lote9');
+mount(CARDS.lote10, 'lote10');
+mount(CARDS.lote11, 'lote11');
+mount(CARDS.lote12, 'lote12');
+mount(CARDS.lote13, 'lote13');
+mount(CARDS.lote14, 'lote14');
 </script>
 </body>
 </html>

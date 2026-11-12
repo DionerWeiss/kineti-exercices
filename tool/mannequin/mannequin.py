@@ -8,7 +8,9 @@ repainted with the Kineti palette and mark (render_mannequin.py).
 
 Without ids, every job in jobs.json. Each job: {"lib": "deskbreak"|"kineti"|"hand" (with "scene": a hand scene of export_hand.py), "view": ..., "props": [...],
 "frame": "full"|"upper"|"lower", "pocketphysio": [ids], "move": optional action to reuse (default the id)}. Views and props: see render_mannequin.py (DIRS, props).
-Env: KINETI_BLENDER (default: the Windows install), MANNEQUIN_PALETTE (default areia).
+Env: KINETI_BLENDER (default: the Windows install), MANNEQUIN_PALETTE (default areia), MANNEQUIN_OUT (default build/mannequin),
+MANNEQUIN_AVATAR (a lib .blend from avatar/fit_avatar.py: kineti jobs use the humanoid avatar instead of the mannequin),
+MANNEQUIN_RES (WxH, default 960x540).
 """
 import json, os, subprocess, sys
 from pathlib import Path
@@ -17,10 +19,13 @@ REPO = Path(__file__).resolve().parents[2]
 HERE = Path(__file__).resolve().parent
 DESK = REPO / 'build' / 'desk-break'
 DESK_COMMIT = '8d475aa476b2c0e9ec6d09d8558faf17161e19ef'  # 0.2.2, 2026-10-07
-OUT = REPO / 'build' / 'mannequin'
+OUT = Path(os.environ.get('MANNEQUIN_OUT', REPO / 'build' / 'mannequin'))
 BLENDER = os.environ.get('KINETI_BLENDER', '/mnt/e/tools/blender-5.3.0/blender.exe')
 PALETTE = os.environ.get('MANNEQUIN_PALETTE', 'areia')
 LIBS = {'deskbreak': DESK / 'library' / 'exercises.blend', 'kineti': OUT / 'kineti_lib' / 'exercises.blend'}
+AVATAR = os.environ.get('MANNEQUIN_AVATAR')  # a lib .blend whose body is the humanoid avatar (avatar/fit_avatar.py)
+if AVATAR:
+    LIBS['kineti'] = Path(AVATAR)
 
 
 def win(p):
@@ -35,7 +40,7 @@ def blender(*args, env=None):
         e['WSLENV'] = ':'.join(list(env) + ([e['WSLENV']] if e.get('WSLENV') else []))
     r = subprocess.run([BLENDER, '-b', *args], capture_output=True, text=True, env=e)
     for line in r.stdout.splitlines():
-        if line.startswith(('JOB', 'BALL', 'BALLF', 'HELDBALL', 'DONE', 'OK', 'KEY', 'TOUCH', 'WARNING', 'ERROR', 'Traceback', 'Error', 'KeyError')) or 'Error' in line:
+        if line.startswith(('JOB', 'PLANT', 'PLANTDBG', 'BALL', 'BALLF', 'HELDBALL', 'DONE', 'OK', 'KEY', 'TOUCH', 'WARNING', 'ERROR', 'Traceback', 'Error', 'KeyError')) or 'Error' in line:
             print(' ', line)
     if r.returncode:
         print(r.stdout[-2000:], r.stderr[-2000:])
@@ -74,7 +79,9 @@ def run(sel, outdir, still=None):
         for k in range(0, len(js), 20):  # several jobs per Blender launch
             blender(win(LIBS[lib]), '--python', win(HERE / 'render_mannequin.py'), '--', win(outdir), PALETTE,
                     win(HERE / 'kineti_mark.png'), *js[k:k + 20],
-                    env=({'STILL': still} if still else {}) | ({'BALL_DEBUG': '1'} if os.environ.get('BALL_DEBUG') else {}) or None)
+                    env=({'STILL': still} if still else {}) | ({'BALL_DEBUG': '1'} if os.environ.get('BALL_DEBUG') else {})
+                    | ({'AVATAR': '1'} if AVATAR else {})
+                    | ({'MANNEQUIN_RES': os.environ['MANNEQUIN_RES']} if os.environ.get('MANNEQUIN_RES') else {}) or None)
 
 
 def sheet(ids):

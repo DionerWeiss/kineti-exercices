@@ -14,9 +14,12 @@ import bpy
 import numpy as np
 from mathutils import Matrix, Vector
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import plant_hands  # noqa: E402
+
 argv = sys.argv[sys.argv.index('--') + 1:]
 OUT, PALETTE, LOGO, JOBS = argv[0], argv[1], argv[2], argv[3:]
-W, H = 960, 540
+W, H = (int(v) for v in os.environ.get('MANNEQUIN_RES', '960x540').split('x'))
 STILL = bool(os.environ.get('STILL'))
 
 PALETTES = {  # body, joints
@@ -67,11 +70,13 @@ for b in arm.pose.bones:
     b.location = (0, 0, 0)
 bpy.context.view_layer.update()
 
+AVATAR = bool(os.environ.get('AVATAR'))  # a humanoid avatar on the same rig (avatar/fit_avatar.py): keep its materials and printed shirt
 body_c, joint_c = PALETTES[PALETTE]
 BODY, JOINT, PROP = mat('body', body_c, 0.65), mat('joint', joint_c, 0.6), mat('prop', '#94A3B8')
-for slot in body.material_slots:
-    n = (slot.material.name if slot.material else '').lower()
-    slot.material = JOINT if 'joint' in n else PROP if ('plastic' in n or 'mouse' in n) else BODY
+if not AVATAR:
+    for slot in body.material_slots:
+        n = (slot.material.name if slot.material else '').lower()
+        slot.material = JOINT if 'joint' in n else PROP if ('plastic' in n or 'mouse' in n) else BODY
 
 
 def parent_to_bone(o, bone):
@@ -83,31 +88,32 @@ def parent_to_bone(o, bone):
 
 # --- Kineti mark on the chest: a subdivided plane shrink-wrapped onto the chest at rest, then baked and
 # parented to the spine bone (the chest is rigid with it).
-img = bpy.data.images.load(LOGO)
-aspect = img.size[0] / img.size[1]
-LW = 0.155
-bpy.ops.mesh.primitive_grid_add(x_subdivisions=24, y_subdivisions=16, size=1, location=(0, -0.2, 1.325))
-logo = bpy.context.object
-logo.scale = (LW, LW / aspect, 1)
-logo.rotation_euler = (math.radians(90), 0, 0)  # face -Y (the figure's front)
-bpy.ops.object.transform_apply(location=False, rotation=True, scale=True)
-sw = logo.modifiers.new('wrap', 'SHRINKWRAP')
-sw.target, sw.wrap_method, sw.offset = body, 'PROJECT', 0.0015
-sw.use_project_y, sw.use_negative_direction, sw.use_positive_direction = True, True, True
-bpy.context.view_layer.objects.active = logo
-bpy.ops.object.modifier_apply(modifier='wrap')
-lm = bpy.data.materials.new('logo')
-nt, p = principled(lm)
-tex = nt.nodes.new('ShaderNodeTexImage')
-tex.image = img
-tex.extension = 'CLIP'
-nt.links.new(tex.outputs['Color'], p.inputs['Base Color'])
-nt.links.new(tex.outputs['Alpha'], p.inputs['Alpha'])
-p.inputs['Roughness'].default_value = 0.6
-if hasattr(lm, 'surface_render_method'):
-    lm.surface_render_method = 'BLENDED'
-logo.data.materials.append(lm)
-parent_to_bone(logo, 'spine')
+if not AVATAR:
+    img = bpy.data.images.load(LOGO)
+    aspect = img.size[0] / img.size[1]
+    LW = 0.155
+    bpy.ops.mesh.primitive_grid_add(x_subdivisions=24, y_subdivisions=16, size=1, location=(0, -0.2, 1.325))
+    logo = bpy.context.object
+    logo.scale = (LW, LW / aspect, 1)
+    logo.rotation_euler = (math.radians(90), 0, 0)  # face -Y (the figure's front)
+    bpy.ops.object.transform_apply(location=False, rotation=True, scale=True)
+    sw = logo.modifiers.new('wrap', 'SHRINKWRAP')
+    sw.target, sw.wrap_method, sw.offset = body, 'PROJECT', 0.0015
+    sw.use_project_y, sw.use_negative_direction, sw.use_positive_direction = True, True, True
+    bpy.context.view_layer.objects.active = logo
+    bpy.ops.object.modifier_apply(modifier='wrap')
+    lm = bpy.data.materials.new('logo')
+    nt, p = principled(lm)
+    tex = nt.nodes.new('ShaderNodeTexImage')
+    tex.image = img
+    tex.extension = 'CLIP'
+    nt.links.new(tex.outputs['Color'], p.inputs['Base Color'])
+    nt.links.new(tex.outputs['Alpha'], p.inputs['Alpha'])
+    p.inputs['Roughness'].default_value = 0.6
+    if hasattr(lm, 'surface_render_method'):
+        lm.surface_render_method = 'BLENDED'
+    logo.data.materials.append(lm)
+    parent_to_bone(logo, 'spine')
 
 
 def to_rest():
@@ -464,6 +470,18 @@ scene.view_settings.view_transform = 'Standard'
 DIRS = {'side': (1, 0, 0.18), 'front': (0, -1, 0.2), 'top3q': (0.55, -0.8, 0.9), 'side3q': (0.85, -0.45, 0.3), 'back': (0.35, 1, 0.25),
         'front3q': (0.5, -0.85, 0.3), 'floor': (1, -0.3, 0.6), 'rside3q': (-0.85, -0.45, 0.3), 'back3q': (0.8, 0.55, 0.35)}
 
+RUN = ('jog', 'run', 'sprint', 'march', 'high-knee', 'butt-kick', 'skater')  # avatar: loose fists
+HELD = {'dumbbell', 'bandhands', 'bandanchor', 'bandanchor1', 'bandfeet', 'stick', 'walker', 'walkergo', 'pulley'}
+
+
+def grips(props, s):
+    """Whether hand s (L/R) holds something: a handle prop, a cane on that side, or a band/towel/stick end at h<s>."""
+    if props & HELD or 'cane' + s in props:
+        return True
+    return any(p_.startswith(('band-', 'towel-', 'stick-', 'stickend-', 'stickfloor-')) and 'h' + s in p_.split('-')[1:]
+               for p_ in props)
+
+
 for job in JOBS:
     parts = job.split(':')
     name, view = parts[0], parts[1]
@@ -474,11 +492,33 @@ for job in JOBS:
     temp.clear()
     extra = []
     act = bpy.data.actions[parts[4] if len(parts) > 4 and parts[4] else name]  # a job may reuse another move
-    ad.action = act
-    if hasattr(ad, 'action_slot') and getattr(act, 'slots', None):
-        ad.action_slot = act.slots[0]
+    support = {}
+    if AVATAR:  # flat palms where a hand bears on the floor (plant_hands.py); measured with open hands
+        if body.data.shape_keys:
+            body.data.shape_keys.animation_data_clear()
+            for k_ in body.data.shape_keys.key_blocks[1:]:
+                k_.value = 0.0
+        act, support = plant_hands.plant(scene, arm, body, act, [s_ for s_ in 'LR' if not grips(props, s_)],
+                                         lambda a: to_act(a) if a else setattr(ad, 'action', None))
+    to_act(act)
     f0, f1 = (int(round(v)) for v in act.frame_range)
     scene.frame_start, scene.frame_end = f0, f1
+    if AVATAR and body.data.shape_keys:  # the avatar's hands (fit_avatar.py grip keys): closed on what they hold,
+        # a loose fist when running, open and flat on a floor support, relaxed otherwise
+        body.data.shape_keys.animation_data_clear()
+        relax = 0.75 if any(k in name for k in RUN) else 0.3
+        for s_ in 'LR':
+            k_ = body.data.shape_keys.key_blocks.get('grip_' + s_)
+            if not k_:
+                continue
+            if grips(props, s_):
+                k_.value = 1.0
+            elif s_ in support:
+                for f_, w_ in zip(range(f0, f1 + 1), support[s_]):
+                    k_.value = relax * (1 - float(w_))
+                    k_.keyframe_insert('value', frame=f_)
+            else:
+                k_.value = relax
     scene.frame_set(f0)
 
     # the knee ball means seated, unless the body leans on a wall (wall squat with a ball between the knees)

@@ -7,14 +7,14 @@ export default function AppLayout({ children }: LayoutProps<"/">) {
   return (
     <>
       <header className="sticky top-0 z-20 bg-ink text-white">
-        <div className="mx-auto flex h-14 max-w-6xl items-center gap-6 px-4">
-          <Link href="/exercicios" className="flex items-baseline gap-2 font-semibold">
+        <div className="mx-auto flex max-w-6xl flex-wrap items-center gap-x-4 px-4 sm:gap-x-6">
+          <Link href="/catalogo" className="flex h-14 items-center gap-2 font-semibold">
             Kineti
-            <span className="text-sm font-normal text-white/60">revisão de vídeos</span>
+            <span className="hidden text-sm font-normal text-white/60 sm:inline">revisão de vídeos</span>
           </Link>
-          <nav className="flex gap-1 text-sm">
-            <NavLink href="/exercicios">Exercícios</NavLink>
+          <nav aria-label="Navegação principal" className="order-last flex w-full gap-1 overflow-x-auto pb-2 text-sm sm:order-none sm:w-auto sm:pb-0">
             <NavLink href="/catalogo">Catálogo</NavLink>
+            <NavLink href="/exercicios">Exercícios</NavLink>
             <NavLink href="/upload">Enviar vídeo</NavLink>
           </nav>
           <div className="ml-auto">

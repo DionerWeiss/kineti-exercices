@@ -6,7 +6,7 @@ import { Suspense } from "react";
 
 type Props = { href: string; children: React.ReactNode };
 
-const base = "rounded-md px-3 py-1.5 transition-colors";
+const base = "flex min-h-11 shrink-0 items-center rounded-md px-3 transition-colors";
 const idle = "text-white/70 hover:bg-white/10 hover:text-white";
 const current = "bg-white/15 text-white";
 

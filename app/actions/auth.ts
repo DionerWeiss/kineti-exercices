@@ -9,7 +9,7 @@ export type FormState = { error?: string; message?: string } | null;
 function safeNext(value: FormDataEntryValue | null) {
   const next = typeof value === "string" ? value : "";
   // Só caminhos internos, para não virar redirecionamento aberto.
-  return next.startsWith("/") && !next.startsWith("//") ? next : "/exercicios";
+  return next.startsWith("/") && !next.startsWith("//") ? next : "/catalogo";
 }
 
 export async function signIn(_prev: FormState, formData: FormData): Promise<FormState> {
@@ -63,5 +63,5 @@ export async function setPassword(_prev: FormState, formData: FormData): Promise
 
   const { error } = await supabase.auth.updateUser({ password });
   if (error) return { error: error.message };
-  redirect("/exercicios");
+  redirect("/catalogo");
 }

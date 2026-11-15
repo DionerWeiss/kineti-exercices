@@ -2,7 +2,7 @@
 
 App Next.js para enviar vídeos de exercícios ao Cloudflare R2 e aprovar ou reprovar cada versão. Login e banco ficam no Supabase.
 
-O pipeline que gera os vídeos (manequim, Blender) continua em [`tool/`](tool/README.md) e [`tool/mannequin/`](tool/mannequin/README.md).
+O pipeline que gera os vídeos (manequim, Blender) continua em [`tool/`](tool/README.md) e [`tool/mannequin/`](tool/mannequin/README.md). A documentação completa de criação, revisão, comparação com o PocketPhysio, correção, Lottie e novos exercícios está em [`docs/pipeline/`](docs/pipeline/README.md).
 
 ## Telas
 
@@ -64,3 +64,16 @@ O seed é idempotente: atualiza os exercícios existentes, só envia arquivos qu
 - Next.js 16 com Cache Components: tudo que lê a sessão fica dentro de `<Suspense>`, e o `proxy.ts` (antigo middleware) renova a sessão e manda quem não está logado para `/login`.
 - `SUPABASE_SERVICE_ROLE_KEY` só é usada pelo `scripts/seed.mjs`. O app usa a chave publishable e respeita o RLS.
 - Ao distribuir os vídeos do manequim, mantenha o aviso de copyright MIT do desk-break.
+
+## Catálogo comparativo
+
+O catálogo em `/catalogo` compara os vídeos de manequim, Lottie e render 3D. Cada usuário autenticado salva sua escolha e nota no Supabase. Aplique a migração `20261115000000_catalog_reviews.sql` antes de usar a página.
+
+Para enviar os vídeos descritos no catálogo ao R2, configure as variáveis R2 de `.env.local` e execute:
+
+```bash
+node --env-file=.env.local scripts/upload-catalog.mjs --dry-run
+node --env-file=.env.local scripts/upload-catalog.mjs
+```
+
+Por padrão, os arquivos são lidos de `/mnt/e/mannequin`; defina `CATALOG_VIDEO_ROOT` para usar outro caminho. O script verifica os objetos existentes e pode ser executado novamente após uma interrupção. `public/catalogo/data.js` é uma cópia dos dados gerados em `E:\mannequin\catalogo\data.js`; atualize-a ao regenerar o catálogo, execute `node scripts/sync-catalog.mjs` para atualizar a página Next.js e execute o envio novamente.

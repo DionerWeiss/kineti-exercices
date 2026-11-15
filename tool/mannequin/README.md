@@ -100,6 +100,40 @@ python3 tool/mannequin/catalog.py                    # catálogo em português -
 - **`move`** (opcional, em `jobs.json`): o movimento a tocar, quando o vídeo reaproveita o de outro job com acessórios diferentes (por exemplo, a marcha sentada na bola suíça usa `chair-march`).
 - **Paleta:** `MANNEQUIN_PALETTE`. As opções são `areia` (padrão), `cinza`, `ardosia`, `salvia` e `azul`.
 
+## Avatar humano (homem low-poly) e revisão automática
+
+Com `MANNEQUIN_AVATAR=<lib do avatar>`, todos os jobs (inclusive os do desk-break) usam o avatar ajustado ao mesmo rig
+(`avatar/fit_avatar.py`). A lib precisa ter:
+- as actions do desk-break, copiadas com `sync_actions.py` (o rig é o mesmo);
+- a malha original do manequim, oculta, como `mannequin_ref` (`add_ref.py`). Ela serve de referência para o aterramento.
+
+Antes de renderizar, `render_mannequin.py` ajusta a pose em quatro passos (`plant_hands.py`):
+1. **`reground`:** em cada quadro, põe no apoio as partes do avatar que o manequim apoia (pés, joelhos, costas), sem nenhuma parte abaixo dele. O tênis do avatar desce 1,2 cm abaixo do pé do manequim.
+2. **`clear_limbs`:** braço ou perna que atravessa o chão sobe. A perna sobe por IK, com o pé no mesmo lugar; o braço gira no ombro.
+3. **`reground`** de novo.
+4. **`plant`:** mão espalmada no chão, nas caixas do `ground`, na mesa ou no encosto; e mão deitada no chão quando o antebraço está deitado.
+
+Comandos (com `MANNEQUIN_AVATAR`, `MANNEQUIN_OUT` e, para vídeo, `MANNEQUIN_RES=1920x1080` e `MANNEQUIN_VIDEOS`):
+
+```bash
+python3 tool/mannequin/mannequin.py qa [ids...]        # checagens automáticas -> <out>/qa/<id>.json (nada é renderizado)
+QA=1 python3 tool/mannequin/mannequin.py render ids... # vídeo + checagens
+SHEET_FRACS=0,0.17,0.33,0.5,0.67,0.83 SHEET_NAME=lote01 python3 tool/mannequin/mannequin.py sheet ids...
+python3 tool/mannequin/mannequin.py build ids...       # só esses movimentos -> <out>/kineti_sub
+python3 tool/mannequin/mannequin.py sync ids...        # e troca as actions na lib do avatar
+python3 tool/mannequin/review.py <out> [videos] [arquivo de ids] [nome.csv]   # review.csv
+```
+
+`qa_pose.py` mede a cena pronta (pose final, acessórios e câmera) e marca cada job como ok, suspeito ou quebrado. Ele verifica:
+- **Contato:** mão ou pé parado de 2 a 6 cm acima do apoio, ou corpo atravessando o chão ou um acessório (inclusive faces cruzando faces).
+- **Deslize:** mão ou pé plantado que escorrega (skate).
+- **Palma:** mão de apoio sem a palma no apoio.
+- **Malha:** o corpo entrando nele mesmo, ou a pele saindo pela roupa.
+- **Acessórios:** bola descolada do corpo, ou mão fora do acessório que segura.
+- **Câmera:** corpo cortado pelo enquadramento, ou boneco de costas.
+
+Variáveis de depuração: `QA_DEBUG=footR` (contatos de um pé ou mão), `PLANT_DEBUG=1`, `NOPLANT=1`, `KB_DEBUG=<id>` (eventos de contato do builder) e `KB_KEYS=1` (posição de mãos, pés e articulações em cada pose).
+
 ## Limites do manequim
 
 - Sem dedos (a mão é uma luva) e sem rosto.

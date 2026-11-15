@@ -4,7 +4,7 @@ __pycache__/
 build/
 
 # Next.js app
-/node_modules
+node_modules/
 /.next/
 /out/
 /coverage
@@ -18,3 +18,6 @@ npm-debug.log*
 # env (o .env.example é versionado)
 .env*
 !.env.example
+
+# Windows
+*:Zone.Identifier

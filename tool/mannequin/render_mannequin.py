@@ -16,11 +16,14 @@ from mathutils import Matrix, Vector
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import plant_hands  # noqa: E402
+import qa_pose  # noqa: E402
 
 argv = sys.argv[sys.argv.index('--') + 1:]
 OUT, PALETTE, LOGO, JOBS = argv[0], argv[1], argv[2], argv[3:]
 W, H = (int(v) for v in os.environ.get('MANNEQUIN_RES', '960x540').split('x'))
 STILL = bool(os.environ.get('STILL'))
+QA = os.environ.get('QA')  # a folder: write the automatic pose checks of each job there (qa_pose.py, avatar only)
+NORENDER = bool(os.environ.get('NORENDER'))  # with QA: only check, render nothing
 
 PALETTES = {  # body, joints
     'azul': ('#2563EB', '#1E40AF'),
@@ -57,10 +60,24 @@ def mat(name, color, rough=0.6):
 
 
 scene = bpy.context.scene
+AVATAR = bool(os.environ.get('AVATAR'))  # a humanoid avatar on the same rig (avatar/fit_avatar.py): keep its materials, printed shirt and hair
 arm = next(o for o in scene.objects if o.type == 'ARMATURE')
-body = next(o for o in scene.objects if o.type == 'MESH' and any(m.type == 'ARMATURE' for m in o.modifiers))
+REF = scene.objects.get('mannequin_ref') if AVATAR else None  # desk-break's own mesh, hidden: grounding reference
+if AVATAR:  # hair is its own mesh (SM_Char_Avatar_Hair_v8); pull every visible skinned mesh into this scene
+    for o in list(bpy.data.objects):
+        if o.type == 'MESH' and not o.hide_render and any(m.type == 'ARMATURE' for m in o.modifiers) and o.name not in scene.objects:
+            scene.collection.objects.link(o)
+body = next(o for o in scene.objects if o.type == 'MESH' and o is not REF and any(m.type == 'ARMATURE' for m in o.modifiers))
+figure = [body]
+if AVATAR:
+    named = scene.objects.get('mannequin')
+    if named is not None and named.type == 'MESH':
+        body = named
+    figure = [body] + [o for o in scene.objects if o.type == 'MESH' and o is not body and not o.hide_render
+                       and any(m.type == 'ARMATURE' for m in o.modifiers)]
+    print('AVATAR', ','.join(o.name for o in figure))
 for o in list(scene.objects):
-    if o not in (arm, body):
+    if o not in (arm, *figure, REF):
         bpy.data.objects.remove(o)
 ad = arm.animation_data or arm.animation_data_create()
 ad.action = None
@@ -69,8 +86,9 @@ for b in arm.pose.bones:
     b.rotation_quaternion = (1, 0, 0, 0)
     b.location = (0, 0, 0)
 bpy.context.view_layer.update()
+if QA and AVATAR:
+    qa_pose.init(body, arm)
 
-AVATAR = bool(os.environ.get('AVATAR'))  # a humanoid avatar on the same rig (avatar/fit_avatar.py): keep its materials and printed shirt
 body_c, joint_c = PALETTES[PALETTE]
 BODY, JOINT, PROP = mat('body', body_c, 0.65), mat('joint', joint_c, 0.6), mat('prop', '#94A3B8')
 if not AVATAR:
@@ -189,6 +207,7 @@ MARKC = mat('mark', '#F5593D', 0.6)
 TAPEC = mat('tape', '#3D4A5C', 0.8)
 LADDERC = mat('ladder', '#F5B800', 0.6)
 WALKERC = mat('walker', '#AEB8C6', 0.3)
+WALKER_H = float(os.environ.get('WALKER_H', 0.88))  # walker grip height: the avatar's wrist crease with the arms hanging (wrist 0.90 m; palm ~0.88 m when gripping)
 GRIPC = mat('grip', '#3D4A5C', 0.8)
 PILLOWC = mat('pillow', '#F4F1EC', 0.95)
 temp = []
@@ -204,23 +223,24 @@ def box(loc, size, m):
 
 
 def motion_bounds(f0, f1, step=3, part='full'):
-    """Box around the body over the whole motion, and a sample of its vertices.
+    """Box around the body (and the avatar hair) over the whole motion, and a sample of its vertices.
     part = upper (waist up) | lower (knees down) | full."""
     lo, hi, pts = Vector((1e9,) * 3), Vector((-1e9,) * 3), []
     deps = bpy.context.evaluated_depsgraph_get()
     for f in range(f0, f1 + 1, step):
         scene.frame_set(f)
-        ev = body.evaluated_get(deps)
         cut_up = bone_head('spine').z + 0.05
         cut_lo = max(bone_head('kneeL').z, bone_head('kneeR').z) + 0.12
-        for k, v in enumerate(ev.to_mesh().vertices):
-            p_ = ev.matrix_world @ v.co
-            if part == 'upper' and p_.z < cut_up or part == 'lower' and p_.z > cut_lo:
-                continue
-            lo = Vector(map(min, lo, p_)); hi = Vector(map(max, hi, p_))
-            if k % 4 == 0:
-                pts.append(p_)
-        ev.to_mesh_clear()
+        for obj in figure:
+            ev = obj.evaluated_get(deps)
+            for k, v in enumerate(ev.to_mesh().vertices):
+                p_ = ev.matrix_world @ v.co
+                if part == 'upper' and p_.z < cut_up or part == 'lower' and p_.z > cut_lo:
+                    continue
+                lo = Vector(map(min, lo, p_)); hi = Vector(map(max, hi, p_))
+                if k % 4 == 0:
+                    pts.append(p_)
+            ev.to_mesh_clear()
     scene.frame_set(f0)
     return lo, hi, pts
 
@@ -466,11 +486,16 @@ scene.render.resolution_x, scene.render.resolution_y = W, H
 scene.render.fps = 30
 scene.render.image_settings.file_format = 'PNG'
 scene.view_settings.view_transform = 'Standard'
+_samples = os.environ.get('EEVEE_SAMPLES')  # opt-in: fewer Eevee samples render faster; 16 measured identical to the
+if not _samples and os.path.exists(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'eevee_samples.txt')):  # default (mean 0.1/255)
+    _samples = open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'eevee_samples.txt')).read().strip()
+if _samples:
+    scene.eevee.taa_render_samples = int(_samples)
 
 DIRS = {'side': (1, 0, 0.18), 'front': (0, -1, 0.2), 'top3q': (0.55, -0.8, 0.9), 'side3q': (0.85, -0.45, 0.3), 'back': (0.35, 1, 0.25),
         'front3q': (0.5, -0.85, 0.3), 'floor': (1, -0.3, 0.6), 'rside3q': (-0.85, -0.45, 0.3), 'back3q': (0.8, 0.55, 0.35)}
 
-RUN = ('jog', 'run', 'sprint', 'march', 'high-knee', 'butt-kick', 'skater')  # avatar: loose fists
+RUN = ('jog', 'run', 'sprint', 'march', 'high-knee', 'butt-kick', 'skater', 'punch', 'boxing', 'jab', 'uppercut')  # avatar: loose fists (punches: a fist)
 HELD = {'dumbbell', 'bandhands', 'bandanchor', 'bandanchor1', 'bandfeet', 'stick', 'walker', 'walkergo', 'pulley'}
 
 
@@ -480,6 +505,62 @@ def grips(props, s):
         return True
     return any(p_.startswith(('band-', 'towel-', 'stick-', 'stickend-', 'stickfloor-')) and 'h' + s in p_.split('-')[1:]
                for p_ in props)
+
+
+def facing_yaw():
+    """The chest's turn about z from facing -y (radians), or None when the trunk is not upright."""
+    pb = arm.pose.bones['spine']
+    R = (arm.matrix_world @ pb.matrix).to_3x3() @ arm.data.bones['spine'].matrix_local.to_3x3().inverted()
+    if (R @ Vector((0, 0, 1))).z < 0.7:
+        return None
+    c = R @ Vector((0, -1, 0))
+    return math.atan2(c.x, -c.y)  # Rz(yaw) takes (0, -1) to (sin yaw, -cos yaw)
+
+
+def support_hands(act, props):
+    """The hands holding a chair back (support: both) or the backrest of a chair beside (side: the outer one), which
+    plant() keeps on it."""
+    if not props & {'support', 'side'}:
+        return []
+    to_act(act)
+    scene.frame_set(int(round(act.frame_range[0])))
+    if 'support' in props:
+        return ['L', 'R']
+    hx = bone_head('hips').x
+    return [max('LR', key=lambda s_: abs(palm(s_).x - hx))]
+
+
+def prop_hands(act, props):
+    """The hands that rest on a prop drawn under them (the same choice as the props code below): both on the
+    chair back (support), the outer one on the chair beside (side), the still one(s) on the table, the one rolling
+    the table ball."""
+    if not props & {'support', 'side', 'table'} and not any(p_.startswith('tableball') for p_ in props):
+        return []
+    to_act(act)
+    f0_, f1_ = (int(round(v)) for v in act.frame_range)
+    scene.frame_set(f0_)
+    out = set()
+    if 'support' in props:
+        out |= {'L', 'R'}
+    if 'side' in props:
+        hx = bone_head('hips').x
+        out.add(max('LR', key=lambda s_: abs(palm(s_).x - hx)))
+    tb = next((p_ for p_ in props if p_.startswith('tableball')), None)
+    if tb:
+        hp0 = bone_head('hips')
+        out.add(tb[-1] if tb[-1] in 'LR' else max('LR', key=lambda s_: (palm(s_) - hp0).xy.length))
+    if 'table' in props:
+        tr = {}
+        for sd in 'LR':
+            ps = []
+            for f in range(f0_, f1_ + 1, 3):
+                scene.frame_set(f)
+                ps.append(palm(sd))
+            tr[sd] = max((q - ps[0]).length for q in ps)
+        still = [sd for sd in tr if tr[sd] < 0.05] or [min(tr, key=tr.get)]
+        out |= set([sd for sd in 'LR' if 'table' + sd in props] or still)
+    scene.frame_set(f0_)
+    return sorted(out)
 
 
 for job in JOBS:
@@ -498,8 +579,17 @@ for job in JOBS:
             body.data.shape_keys.animation_data_clear()
             for k_ in body.data.shape_keys.key_blocks[1:]:
                 k_.value = 0.0
-        act, support = plant_hands.plant(scene, arm, body, act, [s_ for s_ in 'LR' if not grips(props, s_)],
-                                         lambda a: to_act(a) if a else setattr(ad, 'action', None))
+        set_a = lambda a: to_act(a) if a else setattr(ad, 'action', None)  # noqa: E731
+        gr0 = json.loads(act['ground']) if 'ground' in act else None
+        act, target = plant_hands.reground(scene, arm, body, act, gr0, set_a, ref=REF)
+        act2 = plant_hands.clear_limbs(scene, arm, body, act, gr0, set_a)
+        if act2 is not act:  # limbs out of the floor: rest the body on it again
+            act, _ = plant_hands.reground(scene, arm, body, act2, gr0, set_a, ref=REF, target=target)
+        if not os.environ.get('NOPLANT'):  # (NOPLANT: calibration of the checks against the unplanted hands)
+            act, support = plant_hands.plant(scene, arm, body, act, [s_ for s_ in 'LR' if not grips(props, s_)], set_a,
+                                             ground=gr0, flat=prop_hands(act, props), pin_sides=support_hands(act, props))
+            if not os.environ.get('NOUNCLIP'):
+                act = plant_hands.unclip_arms(scene, arm, body, act, set_a, support)
     to_act(act)
     f0, f1 = (int(round(v)) for v in act.frame_range)
     scene.frame_start, scene.frame_end = f0, f1
@@ -562,8 +652,8 @@ for job in JOBS:
                 o.scale.z *= top / 0.45
                 o.location.z = top / 2 - 0.02
     gr = json.loads(act['ground']) if 'ground' in act else None  # the height field the move was built on
-    if gr and (any(p_.startswith(SUPPORT_BALLS) for p_ in props) or props & {'walker', 'walkergo', 'swissseat'}):
-        pass  # the raised box is the top of an exercise ball (drawn by support_ball) or the walker's handles
+    if gr and (any(p_.startswith(SUPPORT_BALLS) for p_ in props) or props & {'walker', 'walkergo', 'swissseat', 'table'}):
+        pass  # the raised box is the top of an exercise ball (drawn by support_ball), the walker's handles or the table
     elif gr and 'chairbox' in props:  # each raised box is a chair seat, its backrest on the side away from the pelvis
         hp = bone_head('hips')
         for x0, x1, y0, y1, h in gr['boxes']:
@@ -663,14 +753,40 @@ for job in JOBS:
         dv = pm - bone_head('hips')
         dv.z = 0
         dv = dv.normalized() if dv.length > 0.05 else Vector((0, -1, 0))
-        c = pm + dv * 0.08
+        # its face at the furthest the hands reach towards it over the motion (the palm point sits inside the hand)
+        hv = np.flatnonzero(np.isin(np.arange(len(body.data.vertices)), [
+            v.index for v in body.data.vertices for g in v.groups
+            if g.weight > 0.5 and body.vertex_groups[g.group].name in ('handL', 'handR')]))
+        d_ = np.array([dv.x, dv.y, 0.0])
+        reach = -1e9
+        for f in range(f0, f1 + 1, 2):
+            scene.frame_set(f)
+            reach = max(reach, float(((body_np()[hv] - np.array(pm)) @ d_).max()))
+        scene.frame_set(f0)
+        c = pm + dv * (reach + 0.05)
         o = box((c.x, c.y, 1.2), (1.4, 0.1, 2.4), WALLC)
         o.rotation_euler.z = math.atan2(dv.x, -dv.y)
         o['noframe'] = True
-    if 'roll' in props:
+    if 'roll' in props:  # under the knees: the biggest roll on the floor that no leg vertex enters over the motion
         k = bone_head('kneeL')
-        r = max(0.05, (k.z - 0.05) / 2)
-        cyl((k.x, k.y, r), r, 0.42, 'x', ROLLC)
+        pts = []
+        for f in range(f0, f1 + 1, 2):
+            scene.frame_set(f)
+            P = body_np()
+            pts.append(P[(np.abs(P[:, 0] - k.x) < 0.3) & (P[:, 2] < k.z + 0.15)][:, 1:])
+        scene.frame_set(f0)
+        pts = np.vstack(pts)
+        best = (0.0, k.y)
+        for yc in k.y + np.linspace(-0.1, 0.1, 21):
+            lo, hi = 0.02, 0.12
+            for _ in range(20):
+                r = (lo + hi) / 2
+                ok = np.hypot(pts[:, 0] - yc, pts[:, 1] - r).min() >= r - 0.004
+                lo, hi = (r, hi) if ok else (lo, r)
+            if lo > best[0]:
+                best = (lo, yc)
+        r, yc = best
+        cyl((k.x, yc, r), r, 0.42, 'x', ROLLC)
     if 'cuff' in props:
         for s, sx in (('L', 1), ('R', -1)):
             bpy.ops.mesh.primitive_torus_add(major_radius=0.047, minor_radius=0.024, location=(0, 0, 0))
@@ -697,6 +813,7 @@ for job in JOBS:
     if 'ball' in props:
         bpy.ops.mesh.primitive_uv_sphere_add(radius=0.1, segments=48, ring_count=24)
         ball = bpy.context.object
+        ball['qa_held'] = True  # squeezed between the knees
         ball.data.materials.append(BALLC)
         bpy.ops.object.shade_smooth()
         temp.append(ball)
@@ -899,19 +1016,23 @@ for job in JOBS:
         for sgn in (-1, 1):
             loc = (mid_, side + sgn * 0.25, 0.004) if ax == 0 else (side + sgn * 0.25, mid_, 0.004)
             box(loc, (L_, 0.03, 0.008) if ax == 0 else (0.03, L_, 0.008), LADDERC)['noframe'] = True
-    if props & {'walker', 'walkergo'}:  # a rolling walker: handles at the palms (walker: the first frame they reach forward)
-        best = None
-        for f in range(f0, f1 + 1, 2):  # the first frame with the hands well in front of the pelvis
+    if props & {'walker', 'walkergo'}:  # a rolling walker: handles at the palms (walker: where they hold still in front)
+        best, prev = None, None
+        for f in range(f0, f1 + 1, 2):  # the stillest frame with both hands well in front of the pelvis, apart (a grip)
             scene.frame_set(f)
-            P = (palm('L') + palm('R')) / 2
-            if bone_head('hips').y - P.y > 0.2:
-                best = (P, (palm('L') - palm('R')).length)
-                break
+            pl, pr = palm('L'), palm('R')
+            P = (pl + pr) / 2
+            mv = (P - prev).length if prev is not None else 0.0
+            prev = P
+            if bone_head('hips').y - P.y > 0.2 and (pl - pr).length > 0.35 and (best is None or mv < best[2] - 1e-4):
+                best = (P, (pl - pr).length, mv)
+        best = best and best[:2]
         scene.frame_set(f0)
         P0, w = best or ((palm('L') + palm('R')) / 2 + Vector((0, -0.3, 0)), 0.5)
         if 'walkergo' in props:
             P0 = (palm('L') + palm('R')) / 2
             w = (palm('L') - palm('R')).length
+        P0 = Vector((P0.x, P0.y, WALKER_H))  # a real walker's height, not the palms' (the moves put the grips there)
         wr = walker_parts(max(w, 0.46), P0.z)
         if 'walkergo' in props:
             def wk():
@@ -1010,6 +1131,7 @@ for job in JOBS:
         tb.data.materials.append(BALLC)
         bpy.ops.object.shade_smooth()
         tb.rotation_mode = 'QUATERNION'
+        tb['qa_free'] = True  # flies away from the body on purpose
         temp.append(tb)
         for f in range(f0, f1 + 1):
             tb.location = out[f]
@@ -1021,6 +1143,7 @@ for job in JOBS:
         wb = bpy.context.object
         wb.data.materials.append(BALLC)
         bpy.ops.object.shade_smooth()
+        wb['qa_held'] = True
         temp.append(wb)
         for f in range(f0, f1 + 1):
             scene.frame_set(f)
@@ -1155,6 +1278,7 @@ for job in JOBS:
         hb.data.materials.append(BALLC)
         bpy.ops.object.shade_smooth()
         hb.rotation_mode = 'QUATERNION'
+        hb['qa_held'] = True  # held, not a support
         temp.append(hb)
         animate([(hb, lambda: Matrix.Translation((palm('L') + palm('R')) / 2))], f0, f1)
         for f in range(f0, f1 + 1, 3):
@@ -1203,9 +1327,10 @@ for job in JOBS:
             scene.frame_set(f)
             dv = bone_head('hips') - h0
             dv.z = 0
-            ev = body.evaluated_get(deps)
-            pts += [ev.matrix_world @ v.co - dv for k_, v in enumerate(ev.to_mesh().vertices) if k_ % 4 == 0]
-            ev.to_mesh_clear()
+            for obj in figure:
+                ev = obj.evaluated_get(deps)
+                pts += [ev.matrix_world @ v.co - dv for k_, v in enumerate(ev.to_mesh().vertices) if k_ % 4 == 0]
+                ev.to_mesh_clear()
         scene.frame_set(f0)
         lo = Vector(map(min, *pts)) if False else Vector([min(p_[i] for p_ in pts) for i in range(3)])
         hi = Vector([max(p_[i] for p_ in pts) for i in range(3)])
@@ -1228,6 +1353,12 @@ for job in JOBS:
     if size.z < 0.75 * max(size.x, size.y) and size.x > size.y:
         # lying along X: "side" should look across the body, so turn the views 90 degrees
         d = Matrix.Rotation(math.radians(-90), 3, 'Z') @ d
+    else:  # upright but turned (desk-break moves come rotated, e.g. hips [0,-70,0]): the views follow the chest
+        scene.frame_set(f0)
+        yaw = facing_yaw()
+        if yaw is not None and abs(yaw) > math.radians(25):
+            d = Matrix.Rotation(yaw, 3, 'Z') @ d
+            print('FACING', name, round(math.degrees(yaw)))
     d = d.normalized()
     th = math.tan(cam.data.angle_x / 2)  # sensor fit AUTO, landscape: angle_x is the width
     tv = th * H / W
@@ -1255,6 +1386,16 @@ for job in JOBS:
             cam.keyframe_insert('location', frame=f)
         scene.frame_set(f0)
     print('JOB', name, f0, f1, sorted(props), 'dist', round(dist, 2), 'npts', len(pts), 'lo', tuple(round(v, 2) for v in lo), 'hi', tuple(round(v, 2) for v in hi))
+    if os.environ.get('QA_DEBUG'):
+        scene.frame_set(f0)
+        gi_ = body.vertex_groups['handL'].index
+        hv_ = [v.index for v in body.data.vertices if any(g.group == gi_ and g.weight > 0.5 for g in v.groups)]
+        print('DBGHAND', f0, round(float(body_np()[hv_, 2].min()), 3), 'shape', [round(k_.value, 2) for k_ in body.data.shape_keys.key_blocks] if body.data.shape_keys else None,
+              'action', ad.action.name if ad.action else None)
+    if QA and AVATAR:
+        qa_pose.check(name, view, props, scene, arm, body, figure, cam, temp, FLOOR.location.z, f0, f1, palm, grips, QA, part=part, seated=seated)
+    if NORENDER:
+        continue
     scene.render.filepath = f'{OUT}/{name}/f_'
     if STILL:
         for q in (float(x) for x in os.environ['STILL'].split(',')):

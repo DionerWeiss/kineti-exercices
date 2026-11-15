@@ -156,9 +156,19 @@ LIMBS = [(BI[u], BI[m], BI[e], s) for u, m, e, s in
 ENDV = {e: np.where(VB == e)[0] for _, _, e, _ in LIMBS}
 STILL = BODY & ~np.isin(VB, list(ENDV))       # parts that rest on the floor without IK: back, pelvis, knees...
 TOUCH, LIFT_LO, LIFT_HI, FADE, MAX_DROP, NEAR, SLIDE, SETTLED = 0.01, 0.012, 0.06, 8, 0.06, 0.01, 0.15, 0.15
+SINGULAR, BEND_RATE, BEND_MAX, HANDBACK, HOVER_RATE = 0.03, np.radians(4), np.radians(8), 6, 0.01   # m from full reach, rad/frame (see reach)
+DROP_DOWN = 0.01   # m/frame: the pelvis rises back at most this fast (a released foot made it jump 6 cm in a frame)
 HIPS = BI['hips']
+DEBUG = os.environ.get('KB_DEBUG', '')  # an exercise id: print its contact events (PLANT / FADE / RELEASE)
+TRACE = (lambda t: [t[0], t[1], int(t[2]), int(t[3])] if len(t) == 4 else None)(os.environ.get('KB_TRACE', '').split(':'))  # id:footR:f0:f1 per-frame IK
 smooth = lambda x: x * x * (3 - 2 * x)
 QH = np.array(rig.data.bones['hips'].matrix_local)[:3, :3]
+
+
+def qang(A, B):
+    """Angle (deg) between the rotations of two 4x4 matrices."""
+    c = (np.trace(A[:3, :3].T @ B[:3, :3]) - 1) / 2
+    return float(np.degrees(np.arccos(np.clip(c, -1, 1))))
 
 
 def skin(M, idx=slice(None)):
@@ -181,9 +191,13 @@ def swing(a, b):
     return np.eye(3) + s * K + (1 - c) * K @ K
 
 
-def reach(Mp, Bu, Bm, end_t, A, sign):
+def reach(Mp, Bu, Bm, end_t, A, sign, prev=None):
     """Two-bone IK: bend the middle joint (its x axis; knees bend +x, elbows -x), then swing the upper bone so
-    the end joint lands on A. Returns the new upper/middle local matrices and where the end really got to."""
+    the end joint lands on A. Returns the new upper/middle local matrices and where the end really got to.
+    prev: the middle joint's bend on the previous frame. Near full extension the IK is singular (the last 2 mm of
+    reach are 8 deg of knee), so there the bend changes at most BEND_RATE per frame and the end lags a few mm
+    (a stance knee snapped straight in one frame at every push-off); elsewhere at most BEND_MAX (a foot rolling onto
+    its toes moves the contact point of the low-poly sole in steps: a 2 cm jump of the target bent the knee 19 deg)."""
     H = (Mp @ Bu)[:3, 3]
     th = Matrix(Bm[:3, :3].tolist()).to_euler('YZX').x
     rest = rotx(-th) @ Bm[:3, :3]                 # the middle joint's twist, without its bend
@@ -194,12 +208,34 @@ def reach(Mp, Bu, Bm, end_t, A, sign):
         for _ in range(30):
             mid = (lo + hi) / 2
             lo, hi = (mid, hi) if dist(mid) > want else (lo, mid)
+    if prev is not None:
+        # (only straightening is slowed there: bending out of it is a landing absorbing the impact)
+        rate = BEND_RATE if want > dist(0.0) - SINGULAR and abs(hi) < abs(prev) else BEND_MAX
+        hi = prev + np.clip(hi - prev, -rate, rate)
     Bm2 = Bm.copy(); Bm2[:3, :3] = rotx(hi) @ rest
     Mu = Mp @ Bu
     v = Mu[:3, :3] @ (Bm2[:3, :3] @ end_t + Bm2[:3, 3])
     R = swing(v, A - H)
     Bu2 = Bu.copy(); Bu2[:3, :3] = Mp[:3, :3].T @ R @ Mu[:3, :3]
     return Bu2, Bm2, H + R @ v
+
+
+def foot_roll(Ra, Rb, R0):
+    """How a planted foot turns, from its orientation R0 when it was put down. The keys say it two ways: Ra follows
+    the keyed ankle (foot against shin) - right for a bridge, where the shin turns over a flat foot; Rb follows the
+    keyed foot in the world - right for a squat, whose keys bend the ankle to keep the foot flat as the shin leans
+    (Ra lifted the toes 20-35 deg off the floor in every squat). Heel and toe raises roll the foot either way. The
+    blend favours whichever stays nearer R0, smoothly (weight a^2 / (a^2 + b^2))."""
+    a, b = qang4(Ra, R0), qang4(Rb, R0)
+    if a + b < 1e-6:
+        return Ra
+    w = a * a / (a * a + b * b)          # the share of Rb
+    return np.array(Matrix(Ra.tolist()).to_quaternion().slerp(Matrix(Rb.tolist()).to_quaternion(), w).to_matrix())
+
+
+def qang4(A, B):
+    c = (np.trace(A.T @ B) - 1) / 2
+    return float(np.arccos(np.clip(c, -1, 1)))
 
 
 def settle(ex, F, lift):
@@ -232,7 +268,19 @@ def settle(ex, F, lift):
                     for i in range(F)])                                                    # keyed lowest point
     state = [{'mode': 'free', 'air': 99} for _ in LIMBS]
     out = {}
-    for rep in ((0, 1) if loop else (1,)):      # loops run twice so the first frame starts where the last ends
+    drop_prev = 0.0
+    # a "once" move that ends on its first key moved along (a walk) also runs twice: its first frame starts with the
+    # contacts of the last one, carried back by the distance travelled (otherwise the back foot starts unplanted)
+    strip = lambda k: {a: b for a, b in k.items() if a not in ('pos', 'hold')}  # noqa: E731
+    cyc = not loop and len(ex['keys']) > 2 and strip(ex['keys'][0]) == strip(ex['keys'][-1])
+    for rep in ((0, 1) if loop or cyc else (1,)):      # loops run twice so the first frame starts where the last ends
+        if rep and cyc:
+            back = (Ms[0][HIPS, :3, 3] + shift[0]) - (Ms[-1][HIPS, :3, 3] + shift[-1])
+            back[2] = 0
+            for st in state:
+                for k_ in ('W', 'head', 'fk0'):
+                    if k_ in st:
+                        st[k_] = st[k_] + back
         quats, locs = {i: [] for u, m, e, _ in LIMBS for i in (u, m, e)}, []
         for i in range(F):
             M = Ms[i].copy(); M[:, :3, 3] += shift[i]
@@ -252,27 +300,46 @@ def settle(ex, F, lift):
                     slid = (zmin < 2 * TOUCH and np.linalg.norm(moved) > SLIDE                # still on the floor
                             and np.linalg.norm(by_body) < 0.5 * np.linalg.norm(moved))
                     lifted = min(zmin, zmin - by_body[2])      # how high the leg itself raised it, not a body tilt
+                    # a step: the keys carry it off the floor and well away from where it was put down (walking: the
+                    # pelvis rises as the swing foot lifts, so `lifted` alone can stay under LIFT_HI and the foot stuck)
+                    stepped = zmin > LIFT_HI / 2 and np.linalg.norm(moved[:2]) > SLIDE
                     Wk = LOC[ENDV[e]] @ Rfk.T + hfk           # (ground) the keys took it over a higher surface (a leg
                     moved_off = GROUND is not None and ground(Wk[[above(Wk).argmin()], :2])[0] > st['g0'] + 0.03   # coming back onto a bed)
-                    if lifted > LIFT_HI: st['mode'] = 'free'             # lifted: already eased back onto the keys
-                    elif moved_off: st.update(mode='fade', k=0, dp=st['head'] - hfk, dq=st['R'] @ Rfk.T)
-                    elif resting[i][li] or slid: st.update(mode='fade', k=0, dp=st['head'] - hfk, dq=st['R'] @ Rfk.T)
+                    if DEBUG == ex['id'] + '+' and (rep or not (loop or cyc)) and i % 3 == 0:
+                        print('KBDBG', i + 1, NAMES[e], 'zmin', round(float(zmin), 3), 'lifted', round(float(lifted), 3), 'byz', round(float(by_body[2]), 3), 'moved', np.round(moved, 2))
+                    if DEBUG == ex['id'] and (rep or not (loop or cyc)) and (lifted > LIFT_HI or moved_off or resting[i][li] or slid or stepped):
+                        print('KBDBG', i + 1, NAMES[e], 'RELEASE' if lifted > LIFT_HI else 'FADE', 'lifted', round(float(lifted), 3),
+                              'slid' if slid else '', 'step' if stepped else '', 'rest' if resting[i][li] else '', 'moved', np.round(moved, 2), 'by_body', np.round(by_body, 2))
+                    if lifted > LIFT_HI:   # lifted: eased back onto the keys, but a fast lift does it in a frame or two
+                        gap = max(qang(np.linalg.inv(M[PARENT[u]]) @ M[u], st['Bu']), qang(np.linalg.inv(M[u]) @ M[m], st['Bm']))
+                        st.update(mode='fade', k=0, n=int(np.clip(np.ceil(1.5 * gap / 3.0), 1, 4 * FADE)),
+                                  dp=st['head'] - hfk, dq=st['R'] @ Rfk.T, Bu0=st['Bu'], Bm0=st['Bm'])
+                    elif moved_off or resting[i][li] or slid or stepped or st.get('oor', 0) >= 2:   # (oor: out of reach)
+                        # the fade lasts long enough for the joints to catch up with the keys at <= ~3 deg/frame
+                        gap = max(qang(np.linalg.inv(M[PARENT[u]]) @ M[u], st['Bu']), qang(np.linalg.inv(M[u]) @ M[m], st['Bm']))
+                        st.update(mode='fade', k=0, n=int(np.clip(np.ceil(1.5 * gap / 3.0), FADE, 4 * FADE)),
+                                  dp=st['head'] - hfk, dq=st['R'] @ Rfk.T, Bu0=st['Bu'], Bm0=st['Bm'])
                 R, h = Rfk, hfk
                 if st['mode'] == 'fade':
                     st['k'] += 1
-                    if st['k'] > FADE: st['mode'] = 'free'
+                    if st['k'] > st['n']: st['mode'] = 'free'
                     else:
-                        w = 1 - smooth(st['k'] / FADE)
+                        w = 1 - smooth(st['k'] / st['n'])
                         R = np.array(Quaternion().slerp(Matrix(st['dq'].tolist()).to_quaternion(), w).to_matrix()) @ Rfk
                         h = hfk + w * st['dp']
+                        st['w'] = w
                 if st['mode'] != 'plant' and zmin < TOUCH and not resting[i][li] and speed < SETTLED:
                     W = LOC[ENDV[e]] @ R.T + h
                     za = above(W)
-                    st.update(mode='plant', Rref=R @ Be[:3, :3].T, W=W, C=za < za.min() + .003, g0=ground(W[[za.argmin()], :2])[0],
+                    st.update(mode='plant', oor=0, Rref=R @ Be[:3, :3].T, R0=R.copy(), Rfk0=Rfk.copy(), W=W, C=za < za.min() + .003, g0=ground(W[[za.argmin()], :2])[0],
                               fk0=hfk, rel0=rel)
                     lifted = zmin
+                    if DEBUG == ex['id'] and (rep or not (loop or cyc)):
+                        print('KBDBG', i + 1, NAMES[e], 'PLANT at', np.round(hfk, 2), 'rel', np.round(rel, 2), 'speed', round(float(speed), 2))
                 if st['mode'] == 'plant':
                     Rp = st['Rref'] @ Be[:3, :3]            # keep the planted angle; the key may still roll the foot
+                    if sign > 0:   # a foot: see foot_roll
+                        Rp = foot_roll(Rp, Rfk @ st['Rfk0'].T @ st['R0'], st['R0'])
                     gW = ground(st['W'][:, :2])
                     st['W'][:, 2] -= 0.3 * max((st['W'][:, 2] - gW).min(), 0)   # ease a hovering foot down onto the ground
                     L = LOC[ENDV[e]] @ Rp.T
@@ -283,37 +350,84 @@ def settle(ex, F, lift):
                     za = above(W)
                     st.update(W=W, C=za < za.min() + .003)
                     # as the keys start lifting it, hand it back to them gradually
-                    st['s'] = s = smooth(np.clip((LIFT_HI - lifted) / (LIFT_HI - LIFT_LO), 0, 1))
+                    # (over at least HANDBACK frames: a fast lift swapped a flat planted foot for the keyed tiptoe foot in 2)
+                    st['s'] = s = max(smooth(np.clip((LIFT_HI - lifted) / (LIFT_HI - LIFT_LO), 0, 1)), st.get('s', 1.0) - 1 / HANDBACK)
                     R = np.array(Matrix(Rfk.tolist()).to_quaternion().slerp(Matrix(Rp.tolist()).to_quaternion(), s).to_matrix())
                     h = hfk + s * (hp - hfk)
-                if st['mode'] != 'plant' and st['air'] < 15 and speed > SETTLED:
+                    st['hp'] = hp
+                up = 0.0
+                if st['mode'] != 'plant' and st['air'] < 15 and speed > SETTLED and sign > 0:
                     # coming down while still moving: hover, and touch down where the keys bring it to rest
+                    # (feet only: a nearly straight arm coming down onto its hand, a bird dog, bent 21 deg in a frame
+                    # for a 1 cm hover, the IK being singular there)
                     k = next((j for j in range(i, F) if spd[j, li] < SETTLED), F - 1)
                     up = min(0.6 * np.linalg.norm(fk[k, li, :2] - hfk[:2]), 0.06) - zmin
-                    if up > 0 and low[k, li] < TOUCH: h = h + [0, 0, up]; goal[li] = R, h
+                    if not (up > 0 and low[k, li] < TOUCH): up = 0.0
+                # the hover rises and settles at most HOVER_RATE per frame (it started in one frame: a 30 deg knee pop)
+                st['up'] = up = 0.0 if st['mode'] == 'plant' else float(np.clip(up, st.get('up', 0.0) - HOVER_RATE, st.get('up', 0.0) + HOVER_RATE))
+                if up > 0: h = h + [0, 0, up]; goal[li] = R, h
                 if st['mode'] != 'free': goal[li] = R, h
             drop = 0.0
             if not anchored[i] and not seated:            # standing: lower the pelvis a little so legs reach
                 for li, (R, h) in goal.items():
                     u, m, e, _ = LIMBS[li]
-                    if LIMBS[li][3] < 0: continue
+                    if LIMBS[li][3] < 0 or state[li]['mode'] == 'fade': continue
                     H = M[u, :3, 3]
                     r = np.linalg.norm(M[m, :3, 3] - H) + np.linalg.norm(M[e, :3, 3] - M[m, :3, 3])
                     hor = np.linalg.norm((h - H)[:2])
                     if hor < r: drop = max(drop, (H[2] - h[2]) - np.sqrt(r * r - hor * hor) + 0.002)
                 drop = min(drop, MAX_DROP)
+            drop = max(drop, drop_prev - DROP_DOWN) if not (seated or anchored[i]) else drop
+            drop_prev = drop
+            if drop:
                 M[:, 2, 3] -= drop
             for li, (u, m, e, sign) in enumerate(LIMBS):
                 st, p = state[li], PARENT[u]
-                if li in goal:
+                if li in goal and st['mode'] == 'fade':
+                    # (a reach for a blended position snaps the knee/elbow near full extension: 3 cm = 26 deg)
+                    w = st['w']
+                    Bu, Bm2 = np.linalg.inv(M[p]) @ M[u], np.linalg.inv(M[u]) @ M[m]
+                    Be = np.linalg.inv(M[m]) @ M[e]
+                    for B_, B0 in ((Bu, st['Bu0']), (Bm2, st['Bm0'])):
+                        B_[:3, :3] = np.array(Matrix(B_[:3, :3].tolist()).to_quaternion().slerp(
+                            Matrix(B0[:3, :3].tolist()).to_quaternion(), w).to_matrix())
+                    M[u] = M[p] @ Bu; M[m] = M[u] @ Bm2
+                    M[e, :3, :3], M[e, :3, 3] = goal[li][0], (M[m] @ Be)[:3, 3]
+                elif li in goal and st['mode'] == 'plant' and st['s'] < 0.999:
+                    # handing the contact back to the keys: blend the joints of the planted solution with the keyed
+                    # ones (blending the target instead snaps a nearly straight knee)
+                    R, s_ = goal[li][0], st['s']
+                    Bk, Bmk = np.linalg.inv(M[p]) @ M[u], np.linalg.inv(M[u]) @ M[m]
+                    Be = np.linalg.inv(M[m]) @ M[e]
+                    prev = Matrix(st['Bm'][:3, :3].tolist()).to_euler('YZX').x if 'Bm' in st else None
+                    Bu, Bm2, got = reach(M[p], Bk, Bmk, Be[:3, 3], st['hp'], sign, prev)
+                    for B_, Bk_ in ((Bu, Bk), (Bm2, Bmk)):
+                        B_[:3, :3] = np.array(Matrix(Bk_[:3, :3].tolist()).to_quaternion().slerp(
+                            Matrix(B_[:3, :3].tolist()).to_quaternion(), s_).to_matrix())
+                    M[u] = M[p] @ Bu; M[m] = M[u] @ Bm2
+                    M[e, :3, :3], M[e, :3, 3] = R, (M[m] @ Be)[:3, 3]
+                elif li in goal:
                     R, h = goal[li]
+                    planted = st['mode'] == 'plant' and 'Bm' in st
+                    prev = Matrix(st['Bm'][:3, :3].tolist()).to_euler('YZX').x if planted else None
                     Bu, Bm2, got = reach(M[p], np.linalg.inv(M[p]) @ M[u], np.linalg.inv(M[u]) @ M[m],
-                                         (np.linalg.inv(M[m]) @ M[e])[:3, 3], h, sign)
+                                         (np.linalg.inv(M[m]) @ M[e])[:3, 3], h, sign, prev)
                     M[u] = M[p] @ Bu; M[m] = M[u] @ Bm2
                     M[e, :3, :3], M[e, :3, 3] = R, got
                     if st['mode'] == 'plant' and st['s'] > .99:   # (out of reach: the foot/hand slides along)
-                        st['W'] += got - h
-                st.update(R=M[e, :3, :3].copy(), head=M[e, :3, 3].copy())
+                        H_ = M[u, :3, 3]
+                        r_ = np.linalg.norm(M[m, :3, 3] - H_) + np.linalg.norm(got - M[m, :3, 3])
+                        over = np.linalg.norm(h - H_) - r_ + 1e-4       # beyond full reach (not the lag of a bend limit)
+                        if over > 0:
+                            st['W'] += got - h
+                        # two frames out of reach: the contact is let go (fade) instead of dragging a straight limb
+                        st['oor'] = st.get('oor', 0) + 1 if over > 0 and np.linalg.norm(got - h) > 0.005 else 0
+                if TRACE and TRACE[0] == ex['id'] and TRACE[1] == NAMES[e] and TRACE[2] <= i + 1 <= TRACE[3] and (rep or not (loop or cyc)):
+                    print('KBTRACE', i + 1, st['mode'], 'knee', round(float(np.degrees(Matrix((np.linalg.inv(M[u]) @ M[m])[:3, :3].tolist()).to_euler('YZX').x)), 1),
+                          'eul', np.round(np.degrees(Matrix((np.linalg.inv(M[u]) @ M[m])[:3, :3].tolist()).to_euler('YZX')), 1),
+                          'upper', np.round(np.degrees(Matrix((np.linalg.inv(M[PARENT[u]]) @ M[u])[:3, :3].tolist()).to_euler('YZX')), 1),
+                          'end', np.round(M[e, :3, 3], 3), 's', round(float(st.get('s', -1)), 2), 'drop', round(float(drop), 3))
+                st.update(R=M[e, :3, :3].copy(), head=M[e, :3, 3].copy(), Bu=np.linalg.inv(M[p]) @ M[u], Bm=np.linalg.inv(M[u]) @ M[m])
             for b in quats:
                 q = Matrix((np.linalg.inv(M[PARENT[b]]) @ M[b])[:3, :3].tolist()).to_quaternion()
                 if quats[b] and np.dot(quats[b][-1], q) < 0: q.negate()
@@ -381,6 +495,8 @@ def report(name, k):
         P = V[ENDV[e]]
         a = above(P)
         line.append(f"{NAMES[e]} {a.min():+.3f} @({P[:, 0].mean():+.2f},{P[:, 1].mean():+.2f})")
+    if os.environ.get('KB_KEYS'):  # joints too, to line contacts up between keys (y along the body, z height)
+        line += [f"{n} ({M[BI[n], 0, 3]:+.2f},{M[BI[n], 1, 3]:+.2f},{M[BI[n], 2, 3]:+.2f})" for n in ('kneeL', 'armL', 'neck', 'hips')]
     print(f'KEY {name}[{k}]', ' | '.join(line), f'| pelvis {above(V[PELVIS]).min():+.3f}')
 
 
@@ -406,7 +522,7 @@ for path in FILES:
                 t += dt
                 try: pose(key, ex.get('seated'))
                 except Exception as e: raise SystemExit(f"ERROR in {ex['id']}: {e}")
-                if GROUND and not dt: report(ex['id'], len(times))
+                if (GROUND or os.environ.get('KB_KEYS')) and not dt: report(ex['id'], len(times))
                 frame = 1 + round(t * FPS)
                 rig['lift'] = float(key.get('lift', 0)); rig.keyframe_insert('["lift"]', frame=frame)
                 for b in bones:

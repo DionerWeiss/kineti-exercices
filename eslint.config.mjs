@@ -15,10 +15,12 @@ const eslintConfig = defineConfig([
     // Pipeline de vídeo (Python/Blender), fora do app:
     "tool/**",
     "research/**",
-    "mixamo/**",
     "videos/**",
     "exercises/**",
     "clinical_tests/**",
+    // Biblioteca externa minificada e dados gerados do catálogo.
+    "examples/dinh/vendor/**",
+    "public/catalogo/data.js",
   ]),
 ]);
 

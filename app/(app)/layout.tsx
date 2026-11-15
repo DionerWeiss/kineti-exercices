@@ -14,6 +14,7 @@ export default function AppLayout({ children }: LayoutProps<"/">) {
           </Link>
           <nav className="flex gap-1 text-sm">
             <NavLink href="/exercicios">Exercícios</NavLink>
+            <NavLink href="/catalogo">Catálogo</NavLink>
             <NavLink href="/upload">Enviar vídeo</NavLink>
           </nav>
           <div className="ml-auto">

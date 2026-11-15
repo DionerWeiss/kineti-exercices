@@ -1,0 +1,274 @@
+[
+ {
+  "pp_id": "660a6145b08ac7518f1f7f31",
+  "job": "kineti-forward-lunge",
+  "nome_pt": "Avanço alternado com apoio lateral",
+  "motivo": "apoio lateral numa cadeira (acessório ausente)",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272153a15212d048ea35",
+  "job": "kineti-forward-lunge",
+  "nome_pt": "Avanço em relógio",
+  "motivo": "avanço em várias direções (relógio)",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e613",
+  "job": "kineti-forward-lunge",
+  "nome_pt": "Passo à frente com controle de alinhamento",
+  "motivo": "passo curto com calcanhar primeiro e joelho só levemente dobrado",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "660a6144b08ac7518f1f7dab",
+  "job": "kineti-forward-lunge",
+  "nome_pt": "Avanço frontal saindo de almofada de equilíbrio",
+  "motivo": "sai de uma almofada de equilíbrio",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "660a6144b08ac7518f1f7dac",
+  "job": "kineti-forward-lunge",
+  "nome_pt": "Avanço frontal sobre almofada de equilíbrio",
+  "motivo": "pisa numa almofada de equilíbrio",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "660a6145b08ac7518f1f80cb",
+  "job": "kineti-forward-lunge",
+  "nome_pt": "Afundo frontal no Bosu",
+  "motivo": "pisa num Bosu",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e620",
+  "job": "kineti-indoor-walking",
+  "nome_pt": "Caminhada com rotação de cabeça",
+  "motivo": "PP vira a cabeça para os lados enquanto anda",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "673c9258e10df73c8302d7d3",
+  "job": "kineti-knee-push-up",
+  "nome_pt": "Flexão de braços diamante com joelhos apoiados",
+  "motivo": "mãos juntas em diamante sob o peito; as nossas ficam afastadas",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272153a15212d048e9fc",
+  "job": "kineti-side-plank",
+  "nome_pt": "Prancha lateral em estrela",
+  "motivo": "estrela: apoio no antebraço e eleva braço e perna de cima",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "660a6145b08ac7518f1f80ab",
+  "job": "kineti-side-plank",
+  "nome_pt": "Prancha lateral com pés elevados no step",
+  "motivo": "pés sobre um step e o quadril sobe e desce",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272153a15212d048e9f9",
+  "job": "kineti-side-plank",
+  "nome_pt": "Prancha lateral com troca de lado",
+  "motivo": "gira e troca o braço de apoio",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e7e9",
+  "job": "kineti-single-leg-bridge",
+  "nome_pt": "Ponte unilateral com elevação de perna estendida",
+  "motivo": "com o quadril elevado, sobe e desce a perna esticada",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "673c9258e10df73c8302d78f",
+  "job": "mini-squat",
+  "nome_pt": "Agachamento livre",
+  "motivo": "agachamento completo com mãos unidas no peito",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e857",
+  "job": "seated-back-extension",
+  "nome_pt": "Aproximação e afastamento de cotovelos sentado",
+  "motivo": "PP aproxima/afasta cotovelos (ombros); nosso extensão torácica",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e708",
+  "job": "seated-side-bend",
+  "nome_pt": "Alongamento do grande dorsal sentado",
+  "motivo": "PP flexão + rotação com cabeça baixa (dorsal); nosso inclinação lateral",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e518",
+  "job": "chair-figure-four",
+  "nome_pt": "Alongamento da fáscia plantar sentado",
+  "motivo": "PP puxa os dedos do pé (fáscia plantar); nosso inclina tronco (piriforme)",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65b09dc54ad825d03040721c",
+  "job": "chair-wrist-stretch",
+  "nome_pt": "Alongamento ativo bilateral de extensores de punho",
+  "motivo": "PP alonga extensores: punhos dobrados para baixo, bilateral",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "660a6145b08ac7518f1f819e",
+  "job": "chair-wrist-stretch",
+  "nome_pt": "Alongamento passivo de flexão de punho na mesa",
+  "motivo": "PP em pé, dorso da mão na mesa: flexão passiva de punho",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65b09dc54ad825d0304072f7",
+  "job": "bird-dog-easy",
+  "nome_pt": "Extensão de perna em quatro apoios com pé no chão",
+  "motivo": "PP estende a perna para trás com pé no chão; nosso eleva o braço",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272053a15212d048e7ed",
+  "job": "figure-four-stretch",
+  "nome_pt": "Alongamento da banda iliotibial em decúbito dorsal",
+  "motivo": "PP empurra o joelho de baixo para o lado (banda iliotibial), sem puxar ao peito",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "673c9258e10df73c8302d790",
+  "job": "mini-squat-hold",
+  "nome_pt": "Agachamento com isometria",
+  "motivo": "agachamento profundo com mãos unidas no peito; nosso é mini agachamento",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65b09dc54ad825d0304072dc",
+  "job": "kineti-side-lying-clamshell",
+  "nome_pt": "Adução isométrica de quadril com bola (deitado de lado)",
+  "motivo": "PP aperta bola entre joelhos (adução isométrica)",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "664744bf5c2c1f75d4d71d96",
+  "job": "kineti-weight-shift-side-supported",
+  "nome_pt": "Deslocamento lateral de peso sentado",
+  "motivo": "PP sentado na cadeira erguendo um glúteo; nosso em pé",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "673c9258e10df73c8302d7ad",
+  "job": "kineti-push-up",
+  "nome_pt": "Prancha dinâmica (subida e descida)",
+  "motivo": "prancha alta para antebraços, um braço de cada vez; sem flexão",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65a9272153a15212d048ea4a",
+  "job": "kineti-lateral-lunge",
+  "nome_pt": "Passos à frente e laterais para equilíbrio",
+  "motivo": "Kineti faz afundo lateral; PP dá passos curtos à frente e ao lado",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "673c9258e10df73c8302d75c",
+  "job": "kineti-crunch-reach-alternating",
+  "nome_pt": "Abdominal toque no calcanhar",
+  "motivo": "PP flexão lateral tocando calcanhar; nosso crunch com rotação cruzada",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "673c9258e10df73c8302d7c2",
+  "job": "kineti-crunch-reach-alternating",
+  "nome_pt": "Toque alternado nos calcanhares",
+  "motivo": "PP flexão lateral tocando calcanhar; nosso crunch com rotação cruzada",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-13"
+ },
+ {
+  "pp_id": "65b09dc54ad825d030407342",
+  "job": "kineti-supine-quad-set-ball",
+  "nome_pt": "Adução isométrica com rolo entre os joelhos",
+  "motivo": "adução de quadril apertando rolo entre joelhos, não isometria de quadríceps",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ },
+ {
+  "pp_id": "660a61776a80d359d40dcf03",
+  "job": "kineti-chair-prayer-stretch",
+  "nome_pt": "Alongamento de punho (flexão passiva)",
+  "motivo": "PP une o dorso das mãos, dedos para baixo (flexão de punho)",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ },
+ {
+  "pp_id": "660a6144b08ac7518f1f7e3c",
+  "job": "kineti-chair-neck-isometric-forehead",
+  "nome_pt": "Fortalecimento isométrico de rotação cervical sentado",
+  "motivo": "PP isometria de rotação com mão na lateral da cabeça",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ },
+ {
+  "pp_id": "660a61776a80d359d40dce9e",
+  "job": "kineti-wall-slide-flexion",
+  "nome_pt": "Deslizamento lateral do braço na parede",
+  "motivo": "PP de lado para parede (abdução/plano lateral); nosso flexão de frente",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ },
+ {
+  "pp_id": "664744bf5c2c1f75d4d71d5c",
+  "job": "kineti-long-sit-band-inversion",
+  "nome_pt": "Fortalecimento de eversão do tornozelo com elástico",
+  "motivo": "PP faz eversão (direção oposta); nosso é inversão",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ },
+ {
+  "pp_id": "65a9272153a15212d048e93f",
+  "job": "kineti-sleeper-stretch",
+  "nome_pt": "Alongamento de rotação externa de ombro deitado de lado",
+  "motivo": "PP alonga rotação externa (oposta ao sleeper, que é rotação interna)",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ },
+ {
+  "pp_id": "660a6145b08ac7518f1f7f18",
+  "job": "chair-knee-extension",
+  "nome_pt": "Flexão de joelho sentado com faixa elástica",
+  "motivo": "PP flexão de joelho contra elástico (isquiotibiais), não extensão",
+  "status": "precisa de vídeo próprio",
+  "removido_em": "2026-11-14"
+ }
+]

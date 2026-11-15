@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Comparação Kineti</title>
+<style>
+:root{
+  --bg:#f4f6fa; --panel:#ffffff; --ink:#172033; --muted:#5b6578; --line:#dde3ec; --soft:#eef2f8;
+  --blue:#2563eb; --blue-ink:#1d4ed8; --ok:#15803d; --ok-bg:#dcfce7; --warn:#a16207; --warn-bg:#fef3c7;
+  --bad:#b91c1c; --bad-bg:#fee2e2; --info:#1d4ed8; --info-bg:#dbeafe; --gray-bg:#eceff4; --video:#0f1522;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0e131c; --panel:#161d2a; --ink:#e6ebf3; --muted:#9aa6ba; --line:#263044; --soft:#1c2535;
+    --blue:#60a5fa; --blue-ink:#93c5fd; --ok:#4ade80; --ok-bg:#12321f; --warn:#fbbf24; --warn-bg:#3a2c0b;
+    --bad:#f87171; --bad-bg:#3b1414; --info:#93c5fd; --info-bg:#162a4a; --gray-bg:#232c3d; --video:#05080e;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0e131c; --panel:#161d2a; --ink:#e6ebf3; --muted:#9aa6ba; --line:#263044; --soft:#1c2535;
+  --blue:#60a5fa; --blue-ink:#93c5fd; --ok:#4ade80; --ok-bg:#12321f; --warn:#fbbf24; --warn-bg:#3a2c0b;
+  --bad:#f87171; --bad-bg:#3b1414; --info:#93c5fd; --info-bg:#162a4a; --gray-bg:#232c3d; --video:#05080e;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%}
+body{background:var(--bg);color:var(--ink);font:14px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;display:flex;flex-direction:column}
+button,select,input,textarea{font:inherit;color:inherit}
+header{display:flex;gap:10px;align-items:center;flex-wrap:wrap;padding:10px 16px;background:var(--panel);border-bottom:1px solid var(--line)}
+header h1{font-size:16px;margin:0 8px 0 0;white-space:nowrap}
+header .stamp{color:var(--muted);font-size:12px;margin-left:auto}
+.ctl{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:6px 9px}
+input.ctl{min-width:220px;flex:1 1 220px;max-width:360px}
+.wrap{flex:1;display:flex;min-height:0}
+aside{width:330px;flex:none;border-right:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column;min-height:0}
+aside .count{padding:8px 14px;color:var(--muted);font-size:12px;border-bottom:1px solid var(--line)}
+#list{overflow:auto;flex:1}
+.item{padding:8px 14px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;flex-direction:column;gap:3px}
+.item:hover{background:var(--soft)}
+.item.sel{background:var(--info-bg);box-shadow:inset 3px 0 0 var(--blue)}
+.item .n{font-weight:600}
+.item .s{color:var(--muted);font-size:12px;font-family:ui-monospace,Consolas,monospace;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.dots{display:flex;gap:4px;flex-wrap:wrap}
+main{flex:1;overflow:auto;padding:14px 16px;min-width:0}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:1400px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.pane{background:var(--panel);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.pane .hd{display:flex;align-items:center;gap:6px;padding:7px 10px;border-bottom:1px solid var(--line);font-weight:600}
+.pane .hd .sp{margin-left:auto}
+.pane .vb{background:var(--video);aspect-ratio:16/9;display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden}
+.pane video{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;display:block}
+.pane .none{color:#9aa6ba;font-size:13px;padding:12px;text-align:center}
+.pane .ft{padding:6px 10px;font-size:12px;color:var(--muted);min-height:30px}
+.pane.big{grid-column:1/-1}
+.bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 12px}
+.btn{background:var(--blue);color:#fff;border:0;border-radius:8px;padding:7px 12px;cursor:pointer;font-weight:600}
+.btn.sec{background:var(--soft);color:var(--ink);border:1px solid var(--line)}
+.btn:focus-visible,.ctl:focus-visible,.item:focus-visible{outline:2px solid var(--blue);outline-offset:1px}
+.chip{display:inline-block;border-radius:999px;padding:1px 8px;font-size:11.5px;font-weight:600;background:var(--gray-bg);color:var(--muted);white-space:nowrap}
+.chip.ok{background:var(--ok-bg);color:var(--ok)} .chip.warn{background:var(--warn-bg);color:var(--warn)}
+.chip.bad{background:var(--bad-bg);color:var(--bad)} .chip.info{background:var(--info-bg);color:var(--info)}
+.title{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.title h2{margin:0;font-size:20px}
+.title code{color:var(--muted);font-size:12.5px}
+.cols{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:12px;margin-top:12px}
+@media (max-width:1100px){.cols{grid-template-columns:1fr}}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card h3{margin:0 0 8px;font-size:13px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+.kv{display:grid;grid-template-columns:110px 1fr;gap:4px 10px;font-size:13px}
+.kv b{color:var(--muted);font-weight:600}
+.pp{display:flex;gap:8px;align-items:flex-start;padding:7px 8px;border-radius:8px;cursor:pointer;border:1px solid transparent}
+.pp:hover{background:var(--soft)} .pp.sel{border-color:var(--blue);background:var(--info-bg)}
+.pp .t{flex:1;min-width:0} .pp .t small{display:block;color:var(--muted)}
+.pp.rem .t span{text-decoration:line-through}
+.st{margin:0 0 8px;font-size:13px} .st:last-child{margin-bottom:0}
+.st .lb{font-weight:600;margin-right:6px}
+textarea{width:100%;min-height:70px;background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:8px;resize:vertical}
+.empty{color:var(--muted);padding:40px;text-align:center}
+.kbd{font-family:ui-monospace,Consolas,monospace;font-size:11px;border:1px solid var(--line);border-radius:4px;padding:0 4px;background:var(--soft)}
+.help{color:var(--muted);font-size:12px}
+@media (max-width:760px){
+  .wrap{flex-direction:column} aside{width:auto;height:38vh;border-right:0;border-bottom:1px solid var(--line)}
+  .grid{grid-template-columns:1fr} header{padding:10px 16px} main{padding:12px 16px}
+}
+</style>
+</head>
+<body>
+<header>
+  <h1>Manequim × Lottie × Render 3D</h1>
+  <input id="q" class="ctl" type="search" placeholder="Buscar por nome, id ou id do PocketPhysio" aria-label="Buscar">
+  <select id="fArea" class="ctl" aria-label="Área"></select>
+  <select id="fLote" class="ctl" aria-label="Lote"></select>
+  <select id="fSit" class="ctl" aria-label="Situação">
+    <option value="">Toda situação</option>
+    <option value="pend">Com pendência</option>
+    <option value="lim">Lottie com limitação</option>
+    <option value="semlottie">Sem Lottie</option>
+    <option value="aguard">3D aguardando re-render</option>
+    <option value="novo3d">3D re-renderizado</option>
+    <option value="refazer">Validação: refazer</option>
+    <option value="ajustar">Validação: ajustar</option>
+    <option value="valok">Validação: ok</option>
+    <option value="ppdif">PocketPhysio removido</option>
+    <option value="nota">Com minha nota</option>
+  </select>
+  <select id="fView" class="ctl" aria-label="Vista do Lottie">
+    <option value="">Lottie: toda vista</option><option value="side">Lottie lateral</option><option value="front">Lottie frontal</option>
+  </select>
+  <button id="theme" class="btn sec" type="button" title="Tema claro/escuro">◐</button>
+  <span class="stamp" id="stamp"></span>
+</header>
+<div class="wrap">
+  <aside>
+    <div class="count" id="count"></div>
+    <div id="list" role="listbox" aria-label="Exercícios"></div>
+  </aside>
+  <main id="main"><div class="empty">Carregando…</div></main>
+</div>
+<script src="data.js"></script>
+<script>
+(async function(){
+const D = window.CATALOG || {items:[]};
+const items = D.items;
+const $ = s => document.querySelector(s);
+const store = {
+  get(k, d){ try{ const v = localStorage.getItem(k); return v === null ? d : JSON.parse(v); }catch(e){ return d; } },
+  set(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
+};
+let notes = {}, choices = {};
+try { const response = await fetch('/api/catalogo/avaliacoes'); if (!response.ok) throw new Error(); for (const row of await response.json()) { notes[row.exercise_id] = row.note; choices[row.exercise_id] = row.choice; } } catch { alert('Não foi possível carregar as avaliações. Recarregue a página.'); return; }
+const draftNotes = {...notes}, draftChoices = {...choices};
+let cur = null, ppSel = 0, big = -1, speed = store.get('kc_speed', 1);
+$('#stamp').textContent = 'dados de ' + (D.stamp || '?');
+
+// theme
+const th = store.get('kc_theme', '');
+if (th) document.documentElement.dataset.theme = th;
+$('#theme').onclick = () => {
+  const dark = matchMedia('(prefers-color-scheme: dark)').matches;
+  const now = document.documentElement.dataset.theme || (dark ? 'dark' : 'light');
+  const nx = now === 'dark' ? 'light' : 'dark';
+  document.documentElement.dataset.theme = nx; store.set('kc_theme', nx);
+};
+
+// filters
+const areas = [...new Set(items.map(i => i.area).filter(Boolean))].sort();
+$('#fArea').innerHTML = '<option value="">Toda área</option>' + areas.map(a => `<option>${esc(a)}</option>`).join('');
+const lotes = [...new Set(items.map(i => i.lote).filter(Boolean))].sort();
+$('#fLote').innerHTML = '<option value="">Todo lote</option>' + lotes.map(l => `<option value="${l}">Lote ${l}</option>`).join('');
+const f0 = store.get('kc_filters', {});
+for (const k of ['q','fArea','fLote','fSit','fView']) if (f0[k] != null) $('#'+k).value = f0[k];
+
+function esc(s){ return String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])); }
+function norm(s){ return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,''); }
+function chipCls(v){
+  v = norm(v);
+  if (['ok','igual','corrigido','novo','final'].includes(v)) return 'ok';
+  if (['proximo','ajustar','aguardando re-render','limitacao','parcial'].includes(v)) return 'warn';
+  if (['diferente','refazer','pendente','removido','nao corrigido','sem video'].includes(v)) return 'bad';
+  return '';
+}
+function chip(v, label){ return v ? `<span class="chip ${chipCls(v)}">${esc(label || v)}</span>` : ''; }
+function lottieLim(i){ const s = norm(i.lottie.status); return s && s !== 'ok'; }
+
+function match(i){
+  const q = norm($('#q').value.trim());
+  if (q){
+    const hay = norm([i.nome, i.id, i.desc, ...i.pp.map(p => p.id + ' ' + p.nome)].join(' '));
+    if (!q.split(/\s+/).every(t => hay.includes(t))) return false;
+  }
+  if ($('#fArea').value && i.area !== $('#fArea').value) return false;
+  if ($('#fLote').value && i.lote !== $('#fLote').value) return false;
+  if ($('#fView').value && i.lottie.view !== $('#fView').value) return false;
+  switch ($('#fSit').value){
+    case 'pend': return i.pend.length > 0 || norm(i.fix && i.fix.status) === 'nao corrigido' || i.vis === 'pendente';
+    case 'lim': return lottieLim(i);
+    case 'semlottie': return !i.lottie.video;
+    case 'aguard': return i.r3d === 'aguardando re-render';
+    case 'novo3d': return i.r3d === 'novo';
+    case 'refazer': return i.val === 'refazer';
+    case 'ajustar': return i.val === 'ajustar';
+    case 'valok': return i.val === 'ok';
+    case 'ppdif': return i.pp.some(p => p.match === 'removido');
+    case 'nota': return !!(notes[i.id] || '').trim();
+  }
+  return true;
+}
+
+let shown = [];
+function renderList(){
+  store.set('kc_filters', Object.fromEntries(['q','fArea','fLote','fSit','fView'].map(k => [k, $('#'+k).value])));
+  shown = items.filter(match);
+  $('#count').textContent = `${shown.length} de ${items.length} exercícios`;
+  $('#list').innerHTML = shown.map((i, n) => `
+    <div class="item${cur && cur.id === i.id ? ' sel' : ''}" role="option" tabindex="0" data-n="${n}">
+      <span class="n">${esc(i.nome)}</span>
+      <span class="s">${esc(i.id)}</span>
+      <span class="dots">${i.fix ? chip(i.fix.status) : chip(i.val)}${i.lottie.video ? '' : chip('sem vídeo','sem Lottie')}${lottieLim(i) ? chip('limitação','Lottie: limitação') : ''}${i.pend.length ? chip('pendente') : ''}${i.r3d === 'aguardando re-render' ? chip(i.r3d,'3D antigo') : ''}${(notes[i.id]||'').trim() ? chip('nota','nota') : ''}</span>
+    </div>`).join('');
+  if (!shown.length) $('#list').innerHTML = '<div class="empty">Nenhum exercício com esses filtros.</div>';
+}
+$('#list').addEventListener('click', e => { const el = e.target.closest('.item'); if (el) open(shown[+el.dataset.n]); });
+$('#list').addEventListener('keydown', e => { if (e.key === 'Enter'){ const el = e.target.closest('.item'); if (el) open(shown[+el.dataset.n]); } });
+for (const k of ['q','fArea','fLote','fSit','fView']) $('#'+k).addEventListener('input', renderList);
+
+function pane(idx, title, src, foot, missing){
+  const v = src ? `<video src="${src}" muted loop playsinline preload="auto"></video>` : `<div class="none">${esc(missing)}</div>`;
+  return `<section class="pane${big === idx ? ' big' : ''}" data-i="${idx}">
+    <div class="hd">${title}<span class="sp"></span><button class="btn sec" type="button" data-big="${idx}" title="Ampliar (tecla ${idx+1})" style="padding:2px 8px">⤢</button></div>
+    <div class="vb">${v}</div><div class="ft">${foot || ''}</div></section>`;
+}
+
+function open(i, keepPP){
+  if (!i) return;
+  cur = i; if (!keepPP) ppSel = Math.max(0, i.pp.findIndex(p => p.match !== 'removido' && p.video));
+  location.hash = i.id;
+  const lot = i.lottie;
+  const lotFoot = [lot.view ? chip('info', lot.view === 'front' ? 'vista frontal' : 'vista lateral') : '',
+                   lottieLim(i) ? chip('limitação', lot.status) : (lot.status ? chip(lot.status) : ''), esc(lot.motivo)].join(' ');
+  const r3Foot = chip(i.r3d, i.r3d === 'aguardando re-render' ? 'versão antiga, re-render na fila' : i.r3d === 'novo' ? 're-renderizado com as correções' : i.r3d);
+  $('#main').innerHTML = `
+    <div class="title"><h2>${esc(i.nome)}</h2><code>${esc(i.id)}</code>${i.lote ? chip('info','lote ' + i.lote) : ''}</div>
+    <div class="bar">
+      <button class="btn" id="play" type="button">▶ Tocar juntos</button>
+      <button class="btn sec" id="restart" type="button">↺ Recomeçar</button>
+      <label class="help">Velocidade <select id="speed" class="ctl">${[0.5,0.75,1,1.25,1.5,2].map(s => `<option value="${s}"${s==speed?' selected':''}>${s}×</option>`).join('')}</select></label>
+      <button class="btn sec" id="prev" type="button">← Anterior</button>
+      <button class="btn sec" id="next" type="button">Próximo →</button>
+      <span class="help"><span class="kbd">espaço</span> tocar/pausar · <span class="kbd">R</span> recomeçar · <span class="kbd">←</span><span class="kbd">→</span> exercício · <span class="kbd">1</span>–<span class="kbd">3</span> ampliar</span>
+    </div>
+    <div class="grid" id="grid">
+      ${pane(0, 'Manequim', i.man ? `/api/catalogo/video/manequim/${encodeURIComponent(i.id)}` : '', '', 'Sem vídeo do manequim')}
+      ${pane(1, 'Lottie', lot.video ? `/api/catalogo/video/lottie/${encodeURIComponent(i.id)}` : '', lotFoot, lot.status === 'não se aplica' ? 'Não se aplica: ' + lot.motivo : 'Lottie ainda não gerado')}
+      ${pane(2, 'Render 3D', i.r3d !== 'sem vídeo' ? `/api/catalogo/video/render3d/${encodeURIComponent(i.id)}` : '', r3Foot, 'Sem render 3D')}
+    </div>
+    <div class="cols">
+      <div>
+        <div class="card"><h3>Exercício</h3>
+          <p style="margin:0 0 10px">${esc(i.desc)}</p>
+          <div class="kv"><b>Foco</b><span>${esc(i.foco)}</span><b>Área</b><span>${esc(i.area)}</span>
+          <b>Acessórios</b><span>${esc(i.props) || '—'}</span><b>Biblioteca</b><span>${esc(i.lib)}</span></div>
+        </div>
+        <div class="card" style="margin-top:12px"><h3>PocketPhysio (${i.pp.length})</h3>
+          ${i.pp.map((q, n) => `<div class="pp${n===ppSel?' sel':''}${q.match==='removido'?' rem':''}" data-pp="${n}" tabindex="0">
+            <div class="t"><span>${esc(q.nome || q.id)}</span><small>${esc(q.id)}${q.video ? '' : ' · sem vídeo'}${q.div ? ' · ' + esc(q.div) : ''}</small></div>${chip(q.match || 'sem revisão')}</div>`).join('') || '<p class="help">Sem referência.</p>'}
+        </div>
+      </div>
+      <div>
+        <div class="card"><h3>Situação</h3>
+          <p class="st"><span class="lb">Validação</span>${chip(i.val || 'sem revisão')} ${esc(i.val_txt)}</p>
+          <p class="st"><span class="lb">Revisão visual</span>${chip(i.vis || 'sem revisão')} ${esc(i.vis_txt)}</p>
+          ${i.fix ? `<p class="st"><span class="lb">Correção (lote ${esc(i.fix.lote)})</span>${chip(i.fix.status)} ${esc(i.fix.correcao)}${i.fix.motivo ? ' <em>' + esc(i.fix.motivo) + '</em>' : ''}</p>` : ''}
+          ${i.pend.map(t => `<p class="st"><span class="lb">Pendência</span>${chip('pendente')} ${esc(t)}</p>`).join('')}
+          ${lottieLim(i) ? `<p class="st"><span class="lb">Lottie</span>${chip('limitação', lot.status)} ${esc(lot.motivo)}</p>` : ''}
+        </div>
+        <div class="card" style="margin-top:12px"><h3>Escolha e nota</h3>
+          <label for="choice">Vídeo escolhido</label> <select id="choice" class="ctl"><option value="">Nenhum</option>${[["manequim", "Manequim", i.man], ["lottie", "Lottie", lot.video], ["render3d", "Render 3D", i.r3d !== "sem vídeo"]].map(([v, label, available]) => `<option value="${v}"${draftChoices[i.id] === v ? " selected" : ""}${available ? "" : " disabled"}>${label}${available ? "" : " (indisponível)"}</option>`).join("")}</select>
+          <textarea id="note" placeholder="Anote o que precisa mudar">${esc(draftNotes[i.id] || '')}</textarea>
+          <div class="bar" style="margin:8px 0 0"><button class="btn" id="save" type="button">Salvar avaliação</button><span class="help" id="save-status" role="status"></span><button class="btn sec" id="export" type="button">Exportar notas (CSV)</button><span class="help" id="ncount"></span></div>
+        </div>
+      </div>
+    </div>`;
+  wire();
+  renderList();
+  const sel = document.querySelector('.item.sel'); if (sel) sel.scrollIntoView({block:'nearest'});
+}
+
+function vids(){ return [...document.querySelectorAll('#grid video')]; }
+function setSpeed(){ vids().forEach(v => v.playbackRate = speed); }
+function playAll(){ const vs = vids(); vs.forEach(v => { v.currentTime = 0; v.playbackRate = speed; }); Promise.all(vs.map(v => v.play().catch(()=>{}))); $('#play').textContent = '❚❚ Pausar'; }
+function toggle(){ const vs = vids(); if (!vs.length) return; if (vs.some(v => !v.paused)){ vs.forEach(v => v.pause()); $('#play').textContent = '▶ Tocar juntos'; } else { vs.forEach(v => { v.playbackRate = speed; v.play().catch(()=>{}); }); $('#play').textContent = '❚❚ Pausar'; } }
+function step(d){ const n = shown.findIndex(i => i.id === cur.id); const nx = shown[n + d]; if (nx) open(nx); }
+function updCount(){ const n = Object.values(notes).filter(v => (v||'').trim()).length; const el = $('#ncount'); if (el) el.textContent = n + ' nota(s) salva(s)'; }
+function wire(){
+  $('#play').onclick = toggle; $('#restart').onclick = playAll;
+  $('#speed').onchange = e => { speed = +e.target.value; store.set('kc_speed', speed); setSpeed(); };
+  $('#prev').onclick = () => step(-1); $('#next').onclick = () => step(1);
+  document.querySelectorAll('[data-big]').forEach(b => b.onclick = () => { big = big === +b.dataset.big ? -1 : +b.dataset.big; open(cur, true); });
+  document.querySelectorAll('[data-pp]').forEach(el => el.onclick = () => { ppSel = +el.dataset.pp; open(cur, true); });
+  $('#note').oninput = e => { draftNotes[cur.id] = e.target.value; $('#save-status').textContent = 'Alterações não salvas'; };
+  $('#choice').onchange = e => { draftChoices[cur.id] = e.target.value || null; $('#save-status').textContent = 'Alterações não salvas'; };
+  if ((draftNotes[cur.id] || '') !== (notes[cur.id] || '') || (draftChoices[cur.id] || null) !== (choices[cur.id] || null)) $('#save-status').textContent = 'Alterações não salvas';
+  $('#save').onclick = async () => {
+    const id = cur.id, note = $('#note').value, choice = $('#choice').value || null, status = $('#save-status');
+    const button = $('#save'); button.disabled = true; status.textContent = 'Salvando…';
+    try { const res = await fetch('/api/catalogo/avaliacoes', {method:'PUT', headers:{'Content-Type':'application/json'}, body:JSON.stringify({exercise_id:id, note, choice})}); if (!res.ok) throw new Error(); notes[id] = note; choices[id] = choice; status.textContent = 'Salvo'; updCount(); renderList(); }
+    catch { status.textContent = 'Erro ao salvar. Tente novamente.'; } finally { button.disabled = false; }
+  };
+  $('#export').onclick = () => {
+    const rows = [['id','nome','nota']].concat(items.filter(i => (notes[i.id]||'').trim()).map(i => [i.id, i.nome, notes[i.id]]));
+    const csv = rows.map(r => r.map(c => '"' + String(c).replace(/"/g,'""') + '"').join(',')).join('\r\n');
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob(['﻿' + csv], {type:'text/csv'})); a.download = 'notas_catalogo.csv'; a.click();
+  };
+  updCount();
+  setTimeout(playAll, 150);
+}
+document.addEventListener('keydown', e => {
+  if (['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) return;
+  if (!cur) return;
+  if (e.key === ' '){ e.preventDefault(); toggle(); }
+  else if (e.key === 'r' || e.key === 'R') playAll();
+  else if (e.key === 'ArrowRight' || e.key === 'ArrowDown'){ e.preventDefault(); step(1); }
+  else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp'){ e.preventDefault(); step(-1); }
+  else if ('123'.includes(e.key)){ const k = +e.key - 1; big = big === k ? -1 : k; open(cur, true); }
+});
+
+window.addEventListener('beforeunload', e => {
+  if (items.some(i => (draftNotes[i.id] || '') !== (notes[i.id] || '') || (draftChoices[i.id] || null) !== (choices[i.id] || null))) { e.preventDefault(); e.returnValue = ''; }
+});
+
+renderList();
+const h = decodeURIComponent(location.hash.slice(1));
+open(items.find(i => i.id === h) || shown[0] || items[0]);
+})();
+</script>
+</body>
+</html>

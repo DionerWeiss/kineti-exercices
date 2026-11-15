@@ -14,6 +14,8 @@ Os 1.756 exercícios da API do PocketPhysio (1.581 publicados), analisados um a 
 2. `tool/pocketphysio/match_library.py`: compara cada um com os 59 do Kineti (`catalog.json`) e com os 435 do desk-break, e marca `identico`, `variacao` ou `novo`.
 3. `tool/pocketphysio/score.py`: calcula o esforço com uma rubrica fixa, sem LLM. A rubrica pode mudar e ser recalculada sem rever os vídeos.
 
+Os passos 1 e 2 usavam Gemini, que não é mais usado no projeto. Os scripts foram removidos em 15/11/2026, e a última versão está no histórico do git (commit `45091ee`). Os resultados ficam em `raw/`.
+
 ## Colunas
 
 | coluna | o que é |

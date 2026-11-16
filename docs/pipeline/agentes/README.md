@@ -4,6 +4,7 @@ Instruções (em inglês) usadas nas rodadas de 13–15/11. Cada uma serve de pr
 
 | Arquivo | Etapa | Escreve |
 |---|---|---|
+| [avaliar_e_corrigir.md](avaliar_e_corrigir.md) | **Prompt completo** (PT) para um coordenador: avaliar os 688 contra o PP, corrigir por lote e renderizar uma versão nova separada (worktree + `E:\mannequin\avatar_man\v10`) | `v10/` |
 | [validation_brief.md](validation_brief.md) | Validação por job contra o PP, no estilo do cliente (ok / ajustar / refazer) | `final/validation/lote_NN.json` |
 | [layer3_brief.md](layer3_brief.md) | Camada 3: veredito por id do PP (igual / próximo / diferente) | `final/pp_review/lote_NN.json` |
 | [layer4_brief.md](layer4_brief.md) | Camada 4: revisão visual da primeira passada | `final/visual_review/lote_NN.json` |

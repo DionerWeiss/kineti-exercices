@@ -27,8 +27,7 @@ FIX = E / 'avatar_man' / 'fix'
 OUT = E / 'catalogo'
 LOTTIE = E / 'puppet2d' / 'final'
 V3D = E / 'avatar_man' / 'out' / 'videos_final'
-PENDENTES = Path(os.environ.get('PENDENTES', '/tmp/claude-1000/-home-dioner-projects-kineti-animated-exercices/'
-                                 '0e480f35-69ed-4535-b1d3-4d247e558a1b/scratchpad/pendentes_final.txt'))
+PENDENTES = Path(os.environ.get('PENDENTES', str(E / 'avatar_man' / 'ops' / 'pendentes_final.txt')))
 RERENDER_START = datetime.datetime(2026, 11, 14, 11, 20).timestamp()
 
 

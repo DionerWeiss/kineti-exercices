@@ -1,8 +1,8 @@
 #!/bin/bash
 # rerender_gate.sh MAX: keeps at most MAX renders (mannequin.py render) running; claims the next lote_R*.txt (mkdir lock),
 # runs render_part then post_part. Also runs post_part for the lotes in $ORPH once their render is done.
-S=${KINETI_OPS:-/mnt/e/mannequin/avatar_man/ops}; HERE="$(cd "$(dirname "$0")" && pwd)"; mkdir -p $S/claims
-F=/mnt/e/mannequin/avatar_man/final; MAX=${1:-2}; ORPH="${ORPH:-}"  # lotes ja renderizados que so precisam do post_part
+HERE="$(cd "$(dirname "$0")" && pwd)"; source "$HERE/env.sh"; mkdir -p $S/claims
+MAX=${1:-2}; ORPH="${ORPH:-}"  # lotes ja renderizados que so precisam do post_part
 while true; do
   for o in $ORPH; do
     if grep -q "== render done" $S/lote_$o.log 2>/dev/null && [ ! -e $S/claims/$o.post ]; then

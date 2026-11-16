@@ -1,9 +1,8 @@
 """merge_pp.py NN: final/pp_review/lote_NN.json -> final/review_pp.json; "diferente" ids leave jobs.json and go to
 tool/mannequin/pp_removed.json ("precisa de vídeo próprio"); "_visual" notes go to review_notes.json (nota_pp)."""
 import json, sys, datetime
+from kpaths import F, R
 N = sys.argv[1]
-F = '/mnt/e/mannequin/avatar_man/final'
-R = '/home/dioner/projects/kineti/animated_exercices'
 src = json.load(open(f'{F}/pp_review/lote_{N}.json', encoding='utf-8'))
 pp = json.load(open(f'{F}/review_pp.json', encoding='utf-8'))
 notes = json.load(open(f'{F}/review_notes.json', encoding='utf-8'))

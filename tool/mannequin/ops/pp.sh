@@ -1,10 +1,10 @@
 #!/bin/bash
 # usage: pp.sh <ppid...>  -> prints desc, makes tile in val/pp_<id>.png
-S=${KINETI_OPS:-/mnt/e/mannequin/avatar_man/ops}; mkdir -p $S/val
+source "$(dirname "$0")/env.sh"; mkdir -p $S/val
 for P in "$@"; do
 python3 -c "
 import json,sys
-pp=json.load(open('/home/dioner/projects/kineti/animated_exercices/research/pocketphysio/exercicios.json'))
+pp=json.load(open('$R/research/pocketphysio/exercicios.json'))
 for e in pp:
   if e['id']=='$P': print('$P', e['nome_pt'],'::', e['descricao_pt'][:700])
 "

@@ -1,7 +1,8 @@
 #!/bin/bash
-# full_build.sh: every kineti + forked desk-break move -> kineti_sub -> the final lib
-cd /home/dioner/projects/kineti/animated_exercices
-export MANNEQUIN_AVATAR=/mnt/e/mannequin/avatar_man/exercises_final.blend MANNEQUIN_OUT=/mnt/e/mannequin/avatar_man/final MANNEQUIN_RES=1920x1080
+# full_build.sh: every kineti + forked desk-break move -> kineti_sub -> the lib ($KINETI_LIB, default the final lib)
+source "$(dirname "$0")/env.sh"
+cd $R
+export MANNEQUIN_AVATAR=$LIB MANNEQUIN_OUT=$F MANNEQUIN_RES=1920x1080
 M="$(python3 -c "
 import json
 for f in ('kineti_moves.json','deskbreak_moves.json'):

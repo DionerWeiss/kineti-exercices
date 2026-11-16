@@ -1,9 +1,10 @@
 #!/bin/bash
-# lote_qa.sh NN: QA (layers 1+2, no render) of lote NN on the scratch lib; lists the jobs with a quebrado issue
-cd /home/dioner/projects/kineti/animated_exercices
-export MANNEQUIN_AVATAR=/mnt/e/mannequin/avatar_man/exercises_scratch.blend MANNEQUIN_OUT=/mnt/e/mannequin/avatar_man/final MANNEQUIN_RES=1920x1080
-python3 tool/mannequin/mannequin.py qa $(cat /mnt/e/mannequin/avatar_man/final/lotes/lote_$1.txt) > /dev/null 2>&1
-cd /mnt/e/mannequin/avatar_man/final; python3 -c "
+# lote_qa.sh NN: QA (layers 1+2, no render) of lote NN on a scratch lib (KINETI_QA_LIB); lists the jobs with a quebrado issue
+source "$(dirname "$0")/env.sh"
+cd $R
+export MANNEQUIN_AVATAR="${KINETI_QA_LIB:-/mnt/e/mannequin/avatar_man/exercises_scratch.blend}" MANNEQUIN_OUT=$F MANNEQUIN_RES=1920x1080
+python3 tool/mannequin/mannequin.py qa $(cat $F/lotes/lote_$1.txt) > /dev/null 2>&1
+cd $F; python3 -c "
 import json
 from collections import Counter
 c=Counter()

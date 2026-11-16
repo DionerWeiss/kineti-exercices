@@ -72,11 +72,23 @@ export MANNEQUIN_AVATAR=/mnt/e/mannequin/avatar_man/exercises_final.blend \
 | `tool/mannequin/avatar/` | Construção do avatar (`build_man.py`, `fit_avatar.py`, `lowpoly.py`, `hair_quiff.py`) |
 | `tool/mannequin/ops/` | Scripts de operação (lotes, merges, re-render): veja abaixo |
 | `tool/puppet2d/` | Lottie 2D |
-| `research/pocketphysio/` | Catálogo do PP (fora do git) |
+| `research/pocketphysio/` | Catálogo do PP |
 
 ### `tool/mannequin/ops/`
 
-Scripts usados nas rodadas de 13–15/11. O estado das rodadas (listas e notas) fica em `KINETI_OPS`, que por padrão é `/mnt/e/mannequin/avatar_man/ops`.
+Scripts usados nas rodadas de 13–15/11. Os caminhos vêm de `ops/env.sh` (shell) e `ops/kpaths.py` (Python). O repo é o que contém o script, e os demais caminhos podem ser trocados por variáveis de ambiente. Os padrões são os da entrega atual:
+
+| Variável | Padrão |
+|---|---|
+| `KINETI_FINAL` | `/mnt/e/mannequin/avatar_man/final` |
+| `KINETI_OUT` | `/mnt/e/mannequin/avatar_man/out` |
+| `KINETI_LIB` | `/mnt/e/mannequin/avatar_man/exercises_final.blend` |
+| `KINETI_VIDEOS` | `$KINETI_OUT/videos_final` |
+| `KINETI_FIX` | `/mnt/e/mannequin/avatar_man/fix` |
+| `KINETI_OPS` | `/mnt/e/mannequin/avatar_man/ops` (estado das rodadas: listas e notas) |
+| `KINETI_QA_LIB` | `/mnt/e/mannequin/avatar_man/exercises_scratch.blend` (`lote_qa.sh`) |
+
+Para gerar uma versão separada sem tocar na entrega, use uma git worktree e aponte essas variáveis para outro diretório (ver [agentes/avaliar_e_corrigir.md](agentes/avaliar_e_corrigir.md)).
 
 | Script | Uso |
 |---|---|

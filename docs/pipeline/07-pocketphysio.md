@@ -4,7 +4,7 @@ O PocketPhysio (PP) é a referência clínica. O cliente compara cada exercício
 
 ## Fonte
 
-- `research/pocketphysio/exercicios.json` (fora do git): 1.756 exercícios, 1.581 publicados. Campos usados: `id` (24 caracteres), `nome_pt`, `descricao_pt`, `observacoes`, `posicao`.
+- `research/pocketphysio/exercicios.json`: 1.756 exercícios, 1.581 publicados. Campos usados: `id` (24 caracteres), `nome_pt`, `descricao_pt`, `observacoes`, `posicao`.
 - Coletado em 07/11 pela API interna `/api/physiolight/exercises?limit=5000&live=false&lang=en`, chamada de dentro da sessão logada no navegador. Os vídeos ficam num bucket S3 público.
 - 147 itens têm o vídeo genérico "Demo Video" e só podem ser julgados pelo texto. Alguns arquivos do S3 respondem 403.
 - `tool/pocketphysio/score.py` recalcula a rubrica de esforço sem LLM. Os passes Gemini (`analyze.py`, `match_library.py`) foram removidos do repo em 15/11 (estão no histórico, commit `45091ee`) e não devem ser rodados de novo.

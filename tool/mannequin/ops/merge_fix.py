@@ -1,10 +1,11 @@
 """merge_fix.py NN: moves the fix agent changed (fix/lote_NN/moves vs its starting copy) -> the repo moves files;
 jobs_change from report.json -> jobs.json; jobs using changed moves -> rerender_ids.txt. Prints the changed move ids."""
 import json, sys, os
+import kpaths
 N = sys.argv[1]
-W = f'/mnt/e/mannequin/avatar_man/fix/lote_{N}'
-M = '/home/dioner/projects/kineti/animated_exercices/tool/mannequin/'
-S = os.environ.get('KINETI_OPS', '/mnt/e/mannequin/avatar_man/ops') + '/'
+W = f'{kpaths.FIX}/lote_{N}'
+M = kpaths.M + '/'
+S = kpaths.S + '/'
 rep = json.load(open(f'{W}/report.json', encoding='utf-8'))
 fixed_moves = {v.get('move', j) for j, v in rep.items() if v.get('status') == 'corrigido'}
 changed = []

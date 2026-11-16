@@ -69,6 +69,8 @@ O seed é idempotente: atualiza os exercícios existentes, só envia arquivos qu
 
 O catálogo em `/catalogo` compara os vídeos de manequim, Lottie e render 3D. Cada usuário autenticado salva sua escolha e nota no Supabase. Aplique a migração `20261115000000_catalog_reviews.sql` antes de usar a página.
 
+A lista apresenta os 1.223 exercícios atendidos pelos 688 vídeos, agrupando registros PocketPhysio com o mesmo nome e vídeo. Exercícios que compartilham um vídeo também compartilham a escolha e a nota desse vídeo, preservando as avaliações existentes. O catálogo é gerado a partir de `public/catalogo/data.js`, `tool/mannequin/catalog.json` e `research/pocketphysio/exercicios.json`.
+
 Para enviar os vídeos descritos no catálogo ao R2, configure as variáveis R2 de `.env.local` e execute:
 
 ```bash

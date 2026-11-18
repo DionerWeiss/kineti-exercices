@@ -1,7 +1,7 @@
 import { videoUrl } from "@/lib/r2";
 import { createClient } from "@/lib/supabase/server";
 
-const prefixes: Record<string, string> = { manequim: "catalogo/manequim", lottie: "catalogo/lottie", render3d: "catalogo/render3d" };
+const prefixes: Record<string, string> = { manequim: "catalogo/manequim", lottie: "catalogo/lottie", render3d: "v10" };
 
 export async function GET(_request: Request, { params }: { params: Promise<{ tipo: string; id: string }> }) {
   const supabase = await createClient();
